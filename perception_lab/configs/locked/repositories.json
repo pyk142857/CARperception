@@ -1,0 +1,56 @@
+{
+  "depth_anything_v2": {
+    "url": "https://github.com/DepthAnything/Depth-Anything-V2",
+    "commit": "a561b849ebae10a6f5ef49e26c83cbbcd36c71bf",
+    "exit_code": 0,
+    "log": "perception_lab/logs/clone_depth_anything_v2.log"
+  },
+  "mmsegmentation": {
+    "url": "https://github.com/open-mmlab/mmsegmentation",
+    "commit": "b040e147adfa027bbc071b624bedf0ae84dfc922",
+    "exit_code": 0,
+    "log": "perception_lab/logs/clone_mmsegmentation.log"
+  },
+  "mmdetection3d": {
+    "url": "https://github.com/open-mmlab/mmdetection3d",
+    "commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+    "exit_code": 0,
+    "log": "perception_lab/logs/clone_mmdetection3d.log"
+  },
+  "BEVFormer": {
+    "url": "https://github.com/fundamentalvision/BEVFormer",
+    "commit": "66b65f3a1f58caf0507cb2a971b9c0e7f842376c",
+    "exit_code": 0,
+    "log": "perception_lab/logs/clone_BEVFormer.log"
+  },
+  "bevfusion": {
+    "url": "https://github.com/mit-han-lab/bevfusion",
+    "commit": "326653dc06e0938edf1aae7d01efcd158ba83de5",
+    "exit_code": 0,
+    "log": "perception_lab/logs/clone_bevfusion.log"
+  },
+  "CenterFusion": {
+    "url": "https://github.com/mrnabati/CenterFusion",
+    "commit": "3bac5c9b26daf958456a7bbbae5eb5a00a76d98a",
+    "exit_code": 0,
+    "log": "perception_lab/logs/clone_CenterFusion.log"
+  },
+  "MapTR": {
+    "url": "https://github.com/hustvl/MapTR",
+    "commit": "a6872d8d9670bde17b4b01560f1221f88b443d55",
+    "exit_code": 0,
+    "log": "perception_lab/logs/clone_MapTR.log"
+  },
+  "SurroundOcc": {
+    "url": "https://github.com/weiyithu/SurroundOcc",
+    "commit": "419bf5b47ee07ef0610950cce5ba99168c506753",
+    "exit_code": 0,
+    "log": "perception_lab/logs/clone_SurroundOcc.log"
+  },
+  "CenterPoint": {
+    "url": "https://github.com/tianweiy/CenterPoint",
+    "commit": "3cf7d870537e287c99b43b68636ea392a5e6f519",
+    "exit_code": 0,
+    "log": "perception_lab/logs/clone_CenterPoint.log"
+  }
+}

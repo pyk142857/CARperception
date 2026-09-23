@@ -1,0 +1,1134 @@
+{
+  "root": "/home/minglei/Desktop/CAR/perception_lab",
+  "seed": 20260922,
+  "reconstructed_from": [
+    "instruction/20260922_01_perception_full_pipeline.md",
+    "instruction/perception_execution_plan_20260922.md"
+  ],
+  "scopes": {
+    "smoke": "fixed mini frame and scene",
+    "replay": "first 2 official val scenes sorted by name",
+    "benchmark": "complete official val",
+    "train": "first 80 complete official train scenes"
+  },
+  "training": {
+    "optimizer_updates": 1000,
+    "micro_batch": 1,
+    "accumulation": 4,
+    "lr_multiplier": 0.1
+  },
+  "benchmark": {
+    "warmup": 50,
+    "measurements": 200,
+    "batch": 1
+  },
+  "modules": {
+    "M00": {
+      "model": "nuScenes geometry",
+      "jobs": {
+        "smoke": {
+          "command": [
+            "/home/minglei/Desktop/CAR/perception_lab/envs/vision/bin/python",
+            "tools/prepare_mini.py",
+            "--out",
+            "{out}"
+          ],
+          "inputs": [
+            "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/v1.0-mini/category.json",
+            "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/v1.0-mini/calibrated_sensor.json",
+            "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/v1.0-mini/visibility.json",
+            "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/v1.0-mini/attribute.json",
+            "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/v1.0-mini/map.json",
+            "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/v1.0-mini/sample_annotation.json",
+            "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/v1.0-mini/scene.json",
+            "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/v1.0-mini/ego_pose.json",
+            "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/v1.0-mini/sample_data.json",
+            "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/v1.0-mini/log.json",
+            "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/v1.0-mini/instance.json",
+            "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/v1.0-mini/sample.json",
+            "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/v1.0-mini/sensor.json"
+          ],
+          "artifacts": [
+            "{out}/mini_smoke.json",
+            "{out}/mini_scene.json",
+            "{out}/frame_packets.json",
+            "{out}/geometry_summary.json",
+            "{out}/six_camera_projection.jpg",
+            "{out}/input_hashes.json"
+          ],
+          "input_lists": [
+            "manifests/mini_sensor_files.txt"
+          ]
+        },
+        "replay": {
+          "phase": "baseline",
+          "blocked_reason": "Official trainval two-scene replay manifest and raw assets absent; mini is not a substitute"
+        },
+        "visualization": {
+          "blocked_reason": "Not yet executed; see TASK_STATE.md and data/resource requirements"
+        },
+        "preflight": {
+          "command": [
+            "python3",
+            "tools/preflight.py",
+            "--out",
+            "{out}"
+          ],
+          "artifacts": [
+            "{out}/hardware.json"
+          ]
+        }
+      }
+    },
+    "M01": {
+      "model": "YOLOv8s",
+      "jobs": {
+        "assets": {
+          "command": [
+            "python3",
+            "tools/check_assets.py",
+            "--module",
+            "M01",
+            "--out",
+            "{out}"
+          ],
+          "inputs": [
+            "checkpoints/manifest.json"
+          ],
+          "artifacts": [
+            "{out}/asset_verification.json"
+          ]
+        },
+        "environment": {
+          "command": [
+            "/home/minglei/Desktop/CAR/perception_lab/envs/vision/bin/python",
+            "tools/check_environment.py",
+            "--kind",
+            "vision",
+            "--out",
+            "{out}"
+          ],
+          "artifacts": [
+            "{out}/environment.json",
+            "{out}/pip_freeze.txt"
+          ]
+        },
+        "smoke": {
+          "command": [
+            "/home/minglei/Desktop/CAR/perception_lab/envs/vision/bin/python",
+            "tools/vision_infer.py",
+            "--model",
+            "yolo",
+            "--manifest",
+            "manifests/mini_smoke.json",
+            "--device",
+            "cpu",
+            "--out",
+            "{out}"
+          ],
+          "inputs": [
+            "manifests/mini_smoke.json",
+            "checkpoints/yolov8s.pt"
+          ],
+          "artifacts": [
+            "{out}/predictions.json",
+            "{out}/summary.json",
+            "{out}/config.json"
+          ],
+          "image_manifests": [
+            "manifests/mini_smoke.json"
+          ],
+          "depends": [
+            "M00:smoke"
+          ]
+        },
+        "replay": {
+          "phase": "baseline",
+          "blocked_reason": "Official nuScenes trainval and frozen two-scene val manifest absent"
+        },
+        "evaluation": {
+          "command": [
+            "/home/minglei/Desktop/CAR/perception_lab/envs/vision/bin/python",
+            "tools/evaluate_yolo.py",
+            "--out",
+            "{out}",
+            "--device",
+            "cpu"
+          ],
+          "inputs": [
+            "configs/coco_val_only.yaml",
+            "data/coco/val2017.txt",
+            "data/coco/annotations/instances_val2017.json",
+            "checkpoints/yolov8s.pt"
+          ],
+          "artifacts": [
+            "{out}/metrics.json",
+            "{out}/native/predictions.json",
+            "{out}/per_class_AP.json",
+            "{out}/input_hashes.json",
+            "{out}/provenance.json"
+          ],
+          "input_lists": [
+            "data/coco/val2017.txt"
+          ]
+        },
+        "visualization": {
+          "blocked_reason": "Not yet executed; see TASK_STATE.md and data/resource requirements"
+        },
+        "benchmark": {
+          "phase": "deploy",
+          "blocked_reason": "No controlled GPU measurement window; existing user GPU jobs remain active"
+        },
+        "export": {
+          "blocked_reason": "Not yet executed; see TASK_STATE.md and data/resource requirements"
+        },
+        "export_validation": {
+          "blocked_reason": "Not yet executed; see TASK_STATE.md and data/resource requirements"
+        },
+        "diagnostic": {
+          "command": [
+            "/home/minglei/Desktop/CAR/perception_lab/envs/vision/bin/python",
+            "tools/vision_infer.py",
+            "--model",
+            "yolo",
+            "--manifest",
+            "manifests/demo.json",
+            "--device",
+            "cpu",
+            "--out",
+            "{out}"
+          ],
+          "inputs": [
+            "manifests/demo.json",
+            "data/bus.jpg",
+            "checkpoints/yolov8s.pt"
+          ],
+          "artifacts": [
+            "{out}/predictions.json",
+            "{out}/summary.json",
+            "{out}/config.json"
+          ],
+          "image_manifests": [
+            "manifests/demo.json"
+          ]
+        }
+      }
+    },
+    "M02": {
+      "model": "SegFormer MIT-B0 Cityscapes",
+      "jobs": {
+        "assets": {
+          "command": [
+            "python3",
+            "tools/check_assets.py",
+            "--module",
+            "M02",
+            "--out",
+            "{out}"
+          ],
+          "inputs": [
+            "checkpoints/manifest.json"
+          ],
+          "artifacts": [
+            "{out}/asset_verification.json"
+          ]
+        },
+        "environment": {
+          "blocked_reason": "Not yet executed; see TASK_STATE.md and data/resource requirements"
+        },
+        "smoke": {
+          "command": [
+            "/home/minglei/Desktop/CAR/perception_lab/envs/vision/bin/python",
+            "tools/segformer_infer.py",
+            "--manifest",
+            "manifests/mini_smoke.json",
+            "--out",
+            "{out}"
+          ],
+          "inputs": [
+            "manifests/mini_smoke.json",
+            "checkpoints/segformer_b0_cityscapes.pth"
+          ],
+          "artifacts": [
+            "{out}/predictions.json",
+            "{out}/summary.json",
+            "{out}/resolved_config.py"
+          ],
+          "image_manifests": [
+            "manifests/mini_smoke.json"
+          ],
+          "depends": [
+            "M00:smoke"
+          ]
+        },
+        "replay": {
+          "phase": "baseline",
+          "blocked_reason": "Official nuScenes trainval and frozen two-scene val manifest absent"
+        },
+        "evaluation": {
+          "phase": "evaluate",
+          "blocked_reason": "Cityscapes official val images and fine labels absent; official download requires login"
+        },
+        "visualization": {
+          "blocked_reason": "Not yet executed; see TASK_STATE.md and data/resource requirements"
+        },
+        "benchmark": {
+          "phase": "deploy",
+          "blocked_reason": "No controlled GPU measurement window; existing user GPU jobs remain active"
+        },
+        "export": {
+          "blocked_reason": "Not yet executed; see TASK_STATE.md and data/resource requirements"
+        },
+        "export_validation": {
+          "blocked_reason": "Not yet executed; see TASK_STATE.md and data/resource requirements"
+        },
+        "diagnostic": {
+          "command": [
+            "/home/minglei/Desktop/CAR/perception_lab/envs/vision/bin/python",
+            "tools/segformer_infer.py",
+            "--manifest",
+            "manifests/demo.json",
+            "--out",
+            "{out}"
+          ],
+          "inputs": [
+            "manifests/demo.json",
+            "data/bus.jpg",
+            "checkpoints/segformer_b0_cityscapes.pth"
+          ],
+          "artifacts": [
+            "{out}/predictions.json",
+            "{out}/summary.json",
+            "{out}/resolved_config.py"
+          ],
+          "image_manifests": [
+            "manifests/demo.json"
+          ]
+        }
+      }
+    },
+    "M03": {
+      "model": "Depth Anything V2 Metric VKITTI Small",
+      "jobs": {
+        "assets": {
+          "command": [
+            "python3",
+            "tools/check_assets.py",
+            "--module",
+            "M03",
+            "--out",
+            "{out}"
+          ],
+          "inputs": [
+            "checkpoints/manifest.json"
+          ],
+          "artifacts": [
+            "{out}/asset_verification.json"
+          ]
+        },
+        "environment": {
+          "blocked_reason": "Not yet executed; see TASK_STATE.md and data/resource requirements"
+        },
+        "smoke": {
+          "command": [
+            "/home/minglei/Desktop/CAR/perception_lab/envs/vision/bin/python",
+            "tools/vision_infer.py",
+            "--model",
+            "depth",
+            "--manifest",
+            "manifests/mini_smoke.json",
+            "--device",
+            "cpu",
+            "--out",
+            "{out}"
+          ],
+          "inputs": [
+            "manifests/mini_smoke.json",
+            "checkpoints/depth_anything_v2_metric_vkitti_vits.pth"
+          ],
+          "artifacts": [
+            "{out}/predictions.json",
+            "{out}/summary.json",
+            "{out}/config.json"
+          ],
+          "image_manifests": [
+            "manifests/mini_smoke.json"
+          ],
+          "depends": [
+            "M00:smoke"
+          ]
+        },
+        "replay": {
+          "phase": "baseline",
+          "blocked_reason": "Official nuScenes trainval and frozen two-scene val manifest absent"
+        },
+        "evaluation": {
+          "phase": "evaluate",
+          "blocked_reason": "Full official nuScenes val assets unavailable"
+        },
+        "visualization": {
+          "blocked_reason": "Not yet executed; see TASK_STATE.md and data/resource requirements"
+        },
+        "benchmark": {
+          "phase": "deploy",
+          "blocked_reason": "No controlled GPU measurement window; existing user GPU jobs remain active"
+        },
+        "export": {
+          "blocked_reason": "Not yet executed; see TASK_STATE.md and data/resource requirements"
+        },
+        "export_validation": {
+          "blocked_reason": "Not yet executed; see TASK_STATE.md and data/resource requirements"
+        },
+        "diagnostic": {
+          "command": [
+            "/home/minglei/Desktop/CAR/perception_lab/envs/vision/bin/python",
+            "tools/vision_infer.py",
+            "--model",
+            "depth",
+            "--manifest",
+            "manifests/demo.json",
+            "--device",
+            "cpu",
+            "--out",
+            "{out}"
+          ],
+          "inputs": [
+            "manifests/demo.json",
+            "data/bus.jpg",
+            "checkpoints/depth_anything_v2_metric_vkitti_vits.pth"
+          ],
+          "artifacts": [
+            "{out}/predictions.json",
+            "{out}/summary.json",
+            "{out}/config.json"
+          ],
+          "image_manifests": [
+            "manifests/demo.json"
+          ]
+        },
+        "sparse_depth_diagnostic": {
+          "command": [
+            "/home/minglei/Desktop/CAR/perception_lab/envs/vision/bin/python",
+            "tools/depth_diagnostic.py",
+            "--predictions",
+            "/home/minglei/Desktop/CAR/perception_lab/runs/20260923T042412_1fa019a6/M03/smoke/predictions.json",
+            "--geometry",
+            "/home/minglei/Desktop/CAR/perception_lab/runs/20260923T042215_98dd4e4f/M00/smoke",
+            "--out",
+            "{out}"
+          ],
+          "inputs": [
+            "/home/minglei/Desktop/CAR/perception_lab/runs/20260923T042412_1fa019a6/M03/smoke/predictions.json",
+            "/home/minglei/Desktop/CAR/perception_lab/runs/20260923T042215_98dd4e4f/M00/smoke/mini_smoke.json"
+          ],
+          "artifacts": [
+            "{out}/metrics.json",
+            "{out}/per_camera.json"
+          ],
+          "depends": [
+            "M00:smoke",
+            "M03:smoke"
+          ]
+        }
+      }
+    },
+    "M04": {
+      "model": "PointPillars nuScenes SECFPN 2x",
+      "jobs": {
+        "assets": {
+          "command": [
+            "python3",
+            "tools/check_assets.py",
+            "--module",
+            "M04",
+            "--out",
+            "{out}"
+          ],
+          "inputs": [
+            "checkpoints/manifest.json"
+          ],
+          "artifacts": [
+            "{out}/asset_verification.json"
+          ]
+        },
+        "environment": {
+          "command": [
+            "/home/minglei/Desktop/CAR/perception_lab/envs/mmdet3d/bin/python",
+            "tools/check_environment.py",
+            "--kind",
+            "mmdet3d",
+            "--out",
+            "{out}"
+          ],
+          "artifacts": [
+            "{out}/environment.json",
+            "{out}/pip_freeze.txt"
+          ]
+        },
+        "smoke": {
+          "command": [
+            "/home/minglei/Desktop/CAR/perception_lab/envs/mmdet3d/bin/python",
+            "tools/lidar_smoke.py",
+            "--model",
+            "pointpillars",
+            "--packets",
+            "manifests/frame_packets.json",
+            "--out",
+            "{out}"
+          ],
+          "inputs": [
+            "manifests/frame_packets.json",
+            "checkpoints/pointpillars.pth",
+            "configs/locked/lidar_assets.json",
+            "configs/locked/repositories.json"
+          ],
+          "artifacts": [
+            "{out}/predictions.json",
+            "{out}/summary.json",
+            "{out}/native_predictions.npz",
+            "{out}/resolved_config.py",
+            "{out}/bev_predictions.png"
+          ],
+          "depends": [
+            "M00:smoke"
+          ],
+          "input_lists": [
+            "manifests/mini_sensor_files.txt"
+          ]
+        },
+        "replay": {
+          "phase": "baseline",
+          "blocked_reason": "Official nuScenes trainval and frozen two-scene val manifest absent"
+        },
+        "evaluation": {
+          "phase": "evaluate",
+          "blocked_reason": "Full official nuScenes val assets unavailable"
+        },
+        "visualization": {
+          "blocked_reason": "Not yet executed; see TASK_STATE.md and data/resource requirements"
+        },
+        "benchmark": {
+          "phase": "deploy",
+          "blocked_reason": "No controlled GPU measurement window; existing user GPU jobs remain active"
+        },
+        "export": {
+          "not_applicable_reason": "Full 3D TensorRT is optional in this plan; native GPU and benchmark remain required"
+        },
+        "export_validation": {
+          "not_applicable_reason": "Full 3D TensorRT is optional in this plan; native GPU and benchmark remain required"
+        },
+        "history_smoke": {
+          "command": [
+            "/home/minglei/Desktop/CAR/perception_lab/envs/mmdet3d/bin/python",
+            "tools/lidar_smoke.py",
+            "--model",
+            "pointpillars",
+            "--packets",
+            "manifests/frame_packets.json",
+            "--out",
+            "{out}",
+            "--sample-index",
+            "1"
+          ],
+          "inputs": [
+            "manifests/frame_packets.json",
+            "checkpoints/pointpillars.pth",
+            "configs/locked/lidar_assets.json",
+            "configs/locked/repositories.json",
+            "configs/locked/patches/mmdet3d_sweep_inverse_translation.patch"
+          ],
+          "artifacts": [
+            "{out}/predictions.json",
+            "{out}/summary.json",
+            "{out}/native_predictions.npz",
+            "{out}/resolved_config.py",
+            "{out}/bev_predictions.png"
+          ],
+          "depends": [
+            "M00:smoke"
+          ],
+          "code_roots": [
+            "third_party/mmdetection3d/mmdet3d"
+          ],
+          "input_lists": [
+            "manifests/mini_sensor_files.txt"
+          ]
+        }
+      }
+    },
+    "M05": {
+      "model": "CenterPoint voxel0.1 SECFPN circle",
+      "jobs": {
+        "assets": {
+          "command": [
+            "python3",
+            "tools/check_assets.py",
+            "--module",
+            "M05",
+            "--out",
+            "{out}"
+          ],
+          "inputs": [
+            "checkpoints/manifest.json"
+          ],
+          "artifacts": [
+            "{out}/asset_verification.json"
+          ]
+        },
+        "environment": {
+          "blocked_reason": "Not yet executed; see TASK_STATE.md and data/resource requirements"
+        },
+        "smoke": {
+          "command": [
+            "/home/minglei/Desktop/CAR/perception_lab/envs/mmdet3d/bin/python",
+            "tools/lidar_smoke.py",
+            "--model",
+            "centerpoint",
+            "--packets",
+            "manifests/frame_packets.json",
+            "--out",
+            "{out}"
+          ],
+          "inputs": [
+            "manifests/frame_packets.json",
+            "checkpoints/centerpoint.pth",
+            "configs/locked/lidar_assets.json",
+            "configs/locked/repositories.json"
+          ],
+          "artifacts": [
+            "{out}/predictions.json",
+            "{out}/summary.json",
+            "{out}/native_predictions.npz",
+            "{out}/resolved_config.py",
+            "{out}/bev_predictions.png"
+          ],
+          "depends": [
+            "M00:smoke"
+          ],
+          "input_lists": [
+            "manifests/mini_sensor_files.txt"
+          ]
+        },
+        "replay": {
+          "phase": "baseline",
+          "blocked_reason": "Official nuScenes trainval and frozen two-scene val manifest absent"
+        },
+        "evaluation": {
+          "phase": "evaluate",
+          "blocked_reason": "Full official nuScenes val assets unavailable"
+        },
+        "visualization": {
+          "blocked_reason": "Not yet executed; see TASK_STATE.md and data/resource requirements"
+        },
+        "benchmark": {
+          "phase": "deploy",
+          "blocked_reason": "No controlled GPU measurement window; existing user GPU jobs remain active"
+        },
+        "export": {
+          "not_applicable_reason": "Full 3D TensorRT is optional in this plan; native GPU and benchmark remain required"
+        },
+        "export_validation": {
+          "not_applicable_reason": "Full 3D TensorRT is optional in this plan; native GPU and benchmark remain required"
+        },
+        "history_smoke": {
+          "command": [
+            "/home/minglei/Desktop/CAR/perception_lab/envs/mmdet3d/bin/python",
+            "tools/lidar_smoke.py",
+            "--model",
+            "centerpoint",
+            "--packets",
+            "manifests/frame_packets.json",
+            "--out",
+            "{out}",
+            "--sample-index",
+            "1"
+          ],
+          "inputs": [
+            "manifests/frame_packets.json",
+            "checkpoints/centerpoint.pth",
+            "configs/locked/lidar_assets.json",
+            "configs/locked/repositories.json",
+            "configs/locked/patches/mmdet3d_sweep_inverse_translation.patch"
+          ],
+          "artifacts": [
+            "{out}/predictions.json",
+            "{out}/summary.json",
+            "{out}/native_predictions.npz",
+            "{out}/resolved_config.py",
+            "{out}/bev_predictions.png"
+          ],
+          "depends": [
+            "M00:smoke"
+          ],
+          "code_roots": [
+            "third_party/mmdetection3d/mmdet3d"
+          ],
+          "input_lists": [
+            "manifests/mini_sensor_files.txt"
+          ]
+        },
+        "mini_scene": {
+          "command": [
+            "/home/minglei/Desktop/CAR/perception_lab/envs/mmdet3d/bin/python",
+            "tools/lidar_scene.py",
+            "--model",
+            "centerpoint",
+            "--out",
+            "{out}"
+          ],
+          "inputs": [
+            "manifests/frame_packets.json",
+            "checkpoints/centerpoint.pth",
+            "configs/locked/patches/mmdet3d_sweep_inverse_translation.patch"
+          ],
+          "code_roots": [
+            "third_party/mmdetection3d/mmdet3d"
+          ],
+          "depends": [
+            "M05:history_smoke"
+          ],
+          "artifacts": [
+            "{out}/predictions.json",
+            "{out}/summary.json",
+            "{out}/frame_index.json",
+            "{out}/mini_centerpoint_bev.mp4"
+          ],
+          "input_lists": [
+            "manifests/mini_sensor_files.txt"
+          ]
+        }
+      }
+    },
+    "M06": {
+      "model": "BEVFormer tiny R50",
+      "jobs": {
+        "assets": {
+          "command": [
+            "python3",
+            "tools/check_assets.py",
+            "--module",
+            "M06",
+            "--out",
+            "{out}"
+          ],
+          "inputs": [
+            "checkpoints/manifest.json"
+          ],
+          "artifacts": [
+            "{out}/asset_verification.json"
+          ]
+        },
+        "environment": {
+          "blocked_reason": "Legacy environment not implemented/verified; current modern mmcv2 environment must not be substituted"
+        },
+        "smoke": {
+          "blocked_reason": "Native adapter and legacy environment not yet integrated; see reports/compatibility.md. No model inference claimed."
+        },
+        "replay": {
+          "phase": "baseline",
+          "blocked_reason": "Official nuScenes trainval and frozen two-scene val manifest absent"
+        },
+        "evaluation": {
+          "phase": "evaluate",
+          "blocked_reason": "Full official nuScenes val assets unavailable"
+        },
+        "visualization": {
+          "blocked_reason": "No measured predictions for this module"
+        },
+        "benchmark": {
+          "phase": "deploy",
+          "blocked_reason": "No controlled GPU measurement window; existing user GPU jobs remain active"
+        },
+        "export": {
+          "not_applicable_reason": "Full 3D TensorRT is optional in this plan; native GPU and benchmark remain required"
+        },
+        "export_validation": {
+          "not_applicable_reason": "Full 3D TensorRT is optional in this plan; native GPU and benchmark remain required"
+        }
+      }
+    },
+    "M07": {
+      "model": "MIT BEVFusion camera+LiDAR Swin-T",
+      "jobs": {
+        "assets": {
+          "command": [
+            "python3",
+            "tools/check_assets.py",
+            "--module",
+            "M07",
+            "--out",
+            "{out}"
+          ],
+          "inputs": [
+            "checkpoints/manifest.json"
+          ],
+          "artifacts": [
+            "{out}/asset_verification.json"
+          ]
+        },
+        "environment": {
+          "blocked_reason": "Legacy environment not implemented/verified; current modern mmcv2 environment must not be substituted"
+        },
+        "smoke": {
+          "blocked_reason": "Native adapter and legacy environment not yet integrated; see reports/compatibility.md. No model inference claimed."
+        },
+        "replay": {
+          "phase": "baseline",
+          "blocked_reason": "Official nuScenes trainval and frozen two-scene val manifest absent"
+        },
+        "evaluation": {
+          "phase": "evaluate",
+          "blocked_reason": "Full official nuScenes val assets unavailable"
+        },
+        "visualization": {
+          "blocked_reason": "No measured predictions for this module"
+        },
+        "benchmark": {
+          "phase": "deploy",
+          "blocked_reason": "No controlled GPU measurement window; existing user GPU jobs remain active"
+        },
+        "export": {
+          "not_applicable_reason": "Full 3D TensorRT is optional in this plan; native GPU and benchmark remain required"
+        },
+        "export_validation": {
+          "not_applicable_reason": "Full 3D TensorRT is optional in this plan; native GPU and benchmark remain required"
+        }
+      }
+    },
+    "M08": {
+      "model": "CenterFusion DLA e60",
+      "jobs": {
+        "assets": {
+          "blocked_reason": "Official centerfusion_e60 checkpoint link returned HTTP404; logs/legacy_asset_probe.json"
+        },
+        "environment": {
+          "blocked_reason": "Legacy environment not implemented/verified; current modern mmcv2 environment must not be substituted"
+        },
+        "smoke": {
+          "blocked_reason": "Native adapter and legacy environment not yet integrated; see reports/compatibility.md. No model inference claimed."
+        },
+        "replay": {
+          "phase": "baseline",
+          "blocked_reason": "Official nuScenes trainval and frozen two-scene val manifest absent"
+        },
+        "evaluation": {
+          "phase": "evaluate",
+          "blocked_reason": "Full official nuScenes val assets unavailable"
+        },
+        "visualization": {
+          "blocked_reason": "No measured predictions for this module"
+        },
+        "benchmark": {
+          "phase": "deploy",
+          "blocked_reason": "No controlled GPU measurement window; existing user GPU jobs remain active"
+        },
+        "export": {
+          "not_applicable_reason": "Full 3D TensorRT is optional in this plan; native GPU and benchmark remain required"
+        },
+        "export_validation": {
+          "not_applicable_reason": "Full 3D TensorRT is optional in this plan; native GPU and benchmark remain required"
+        }
+      }
+    },
+    "M09": {
+      "model": "MapTR tiny R50 GKT 24ep",
+      "jobs": {
+        "assets": {
+          "command": [
+            "python3",
+            "tools/check_assets.py",
+            "--module",
+            "M09",
+            "--out",
+            "{out}"
+          ],
+          "inputs": [
+            "checkpoints/manifest.json"
+          ],
+          "artifacts": [
+            "{out}/asset_verification.json"
+          ]
+        },
+        "environment": {
+          "blocked_reason": "Legacy environment not implemented/verified; current modern mmcv2 environment must not be substituted"
+        },
+        "smoke": {
+          "blocked_reason": "Native adapter and legacy environment not yet integrated; see reports/compatibility.md. No model inference claimed."
+        },
+        "replay": {
+          "phase": "baseline",
+          "blocked_reason": "Official nuScenes trainval and frozen two-scene val manifest absent"
+        },
+        "evaluation": {
+          "phase": "evaluate",
+          "blocked_reason": "Full official nuScenes val assets unavailable"
+        },
+        "visualization": {
+          "blocked_reason": "No measured predictions for this module"
+        },
+        "benchmark": {
+          "phase": "deploy",
+          "blocked_reason": "No controlled GPU measurement window; existing user GPU jobs remain active"
+        },
+        "export": {
+          "not_applicable_reason": "Full 3D TensorRT is optional in this plan; native GPU and benchmark remain required"
+        },
+        "export_validation": {
+          "not_applicable_reason": "Full 3D TensorRT is optional in this plan; native GPU and benchmark remain required"
+        }
+      }
+    },
+    "M10": {
+      "model": "SurroundOcc",
+      "jobs": {
+        "assets": {
+          "blocked_reason": "SurroundOcc semantic checkpoint and matched labels not obtained from author Baidu links"
+        },
+        "environment": {
+          "blocked_reason": "Legacy environment not implemented/verified; current modern mmcv2 environment must not be substituted"
+        },
+        "smoke": {
+          "blocked_reason": "Native adapter and legacy environment not yet integrated; see reports/compatibility.md. No model inference claimed."
+        },
+        "replay": {
+          "phase": "baseline",
+          "blocked_reason": "Official nuScenes trainval and frozen two-scene val manifest absent"
+        },
+        "evaluation": {
+          "phase": "evaluate",
+          "blocked_reason": "Full official nuScenes val assets unavailable; SurroundOcc matched occupancy labels also missing"
+        },
+        "visualization": {
+          "blocked_reason": "No measured predictions for this module"
+        },
+        "benchmark": {
+          "phase": "deploy",
+          "blocked_reason": "No controlled GPU measurement window; existing user GPU jobs remain active"
+        },
+        "export": {
+          "not_applicable_reason": "Full 3D TensorRT is optional in this plan; native GPU and benchmark remain required"
+        },
+        "export_validation": {
+          "not_applicable_reason": "Full 3D TensorRT is optional in this plan; native GPU and benchmark remain required"
+        }
+      }
+    },
+    "M11": {
+      "model": "CenterPoint tracker",
+      "jobs": {
+        "replay_M05": {
+          "phase": "baseline",
+          "blocked_reason": "Full official val CenterPoint detections absent"
+        },
+        "replay_M07": {
+          "phase": "baseline",
+          "blocked_reason": "BEVFusion measured detections absent"
+        },
+        "evaluation_M05": {
+          "phase": "evaluate",
+          "blocked_reason": "Official val tracking inputs absent"
+        },
+        "evaluation_M07": {
+          "phase": "evaluate",
+          "blocked_reason": "Official val tracking inputs absent"
+        },
+        "benchmark": {
+          "phase": "deploy",
+          "blocked_reason": "Full required tracking runs not ready"
+        },
+        "mini_tracking_M05": {
+          "command": [
+            "/home/minglei/Desktop/CAR/perception_lab/envs/vision/bin/python",
+            "tools/track_mini.py",
+            "--detections",
+            "/home/minglei/Desktop/CAR/perception_lab/runs/20260923T043110_d6ae8066/M05/mini_scene/predictions.json",
+            "--out",
+            "{out}"
+          ],
+          "inputs": [
+            "/home/minglei/Desktop/CAR/perception_lab/runs/20260923T043110_d6ae8066/M05/mini_scene/predictions.json",
+            "manifests/frame_packets.json"
+          ],
+          "code_roots": [
+            "third_party/CenterPoint/tools/nusc_tracking"
+          ],
+          "depends": [
+            "M05:mini_scene"
+          ],
+          "artifacts": [
+            "{out}/native_tracking.json",
+            "{out}/predictions.json",
+            "{out}/frame_index.json",
+            "{out}/summary.json",
+            "{out}/mini_tracking_M05.mp4"
+          ]
+        }
+      }
+    },
+    "M12": {
+      "model": "Deployment",
+      "jobs": {
+        "onnx_diagnostic_M01": {
+          "command": [
+            "/home/minglei/Desktop/CAR/perception_lab/envs/vision/bin/python",
+            "tools/export_yolo.py",
+            "--out",
+            "{out}"
+          ],
+          "inputs": [
+            "data/bus.jpg",
+            "checkpoints/yolov8s.pt"
+          ],
+          "artifacts": [
+            "{out}/yolov8s.onnx",
+            "{out}/numerical_check.json",
+            "{out}/numerical_outputs.npz"
+          ]
+        },
+        "onnx_gpu_M01": {
+          "phase": "deploy",
+          "blocked_reason": "Complete backend integration/full-dataset regression not yet implemented or run; TensorRT engine not built. See diagnostic substeps separately."
+        },
+        "tensorrt_fp16_M01": {
+          "phase": "deploy",
+          "blocked_reason": "Complete backend integration/full-dataset regression not yet implemented or run; TensorRT engine not built. See diagnostic substeps separately."
+        },
+        "export_validation_M01": {
+          "phase": "deploy",
+          "blocked_reason": "Complete backend integration/full-dataset regression not yet implemented or run; TensorRT engine not built. See diagnostic substeps separately."
+        },
+        "onnx_gpu_M02": {
+          "phase": "deploy",
+          "blocked_reason": "Complete backend integration/full-dataset regression not yet implemented or run; TensorRT engine not built. See diagnostic substeps separately."
+        },
+        "tensorrt_fp16_M02": {
+          "phase": "deploy",
+          "blocked_reason": "Complete backend integration/full-dataset regression not yet implemented or run; TensorRT engine not built. See diagnostic substeps separately."
+        },
+        "export_validation_M02": {
+          "phase": "deploy",
+          "blocked_reason": "Complete backend integration/full-dataset regression not yet implemented or run; TensorRT engine not built. See diagnostic substeps separately."
+        },
+        "onnx_gpu_M03": {
+          "phase": "deploy",
+          "blocked_reason": "Complete backend integration/full-dataset regression not yet implemented or run; TensorRT engine not built. See diagnostic substeps separately."
+        },
+        "tensorrt_fp16_M03": {
+          "phase": "deploy",
+          "blocked_reason": "Complete backend integration/full-dataset regression not yet implemented or run; TensorRT engine not built. See diagnostic substeps separately."
+        },
+        "export_validation_M03": {
+          "phase": "deploy",
+          "blocked_reason": "Complete backend integration/full-dataset regression not yet implemented or run; TensorRT engine not built. See diagnostic substeps separately."
+        },
+        "mini_onnx_M01": {
+          "command": [
+            "/home/minglei/Desktop/CAR/perception_lab/envs/vision/bin/python",
+            "tools/export_yolo.py",
+            "--out",
+            "{out}",
+            "--image",
+            "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402927612460.jpg"
+          ],
+          "inputs": [
+            "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402927612460.jpg",
+            "checkpoints/yolov8s.pt"
+          ],
+          "artifacts": [
+            "{out}/yolov8s.onnx",
+            "{out}/numerical_check.json",
+            "{out}/numerical_outputs.npz"
+          ]
+        }
+      }
+    },
+    "M13": {
+      "model": "CenterPoint finetuning",
+      "jobs": {
+        "train_A": {
+          "phase": "experiment",
+          "blocked_reason": "80 official train scenes and full val baseline unavailable; no training or optimizer updates performed"
+        },
+        "train_B": {
+          "phase": "experiment",
+          "blocked_reason": "80 official train scenes and full val baseline unavailable; no training or optimizer updates performed"
+        },
+        "evaluation": {
+          "phase": "experiment",
+          "blocked_reason": "80 official train scenes and full val baseline unavailable; no training or optimizer updates performed"
+        }
+      }
+    },
+    "M14": {
+      "model": "Report",
+      "jobs": {
+        "diagnostic_cases": {
+          "command": [
+            "/home/minglei/Desktop/CAR/perception_lab/envs/vision/bin/python",
+            "tools/coco_bad_cases.py",
+            "--predictions",
+            "/home/minglei/Desktop/CAR/perception_lab/runs/20260923T040718_a681dfad/M01/evaluation/native/predictions.json",
+            "--out",
+            "{out}"
+          ],
+          "inputs": [
+            "/home/minglei/Desktop/CAR/perception_lab/runs/20260923T040718_a681dfad/M01/evaluation/native/predictions.json",
+            "data/coco/annotations/instances_val2017.json"
+          ],
+          "artifacts": [
+            "{out}/cases.json"
+          ],
+          "depends": [
+            "M01:evaluation"
+          ]
+        },
+        "report": {
+          "command": [
+            "python3",
+            "tools/report.py",
+            "--out",
+            "{out}"
+          ],
+          "inputs": [
+            "configs/locked/repositories.json",
+            "checkpoints/manifest.json",
+            "results/status.json"
+          ],
+          "artifacts": [
+            "{out}/report_manifest.json",
+            "{out}/report_source.md",
+            "{out}/report_source.html"
+          ]
+        },
+        "unified_replay": {
+          "phase": "baseline",
+          "blocked_reason": "Required official two-val-scene predictions across all modules absent; mini model-specific videos are separate diagnostics"
+        }
+      }
+    }
+  },
+  "active_scope": {
+    "purpose": "理解流程；用户于2026-09-23确认mini教学闭环",
+    "dataset": "nuScenes v1.0-mini",
+    "required": [
+      "M00:smoke",
+      "M01:smoke",
+      "M02:smoke",
+      "M03:smoke",
+      "M04:history_smoke",
+      "M05:mini_scene",
+      "M11:mini_tracking_M05",
+      "M12:mini_onnx_M01"
+    ],
+    "extensions": [
+      "M06",
+      "M07",
+      "M08",
+      "M09",
+      "M10",
+      "TensorRT",
+      "training"
+    ],
+    "formal_benchmarks_required": false
+  }
+}

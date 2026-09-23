@@ -1,0 +1,15 @@
+diff --git a/mmdet3d/datasets/transforms/loading.py b/mmdet3d/datasets/transforms/loading.py
+index 383c445..80b0b9a 100644
+--- a/mmdet3d/datasets/transforms/loading.py
++++ b/mmdet3d/datasets/transforms/loading.py
+@@ -442,7 +442,9 @@ class LoadPointsFromMultiSweeps(BaseTransform):
+                 lidar2sensor = np.array(sweep['lidar_points']['lidar2sensor'])
+                 points_sweep[:, :
+                              3] = points_sweep[:, :3] @ lidar2sensor[:3, :3]
+-                points_sweep[:, :3] -= lidar2sensor[:3, 3]
++                # Invert the complete rigid transform, including translation.
++                points_sweep[:, :3] -= (
++                    lidar2sensor[:3, 3] @ lidar2sensor[:3, :3])
+                 points_sweep[:, 4] = ts - sweep_ts
+                 points_sweep = points.new_point(points_sweep)
+                 sweep_points_list.append(points_sweep)

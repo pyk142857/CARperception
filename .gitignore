@@ -1,0 +1,31 @@
+# Local datasets, weights, environments and upstream checkouts
+perception_lab/data/
+perception_lab/checkpoints/*
+!perception_lab/checkpoints/manifest.json
+perception_lab/envs/*
+!perception_lab/envs/*_freeze.txt
+perception_lab/third_party/
+# Machine-specific execution evidence; regenerate locally
+perception_lab/runs/
+perception_lab/logs/
+perception_lab/results/
+perception_lab/manifests/
+perception_lab/reports/index.html
+perception_lab/reports/mini_learning.html
+perception_lab/reports/final_report.md
+# Python / editor / credentials
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+
+# Local symlinks into excluded run evidence
+perception_lab/outputs/geometry/six_camera_projection.jpg
+perception_lab/outputs/mini/centerpoint_bev.mp4
+perception_lab/outputs/tracking/mini_M05.mp4
