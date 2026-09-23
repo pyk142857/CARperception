@@ -28,6 +28,37 @@ flowchart LR
 
 [下载教学回放视频](perception_lab/outputs/replay/mini_learning.mp4) · [学习顺序与逐步命令](perception_lab/LEARNING_GUIDE.md) · [当前工作状态](perception_lab/TASK_STATE.md)
 
+## 各模块可视化入口
+
+这些模块有可复用的可视化工具，但界面形态不同：**在线交互**可在浏览器操作，**本地 Web / 桌面**需安装并启动，**脚本 / 教程**需先准备模型和数据。下列链接优先选取作者仓库或官方文档；链接已核对，外部界面未逐个部署测试。最新文档可能使用新版模型或依赖，运行本项目时以锁定版本为准。
+
+### 当前教学模块
+
+| 模块 | 可视化链接 | 界面形态与用途 | 本项目接入情况 |
+|---|---|---|---|
+| M00 数据、标定与投影 | [nuScenes 官方可视化教程](https://www.nuscenes.org/tutorials/nuscenes_tutorial.html) | 本地 Notebook / 绘图窗口；`render_sample`、`render_sample_data`、`render_scene` 查看相机、点云、雷达、框及连续场景 | 已生成六相机投影与 BEV 图；未另建交互窗口 |
+| M01 YOLOv8s 二维检测 | [官方预测结果可视化](https://docs.ultralytics.com/modes/predict)；[官方 Streamlit 界面教程](https://docs.ultralytics.com/guides/streamlit-live-inference) | 本地图片 / 视频窗口；Streamlit 可启动本地 Web 界面。文档当前以新版 YOLO 举例，需选择兼容的 YOLOv8s 权重 | 已生成检测叠加图；Streamlit 尚未接入 |
+| M02 SegFormer 语义分割 | [作者图像 Demo](https://github.com/NVlabs/SegFormer#demo)；[MMSegmentation 可视化文档](https://mmsegmentation.readthedocs.io/en/latest/user_guides/visualization.html) | 本地脚本 / 绘图窗口；查看像素类别、原图与分割叠加图，需匹配 Cityscapes 类别与调色板 | 已生成分割图与类别数组 |
+| M03 Depth Anything V2 深度 | [作者在线交互演示](https://huggingface.co/spaces/depth-anything/Depth-Anything-V2)；[本地 Gradio](https://github.com/DepthAnything/Depth-Anything-V2#gradio-demo)；[Metric Depth 分支](https://github.com/DepthAnything/Depth-Anything-V2/tree/main/metric_depth) | 在线上传图片 / 本地 Web。通用演示展示相对深度；本项目用 Metric Depth 权重，不能直接把通用演示颜色当作米制距离 | 已生成米制深度数组和深度图；未部署 Gradio |
+| M04 PointPillars | [MMDetection3D 3D 可视化](https://mmdetection3d.readthedocs.io/en/latest/user_guides/visualization.html) | 本地 Open3D 交互窗口 / 离线图；旋转缩放点云、查看三维框，通常需要图形显示环境 | 已生成 BEV 框；Open3D 交互窗口尚未接入 |
+| M05 CenterPoint | [MMDetection3D 3D 可视化](https://mmdetection3d.readthedocs.io/en/latest/user_guides/visualization.html)；[作者 Demo 脚本](https://github.com/tianweiy/CenterPoint/blob/master/tools/demo.py) | 本地 3D 查看器 / Demo；本项目使用 MMDetection3D 实现，优先参考前一个入口 | 已完成连续 39 帧检测与 BEV 回放 |
+| M11 跨帧跟踪 | [nuScenes 跟踪渲染器源码](https://github.com/nutonomy/nuscenes-devkit/blob/master/python-sdk/nuscenes/eval/tracking/render.py)；[本项目跟踪可视化](perception_lab/tools/track_mini.py) | 本地渲染脚本；显示框、ID 与轨迹。官方渲染器需接入其评估数据结构，并非独立 Web 应用 | 已接入作者跟踪器并生成 39 帧轨迹视频 |
+| M12 ONNX 导出与部署 | [Netron 浏览器界面](https://netron.app/)；[Netron 本地安装](https://github.com/lutzroeder/netron#install) | 浏览器 / 桌面模型结构查看器；打开导出的 `.onnx` 查看算子、张量形状和连接。数值一致性与速度仍需单独测试 | ONNX 导出与数值校验已完成；Netron 可自行打开模型，未嵌入项目 |
+| M14 教学报告与回放 | [本项目同步回放视频](perception_lab/outputs/replay/mini_learning.mp4)；[教学页面生成器](perception_lab/tools/mini_learning.py)；[运行说明](perception_lab/LEARNING_GUIDE.md) | MP4 播放器 / 本地 HTML；同帧查看前视相机、检测与跟踪，并查看各模块静态结果 | 已生成 39 帧同步视频和本地 HTML；未托管为在线应用 |
+
+### 扩展模块（尚未接入本教学闭环）
+
+| 模块 | 官方可视化链接 | 界面形态与用途 |
+|---|---|---|
+| M06 BEVFormer | [作者可视化脚本](https://github.com/fundamentalvision/BEVFormer/blob/master/tools/analysis_tools/visual.py) | 本地脚本；将预测框绘制到多相机和 BEV，需要配置数据路径与结果文件 |
+| M07 BEVFusion | [作者可视化脚本](https://github.com/mit-han-lab/bevfusion/blob/main/tools/visualize.py) | 本地脚本；导出相机、点云及预测 / GT 可视化，需准备配置、权重和数据 |
+| M08 CenterFusion | [作者 Demo 脚本](https://github.com/mrnabati/CenterFusion/blob/master/src/demo.py)；[项目说明](https://github.com/mrnabati/CenterFusion) | 本地 Demo / 调试窗口；相机与雷达融合必须按作者数据管线准备雷达输入，普通图片 Demo 不代表雷达融合已运行 |
+| M09 MapTR | [作者可视化与视频生成教程](https://github.com/hustvl/MapTR/blob/main/docs/visualization.md) | 本地脚本；`vis_pred.py` 显示矢量地图预测，`generate_video.py` 合并输入、输出及 GT |
+| M10 SurroundOcc | [作者占用可视化教程](https://github.com/weiyithu/SurroundOcc/blob/main/docs/run.md) | 本地 MeshLab / Mayavi；查看 `.ply` 点云或 `.npy` 占用预测，需先获得模型推理结果 |
+| M13 微调训练 | [MMEngine 可视化与 TensorBoard 后端](https://mmengine.readthedocs.io/en/latest/advanced_tutorials/visualization.html) | 本地 Web；配置 `TensorboardVisBackend` 后查看 loss、学习率和评估曲线。本项目尚未训练，无对应训练面板数据 |
+
+建议先看本项目同步视频，再用深度在线 Demo 体验图像到预测结果，用 Netron 理解模型结构；想交互旋转点云时，再配置 MMDetection3D / Open3D。
+
 ## 仓库内容
 
 | 路径 | 内容 |

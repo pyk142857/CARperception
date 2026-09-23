@@ -6,6 +6,8 @@
 
 已获得：COCO2017完整5000图YOLOv8s官方评估；nuScenes mini真实六相机几何；YOLO/SegFormer/Metric Depth单帧六相机推理；PointPillars/CenterPoint首帧及带历史sweep帧的原生GPU推理；YOLO单图PyTorch GPU→ORT GPU数值核对；8个COCO漏检诊断案例。最新连续场景和跟踪状态以results/status.json为准。
 
+各模块的官方 Demo、在线 / 本地可视化入口与接入状态见 [项目首页可视化索引](../README.md#各模块可视化入口)。
+
 ## 查看结果
 
 - reports/index.html：本地打开的总览。
