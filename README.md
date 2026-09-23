@@ -59,6 +59,37 @@ flowchart LR
 
 建议先看本项目同步视频，再用深度在线 Demo 体验图像到预测结果，用 Netron 理解模型结构；想交互旋转点云时，再配置 MMDetection3D / Open3D。
 
+## 多传感器数据查看与企业工程工具
+
+工程中通常按工作任务选择查看工具：算法研发关注预测与中间结果，系统联调关注时间同步、坐标系和日志，数据团队关注样本筛选与标注。下面是可用于这些工作的代表性工具，不代表所有企业采用同一套软件。
+
+| 工具与官方入口 | 界面形式 | 主要用途 | nuScenes 接入方式 |
+|---|---|---|---|
+| [Rerun：官方 nuScenes 示例](https://github.com/rerun-io/rerun/blob/main/examples/python/nuscenes_dataset/README.md) | 桌面 / Web 查看器 | 在统一时间轴查看多相机、点云、三维框及算法中间结果 | 从官方 nuScenes 加载示例开始，再将本项目模型输出写入对应时间与坐标系 |
+| [Foxglove](https://docs.foxglove.dev/docs) | 浏览器 / 桌面 | 多传感器同步回放、三维场景、坐标变换、曲线和日志，适合系统联调 | 将原始文件和预测转换为支持的消息及 MCAP / ROS Bag，配置图像、3D 和曲线面板；参考 [多模态数据转 MCAP 示例](https://foxglove.dev/blog/working-with-scenes-and-pointclouds) |
+| [RViz / RViz2：Marker 文档](https://docs.ros.org/en/rolling/Tutorials/Intermediate/RViz/Marker-Display-types/Marker-Display-types.html) | 桌面 | ROS 系统中的点云、坐标系、目标框与轨迹调试 | 将数据发布为图像、PointCloud2、Marker 等 ROS 消息，通过 TF 提供坐标关系，再实时显示或回放录制数据 |
+| [FiftyOne：分组数据集](https://docs.voxel51.com/user_guide/groups.html) | 浏览器页面 | 按样本浏览多相机与点云、检查标签、筛选问题数据 | 构建 grouped dataset，导入相机 / 点云媒体和预测标签；按其支持格式做转换 |
+| [CVAT：3D 标注](https://docs.cvat.ai/docs/manual/basics/3d-object-annotation/) | 浏览器页面 | 人工标注、修正三维框和审核数据 | 转换为支持的点云及标注格式，创建标注任务；更适合标注工作，不作为本项目的主要算法回放入口 |
+
+### 本项目建议：先接 Rerun，再按需要接 Foxglove
+
+**当前目标是用 mini 理解感知流程，建议优先采用 Rerun。** 官方已有 nuScenes 示例，可以先查看原始多传感器与 GT，再接入现有检测、深度和跟踪结果。若后续学习重点转向车端日志、消息流与系统联调，再采用 Foxglove + MCAP；已有 ROS 系统时可直接考虑 RViz2。
+
+建议的交互布局如下，属于后续接入设计：
+
+```text
+┌──────────────────────┬──────────────────────┐
+│ 六路相机：原图 / 叠加图 │ 可旋转的点云与三维框    │
+│ 检测、分割、深度图层    │ GT、预测框、目标轨迹    │
+├──────────────────────┴──────────────────────┤
+│ 时间轴：播放、暂停、拖动、逐帧；图层与目标属性   │
+└─────────────────────────────────────────────┘
+```
+
+接入时需保留 `sample_token`、传感器时间戳、相机内外参和自车位姿，并明确每份预测的坐标系。mini 已提供标定信息，但各传感器原始数据仍需正确变换到共同参考系；查看器不会自动修复错误的标定或时间关联。可参考 [nuScenes 官方数据与标定教程](https://www.nuscenes.org/tutorials/nuscenes_tutorial.html)。
+
+**当前实现仍是本地 HTML + 同步视频，尚未接入 Rerun、Foxglove、RViz2、FiftyOne 或 CVAT。** 已完成的 39 帧检测 / 跟踪结果可以作为后续接入的数据源；图像检测、分割和深度目前只运行了首个时刻六路相机，接入查看器不会自动产生其余帧的模型预测。当前页面不支持交互旋转点云、切换三维图层或检查目标属性。
+
 ## 仓库内容
 
 | 路径 | 内容 |
