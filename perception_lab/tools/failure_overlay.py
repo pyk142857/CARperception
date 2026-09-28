@@ -44,25 +44,36 @@ def log_failures(rr,rows,detections,tracks,gt_by_instance,points,packet,pose,fra
           'Gap recovery with same ID is not highlighted as a failure. Camera projection has no object motion / occlusion correction.']
     for module in ['detection','tracking']:
         text.append(f"\n**{module}**: "+', '.join(f'{SHORT[k]}={counts[(module,k)]}' for k in COLORS))
+    bev_groups=defaultdict(list);camera_groups=defaultdict(list)
     for case in rows:
         kind=case['kind']
         if kind not in COLORS:continue
         box=resolve_case(case,detections,tracks,gt_by_instance);color=COLORS[kind]
         label=SHORT[kind]+' '+case['case_id'].replace('case_','')
         if kind in ['id_switch','gap_id_change']:label+=' '+case['previous_tracking_id']+'->'+case['tracking_id']
-        path='failures/'+case['module']+'/'+kind+'/'+case['case_id']
-        rr.log(path,rr.LineStrips2D([bev_outline(box)],colors=color,radii=rr.Radius.ui_points(2),labels=[label],show_labels=True),
-               rr.AnyValues(case_id=case['case_id'],kind=kind,class_name=case['class_name'],sample_token=case['sample_token']))
+        bev_groups[(case['module'],kind)].append((box,label,case))
         if case['module']=='detection':
             for camera,entry in packet['sensors'].items():
                 if not camera.startswith('CAM_'):continue
                 transform=np.linalg.inv(pose)@np.array(entry['T_ego_to_global'])@np.array(entry['T_sensor_to_ego'])
                 segments=camera_box_segments(box,transform,entry['K'],entry['width'],entry['height'])
                 if segments:
-                    path='ego/cameras/'+camera+'/image/failures/'+kind+'/'+case['case_id']
-                    rr.log(path,rr.LineStrips2D(segments,colors=color,radii=rr.Radius.ui_points(2),draw_order=30))
                     xy=np.asarray(segments).reshape(-1,2);anchor=xy[np.argmin(xy[:,1])]
-                    rr.log(path+'/label',rr.Points2D([anchor],colors=color,labels=[label],show_labels=True,radii=rr.Radius.ui_points(1),draw_order=31))
+                    camera_groups[(camera,kind)].append((segments,anchor,label,case['case_id']))
         text.append(f"\n{case['case_id']} | {case['module']} | {kind} | {case['class_name']}"+(f" | {case['previous_tracking_id']} -> {case['tracking_id']}" if kind in ['id_switch','gap_id_change'] else ''))
+    for (module,kind),items in bev_groups.items():
+        rr.log('failures/'+module+'/'+kind,
+               rr.LineStrips2D([bev_outline(item[0]) for item in items],colors=COLORS[kind],
+                              radii=rr.Radius.ui_points(2),labels=[item[1] for item in items],show_labels=True),
+               rr.AnyValues(case_id=[item[2]['case_id'] for item in items],
+                            class_name=[item[2]['class_name'] for item in items],
+                            sample_token=[item[2]['sample_token'] for item in items]))
+    for (camera,kind),items in camera_groups.items():
+        path='ego/cameras/'+camera+'/image/failures/'+kind
+        rr.log(path+'/boxes',rr.LineStrips2D([segment for item in items for segment in item[0]],
+               colors=COLORS[kind],radii=rr.Radius.ui_points(2),draw_order=30))
+        rr.log(path+'/labels',rr.Points2D([item[1] for item in items],colors=COLORS[kind],
+               labels=[item[2] for item in items],show_labels=True,radii=rr.Radius.ui_points(1),draw_order=31),
+               rr.AnyValues(case_id=[item[3] for item in items]))
     rr.log('failure_summary',rr.TextDocument('\n'.join(text),media_type='text/markdown'))
     return {module:{kind:counts[(module,kind)] for kind in COLORS} for module in ['detection','tracking']}

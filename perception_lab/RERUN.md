@@ -92,3 +92,7 @@ BEV 车道线面板位于左上方，占左侧主要显示区域。预测线使�
 ## 失败案例图层
 
 已加入检测与跟踪失败 BEV 页签、相机检测失败投影及逐帧案例统计。颜色、时间轴定位、数据校验与开关见 [失败案例回放报告](reports/rerun_failures/report.md)。默认案例阈值 0.25；修改 `--score` 时须同步报告口径或加 `--no-failures`。
+
+## 嵌入式案例选择与自动跳转
+
+启动 `envs/rerun/bin/python tools/start_case_browser.py`，访问 http://127.0.0.1:9092/。筛选并点击案例后自动暂停并定位 frame，联动更新 BEV 和六路图像。完整记录就绪前暂不允许跳转，防止定位到未加载数据。见 [操作与复现](reports/embedded_case_browser/report.md)。

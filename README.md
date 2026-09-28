@@ -174,6 +174,12 @@ envs/mmdet3d/bin/python tools/evaluate_mini.py --score 0.25 --distance 2.0
 
 [操作、复现与验证报告](perception_lab/reports/rerun_failures/report.md)。默认加载失败案例；另设显示阈值时需使用相同阈值报告，或加 `--no-failures` 关闭失败层。
 
+### 可点击的嵌入式案例浏览器
+
+运行 `cd perception_lab && envs/rerun/bin/python tools/start_case_browser.py`，打开 [本机案例浏览器](http://127.0.0.1:9092/)。按分支、失败类型、目标类别或编号筛选，点击案例后自动暂停并跳到对应 frame，BEV 与六路图像同步更新；支持上一条／下一条及 `#case_XXXXX` 定位链接。等待完整记录加载后启用跳转。
+
+[操作与复现报告](perception_lab/reports/embedded_case_browser/report.md)。复用 Rerun 0.23.4 和已有录制文件，无需模型重推理；原 9090 查看器仍保留。
+
 ### 本地启动 Rerun
 
 本机已安装独立环境并生成记录。启动与停止命令：

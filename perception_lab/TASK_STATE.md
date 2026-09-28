@@ -54,3 +54,7 @@ results/metrics.csv、results/status.json、results/mini_learning.json 与 repor
 ## Rerun 失败案例（2026-09-28）
 
 固定阈值诊断已加入检测/跟踪独立 BEV 页签、相机检测失败投影与逐帧案例清单；39 帧计数对齐，37 测试通过。原官方 AP 与 M11 结果不变。见 [报告](reports/rerun_failures/report.md)。
+
+## 嵌入式案例浏览（2026-09-28）
+
+新增本地 9092 案例浏览器，固定 Rerun WebViewer 0.23.4，提供筛选、详情、上一条/下一条和自动暂停跳帧，复用已有录制与案例。见 [报告](reports/embedded_case_browser/report.md)。

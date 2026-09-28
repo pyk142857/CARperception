@@ -1,0 +1,36 @@
+{
+  "selected_case": {
+    "frame": 2,
+    "timeline": "frame",
+    "playing": false,
+    "selection": "case_01217 · 连续帧 ID 切换 · pedestrian · 已定位帧 2（1.050 秒）· 已暂停",
+    "count": "42 条匹配案例 · 点击跳转并暂停"
+  },
+  "errors": [],
+  "checks": [
+    "deep_link",
+    "filter",
+    "seek_frame_2_paused",
+    "next",
+    "previous",
+    "empty",
+    "seek_back_frame_0",
+    "narrow_viewport"
+  ],
+  "python_tests": 37,
+  "javascript_tests": "passed",
+  "rrd_verify": "passed",
+  "frames": 39,
+  "case_events": 1910,
+  "approx_load_seconds": 180,
+  "recording_sha256": "ef5ac8ac13e91200efeacf9b601c69ee2a89faa7e079263dad658fcbbb2c4a91",
+  "cases_sha256": "33f6bdcb4257fcf240795de2bc4268ea066acf9e73ab5f36b32953760d2e262f",
+  "source_sha256": {
+    "perception_lab/tools/failure_overlay.py": "afd5d1935295d3d4c54271ec690135e9ea15d116c4ea4723ec53bdec83f0511e",
+    "perception_lab/tools/start_case_browser.py": "0951e5ae996e5c2edbad25235a8a83766a1b29dfc0fb1c2810f7de8f9bb87495",
+    "perception_lab/web/case_browser/case_logic.mjs": "657ba8c3ffe650fd018953ab5d4f6952edaf95afad011900a828c1aa11ca67d0",
+    "perception_lab/web/case_browser/index.html": "6216c7666cb35e578aa0c2a4dfef84bd552b87b7ca831b3f2d921a34053b49bb",
+    "perception_lab/web/case_browser/style.css": "e0f61d5c652d2708b2e0f3a97e1721e3ce751b8e88f732d9f2748ead00cd4d71",
+    "perception_lab/web/case_browser/app.js": "811205153eb7db54521f229adc2f225cf68deeef194deb0306f985e299ee15f8"
+  }
+}

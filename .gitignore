@@ -40,3 +40,6 @@ perception_lab/outputs/maptr/
 
 # Local per-point segmentation predictions
 perception_lab/outputs/lidarseg/
+
+# Downloaded Rerun browser assets and local service state
+perception_lab/outputs/case_browser/
