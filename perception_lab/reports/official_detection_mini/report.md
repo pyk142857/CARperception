@@ -89,3 +89,7 @@ envs/nuscenes_eval/bin/python -m nuscenes.eval.detection.evaluate \
 官方资料：[评估代码](https://github.com/nutonomy/nuscenes-devkit/blob/master/python-sdk/nuscenes/eval/detection/evaluate.py)、[检测协议](https://github.com/nutonomy/nuscenes-devkit/blob/master/python-sdk/nuscenes/eval/detection/README.md)。实际执行源码以锁定 wheel 及校验哈希为准。
 
 发布日志仅规范化进度条换行和行尾空白，未改动数值；官方 metrics JSON 原样保存。
+
+## 发布记录
+
+本次实现、官方原始输出和验收证据提交：[`031e2058771a071540f74c4e643b8e9c819a8be3`](https://github.com/pyk142857/CARperception/commit/031e2058771a071540f74c4e643b8e9c819a8be3)。后续文档提交仅补充此发布引用。
