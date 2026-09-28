@@ -162,6 +162,12 @@ envs/mmdet3d/bin/python tools/evaluate_mini.py --score 0.25 --distance 2.0
 
 该脚本使用已有预测，不重新运行模型。检测采用分数排序贪心匹配；跟踪优先保留有效的前帧配对，再进行门限内匈牙利匹配。精确率、召回率与身份事件都依赖上述口径。**这是单场景教学诊断，不是官方 mAP、NDS、AMOTA 或独立测试成绩。** HTML 需本地打开，GitHub 不托管该页面；改用其他参数重新运行后，以生成报告为准。
 
+### CenterPoint 官方代码检测评估
+
+已用独立环境 `nuscenes-devkit==1.2.0` 的官方 `DetectionEval`、默认配置，评估 scene-0061 完整 39 帧：**mAP 0.699071，NDS 0.610700**。复用 8,399 个真实预测框，未新增 0.25 截断；40 项 AP 与官方 PR 曲线已复核。空属性导致 mAAE=1.0，bus/trailer 在该场景无有效真值，结果属于 **mini 单场景诊断，不是官方全 val 榜单成绩**。
+
+[执行报告、口径及复现](perception_lab/reports/official_detection_mini/report.md) · [官方指标 JSON](perception_lab/reports/official_detection_mini/metrics/metrics_summary.json) · [完整 PR 数据](perception_lab/reports/official_detection_mini/metrics/metrics_details.json)。原固定阈值诊断和 M11 跟踪结果保持不变；完整 trainval val 评估为 `blocked_full_val`，缺全量数据及全 val 实测预测。
+
 ### 本地启动 Rerun
 
 本机已安装独立环境并生成记录。启动与停止命令：

@@ -1,0 +1,69 @@
+======
+Loading NuScenes tables for version v1.0-mini...
+Loading nuScenes-lidarseg...
+32 category,
+8 attribute,
+4 visibility,
+911 instance,
+12 sensor,
+120 calibrated_sensor,
+31206 ego_pose,
+8 log,
+10 scene,
+404 sample,
+31206 sample_data,
+18538 sample_annotation,
+4 map,
+404 lidarseg,
+Done loading in 0.263 seconds.
+======
+Reverse indexing ...
+Done reverse indexing in 0.0 seconds.
+======
+Initializing nuScenes detection evaluation
+Loaded results from runs/20260923T043110_d6ae8066/M05/mini_scene/nuscenes_detection.json. Found detections for 39 samples.
+
+  0%|          | 0/39 [00:00<?, ?it/s]
+ 87%|████████▋ | 34/39 [00:00<00:00, 339.65it/s]
+100%|██████████| 39/39 [00:00<00:00, 350.78it/s]
+Loaded ground truth annotations for 39 samples.
+Filtering predictions
+=> Original number of boxes: 8399
+=> After distance based filtering: 5318
+=> After LIDAR and RADAR points based filtering: 5318
+=> After bike rack filtering: 5318
+Filtering ground truth annotations
+=> Original number of boxes: 4664
+=> After distance based filtering: 2770
+=> After LIDAR and RADAR points based filtering: 2310
+=> After bike rack filtering: 2310
+Rendering sample token 4711bcd34644420da8bc77163431888e
+Rendering sample token b73152cab88f49d9ba195da81fde1809
+Rendering sample token e0845f5322254dafadbbed75aaa07969
+Rendering sample token c235638ed66145988d17f9d0601923f2
+Rendering sample token 023c4df2d451409881d8e6ea82f14704
+Accumulating metric data...
+Calculating metrics...
+Rendering PR and TP curves
+Saving metrics to: reports/official_detection_mini/metrics
+mAP: 0.6991
+mATE: 0.3302
+mASE: 0.3484
+mAOE: 0.3695
+mAVE: 0.3403
+mAAE: 1.0000
+NDS: 0.6107
+Eval time: 0.7s
+
+Per-class results:
+Object Class        	AP    	ATE   	ASE   	AOE   	AVE   	AAE
+car                 	0.919 	0.137 	0.110 	0.046 	0.332 	1.000
+truck               	0.947 	0.146 	0.099 	0.024 	0.119 	1.000
+bus                 	0.000 	1.000 	1.000 	1.000 	1.000 	1.000
+trailer             	0.000 	1.000 	1.000 	1.000 	1.000 	1.000
+construction_vehicle	0.862 	0.138 	0.140 	0.185 	0.000 	1.000
+pedestrian          	0.925 	0.155 	0.283 	0.473 	0.188 	1.000
+motorcycle          	0.886 	0.145 	0.186 	0.086 	0.025 	1.000
+bicycle             	0.647 	0.278 	0.183 	0.466 	0.059 	1.000
+traffic_cone        	0.886 	0.106 	0.294 	nan   	nan   	nan
+barrier             	0.919 	0.198 	0.189 	0.044 	nan   	nan

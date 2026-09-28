@@ -3556,6 +3556,18 @@
         "log": "/home/minglei/Desktop/CAR/perception_lab/runs/20260923T042552_955c73a9/M05/smoke/command.log",
         "finished_at": "2026-09-23T04:26:04.196288+00:00",
         "scope": "mini_single_frame_smoke"
+      },
+      "official_detection_mini": {
+        "status": "passed",
+        "source": "measured",
+        "scope": "official_code_mini_scene_diagnostic",
+        "devkit_version": "1.2.0",
+        "eval_set": "mini_scene_0061",
+        "sample_count": 39,
+        "mean_ap": 0.6990711911666734,
+        "nd_score": 0.6107003233971964,
+        "report": "reports/official_detection_mini/report.md",
+        "full_val_status": "blocked_full_val"
       }
     },
     "M14": {

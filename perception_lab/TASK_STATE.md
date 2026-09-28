@@ -46,3 +46,7 @@
 已完成 BEV 旋转跟踪框、ID、最多 20 个历史显示位置的轨迹，以及六相机三维框投影；同 ID 跨视图固定配色。当前 39 帧诊断（score≥0.25，中心距离<2m）：检测 TP/FP/FN=2235/1020/75，跟踪=1177/579/39；连续帧 ID 切换 46 次、间隔后换 ID 38 次。报告与 10 张案例图见 [mini_evaluation/report.md](reports/mini_evaluation/report.md)，32 项测试通过，GT 过滤与官方 devkit 一致。该评估不是官方 mAP/NDS/AMOTA。
 
 results/metrics.csv、results/status.json、results/mini_learning.json 与 reports/final_report.md 改为随仓库发布；final_report 是 2026-09-23 历史快照，不代表最新功能状态。MapTR / LiDARSeg 摘要副本位于 reports/published_results/。后续实验按 AGENTS.md 上传结果、报告及 README 入口。
+
+## M05 官方代码 mini 检测评估（2026-09-28）
+
+独立 devkit 1.2.0 / DetectionEval / detection_cvpr_2019，mini_scene_0061 完整 39 帧通过。mAP=0.699071191，NDS=0.610700323，mAAE=1（空属性）；不是完整 val 成绩。报告见 [official_detection_mini/report.md](reports/official_detection_mini/report.md)。复用既有实测 8399 框，未重跑 GPU；35 项测试通过，40 项 AP 官方复核通过，旧诊断与 M11 未改。M05 原 full val evaluation 仍 pending；当前确切状态 blocked_full_val，缺完整 trainval 数据和覆盖全 val 的实测预测。

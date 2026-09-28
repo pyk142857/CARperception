@@ -1,0 +1,13 @@
+{
+  "status": "blocked_full_val",
+  "checked_roots": [
+    "/home/minglei/Desktop/CAR",
+    "/mnt",
+    "/media"
+  ],
+  "missing": [
+    "v1.0-trainval metadata and corresponding full val sensor files",
+    "measured CenterPoint predictions covering every official val sample"
+  ],
+  "continue_with": "Provide full trainval metadata, all val sample assets and measured standardized M05 predictions; use the same exporter --version v1.0-trainval --eval-set val, then official CLI with separate reports/official_detection_val output."
+}

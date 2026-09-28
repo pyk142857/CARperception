@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "frames": 39,
+  "exported_boxes": 8399,
+  "ap_entries_checked": 40,
+  "official_config_unchanged": true,
+  "official_python_files_match_wheel_RECORD": 130,
+  "devkit_version": "1.2.0",
+  "python": "3.10.13 (main, Sep 11 2023, 13:44:35) [GCC 11.2.0]",
+  "official_source_sha256": {
+    "nuscenes/eval/common/loaders.py": "9853cb47dd898c85e2032507e6bb419460f173e6b9a3e069675efe0839e72fe7",
+    "nuscenes/eval/detection/algo.py": "460e1691c1391e01fe7c6f4576add6054b29cc280687513a9f9737b7363f4f38",
+    "nuscenes/eval/detection/evaluate.py": "1547188122d60ce0bc8600cb27861b10f624e3d38dbfb08e5569ffebb6cbba6e",
+    "nuscenes/utils/splits.py": "eab6fa5e2536a2a85bd9451fb35771833e262b4b96319a6b26fee1dce8f4e2cd"
+  },
+  "metrics_summary_sha256": "2b63530ba21e2bad43f942efab228ddedd89c470252273b25983f9dcac4e8cb5",
+  "metrics_details_sha256": "aaffabba58e072125db0c3bb580f96c0331574e75192a5edaf25cad824f27dde",
+  "export_tool_sha256": "c2647b76cb4bda253d8ddab8a53296db1d180c98475a9de3c82d815e52fbc780",
+  "unit_tests": 35
+}

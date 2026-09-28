@@ -1,0 +1,52 @@
+{
+  "measured_artifact_hashes_verified": true,
+  "weight_sha256": "9061688e5f81adae87d28241143e2d33075f68908134264f0de8c901acf911d8",
+  "resolved_config_sha256": "5e198428f9ec1509bc7f9f5d8462b4f01e22255377f44ff34fc04bca65f26e8a",
+  "scene_metadata_coverage": 39,
+  "prediction_candidates": [
+    {
+      "path": "perception_lab/runs/20260923T042924_4d9aae03/M05/history_smoke/predictions.json",
+      "frames": 1
+    },
+    {
+      "path": "perception_lab/runs/20260923T042552_955c73a9/M05/smoke/predictions.json",
+      "frames": 1
+    },
+    {
+      "path": "perception_lab/runs/20260923T043110_d6ae8066/M05/mini_scene/predictions.json",
+      "frames": 39
+    }
+  ],
+  "full_val_status": "blocked_full_val",
+  "missing": [
+    "No v1.0-trainval metadata/raw dataset found under project, /mnt or /media",
+    "No full-val M05 measured predictions registered or found in project runs"
+  ],
+  "source_asset": {
+    "url": "https://download.openmmlab.com/mmdetection3d/v1.0.0_models/centerpoint/centerpoint_01voxel_second_secfpn_circlenms_4x8_cyclic_20e_nus/centerpoint_01voxel_second_secfpn_circlenms_4x8_cyclic_20e_nus_20220810_030004-9061688e.pth",
+    "config": "configs/centerpoint/centerpoint_voxel01_second_secfpn_head-circlenms_8xb4-cyclic-20e_nus-3d.py",
+    "file": "centerpoint.pth"
+  },
+  "original_inference": {
+    "score_threshold": 0.1,
+    "nms_type": "circle",
+    "min_radius": [
+      4,
+      12,
+      10,
+      1,
+      0.85,
+      0.175
+    ],
+    "post_max_size": 83,
+    "pre_max_size": 1000,
+    "post_center_limit_range": [
+      -61.2,
+      -61.2,
+      -10,
+      61.2,
+      61.2,
+      10
+    ]
+  }
+}
