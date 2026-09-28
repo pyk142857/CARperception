@@ -8,7 +8,7 @@
 
 各模块的官方 Demo、在线 / 本地可视化入口与接入状态见 [项目首页可视化索引](../README.md#各模块可视化入口)。
 
-统一查看多传感器与模型输出的工具选型见 [Rerun、Foxglove 等工程工具说明](../README.md#多传感器数据查看与企业工程工具)。目前仍使用 HTML + 视频，上述交互工具尚未接入。
+统一查看多传感器与模型输出的工具选型见 [Rerun、Foxglove 等工程工具说明](../README.md#多传感器数据查看与企业工程工具)。目前已接入 Rerun，支持六相机、点云、GT、检测、跟踪及 MapTR 矢量地图预测的同步交互查看，详见 [本地启动说明](RERUN.md)；HTML + 视频保留。
 
 ## 查看结果
 
@@ -61,3 +61,32 @@ python3 tools/run_pipeline.py --plan configs/execution_plan.yaml --module M11 --
 ```
 
 两段mini视频的39帧、2fps和首尾解码已验证；这两段视频不是全部任务的正式val联合回放。10个针对性测试见logs/tests_final.log；A/B/C验收失败记录在results/verification_*.json，缺失项未被伪装为通过。
+
+车道线功能已完成 scene-0061 的 39 帧推理，详见 [MapTR 教学与复现](MAPTR.md)。
+
+已补齐 LiDARSeg mini 标签，当前场景 39 帧点云语义分割与真值对照已接入 Rerun，见 [LIDARSEG.md](LIDARSEG.md)。
+
+## CenterPoint 跟踪的 Rerun 显示
+
+已完成当前场景 39 帧的多视图跟踪展示：BEV 显示旋转框、`#ID` 和最近最多 20 个显示位置的轨迹；六路相机显示三维框投影与 `#ID`；同一 ID 在 BEV、相机和三维视图中使用一致颜色。LiDARSeg 继续负责点云语义分割，跟踪独立使用 CenterPoint + PubTracker。
+
+```bash
+# 从 perception_lab 目录运行；使用已生成的检测和跟踪结果
+# 重新导出为可选操作，已有最新记录时只需启动并刷新页面
+envs/rerun/bin/python tools/rerun_mini.py --score 0.25
+envs/rerun/bin/python tools/start_rerun.py
+```
+
+[打开本机查看器](http://127.0.0.1:9090/?url=http%3A%2F%2F127.0.0.1%3A9091%2Fmini_scene.rrd&renderer=webgl)。启动后播放或拖动时间轴；密集标签可放大视图查看。相机投影未做动态目标曝光时间补偿和遮挡判断；ID 可能因漏检或关联错误改变。
+
+代码：[跟踪与坐标转换](tools/track_mini.py)、[投影与配色](tools/tracking_overlay.py)、[Rerun 导出](tools/rerun_mini.py)。图层路径和操作见 [RERUN.md](RERUN.md)。本次更新通过 28 项测试、39 帧记录格式校验和本机 Chrome 播放检查，未进行全量跟踪精度评估。
+
+## 检测与跟踪评估
+
+已完成 scene-0061 的 39 帧固定阈值诊断（score ≥0.25，同类别中心距离 <2 m）。检测 TP/FP/FN 为 2235/1020/75，跟踪为 1177/579/39；连续帧 ID 切换 46 次，间隔后换 ID 38 次。计数为逐帧目标次数，检测和跟踪的类别范围不同；未运行官方全量 mAP/NDS/AMOTA 评估。
+
+```bash
+envs/mmdet3d/bin/python tools/evaluate_mini.py --score 0.25 --distance 2.0
+```
+
+[完整报告与 10 张案例图](reports/mini_evaluation/report.md)、[本地 HTML 画廊](reports/mini_evaluation/index.html)、[全部案例](reports/mini_evaluation/cases.csv)、[逐帧统计](reports/mini_evaluation/frames.csv)、[核验结果](reports/mini_evaluation/verification.json)。案例的 frame 从 0 开始，与 Rerun 对应；完整过滤、匹配及身份事件定义以报告为准。脚本见 [evaluate_mini.py](tools/evaluate_mini.py)，匹配逻辑见 [evaluation_utils.py](tools/evaluation_utils.py)。

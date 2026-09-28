@@ -1,0 +1,5 @@
+# Isolated viewer environment, separate from inference environments.
+rerun-sdk==0.23.4
+numpy==2.2.6
+pillow==11.3.0
+pyquaternion==0.9.9

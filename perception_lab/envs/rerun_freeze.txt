@@ -1,0 +1,7 @@
+attrs==26.1.0
+numpy==2.2.6
+pillow==11.3.0
+pyarrow==25.0.1
+pyquaternion==0.9.9
+rerun-sdk==0.23.4
+typing_extensions==4.16.0

@@ -1,0 +1,22 @@
+# Isolated legacy environment; install the matching mmcv-full binary separately.
+torch==1.13.1
+torchvision==0.14.1
+numpy==1.23.5
+mmcv-full==1.7.1
+mmdet==2.28.2
+mmsegmentation==0.30.0
+opencv-python==4.8.1.78
+nuscenes-devkit==1.1.11
+lyft-dataset-sdk==0.0.8
+numba==0.57.1
+scikit-image==0.21.0
+scipy==1.10.1
+shapely==1.8.5.post1
+trimesh==3.23.5
+plyfile==1.0.3
+timm==0.6.13
+einops==0.6.1
+av2==0.2.1
+ninja
+
+ipython==8.18.1

@@ -12,7 +12,11 @@ flowchart LR
     E[mini 点云与历史 sweeps] --> F[坐标对齐]
     F --> G[PointPillars 三维检测]
     F --> H[CenterPoint 三维检测]
-    H --> I[跨帧跟踪 ID 与轨迹]
+    H --> I[PubTracker 跨帧 ID 与轨迹]
+    E --> L[Cylinder3D 点云语义分割]
+    A --> M[MapTR 矢量地图预测]
+    L --> K
+    M --> K
     B --> J[ONNX 导出与数值校验]
     A --> K[同步回放]
     H --> K
@@ -21,12 +25,29 @@ flowchart LR
 
 - 图像三分支：首个时刻六路相机的真实推理。
 - PointPillars：单帧及带历史 sweeps 的推理。
-- CenterPoint 与跟踪：`scene-0061` 连续 **39 帧**。
+- CenterPoint 与 PubTracker 跟踪：`scene-0061` 连续 **39 帧**；Rerun 的 BEV、三维及六路相机使用一致的目标 ID 配色。
+- Cylinder3D：当前场景 39 帧点云语义分割及官方真值对照；分割与目标跟踪并行，不做点云实例跟踪。
 - 导出：同一 mini 前视图的 PyTorch GPU / ONNX Runtime GPU 数值校验。
 - 回放：原始前视图、三维检测、跟踪轨迹三栏同步；**2 fps 是播放速率，不是推理性能**。
-- BEVFormer、BEVFusion、CenterFusion、MapTR、SurroundOcc、TensorRT 与训练作为扩展，尚未完成。
+- MapTR 已完成 mini 场景 39 帧六相机推理及 Rerun 车道分隔线 / 道路边界 / 人行横道展示，详见 [实现与复现说明](perception_lab/MAPTR.md)。
+- BEVFormer、BEVFusion、CenterFusion、SurroundOcc、TensorRT 与训练作为扩展，尚未完成。
 
 [下载教学回放视频](perception_lab/outputs/replay/mini_learning.mp4) · [学习顺序与逐步命令](perception_lab/LEARNING_GUIDE.md) · [当前工作状态](perception_lab/TASK_STATE.md)
+
+## 已公开的实验结果
+
+| 文件 | 内容与时间范围 |
+|---|---|
+| [原始指标表](perception_lab/results/metrics.csv) | 2026-09-23：YOLO COCO val 5000 图及单时刻六相机稀疏深度诊断 |
+| [历史总报告](perception_lab/reports/final_report.md) | 2026-09-23 快照；保留原全量 A/B/C 未达到的记录 |
+| [阶段状态 JSON](perception_lab/results/status.json) | 截至 2026-09-24 的模型运行状态及产物哈希；后续评估另见下方报告 |
+| [mini 教学验收 JSON](perception_lab/results/mini_learning.json) | 2026-09-23 教学阶段、run ID、39 帧 token 与视频记录 |
+| [最新检测与跟踪评估](perception_lab/reports/mini_evaluation/report.md) | 39 帧固定阈值诊断、逐类别指标、身份事件及失败案例 |
+| [MapTR 结果摘要](perception_lab/reports/published_results/maptr_summary.json) / [LiDARSeg 结果摘要](perception_lab/reports/published_results/lidarseg_summary.json) | 推理范围、配置和产物哈希；LiDARSeg 包含本场景诊断指标 |
+
+原始数值：YOLO COCO AP **0.449536**、AP50 **0.617743**；深度 AbsRel **0.460359**、RMSE **8.299268 m**、δ1 **0.287418**。深度只覆盖首个时刻六相机的 22,055 个有效 LiDAR 投影像素，未做尺度对齐，不是全量深度基准。不同数据协议的指标不能直接比较。
+
+上述结果现作为仓库文件发布。JSON 内的原机器绝对路径用于来源追溯，不是可在线下载链接；大型运行产物和数据仍需按复现说明生成。历史状态不替代 [最新工作状态](perception_lab/TASK_STATE.md)。
 
 ## 各模块可视化入口
 
@@ -42,7 +63,9 @@ flowchart LR
 | M03 Depth Anything V2 深度 | [作者在线交互演示](https://huggingface.co/spaces/depth-anything/Depth-Anything-V2)；[本地 Gradio](https://github.com/DepthAnything/Depth-Anything-V2#gradio-demo)；[Metric Depth 分支](https://github.com/DepthAnything/Depth-Anything-V2/tree/main/metric_depth) | 在线上传图片 / 本地 Web。通用演示展示相对深度；本项目用 Metric Depth 权重，不能直接把通用演示颜色当作米制距离 | 已生成米制深度数组和深度图；未部署 Gradio |
 | M04 PointPillars | [MMDetection3D 3D 可视化](https://mmdetection3d.readthedocs.io/en/latest/user_guides/visualization.html) | 本地 Open3D 交互窗口 / 离线图；旋转缩放点云、查看三维框，通常需要图形显示环境 | 已生成 BEV 框；Open3D 交互窗口尚未接入 |
 | M05 CenterPoint | [MMDetection3D 3D 可视化](https://mmdetection3d.readthedocs.io/en/latest/user_guides/visualization.html)；[作者 Demo 脚本](https://github.com/tianweiy/CenterPoint/blob/master/tools/demo.py) | 本地 3D 查看器 / Demo；本项目使用 MMDetection3D 实现，优先参考前一个入口 | 已完成连续 39 帧检测与 BEV 回放 |
-| M11 跨帧跟踪 | [nuScenes 跟踪渲染器源码](https://github.com/nutonomy/nuscenes-devkit/blob/master/python-sdk/nuscenes/eval/tracking/render.py)；[本项目跟踪可视化](perception_lab/tools/track_mini.py) | 本地渲染脚本；显示框、ID 与轨迹。官方渲染器需接入其评估数据结构，并非独立 Web 应用 | 已接入作者跟踪器并生成 39 帧轨迹视频 |
+| M09 MapTR | [本项目实现与复现](perception_lab/MAPTR.md) | Rerun 的 BEV、三维及相机投影 | 已完成 39 帧矢量地图预测与展示 |
+| LiDARSeg / Cylinder3D | [本项目实现与复现](perception_lab/LIDARSEG.md) | Rerun 点云语义着色、独立真值页签 | 已完成 39 帧预测；BEV 同步着色 |
+| M11 跨帧跟踪 | [nuScenes 跟踪渲染器源码](https://github.com/nutonomy/nuscenes-devkit/blob/master/python-sdk/nuscenes/eval/tracking/render.py)；[本项目跟踪可视化](perception_lab/tools/track_mini.py) | 本地渲染脚本；显示框、ID 与轨迹。官方渲染器需接入其评估数据结构，并非独立 Web 应用 | 已接入 PubTracker；39 帧轨迹视频及 Rerun BEV / 相机跟踪框、ID、BEV 轨迹 |
 | M12 ONNX 导出与部署 | [Netron 浏览器界面](https://netron.app/)；[Netron 本地安装](https://github.com/lutzroeder/netron#install) | 浏览器 / 桌面模型结构查看器；打开导出的 `.onnx` 查看算子、张量形状和连接。数值一致性与速度仍需单独测试 | ONNX 导出与数值校验已完成；Netron 可自行打开模型，未嵌入项目 |
 | M14 教学报告与回放 | [本项目同步回放视频](perception_lab/outputs/replay/mini_learning.mp4)；[教学页面生成器](perception_lab/tools/mini_learning.py)；[运行说明](perception_lab/LEARNING_GUIDE.md) | MP4 播放器 / 本地 HTML；同帧查看前视相机、检测与跟踪，并查看各模块静态结果 | 已生成 39 帧同步视频和本地 HTML；未托管为在线应用 |
 
@@ -53,7 +76,6 @@ flowchart LR
 | M06 BEVFormer | [作者可视化脚本](https://github.com/fundamentalvision/BEVFormer/blob/master/tools/analysis_tools/visual.py) | 本地脚本；将预测框绘制到多相机和 BEV，需要配置数据路径与结果文件 |
 | M07 BEVFusion | [作者可视化脚本](https://github.com/mit-han-lab/bevfusion/blob/main/tools/visualize.py) | 本地脚本；导出相机、点云及预测 / GT 可视化，需准备配置、权重和数据 |
 | M08 CenterFusion | [作者 Demo 脚本](https://github.com/mrnabati/CenterFusion/blob/master/src/demo.py)；[项目说明](https://github.com/mrnabati/CenterFusion) | 本地 Demo / 调试窗口；相机与雷达融合必须按作者数据管线准备雷达输入，普通图片 Demo 不代表雷达融合已运行 |
-| M09 MapTR | [作者可视化与视频生成教程](https://github.com/hustvl/MapTR/blob/main/docs/visualization.md) | 本地脚本；`vis_pred.py` 显示矢量地图预测，`generate_video.py` 合并输入、输出及 GT |
 | M10 SurroundOcc | [作者占用可视化教程](https://github.com/weiyithu/SurroundOcc/blob/main/docs/run.md) | 本地 MeshLab / Mayavi；查看 `.ply` 点云或 `.npy` 占用预测，需先获得模型推理结果 |
 | M13 微调训练 | [MMEngine 可视化与 TensorBoard 后端](https://mmengine.readthedocs.io/en/latest/advanced_tutorials/visualization.html) | 本地 Web；配置 `TensorboardVisBackend` 后查看 loss、学习率和评估曲线。本项目尚未训练，无对应训练面板数据 |
 
@@ -71,24 +93,90 @@ flowchart LR
 | [FiftyOne：分组数据集](https://docs.voxel51.com/user_guide/groups.html) | 浏览器页面 | 按样本浏览多相机与点云、检查标签、筛选问题数据 | 构建 grouped dataset，导入相机 / 点云媒体和预测标签；按其支持格式做转换 |
 | [CVAT：3D 标注](https://docs.cvat.ai/docs/manual/basics/3d-object-annotation/) | 浏览器页面 | 人工标注、修正三维框和审核数据 | 转换为支持的点云及标注格式，创建标注任务；更适合标注工作，不作为本项目的主要算法回放入口 |
 
-### 本项目建议：先接 Rerun，再按需要接 Foxglove
+### 本项目已接入 Rerun
 
-**当前目标是用 mini 理解感知流程，建议优先采用 Rerun。** 官方已有 nuScenes 示例，可以先查看原始多传感器与 GT，再接入现有检测、深度和跟踪结果。若后续学习重点转向车端日志、消息流与系统联调，再采用 Foxglove + MCAP；已有 ROS 系统时可直接考虑 RViz2。
+**当前使用 Rerun 理解 mini 感知流程。** 已接入原始多传感器、GT、三维检测、跟踪、点云分割与 MapTR 结果。若后续学习重点转向车端日志、消息流与系统联调，再采用 Foxglove + MCAP；已有 ROS 系统时可直接考虑 RViz2。
 
-建议的交互布局如下，属于后续接入设计：
+当前 Rerun 接入采用六相机、三维场景与统一时间轴布局：
 
 ```text
-┌──────────────────────┬──────────────────────┐
-│ 六路相机：原图 / 叠加图 │ 可旋转的点云与三维框    │
-│ 检测、分割、深度图层    │ GT、预测框、目标轨迹    │
-├──────────────────────┴──────────────────────┤
-│ 时间轴：播放、暂停、拖动、逐帧；图层与目标属性   │
-└─────────────────────────────────────────────┘
+┌──────────────────────────┬──────────────────────────┐
+│ BEV：语义点云、车道线      │ 六路相机：原图、车道线投影 │
+│ 跟踪框、ID 与历史轨迹      │ 三维跟踪框投影、目标 ID    │
+├──────────────────────────┤                          │
+│ 三维点云、GT、检测与跟踪   │                          │
+│ 分割预测 / 真值切换页签    │                          │
+├──────────────────────────┴──────────────────────────┤
+│ 时间轴：播放、暂停、拖动、逐帧                        │
+└─────────────────────────────────────────────────────┘
 ```
 
 接入时需保留 `sample_token`、传感器时间戳、相机内外参和自车位姿，并明确每份预测的坐标系。mini 已提供标定信息，但各传感器原始数据仍需正确变换到共同参考系；查看器不会自动修复错误的标定或时间关联。可参考 [nuScenes 官方数据与标定教程](https://www.nuscenes.org/tutorials/nuscenes_tutorial.html)。
 
-**当前实现仍是本地 HTML + 同步视频，尚未接入 Rerun、Foxglove、RViz2、FiftyOne 或 CVAT。** 已完成的 39 帧检测 / 跟踪结果可以作为后续接入的数据源；图像检测、分割和深度目前只运行了首个时刻六路相机，接入查看器不会自动产生其余帧的模型预测。当前页面不支持交互旋转点云、切换三维图层或检查目标属性。
+**本地 Rerun 已接入并验证。** 现在可同步查看 39 帧的六路原始相机图、激光点云、GT、CenterPoint 检测框、PubTracker 轨迹及 MapTR 矢量地图预测，支持旋转缩放三维视图、切换图层及时间轴回放；原 HTML + 视频仍保留。Foxglove、RViz2、FiftyOne、CVAT 尚未接入。图像检测、分割和深度仍仅运行了首个时刻六路相机，不会自动产生其余帧预测；雷达与历史 sweeps 尚未接入 Rerun。
+
+### 车道线识别与 BEV 展示
+
+MapTR 使用六路图像和相机标定进行真实 GPU 推理；scene-0061 共 39 帧。独立 BEV 面板中：**黄色为分隔线、粉色为人行横道、蓝色为道路边界**，车辆前方朝上。默认置信度阈值 0.5，各帧合计显示 429 条预测（含重复时刻目标，并非 429 个独立道路元素）。三维场景及右侧六路相机图像也包含同一批预测；相机叠加通过标定投影，使用近似地面高度，不做车辆遮挡判断。
+
+刷新现有 Rerun 页面即可加载新记录。用 `--lane-score` 重新导出可调整显示阈值；图层位于 `ego/maptr` 和 `bev/maptr`。这些线来自模型预测，不是加载地图真值。模型只预测平面位置，三维高度采用近似地面；未进行全量精度评估。安装、推理、坐标转换和代码位置见 [MAPTR.md](perception_lab/MAPTR.md)。
+
+### LiDARSeg 点云语义分割
+
+已补齐官方 mini 的 404 帧逐点标签，并用 nuScenes 专用 Cylinder3D 完成当前 scene-0061 的 39 帧、约 135 万点预测。Rerun 的 **LiDARSeg prediction / detections** 显示预测着色，**LiDARSeg ground truth** 页签显示独立真值；BEV 同步显示语义颜色。道路为青绿色、植被为绿色、人造结构为浅黄色、汽车为橙色。点云预测与相机车道线叠加均保留。
+
+实现、类别、安装、复现命令及旧版算子兼容说明见 [LIDARSEG.md](perception_lab/LIDARSEG.md)。25 项测试、逐点录制核对与浏览器显示通过。当前场景诊断准确率约 95.16%，mini 与预训练数据重叠，不代表独立评估成绩。
+
+### CenterPoint 目标跟踪与多视图显示
+
+跟踪采用 **CenterPoint → PubTracker**，不依赖 LiDARSeg 分割结果，也不新增分割追踪模型。检测框和速度先转换到世界坐标；跟踪器按类别、速度回推位置和距离进行跨帧关联，沿用或分配目标 ID，再转换到当前自车坐标显示。
+
+- **BEV**：旋转跟踪框、`#ID` 标签，以及同一 ID 最近最多 20 个显示位置的轨迹。
+- **右侧六路相机**：通过标定投影三维跟踪框，显示简短 `#ID` 标签；这不是独立的图像目标跟踪。
+- **三维视图**：跟踪框、ID 与轨迹采用同一套颜色。同一 ID 跨帧、跨视图颜色一致，颜色相近时以编号为准。
+- **查看操作**：刷新下方本机查看器链接，播放或拖动时间轴。侧边栏默认收起；密集标签可能重叠，可放大对应视图。显示阈值默认 `score >= 0.25`，重新导出时可用 `--score` 调整。
+
+各帧清除旧跟踪显示再重绘；漏检帧不显示预测补出的框。历史轨迹保存在世界坐标，再统一变换到当前自车坐标，避免把自车运动当作目标轨迹。ID 仍可能因漏检或错误关联改变。相机投影补偿自车位姿，但没有将动态目标外推到相机曝光时刻，也不判断遮挡，因此可能出现投影偏差。
+
+代码入口：[跟踪编排与坐标变换](perception_lab/tools/track_mini.py)、[框投影与 ID 配色](perception_lab/tools/tracking_overlay.py)、[Rerun 图层与轨迹记录](perception_lab/tools/rerun_mini.py)。本次更新通过 28 项测试、39 帧 Rerun 记录校验及本机 Chrome 播放检查；属于教学流程验证，未进行全量跟踪精度评估。
+
+### 检测、跟踪评估与失败案例
+
+已对 scene-0061 的 **39 帧**完成固定阈值诊断：`score >= 0.25`、同类别地面中心距离 `< 2 m`，采用官方类别范围、零点真值与自行车架过滤。过滤后的真值已逐帧与 nuScenes devkit 核对一致。
+
+| 分支 | 正确匹配 TP | 误检 FP | 漏检 FN | 精确率 | 召回率 |
+|---|---:|---:|---:|---:|---:|
+| CenterPoint 检测（10 类） | 2235 | 1020 | 75 | 68.66% | 96.75% |
+| PubTracker 跟踪（7 类） | 1177 | 579 | 39 | 67.03% | 96.79% |
+
+跟踪包含 **46 次连续帧 ID 切换**（其中行人 42 次）、**38 次间隔后换 ID**；另有 34 次同 ID 恢复。以上为逐帧目标次数，不是独立物体数；两分支不能相加。间隔可能来自漏检、过滤或离开范围，同 ID 恢复不直接认定为失败。检测中心平均误差为成功匹配目标上的 **0.229 m**，不包含漏检误差，也不评估框尺寸和朝向。
+
+失败案例保存帧号、sample_token、类别、分数、距离及相关身份信息，可在 Rerun 的 `frame` 时间轴定位；10 张 BEV 案例图片用红色标漏检、紫色标误检、橙色标 ID 变化。
+
+[完整评估报告与案例图片](perception_lab/reports/mini_evaluation/report.md) · [本地案例画廊](perception_lab/reports/mini_evaluation/index.html) · [全部案例 CSV](perception_lab/reports/mini_evaluation/cases.csv) · [逐帧统计](perception_lab/reports/mini_evaluation/frames.csv) · [分数阈值对比](perception_lab/reports/mini_evaluation/thresholds.csv)
+
+```bash
+cd perception_lab
+envs/mmdet3d/bin/python tools/evaluate_mini.py --score 0.25 --distance 2.0
+```
+
+该脚本使用已有预测，不重新运行模型。检测采用分数排序贪心匹配；跟踪优先保留有效的前帧配对，再进行门限内匈牙利匹配。精确率、召回率与身份事件都依赖上述口径。**这是单场景教学诊断，不是官方 mAP、NDS、AMOTA 或独立测试成绩。** HTML 需本地打开，GitHub 不托管该页面；改用其他参数重新运行后，以生成报告为准。
+
+### 本地启动 Rerun
+
+本机已安装独立环境并生成记录。启动与停止命令：
+
+```bash
+cd perception_lab
+envs/rerun/bin/python tools/start_rerun.py
+# 已有推理结果时，重新导出显示图层（可选）
+# envs/rerun/bin/python tools/rerun_mini.py --score 0.25
+# 停止：envs/rerun/bin/python tools/start_rerun.py --stop
+```
+
+[本机查看器](http://127.0.0.1:9090/?url=http%3A%2F%2F127.0.0.1%3A9091%2Fmini_scene.rrd&renderer=webgl) · [安装、导出、操作与坐标说明](perception_lab/RERUN.md)
+
+本机链接需要服务运行，GitHub 不托管该界面。克隆后需准备数据和既有运行结果，按说明安装 `rerun-sdk==0.23.4` 并导出记录；`outputs/rerun/` 中的记录、日志和截图不上传仓库。
 
 ## 仓库内容
 

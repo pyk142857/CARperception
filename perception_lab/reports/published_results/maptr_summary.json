@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "source": "measured",
+  "frames": 39,
+  "strict_checkpoint": true,
+  "model": "MapTR-tiny-R50-24e",
+  "camera_order": [
+    "CAM_FRONT",
+    "CAM_FRONT_RIGHT",
+    "CAM_FRONT_LEFT",
+    "CAM_BACK",
+    "CAM_BACK_LEFT",
+    "CAM_BACK_RIGHT"
+  ],
+  "map_ground_truth_used": false,
+  "can_bus": "pose/quaternion/yaw from metadata; missing acceleration/rotation-rate/velocity set to zero (upstream fallback)",
+  "geometry": "model predicts LiDAR XY; calibrated XY transformed to ego; display Z=0 is approximate, not predicted",
+  "source_sha256": {
+    "/home/minglei/Desktop/CAR/perception_lab/checkpoints/maptr_tiny_r50_24e.pth": "a1546a77fb6a8e5af256f9673206f7fc7e6d2cfdf1d4e121eb07db74a7745a04",
+    "/home/minglei/Desktop/CAR/perception_lab/third_party/MapTR/projects/configs/maptr/maptr_tiny_r50_24e.py": "c142de8e8d6b3effd7fee229982cc34a18484b4ae73b6e66e31b5e83228b0f18",
+    "/home/minglei/Desktop/CAR/perception_lab/tools/maptr_mini.py": "0a9b2fd3a209cdc8155e244d301a5bf0da788eb576bbb068ff2d8af16e6941c5",
+    "/home/minglei/Desktop/CAR/perception_lab/tools/maptr_geometry.py": "5a8f5e5015bfd690d59850c640dad6fff8189e817771a0a9ccf904e0e4052941",
+    "/home/minglei/Desktop/CAR/perception_lab/manifests/frame_packets.json": "d161deb2618d9c357d8976eee4f7c0de3a567900afbb679c5961cf74248e958d"
+  },
+  "artifacts": {
+    "/home/minglei/Desktop/CAR/perception_lab/outputs/maptr/predictions.json": "378f1ba3d8dbd6b37d9dff3044714edb648439098b9102972d37a8ead19f4c21"
+  },
+  "torch_version": "1.13.1+cu117",
+  "mmcv_version": "1.7.1",
+  "peak_cuda_allocated_bytes": 653715968
+}

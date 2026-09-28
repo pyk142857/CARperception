@@ -1,0 +1,30 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><title>Mini evaluation failure cases</title><style>body{font:16px sans-serif;margin:30px auto;max-width:1200px;background:#fafafa}img{max-width:100%}article{border-top:1px solid #bbb;margin-top:30px}pre{white-space:pre-wrap}</style><h1>mini 检测与跟踪失败案例</h1><p>39 帧教学诊断；红色=漏检，紫色=误检，橙色=ID变化。frame 对应 Rerun 时间轴。完整口径见 report.md。</p><p><a href="report.md">完整报告</a> · <a href="cases.csv">案例 CSV</a> · <a href="frames.csv">逐帧统计</a></p><pre>{
+  &quot;detection&quot;: {
+    &quot;tp&quot;: 2235,
+    &quot;fp&quot;: 1020,
+    &quot;fn&quot;: 75,
+    &quot;gt&quot;: 2310,
+    &quot;predictions&quot;: 3255,
+    &quot;precision&quot;: 0.6866359447004609,
+    &quot;recall&quot;: 0.9675324675324676,
+    &quot;mean_center_error_m&quot;: 0.22886771609997472,
+    &quot;median_center_error_m&quot;: 0.13912493962604186,
+    &quot;events&quot;: {}
+  },
+  &quot;tracking&quot;: {
+    &quot;tp&quot;: 1177,
+    &quot;fp&quot;: 579,
+    &quot;fn&quot;: 39,
+    &quot;gt&quot;: 1216,
+    &quot;predictions&quot;: 1756,
+    &quot;precision&quot;: 0.6702733485193622,
+    &quot;recall&quot;: 0.9679276315789473,
+    &quot;mean_center_error_m&quot;: 0.21201990208947974,
+    &quot;median_center_error_m&quot;: 0.1357112428724846,
+    &quot;events&quot;: {
+      &quot;id_switch&quot;: 46,
+      &quot;gap_recovery&quot;: 34,
+      &quot;gap_id_change&quot;: 38
+    }
+  }
+}</pre><article><h2>tracking / frame 2 / id_switch</h2><p>356d81f38dd9473ba590f39e266f54e5</p><img src="tracking_002_id_switch.png" loading="lazy"></article><article><h2>tracking / frame 3 / id_switch</h2><p>e0845f5322254dafadbbed75aaa07969</p><img src="tracking_003_id_switch.png" loading="lazy"></article><article><h2>tracking / frame 36 / gap_id_change</h2><p>67e5f88901214f3aa03d68e028185e22</p><img src="tracking_036_gap_id_change.png" loading="lazy"></article><article><h2>tracking / frame 31 / gap_id_change</h2><p>5fda58ee3ae44ab9b4bbac7a2de66c27</p><img src="tracking_031_gap_id_change.png" loading="lazy"></article><article><h2>detection / frame 29 / false_negative</h2><p>378a3a3e9af346308ab9dff8ced46d9c</p><img src="detection_029_false_negative.png" loading="lazy"></article><article><h2>detection / frame 18 / false_negative</h2><p>bf2938e43c6f487497cda76b51bfc406</p><img src="detection_018_false_negative.png" loading="lazy"></article><article><h2>detection / frame 15 / false_positive</h2><p>cd21dbfc3bd749c7b10a5c42562e0c42</p><img src="detection_015_false_positive.png" loading="lazy"></article><article><h2>detection / frame 14 / false_positive</h2><p>2afb9d32310e4546a71cbe432911eca2</p><img src="detection_014_false_positive.png" loading="lazy"></article><article><h2>detection / frame 5 / center_error_over_1m</h2><p>f1e3d9d08f044c439ce86a2d6fcca57b</p><img src="detection_005_center_error_over_1m.png" loading="lazy"></article><article><h2>detection / frame 13 / center_error_over_1m</h2><p>1e3d79dae62742a0ad64c91679863358</p><img src="detection_013_center_error_over_1m.png" loading="lazy"></article></html>

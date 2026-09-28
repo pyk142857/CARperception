@@ -61,4 +61,4 @@ python3 tools/run_pipeline.py --plan configs/execution_plan.yaml --module M11 --
 envs/vision/bin/python tools/mini_learning.py
 ```
 
-不要用旧的 `--phase all` 作为教学入口，它仍包含完整基准和扩展任务。M06–M10、TensorRT 与训练不属于本次教学必需项；没有声称它们已经完成。既有 COCO 评测保留作为附加材料。
+不要用旧的 `--phase all` 作为教学入口，它仍包含完整基准和扩展任务。M06–M08、M10、TensorRT 与训练尚未完成。M09 已于 2026-09-24 完成 39 帧 MapTR 推理与 Rerun 接入，见 [MAPTR.md](MAPTR.md)。既有 COCO 评测保留作为附加材料。

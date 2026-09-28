@@ -1,0 +1,483 @@
+{
+  "scope": "scene-0061 fixed-threshold teaching diagnostic; not official mAP/NDS/AMOTA",
+  "frames": 39,
+  "score": 0.25,
+  "distance_gate_m": 2.0,
+  "class_range_m": {
+    "car": 50,
+    "truck": 50,
+    "bus": 50,
+    "trailer": 50,
+    "construction_vehicle": 50,
+    "pedestrian": 40,
+    "motorcycle": 40,
+    "bicycle": 40,
+    "traffic_cone": 30,
+    "barrier": 30
+  },
+  "excluded_before_score": {
+    "gt_outside_range": 1894,
+    "gt_zero_points": 460,
+    "gt_unsupported_class": 35,
+    "detection_outside_range": 3081,
+    "tracking_outside_range": 1302
+  },
+  "matching": {
+    "detection": "same class, score-ordered greedy, global XY distance < gate",
+    "tracking": "preserve valid previous-frame pairs, then gated Hungarian; same class/global XY",
+    "id_switch": "GT matched in consecutive frames to different prediction IDs",
+    "gap_id_change": "GT reacquired with different ID after one or more unmatched/unobserved frames",
+    "gap_recovery": "same ID reacquired after gap; diagnostic event, not necessarily a failure"
+  },
+  "totals": {
+    "detection": {
+      "tp": 2235,
+      "fp": 1020,
+      "fn": 75,
+      "gt": 2310,
+      "predictions": 3255,
+      "precision": 0.6866359447004609,
+      "recall": 0.9675324675324676,
+      "mean_center_error_m": 0.22886771609997472,
+      "median_center_error_m": 0.13912493962604186,
+      "events": {}
+    },
+    "tracking": {
+      "tp": 1177,
+      "fp": 579,
+      "fn": 39,
+      "gt": 1216,
+      "predictions": 1756,
+      "precision": 0.6702733485193622,
+      "recall": 0.9679276315789473,
+      "mean_center_error_m": 0.21201990208947974,
+      "median_center_error_m": 0.1357112428724846,
+      "events": {
+        "id_switch": 46,
+        "gap_recovery": 34,
+        "gap_id_change": 38
+      }
+    }
+  },
+  "case_counts": {
+    "false_negative": 114,
+    "false_positive": 1599,
+    "center_error_over_1m": 113,
+    "id_switch": 46,
+    "gap_recovery": 34,
+    "gap_id_change": 38
+  },
+  "source_sha256": {
+    "/home/minglei/Desktop/CAR/perception_lab/runs/20260923T043110_d6ae8066/M05/mini_scene/predictions.json": "43be7f1f42b1f77a16440ba99462ea789a30adcfa35fac1f221cdbe1ca126f56",
+    "/home/minglei/Desktop/CAR/perception_lab/runs/20260923T044014_0542fd21/M11/mini_tracking_M05/predictions.json": "28658bcde283ed8944ba386eceefd6f5a814583a6c14bc457b4fc70fd6e6ef9e",
+    "/home/minglei/Desktop/CAR/perception_lab/manifests/frame_packets.json": "d161deb2618d9c357d8976eee4f7c0de3a567900afbb679c5961cf74248e958d",
+    "/home/minglei/Desktop/CAR/perception_lab/tools/evaluate_mini.py": "2b517fe98f2aac70372538c588338ed124593dd4b506b9cd7dfd5c6edd014f7b",
+    "/home/minglei/Desktop/CAR/perception_lab/tools/evaluation_utils.py": "ff446e9474a2654b40db57318576712a877c21a2672f7af5f0d6ace193be8346",
+    "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/v1.0-mini/category.json": "5ff83ac040dde56e632142d58c55b1f4ad0764f4b91eed3b3f512619e2971614",
+    "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/v1.0-mini/calibrated_sensor.json": "13d35eeb08bfbc4d0c9eaede7824ff65efe16f8bf345aa7ba9fd75f9866a8d0f",
+    "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/v1.0-mini/visibility.json": "87088bf2c78d070e1e215ff108f9c5c0958d124a14cce8f72bfb5d9651295749",
+    "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/v1.0-mini/attribute.json": "dc01438363e29188f25785884bb2431a7aa27ba0debbc359cb21cf1f00652210",
+    "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/v1.0-mini/map.json": "6b1d504987d0630e7e32affb7ae0d99fe9b427c757a315ec2f56fb09ebd1bfce",
+    "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/v1.0-mini/sample_annotation.json": "49703705e98ddea281ca321aae3b7352a8b6495840fe654cf0717c5b7b721080",
+    "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/v1.0-mini/scene.json": "cc4dfeac83ac4f5d3e7fc899f90156891a21fa08bc0f8a1ac0e0a27cc1a0bfa6",
+    "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/v1.0-mini/lidarseg.json": "2a905543f71315a3f4a2b790fe983ac70c6f63d236d2ac2ef38ce5252647d801",
+    "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/v1.0-mini/ego_pose.json": "62817fd8b1633ed7925db46a29ec4c70f77116b866f248f0dc1bac4774459d70",
+    "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/v1.0-mini/sample_data.json": "db18a189bd73648013d3e77ce6f5236d7c5997c0bdbf71166ddd8a6cb5c2c288",
+    "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/v1.0-mini/log.json": "d543b6fd127a6496ab9fa8de5c96a0887e0996e56f7a6c606de6d8b34827df58",
+    "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/v1.0-mini/instance.json": "38bbfcf53fb78469ec2c5b07fdafc9a44e9fbf9ab858d35a007dd8347428a14a",
+    "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/v1.0-mini/sample.json": "3c47794e2e6c09af4be7907b83f50750351180008d059899f42a9d405ed68586",
+    "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/v1.0-mini/sensor.json": "4d5c96570e2d8b09b88ce4c605e40ee43c4909f97bea5741185f18f92eb491ae"
+  },
+  "failure_breakdown": [
+    {
+      "module": "detection",
+      "kind": "center_error_over_1m",
+      "class_name": "barrier",
+      "count": 19
+    },
+    {
+      "module": "detection",
+      "kind": "center_error_over_1m",
+      "class_name": "bicycle",
+      "count": 1
+    },
+    {
+      "module": "detection",
+      "kind": "center_error_over_1m",
+      "class_name": "car",
+      "count": 3
+    },
+    {
+      "module": "detection",
+      "kind": "center_error_over_1m",
+      "class_name": "construction_vehicle",
+      "count": 2
+    },
+    {
+      "module": "detection",
+      "kind": "center_error_over_1m",
+      "class_name": "pedestrian",
+      "count": 32
+    },
+    {
+      "module": "detection",
+      "kind": "center_error_over_1m",
+      "class_name": "traffic_cone",
+      "count": 21
+    },
+    {
+      "module": "detection",
+      "kind": "center_error_over_1m",
+      "class_name": "truck",
+      "count": 2
+    },
+    {
+      "module": "detection",
+      "kind": "false_negative",
+      "class_name": "barrier",
+      "count": 23
+    },
+    {
+      "module": "detection",
+      "kind": "false_negative",
+      "class_name": "bicycle",
+      "count": 7
+    },
+    {
+      "module": "detection",
+      "kind": "false_negative",
+      "class_name": "car",
+      "count": 7
+    },
+    {
+      "module": "detection",
+      "kind": "false_negative",
+      "class_name": "construction_vehicle",
+      "count": 4
+    },
+    {
+      "module": "detection",
+      "kind": "false_negative",
+      "class_name": "motorcycle",
+      "count": 1
+    },
+    {
+      "module": "detection",
+      "kind": "false_negative",
+      "class_name": "pedestrian",
+      "count": 22
+    },
+    {
+      "module": "detection",
+      "kind": "false_negative",
+      "class_name": "traffic_cone",
+      "count": 8
+    },
+    {
+      "module": "detection",
+      "kind": "false_negative",
+      "class_name": "truck",
+      "count": 3
+    },
+    {
+      "module": "detection",
+      "kind": "false_positive",
+      "class_name": "barrier",
+      "count": 187
+    },
+    {
+      "module": "detection",
+      "kind": "false_positive",
+      "class_name": "bicycle",
+      "count": 56
+    },
+    {
+      "module": "detection",
+      "kind": "false_positive",
+      "class_name": "bus",
+      "count": 2
+    },
+    {
+      "module": "detection",
+      "kind": "false_positive",
+      "class_name": "car",
+      "count": 71
+    },
+    {
+      "module": "detection",
+      "kind": "false_positive",
+      "class_name": "construction_vehicle",
+      "count": 21
+    },
+    {
+      "module": "detection",
+      "kind": "false_positive",
+      "class_name": "motorcycle",
+      "count": 34
+    },
+    {
+      "module": "detection",
+      "kind": "false_positive",
+      "class_name": "pedestrian",
+      "count": 398
+    },
+    {
+      "module": "detection",
+      "kind": "false_positive",
+      "class_name": "traffic_cone",
+      "count": 232
+    },
+    {
+      "module": "detection",
+      "kind": "false_positive",
+      "class_name": "trailer",
+      "count": 2
+    },
+    {
+      "module": "detection",
+      "kind": "false_positive",
+      "class_name": "truck",
+      "count": 17
+    },
+    {
+      "module": "tracking",
+      "kind": "center_error_over_1m",
+      "class_name": "bicycle",
+      "count": 1
+    },
+    {
+      "module": "tracking",
+      "kind": "center_error_over_1m",
+      "class_name": "car",
+      "count": 3
+    },
+    {
+      "module": "tracking",
+      "kind": "center_error_over_1m",
+      "class_name": "pedestrian",
+      "count": 27
+    },
+    {
+      "module": "tracking",
+      "kind": "center_error_over_1m",
+      "class_name": "truck",
+      "count": 2
+    },
+    {
+      "module": "tracking",
+      "kind": "false_negative",
+      "class_name": "bicycle",
+      "count": 7
+    },
+    {
+      "module": "tracking",
+      "kind": "false_negative",
+      "class_name": "car",
+      "count": 7
+    },
+    {
+      "module": "tracking",
+      "kind": "false_negative",
+      "class_name": "motorcycle",
+      "count": 1
+    },
+    {
+      "module": "tracking",
+      "kind": "false_negative",
+      "class_name": "pedestrian",
+      "count": 21
+    },
+    {
+      "module": "tracking",
+      "kind": "false_negative",
+      "class_name": "truck",
+      "count": 3
+    },
+    {
+      "module": "tracking",
+      "kind": "false_positive",
+      "class_name": "bicycle",
+      "count": 56
+    },
+    {
+      "module": "tracking",
+      "kind": "false_positive",
+      "class_name": "bus",
+      "count": 2
+    },
+    {
+      "module": "tracking",
+      "kind": "false_positive",
+      "class_name": "car",
+      "count": 71
+    },
+    {
+      "module": "tracking",
+      "kind": "false_positive",
+      "class_name": "motorcycle",
+      "count": 34
+    },
+    {
+      "module": "tracking",
+      "kind": "false_positive",
+      "class_name": "pedestrian",
+      "count": 397
+    },
+    {
+      "module": "tracking",
+      "kind": "false_positive",
+      "class_name": "trailer",
+      "count": 2
+    },
+    {
+      "module": "tracking",
+      "kind": "false_positive",
+      "class_name": "truck",
+      "count": 17
+    },
+    {
+      "module": "tracking",
+      "kind": "gap_id_change",
+      "class_name": "bicycle",
+      "count": 2
+    },
+    {
+      "module": "tracking",
+      "kind": "gap_id_change",
+      "class_name": "car",
+      "count": 1
+    },
+    {
+      "module": "tracking",
+      "kind": "gap_id_change",
+      "class_name": "pedestrian",
+      "count": 34
+    },
+    {
+      "module": "tracking",
+      "kind": "gap_id_change",
+      "class_name": "truck",
+      "count": 1
+    },
+    {
+      "module": "tracking",
+      "kind": "gap_recovery",
+      "class_name": "bicycle",
+      "count": 2
+    },
+    {
+      "module": "tracking",
+      "kind": "gap_recovery",
+      "class_name": "car",
+      "count": 11
+    },
+    {
+      "module": "tracking",
+      "kind": "gap_recovery",
+      "class_name": "pedestrian",
+      "count": 19
+    },
+    {
+      "module": "tracking",
+      "kind": "gap_recovery",
+      "class_name": "truck",
+      "count": 2
+    },
+    {
+      "module": "tracking",
+      "kind": "id_switch",
+      "class_name": "bicycle",
+      "count": 2
+    },
+    {
+      "module": "tracking",
+      "kind": "id_switch",
+      "class_name": "car",
+      "count": 1
+    },
+    {
+      "module": "tracking",
+      "kind": "id_switch",
+      "class_name": "pedestrian",
+      "count": 42
+    },
+    {
+      "module": "tracking",
+      "kind": "id_switch",
+      "class_name": "truck",
+      "count": 1
+    }
+  ],
+  "gallery": [
+    {
+      "module": "tracking",
+      "frame": 2,
+      "reason": "id_switch",
+      "image": "tracking_002_id_switch.png",
+      "sample_token": "356d81f38dd9473ba590f39e266f54e5"
+    },
+    {
+      "module": "tracking",
+      "frame": 3,
+      "reason": "id_switch",
+      "image": "tracking_003_id_switch.png",
+      "sample_token": "e0845f5322254dafadbbed75aaa07969"
+    },
+    {
+      "module": "tracking",
+      "frame": 36,
+      "reason": "gap_id_change",
+      "image": "tracking_036_gap_id_change.png",
+      "sample_token": "67e5f88901214f3aa03d68e028185e22"
+    },
+    {
+      "module": "tracking",
+      "frame": 31,
+      "reason": "gap_id_change",
+      "image": "tracking_031_gap_id_change.png",
+      "sample_token": "5fda58ee3ae44ab9b4bbac7a2de66c27"
+    },
+    {
+      "module": "detection",
+      "frame": 29,
+      "reason": "false_negative",
+      "image": "detection_029_false_negative.png",
+      "sample_token": "378a3a3e9af346308ab9dff8ced46d9c"
+    },
+    {
+      "module": "detection",
+      "frame": 18,
+      "reason": "false_negative",
+      "image": "detection_018_false_negative.png",
+      "sample_token": "bf2938e43c6f487497cda76b51bfc406"
+    },
+    {
+      "module": "detection",
+      "frame": 15,
+      "reason": "false_positive",
+      "image": "detection_015_false_positive.png",
+      "sample_token": "cd21dbfc3bd749c7b10a5c42562e0c42"
+    },
+    {
+      "module": "detection",
+      "frame": 14,
+      "reason": "false_positive",
+      "image": "detection_014_false_positive.png",
+      "sample_token": "2afb9d32310e4546a71cbe432911eca2"
+    },
+    {
+      "module": "detection",
+      "frame": 5,
+      "reason": "center_error_over_1m",
+      "image": "detection_005_center_error_over_1m.png",
+      "sample_token": "f1e3d9d08f044c439ce86a2d6fcca57b"
+    },
+    {
+      "module": "detection",
+      "frame": 13,
+      "reason": "center_error_over_1m",
+      "image": "detection_013_center_error_over_1m.png",
+      "sample_token": "1e3d79dae62742a0ad64c91679863358"
+    }
+  ]
+}

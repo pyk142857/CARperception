@@ -8,11 +8,13 @@ perception_lab/third_party/
 # Machine-specific execution evidence; regenerate locally
 perception_lab/runs/
 perception_lab/logs/
-perception_lab/results/
+perception_lab/results/*
+!perception_lab/results/metrics.csv
+!perception_lab/results/status.json
+!perception_lab/results/mini_learning.json
 perception_lab/manifests/
 perception_lab/reports/index.html
 perception_lab/reports/mini_learning.html
-perception_lab/reports/final_report.md
 # Python / editor / credentials
 __pycache__/
 *.py[cod]
@@ -29,3 +31,12 @@ __pycache__/
 perception_lab/outputs/geometry/six_camera_projection.jpg
 perception_lab/outputs/mini/centerpoint_bev.mp4
 perception_lab/outputs/tracking/mini_M05.mp4
+
+# Local Rerun recordings and server runtime
+perception_lab/outputs/rerun/
+
+# Measured MapTR prediction artifacts
+perception_lab/outputs/maptr/
+
+# Local per-point segmentation predictions
+perception_lab/outputs/lidarseg/

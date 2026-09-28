@@ -341,5 +341,15 @@
       "optimizer"
     ],
     "model_compatibility": "see stage status; deserialization alone is not model verification"
+  },
+  "LiDARSeg": {
+    "path": "/home/minglei/Desktop/CAR/perception_lab/checkpoints/cylinder3d_nuscenes.pt",
+    "url": "https://drive.google.com/file/d/1jAVCMD7rhGu_Cs8eazWhJ7I3Wx4CEAo6/view",
+    "author_guide": "https://github.com/xinge008/Cylinder3D/blob/master/NUSCENES-GUIDE.md",
+    "sha256": "2b01a7d5ec41a50f06df545b57485059c2d381567886af5b05ff0099550206d4",
+    "size_bytes": 223498719,
+    "deserialization": "passed",
+    "strict_checkpoint_load": true,
+    "dataset": "nuScenes lidarseg, 16 classes + ignore"
   }
 }

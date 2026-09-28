@@ -1,0 +1,9 @@
+{
+  "unit_tests": 32,
+  "official_devkit_filtered_gt_matches": true,
+  "frames": 39,
+  "gt_observations": 2310,
+  "case_counts_reconciled": true,
+  "event_ids_exist_in_measured_tracks": true,
+  "summary_sha256": "634c198eb9bcb457d3b9a3986ebeca980b8946af8d371658302d694cea5ef936"
+}
