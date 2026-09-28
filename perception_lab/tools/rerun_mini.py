@@ -7,6 +7,7 @@ from pyquaternion import Quaternion
 from evidence import reusable, sha256
 from maptr_geometry import CLASSES, validate_frames
 from camera_overlay import project_segments
+from failure_overlay import load_cases, log_failures
 from tracking_overlay import track_color, bev_outline, camera_box_segments
 from lidarseg_utils import NAMES as SEG_NAMES, PALETTE as SEG_PALETTE
 
@@ -55,6 +56,8 @@ def main():
     parser.add_argument('--maptr', type=Path, default=ROOT/'outputs/maptr/predictions.json')
     parser.add_argument('--lane-score', type=float, default=.5)
     parser.add_argument('--lidarseg', type=Path, default=ROOT/'outputs/lidarseg/predictions.json')
+    parser.add_argument('--failure-report', type=Path, default=ROOT/'reports/mini_evaluation')
+    parser.add_argument('--no-failures', action='store_true')
     args = parser.parse_args()
     if not 0 <= args.score <= 1:
         parser.error('--score must be between 0 and 1')
@@ -66,6 +69,7 @@ def main():
     status = json.loads((ROOT/'results/status.json').read_text())
     detections, detection_path = measured_results(status, 'M05', 'mini_scene', packets)
     tracks, track_path = measured_results(status, 'M11', 'mini_tracking_M05', packets)
+    failure_cases, failure_evidence = ({}, None) if args.no_failures else load_cases(args.failure_report, packets, args.score)
     lanes = None
     if args.maptr.exists():
         lane_evidence = json.loads(args.maptr.with_name('summary.json').read_text())
@@ -122,10 +126,12 @@ def main():
     camera_views = [rrb.Spatial2DView(name=c, origin='ego/cameras/'+c+'/image') for c in CAMERAS]
     rr.send_blueprint(rrb.Blueprint(
         rrb.Horizontal(
-            rrb.Vertical(rrb.Spatial2DView(name='BEV / tracks + lanes (forward up)', origin='bev'),
+            rrb.Vertical(rrb.Tabs(*(([rrb.Spatial2DView(name='Detection failures / BEV', origin='failures/detection'),
+                                      rrb.Spatial2DView(name='Tracking failures / BEV', origin='failures/tracking')] if failure_evidence else []) +
+                                      [rrb.Spatial2DView(name='BEV / tracks + lanes (forward up)', origin='bev')])),
                          rrb.Tabs(rrb.Spatial3DView(name='LiDARSeg prediction / detections', origin='ego'),
                                   rrb.Spatial3DView(name='LiDARSeg ground truth', origin='lidarseg_gt')),
-                         rrb.TextDocumentView(name='Guide', origin='guide'), row_shares=[.45,.45,.10]),
+                         rrb.Tabs(*(([rrb.TextDocumentView(name='Failure cases / current frame', origin='failure_summary')] if failure_evidence else []) + [rrb.TextDocumentView(name='Guide', origin='guide')])), row_shares=[.42,.35,.23]),
             rrb.Grid(*camera_views, grid_columns=3), column_shares=[.5,.5]),
         rrb.TimePanel(state='expanded'), collapse_panels=True))
     history = {}
@@ -223,11 +229,16 @@ def main():
                         rr.log(overlay+'/'+cls, rr.LineStrips2D(segments, colors=color,
                                radii=rr.Radius.ui_points(1.5), draw_order=10))
         gt = []
+        gt_by_instance = {}
         for ann in by_sample.get(packet['sample_token'], []):
             category = categories[instances[ann['instance_token']]['category_token']]['name']
             gt.append(dict(center_xyz=transform_points([ann['translation']], inverse)[0],
                            size_wlh=ann['size'], rotation_wxyz=(Quaternion(matrix=inverse[:3,:3])*Quaternion(ann['rotation'])).elements,
                            class_name=category))
+            if failure_evidence:
+                # Same official category mapping used by the diagnostic; only GT lookup, never inference.
+                from failure_categories import category_name
+                gt_by_instance[ann['instance_token']] = dict(gt[-1], class_name=category_name(category))
         rr.log('ego/boxes', rr.Clear(recursive=True))
         selected = [b for b in pred['boxes3d'] if b['score'] >= args.score]
         log_boxes('ego/boxes/ground_truth', gt, [80,220,100])
@@ -251,7 +262,8 @@ def main():
                 rr.log('ego/trails/'+ident, rr.LineStrips3D([trail], colors=color, radii=.06))
                 rr.log('bev/tracks/'+ident+'/trail', rr.LineStrips2D([-trail[:,[1,0]]], colors=color,
                        radii=rr.Radius.ui_points(1.5), draw_order=15))
-        counts.append(dict(frame=i, sample_token=packet['sample_token'], lidar_points=len(points),
+        failure_counts = log_failures(rr, failure_cases.get(i, []), pred['boxes3d'], tracked['tracks3d'], gt_by_instance, points, packet, pose, i, failure_evidence) if failure_evidence else {}
+        counts.append(dict(failures=failure_counts, frame=i, sample_token=packet['sample_token'], lidar_points=len(points),
                            cameras=len(CAMERAS), gt=len(gt), detections=len(selected), tracks=len(selected_tracks), camera_tracks=camera_track_counts, maptr_vectors=lane_count))
         print(f'frame {i+1}/{len(packets)}', flush=True)
     rr.get_global_data_recording().flush()
@@ -262,6 +274,7 @@ def main():
     summary = dict(scope='mini_scene_0061', rerun_version=rr.__version__, frame_count=len(counts),
                    camera_images=len(counts)*len(CAMERAS), score_threshold=args.score, lane_score_threshold=args.lane_score,
                    maptr_loaded=lanes is not None, lidarseg_loaded=segmentation is not None,
+                   failure_overlay=failure_evidence is not None, failure_report_sha256=sha256(args.failure_report/'cases.json') if failure_evidence else None,
                    camera_lane_overlay=lanes is not None, tracking_overlay=True, track_history_positions=20,
                    coordinate_system='reference ego FLU, metres; camera asynchronous ego compensation',
                    source_sha256={str(p):sha256(p) for p in ([detection_path,track_path,ROOT/'manifests/frame_packets.json'] + ([args.maptr] if lanes is not None else []) + ([args.lidarseg] if segmentation is not None else []))},

@@ -168,6 +168,12 @@ envs/mmdet3d/bin/python tools/evaluate_mini.py --score 0.25 --distance 2.0
 
 [执行报告、口径及复现](perception_lab/reports/official_detection_mini/report.md) · [官方指标 JSON](perception_lab/reports/official_detection_mini/metrics/metrics_summary.json) · [完整 PR 数据](perception_lab/reports/official_detection_mini/metrics/metrics_details.json)。原固定阈值诊断和 M11 跟踪结果保持不变；完整 trainval val 评估为 `blocked_full_val`，缺全量数据及全 val 实测预测。
 
+### Rerun 失败案例回放
+
+已将固定阈值诊断接入 Rerun：左上切换 **Detection failures / BEV** 与 **Tracking failures / BEV**，红色=漏检、紫色=误检、橙色=ID 变化、黄色=中心误差>1m；右侧相机显示检测失败框，左下文本面板列出当前帧统计和案例编号。按 frame 时间轴定位，例如 frame 2 的 ID 变化、frame 29 的漏检。口径为 score≥0.25、2m，与官方 AP 四距离评估分开。
+
+[操作、复现与验证报告](perception_lab/reports/rerun_failures/report.md)。默认加载失败案例；另设显示阈值时需使用相同阈值报告，或加 `--no-failures` 关闭失败层。
+
 ### 本地启动 Rerun
 
 本机已安装独立环境并生成记录。启动与停止命令：

@@ -1,0 +1,38 @@
+{
+  "tests": 37,
+  "rrd_verify": "passed",
+  "frames": 39,
+  "display_counts": {
+    "detection": {
+      "false_negative": 75,
+      "false_positive": 1020,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "center_error_over_1m": 80
+    },
+    "tracking": {
+      "false_negative": 39,
+      "false_positive": 579,
+      "id_switch": 46,
+      "gap_id_change": 38,
+      "center_error_over_1m": 33
+    }
+  },
+  "recording_sha256": "0f90bc33f0893cf2b5a8bbdd1bd29fb4c6ef8494fcbb2abe1ea54304145c320a",
+  "cases_sha256": "33f6bdcb4257fcf240795de2bc4268ea066acf9e73ab5f36b32953760d2e262f",
+  "rrd_failure_summary_rows": 39,
+  "case_rows_verified": 1944,
+  "failure_background_crop_ego_m": [
+    -55,
+    55
+  ],
+  "browser": {
+    "engine": "headed Chrome / WebGL",
+    "viewport": [
+      1700,
+      1100
+    ],
+    "page_errors": [],
+    "interaction": "Pause, seek to earlier time, switch detection/tracking failure tabs; frame summary and camera overlays update"
+  }
+}

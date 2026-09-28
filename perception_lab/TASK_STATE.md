@@ -50,3 +50,7 @@ results/metrics.csv、results/status.json、results/mini_learning.json 与 repor
 ## M05 官方代码 mini 检测评估（2026-09-28）
 
 独立 devkit 1.2.0 / DetectionEval / detection_cvpr_2019，mini_scene_0061 完整 39 帧通过。mAP=0.699071191，NDS=0.610700323，mAAE=1（空属性）；不是完整 val 成绩。报告见 [official_detection_mini/report.md](reports/official_detection_mini/report.md)。复用既有实测 8399 框，未重跑 GPU；35 项测试通过，40 项 AP 官方复核通过，旧诊断与 M11 未改。M05 原 full val evaluation 仍 pending；当前确切状态 blocked_full_val，缺完整 trainval 数据和覆盖全 val 的实测预测。
+
+## Rerun 失败案例（2026-09-28）
+
+固定阈值诊断已加入检测/跟踪独立 BEV 页签、相机检测失败投影与逐帧案例清单；39 帧计数对齐，37 测试通过。原官方 AP 与 M11 结果不变。见 [报告](reports/rerun_failures/report.md)。

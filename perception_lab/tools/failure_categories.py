@@ -1,0 +1,3 @@
+"""nuScenes detection category mapping, usable without installing devkit in viewer."""
+MAPPING={'movable_object.barrier':'barrier','vehicle.bicycle':'bicycle','vehicle.bus.bendy':'bus','vehicle.bus.rigid':'bus','vehicle.car':'car','vehicle.construction':'construction_vehicle','vehicle.motorcycle':'motorcycle','human.pedestrian.adult':'pedestrian','human.pedestrian.child':'pedestrian','human.pedestrian.construction_worker':'pedestrian','human.pedestrian.police_officer':'pedestrian','movable_object.trafficcone':'traffic_cone','vehicle.trailer':'trailer','vehicle.truck':'truck'}
+def category_name(name):return MAPPING.get(name)
