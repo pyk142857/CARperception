@@ -176,6 +176,8 @@ envs/mmdet3d/bin/python tools/evaluate_mini.py --score 0.25 --distance 2.0
 
 ### 置信度与失败数量
 
+选中目标时，**3D 视图也会自动拉近**，显示目标框及附近真实点云；局部范围随目标尺寸调整，切换事件成员同步更新。[说明与验证](perception_lab/reports/selection_3d_focus/report.md)。
+
 当前回放**只按需加载并显示选中的异常框**，其他异常不同时出现；图像、点云、车道线保留，正常目标仍可选显示。[行为说明与验证](perception_lab/reports/selected_only/report.md)。
 
 支持**逐帧人工标签修正**：可把原始 FP 标为“检测正确／GT 漏标”等判定，保存依据、按标签筛选、恢复原始标签和导出历史。编辑器位于案例详情底部，原始 GT 与指标保持可追溯。[使用与验证](perception_lab/reports/manual_case_labels/report.md)。

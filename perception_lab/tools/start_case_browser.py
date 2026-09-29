@@ -23,7 +23,7 @@ def selection_file(module,mode,case_id):
    raise ValueError('Selection geometry version mismatch')
   cases=json.loads(cases_path.read_text())
   if not any(c['case_id']==case_id and c['module']==module and c['kind']!='gap_recovery' for c in cases):raise ValueError('Unknown selectable case')
-  style_hash=hashlib.sha256(b''.join((ROOT/'tools'/name).read_bytes() for name in ['selection_blueprint.py','triage_views.py'])).hexdigest()[:16]
+  style_hash=hashlib.sha256(b''.join((ROOT/'tools'/name).read_bytes() for name in ['selection_blueprint.py','triage_views.py','selection_context.py'])).hexdigest()[:16]
   directory=RUNTIME/'selection'/recording['recording_id']/style_hash;directory.mkdir(parents=True,exist_ok=True)
   target=directory/(module+'_'+mode+'_'+case_id+'.rrd')
   if not target.exists():
