@@ -11,12 +11,12 @@ CAMERAS=['CAM_FRONT_LEFT','CAM_FRONT','CAM_FRONT_RIGHT','CAM_BACK_LEFT','CAM_BAC
 def view_paths(module,normal=False,case_id=None):
     if module not in {'detection','tracking'}:raise ValueError('Unknown branch')
     if case_id is not None and not re.fullmatch(r'case_\d{5}',case_id):raise ValueError('Invalid case ID')
-    bev=['/failures/'+module+'/**','/bev/maptr/**']
-    spatial=['/ego/lidar','/ego/maptr/**','/ego/failure_boxes/'+module+'/**']
+    bev=['/failures/'+module+'/lidar','/bev/maptr/**']
+    spatial=['/ego/lidar','/ego/maptr/**']
     cameras={}
     for camera in CAMERAS:
         root='/ego/cameras/'+camera+'/image'
-        cameras[camera]=[root,root+'/maptr/**',root+'/failures/'+module+'/**']
+        cameras[camera]=[root,root+'/maptr/**']
         if normal:cameras[camera].append(root+'/normal/'+module+'/**')
         if case_id:cameras[camera].append(root+'/selection/'+case_id)
     if case_id:
@@ -41,7 +41,7 @@ def focus_camera(cameras):
 def blueprint(module='detection',normal=False,case_id=None,geometry=None):
     import rerun.blueprint as b
     bev,spatial,cameras=view_paths(module,normal,case_id)
-    mode='errors + normal' if normal else 'errors only'
+    mode='selected + normal' if normal else 'selected only'
     overview=b.Grid(*[b.Spatial2DView(name=c,origin='/ego/cameras/'+c+'/image',contents=cameras[c]) for c in CAMERAS],grid_columns=3)
     bev_bounds=None
     right=overview
@@ -58,7 +58,7 @@ def blueprint(module='detection',normal=False,case_id=None,geometry=None):
     return b.Blueprint(b.Horizontal(
         b.Vertical(b.Spatial2DView(name=module+' / BEV / '+mode,origin='/',contents=bev,visual_bounds=bev_bounds),
                    b.Spatial3DView(name=module+' / 3D / '+mode,origin='/ego',contents=spatial),
-                   b.TextDocumentView(name='Failure cases / current frame',origin='/failure_summary'),
+                   b.TextDocumentView(name='Selected case' if case_id else 'Frame diagnostic summary',origin='/selection/'+case_id+'/summary' if case_id else '/failure_summary'),
                    row_shares=[.42,.35,.23]),
         right,column_shares=[.45,.55]),b.TimePanel(state='expanded'),collapse_panels=True)
 

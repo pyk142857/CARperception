@@ -36,7 +36,7 @@ async function init(){
  const display=createDisplayController(viewer,async url=>{
   const r=await fetch(url);if(!r.ok)throw new Error('图层读取失败：'+url);return r.arrayBuffer();
  },(module,normal,loading=false)=>{
-  $('displayStatus').textContent=loading?'加载正常目标…':(module==='detection'?'检测':'跟踪')+' · '+(normal?'异常＋正常目标':'仅异常目标')+' · 选中目标：青白粗框';
+  $('displayStatus').textContent=loading?'加载正常目标…':(module==='detection'?'检测':'跟踪')+' · '+(normal?'选中异常＋正常目标':'仅选中异常框')+' · 选中目标：青白粗框';
   $('displayStatus').dataset.mode=loading?'loading':(normal?'normal':'errors');
   $('displayStatus').dataset.module=module;
  });

@@ -8,6 +8,9 @@ class TriageViewsTests(unittest.TestCase):
   self.assertIn('/selection/case_01217/bev',bev)
   self.assertIn('/ego/selection/case_01217',spatial)
   self.assertTrue(all(any(p.endswith('/selection/case_01217') for p in paths) for paths in cameras.values()))
+  paths=bev+spatial+[p for ps in cameras.values() for p in ps]
+  self.assertFalse(any('/failure_boxes/' in p or '/failures/tracking/**' in p for p in paths))
+  self.assertFalse(any('/failures/tracking/' in p for ps in cameras.values() for p in ps))
   self.assertFalse(any('selection' in p for p in view_paths('tracking')[0]))
   with self.assertRaises(ValueError):view_paths('tracking',False,'../bad')
  def test_errors_only_excludes_other_branch_and_normal(self):

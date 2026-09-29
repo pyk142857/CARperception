@@ -72,6 +72,10 @@ def log_failures(rr,rows,detections,tracks,gt_by_instance,points,packet,pose,fra
                     xy=np.asarray(segments).reshape(-1,2);anchor=xy[np.argmin(xy[:,1])]
                     camera_groups[(camera,case['module'],kind)].append((segments,anchor,label,case['case_id']))
         text.append(f"\n{case['case_id']} | {case['module']} | {kind} | {case['class_name']}"+(f" | {case['previous_tracking_id']} -> {case['tracking_id']}" if kind in ['id_switch','gap_id_change'] else ''))
+    if triage:
+        # Triage downloads the selected case on demand; keep other boxes out of the main recording.
+        rr.log('failure_summary',rr.TextDocument('\n'.join(text[:6]),media_type='text/markdown'))
+        return {module:{kind:counts[(module,kind)] for kind in COLORS} for module in ['detection','tracking']}
     for (module,kind),items in bev_groups.items():
         rr.log('failures/'+module+'/'+kind,
                rr.LineStrips2D([bev_outline(item[0]) for item in items],colors=COLORS[kind],

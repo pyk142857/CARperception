@@ -1,0 +1,7 @@
+{
+  "recording_id": "d832f0da563c4d5b9919ed8eec4b9b93",
+  "recording_sha256": "7ee86594ba40ed7cd63870d90d9bc3a114096c29fe39e06b8a4ece1d0e2cc31e",
+  "cases_sha256": "33f6bdcb4257fcf240795de2bc4268ea066acf9e73ab5f36b32953760d2e262f",
+  "frame_count": 39,
+  "check": "No failure-kind geometry entities or Boxes3D components in main recording; BEV pointcloud backgrounds retained"
+}

@@ -19,6 +19,9 @@ if __name__=='__main__':
     paths=['selection/'+a.case_id+'/bev','ego/selection/'+a.case_id]
     paths+=['ego/cameras/'+camera+'/image/selection/'+a.case_id for camera in item['cameras']]
     stream.set_time('frame',sequence=item['frame'])
+    summary_path='selection/'+a.case_id+'/summary'
+    paths.append(summary_path)
+    stream.log(summary_path,rr.TextDocument(f'# {a.case_id}\n\n{a.module} | frame {item["frame"]}\n\nOnly the selected observation is shown. Select another event member to change frame.',media_type='text/markdown'))
     stream.log(paths[0],rr.LineStrips2D([item['bev']],colors=color,radii=rr.Radius.ui_points(3),draw_order=50),rr.AnyValues(case_id=a.case_id))
     stream.log(paths[1],rr.Boxes3D(centers=[item['center']],sizes=[item['size']],quaternions=[item['quaternion']],
         colors=color,radii=rr.Radius.ui_points(3),show_labels=False),rr.AnyValues(case_id=a.case_id))
