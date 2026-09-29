@@ -1,0 +1,42 @@
+{
+  "scope": "scene-0061 / 39 keyframes / single teaching scene",
+  "baseline_score": 0.25,
+  "distance_gate_m": 2,
+  "thresholds": [
+    0.1,
+    0.2,
+    0.25,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9
+  ],
+  "confidence_bin_edges": [
+    0.25,
+    0.4,
+    0.6,
+    0.8,
+    1.0
+  ],
+  "track_protocol": "filter existing tracker outputs and reevaluate; tracker is NOT rerun",
+  "fn_confidence": null,
+  "id_confidence": "score of the current/new tracking ID at the switch frame",
+  "identity_events": "id_switch (consecutive observations); gap_id_change separate",
+  "count_unit": "object-frame failures and identity transitions, not aggregated event groups",
+  "lower_bound": "stored CenterPoint predictions were already filtered at 0.1",
+  "baseline_reproduction": "all cases and totals exactly match",
+  "source_sha256": {
+    "/home/minglei/Desktop/CAR/perception_lab/runs/20260923T043110_d6ae8066/M05/mini_scene/predictions.json": "43be7f1f42b1f77a16440ba99462ea789a30adcfa35fac1f221cdbe1ca126f56",
+    "/home/minglei/Desktop/CAR/perception_lab/runs/20260923T044014_0542fd21/M11/mini_tracking_M05/predictions.json": "28658bcde283ed8944ba386eceefd6f5a814583a6c14bc457b4fc70fd6e6ef9e",
+    "/home/minglei/Desktop/CAR/perception_lab/manifests/frame_packets.json": "d161deb2618d9c357d8976eee4f7c0de3a567900afbb679c5961cf74248e958d",
+    "/home/minglei/Desktop/CAR/perception_lab/reports/mini_evaluation/cases.json": "33f6bdcb4257fcf240795de2bc4268ea066acf9e73ab5f36b32953760d2e262f",
+    "/home/minglei/Desktop/CAR/perception_lab/reports/mini_evaluation/summary.json": "634c198eb9bcb457d3b9a3986ebeca980b8946af8d371658302d694cea5ef936",
+    "/home/minglei/Desktop/CAR/perception_lab/tools/evaluate_mini.py": "2b517fe98f2aac70372538c588338ed124593dd4b506b9cd7dfd5c6edd014f7b",
+    "/home/minglei/Desktop/CAR/perception_lab/tools/evaluation_utils.py": "ff446e9474a2654b40db57318576712a877c21a2672f7af5f0d6ace193be8346",
+    "/home/minglei/Desktop/CAR/perception_lab/tools/analyze_failure_confidence.py": "31634fe32556de8dc0d18684cef4fdd0e81b9e455c92de89122e657c9dd586bc"
+  },
+  "statistics": "descriptive only; one correlated scene, no independent runs/seeds or significance/CI claims"
+}

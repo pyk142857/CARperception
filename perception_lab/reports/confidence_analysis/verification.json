@@ -1,0 +1,23 @@
+{
+  "python_tests": 52,
+  "baseline_cases_reproduced": 1944,
+  "baseline_totals_match": true,
+  "histogram_totals": {
+    "detection_fn": 75,
+    "detection_fp": 1020,
+    "tracking_fn": 39,
+    "tracking_fp": 579,
+    "id_switch": 46,
+    "gap_id_change": 38
+  },
+  "thresholds_evaluated": 10,
+  "fn_confidence": "N/A",
+  "tracker_rerun": false,
+  "artifacts_sha256": {
+    "threshold_sweep.csv": "44503022e32cd66ceb722497e72d425a60a8a88ea1cbe8ba577c20127b01a3a6",
+    "threshold_by_class.csv": "6a6bdc6e5ae83508a0dedfcc306d2f60710b27f15b2c70cd175fc2bc3ab20d7a",
+    "cases_with_confidence.csv": "9d56228315523bd00a63d73418a387a1cbb7a0315429be2a11320760db7a3b02",
+    "confidence_bins.csv": "5f52bdc1fd2d65115228f20998b889529ef2803c954dcbba7cec516dacac7096",
+    "confidence_bins_by_class.csv": "65c9b19948e715a49a5b9a40fee62f93750528d4ad74dc734dfed3523540739f"
+  }
+}

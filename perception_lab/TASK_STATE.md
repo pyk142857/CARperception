@@ -66,3 +66,7 @@ results/metrics.csv、results/status.json、results/mini_learning.json 与 repor
 ## 异常默认显示（2026-09-29）
 
 9092 改为独立异常主记录，正常目标按需下载并可隐藏，事件分支联动BEV/3D/相机。正常匹配观测：检测2155、跟踪1067；模型与原指标不变。见 [报告](reports/failure_display/report.md)。
+
+## 置信度统计（2026-09-29）
+
+完成0.10–0.90的10档阈值重评及0.25基线分数分档，原案例/总计完全复现。FN无分数；ID取当帧新轨迹分数。跟踪器未重跑。见 [分析报告](reports/confidence_analysis/analysis-report.md)。

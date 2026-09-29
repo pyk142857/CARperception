@@ -174,6 +174,10 @@ envs/mmdet3d/bin/python tools/evaluate_mini.py --score 0.25 --distance 2.0
 
 [操作、复现与验证报告](perception_lab/reports/rerun_failures/report.md)。默认加载失败案例；另设显示阈值时需使用相同阈值报告，或加 `--no-failures` 关闭失败层。
 
+### 置信度与失败数量
+
+已统计 scene-0061 的10个分数阈值下 FN、FP、ID切换，并对当前0.25基线失败按置信度分档。FN没有匹配预测，分数为N/A；ID切换取当帧新ID的预测分数。跟踪阈值表是已有轨迹输出的后置筛选重评，不是重跑跟踪器。[完整表格、图表与复现](perception_lab/reports/confidence_analysis/analysis-report.md)。
+
 ### 失败事件归并与复核工作台
 
 **异常优先显示**：9092 默认只加载失败框，保留图像、点云和车道线背景。勾选顶部“显示正常目标（按需加载）”后叠加淡绿色正常框；取消即可隐藏。点击事件时自动切换对应检测/跟踪分支，开关保持当前帧。[规则、复现与验证](perception_lab/reports/failure_display/report.md)。
