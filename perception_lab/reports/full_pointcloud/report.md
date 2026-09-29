@@ -43,3 +43,5 @@ perception_lab/envs/mmdet3d/bin/python -m unittest discover -s perception_lab/te
 ```
 
 打开或刷新 <http://127.0.0.1:9092/>。浏览器测试需要 Playwright、Pillow、Google Chrome 和图形桌面；运行环境、原始数据及大型 RRD 不上传 GitHub。
+
+后续修正：[恢复深色主题](../dark_theme_restore/report.md)，完整点云与取景行为不变。

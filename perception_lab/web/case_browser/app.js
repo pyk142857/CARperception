@@ -46,6 +46,17 @@ async function init(){
   try{await display.apply(display.getBranch(),$('showNormal').checked,display.getSelection());}
   catch(e){$('displayStatus').textContent=e.message;}
  };
+ // Rerun 0.27.3 follows the OS theme by default. Its embedding API has no
+ // theme option; use the pinned viewer's persisted egui preference instead.
+ // Preserve other viewer preferences, and prevent the pre-0.24 migration
+ // from replacing this explicit Dark preference with System on first load.
+ const memory=localStorage.getItem('egui_memory_ron');
+ if(!memory)localStorage.setItem('egui_memory_ron','(options:(theme_preference:Dark))');
+ else if(/theme_preference:\s*(Dark|Light|System)/.test(memory))
+  localStorage.setItem('egui_memory_ron',memory.replace(/theme_preference:\s*(Dark|Light|System)/,'theme_preference:Dark'));
+ else if(/options:\s*\(/.test(memory))
+  localStorage.setItem('egui_memory_ron',memory.replace(/options:\s*\(/,'options:(theme_preference:Dark,'));
+ localStorage.setItem('rerun.version','0.27.3');
  setStatus('加载 Rerun 0.27.3…');await viewer.start(null,$('viewer'),{render_backend:'webgl',hide_welcome_screen:true,width:'100%',height:'100%'});
  setStatus('加载场景记录…');const buffer=await fetch('/mini_scene.rrd').then(r=>{if(!r.ok)throw new Error('记录读取失败');return r.arrayBuffer();});
  const channel=viewer.open_channel('CARperception failures');channel.send_rrd(new Uint8Array(buffer));channel.close();
