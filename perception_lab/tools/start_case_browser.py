@@ -3,6 +3,7 @@ import argparse,base64,hashlib,io,json,mimetypes,os,signal,subprocess,sys,tarfil
 from pathlib import Path
 from http.server import BaseHTTPRequestHandler,ThreadingHTTPServer
 from urllib.parse import urlsplit
+from event_reviews import ReviewStore,Conflict
 ROOT=Path(__file__).resolve().parents[1]
 APP=ROOT/'web/case_browser';RUNTIME=ROOT/'outputs/case_browser';STATE=RUNTIME/'server.json'
 INTEGRITY='mXm12DzY+eFtvAc0PTh2ttDdU0xCopOMUsSumEdPJg2nSihJAhaoYypkxFyZHbGBSN6wu1tuymYuIehMCS5GEQ=='
@@ -18,12 +19,42 @@ def setup():
   for n in VENDOR:(vendor/n).write_bytes(tar.extractfile('package/'+n).read())
  manifest.write_text(json.dumps({n:hashlib.sha256((vendor/n).read_bytes()).hexdigest() for n in VENDOR},indent=2))
 
+def reviews():
+ data=json.loads((ROOT/'reports/failure_events/events.json').read_text())
+ targets={e['event_id'] for e in data['events']}|{g['group_id'] for g in data['groups']}
+ return ReviewStore(RUNTIME/'reviews'/(data['dataset_id']+'.json'),data['dataset_id'],targets)
+
 class Handler(BaseHTTPRequestHandler):
+ def send_json(self,data,status=200,head=False):
+  body=json.dumps(data,ensure_ascii=False).encode()
+  self.send_response(status);self.send_header('Content-Type','application/json; charset=utf-8')
+  self.send_header('Content-Length',str(len(body)));self.send_header('Cache-Control','no-store');self.end_headers()
+  if not head:self.wfile.write(body)
+ def do_POST(self):
+  if urlsplit(self.path).path!='/api/reviews':self.send_error(404);return
+  origin=self.headers.get('Origin')
+  if self.headers.get('Content-Type','').split(';')[0]!='application/json' or (origin and origin!='http://'+self.headers.get('Host','')):
+   self.send_json({'error':'Unsupported request origin or content type'},403);return
+  try:
+   length=int(self.headers.get('Content-Length','0'))
+   if not 0<length<=32000:raise ValueError('Request too large or empty')
+   payload=json.loads(self.rfile.read(length))
+   if not isinstance(payload,dict):raise ValueError('Expected object')
+   self.send_json(reviews().save(payload))
+  except Conflict as e:self.send_json({'error':str(e)},409)
+  except (ValueError,KeyError) as e:self.send_json({'error':str(e)},400)
+
  def do_GET(self):self.serve(False)
  def do_HEAD(self):self.serve(True)
  def serve(self,head):
   path=urlsplit(self.path).path
+  if path=='/api/reviews':
+   try:self.send_json(reviews().read(),head=head)
+   except Conflict as e:self.send_json({'error':str(e)},409,head=head)
+   return
   routes={'/':APP/'index.html','/app.js':APP/'app.js','/style.css':APP/'style.css','/case_logic.mjs':APP/'case_logic.mjs',
+          '/event_ui.js':APP/'event_ui.js','/event_logic.mjs':APP/'event_logic.mjs',
+          '/events.json':ROOT/'reports/failure_events/events.json',
           '/cases.json':ROOT/'reports/mini_evaluation/cases.json','/summary.json':ROOT/'reports/mini_evaluation/summary.json',
           '/recording.json':ROOT/'outputs/rerun/mini_scene.json','/mini_scene.rrd':ROOT/'outputs/rerun/mini_scene.rrd'}
   routes.update({'/vendor/'+n:RUNTIME/'vendor'/n for n in VENDOR});routes['/vendor/re_viewer']=RUNTIME/'vendor/re_viewer.js'
@@ -50,6 +81,7 @@ def main():
  if state.get('pid') and owned(state['pid']):url=state['url']
  else:
   if not (ROOT/'outputs/rerun/mini_scene.rrd').is_file():raise SystemExit('Export the Rerun recording first')
+  if not (ROOT/'reports/failure_events/events.json').is_file():raise SystemExit('Run tools/aggregate_failure_events.py in the mmdet3d environment first')
   setup();url=f'http://127.0.0.1:{a.port}/'
   with (RUNTIME/'server.log').open('a') as f:
    proc=subprocess.Popen([sys.executable,str(Path(__file__).resolve()),'--serve','--port',str(a.port)],stdout=f,stderr=f,start_new_session=True,stdin=subprocess.DEVNULL)

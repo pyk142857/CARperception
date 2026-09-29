@@ -174,6 +174,12 @@ envs/mmdet3d/bin/python tools/evaluate_mini.py --score 0.25 --distance 2.0
 
 [操作、复现与验证报告](perception_lab/reports/rerun_failures/report.md)。默认加载失败案例；另设显示阈值时需使用相同阈值报告，或加 `--no-failures` 关闭失败层。
 
+### 失败事件归并与复核工作台
+
+[本机工作台](http://127.0.0.1:9092/) 已支持 **原始案例 → 目标事件 → 问题分组 → 复核 → 片段回放**。当前 1910 条失败记录归并为 1268 个事件、84 个现象分组；复核可记录负责人、根因、措施与验证证据，本地持久保存并导出。事件数下降不是模型精度提升，FP 关联仍需复核。
+
+默认按事件浏览，切换“问题分组排行榜”后可下钻；点击事件定位代表帧，或播放同场景前后2秒并自动暂停。原始案例、模型输出和评估指标保留。[完整规则、结果与复现报告](perception_lab/reports/failure_events/report.md)。
+
 ### 可点击的嵌入式案例浏览器
 
 运行 `cd perception_lab && envs/rerun/bin/python tools/start_case_browser.py`，打开 [本机案例浏览器](http://127.0.0.1:9092/)。按分支、失败类型、目标类别或编号筛选，点击案例后自动暂停并跳到对应 frame，BEV 与六路图像同步更新；支持上一条／下一条及 `#case_XXXXX` 定位链接。等待完整记录加载后启用跳转。

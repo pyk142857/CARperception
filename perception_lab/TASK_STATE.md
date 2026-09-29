@@ -58,3 +58,7 @@ results/metrics.csv、results/status.json、results/mini_learning.json 与 repor
 ## 嵌入式案例浏览（2026-09-28）
 
 新增本地 9092 案例浏览器，固定 Rerun WebViewer 0.23.4，提供筛选、详情、上一条/下一条和自动暂停跳帧，复用已有录制与案例。见 [报告](reports/embedded_case_browser/report.md)。
+
+## 失败事件工作流（2026-09-29）
+
+已实现 mini 离线诊断的目标事件归并、现象分组、人工复核与 Rerun 有界片段播放。1910 条失败→1268 事件→84 分组；不是模型优化结果。线上无真值挖掘和场景级因果归因未实现。见 [报告](reports/failure_events/report.md)。

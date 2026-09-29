@@ -1,0 +1,51 @@
+{
+  "errors": [],
+  "clip": {
+    "frame": 6,
+    "playing": false
+  },
+  "checks": [
+    "review save/reload/reread/restore",
+    "group drill-down",
+    "GT ID switch seek frame2",
+    "expand original cases",
+    "bounded clip completes paused",
+    "raw FN seek frame0",
+    "parent event",
+    "empty search",
+    "narrow viewport"
+  ],
+  "python_tests": 46,
+  "javascript_suites": [
+    "case filters/seek",
+    "clip boundaries/completion/cancellation"
+  ],
+  "deterministic_regeneration": true,
+  "case_membership": "1910 failures exactly once",
+  "original_metrics_unchanged": true,
+  "browser": "Headed Chrome / WebGL via system Playwright; Browser plugin not available",
+  "desktop_viewport": [
+    1900,
+    1250
+  ],
+  "narrow_viewport": [
+    700,
+    950
+  ],
+  "extra_checks": [
+    "legacy #case_01217 opens raw-case mode",
+    "review snapshot downloads as valid JSON"
+  ],
+  "dataset_id": "dfe0be623512bed078ea6fc1aed20af32db39ec97a2c69fa59fe678aaad8a6fa",
+  "source_sha256": {
+    "perception_lab/tools/aggregate_failure_events.py": "25b40400ae5165e57aef12beb766afb3d34cc18e056b27798d273dbcd1c508c3",
+    "perception_lab/tools/event_reviews.py": "d583e2c18d88d3b5f510d14f3b18440ba75ceb531f6b088d74f84b16913a431f",
+    "perception_lab/tools/start_case_browser.py": "29fcf78f49a6a05fbbbf3489c23f165e8333a51857747db33314090b3209d61b",
+    "perception_lab/web/case_browser/app.js": "d30df651e9dda473326f5889f7bc2a63291035218efebce5a6ca7347014228dc",
+    "perception_lab/web/case_browser/case_logic.mjs": "657ba8c3ffe650fd018953ab5d4f6952edaf95afad011900a828c1aa11ca67d0",
+    "perception_lab/web/case_browser/event_logic.mjs": "d4b139c7c53527019b1cd803ff1d25f4b301ca847bcf61b204ddf57f575aa7f5",
+    "perception_lab/web/case_browser/event_ui.js": "9eecb006a70a56c8fecc0a3b86d94a915d4f5530de26b69a73fcdb6e24df7b8c",
+    "perception_lab/web/case_browser/index.html": "d5519f340118ce89af852cf9db254d796920688e3984ba57bc1a6281437137db",
+    "perception_lab/web/case_browser/style.css": "a33a375ca7b9181b5dfa4c43c79490f5585be07480ba50b78520e38bf0980113"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "scope": "scene-0061 mini teaching diagnostic",
+  "dataset_id": "dfe0be623512bed078ea6fc1aed20af32db39ec97a2c69fa59fe678aaad8a6fa",
+  "original_case_count": 1944,
+  "failure_case_count": 1910,
+  "excluded_gap_recovery": 34,
+  "event_count": 1268,
+  "group_count": 84,
+  "by_kind": {
+    "false_negative": 97,
+    "false_positive": 1007,
+    "center_error_over_1m": 87,
+    "id_switch": 39,
+    "gap_id_change": 38
+  },
+  "parameters": {
+    "max_gap_seconds": 0.75,
+    "fp_residual_gate_m": 2.0,
+    "max_size_ratio": 2.0,
+    "context_seconds": 2.0,
+    "continuity": "adjacent frames only",
+    "version": 1
+  },
+  "case_membership": "each failure case belongs to exactly one event",
+  "source_sha256": {
+    "/home/minglei/Desktop/CAR/perception_lab/reports/mini_evaluation/cases.json": "33f6bdcb4257fcf240795de2bc4268ea066acf9e73ab5f36b32953760d2e262f",
+    "/home/minglei/Desktop/CAR/perception_lab/reports/mini_evaluation/summary.json": "634c198eb9bcb457d3b9a3986ebeca980b8946af8d371658302d694cea5ef936",
+    "/home/minglei/Desktop/CAR/perception_lab/manifests/frame_packets.json": "d161deb2618d9c357d8976eee4f7c0de3a567900afbb679c5961cf74248e958d",
+    "/home/minglei/Desktop/CAR/perception_lab/tools/aggregate_failure_events.py": "25b40400ae5165e57aef12beb766afb3d34cc18e056b27798d273dbcd1c508c3",
+    "/home/minglei/Desktop/CAR/perception_lab/runs/20260923T043110_d6ae8066/M05/mini_scene/predictions.json": "43be7f1f42b1f77a16440ba99462ea789a30adcfa35fac1f221cdbe1ca126f56",
+    "/home/minglei/Desktop/CAR/perception_lab/runs/20260923T044014_0542fd21/M11/mini_tracking_M05/predictions.json": "28658bcde283ed8944ba386eceefd6f5a814583a6c14bc457b4fc70fd6e6ef9e"
+  },
+  "limitations": [
+    "FP association is heuristic, not GT identity",
+    "groups describe symptoms, not root causes",
+    "no exposure denominator: counts are not failure rates",
+    "single-scene teaching scope"
+  ]
+}
