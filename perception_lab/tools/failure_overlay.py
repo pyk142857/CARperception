@@ -50,8 +50,8 @@ def log_failures(rr,rows,detections,tracks,gt_by_instance,points,packet,pose,fra
         kind=case['kind']
         if kind not in COLORS:continue
         box=resolve_case(case,detections,tracks,gt_by_instance);color=COLORS[kind]
-        label=SHORT[kind]+' '+case['case_id'].replace('case_','')
-        if kind in ['id_switch','gap_id_change']:label+=' '+case['previous_tracking_id']+'->'+case['tracking_id']
+        # Keep compact labels available for inspection without covering small targets.
+        label=SHORT[kind]+' '+str(int(case['case_id'].removeprefix('case_')))
         bev_groups[(case['module'],kind)].append((box,label,case))
         if triage or case['module']=='detection':
             for camera,entry in packet['sensors'].items():
@@ -65,7 +65,7 @@ def log_failures(rr,rows,detections,tracks,gt_by_instance,points,packet,pose,fra
     for (module,kind),items in bev_groups.items():
         rr.log('failures/'+module+'/'+kind,
                rr.LineStrips2D([bev_outline(item[0]) for item in items],colors=COLORS[kind],
-                              radii=rr.Radius.ui_points(2),labels=[item[1] for item in items],show_labels=True),
+                              radii=rr.Radius.ui_points(1),labels=[item[1] for item in items],show_labels=False),
                rr.AnyValues(case_id=[item[2]['case_id'] for item in items],
                             class_name=[item[2]['class_name'] for item in items],
                             sample_token=[item[2]['sample_token'] for item in items]))
@@ -75,13 +75,16 @@ def log_failures(rr,rows,detections,tracks,gt_by_instance,points,packet,pose,fra
                 centers=[b['center_xyz'] for b in boxes],
                 sizes=[[b['size_wlh'][1],b['size_wlh'][0],b['size_wlh'][2]] for b in boxes],
                 quaternions=[list(b['rotation_wxyz'][1:])+[b['rotation_wxyz'][0]] for b in boxes],
-                colors=COLORS[kind],labels=[item[1] for item in items],show_labels=True))
+                colors=COLORS[kind],radii=rr.Radius.ui_points(1),
+                labels=[item[1] for item in items],show_labels=False),
+                rr.AnyValues(case_id=[item[2]['case_id'] for item in items],
+                             class_name=[item[2]['class_name'] for item in items]))
     for (camera,module,kind),items in camera_groups.items():
         path='ego/cameras/'+camera+'/image/failures/'+(module+'/' if triage else '')+kind
         rr.log(path+'/boxes',rr.LineStrips2D([segment for item in items for segment in item[0]],
-               colors=COLORS[kind],radii=rr.Radius.ui_points(2),draw_order=30))
+               colors=COLORS[kind],radii=rr.Radius.ui_points(1),draw_order=30))
         rr.log(path+'/labels',rr.Points2D([item[1] for item in items],colors=COLORS[kind],
-               labels=[item[2] for item in items],show_labels=True,radii=rr.Radius.ui_points(1),draw_order=31),
+               labels=[item[2] for item in items],show_labels=False,radii=rr.Radius.ui_points(1),draw_order=31),
                rr.AnyValues(case_id=[item[3] for item in items]))
     rr.log('failure_summary',rr.TextDocument('\n'.join(text),media_type='text/markdown'))
     return {module:{kind:counts[(module,kind)] for kind in COLORS} for module in ['detection','tracking']}

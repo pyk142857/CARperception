@@ -176,6 +176,8 @@ envs/mmdet3d/bin/python tools/evaluate_mini.py --score 0.25 --distance 2.0
 
 ### 置信度与失败数量
 
+异常框现采用细线，BEV、3D 和相机图默认隐藏常驻编号，避免遮挡小目标；完整编号和 ID 转换信息可在案例详情与帧摘要中查看。[样式调整与截图](perception_lab/reports/compact_failure_labels/report.md)。
+
 失败工作台现已支持按置信度区间筛选事件、分组和逐帧案例，FN 单列“无置信度”；点击事件定位到符合筛选的帧。复核文本编辑面板已移除，历史记录保留。[使用口径与验证](perception_lab/reports/confidence_filter/report.md)。
 
 失败相对自车的位置及潜在驾驶影响见[空间分布报告](perception_lab/reports/spatial_failure_analysis/report.md)，包含五区域 FN/FP/ID 切换统计和近前方漏检的 Rerun 入口。区域仅用于筛查，项目尚未验证规划或控制层面的实际影响。

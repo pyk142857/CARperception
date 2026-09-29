@@ -1,0 +1,23 @@
+{
+  "page_errors": [],
+  "before": {
+    "id": "2765743e1dd243529ef7782fdb08f846",
+    "frame": 2,
+    "playing": false
+  },
+  "after": {
+    "id": "2765743e1dd243529ef7782fdb08f846",
+    "frame": 2,
+    "playing": false
+  },
+  "normal_requests": 1,
+  "checks": [
+    "no normal download by default",
+    "branch change",
+    "normal_ready marker",
+    "same recording/frame/paused on toggle",
+    "uncheck hides normal",
+    "recheck no redownload",
+    "clip still ends paused"
+  ]
+}
