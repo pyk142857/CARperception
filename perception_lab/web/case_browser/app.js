@@ -46,7 +46,7 @@ async function init(){
   try{await display.apply(display.getBranch(),$('showNormal').checked,display.getSelection());}
   catch(e){$('displayStatus').textContent=e.message;}
  };
- setStatus('加载 Rerun 0.23.4…');await viewer.start(null,$('viewer'),{render_backend:'webgl',hide_welcome_screen:true,width:'100%',height:'100%'});
+ setStatus('加载 Rerun 0.27.3…');await viewer.start(null,$('viewer'),{render_backend:'webgl',hide_welcome_screen:true,width:'100%',height:'100%'});
  setStatus('加载场景记录…');const buffer=await fetch('/mini_scene.rrd').then(r=>{if(!r.ok)throw new Error('记录读取失败');return r.arrayBuffer();});
  const channel=viewer.open_channel('CARperception failures');channel.send_rrd(new Uint8Array(buffer));channel.close();
  const started=Date.now();

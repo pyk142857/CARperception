@@ -3,7 +3,6 @@ import argparse,json
 from pathlib import Path
 import rerun as rr
 from triage_views import APPLICATION_ID,blueprint
-from selection_context import log_context
 
 if __name__=='__main__':
     p=argparse.ArgumentParser()
@@ -20,7 +19,6 @@ if __name__=='__main__':
     paths=['selection/'+a.case_id+'/bev','ego/selection/'+a.case_id]
     paths+=['ego/cameras/'+camera+'/image/selection/'+a.case_id for camera in item['cameras']]
     stream.set_time('frame',sequence=item['frame'])
-    context_path=log_context(stream,rr,item,a.case_id,a.normal)
     summary_path='selection/'+a.case_id+'/summary'
     paths.append(summary_path)
     stream.log(summary_path,rr.TextDocument(f'# {a.case_id}\n\n{a.module} | frame {item["frame"]}\n\nOnly the selected observation is shown. Select another event member to change frame.',media_type='text/markdown'))
@@ -33,6 +31,5 @@ if __name__=='__main__':
     if item['frame']+1<geometry['frame_count']:
         stream.set_time('frame',sequence=item['frame']+1)
         for path in paths:stream.log(path,rr.Clear(recursive=True))
-        stream.log(context_path,rr.Clear(recursive=True))
     rr.send_blueprint(blueprint(a.module,a.normal,a.case_id,item),recording=stream,make_active=True,make_default=True)
     stream.flush();stream.disconnect()

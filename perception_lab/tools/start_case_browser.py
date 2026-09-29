@@ -8,7 +8,8 @@ from event_reviews import ReviewStore,Conflict
 from case_labels import LabelStore
 ROOT=Path(__file__).resolve().parents[1]
 APP=ROOT/'web/case_browser';RUNTIME=ROOT/'outputs/case_browser';STATE=RUNTIME/'server.json'
-INTEGRITY='mXm12DzY+eFtvAc0PTh2ttDdU0xCopOMUsSumEdPJg2nSihJAhaoYypkxFyZHbGBSN6wu1tuymYuIehMCS5GEQ=='
+INTEGRITY='U8QAapg63l3JKepJeJVubVJG/qVzkYHAmZrmHgQ6XHxGPk8PqGevd099Of21b2IhkwpA8GuUbN7g8RRj83zHUQ=='
+VIEWER_VERSION='0.27.3'
 VENDOR=['index.js','re_viewer.js','re_viewer_bg.wasm']
 SELECTION_LOCK=threading.Lock()
 
@@ -28,7 +29,7 @@ def selection_file(module,mode,case_id):
   target=directory/(module+'_'+mode+'_'+case_id+'.rrd')
   if not target.exists():
    temporary=target.with_suffix('.tmp')
-   command=[str(ROOT/'envs/rerun/bin/python'),str(ROOT/'tools/selection_blueprint.py'),
+   command=[str(ROOT/'envs/rerun_focus/bin/python'),str(ROOT/'tools/selection_blueprint.py'),
             '--recording-id',recording['recording_id'],'--module',module,'--case-id',case_id,'--out',str(temporary)]
    if mode=='normal':command.append('--normal')
    subprocess.run(command,check=True,timeout=30,capture_output=True)
@@ -36,10 +37,10 @@ def selection_file(module,mode,case_id):
   return target
 
 def setup():
- RUNTIME.mkdir(parents=True,exist_ok=True);vendor=RUNTIME/'vendor';vendor.mkdir(exist_ok=True)
+ RUNTIME.mkdir(parents=True,exist_ok=True);vendor=RUNTIME/('vendor_'+VIEWER_VERSION);vendor.mkdir(exist_ok=True)
  manifest=vendor/'sha256.json'
  if manifest.exists() and all((vendor/n).exists() and hashlib.sha256((vendor/n).read_bytes()).hexdigest()==json.loads(manifest.read_text()).get(n) for n in VENDOR):return
- data=urllib.request.urlopen('https://registry.npmjs.org/@rerun-io/web-viewer/-/web-viewer-0.23.4.tgz',timeout=90).read()
+ data=urllib.request.urlopen('https://registry.npmjs.org/@rerun-io/web-viewer/-/web-viewer-0.27.3.tgz',timeout=90).read()
  if base64.b64encode(hashlib.sha512(data).digest()).decode()!=INTEGRITY:raise ValueError('Vendor integrity mismatch')
  with tarfile.open(fileobj=io.BytesIO(data),mode='r:gz') as tar:
   for n in VENDOR:(vendor/n).write_bytes(tar.extractfile('package/'+n).read())
@@ -94,7 +95,7 @@ class Handler(BaseHTTPRequestHandler):
           '/normal_targets.rrd':ROOT/'outputs/rerun/normal_targets.rrd'}
   routes.update({'/view_'+module+'_'+mode+'.rrd':ROOT/'outputs/rerun'/('view_'+module+'_'+mode+'.rrd')
                  for module in ['detection','tracking'] for mode in ['errors','normal']})
-  routes.update({'/vendor/'+n:RUNTIME/'vendor'/n for n in VENDOR});routes['/vendor/re_viewer']=RUNTIME/'vendor/re_viewer.js'
+  routes.update({'/vendor/'+n:RUNTIME/('vendor_'+VIEWER_VERSION)/n for n in VENDOR});routes['/vendor/re_viewer']=RUNTIME/('vendor_'+VIEWER_VERSION)/'re_viewer.js'
   file=routes.get(path)
   match=re.fullmatch(r'/selection/(detection|tracking)/(errors|normal)/(case_\d{5})\.rrd',path)
   if match:

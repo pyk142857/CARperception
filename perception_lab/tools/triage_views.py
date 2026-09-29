@@ -21,10 +21,10 @@ def view_paths(module,normal=False,case_id=None):
         if case_id:cameras[camera].append(root+'/selection/'+case_id)
     if case_id:
         bev.append('/selection/'+case_id+'/bev')
-        spatial=['/ego/selection/'+case_id,'/ego/selection_context/'+case_id+'/points']
+        spatial.append('/ego/selection/'+case_id)
     if normal:
         bev.append('/normal/'+module+'/bev/**')
-        spatial.append('/ego/selection_context/'+case_id+'/normal' if case_id else '/ego/normal/'+module+'/**')
+        spatial.append('/ego/normal/'+module+'/**')
     return bev,spatial,cameras
 
 def focus_bounds(points,minimum=96,padding=2.5):
@@ -47,7 +47,11 @@ def blueprint(module='detection',normal=False,case_id=None,geometry=None):
     overview=b.Grid(*[b.Spatial2DView(name=c,origin='/ego/cameras/'+c+'/image',contents=cameras[c]) for c in CAMERAS],grid_columns=3)
     bev_bounds=None
     right=overview
+    eye_options={}
     if geometry is not None:
+        from selection_context import camera_eye
+        position,target=camera_eye(geometry)
+        eye_options={'eye_controls':b.EyeControls3D(position=position,look_target=target,eye_up=[0,0,1])}
         x,y=focus_bounds(geometry['bev'],minimum=12,padding=3)
         bev_bounds=b.VisualBounds2D(x_range=x,y_range=y)
         camera=focus_camera(geometry['cameras'])
@@ -59,7 +63,7 @@ def blueprint(module='detection',normal=False,case_id=None,geometry=None):
             right=b.Vertical(detail,overview,row_shares=[.6,.4])
     return b.Blueprint(b.Horizontal(
         b.Vertical(b.Spatial2DView(name=module+' / BEV / '+mode,origin='/',contents=bev,visual_bounds=bev_bounds),
-                   b.Spatial3DView(name=module+(' / 3D close-up / ' if case_id else ' / 3D / ')+mode,origin='/ego',contents=spatial),
+                   b.Spatial3DView(name=module+(' / 3D close-up / ' if case_id else ' / 3D / ')+mode,origin='/ego',contents=spatial,**eye_options),
                    b.TextDocumentView(name='Selected case' if case_id else 'Frame diagnostic summary',origin='/selection/'+case_id+'/summary' if case_id else '/failure_summary'),
                    row_shares=[.42,.35,.23]),
         right,column_shares=[.45,.55]),b.TimePanel(state='expanded'),collapse_panels=True)

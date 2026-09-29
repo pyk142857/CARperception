@@ -1,0 +1,202 @@
+{
+  "frames": [
+    {
+      "frame": 0,
+      "raw_points": 34688,
+      "recorded_points": 34688
+    },
+    {
+      "frame": 1,
+      "raw_points": 34720,
+      "recorded_points": 34720
+    },
+    {
+      "frame": 2,
+      "raw_points": 34720,
+      "recorded_points": 34720
+    },
+    {
+      "frame": 3,
+      "raw_points": 34688,
+      "recorded_points": 34688
+    },
+    {
+      "frame": 4,
+      "raw_points": 34752,
+      "recorded_points": 34752
+    },
+    {
+      "frame": 5,
+      "raw_points": 34784,
+      "recorded_points": 34784
+    },
+    {
+      "frame": 6,
+      "raw_points": 34720,
+      "recorded_points": 34720
+    },
+    {
+      "frame": 7,
+      "raw_points": 34720,
+      "recorded_points": 34720
+    },
+    {
+      "frame": 8,
+      "raw_points": 34688,
+      "recorded_points": 34688
+    },
+    {
+      "frame": 9,
+      "raw_points": 34688,
+      "recorded_points": 34688
+    },
+    {
+      "frame": 10,
+      "raw_points": 34688,
+      "recorded_points": 34688
+    },
+    {
+      "frame": 11,
+      "raw_points": 34720,
+      "recorded_points": 34720
+    },
+    {
+      "frame": 12,
+      "raw_points": 34688,
+      "recorded_points": 34688
+    },
+    {
+      "frame": 13,
+      "raw_points": 34752,
+      "recorded_points": 34752
+    },
+    {
+      "frame": 14,
+      "raw_points": 34752,
+      "recorded_points": 34752
+    },
+    {
+      "frame": 15,
+      "raw_points": 34784,
+      "recorded_points": 34784
+    },
+    {
+      "frame": 16,
+      "raw_points": 34784,
+      "recorded_points": 34784
+    },
+    {
+      "frame": 17,
+      "raw_points": 34752,
+      "recorded_points": 34752
+    },
+    {
+      "frame": 18,
+      "raw_points": 34688,
+      "recorded_points": 34688
+    },
+    {
+      "frame": 19,
+      "raw_points": 34688,
+      "recorded_points": 34688
+    },
+    {
+      "frame": 20,
+      "raw_points": 34688,
+      "recorded_points": 34688
+    },
+    {
+      "frame": 21,
+      "raw_points": 34720,
+      "recorded_points": 34720
+    },
+    {
+      "frame": 22,
+      "raw_points": 34688,
+      "recorded_points": 34688
+    },
+    {
+      "frame": 23,
+      "raw_points": 34720,
+      "recorded_points": 34720
+    },
+    {
+      "frame": 24,
+      "raw_points": 34752,
+      "recorded_points": 34752
+    },
+    {
+      "frame": 25,
+      "raw_points": 34720,
+      "recorded_points": 34720
+    },
+    {
+      "frame": 26,
+      "raw_points": 34720,
+      "recorded_points": 34720
+    },
+    {
+      "frame": 27,
+      "raw_points": 34720,
+      "recorded_points": 34720
+    },
+    {
+      "frame": 28,
+      "raw_points": 34752,
+      "recorded_points": 34752
+    },
+    {
+      "frame": 29,
+      "raw_points": 34720,
+      "recorded_points": 34720
+    },
+    {
+      "frame": 30,
+      "raw_points": 34720,
+      "recorded_points": 34720
+    },
+    {
+      "frame": 31,
+      "raw_points": 34720,
+      "recorded_points": 34720
+    },
+    {
+      "frame": 32,
+      "raw_points": 34720,
+      "recorded_points": 34720
+    },
+    {
+      "frame": 33,
+      "raw_points": 34752,
+      "recorded_points": 34752
+    },
+    {
+      "frame": 34,
+      "raw_points": 34720,
+      "recorded_points": 34720
+    },
+    {
+      "frame": 35,
+      "raw_points": 34688,
+      "recorded_points": 34688
+    },
+    {
+      "frame": 36,
+      "raw_points": 34688,
+      "recorded_points": 34688
+    },
+    {
+      "frame": 37,
+      "raw_points": 34720,
+      "recorded_points": 34720
+    },
+    {
+      "frame": 38,
+      "raw_points": 34720,
+      "recorded_points": 34720
+    }
+  ],
+  "total_points": 1354112,
+  "max_coordinate_error_m": 3.8144487888303047e-06,
+  "recording_sha256": "7ee86594ba40ed7cd63870d90d9bc3a114096c29fe39e06b8a4ece1d0e2cc31e"
+}

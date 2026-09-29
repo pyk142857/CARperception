@@ -176,7 +176,7 @@ envs/mmdet3d/bin/python tools/evaluate_mini.py --score 0.25 --distance 2.0
 
 ### 置信度与失败数量
 
-选中目标时，**3D 视图也会自动拉近**，显示目标框及附近真实点云；局部范围随目标尺寸调整，切换事件成员同步更新。[说明与验证](perception_lab/reports/selection_3d_focus/report.md)。
+选中目标时，**3D 视图通过移动相机自动拉近，保留当前帧全部点云**，不再裁剪目标附近的点云；切换事件成员同步更新取景。39 帧共 1,354,112 个点已与原始 LiDAR 逐帧核对，缩小视图可查看周围场景。[说明与验证](perception_lab/reports/full_pointcloud/report.md)。
 
 当前回放**只按需加载并显示选中的异常框**，其他异常不同时出现；图像、点云、车道线保留，正常目标仍可选显示。[行为说明与验证](perception_lab/reports/selected_only/report.md)。
 
@@ -209,7 +209,7 @@ envs/mmdet3d/bin/python tools/evaluate_mini.py --score 0.25 --distance 2.0
 
 运行 `cd perception_lab && envs/rerun/bin/python tools/start_case_browser.py`，打开 [本机案例浏览器](http://127.0.0.1:9092/)。按分支、失败类型、目标类别或编号筛选，点击案例后自动暂停并跳到对应 frame，BEV 与六路图像同步更新；支持上一条／下一条及 `#case_XXXXX` 定位链接。等待完整记录加载后启用跳转。
 
-[操作与复现报告](perception_lab/reports/embedded_case_browser/report.md)。复用 Rerun 0.23.4 和已有录制文件，无需模型重推理；原 9090 查看器仍保留。
+[操作与复现报告](perception_lab/reports/embedded_case_browser/report.md)。工作台查看器与按需取景组件使用 Rerun 0.27.3，兼容现有 0.23.4 录制，无需模型重推理；原 9090 查看器仍保留。取景组件的独立环境安装见[完整点云报告](perception_lab/reports/full_pointcloud/report.md)。
 
 ### 本地启动 Rerun
 

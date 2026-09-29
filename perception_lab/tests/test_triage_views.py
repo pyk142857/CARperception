@@ -7,8 +7,9 @@ class TriageViewsTests(unittest.TestCase):
   bev,spatial,cameras=view_paths('tracking',False,'case_01217')
   self.assertIn('/selection/case_01217/bev',bev)
   self.assertIn('/ego/selection/case_01217',spatial)
-  self.assertNotIn('/ego/lidar',spatial)
-  self.assertIn('/ego/selection_context/case_01217/points',spatial)
+  self.assertIn('/ego/lidar',spatial)
+  self.assertIn('/ego/maptr/**',spatial)
+  self.assertFalse(any('/selection_context/' in p for p in spatial))
   self.assertTrue(all(any(p.endswith('/selection/case_01217') for p in paths) for paths in cameras.values()))
   paths=bev+spatial+[p for ps in cameras.values() for p in ps]
   self.assertFalse(any('/failure_boxes/' in p or '/failures/tracking/**' in p for p in paths))
