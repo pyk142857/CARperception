@@ -1,0 +1,16 @@
+{
+  "errors": [],
+  "target": "case_00003",
+  "checks": [
+    "save and reload",
+    "GT-missing filter",
+    "original FP retained",
+    "stale revision 409",
+    "download JSON",
+    "restore original",
+    "FN cannot be labelled correct detection",
+    "member editor follows selected frame",
+    "desktop and narrow"
+  ],
+  "qa_labels_restored": true
+}

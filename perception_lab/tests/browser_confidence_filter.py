@@ -10,7 +10,7 @@ with sync_playwright() as p:
  page.goto('http://127.0.0.1:9092/')
  page.wait_for_selector('.case')
  assert 'CARperception' in page.title()
- assert page.locator('#reviewForm, #detail textarea, #detail input').count()==0
+ assert page.locator('#reviewForm').count()==0
  page.select_option('#confidence','na');assert page.locator('.case').count()==97
  page.select_option('#view','cases');assert page.locator('.case').count()==114
  page.select_option('#confidence','0.8:1');page.select_option('#kind','false_positive')

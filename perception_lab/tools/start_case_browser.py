@@ -5,6 +5,7 @@ from pathlib import Path
 from http.server import BaseHTTPRequestHandler,ThreadingHTTPServer
 from urllib.parse import urlsplit
 from event_reviews import ReviewStore,Conflict
+from case_labels import LabelStore
 ROOT=Path(__file__).resolve().parents[1]
 APP=ROOT/'web/case_browser';RUNTIME=ROOT/'outputs/case_browser';STATE=RUNTIME/'server.json'
 INTEGRITY='mXm12DzY+eFtvAc0PTh2ttDdU0xCopOMUsSumEdPJg2nSihJAhaoYypkxFyZHbGBSN6wu1tuymYuIehMCS5GEQ=='
@@ -44,6 +45,12 @@ def setup():
   for n in VENDOR:(vendor/n).write_bytes(tar.extractfile('package/'+n).read())
  manifest.write_text(json.dumps({n:hashlib.sha256((vendor/n).read_bytes()).hexdigest() for n in VENDOR},indent=2))
 
+def labels():
+ source=ROOT/'reports/mini_evaluation/cases.json'
+ version=hashlib.sha256(source.read_bytes()).hexdigest()
+ return LabelStore(RUNTIME/'labels'/(version+'.json'),version,
+                   [c for c in json.loads(source.read_text()) if c['kind']!='gap_recovery'])
+
 def reviews():
  data=json.loads((ROOT/'reports/failure_events/events.json').read_text())
  targets={e['event_id'] for e in data['events']}|{g['group_id'] for g in data['groups']}
@@ -56,7 +63,8 @@ class Handler(BaseHTTPRequestHandler):
   self.send_header('Content-Length',str(len(body)));self.send_header('Cache-Control','no-store');self.end_headers()
   if not head:self.wfile.write(body)
  def do_POST(self):
-  if urlsplit(self.path).path!='/api/reviews':self.send_error(404);return
+  path=urlsplit(self.path).path
+  if path not in {'/api/reviews','/api/labels'}:self.send_error(404);return
   origin=self.headers.get('Origin')
   if self.headers.get('Content-Type','').split(';')[0]!='application/json' or (origin and origin!='http://'+self.headers.get('Host','')):
    self.send_json({'error':'Unsupported request origin or content type'},403);return
@@ -65,7 +73,7 @@ class Handler(BaseHTTPRequestHandler):
    if not 0<length<=32000:raise ValueError('Request too large or empty')
    payload=json.loads(self.rfile.read(length))
    if not isinstance(payload,dict):raise ValueError('Expected object')
-   self.send_json(reviews().save(payload))
+   self.send_json((labels() if path=='/api/labels' else reviews()).save(payload))
   except Conflict as e:self.send_json({'error':str(e)},409)
   except (ValueError,KeyError) as e:self.send_json({'error':str(e)},400)
 
@@ -73,8 +81,8 @@ class Handler(BaseHTTPRequestHandler):
  def do_HEAD(self):self.serve(True)
  def serve(self,head):
   path=urlsplit(self.path).path
-  if path=='/api/reviews':
-   try:self.send_json(reviews().read(),head=head)
+  if path in {'/api/reviews','/api/labels'}:
+   try:self.send_json((labels() if path=='/api/labels' else reviews()).read(),head=head)
    except Conflict as e:self.send_json({'error':str(e)},409,head=head)
    return
   routes={'/':APP/'index.html','/app.js':APP/'app.js','/style.css':APP/'style.css','/case_logic.mjs':APP/'case_logic.mjs',

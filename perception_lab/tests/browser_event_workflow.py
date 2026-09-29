@@ -10,7 +10,7 @@ with sync_playwright() as p:
  page.on('pageerror',lambda e:errors.append(str(e)))
  page.goto(args.url)
  page.wait_for_selector('.case')
- assert page.locator('#reviewForm, #detail textarea, #detail input').count()==0
+ assert page.locator('#reviewForm').count()==0
  page.select_option('#view','groups');page.locator('.case').first.click()
  assert page.locator('#openGroup').count()==1
  page.click('#openGroup');assert page.input_value('#view')=='events'
