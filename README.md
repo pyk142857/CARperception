@@ -176,6 +176,8 @@ envs/mmdet3d/bin/python tools/evaluate_mini.py --score 0.25 --distance 2.0
 
 ### 置信度与失败数量
 
+失败相对自车的位置及潜在驾驶影响见[空间分布报告](perception_lab/reports/spatial_failure_analysis/report.md)，包含五区域 FN/FP/ID 切换统计和近前方漏检的 Rerun 入口。区域仅用于筛查，项目尚未验证规划或控制层面的实际影响。
+
 已统计 scene-0061 的10个分数阈值下 FN、FP、ID切换，并对当前0.25基线失败按置信度分档。FN没有匹配预测，分数为N/A；ID切换取当帧新ID的预测分数。跟踪阈值表是已有轨迹输出的后置筛选重评，不是重跑跟踪器。[完整表格、图表与复现](perception_lab/reports/confidence_analysis/analysis-report.md)。
 
 ### 失败事件归并与复核工作台

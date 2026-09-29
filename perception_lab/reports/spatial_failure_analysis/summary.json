@@ -1,0 +1,105 @@
+{
+  "source": "perception_lab/reports/mini_evaluation/cases.json",
+  "source_sha256": "33f6bdcb4257fcf240795de2bc4268ea066acf9e73ab5f36b32953760d2e262f",
+  "frames": 39,
+  "score_threshold": 0.25,
+  "match_distance_m": 2.0,
+  "unit": "object-frame diagnostic observations, not unique objects",
+  "excluded_kind": "gap_recovery",
+  "failure_observations": 1910,
+  "front_near_detection_fn": [
+    {
+      "module": "detection",
+      "frame": 14,
+      "sample_token": "2afb9d32310e4546a71cbe432911eca2",
+      "timestamp_us": 1532402934696555,
+      "elapsed_seconds": 7.048604,
+      "kind": "false_negative",
+      "class_name": "pedestrian",
+      "instance_token": "1bc410ff237c4c48b9b7b094a9eaeb4d",
+      "tracking_id": null,
+      "prediction_index": null,
+      "score": null,
+      "distance_m": 19.656394794304727,
+      "num_lidar_pts": 1,
+      "visibility_token": "1",
+      "center_ego": [
+        19.587292519517405,
+        -1.6566801388210024,
+        1.2772388116762734
+      ],
+      "nearest_same_class_m": 2.300476813767325,
+      "case_id": "case_00341"
+    },
+    {
+      "module": "detection",
+      "frame": 18,
+      "sample_token": "bf2938e43c6f487497cda76b51bfc406",
+      "timestamp_us": 1532402936699359,
+      "elapsed_seconds": 9.051408,
+      "kind": "false_negative",
+      "class_name": "traffic_cone",
+      "instance_token": "b43aaf61de5d48c3883291610b4dd555",
+      "tracking_id": null,
+      "prediction_index": null,
+      "score": null,
+      "distance_m": 22.284750987934007,
+      "num_lidar_pts": 1,
+      "visibility_token": "1",
+      "center_ego": [
+        22.26802930398594,
+        -0.877326103535438,
+        0.8027580078111036
+      ],
+      "nearest_same_class_m": 13.18204622401183,
+      "case_id": "case_00542"
+    },
+    {
+      "module": "detection",
+      "frame": 37,
+      "sample_token": "29e056fc277543c9bc42310b122c640e",
+      "timestamp_us": 1532402946297085,
+      "elapsed_seconds": 18.649134,
+      "kind": "false_negative",
+      "class_name": "bicycle",
+      "instance_token": "12c1f51f9c284f3ea74dbdef151cf24b",
+      "tracking_id": null,
+      "prediction_index": null,
+      "score": null,
+      "distance_m": 16.506676434983998,
+      "num_lidar_pts": 7,
+      "visibility_token": "2",
+      "center_ego": [
+        16.350009056101825,
+        2.1562110118900364,
+        1.0767050974372125
+      ],
+      "nearest_same_class_m": 0.6585919961907988,
+      "case_id": "case_01080"
+    },
+    {
+      "module": "detection",
+      "frame": 38,
+      "sample_token": "ed5fc18c31904f96a8f0dbb99ff069c0",
+      "timestamp_us": 1532402946797517,
+      "elapsed_seconds": 19.149566,
+      "kind": "false_negative",
+      "class_name": "bicycle",
+      "instance_token": "12c1f51f9c284f3ea74dbdef151cf24b",
+      "tracking_id": null,
+      "prediction_index": null,
+      "score": null,
+      "distance_m": 15.481671432861106,
+      "num_lidar_pts": 19,
+      "visibility_token": "2",
+      "center_ego": [
+        15.432630345939174,
+        1.1410663240487793,
+        0.935418411615089
+      ],
+      "nearest_same_class_m": 0.7845732581467398,
+      "case_id": "case_01126"
+    }
+  ],
+  "limitations": "Rectangular screening regions, not lanes or collision envelopes; no planner, control or driving-impact validation."
+}
