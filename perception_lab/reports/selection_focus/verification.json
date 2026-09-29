@@ -1,0 +1,41 @@
+{
+  "errors": [],
+  "cyan_counts": {
+    "selected_frame2": [
+      496,
+      42,
+      6341
+    ],
+    "selected_frame3": [
+      496,
+      39,
+      6175
+    ],
+    "after_clip": [
+      0,
+      0,
+      0
+    ]
+  },
+  "checks": [
+    "automatic initial selection",
+    "ID case frame2 highlighted",
+    "member changes to frame3",
+    "normal toggles preserve selection and time",
+    "clip ends paused",
+    "empty and group clear selection",
+    "rapid last choice wins",
+    "FN selection",
+    "invalid branch rejected"
+  ],
+  "scene_requests": 1,
+  "selection_requests": [
+    "http://127.0.0.1:9092/selection/detection/errors/case_00001.rrd",
+    "http://127.0.0.1:9092/selection/tracking/errors/case_01175.rrd",
+    "http://127.0.0.1:9092/selection/tracking/errors/case_01219.rrd",
+    "http://127.0.0.1:9092/selection/tracking/errors/case_01230.rrd",
+    "http://127.0.0.1:9092/selection/tracking/normal/case_01230.rrd",
+    "http://127.0.0.1:9092/selection/tracking/errors/case_01217.rrd",
+    "http://127.0.0.1:9092/selection/detection/errors/case_00000.rrd"
+  ]
+}

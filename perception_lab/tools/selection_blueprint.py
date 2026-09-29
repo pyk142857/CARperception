@@ -28,5 +28,5 @@ if __name__=='__main__':
     if item['frame']+1<geometry['frame_count']:
         stream.set_time('frame',sequence=item['frame']+1)
         for path in paths:stream.log(path,rr.Clear(recursive=True))
-    rr.send_blueprint(blueprint(a.module,a.normal,a.case_id),recording=stream,make_active=True,make_default=True)
+    rr.send_blueprint(blueprint(a.module,a.normal,a.case_id,item),recording=stream,make_active=True,make_default=True)
     stream.flush();stream.disconnect()

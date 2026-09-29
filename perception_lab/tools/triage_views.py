@@ -25,17 +25,42 @@ def view_paths(module,normal=False,case_id=None):
         bev.append('/normal/'+module+'/bev/**');spatial.append('/ego/normal/'+module+'/**')
     return bev,spatial,cameras
 
-def blueprint(module='detection',normal=False,case_id=None):
+def focus_bounds(points,minimum=96,padding=2.5):
+    xy=np.asarray(points,dtype=float).reshape(-1,2)
+    if not len(xy) or not np.isfinite(xy).all():raise ValueError('Invalid focus geometry')
+    low,high=xy.min(axis=0),xy.max(axis=0)
+    center=(low+high)/2;span=np.maximum((high-low)*padding,minimum)
+    return [(center[0]-span[0]/2),(center[0]+span[0]/2)],[(center[1]-span[1]/2),(center[1]+span[1]/2)]
+
+def focus_camera(cameras):
+    def area(name):
+        xy=np.asarray(cameras[name]).reshape(-1,2)
+        return float(np.prod(xy.max(axis=0)-xy.min(axis=0)))
+    return max(cameras,key=area) if cameras else None
+
+def blueprint(module='detection',normal=False,case_id=None,geometry=None):
     import rerun.blueprint as b
     bev,spatial,cameras=view_paths(module,normal,case_id)
     mode='errors + normal' if normal else 'errors only'
+    overview=b.Grid(*[b.Spatial2DView(name=c,origin='/ego/cameras/'+c+'/image',contents=cameras[c]) for c in CAMERAS],grid_columns=3)
+    bev_bounds=None
+    right=overview
+    if geometry is not None:
+        x,y=focus_bounds(geometry['bev'],minimum=12,padding=3)
+        bev_bounds=b.VisualBounds2D(x_range=x,y_range=y)
+        camera=focus_camera(geometry['cameras'])
+        if camera:
+            x,y=focus_bounds(geometry['cameras'][camera])
+            detail=b.Spatial2DView(name='Target close-up / '+case_id+' / '+camera,
+                origin='/ego/cameras/'+camera+'/image',contents=cameras[camera],
+                visual_bounds=b.VisualBounds2D(x_range=x,y_range=y))
+            right=b.Vertical(detail,overview,row_shares=[.6,.4])
     return b.Blueprint(b.Horizontal(
-        b.Vertical(b.Spatial2DView(name=module+' / BEV / '+mode,origin='/',contents=bev),
+        b.Vertical(b.Spatial2DView(name=module+' / BEV / '+mode,origin='/',contents=bev,visual_bounds=bev_bounds),
                    b.Spatial3DView(name=module+' / 3D / '+mode,origin='/ego',contents=spatial),
                    b.TextDocumentView(name='Failure cases / current frame',origin='/failure_summary'),
                    row_shares=[.42,.35,.23]),
-        b.Grid(*[b.Spatial2DView(name=c,origin='/ego/cameras/'+c+'/image',contents=cameras[c]) for c in CAMERAS],
-               grid_columns=3),column_shares=[.5,.5]),b.TimePanel(state='expanded'),collapse_panels=True)
+        right,column_shares=[.45,.55]),b.TimePanel(state='expanded'),collapse_panels=True)
 
 def save_extras(directory,recording_id,packets,normal_data):
     import rerun as rr

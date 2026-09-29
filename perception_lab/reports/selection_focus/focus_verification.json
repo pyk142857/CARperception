@@ -1,0 +1,35 @@
+{
+  "focus": {
+    "target_center": [
+      420.0,
+      241.0
+    ],
+    "viewport_center": [
+      420.5,
+      241.0
+    ],
+    "height": 198
+  },
+  "bev": {
+    "target_center": [
+      343.5,
+      165.0
+    ],
+    "viewport_center": [
+      344.0,
+      164.5
+    ],
+    "height": 32
+  },
+  "overview": {
+    "target_center": [
+      67.0,
+      83.0
+    ],
+    "viewport_center": [
+      142.0,
+      70.0
+    ],
+    "height": 16
+  }
+}
