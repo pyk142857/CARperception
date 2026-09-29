@@ -1,3 +1,14 @@
+export function confidenceMatches(score, filter) {
+ if(!filter)return true;
+ if(filter==='na')return score===null;
+ if(!Number.isFinite(score))return false;
+ const [low,high]=filter.split(':').map(Number);
+ return score>=low&&(score<high||(high===1&&score===1));
+}
+export function matchingCases(row,filter,cases,events) {
+ const ids=row.case_ids|| (row.event_ids?row.event_ids.reduce((all,id)=>all.concat(events.get(id).case_ids),[]):[row.case_id]);
+ return ids.map(id=>cases.get(id)).filter(c=>confidenceMatches(c.confidence,filter));
+}
 export function clipFrames(event, frames, context=2) {
  return frames.filter(f=>f.scene_token===event.scene_token &&
   f.elapsed_seconds>=event.start_seconds-context && f.elapsed_seconds<=event.end_seconds+context);

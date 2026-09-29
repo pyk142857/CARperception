@@ -18,6 +18,9 @@ def case_confidence(case,boxes):
         box=boxes[case['prediction_index']]
         if box['class_name']!=case['class_name'] or box['score']!=case['score']:
             raise ValueError('FP source mismatch')
+    elif case['kind']=='center_error_over_1m':
+        box=boxes[case['matched_prediction_index']]
+        if box['class_name']!=case['class_name']:raise ValueError('Matched prediction class mismatch')
     else:
         found=[b for b in boxes if b.get('tracking_id')==case['tracking_id']]
         if len(found)!=1 or found[0]['class_name']!=case['class_name']:

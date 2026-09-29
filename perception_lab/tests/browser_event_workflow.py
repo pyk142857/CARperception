@@ -9,22 +9,8 @@ with sync_playwright() as p:
  page=b.new_page(viewport={'width':1900,'height':1250});errors=[]
  page.on('pageerror',lambda e:errors.append(str(e)))
  page.goto(args.url)
- page.wait_for_selector('#reviewForm');page.screenshot(path=str(out/'loading.png'))
- print('initial',page.locator('#overview').inner_text(),errors,flush=True)
- # Save the original fields, verify a temporary QA edit across reload, restore original fields.
- target=page.evaluate("()=>location.hash.slice(1)")
- original=page.evaluate("()=>Object.fromEntries(new FormData(document.getElementById('reviewForm')))")
- page.select_option('#reviewStatus','investigating')
- page.fill('[name=owner]','QA temporary')
- page.fill('[name=root_cause]','UI persistence check; no root cause claim')
- page.click('#saveReview');page.wait_for_function("document.getElementById('reviewMessage').textContent.startsWith('已保存')")
- page.reload();page.wait_for_selector('#reviewForm')
- assert page.input_value('[name=owner]')=='QA temporary'
- page.click('#reloadReview');assert page.input_value('[name=owner]')=='QA temporary'
- page.select_option('#reviewStatus',original['status'])
- for key,value in original.items():
-  if key!='status':page.fill('[name='+key+']',value)
- page.click('#saveReview');page.wait_for_function("document.getElementById('reviewMessage').textContent.startsWith('已保存')")
+ page.wait_for_selector('.case')
+ assert page.locator('#reviewForm, #detail textarea, #detail input').count()==0
  page.select_option('#view','groups');page.locator('.case').first.click()
  assert page.locator('#openGroup').count()==1
  page.click('#openGroup');assert page.input_value('#view')=='events'
@@ -56,6 +42,6 @@ with sync_playwright() as p:
  page.click('#parentEvent');assert page.input_value('#view')=='events'
  page.fill('#query','no_matching_event');assert page.locator('#empty').count()==1;page.fill('#query','')
  page.set_viewport_size({'width':700,'height':950});page.screenshot(path=str(out/'narrow.png'))
- (out/'verification.json').write_text(json.dumps(dict(errors=errors,clip=actual,checks=['review save/reload/reread/restore','group drill-down','GT ID switch seek frame2','expand original cases','bounded clip completes paused','raw FN seek frame0','parent event','empty search','narrow viewport']),ensure_ascii=False,indent=2))
+ (out/'verification.json').write_text(json.dumps(dict(errors=errors,clip=actual,checks=['review editing removed','group drill-down','GT ID switch seek frame2','expand original cases','bounded clip completes paused','raw FN seek frame0','parent event','empty search','narrow viewport']),ensure_ascii=False,indent=2))
  assert errors==[],errors
  b.close()

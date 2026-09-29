@@ -4,8 +4,6 @@
 aside{width:370px;min-width:370px}.filters{padding:10px 14px}.filters p{margin:5px 0}.filters label{margin-bottom:5px}
 #detail{max-height:45vh;min-height:100px}#detail h2{margin:8px 0}#detail .nav{flex-wrap:wrap}#detail .nav button{width:auto;flex:1;font-size:11px}
 #list{min-height:125px}#groupScope{font-size:12px;color:#79d9c6}#groupScope button,#exportReviews{font-size:11px;padding:4px}
-textarea{width:100%;min-height:48px;background:#1b252a;color:#e7ecee;border:1px solid #405159;border-radius:4px;font:inherit}
-#reviewForm{border-top:1px solid #344045;margin-top:12px}#reviewMessage{color:#79d9c6}
 @media(max-width:800px){aside{width:280px;min-width:280px}}
 @media(max-width:550px){aside{width:100%;height:80vh;min-height:750px}#detail{max-height:35vh}}
 
@@ -14,3 +12,4 @@ textarea{width:100%;min-height:48px;background:#1b252a;color:#e7ecee;border:1px 
 #displayControls{display:flex;align-items:center;gap:16px;padding:8px 16px;border-bottom:1px solid #344045;flex-wrap:wrap}
 #displayControls label{margin:0;display:flex;align-items:center;gap:8px;font-size:13px}
 #showNormal{width:auto;margin:0;accent-color:#79d9c6}#displayStatus{font-size:12px;color:#79d9c6}
+.filters{max-height:58vh;overflow:auto;flex-shrink:0}

@@ -1,0 +1,18 @@
+{
+  "errors": [],
+  "clip": {
+    "frame": 6,
+    "playing": false
+  },
+  "checks": [
+    "review editing removed",
+    "group drill-down",
+    "GT ID switch seek frame2",
+    "expand original cases",
+    "bounded clip completes paused",
+    "raw FN seek frame0",
+    "parent event",
+    "empty search",
+    "narrow viewport"
+  ]
+}

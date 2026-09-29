@@ -25,6 +25,14 @@ async function init(){
  if(!recording.failure_overlay||digest!==recording.failure_report_sha256)throw new Error('案例与记录不一致，请重新导出 Rerun 记录');
  const events=await fetch('/events.json').then(r=>r.json());
  if(events.cases_sha256!==digest)throw new Error('事件与案例版本不一致，请重新归并');
+ const confidence=await fetch('/confidence.json').then(r=>{if(!r.ok)throw new Error('请先运行 export_case_confidence.py');return r.json();});
+ if(confidence.cases_sha256!==digest)throw new Error('置信度与案例版本不一致，请重新导出置信度');
+ for(const row of data){
+  const score=confidence.scores[row.case_id];
+  if(score!==null&&(!Number.isFinite(score)||score<0||score>1))throw new Error('案例置信度缺失或无效：'+row.case_id);
+  if((row.kind==='false_negative')!==(score===null))throw new Error('FN 置信度口径不一致');
+  row.confidence=score;
+ }
  const display=createDisplayController(viewer,async url=>{
   const r=await fetch(url);if(!r.ok)throw new Error('图层读取失败：'+url);return r.arrayBuffer();
  },(module,normal,loading=false)=>{

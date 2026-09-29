@@ -55,6 +55,7 @@ class Handler(BaseHTTPRequestHandler):
   routes={'/':APP/'index.html','/app.js':APP/'app.js','/style.css':APP/'style.css','/case_logic.mjs':APP/'case_logic.mjs',
           '/display_layers.mjs':APP/'display_layers.mjs','/event_ui.js':APP/'event_ui.js','/event_logic.mjs':APP/'event_logic.mjs',
           '/events.json':ROOT/'reports/failure_events/events.json',
+          '/confidence.json':ROOT/'reports/confidence_filter/scores.json',
           '/cases.json':ROOT/'reports/mini_evaluation/cases.json','/summary.json':ROOT/'reports/mini_evaluation/summary.json',
           '/recording.json':ROOT/'outputs/rerun/triage_scene.json','/mini_scene.rrd':ROOT/'outputs/rerun/triage_scene.rrd',
           '/normal_targets.rrd':ROOT/'outputs/rerun/normal_targets.rrd'}

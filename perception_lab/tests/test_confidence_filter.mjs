@@ -1,0 +1,13 @@
+import assert from 'assert';
+import {confidenceMatches,matchingCases} from '../web/case_browser/event_logic.mjs';
+assert(confidenceMatches(null,'na'));
+assert(!confidenceMatches(null,'0.25:0.4'));
+assert(confidenceMatches(.25,'0.25:0.4'));
+assert(!confidenceMatches(.4,'0.25:0.4'));
+assert(confidenceMatches(1,'0.8:1'));
+const cases=new Map([['a',{case_id:'a',confidence:.3}],['b',{case_id:'b',confidence:.9}]]);
+const events=new Map([['e',{event_id:'e',case_ids:['a','b']}]]);
+assert.deepEqual(matchingCases(events.get('e'),'0.8:1',cases,events).map(c=>c.case_id),['b']);
+assert.deepEqual(matchingCases({event_ids:['e']},'0.4:0.6',cases,events),[]);
+assert.equal(matchingCases({event_ids:['e']},'',cases,events).length,2);
+console.log('Confidence boundaries, FN, event and group membership passed');

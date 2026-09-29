@@ -3,6 +3,11 @@ from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'tools'))
 from analyze_failure_confidence import case_confidence,score_bin
 class ConfidenceTests(unittest.TestCase):
+ def test_center_error_uses_matched_prediction(self):
+  case=dict(kind='center_error_over_1m',matched_prediction_index=1,class_name='car')
+  boxes=[dict(class_name='car',score=.9),dict(class_name='car',score=.4)]
+  self.assertEqual(case_confidence(case,boxes),.4)
+  with self.assertRaises(ValueError):case_confidence(dict(case,class_name='bus'),boxes)
  def test_fn_has_no_score_and_id_uses_new_track(self):
   self.assertIsNone(case_confidence(dict(kind='false_negative'),[]))
   case=dict(kind='id_switch',tracking_id='new',class_name='car')
