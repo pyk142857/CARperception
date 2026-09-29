@@ -176,6 +176,8 @@ envs/mmdet3d/bin/python tools/evaluate_mini.py --score 0.25 --distance 2.0
 
 ### 置信度与失败数量
 
+工作台支持按目标水平距离筛选：`0–10 m`、`10–20 m`、`20–40 m`、`≥40 m`。距离与置信度在同一条记录上联合判断，定位、高亮和特写同步选用符合条件的目标。[使用说明与验证](perception_lab/reports/distance_filter/report.md)。
+
 选中异常事件后会显示**目标居中的相机特写**，自动选择投影较大的相机，BEV 同步居中放大；右下方保留六路完整画面。[功能说明与截图](perception_lab/reports/selection_focus/report.md)。
 
 在左侧选择事件或逐帧案例时，BEV、3D 和可见相机中的对应目标会以**青白粗框高亮**；展开事件后可逐条切换。正常目标开关保留选择，离开案例所在帧后清除高亮。[实现与验证](perception_lab/reports/selection_highlight/report.md)。

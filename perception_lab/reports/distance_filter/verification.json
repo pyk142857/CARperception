@@ -1,0 +1,39 @@
+{
+  "errors": [],
+  "counts": [
+    {
+      "distance": "0:10",
+      "cases": 37,
+      "events": 33,
+      "groups": 9
+    },
+    {
+      "distance": "10:20",
+      "cases": 472,
+      "events": 319,
+      "groups": 31
+    },
+    {
+      "distance": "20:40",
+      "cases": 1225,
+      "events": 806,
+      "groups": 47
+    },
+    {
+      "distance": "40:Infinity",
+      "cases": 176,
+      "events": 158,
+      "groups": 20
+    }
+  ],
+  "combined_selected_case": "case_00049",
+  "checks": [
+    "all distance bins in events/cases/groups",
+    "same-record confidence intersection",
+    "selection seek/highlight/focus",
+    "FN and distance",
+    "empty clears highlight",
+    "reset restores 1910 cases",
+    "desktop and narrow"
+  ]
+}

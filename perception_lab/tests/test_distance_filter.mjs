@@ -1,0 +1,14 @@
+import assert from 'assert';
+import {distanceMatches,matchingCases} from '../web/case_browser/event_logic.mjs';
+assert(distanceMatches(0,'0:10'));
+assert(!distanceMatches(10,'0:10'));
+assert(distanceMatches(10,'10:20'));
+assert(distanceMatches(40,'40:Infinity'));
+assert(!distanceMatches(null,'0:10'));
+const cases=new Map([['a',{case_id:'a',confidence:.9,distance_m:35}],['b',{case_id:'b',confidence:.3,distance_m:5}],['c',{case_id:'c',confidence:null,distance_m:8}]]);
+const events=new Map([['e',{case_ids:['a','b']}]]);
+assert.equal(matchingCases(events.get('e'),'0.8:1',cases,events,'0:10').length,0);
+assert.deepEqual(matchingCases(events.get('e'),'',cases,events,'0:10').map(c=>c.case_id),['b']);
+assert.deepEqual(matchingCases({case_id:'c'},'na',cases,events,'0:10').map(c=>c.case_id),['c']);
+assert.equal(matchingCases({event_ids:['e']},'0.8:1',cases,events,'0:10').length,0);
+console.log('Distance boundaries and same-observation confidence intersection passed');

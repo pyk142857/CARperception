@@ -5,9 +5,15 @@ export function confidenceMatches(score, filter) {
  const [low,high]=filter.split(':').map(Number);
  return score>=low&&(score<high||(high===1&&score===1));
 }
-export function matchingCases(row,filter,cases,events) {
+export function distanceMatches(distance,filter) {
+ if(!filter)return true;
+ if(!Number.isFinite(distance)||distance<0)return false;
+ const [low,high]=filter.split(':').map(Number);
+ return distance>=low&&distance<high;
+}
+export function matchingCases(row,filter,cases,events,distanceFilter='') {
  const ids=row.case_ids|| (row.event_ids?row.event_ids.reduce((all,id)=>all.concat(events.get(id).case_ids),[]):[row.case_id]);
- return ids.map(id=>cases.get(id)).filter(c=>confidenceMatches(c.confidence,filter));
+ return ids.map(id=>cases.get(id)).filter(c=>confidenceMatches(c.confidence,filter)&&distanceMatches(c.distance_m,distanceFilter));
 }
 export function clipFrames(event, frames, context=2) {
  return frames.filter(f=>f.scene_token===event.scene_token &&

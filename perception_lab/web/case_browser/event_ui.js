@@ -16,7 +16,7 @@ export class EventUI {
   for(const [k,v] of Object.entries(kinds))$('kind').append(opt(k,v));
   for(const c of [...new Set(cases.map(r=>r.class_name))].sort())$('className').append(opt(c,c));
   for(const [k,v] of Object.entries(statuses))$('reviewFilter').append(opt(k,v));
-  for(const id of ['view','module','kind','className','query','reviewFilter','confidence'])
+  for(const id of ['view','module','kind','className','query','reviewFilter','confidence','distance'])
    $(id).addEventListener(id==='query'?'input':'change',()=>{this.player.stop();this.render();if(this.filtered.length)this.choose(this.filtered[0]);else{this.choiceToken=(this.choiceToken||0)+1;this.selected=null;$('detail').replaceChildren();$('selection').textContent='没有匹配事件；画面保留上一帧';if(this.ready)this.display($('module').value||'detection',null).catch(e=>{$('selection').textContent=e.message;});}});
   $('clearGroup').onclick=()=>{this.groupId=null;$('groupScope').hidden=true;this.render();};
   $('prev').onclick=()=>this.move(-1);$('next').onclick=()=>this.move(1);
@@ -33,7 +33,7 @@ export class EventUI {
  }
  id(row){return row.event_id||row.group_id||row.case_id;}
  status(id){return this.reviews.items[id]?.status||'pending';}
- matches(row){return matchingCases(row,$('confidence').value,this.caseMap,this.events);}
+ matches(row){return matchingCases(row,$('confidence').value,this.caseMap,this.events,$('distance').value);}
  focus(row){const matches=this.matches(row);return matches.find(c=>c.case_id===row.representative_case_id)||matches[0];}
  render(){
   const mode=$('view').value;let list=mode==='events'?this.data.events:mode==='groups'?this.data.groups:this.cases.filter(r=>kinds[r.kind]);
@@ -51,7 +51,7 @@ export class EventUI {
    const title=el('strong');title.append(el('span',kinds[row.kind],{className:row.kind}),
      el('span',mode==='groups'?row.event_count+'事件（总计）':mode==='events'?`帧 ${row.start_frame}–${row.end_frame}`:'帧 '+row.frame));
    button.append(title,el('small',`${row.class_name} · ${row.module==='detection'?'检测':'跟踪'} · ${mode==='groups'?row.distance_bucket:mode==='events'?row.failure_frame_count+'个失败帧':id}`));
-   const matched=this.matches(row);button.append(el('small',`${matched.length} 条符合置信度筛选`));
+   const matched=this.matches(row);button.append(el('small',`${matched.length} 条符合筛选`));
    if(mode!=='cases')button.append(el('small',statuses[this.status(id)]));
    button.onclick=()=>this.choose(row);fragment.append(button);
   }
@@ -81,7 +81,8 @@ export class EventUI {
   box.append(el('h2',isGroup?'问题分组':row.event_id?'目标事件':'原始案例'));
   const dl=el('dl');
   const scored=this.matches(row).map(c=>c.confidence).filter(Number.isFinite);
-  const fields={'符合筛选的置信度':scored.length?`${Math.min(...scored).toFixed(3)}–${Math.max(...scored).toFixed(3)}`:'N/A（无匹配预测）','编号':this.id(row),'现象':kinds[row.kind],'类别':row.class_name};
+  const distances=this.matches(row).map(c=>c.distance_m).filter(Number.isFinite);
+  const fields={'符合筛选的距离':distances.length?`${Math.min(...distances).toFixed(2)}–${Math.max(...distances).toFixed(2)} m`:'N/A','符合筛选的置信度':scored.length?`${Math.min(...scored).toFixed(3)}–${Math.max(...scored).toFixed(3)}`:'N/A（无匹配预测）','编号':this.id(row),'现象':kinds[row.kind],'类别':row.class_name};
   if(row.event_id)Object.assign(fields,{'帧范围':`${row.start_frame}–${row.end_frame}`,'观测跨度':row.span_seconds.toFixed(3)+'秒',
    '失败帧数':row.failure_frame_count,'关联方式':row.association_method,'关联可信度':row.association_quality,
    '转换次数':row.transition_count,'距离中位数':row.median_distance_m.toFixed(2)+'m'});
@@ -106,7 +107,7 @@ export class EventUI {
    controls.append(jump,play,stop);box.append(controls);
    if(row.event_id){
     const members=el('details');members.append(el('summary','展开 '+this.matches(row).length+' 条符合筛选的记录（共 '+row.case_ids.length+' 条）'));
-    for(const r of this.matches(row)){const id=r.case_id,b=el('button',id+' · 帧 '+r.frame+' · score '+(r.confidence===null?'N/A':r.confidence.toFixed(3)),{className:'member'});
+    for(const r of this.matches(row)){const id=r.case_id,b=el('button',id+' · 帧 '+r.frame+' · '+r.distance_m.toFixed(2)+' m · score '+(r.confidence===null?'N/A':r.confidence.toFixed(3)),{className:'member'});
      b.onclick=async()=>{this.player.stop();this.focusedCase=r;const token=this.choiceToken=(this.choiceToken||0)+1;
       if(this.ready){try{await this.display(r.module,r.case_id);if(token===this.choiceToken)await this.seek(r);}catch(e){$('selection').textContent='高亮加载失败：'+e.message;}}
       else $('selection').textContent='记录尚未就绪';};members.append(b);}
