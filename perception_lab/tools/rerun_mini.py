@@ -145,6 +145,7 @@ def main():
                 rrb.Grid(*camera_views, grid_columns=3), column_shares=[.5,.5]),
             rrb.TimePanel(state='expanded'), collapse_panels=True))
     history = {}
+    selection_geometry = {}
     counts = []
     def log_boxes(path, boxes, color, show_labels=False):
         centers, sizes, rotations = box_components(boxes)
@@ -274,7 +275,7 @@ def main():
                     rr.log('ego/trails/'+ident, rr.LineStrips3D([trail], colors=color, radii=.06))
                     rr.log('bev/tracks/'+ident+'/trail', rr.LineStrips2D([-trail[:,[1,0]]], colors=color,
                            radii=rr.Radius.ui_points(1.5), draw_order=15))
-        failure_counts = log_failures(rr, failure_cases.get(i, []), pred['boxes3d'], tracked['tracks3d'], gt_by_instance, points, packet, pose, i, failure_evidence, triage=args.triage_only) if failure_evidence else {}
+        failure_counts = log_failures(rr, failure_cases.get(i, []), pred['boxes3d'], tracked['tracks3d'], gt_by_instance, points, packet, pose, i, failure_evidence, triage=args.triage_only,selection_geometry=selection_geometry) if failure_evidence else {}
         counts.append(dict(failures=failure_counts, frame=i, sample_token=packet['sample_token'], lidar_points=len(points),
                            cameras=len(CAMERAS), gt=len(gt), detections=len(selected), tracks=len(selected_tracks), camera_tracks=camera_track_counts, maptr_vectors=lane_count))
         print(f'frame {i+1}/{len(packets)}', flush=True)
@@ -288,11 +289,13 @@ def main():
                    maptr_loaded=lanes is not None, lidarseg_loaded=segmentation is not None,
                    failure_overlay=failure_evidence is not None, failure_report_sha256=sha256(args.failure_report/'cases.json') if failure_evidence else None,
                    camera_lane_overlay=lanes is not None, tracking_overlay=not args.triage_only, track_history_positions=0 if args.triage_only else 20,
-                   triage_only=args.triage_only,recording_id=recording_id,
+                   triage_only=args.triage_only,selection_overlay=args.triage_only,recording_id=recording_id,
                    coordinate_system='reference ego FLU, metres; camera asynchronous ego compensation',
                    source_sha256={str(p):sha256(p) for p in ([detection_path,track_path,ROOT/'manifests/frame_packets.json'] + ([args.maptr] if lanes is not None else []) + ([args.lidarseg] if segmentation is not None else []))},
                    recording=str(args.out.resolve()), recording_sha256=sha256(args.out), frames=counts)
     if args.triage_only:
+        (args.out.parent/'selection_geometry.json').write_text(json.dumps(dict(recording_id=recording_id,
+            cases_sha256=summary['failure_report_sha256'],frame_count=len(packets),cases=selection_geometry)))
         from triage_views import save_extras
         normal_data=json.loads((ROOT/'outputs/rerun/normal_targets.json').read_text())
         if normal_data['cases_sha256']!=summary['failure_report_sha256']:

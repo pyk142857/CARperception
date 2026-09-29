@@ -3,6 +3,13 @@ from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'tools'))
 from triage_views import view_paths
 class TriageViewsTests(unittest.TestCase):
+ def test_selection_only_includes_selected_case(self):
+  bev,spatial,cameras=view_paths('tracking',False,'case_01217')
+  self.assertIn('/selection/case_01217/bev',bev)
+  self.assertIn('/ego/selection/case_01217',spatial)
+  self.assertTrue(all(any(p.endswith('/selection/case_01217') for p in paths) for paths in cameras.values()))
+  self.assertFalse(any('selection' in p for p in view_paths('tracking')[0]))
+  with self.assertRaises(ValueError):view_paths('tracking',False,'../bad')
  def test_errors_only_excludes_other_branch_and_normal(self):
   for module,other in [('detection','tracking'),('tracking','detection')]:
    bev,spatial,cameras=view_paths(module)

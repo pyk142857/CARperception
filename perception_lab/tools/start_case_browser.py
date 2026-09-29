@@ -1,5 +1,6 @@
 """Serve the embedded Rerun case browser locally, with pinned vendor assets."""
 import argparse,base64,hashlib,io,json,mimetypes,os,signal,subprocess,sys,tarfile,time,urllib.request,webbrowser
+import re,threading
 from pathlib import Path
 from http.server import BaseHTTPRequestHandler,ThreadingHTTPServer
 from urllib.parse import urlsplit
@@ -8,6 +9,29 @@ ROOT=Path(__file__).resolve().parents[1]
 APP=ROOT/'web/case_browser';RUNTIME=ROOT/'outputs/case_browser';STATE=RUNTIME/'server.json'
 INTEGRITY='mXm12DzY+eFtvAc0PTh2ttDdU0xCopOMUsSumEdPJg2nSihJAhaoYypkxFyZHbGBSN6wu1tuymYuIehMCS5GEQ=='
 VENDOR=['index.js','re_viewer.js','re_viewer_bg.wasm']
+SELECTION_LOCK=threading.Lock()
+
+def selection_file(module,mode,case_id):
+ with SELECTION_LOCK:
+  recording=json.loads((ROOT/'outputs/rerun/triage_scene.json').read_text())
+  if not recording.get('selection_overlay'):raise ValueError('请重新导出带高亮图层的录制')
+  cases_path=ROOT/'reports/mini_evaluation/cases.json'
+  if hashlib.sha256(cases_path.read_bytes()).hexdigest()!=recording['failure_report_sha256']:raise ValueError('Case version mismatch')
+  geometry=json.loads((ROOT/'outputs/rerun/selection_geometry.json').read_text())
+  if geometry['recording_id']!=recording['recording_id'] or geometry['cases_sha256']!=recording['failure_report_sha256']:
+   raise ValueError('Selection geometry version mismatch')
+  cases=json.loads(cases_path.read_text())
+  if not any(c['case_id']==case_id and c['module']==module and c['kind']!='gap_recovery' for c in cases):raise ValueError('Unknown selectable case')
+  directory=RUNTIME/'selection'/recording['recording_id'];directory.mkdir(parents=True,exist_ok=True)
+  target=directory/(module+'_'+mode+'_'+case_id+'.rrd')
+  if not target.exists():
+   temporary=target.with_suffix('.tmp')
+   command=[str(ROOT/'envs/rerun/bin/python'),str(ROOT/'tools/selection_blueprint.py'),
+            '--recording-id',recording['recording_id'],'--module',module,'--case-id',case_id,'--out',str(temporary)]
+   if mode=='normal':command.append('--normal')
+   subprocess.run(command,check=True,timeout=30,capture_output=True)
+   temporary.replace(target)
+  return target
 
 def setup():
  RUNTIME.mkdir(parents=True,exist_ok=True);vendor=RUNTIME/'vendor';vendor.mkdir(exist_ok=True)
@@ -63,6 +87,11 @@ class Handler(BaseHTTPRequestHandler):
                  for module in ['detection','tracking'] for mode in ['errors','normal']})
   routes.update({'/vendor/'+n:RUNTIME/'vendor'/n for n in VENDOR});routes['/vendor/re_viewer']=RUNTIME/'vendor/re_viewer.js'
   file=routes.get(path)
+  match=re.fullmatch(r'/selection/(detection|tracking)/(errors|normal)/(case_\d{5})\.rrd',path)
+  if match:
+   try:file=selection_file(*match.groups())
+   except ValueError as e:self.send_json({'error':str(e)},400,head=head);return
+   except (subprocess.SubprocessError,OSError) as e:self.send_json({'error':'Selection blueprint generation failed'},500,head=head);return
   if not file or not file.is_file():self.send_error(404);return
   self.send_response(200);self.send_header('Content-Type',mimetypes.guess_type(str(file))[0] or 'application/octet-stream');self.send_header('Content-Length',str(file.stat().st_size));self.send_header('Cache-Control','no-cache');self.end_headers()
   if not head:

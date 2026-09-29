@@ -31,11 +31,13 @@ def resolve_case(case,detections,tracks,gt_by_instance):
     return box
 
 
-def log_failures(rr,rows,detections,tracks,gt_by_instance,points,packet,pose,frame,summary,triage=False):
+def log_failures(rr,rows,detections,tracks,gt_by_instance,points,packet,pose,frame,summary,triage=False,selection_geometry=None):
     rr.log('failures/detection',rr.Clear(recursive=True));rr.log('failures/tracking',rr.Clear(recursive=True))
-    if triage:rr.log('ego/failure_boxes',rr.Clear(recursive=True))
+    if triage:
+        rr.log('ego/failure_boxes',rr.Clear(recursive=True))
     for camera,entry in packet['sensors'].items():
-        if camera.startswith('CAM_'):rr.log('ego/cameras/'+camera+'/image/failures',rr.Clear(recursive=True))
+        if camera.startswith('CAM_'):
+            rr.log('ego/cameras/'+camera+'/image/failures',rr.Clear(recursive=True))
     points=points[(np.abs(points[:,0])<55)&(np.abs(points[:,1])<55)&(points[:,2]<3)]
     for module in ['detection','tracking']:
         rr.log('failures/'+module+'/lidar',rr.Points2D(-points[::3,[1,0]],colors=[95,105,115],radii=.025))
@@ -53,12 +55,20 @@ def log_failures(rr,rows,detections,tracks,gt_by_instance,points,packet,pose,fra
         # Keep compact labels available for inspection without covering small targets.
         label=SHORT[kind]+' '+str(int(case['case_id'].removeprefix('case_')))
         bev_groups[(case['module'],kind)].append((box,label,case))
+        if triage and selection_geometry is not None:
+            selection_geometry[case['case_id']]=dict(frame=frame,module=case['module'],
+                center=np.asarray(box['center_xyz']).tolist(),
+                size=[box['size_wlh'][1],box['size_wlh'][0],box['size_wlh'][2]],
+                quaternion=list(box['rotation_wxyz'][1:])+[box['rotation_wxyz'][0]],
+                bev=np.asarray(bev_outline(box)).tolist(),cameras={})
         if triage or case['module']=='detection':
             for camera,entry in packet['sensors'].items():
                 if not camera.startswith('CAM_'):continue
                 transform=np.linalg.inv(pose)@np.array(entry['T_ego_to_global'])@np.array(entry['T_sensor_to_ego'])
                 segments=camera_box_segments(box,transform,entry['K'],entry['width'],entry['height'])
                 if segments:
+                    if triage and selection_geometry is not None:
+                        selection_geometry[case['case_id']]['cameras'][camera]=np.asarray(segments).tolist()
                     xy=np.asarray(segments).reshape(-1,2);anchor=xy[np.argmin(xy[:,1])]
                     camera_groups[(camera,case['module'],kind)].append((segments,anchor,label,case['case_id']))
         text.append(f"\n{case['case_id']} | {case['module']} | {kind} | {case['class_name']}"+(f" | {case['previous_tracking_id']} -> {case['tracking_id']}" if kind in ['id_switch','gap_id_change'] else ''))

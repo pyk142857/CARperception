@@ -1,5 +1,6 @@
 """Failure-only blueprints and a separate, lazily loaded normal target stream."""
 import json
+import re
 from pathlib import Path
 import numpy as np
 from tracking_overlay import bev_outline,camera_box_segments
@@ -7,8 +8,9 @@ from tracking_overlay import bev_outline,camera_box_segments
 APPLICATION_ID='CARperception-triage'
 CAMERAS=['CAM_FRONT_LEFT','CAM_FRONT','CAM_FRONT_RIGHT','CAM_BACK_LEFT','CAM_BACK','CAM_BACK_RIGHT']
 
-def view_paths(module,normal=False):
+def view_paths(module,normal=False,case_id=None):
     if module not in {'detection','tracking'}:raise ValueError('Unknown branch')
+    if case_id is not None and not re.fullmatch(r'case_\d{5}',case_id):raise ValueError('Invalid case ID')
     bev=['/failures/'+module+'/**','/bev/maptr/**']
     spatial=['/ego/lidar','/ego/maptr/**','/ego/failure_boxes/'+module+'/**']
     cameras={}
@@ -16,13 +18,16 @@ def view_paths(module,normal=False):
         root='/ego/cameras/'+camera+'/image'
         cameras[camera]=[root,root+'/maptr/**',root+'/failures/'+module+'/**']
         if normal:cameras[camera].append(root+'/normal/'+module+'/**')
+        if case_id:cameras[camera].append(root+'/selection/'+case_id)
+    if case_id:
+        bev.append('/selection/'+case_id+'/bev');spatial.append('/ego/selection/'+case_id)
     if normal:
         bev.append('/normal/'+module+'/bev/**');spatial.append('/ego/normal/'+module+'/**')
     return bev,spatial,cameras
 
-def blueprint(module='detection',normal=False):
+def blueprint(module='detection',normal=False,case_id=None):
     import rerun.blueprint as b
-    bev,spatial,cameras=view_paths(module,normal)
+    bev,spatial,cameras=view_paths(module,normal,case_id)
     mode='errors + normal' if normal else 'errors only'
     return b.Blueprint(b.Horizontal(
         b.Vertical(b.Spatial2DView(name=module+' / BEV / '+mode,origin='/',contents=bev),

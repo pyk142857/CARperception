@@ -11,6 +11,13 @@ async function test(){
  await control.apply('detection',true);await control.apply('tracking',true);await control.apply('tracking',false);
  assert.equal(requests.filter(r=>r==='/normal_targets.rrd').length,1);
  assert.equal(frame,7);
+ await control.apply('tracking',false,'case_01217');
+ assert(requests.includes('/selection/tracking/errors/case_01217.rrd'));
+ assert.equal(control.getSelection(),'case_01217');
+ await control.apply('tracking',true,'case_01217');
+ assert.equal(control.getSelection(),'case_01217');
+ await control.apply('tracking',false,null);
+ assert.equal(control.getSelection(),null);
  assert.deepEqual(statuses[statuses.length-1],['tracking',false]);
  let resolve;
  const race=createDisplayController(v,url=>url==='/normal_targets.rrd'?new Promise(r=>resolve=r):Promise.resolve(new ArrayBuffer(1)),()=>{},async()=>{});
@@ -19,6 +26,14 @@ async function test(){
  resolve(new ArrayBuffer(1));await pending;
  assert.equal(race.getBranch(),'tracking');
  assert.equal(sent[sent.length-1],'normal target overlay');
+ // A -> B (sent but not settled) -> A must resend A, not retain B's blueprint.
+ let hold=false,release;
+ const switching=createDisplayController(v,async()=>new ArrayBuffer(1),()=>{},()=>hold?new Promise(r=>{release=r}):Promise.resolve());
+ await switching.apply('tracking',false,'case_01217');
+ hold=true;const b=switching.apply('tracking',false,'case_01219');
+ while(!release)await Promise.resolve();
+ hold=false;await switching.apply('tracking',false,'case_01217');release();await b;
+ assert.equal(sent[sent.length-1],'display tracking_errors_case_01217');
  console.log('Default excludes normal request; lazy single load, branch, frame preservation and cancellation passed');
 }
 test().catch(e=>{console.error(e);process.exit(1)});

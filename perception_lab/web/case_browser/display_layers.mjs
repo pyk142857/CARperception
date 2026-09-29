@@ -1,6 +1,6 @@
 /** Load normal data only on explicit opt-in; switch a small blueprint, not the scene. */
 export function createDisplayController(viewer,fetchBytes,onStatus=()=>{},sleep=ms=>new Promise(r=>setTimeout(r,ms))){
- let normalPromise=null,serial=0,applied='',branch='detection';
+ let normalPromise=null,serial=0,applied='',branch='detection',selection=null;
  const cache=new Map();
  async function bytes(url){if(!cache.has(url))cache.set(url,fetchBytes(url).catch(e=>{cache.delete(url);throw e;}));return cache.get(url);}
  function send(buffer,name){const channel=viewer.open_channel(name);channel.send_rrd(new Uint8Array(buffer));channel.close();}
@@ -15,15 +15,16 @@ export function createDisplayController(viewer,fetchBytes,onStatus=()=>{},sleep=
   })().catch(e=>{normalPromise=null;throw e;});
   return normalPromise;
  }
- return {getBranch:()=>branch,async apply(module,normal){
+ return {getBranch:()=>branch,getSelection:()=>selection,async apply(module,normal,caseId=null){
   if(!['detection','tracking'].includes(module))throw new Error('未知检测分支');
-  branch=module;const key=module+(normal?'_normal':'_errors'),token=++serial;
+  branch=module;selection=caseId;const mode=normal?'normal':'errors';
+  const key=module+'_'+mode+(caseId?'_'+caseId:''),token=++serial;
   if(key===applied){onStatus(module,normal);return;}
   if(normal){onStatus(module,normal,true);await loadNormal();}
   if(token!==serial)return;
-  const buffer=await bytes('/view_'+key+'.rrd');if(token!==serial)return;
+  const buffer=await bytes(caseId?'/selection/'+module+'/'+mode+'/'+caseId+'.rrd':'/view_'+key+'.rrd');if(token!==serial)return;
   const id=viewer.get_active_recording_id(),frame=viewer.get_current_time(id,'frame');
-  send(buffer,'display '+key);await sleep(150);if(token!==serial)return;
+  applied='';send(buffer,'display '+key);await sleep(150);if(token!==serial)return;
   viewer.set_playing(id,false);viewer.set_active_timeline(id,'frame');
   if(frame!==null&&frame!==undefined)viewer.set_current_time(id,'frame',frame);
   applied=key;onStatus(module,normal);

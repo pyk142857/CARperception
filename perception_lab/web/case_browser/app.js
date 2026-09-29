@@ -36,14 +36,14 @@ async function init(){
  const display=createDisplayController(viewer,async url=>{
   const r=await fetch(url);if(!r.ok)throw new Error('图层读取失败：'+url);return r.arrayBuffer();
  },(module,normal,loading=false)=>{
-  $('displayStatus').textContent=loading?'加载正常目标…':(module==='detection'?'检测':'跟踪')+' · '+(normal?'异常＋正常目标':'仅异常目标');
+  $('displayStatus').textContent=loading?'加载正常目标…':(module==='detection'?'检测':'跟踪')+' · '+(normal?'异常＋正常目标':'仅异常目标')+' · 选中目标：青白粗框';
   $('displayStatus').dataset.mode=loading?'loading':(normal?'normal':'errors');
   $('displayStatus').dataset.module=module;
  });
- const ui=new EventUI(events,data,viewer,choose,module=>display.apply(module,$('showNormal').checked));await ui.init();
+ const ui=new EventUI(events,data,viewer,choose,async(module,caseId=null)=>{await display.apply(module,$('showNormal').checked,caseId);$('selection').dataset.caseId=display.getSelection()||'';});await ui.init();
  $('showNormal').onchange=async()=>{
   ui.player.stop();
-  try{await display.apply(display.getBranch(),$('showNormal').checked);}
+  try{await display.apply(display.getBranch(),$('showNormal').checked,display.getSelection());}
   catch(e){$('displayStatus').textContent=e.message;}
  };
  setStatus('加载 Rerun 0.23.4…');await viewer.start(null,$('viewer'),{render_backend:'webgl',hide_welcome_screen:true,width:'100%',height:'100%'});

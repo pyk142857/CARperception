@@ -1,0 +1,15 @@
+{
+  "errors": [],
+  "expected_frame": 2,
+  "actual_frame": 2,
+  "checks": [
+    "FN 97 events / 114 cases",
+    "high-score FP 10 / detection 2",
+    "high-score ID 4",
+    "empty results clear detail",
+    "event seeks qualifying frame",
+    "group drilldown retains filter",
+    "review inputs absent",
+    "desktop and narrow screenshots"
+  ]
+}

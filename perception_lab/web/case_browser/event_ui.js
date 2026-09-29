@@ -17,7 +17,7 @@ export class EventUI {
   for(const c of [...new Set(cases.map(r=>r.class_name))].sort())$('className').append(opt(c,c));
   for(const [k,v] of Object.entries(statuses))$('reviewFilter').append(opt(k,v));
   for(const id of ['view','module','kind','className','query','reviewFilter','confidence'])
-   $(id).addEventListener(id==='query'?'input':'change',()=>{this.player.stop();this.render();if(this.filtered.length)this.choose(this.filtered[0]);else{this.choiceToken=(this.choiceToken||0)+1;this.selected=null;$('detail').replaceChildren();$('selection').textContent='没有匹配事件；画面保留上一帧';}});
+   $(id).addEventListener(id==='query'?'input':'change',()=>{this.player.stop();this.render();if(this.filtered.length)this.choose(this.filtered[0]);else{this.choiceToken=(this.choiceToken||0)+1;this.selected=null;$('detail').replaceChildren();$('selection').textContent='没有匹配事件；画面保留上一帧';if(this.ready)this.display($('module').value||'detection',null).catch(e=>{$('selection').textContent=e.message;});}});
   $('clearGroup').onclick=()=>{this.groupId=null;$('groupScope').hidden=true;this.render();};
   $('prev').onclick=()=>this.move(-1);$('next').onclick=()=>this.move(1);
   $('exportReviews').onclick=async()=>{
@@ -67,7 +67,9 @@ export class EventUI {
  async choose(row,doSeek=true){
   const token=this.choiceToken=(this.choiceToken||0)+1;
   this.player.stop();this.selected=row;location.hash=this.id(row);this.render();this.details(row);
-  if(this.ready)await this.display(row.module);
+  const focused=row.event_id?this.focus(row):row.case_id?row:null;
+  this.focusedCase=focused;
+  if(this.ready){try{await this.display(row.module,focused?.case_id||null);}catch(e){$('selection').textContent='高亮加载失败：'+e.message;return;}}
   if(token!==this.choiceToken)return;
   if(!row.event_id&&row.group_id){$('selection').textContent='问题分组：相似现象，根因待复核';return;}
   const original=row.event_id?this.focus(row):row;
@@ -105,7 +107,9 @@ export class EventUI {
    if(row.event_id){
     const members=el('details');members.append(el('summary','展开 '+this.matches(row).length+' 条符合筛选的记录（共 '+row.case_ids.length+' 条）'));
     for(const r of this.matches(row)){const id=r.case_id,b=el('button',id+' · 帧 '+r.frame+' · score '+(r.confidence===null?'N/A':r.confidence.toFixed(3)),{className:'member'});
-     b.onclick=()=>{this.player.stop();if(this.ready)this.seek(r);else $('selection').textContent='记录尚未就绪';};members.append(b);}
+     b.onclick=async()=>{this.player.stop();this.focusedCase=r;const token=this.choiceToken=(this.choiceToken||0)+1;
+      if(this.ready){try{await this.display(r.module,r.case_id);if(token===this.choiceToken)await this.seek(r);}catch(e){$('selection').textContent='高亮加载失败：'+e.message;}}
+      else $('selection').textContent='记录尚未就绪';};members.append(b);}
     box.append(members);
     if(row.transitions.length)box.append(el('p',row.transitions.map(t=>`帧${t.frame}: ${t.previous_id}→${t.new_id}`).join('；')));
    }else if(event){const b=el('button','查看所属事件',{id:'parentEvent'});b.onclick=()=>{$('view').value='events';this.choose(event);};box.append(b);}
@@ -118,10 +122,10 @@ export class EventUI {
  }
  async setReady(){
   this.ready=true;
-  if(this.selected)await this.display(this.selected.module);
+  if(this.selected)await this.display(this.selected.module,this.focusedCase?.case_id||null);
   for(const id of ['jump','playClip'])if($(id))$(id).disabled=false;
   if(this.selected&&(this.selected.event_id||this.selected.case_id)){
-   const row=this.selected.event_id?this.focus(this.selected):this.selected;
+   const row=this.focusedCase||(this.selected.event_id?this.focus(this.selected):this.selected);
    this.seek(row);
   }
  }

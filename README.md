@@ -176,6 +176,8 @@ envs/mmdet3d/bin/python tools/evaluate_mini.py --score 0.25 --distance 2.0
 
 ### 置信度与失败数量
 
+在左侧选择事件或逐帧案例时，BEV、3D 和可见相机中的对应目标会以**青白粗框高亮**；展开事件后可逐条切换。正常目标开关保留选择，离开案例所在帧后清除高亮。[实现与验证](perception_lab/reports/selection_highlight/report.md)。
+
 异常框现采用细线，BEV、3D 和相机图默认隐藏常驻编号，避免遮挡小目标；完整编号和 ID 转换信息可在案例详情与帧摘要中查看。[样式调整与截图](perception_lab/reports/compact_failure_labels/report.md)。
 
 失败工作台现已支持按置信度区间筛选事件、分组和逐帧案例，FN 单列“无置信度”；点击事件定位到符合筛选的帧。复核文本编辑面板已移除，历史记录保留。[使用口径与验证](perception_lab/reports/confidence_filter/report.md)。

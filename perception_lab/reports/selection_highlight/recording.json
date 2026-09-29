@@ -1,0 +1,17 @@
+{
+  "scope": "mini_scene_0061",
+  "frame_count": 39,
+  "recording_id": "d150be20c4a84a61ac8a12e8280475e9",
+  "recording_sha256": "6e4068dad31129d5ace1e5cd648d1cb460b874f08d809696d49e1a3015ab8c5f",
+  "failure_report_sha256": "33f6bdcb4257fcf240795de2bc4268ea066acf9e73ab5f36b32953760d2e262f",
+  "source_sha256": {
+    "/home/minglei/Desktop/CAR/perception_lab/runs/20260923T043110_d6ae8066/M05/mini_scene/predictions.json": "43be7f1f42b1f77a16440ba99462ea789a30adcfa35fac1f221cdbe1ca126f56",
+    "/home/minglei/Desktop/CAR/perception_lab/runs/20260923T044014_0542fd21/M11/mini_tracking_M05/predictions.json": "28658bcde283ed8944ba386eceefd6f5a814583a6c14bc457b4fc70fd6e6ef9e",
+    "/home/minglei/Desktop/CAR/perception_lab/manifests/frame_packets.json": "d161deb2618d9c357d8976eee4f7c0de3a567900afbb679c5961cf74248e958d",
+    "/home/minglei/Desktop/CAR/perception_lab/outputs/maptr/predictions.json": "378f1ba3d8dbd6b37d9dff3044714edb648439098b9102972d37a8ead19f4c21",
+    "/home/minglei/Desktop/CAR/perception_lab/outputs/lidarseg/predictions.json": "e97183f5878a3edc90175a70ccfc932a0c4fe8ef9a8de3bfc188064f337581ec"
+  },
+  "selection_overlay": true,
+  "selection_geometry_sha256": "8025d6a81af8662c41a5d60ca9b479324c0d3d45a5775ef556ce1de4f7964430",
+  "selection_case_count": 1910
+}
