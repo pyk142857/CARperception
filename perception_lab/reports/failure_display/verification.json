@@ -1,0 +1,74 @@
+{
+  "page_errors": [],
+  "before": {
+    "id": "dadbe2bd6f1d4ff697cf7a4d5fa05177",
+    "frame": 2,
+    "playing": false
+  },
+  "after": {
+    "id": "dadbe2bd6f1d4ff697cf7a4d5fa05177",
+    "frame": 2,
+    "playing": false
+  },
+  "normal_requests": 1,
+  "checks": [
+    "no normal download by default",
+    "branch change",
+    "normal_ready marker",
+    "same recording/frame/paused on toggle",
+    "uncheck hides normal",
+    "recheck no redownload",
+    "clip still ends paused"
+  ],
+  "python_tests": 50,
+  "rrd_files_verified": 6,
+  "normal_counts": {
+    "detection": 2155,
+    "tracking": 1067
+  },
+  "normal_definition": "matched predictions excluding localization and identity failure targets",
+  "matching_reproduction": "all 1944 cases and totals equal original diagnostic",
+  "main_recording_audit": "no normal/full prediction/full track boxes or trails; both branches have BEV/3D/camera failures",
+  "javascript_tests": "lazy loading, no default normal request, branch switch, frame preservation, race cancellation",
+  "original_cases_and_metrics_unchanged": true,
+  "recordings": {
+    "triage_scene.rrd": {
+      "bytes": 102411402,
+      "sha256": "ba1c6029710e14d8c7ece16748118644cbf878f633dd9d1c837f7d9e97b140c4"
+    },
+    "normal_targets.rrd": {
+      "bytes": 4724373,
+      "sha256": "f50e62246d6bb37f1a01b2cbd0627aa8e76b1afea32dbcdc471c41907cf24377"
+    },
+    "view_tracking_normal.rrd": {
+      "bytes": 76940,
+      "sha256": "a15e8b56ef59895bb5b72d30782662da506a8993da72a99828f92f1a31da5272"
+    },
+    "view_tracking_errors.rrd": {
+      "bytes": 76790,
+      "sha256": "01d7f41ffc82c65fd217fd18bca11de5e0d8405a82c81a9d2c75b0af39bc91f3"
+    },
+    "view_detection_errors.rrd": {
+      "bytes": 76846,
+      "sha256": "df687f24696fa087306ea817747423427c623192e86f92d35d7b97a50273e9a4"
+    },
+    "view_detection_normal.rrd": {
+      "bytes": 76914,
+      "sha256": "75081cb4695de85cb7410418f6b858aee84926934735d30a2ea1957b7f7f843d"
+    }
+  },
+  "source_sha256": {
+    "perception_lab/tools/export_normal_targets.py": "ead6d8a6294bc3895c7e3f7d053f24d3f54504b18f0ae1a57f81ad451731e860",
+    "perception_lab/tools/triage_views.py": "cdce2aaef4ea83a3ac24c161d3d1f3f0e6d26a3c10b86d0c0bdf2540a24593a6",
+    "perception_lab/tools/failure_overlay.py": "240096d6d7362a8a42fa35a3306c0a06f33cd3c7cfebcdf88494d95481c58f74",
+    "perception_lab/tools/rerun_mini.py": "f39e8a27a87d9b9e0b401cc4345ed39d19a83650a191f59b538169849b600a9a",
+    "perception_lab/tools/start_case_browser.py": "5dde5ebd8eaf907c1df5a9f0f9bc09ed165a03e25d7fb00f843ce9158d8858ee",
+    "perception_lab/web/case_browser/app.js": "438a6142a405dda8ba16bd272aa8c464f9c485a0545213d543fd7c5bdb16dbea",
+    "perception_lab/web/case_browser/case_logic.mjs": "657ba8c3ffe650fd018953ab5d4f6952edaf95afad011900a828c1aa11ca67d0",
+    "perception_lab/web/case_browser/display_layers.mjs": "623dfef8a5178b40a1aa33a179aeaf04c4727c17560f0df8256b060293e5a837",
+    "perception_lab/web/case_browser/event_logic.mjs": "d4b139c7c53527019b1cd803ff1d25f4b301ca847bcf61b204ddf57f575aa7f5",
+    "perception_lab/web/case_browser/event_ui.js": "8370e0e7c2322a154e9792f1f6d900cc8eff6751a3feaaeab26712c5f74980c1",
+    "perception_lab/web/case_browser/index.html": "bd8cce526607545930c35d59dc30e0def4d06f08afa965e4a42f36a6aab19e92",
+    "perception_lab/web/case_browser/style.css": "b955223288d2cab469ffdd04d38d40eeaa360f9a45965d20174b3d4fb462edf1"
+  }
+}

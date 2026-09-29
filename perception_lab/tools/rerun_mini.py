@@ -58,6 +58,7 @@ def main():
     parser.add_argument('--lidarseg', type=Path, default=ROOT/'outputs/lidarseg/predictions.json')
     parser.add_argument('--failure-report', type=Path, default=ROOT/'reports/mini_evaluation')
     parser.add_argument('--no-failures', action='store_true')
+    parser.add_argument('--triage-only', action='store_true', help='Save failures only; normal targets in an optional sidecar')
     args = parser.parse_args()
     if not 0 <= args.score <= 1:
         parser.error('--score must be between 0 and 1')
@@ -101,7 +102,12 @@ def main():
     for ann in annotations.values():
         by_sample.setdefault(ann['sample_token'], []).append(ann)
     args.out.parent.mkdir(parents=True, exist_ok=True)
-    rr.init('CARperception-mini', strict=True)
+    if args.triage_only and not failure_evidence:
+        raise ValueError('Triage export requires failure evidence')
+    if args.triage_only and args.out==ROOT/'outputs/rerun/mini_scene.rrd':
+        args.out=ROOT/'outputs/rerun/triage_scene.rrd'
+    rr.init('CARperception-triage' if args.triage_only else 'CARperception-mini', strict=True)
+    recording_id=rr.get_recording_id()
     if args.connect:
         rr.connect_grpc(args.connect)
     else:
@@ -123,17 +129,21 @@ def main():
         'LiDARSeg: road=turquoise, vegetation=green, manmade=cream, car=orange. Compare the ground truth tab.\n'
         'Tracking: BEV boxes/trails and camera 3D box projections share ID colors. No object-motion or occlusion correction.\n'
         'BEV: forward=up, left=left. No new inference is performed by this viewer.', media_type='text/markdown'), static=True)
-    camera_views = [rrb.Spatial2DView(name=c, origin='ego/cameras/'+c+'/image') for c in CAMERAS]
-    rr.send_blueprint(rrb.Blueprint(
-        rrb.Horizontal(
-            rrb.Vertical(rrb.Tabs(*(([rrb.Spatial2DView(name='Detection failures / BEV', origin='failures/detection'),
-                                      rrb.Spatial2DView(name='Tracking failures / BEV', origin='failures/tracking')] if failure_evidence else []) +
-                                      [rrb.Spatial2DView(name='BEV / tracks + lanes (forward up)', origin='bev')])),
-                         rrb.Tabs(rrb.Spatial3DView(name='LiDARSeg prediction / detections', origin='ego'),
-                                  rrb.Spatial3DView(name='LiDARSeg ground truth', origin='lidarseg_gt')),
-                         rrb.Tabs(*(([rrb.TextDocumentView(name='Failure cases / current frame', origin='failure_summary')] if failure_evidence else []) + [rrb.TextDocumentView(name='Guide', origin='guide')])), row_shares=[.42,.35,.23]),
-            rrb.Grid(*camera_views, grid_columns=3), column_shares=[.5,.5]),
-        rrb.TimePanel(state='expanded'), collapse_panels=True))
+    if args.triage_only:
+        from triage_views import blueprint
+        rr.send_blueprint(blueprint())
+    else:
+        camera_views = [rrb.Spatial2DView(name=c, origin='ego/cameras/'+c+'/image') for c in CAMERAS]
+        rr.send_blueprint(rrb.Blueprint(
+            rrb.Horizontal(
+                rrb.Vertical(rrb.Tabs(*(([rrb.Spatial2DView(name='Detection failures / BEV', origin='failures/detection'),
+                                          rrb.Spatial2DView(name='Tracking failures / BEV', origin='failures/tracking')] if failure_evidence else []) +
+                                          [rrb.Spatial2DView(name='BEV / tracks + lanes (forward up)', origin='bev')])),
+                             rrb.Tabs(rrb.Spatial3DView(name='LiDARSeg prediction / detections', origin='ego'),
+                                      rrb.Spatial3DView(name='LiDARSeg ground truth', origin='lidarseg_gt')),
+                             rrb.Tabs(*(([rrb.TextDocumentView(name='Failure cases / current frame', origin='failure_summary')] if failure_evidence else []) + [rrb.TextDocumentView(name='Guide', origin='guide')])), row_shares=[.42,.35,.23]),
+                rrb.Grid(*camera_views, grid_columns=3), column_shares=[.5,.5]),
+            rrb.TimePanel(state='expanded'), collapse_panels=True))
     history = {}
     counts = []
     def log_boxes(path, boxes, color, show_labels=False):
@@ -201,7 +211,7 @@ def main():
             track_overlay = path+'/image/tracks'
             rr.log(track_overlay, rr.Clear(recursive=True))
             visible = 0
-            for box in selected_tracks:
+            for box in ([] if args.triage_only else selected_tracks):
                 segments = camera_box_segments(box, transform, entry['K'], entry['width'], entry['height'])
                 if not segments:
                     continue
@@ -239,30 +249,32 @@ def main():
                 # Same official category mapping used by the diagnostic; only GT lookup, never inference.
                 from failure_categories import category_name
                 gt_by_instance[ann['instance_token']] = dict(gt[-1], class_name=category_name(category))
-        rr.log('ego/boxes', rr.Clear(recursive=True))
         selected = [b for b in pred['boxes3d'] if b['score'] >= args.score]
-        log_boxes('ego/boxes/ground_truth', gt, [80,220,100])
-        log_boxes('ego/boxes/centerpoint', selected, [255,150,30])
-        log_boxes('ego/boxes/tracks', selected_tracks,
-                  [track_color(b['tracking_id']) for b in selected_tracks], show_labels=True)
-        rr.log('bev/tracks', rr.Clear(recursive=True))
-        rr.log('ego/trails', rr.Clear(recursive=True))
-        for box in selected_tracks:
-            ident = box['tracking_id']
-            color = track_color(ident)
-            rr.log('bev/tracks/'+ident+'/box', rr.LineStrips2D([bev_outline(box)], colors=color,
-                   radii=rr.Radius.ui_points(2), draw_order=20))
-            center = -np.asarray(box['center_xyz'])[[1,0]]
-            rr.log('bev/tracks/'+ident+'/label', rr.Points2D([center], colors=color,
-                   radii=rr.Radius.ui_points(1), labels=['#'+ident], show_labels=True, draw_order=21))
-            history.setdefault(ident, []).append(transform_points([box['center_xyz']], pose)[0])
-            history[ident] = history[ident][-20:]
-            if len(history[ident]) > 1:
-                trail = transform_points(history[ident], inverse)
-                rr.log('ego/trails/'+ident, rr.LineStrips3D([trail], colors=color, radii=.06))
-                rr.log('bev/tracks/'+ident+'/trail', rr.LineStrips2D([-trail[:,[1,0]]], colors=color,
-                       radii=rr.Radius.ui_points(1.5), draw_order=15))
-        failure_counts = log_failures(rr, failure_cases.get(i, []), pred['boxes3d'], tracked['tracks3d'], gt_by_instance, points, packet, pose, i, failure_evidence) if failure_evidence else {}
+        if not args.triage_only:
+            rr.log('ego/boxes', rr.Clear(recursive=True))
+            selected = [b for b in pred['boxes3d'] if b['score'] >= args.score]
+            log_boxes('ego/boxes/ground_truth', gt, [80,220,100])
+            log_boxes('ego/boxes/centerpoint', selected, [255,150,30])
+            log_boxes('ego/boxes/tracks', selected_tracks,
+                      [track_color(b['tracking_id']) for b in selected_tracks], show_labels=True)
+            rr.log('bev/tracks', rr.Clear(recursive=True))
+            rr.log('ego/trails', rr.Clear(recursive=True))
+            for box in selected_tracks:
+                ident = box['tracking_id']
+                color = track_color(ident)
+                rr.log('bev/tracks/'+ident+'/box', rr.LineStrips2D([bev_outline(box)], colors=color,
+                       radii=rr.Radius.ui_points(2), draw_order=20))
+                center = -np.asarray(box['center_xyz'])[[1,0]]
+                rr.log('bev/tracks/'+ident+'/label', rr.Points2D([center], colors=color,
+                       radii=rr.Radius.ui_points(1), labels=['#'+ident], show_labels=True, draw_order=21))
+                history.setdefault(ident, []).append(transform_points([box['center_xyz']], pose)[0])
+                history[ident] = history[ident][-20:]
+                if len(history[ident]) > 1:
+                    trail = transform_points(history[ident], inverse)
+                    rr.log('ego/trails/'+ident, rr.LineStrips3D([trail], colors=color, radii=.06))
+                    rr.log('bev/tracks/'+ident+'/trail', rr.LineStrips2D([-trail[:,[1,0]]], colors=color,
+                           radii=rr.Radius.ui_points(1.5), draw_order=15))
+        failure_counts = log_failures(rr, failure_cases.get(i, []), pred['boxes3d'], tracked['tracks3d'], gt_by_instance, points, packet, pose, i, failure_evidence, triage=args.triage_only) if failure_evidence else {}
         counts.append(dict(failures=failure_counts, frame=i, sample_token=packet['sample_token'], lidar_points=len(points),
                            cameras=len(CAMERAS), gt=len(gt), detections=len(selected), tracks=len(selected_tracks), camera_tracks=camera_track_counts, maptr_vectors=lane_count))
         print(f'frame {i+1}/{len(packets)}', flush=True)
@@ -275,10 +287,21 @@ def main():
                    camera_images=len(counts)*len(CAMERAS), score_threshold=args.score, lane_score_threshold=args.lane_score,
                    maptr_loaded=lanes is not None, lidarseg_loaded=segmentation is not None,
                    failure_overlay=failure_evidence is not None, failure_report_sha256=sha256(args.failure_report/'cases.json') if failure_evidence else None,
-                   camera_lane_overlay=lanes is not None, tracking_overlay=True, track_history_positions=20,
+                   camera_lane_overlay=lanes is not None, tracking_overlay=not args.triage_only, track_history_positions=0 if args.triage_only else 20,
+                   triage_only=args.triage_only,recording_id=recording_id,
                    coordinate_system='reference ego FLU, metres; camera asynchronous ego compensation',
                    source_sha256={str(p):sha256(p) for p in ([detection_path,track_path,ROOT/'manifests/frame_packets.json'] + ([args.maptr] if lanes is not None else []) + ([args.lidarseg] if segmentation is not None else []))},
                    recording=str(args.out.resolve()), recording_sha256=sha256(args.out), frames=counts)
+    if args.triage_only:
+        from triage_views import save_extras
+        normal_data=json.loads((ROOT/'outputs/rerun/normal_targets.json').read_text())
+        if normal_data['cases_sha256']!=summary['failure_report_sha256']:
+            raise ValueError('Normal targets and cases differ; rerun export_normal_targets.py')
+        for path,digest in normal_data['source_sha256'].items():
+            if sha256(Path(path))!=digest:raise ValueError('Normal target source changed')
+        save_extras(args.out.parent,recording_id,packets,normal_data)
+        summary['normal_counts']=normal_data['counts']
+        summary['normal_recording_sha256']=sha256(args.out.parent/'normal_targets.rrd')
     args.out.with_suffix('.json').write_text(json.dumps(summary,indent=2))
     print('Saved '+str(args.out))
 

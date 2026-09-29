@@ -62,3 +62,7 @@ results/metrics.csv、results/status.json、results/mini_learning.json 与 repor
 ## 失败事件工作流（2026-09-29）
 
 已实现 mini 离线诊断的目标事件归并、现象分组、人工复核与 Rerun 有界片段播放。1910 条失败→1268 事件→84 分组；不是模型优化结果。线上无真值挖掘和场景级因果归因未实现。见 [报告](reports/failure_events/report.md)。
+
+## 异常默认显示（2026-09-29）
+
+9092 改为独立异常主记录，正常目标按需下载并可隐藏，事件分支联动BEV/3D/相机。正常匹配观测：检测2155、跟踪1067；模型与原指标不变。见 [报告](reports/failure_display/report.md)。

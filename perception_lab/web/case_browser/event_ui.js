@@ -7,7 +7,8 @@ function opt(value,text){return el('option',text,{value});}
 async function json(url,options){const r=await fetch(url,options),data=await r.json();if(!r.ok)throw new Error(data.error||r.statusText);return data;}
 
 export class EventUI {
- constructor(data,cases,viewer,seek){
+ constructor(data,cases,viewer,seek,display=async()=>{}){
+  this.display=display;
   this.data=data;this.cases=cases;this.viewer=viewer;this.seek=seek;this.ready=false;
   this.caseMap=new Map(cases.map(r=>[r.case_id,r]));this.events=new Map(data.events.map(e=>[e.event_id,e]));
   this.groups=new Map(data.groups.map(g=>[g.group_id,g]));this.reviews={items:{}};this.selected=null;
@@ -61,7 +62,10 @@ export class EventUI {
  move(offset){const i=this.filtered.findIndex(r=>this.selected&&this.id(r)===this.id(this.selected));
   const row=this.filtered[Math.max(0,i+offset)];if(row)this.choose(row);}
  async choose(row,doSeek=true){
+  const token=this.choiceToken=(this.choiceToken||0)+1;
   this.player.stop();this.selected=row;location.hash=this.id(row);this.render();this.details(row);
+  if(this.ready)await this.display(row.module);
+  if(token!==this.choiceToken)return;
   if(!row.event_id&&row.group_id){$('selection').textContent='问题分组：相似现象，根因待复核';return;}
   const original=row.event_id?this.caseMap.get(row.representative_case_id):row;
   if(this.ready&&doSeek)await this.seek(original);
@@ -131,8 +135,9 @@ export class EventUI {
   if(row){$('view').value=row.event_id?'events':row.group_id?'groups':'cases';this.choose(row,seek);}
   else if(!this.selected&&this.data.events.length)this.choose(this.data.events[0],seek);
  }
- setReady(){
+ async setReady(){
   this.ready=true;
+  if(this.selected)await this.display(this.selected.module);
   for(const id of ['jump','playClip'])if($(id))$(id).disabled=false;
   if(this.selected&&(this.selected.event_id||this.selected.case_id)){
    const row=this.selected.event_id?this.caseMap.get(this.selected.representative_case_id):this.selected;

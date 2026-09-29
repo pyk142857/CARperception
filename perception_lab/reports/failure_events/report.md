@@ -90,3 +90,5 @@ node --experimental-modules perception_lab/tests/test_event_logic.mjs
 [机器可读验证](verification.json) · [测试日志](tests.log) · [窄窗口截图](narrow.png)
 
 ![事件与有界回放](events.png)
+
+更新：2026-09-29 后续显示优化已将9092切换为异常优先布局，事件分支自动联动视图，正常框按需显示；上述旧版页签与加载时间说明以[显示优化报告](../failure_display/report.md)为准。

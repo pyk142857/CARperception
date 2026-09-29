@@ -53,10 +53,13 @@ class Handler(BaseHTTPRequestHandler):
    except Conflict as e:self.send_json({'error':str(e)},409,head=head)
    return
   routes={'/':APP/'index.html','/app.js':APP/'app.js','/style.css':APP/'style.css','/case_logic.mjs':APP/'case_logic.mjs',
-          '/event_ui.js':APP/'event_ui.js','/event_logic.mjs':APP/'event_logic.mjs',
+          '/display_layers.mjs':APP/'display_layers.mjs','/event_ui.js':APP/'event_ui.js','/event_logic.mjs':APP/'event_logic.mjs',
           '/events.json':ROOT/'reports/failure_events/events.json',
           '/cases.json':ROOT/'reports/mini_evaluation/cases.json','/summary.json':ROOT/'reports/mini_evaluation/summary.json',
-          '/recording.json':ROOT/'outputs/rerun/mini_scene.json','/mini_scene.rrd':ROOT/'outputs/rerun/mini_scene.rrd'}
+          '/recording.json':ROOT/'outputs/rerun/triage_scene.json','/mini_scene.rrd':ROOT/'outputs/rerun/triage_scene.rrd',
+          '/normal_targets.rrd':ROOT/'outputs/rerun/normal_targets.rrd'}
+  routes.update({'/view_'+module+'_'+mode+'.rrd':ROOT/'outputs/rerun'/('view_'+module+'_'+mode+'.rrd')
+                 for module in ['detection','tracking'] for mode in ['errors','normal']})
   routes.update({'/vendor/'+n:RUNTIME/'vendor'/n for n in VENDOR});routes['/vendor/re_viewer']=RUNTIME/'vendor/re_viewer.js'
   file=routes.get(path)
   if not file or not file.is_file():self.send_error(404);return
@@ -80,7 +83,7 @@ def main():
   STATE.unlink(missing_ok=True);return
  if state.get('pid') and owned(state['pid']):url=state['url']
  else:
-  if not (ROOT/'outputs/rerun/mini_scene.rrd').is_file():raise SystemExit('Export the Rerun recording first')
+  if not (ROOT/'outputs/rerun/triage_scene.rrd').is_file():raise SystemExit('Export normal targets, then run rerun_mini.py --triage-only first')
   if not (ROOT/'reports/failure_events/events.json').is_file():raise SystemExit('Run tools/aggregate_failure_events.py in the mmdet3d environment first')
   setup();url=f'http://127.0.0.1:{a.port}/'
   with (RUNTIME/'server.log').open('a') as f:

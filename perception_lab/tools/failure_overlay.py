@@ -31,8 +31,9 @@ def resolve_case(case,detections,tracks,gt_by_instance):
     return box
 
 
-def log_failures(rr,rows,detections,tracks,gt_by_instance,points,packet,pose,frame,summary):
+def log_failures(rr,rows,detections,tracks,gt_by_instance,points,packet,pose,frame,summary,triage=False):
     rr.log('failures/detection',rr.Clear(recursive=True));rr.log('failures/tracking',rr.Clear(recursive=True))
+    if triage:rr.log('ego/failure_boxes',rr.Clear(recursive=True))
     for camera,entry in packet['sensors'].items():
         if camera.startswith('CAM_'):rr.log('ego/cameras/'+camera+'/image/failures',rr.Clear(recursive=True))
     points=points[(np.abs(points[:,0])<55)&(np.abs(points[:,1])<55)&(points[:,2]<3)]
@@ -52,14 +53,14 @@ def log_failures(rr,rows,detections,tracks,gt_by_instance,points,packet,pose,fra
         label=SHORT[kind]+' '+case['case_id'].replace('case_','')
         if kind in ['id_switch','gap_id_change']:label+=' '+case['previous_tracking_id']+'->'+case['tracking_id']
         bev_groups[(case['module'],kind)].append((box,label,case))
-        if case['module']=='detection':
+        if triage or case['module']=='detection':
             for camera,entry in packet['sensors'].items():
                 if not camera.startswith('CAM_'):continue
                 transform=np.linalg.inv(pose)@np.array(entry['T_ego_to_global'])@np.array(entry['T_sensor_to_ego'])
                 segments=camera_box_segments(box,transform,entry['K'],entry['width'],entry['height'])
                 if segments:
                     xy=np.asarray(segments).reshape(-1,2);anchor=xy[np.argmin(xy[:,1])]
-                    camera_groups[(camera,kind)].append((segments,anchor,label,case['case_id']))
+                    camera_groups[(camera,case['module'],kind)].append((segments,anchor,label,case['case_id']))
         text.append(f"\n{case['case_id']} | {case['module']} | {kind} | {case['class_name']}"+(f" | {case['previous_tracking_id']} -> {case['tracking_id']}" if kind in ['id_switch','gap_id_change'] else ''))
     for (module,kind),items in bev_groups.items():
         rr.log('failures/'+module+'/'+kind,
@@ -68,8 +69,15 @@ def log_failures(rr,rows,detections,tracks,gt_by_instance,points,packet,pose,fra
                rr.AnyValues(case_id=[item[2]['case_id'] for item in items],
                             class_name=[item[2]['class_name'] for item in items],
                             sample_token=[item[2]['sample_token'] for item in items]))
-    for (camera,kind),items in camera_groups.items():
-        path='ego/cameras/'+camera+'/image/failures/'+kind
+        if triage:
+            boxes=[item[0] for item in items]
+            rr.log('ego/failure_boxes/'+module+'/'+kind,rr.Boxes3D(
+                centers=[b['center_xyz'] for b in boxes],
+                sizes=[[b['size_wlh'][1],b['size_wlh'][0],b['size_wlh'][2]] for b in boxes],
+                quaternions=[list(b['rotation_wxyz'][1:])+[b['rotation_wxyz'][0]] for b in boxes],
+                colors=COLORS[kind],labels=[item[1] for item in items],show_labels=True))
+    for (camera,module,kind),items in camera_groups.items():
+        path='ego/cameras/'+camera+'/image/failures/'+(module+'/' if triage else '')+kind
         rr.log(path+'/boxes',rr.LineStrips2D([segment for item in items for segment in item[0]],
                colors=COLORS[kind],radii=rr.Radius.ui_points(2),draw_order=30))
         rr.log(path+'/labels',rr.Points2D([item[1] for item in items],colors=COLORS[kind],
