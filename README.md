@@ -274,3 +274,7 @@ mini 结果用于理解流程，不代表全量验证集精度。原始计划的
 [距离 × 置信度失败案例交叉表](perception_lab/reports/distance_confidence_cross/report.md)：当前基线 1,910 条原始失败记录，提供 CSV 和模块、类别、失败类型细分。
 
 [驾驶相关失败候选的距离与置信度分布](perception_lab/reports/driving_failure_cross/report.md)：按失败类型统计，并提供近前方区域及对象组的联合明细；不代表已验证的驾驶影响。
+
+### 连续 ID 切换优化实验
+
+已按[优化方案](perception_lab/instruction/20260930_01_tracking_optimization.md)完成13组配置（含作者基线与镜像校验）的固定检测对照，每组复跑一致。当前39帧中，优先候选“贪心＋置信度分阶段，新轨迹阈值0.25”将全类连续ID切换46→38、行人42→36，FP/FN不变；全类连续及间隔后身份错误合计84→75。默认回放仍保留原基线，尚需其他mini场景验证。[完整报告、原始输出与复现](perception_lab/reports/tracking_optimization/report.md)。

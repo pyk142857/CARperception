@@ -1,0 +1,54 @@
+{
+  "S0_author": {
+    "author": true,
+    "hungarian": false
+  },
+  "S0_mirror": {
+    "hungarian": false
+  },
+  "S1_hungarian": {
+    "author": true,
+    "hungarian": true
+  },
+  "S1_gated": {},
+  "S2_kalman": {
+    "motion": "kalman"
+  },
+  "S3_rich_only": {
+    "rich": true
+  },
+  "S3_kalman_rich": {
+    "motion": "kalman",
+    "rich": true
+  },
+  "S4_greedy_high": {
+    "hungarian": false,
+    "two_stage": true,
+    "birth_score": 0.5
+  },
+  "S4_greedy_low": {
+    "hungarian": false,
+    "two_stage": true,
+    "birth_score": 0.25
+  },
+  "S4_high_birth": {
+    "two_stage": true,
+    "birth_score": 0.5
+  },
+  "S4_low_birth": {
+    "two_stage": true,
+    "birth_score": 0.25
+  },
+  "S4_kalman_rich_high": {
+    "motion": "kalman",
+    "rich": true,
+    "two_stage": true,
+    "birth_score": 0.5
+  },
+  "S4_kalman_rich_low": {
+    "motion": "kalman",
+    "rich": true,
+    "two_stage": true,
+    "birth_score": 0.25
+  }
+}

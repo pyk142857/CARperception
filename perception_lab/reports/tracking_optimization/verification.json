@@ -1,0 +1,35 @@
+{
+  "checks": {
+    "S0_author_repeat": true,
+    "original_baseline_exact": true,
+    "S0_mirror_repeat": true,
+    "S0_mirror_author_exact": true,
+    "S1_hungarian_repeat": true,
+    "S1_gated_repeat": true,
+    "S2_kalman_repeat": true,
+    "S3_rich_only_repeat": true,
+    "S3_kalman_rich_repeat": true,
+    "S4_greedy_high_repeat": true,
+    "S4_greedy_low_repeat": true,
+    "S4_high_birth_repeat": true,
+    "S4_low_birth_repeat": true,
+    "S4_kalman_rich_high_repeat": true,
+    "S4_kalman_rich_low_repeat": true
+  },
+  "frames": 39,
+  "source_sha256": {
+    "runs/20260923T043110_d6ae8066/M05/mini_scene/predictions.json": "43be7f1f42b1f77a16440ba99462ea789a30adcfa35fac1f221cdbe1ca126f56",
+    "runs/20260923T044014_0542fd21/M11/mini_tracking_M05/predictions.json": "28658bcde283ed8944ba386eceefd6f5a814583a6c14bc457b4fc70fd6e6ef9e",
+    "manifests/frame_packets.json": "d161deb2618d9c357d8976eee4f7c0de3a567900afbb679c5961cf74248e958d",
+    "tools/optimize_tracking.py": "fffda0c7f374951c69d949ab45fcd4eb2d66b6cf7b292f5b0bf50efc259223ea",
+    "tools/experimental_tracker.py": "cd8e419af2e6b421990ed399633031c62e9d80583fb6c2d880b2b3c872738e66",
+    "tools/evaluate_mini.py": "2b517fe98f2aac70372538c588338ed124593dd4b506b9cd7dfd5c6edd014f7b",
+    "tools/evaluation_utils.py": "ff446e9474a2654b40db57318576712a877c21a2672f7af5f0d6ace193be8346",
+    "third_party/CenterPoint/tools/nusc_tracking/pub_tracker.py": "53a026250a93e80aac3ec1d2165552d8cf604dbf8f563ff67d253b0d2e0f3864"
+  },
+  "input_score_range": [
+    0.10000041872262955,
+    0.9252542853355408
+  ],
+  "note": "timing includes diagnostic collection; no GT input to trackers; original-label fixed-threshold diagnostic; no deployment"
+}
