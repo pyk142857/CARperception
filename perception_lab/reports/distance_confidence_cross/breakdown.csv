@@ -1,0 +1,170 @@
+module,kind,class_name,distance_bin,confidence_bin,count
+detection,center_error_over_1m,barrier,"[0,10)","[0.60,0.80)",1
+detection,center_error_over_1m,barrier,"[10,20)","[0.25,0.40)",1
+detection,center_error_over_1m,barrier,"[10,20)","[0.40,0.60)",7
+detection,center_error_over_1m,barrier,"[10,20)","[0.60,0.80)",5
+detection,center_error_over_1m,barrier,"[20,40)","[0.25,0.40)",2
+detection,center_error_over_1m,barrier,"[20,40)","[0.40,0.60)",2
+detection,center_error_over_1m,barrier,"[20,40)","[0.60,0.80)",1
+detection,center_error_over_1m,bicycle,"[20,40)","[0.40,0.60)",1
+detection,center_error_over_1m,car,"[20,40)","[0.25,0.40)",1
+detection,center_error_over_1m,car,"[20,40)","[0.40,0.60)",1
+detection,center_error_over_1m,car,"[40,+inf)","[0.40,0.60)",1
+detection,center_error_over_1m,construction_vehicle,"[40,+inf)","[0.25,0.40)",1
+detection,center_error_over_1m,construction_vehicle,"[40,+inf)","[0.40,0.60)",1
+detection,center_error_over_1m,pedestrian,"[10,20)","[0.40,0.60)",1
+detection,center_error_over_1m,pedestrian,"[10,20)","[0.60,0.80)",2
+detection,center_error_over_1m,pedestrian,"[20,40)","[0.25,0.40)",3
+detection,center_error_over_1m,pedestrian,"[20,40)","[0.40,0.60)",11
+detection,center_error_over_1m,pedestrian,"[20,40)","[0.60,0.80)",15
+detection,center_error_over_1m,traffic_cone,"[0,10)","[0.60,0.80)",1
+detection,center_error_over_1m,traffic_cone,"[10,20)","[0.25,0.40)",1
+detection,center_error_over_1m,traffic_cone,"[10,20)","[0.40,0.60)",3
+detection,center_error_over_1m,traffic_cone,"[10,20)","[0.60,0.80)",4
+detection,center_error_over_1m,traffic_cone,"[20,40)","[0.25,0.40)",2
+detection,center_error_over_1m,traffic_cone,"[20,40)","[0.40,0.60)",7
+detection,center_error_over_1m,traffic_cone,"[20,40)","[0.60,0.80)",3
+detection,center_error_over_1m,truck,"[40,+inf)","[0.40,0.60)",2
+detection,false_negative,barrier,"[10,20)",N/A (FN),14
+detection,false_negative,barrier,"[20,40)",N/A (FN),9
+detection,false_negative,bicycle,"[10,20)",N/A (FN),3
+detection,false_negative,bicycle,"[20,40)",N/A (FN),4
+detection,false_negative,car,"[20,40)",N/A (FN),2
+detection,false_negative,car,"[40,+inf)",N/A (FN),5
+detection,false_negative,construction_vehicle,"[40,+inf)",N/A (FN),4
+detection,false_negative,motorcycle,"[20,40)",N/A (FN),1
+detection,false_negative,pedestrian,"[0,10)",N/A (FN),2
+detection,false_negative,pedestrian,"[10,20)",N/A (FN),4
+detection,false_negative,pedestrian,"[20,40)",N/A (FN),16
+detection,false_negative,traffic_cone,"[10,20)",N/A (FN),4
+detection,false_negative,traffic_cone,"[20,40)",N/A (FN),4
+detection,false_negative,truck,"[40,+inf)",N/A (FN),3
+detection,false_positive,barrier,"[0,10)","[0.25,0.40)",1
+detection,false_positive,barrier,"[0,10)","[0.40,0.60)",3
+detection,false_positive,barrier,"[0,10)","[0.60,0.80)",3
+detection,false_positive,barrier,"[10,20)","[0.25,0.40)",45
+detection,false_positive,barrier,"[10,20)","[0.40,0.60)",32
+detection,false_positive,barrier,"[10,20)","[0.60,0.80)",3
+detection,false_positive,barrier,"[20,40)","[0.25,0.40)",61
+detection,false_positive,barrier,"[20,40)","[0.40,0.60)",35
+detection,false_positive,barrier,"[20,40)","[0.60,0.80)",4
+detection,false_positive,bicycle,"[10,20)","[0.25,0.40)",10
+detection,false_positive,bicycle,"[10,20)","[0.40,0.60)",4
+detection,false_positive,bicycle,"[20,40)","[0.25,0.40)",37
+detection,false_positive,bicycle,"[20,40)","[0.40,0.60)",4
+detection,false_positive,bicycle,"[20,40)","[0.60,0.80)",1
+detection,false_positive,bus,"[40,+inf)","[0.25,0.40)",1
+detection,false_positive,bus,"[40,+inf)","[0.40,0.60)",1
+detection,false_positive,car,"[10,20)","[0.25,0.40)",2
+detection,false_positive,car,"[20,40)","[0.25,0.40)",15
+detection,false_positive,car,"[20,40)","[0.40,0.60)",3
+detection,false_positive,car,"[20,40)","[0.60,0.80)",1
+detection,false_positive,car,"[40,+inf)","[0.25,0.40)",45
+detection,false_positive,car,"[40,+inf)","[0.40,0.60)",5
+detection,false_positive,construction_vehicle,"[10,20)","[0.25,0.40)",1
+detection,false_positive,construction_vehicle,"[10,20)","[0.60,0.80)",1
+detection,false_positive,construction_vehicle,"[20,40)","[0.25,0.40)",4
+detection,false_positive,construction_vehicle,"[40,+inf)","[0.25,0.40)",13
+detection,false_positive,construction_vehicle,"[40,+inf)","[0.40,0.60)",2
+detection,false_positive,motorcycle,"[10,20)","[0.25,0.40)",2
+detection,false_positive,motorcycle,"[10,20)","[0.40,0.60)",2
+detection,false_positive,motorcycle,"[20,40)","[0.25,0.40)",20
+detection,false_positive,motorcycle,"[20,40)","[0.40,0.60)",8
+detection,false_positive,motorcycle,"[20,40)","[0.60,0.80)",1
+detection,false_positive,motorcycle,"[20,40)","[0.80,1.00]",1
+detection,false_positive,pedestrian,"[0,10)","[0.25,0.40)",8
+detection,false_positive,pedestrian,"[0,10)","[0.40,0.60)",1
+detection,false_positive,pedestrian,"[10,20)","[0.25,0.40)",69
+detection,false_positive,pedestrian,"[10,20)","[0.40,0.60)",21
+detection,false_positive,pedestrian,"[10,20)","[0.60,0.80)",6
+detection,false_positive,pedestrian,"[20,40)","[0.25,0.40)",180
+detection,false_positive,pedestrian,"[20,40)","[0.40,0.60)",85
+detection,false_positive,pedestrian,"[20,40)","[0.60,0.80)",28
+detection,false_positive,traffic_cone,"[0,10)","[0.25,0.40)",2
+detection,false_positive,traffic_cone,"[0,10)","[0.40,0.60)",2
+detection,false_positive,traffic_cone,"[0,10)","[0.60,0.80)",1
+detection,false_positive,traffic_cone,"[10,20)","[0.25,0.40)",50
+detection,false_positive,traffic_cone,"[10,20)","[0.40,0.60)",25
+detection,false_positive,traffic_cone,"[10,20)","[0.60,0.80)",13
+detection,false_positive,traffic_cone,"[10,20)","[0.80,1.00]",1
+detection,false_positive,traffic_cone,"[20,40)","[0.25,0.40)",93
+detection,false_positive,traffic_cone,"[20,40)","[0.40,0.60)",41
+detection,false_positive,traffic_cone,"[20,40)","[0.60,0.80)",4
+detection,false_positive,trailer,"[20,40)","[0.25,0.40)",1
+detection,false_positive,trailer,"[40,+inf)","[0.25,0.40)",1
+detection,false_positive,truck,"[20,40)","[0.25,0.40)",4
+detection,false_positive,truck,"[40,+inf)","[0.25,0.40)",11
+detection,false_positive,truck,"[40,+inf)","[0.40,0.60)",1
+detection,false_positive,truck,"[40,+inf)","[0.60,0.80)",1
+tracking,center_error_over_1m,bicycle,"[20,40)","[0.40,0.60)",1
+tracking,center_error_over_1m,car,"[20,40)","[0.25,0.40)",1
+tracking,center_error_over_1m,car,"[20,40)","[0.40,0.60)",1
+tracking,center_error_over_1m,car,"[40,+inf)","[0.40,0.60)",1
+tracking,center_error_over_1m,pedestrian,"[10,20)","[0.40,0.60)",1
+tracking,center_error_over_1m,pedestrian,"[20,40)","[0.25,0.40)",5
+tracking,center_error_over_1m,pedestrian,"[20,40)","[0.40,0.60)",7
+tracking,center_error_over_1m,pedestrian,"[20,40)","[0.60,0.80)",14
+tracking,center_error_over_1m,truck,"[40,+inf)","[0.40,0.60)",2
+tracking,false_negative,bicycle,"[10,20)",N/A (FN),3
+tracking,false_negative,bicycle,"[20,40)",N/A (FN),4
+tracking,false_negative,car,"[20,40)",N/A (FN),2
+tracking,false_negative,car,"[40,+inf)",N/A (FN),5
+tracking,false_negative,motorcycle,"[20,40)",N/A (FN),1
+tracking,false_negative,pedestrian,"[0,10)",N/A (FN),2
+tracking,false_negative,pedestrian,"[10,20)",N/A (FN),4
+tracking,false_negative,pedestrian,"[20,40)",N/A (FN),15
+tracking,false_negative,truck,"[40,+inf)",N/A (FN),3
+tracking,false_positive,bicycle,"[10,20)","[0.25,0.40)",10
+tracking,false_positive,bicycle,"[10,20)","[0.40,0.60)",4
+tracking,false_positive,bicycle,"[20,40)","[0.25,0.40)",37
+tracking,false_positive,bicycle,"[20,40)","[0.40,0.60)",4
+tracking,false_positive,bicycle,"[20,40)","[0.60,0.80)",1
+tracking,false_positive,bus,"[40,+inf)","[0.25,0.40)",1
+tracking,false_positive,bus,"[40,+inf)","[0.40,0.60)",1
+tracking,false_positive,car,"[10,20)","[0.25,0.40)",2
+tracking,false_positive,car,"[20,40)","[0.25,0.40)",15
+tracking,false_positive,car,"[20,40)","[0.40,0.60)",3
+tracking,false_positive,car,"[20,40)","[0.60,0.80)",1
+tracking,false_positive,car,"[40,+inf)","[0.25,0.40)",45
+tracking,false_positive,car,"[40,+inf)","[0.40,0.60)",5
+tracking,false_positive,motorcycle,"[10,20)","[0.25,0.40)",2
+tracking,false_positive,motorcycle,"[10,20)","[0.40,0.60)",2
+tracking,false_positive,motorcycle,"[20,40)","[0.25,0.40)",20
+tracking,false_positive,motorcycle,"[20,40)","[0.40,0.60)",8
+tracking,false_positive,motorcycle,"[20,40)","[0.60,0.80)",1
+tracking,false_positive,motorcycle,"[20,40)","[0.80,1.00]",1
+tracking,false_positive,pedestrian,"[0,10)","[0.25,0.40)",8
+tracking,false_positive,pedestrian,"[0,10)","[0.40,0.60)",1
+tracking,false_positive,pedestrian,"[10,20)","[0.25,0.40)",60
+tracking,false_positive,pedestrian,"[10,20)","[0.40,0.60)",22
+tracking,false_positive,pedestrian,"[10,20)","[0.60,0.80)",14
+tracking,false_positive,pedestrian,"[10,20)","[0.80,1.00]",2
+tracking,false_positive,pedestrian,"[20,40)","[0.25,0.40)",155
+tracking,false_positive,pedestrian,"[20,40)","[0.40,0.60)",86
+tracking,false_positive,pedestrian,"[20,40)","[0.60,0.80)",44
+tracking,false_positive,pedestrian,"[20,40)","[0.80,1.00]",5
+tracking,false_positive,trailer,"[20,40)","[0.25,0.40)",1
+tracking,false_positive,trailer,"[40,+inf)","[0.25,0.40)",1
+tracking,false_positive,truck,"[20,40)","[0.25,0.40)",4
+tracking,false_positive,truck,"[40,+inf)","[0.25,0.40)",11
+tracking,false_positive,truck,"[40,+inf)","[0.40,0.60)",1
+tracking,false_positive,truck,"[40,+inf)","[0.60,0.80)",1
+tracking,gap_id_change,bicycle,"[10,20)","[0.60,0.80)",1
+tracking,gap_id_change,bicycle,"[20,40)","[0.25,0.40)",1
+tracking,gap_id_change,car,"[20,40)","[0.25,0.40)",1
+tracking,gap_id_change,pedestrian,"[0,10)","[0.60,0.80)",1
+tracking,gap_id_change,pedestrian,"[10,20)","[0.60,0.80)",4
+tracking,gap_id_change,pedestrian,"[20,40)","[0.25,0.40)",11
+tracking,gap_id_change,pedestrian,"[20,40)","[0.40,0.60)",10
+tracking,gap_id_change,pedestrian,"[20,40)","[0.60,0.80)",8
+tracking,gap_id_change,truck,"[40,+inf)","[0.40,0.60)",1
+tracking,id_switch,bicycle,"[20,40)","[0.25,0.40)",1
+tracking,id_switch,bicycle,"[20,40)","[0.40,0.60)",1
+tracking,id_switch,car,"[20,40)","[0.40,0.60)",1
+tracking,id_switch,pedestrian,"[10,20)","[0.60,0.80)",4
+tracking,id_switch,pedestrian,"[10,20)","[0.80,1.00]",1
+tracking,id_switch,pedestrian,"[20,40)","[0.25,0.40)",4
+tracking,id_switch,pedestrian,"[20,40)","[0.40,0.60)",17
+tracking,id_switch,pedestrian,"[20,40)","[0.60,0.80)",13
+tracking,id_switch,pedestrian,"[20,40)","[0.80,1.00]",3
+tracking,id_switch,truck,"[20,40)","[0.60,0.80)",1

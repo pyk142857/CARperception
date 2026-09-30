@@ -1,0 +1,19 @@
+{
+  "cases_sha256": "33f6bdcb4257fcf240795de2bc4268ea066acf9e73ab5f36b32953760d2e262f",
+  "scores_sha256": "a0af11734cabd9cdbaa9bc89f5c17c3110137f9f064d71cfbc6ebe85109d17fe",
+  "included": 1910,
+  "excluded_gap_recovery": 34,
+  "null_confidence": 114,
+  "counts_by_kind": {
+    "false_negative": 114,
+    "false_positive": 1599,
+    "center_error_over_1m": 113,
+    "id_switch": 46,
+    "gap_id_change": 38
+  },
+  "counts_by_module": {
+    "detection": 1175,
+    "tracking": 735
+  },
+  "scope": "all classes; detection + tracking; original labels; max_age=3 baseline; raw case records"
+}

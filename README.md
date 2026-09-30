@@ -270,3 +270,5 @@ mini 结果用于理解流程，不代表全量验证集精度。原始计划的
 ### 跟踪 max_age 对照实验
 
 固定 CenterPoint 检测，在 39 帧上实测 max_age=1/2/3/4/5/8/10/20：3→4 的行人身份错误合计仅减少 2.6%，继续增大反而增加；2 在本次对照中合计最低，减少 9.2%。默认参数仍为 3，尚需跨场景验证。[完整指标、事件与复现报告](perception_lab/reports/max_age_sweep/report.md)。
+
+[距离 × 置信度失败案例交叉表](perception_lab/reports/distance_confidence_cross/report.md)：当前基线 1,910 条原始失败记录，提供 CSV 和模块、类别、失败类型细分。
