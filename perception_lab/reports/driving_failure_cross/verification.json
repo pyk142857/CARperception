@@ -1,0 +1,7 @@
+{
+  "cases_sha256": "33f6bdcb4257fcf240795de2bc4268ea066acf9e73ab5f36b32953760d2e262f",
+  "scores_sha256": "a0af11734cabd9cdbaa9bc89f5c17c3110137f9f064d71cfbc6ebe85109d17fe",
+  "total": 1910,
+  "front_near": 109,
+  "scope": "Original-label baseline max_age=3; records not unique objects; no planner validation"
+}
