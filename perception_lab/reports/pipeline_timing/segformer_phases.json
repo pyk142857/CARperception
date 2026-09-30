@@ -1,0 +1,157 @@
+{
+  "events": [
+    {
+      "phase": "imports_setup_weights",
+      "seconds": 2.588860545307398
+    },
+    {
+      "phase": "inference_api_including_input",
+      "seconds": 0.2753686374053359
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.3937584552913904
+    },
+    {
+      "phase": "inference_api_including_input",
+      "seconds": 0.05275487154722214
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.38538882322609425
+    },
+    {
+      "phase": "inference_api_including_input",
+      "seconds": 0.05956663377583027
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.36177241057157516
+    },
+    {
+      "phase": "inference_api_including_input",
+      "seconds": 0.051601218059659004
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.3597091045230627
+    },
+    {
+      "phase": "inference_api_including_input",
+      "seconds": 0.05197169724851847
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.35839696507900953
+    },
+    {
+      "phase": "inference_api_including_input",
+      "seconds": 0.051177529618144035
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.36817586328834295
+    },
+    {
+      "phase": "inference_api_including_input",
+      "seconds": 0.05754891876131296
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.3874652460217476
+    },
+    {
+      "phase": "inference_api_including_input",
+      "seconds": 0.05491825472563505
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.38501030299812555
+    },
+    {
+      "phase": "inference_api_including_input",
+      "seconds": 0.0588803393766284
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.36658042669296265
+    },
+    {
+      "phase": "inference_api_including_input",
+      "seconds": 0.05567059852182865
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.3429956641048193
+    },
+    {
+      "phase": "inference_api_including_input",
+      "seconds": 0.05430474039167166
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.43016848620027304
+    },
+    {
+      "phase": "inference_api_including_input",
+      "seconds": 0.05018517002463341
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.36201980896294117
+    },
+    {
+      "phase": "inference_api_including_input",
+      "seconds": 0.050231761299073696
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.379324140958488
+    },
+    {
+      "phase": "inference_api_including_input",
+      "seconds": 0.056750452145934105
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.39429011195898056
+    },
+    {
+      "phase": "inference_api_including_input",
+      "seconds": 0.054391383193433285
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.3941909000277519
+    },
+    {
+      "phase": "inference_api_including_input",
+      "seconds": 0.052315606735646725
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.3390324078500271
+    },
+    {
+      "phase": "inference_api_including_input",
+      "seconds": 0.05680444464087486
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.35777576081454754
+    },
+    {
+      "phase": "inference_api_including_input",
+      "seconds": 0.05261760391294956
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.3875546045601368
+    },
+    {
+      "phase": "finalize",
+      "seconds": 0.003350355662405491
+    }
+  ],
+  "instrumented_seconds": 10.542897179722786
+}

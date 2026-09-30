@@ -1,0 +1,23 @@
+/home/minglei/Desktop/CAR/perception_lab/envs/maptr/lib/python3.10/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+/home/minglei/Desktop/CAR/perception_lab/third_party/MapTR/mmdetection3d/mmdet3d/core/evaluation/kitti_utils/eval.py:9: NumbaDeprecationWarning: The 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.
+  def get_thresholds(scores: np.ndarray, num_gt, num_sample_pts=41):
+/home/minglei/Desktop/CAR/perception_lab/third_party/MapTR/mmdetection3d/mmdet3d/core/bbox/box_np_ops.py:786: NumbaDeprecationWarning: The 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.
+  def points_in_convex_polygon_jit(points, polygon, clockwise=True):
+/home/minglei/Desktop/CAR/perception_lab/third_party/MapTR/projects/mmdet3d_plugin/bevformer/modules/custom_base_transformer_layer.py:94: UserWarning: The arguments `feedforward_channels` in BaseTransformerLayer has been deprecated, now you should set `feedforward_channels` and other FFN related arguments to a dict named `ffn_cfgs`. 
+  warnings.warn(
+/home/minglei/Desktop/CAR/perception_lab/third_party/MapTR/projects/mmdet3d_plugin/bevformer/modules/custom_base_transformer_layer.py:94: UserWarning: The arguments `ffn_dropout` in BaseTransformerLayer has been deprecated, now you should set `ffn_drop` and other FFN related arguments to a dict named `ffn_cfgs`. 
+  warnings.warn(
+/home/minglei/Desktop/CAR/perception_lab/third_party/MapTR/projects/mmdet3d_plugin/bevformer/modules/custom_base_transformer_layer.py:94: UserWarning: The arguments `ffn_num_fcs` in BaseTransformerLayer has been deprecated, now you should set `num_fcs` and other FFN related arguments to a dict named `ffn_cfgs`. 
+  warnings.warn(
+/home/minglei/Desktop/CAR/perception_lab/envs/maptr/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3190.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Strict checkpoint load passed
+/home/minglei/Desktop/CAR/perception_lab/third_party/MapTR/projects/mmdet3d_plugin/maptr/modules/transformer.py:151: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:230.)
+  shift = bev_queries.new_tensor(
+frame 1/3: 6 vectors >= 0.5, 0.281s
+/home/minglei/Desktop/CAR/perception_lab/third_party/MapTR/projects/mmdet3d_plugin/core/bbox/coders/nms_free_coder.py:236: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  self.post_center_range = torch.tensor(
+frame 2/3: 3 vectors >= 0.5, 0.045s
+frame 3/3: 7 vectors >= 0.5, 0.039s
+Saved /home/minglei/Desktop/CAR/perception_lab/outputs/pipeline_timing/maptr/predictions.json

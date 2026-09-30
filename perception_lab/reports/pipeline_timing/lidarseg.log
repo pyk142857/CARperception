@@ -1,0 +1,8 @@
+/home/minglei/Desktop/CAR/perception_lab/envs/maptr/lib/python3.10/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+[480 360  32]
+All 274 checkpoint tensors strictly loaded
+frame 1/3: 34688 points, 0.144s
+frame 2/3: 34720 points, 0.041s
+frame 3/3: 34720 points, 0.036s
+Saved /home/minglei/Desktop/CAR/perception_lab/outputs/pipeline_timing/lidarseg/predictions.json

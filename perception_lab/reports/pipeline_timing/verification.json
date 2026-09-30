@@ -1,0 +1,23 @@
+{
+  "successful_jobs": 13,
+  "successful_resident_probes": 2,
+  "phase_counts": {
+    "yolo": 74,
+    "depth": 74,
+    "segformer": 38,
+    "pointpillars_0": 5,
+    "pointpillars_1": 5,
+    "pointpillars_2": 5,
+    "centerpoint_0": 5,
+    "centerpoint_1": 5,
+    "centerpoint_2": 5,
+    "maptr": 11,
+    "lidarseg": 11,
+    "tracking_39": 6,
+    "rerun_export_39": 4
+  },
+  "gpu_synchronization": "torch.cuda.synchronize at every phase boundary after CUDA initialization",
+  "fresh_inference": true,
+  "baseline_status_unchanged": true,
+  "profiler_sha256": "5ee4ff5144cf48c9a87c0cd8f25107291c215b300e3c697d99b038be4e2c7968"
+}

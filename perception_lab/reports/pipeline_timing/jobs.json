@@ -1,0 +1,285 @@
+{
+  "jobs": [
+    {
+      "name": "yolo",
+      "script": "vision_infer.py",
+      "env": "vision",
+      "command": [
+        "/home/minglei/Desktop/CAR/perception_lab/envs/vision/bin/python",
+        "/home/minglei/Desktop/CAR/perception_lab/tools/profile_perception_pipeline.py",
+        "--worker",
+        "vision_infer.py",
+        "/home/minglei/Desktop/CAR/perception_lab/reports/pipeline_timing/yolo_phases.json",
+        "--model",
+        "yolo",
+        "--manifest",
+        "/home/minglei/Desktop/CAR/perception_lab/outputs/pipeline_timing/images.json",
+        "--device",
+        "cuda:0",
+        "--out",
+        "/home/minglei/Desktop/CAR/perception_lab/outputs/pipeline_timing/yolo"
+      ],
+      "returncode": 0,
+      "wall_seconds": 3.126940577290952,
+      "source_sha256": "d40016e3829ea0331bcccf446ba9207b54f27dfa01ad6057f93cf052aec6df38"
+    },
+    {
+      "name": "depth",
+      "script": "vision_infer.py",
+      "env": "vision",
+      "command": [
+        "/home/minglei/Desktop/CAR/perception_lab/envs/vision/bin/python",
+        "/home/minglei/Desktop/CAR/perception_lab/tools/profile_perception_pipeline.py",
+        "--worker",
+        "vision_infer.py",
+        "/home/minglei/Desktop/CAR/perception_lab/reports/pipeline_timing/depth_phases.json",
+        "--model",
+        "depth",
+        "--manifest",
+        "/home/minglei/Desktop/CAR/perception_lab/outputs/pipeline_timing/images.json",
+        "--device",
+        "cuda:0",
+        "--out",
+        "/home/minglei/Desktop/CAR/perception_lab/outputs/pipeline_timing/depth"
+      ],
+      "returncode": 0,
+      "wall_seconds": 6.816562383435667,
+      "source_sha256": "d40016e3829ea0331bcccf446ba9207b54f27dfa01ad6057f93cf052aec6df38"
+    },
+    {
+      "name": "segformer",
+      "script": "segformer_infer.py",
+      "env": "vision",
+      "command": [
+        "/home/minglei/Desktop/CAR/perception_lab/envs/vision/bin/python",
+        "/home/minglei/Desktop/CAR/perception_lab/tools/profile_perception_pipeline.py",
+        "--worker",
+        "segformer_infer.py",
+        "/home/minglei/Desktop/CAR/perception_lab/reports/pipeline_timing/segformer_phases.json",
+        "--manifest",
+        "/home/minglei/Desktop/CAR/perception_lab/outputs/pipeline_timing/images.json",
+        "--device",
+        "cuda:0",
+        "--out",
+        "/home/minglei/Desktop/CAR/perception_lab/outputs/pipeline_timing/segformer"
+      ],
+      "returncode": 0,
+      "wall_seconds": 11.034596939571202,
+      "source_sha256": "7bd0edcdbc6ad9f3c6380245b1abfd654669bb9e1f10698dd63442d3612eaba2"
+    },
+    {
+      "name": "pointpillars_0",
+      "script": "lidar_smoke.py",
+      "env": "mmdet3d",
+      "command": [
+        "/home/minglei/Desktop/CAR/perception_lab/envs/mmdet3d/bin/python",
+        "/home/minglei/Desktop/CAR/perception_lab/tools/profile_perception_pipeline.py",
+        "--worker",
+        "lidar_smoke.py",
+        "/home/minglei/Desktop/CAR/perception_lab/reports/pipeline_timing/pointpillars_0_phases.json",
+        "--model",
+        "pointpillars",
+        "--packets",
+        "/home/minglei/Desktop/CAR/perception_lab/manifests/frame_packets.json",
+        "--sample-index",
+        "0",
+        "--out",
+        "/home/minglei/Desktop/CAR/perception_lab/outputs/pipeline_timing/pointpillars_0"
+      ],
+      "returncode": 0,
+      "wall_seconds": 10.159126338548958,
+      "source_sha256": "1ee1cb27cef3a73bdd268d81e9fab30ddf22460eefd527de92e6c488e8f90146"
+    },
+    {
+      "name": "pointpillars_1",
+      "script": "lidar_smoke.py",
+      "env": "mmdet3d",
+      "command": [
+        "/home/minglei/Desktop/CAR/perception_lab/envs/mmdet3d/bin/python",
+        "/home/minglei/Desktop/CAR/perception_lab/tools/profile_perception_pipeline.py",
+        "--worker",
+        "lidar_smoke.py",
+        "/home/minglei/Desktop/CAR/perception_lab/reports/pipeline_timing/pointpillars_1_phases.json",
+        "--model",
+        "pointpillars",
+        "--packets",
+        "/home/minglei/Desktop/CAR/perception_lab/manifests/frame_packets.json",
+        "--sample-index",
+        "1",
+        "--out",
+        "/home/minglei/Desktop/CAR/perception_lab/outputs/pipeline_timing/pointpillars_1"
+      ],
+      "returncode": 0,
+      "wall_seconds": 9.626167006790638,
+      "source_sha256": "1ee1cb27cef3a73bdd268d81e9fab30ddf22460eefd527de92e6c488e8f90146"
+    },
+    {
+      "name": "pointpillars_2",
+      "script": "lidar_smoke.py",
+      "env": "mmdet3d",
+      "command": [
+        "/home/minglei/Desktop/CAR/perception_lab/envs/mmdet3d/bin/python",
+        "/home/minglei/Desktop/CAR/perception_lab/tools/profile_perception_pipeline.py",
+        "--worker",
+        "lidar_smoke.py",
+        "/home/minglei/Desktop/CAR/perception_lab/reports/pipeline_timing/pointpillars_2_phases.json",
+        "--model",
+        "pointpillars",
+        "--packets",
+        "/home/minglei/Desktop/CAR/perception_lab/manifests/frame_packets.json",
+        "--sample-index",
+        "2",
+        "--out",
+        "/home/minglei/Desktop/CAR/perception_lab/outputs/pipeline_timing/pointpillars_2"
+      ],
+      "returncode": 0,
+      "wall_seconds": 9.769320917315781,
+      "source_sha256": "1ee1cb27cef3a73bdd268d81e9fab30ddf22460eefd527de92e6c488e8f90146"
+    },
+    {
+      "name": "centerpoint_0",
+      "script": "lidar_smoke.py",
+      "env": "mmdet3d",
+      "command": [
+        "/home/minglei/Desktop/CAR/perception_lab/envs/mmdet3d/bin/python",
+        "/home/minglei/Desktop/CAR/perception_lab/tools/profile_perception_pipeline.py",
+        "--worker",
+        "lidar_smoke.py",
+        "/home/minglei/Desktop/CAR/perception_lab/reports/pipeline_timing/centerpoint_0_phases.json",
+        "--model",
+        "centerpoint",
+        "--packets",
+        "/home/minglei/Desktop/CAR/perception_lab/manifests/frame_packets.json",
+        "--sample-index",
+        "0",
+        "--out",
+        "/home/minglei/Desktop/CAR/perception_lab/outputs/pipeline_timing/centerpoint_0"
+      ],
+      "returncode": 0,
+      "wall_seconds": 11.718560498207808,
+      "source_sha256": "1ee1cb27cef3a73bdd268d81e9fab30ddf22460eefd527de92e6c488e8f90146"
+    },
+    {
+      "name": "centerpoint_1",
+      "script": "lidar_smoke.py",
+      "env": "mmdet3d",
+      "command": [
+        "/home/minglei/Desktop/CAR/perception_lab/envs/mmdet3d/bin/python",
+        "/home/minglei/Desktop/CAR/perception_lab/tools/profile_perception_pipeline.py",
+        "--worker",
+        "lidar_smoke.py",
+        "/home/minglei/Desktop/CAR/perception_lab/reports/pipeline_timing/centerpoint_1_phases.json",
+        "--model",
+        "centerpoint",
+        "--packets",
+        "/home/minglei/Desktop/CAR/perception_lab/manifests/frame_packets.json",
+        "--sample-index",
+        "1",
+        "--out",
+        "/home/minglei/Desktop/CAR/perception_lab/outputs/pipeline_timing/centerpoint_1"
+      ],
+      "returncode": 0,
+      "wall_seconds": 12.0193505063653,
+      "source_sha256": "1ee1cb27cef3a73bdd268d81e9fab30ddf22460eefd527de92e6c488e8f90146"
+    },
+    {
+      "name": "centerpoint_2",
+      "script": "lidar_smoke.py",
+      "env": "mmdet3d",
+      "command": [
+        "/home/minglei/Desktop/CAR/perception_lab/envs/mmdet3d/bin/python",
+        "/home/minglei/Desktop/CAR/perception_lab/tools/profile_perception_pipeline.py",
+        "--worker",
+        "lidar_smoke.py",
+        "/home/minglei/Desktop/CAR/perception_lab/reports/pipeline_timing/centerpoint_2_phases.json",
+        "--model",
+        "centerpoint",
+        "--packets",
+        "/home/minglei/Desktop/CAR/perception_lab/manifests/frame_packets.json",
+        "--sample-index",
+        "2",
+        "--out",
+        "/home/minglei/Desktop/CAR/perception_lab/outputs/pipeline_timing/centerpoint_2"
+      ],
+      "returncode": 0,
+      "wall_seconds": 12.091065051034093,
+      "source_sha256": "1ee1cb27cef3a73bdd268d81e9fab30ddf22460eefd527de92e6c488e8f90146"
+    },
+    {
+      "name": "maptr",
+      "script": "maptr_mini.py",
+      "env": "maptr",
+      "command": [
+        "/home/minglei/Desktop/CAR/perception_lab/envs/maptr/bin/python",
+        "/home/minglei/Desktop/CAR/perception_lab/tools/profile_perception_pipeline.py",
+        "--worker",
+        "maptr_mini.py",
+        "/home/minglei/Desktop/CAR/perception_lab/reports/pipeline_timing/maptr_phases.json",
+        "--limit",
+        "3",
+        "--out",
+        "/home/minglei/Desktop/CAR/perception_lab/outputs/pipeline_timing/maptr"
+      ],
+      "returncode": 0,
+      "wall_seconds": 8.06146644987166,
+      "source_sha256": "0a9b2fd3a209cdc8155e244d301a5bf0da788eb576bbb068ff2d8af16e6941c5"
+    },
+    {
+      "name": "lidarseg",
+      "script": "lidarseg_mini.py",
+      "env": "lidarseg_legacy",
+      "command": [
+        "/home/minglei/Desktop/CAR/perception_lab/envs/lidarseg_legacy/bin/python",
+        "/home/minglei/Desktop/CAR/perception_lab/tools/profile_perception_pipeline.py",
+        "--worker",
+        "lidarseg_mini.py",
+        "/home/minglei/Desktop/CAR/perception_lab/reports/pipeline_timing/lidarseg_phases.json",
+        "--limit",
+        "3",
+        "--out",
+        "/home/minglei/Desktop/CAR/perception_lab/outputs/pipeline_timing/lidarseg"
+      ],
+      "returncode": 0,
+      "wall_seconds": 4.326170335523784,
+      "source_sha256": "99ce94807e90492ceee84ab191cd207d69f215aeb978fb7dbebc97bbcdef0aa4"
+    },
+    {
+      "name": "tracking_39",
+      "script": "track_mini.py",
+      "env": "mmdet3d",
+      "command": [
+        "/home/minglei/Desktop/CAR/perception_lab/envs/mmdet3d/bin/python",
+        "/home/minglei/Desktop/CAR/perception_lab/tools/profile_perception_pipeline.py",
+        "--worker",
+        "track_mini.py",
+        "/home/minglei/Desktop/CAR/perception_lab/reports/pipeline_timing/tracking_39_phases.json",
+        "--detections",
+        "/home/minglei/Desktop/CAR/perception_lab/runs/20260923T043110_d6ae8066/M05/mini_scene/predictions.json",
+        "--out",
+        "/home/minglei/Desktop/CAR/perception_lab/runs/pipeline_timing/tracking_39/profile"
+      ],
+      "returncode": 0,
+      "wall_seconds": 17.784096592105925,
+      "source_sha256": "64b7372cd60d5c4694a7f771ba14ca6c1591c2609a8020198b83311a91728bc5"
+    },
+    {
+      "name": "rerun_export_39",
+      "script": "rerun_mini.py",
+      "env": "rerun",
+      "command": [
+        "/home/minglei/Desktop/CAR/perception_lab/envs/rerun/bin/python",
+        "/home/minglei/Desktop/CAR/perception_lab/tools/profile_perception_pipeline.py",
+        "--worker",
+        "rerun_mini.py",
+        "/home/minglei/Desktop/CAR/perception_lab/reports/pipeline_timing/rerun_export_39_phases.json",
+        "--no-failures",
+        "--out",
+        "/home/minglei/Desktop/CAR/perception_lab/outputs/pipeline_timing/rerun_export_39/scene.rrd"
+      ],
+      "returncode": 0,
+      "wall_seconds": 6.950338784605265,
+      "source_sha256": "4f5eb40ec59dd010009a95684473ce1201ba2d30378b707a242f49e0bdb2724c"
+    }
+  ],
+  "total_wall_seconds": 123.49258318543434
+}

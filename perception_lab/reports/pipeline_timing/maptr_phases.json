@@ -1,0 +1,49 @@
+{
+  "events": [
+    {
+      "phase": "imports_setup_weights",
+      "seconds": 5.424341588281095
+    },
+    {
+      "phase": "input_preprocess",
+      "seconds": 0.48735267762094736
+    },
+    {
+      "phase": "inference_api",
+      "seconds": 0.2808500248938799
+    },
+    {
+      "phase": "postprocess",
+      "seconds": 0.0005537150427699089
+    },
+    {
+      "phase": "input_preprocess",
+      "seconds": 0.5314998533576727
+    },
+    {
+      "phase": "inference_api",
+      "seconds": 0.04537374060600996
+    },
+    {
+      "phase": "postprocess",
+      "seconds": 0.0004103630781173706
+    },
+    {
+      "phase": "input_preprocess",
+      "seconds": 0.1913341898471117
+    },
+    {
+      "phase": "inference_api",
+      "seconds": 0.03942412417382002
+    },
+    {
+      "phase": "postprocess",
+      "seconds": 0.0007498348131775856
+    },
+    {
+      "phase": "finalize",
+      "seconds": 0.333809582516551
+    }
+  ],
+  "instrumented_seconds": 7.335714537650347
+}

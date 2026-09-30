@@ -1,0 +1,48 @@
+{
+  "task_wall_seconds": 123.48376238066703,
+  "controller_wall_seconds": 123.49258318543434,
+  "phases_seconds": {
+    "imports_setup_weights": 65.68681648466736,
+    "input_decode": 0.2817867202684283,
+    "adapter_validation": 0.009471760131418705,
+    "inference_api": 10.243179460056126,
+    "postprocess_export": 10.464370156638324,
+    "finalize": 0.665693904273212,
+    "process_residual": 9.695642666891217,
+    "inference_api_including_input": 1.1970598613843322,
+    "input_preprocess": 1.3601910946890712,
+    "render_export": 17.11660209018737,
+    "postprocess": 0.0017139129340648651,
+    "inference_api_with_point_decode": 0.2222275035455823,
+    "evaluation_export": 0.03214536514133215,
+    "tracking_with_coordinate_adapters": 0.4073309004306793,
+    "recording_build": 6.0965486746281385,
+    "recording_flush": 0.0029818248003721237
+  },
+  "module_seconds": {
+    "yolo": 3.126940577290952,
+    "depth": 6.816562383435667,
+    "segformer": 11.034596939571202,
+    "pointpillars": 29.554614262655377,
+    "centerpoint": 35.8289760556072,
+    "maptr": 8.06146644987166,
+    "lidarseg": 4.326170335523784,
+    "tracking_39": 17.784096592105925,
+    "rerun_export_39": 6.950338784605265
+  },
+  "inference_api_ms_per_sensor_tick": {
+    "yolo": 343.4819330771764,
+    "depth": 618.6680517469844,
+    "segformer": 399.0199537947774,
+    "pointpillars": 304.18606226642925,
+    "centerpoint": 2026.1744763702154,
+    "maptr": 121.88262989123662,
+    "lidarseg": 74.0758345151941
+  },
+  "profiler_sha256": "5ee4ff5144cf48c9a87c0cd8f25107291c215b300e3c697d99b038be4e2c7968",
+  "checks": {
+    "all_jobs_passed": true,
+    "nonnegative_phases": true,
+    "wall_residual_accounted": true
+  }
+}

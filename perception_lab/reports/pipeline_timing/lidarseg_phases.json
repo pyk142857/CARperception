@@ -1,0 +1,49 @@
+{
+  "events": [
+    {
+      "phase": "imports_setup_weights",
+      "seconds": 3.335039271041751
+    },
+    {
+      "phase": "input_preprocess",
+      "seconds": 0.0043678367510437965
+    },
+    {
+      "phase": "inference_api_with_point_decode",
+      "seconds": 0.14446972589939833
+    },
+    {
+      "phase": "evaluation_export",
+      "seconds": 0.011262664571404457
+    },
+    {
+      "phase": "input_preprocess",
+      "seconds": 0.004330256022512913
+    },
+    {
+      "phase": "inference_api_with_point_decode",
+      "seconds": 0.041429522447288036
+    },
+    {
+      "phase": "evaluation_export",
+      "seconds": 0.010479869320988655
+    },
+    {
+      "phase": "input_preprocess",
+      "seconds": 0.003610757179558277
+    },
+    {
+      "phase": "inference_api_with_point_decode",
+      "seconds": 0.03632825519889593
+    },
+    {
+      "phase": "evaluation_export",
+      "seconds": 0.010402831248939037
+    },
+    {
+      "phase": "finalize",
+      "seconds": 0.1887285616248846
+    }
+  ],
+  "instrumented_seconds": 3.7904715724289417
+}

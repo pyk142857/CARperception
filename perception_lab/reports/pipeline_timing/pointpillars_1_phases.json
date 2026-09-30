@@ -1,0 +1,25 @@
+{
+  "events": [
+    {
+      "phase": "imports_setup_weights",
+      "seconds": 8.078411606140435
+    },
+    {
+      "phase": "input_preprocess",
+      "seconds": 0.04008971154689789
+    },
+    {
+      "phase": "inference_api",
+      "seconds": 0.33151754457503557
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.027802255004644394
+    },
+    {
+      "phase": "render_export",
+      "seconds": 0.10417310893535614
+    }
+  ],
+  "instrumented_seconds": 8.582011736929417
+}

@@ -1,0 +1,21 @@
+{
+  "events": [
+    {
+      "phase": "imports_setup_weights",
+      "seconds": 0.655004171654582
+    },
+    {
+      "phase": "recording_build",
+      "seconds": 6.0965486746281385
+    },
+    {
+      "phase": "recording_flush",
+      "seconds": 0.0029818248003721237
+    },
+    {
+      "phase": "finalize",
+      "seconds": 0.13052699714899063
+    }
+  ],
+  "instrumented_seconds": 6.8850864842534065
+}

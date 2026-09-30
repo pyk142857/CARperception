@@ -1,0 +1,113 @@
+{
+  "events": [
+    {
+      "phase": "imports_setup_weights",
+      "seconds": 8.08311311621219
+    },
+    {
+      "phase": "input_preprocess",
+      "seconds": 0.004019307903945446
+    },
+    {
+      "phase": "inference_api",
+      "seconds": 2.2201798856258392e-05
+    },
+    {
+      "phase": "resident_warmup",
+      "seconds": 0.27512589283287525
+    },
+    {
+      "phase": "resident_inference",
+      "seconds": 0.023966762237250805
+    },
+    {
+      "phase": "resident_inference",
+      "seconds": 0.0253422474488616
+    },
+    {
+      "phase": "resident_inference",
+      "seconds": 0.02441267017275095
+    },
+    {
+      "phase": "resident_inference",
+      "seconds": 0.024974074214696884
+    },
+    {
+      "phase": "resident_inference",
+      "seconds": 0.02266551833599806
+    },
+    {
+      "phase": "resident_inference",
+      "seconds": 0.022460968233644962
+    },
+    {
+      "phase": "resident_inference",
+      "seconds": 0.024248442612588406
+    },
+    {
+      "phase": "resident_inference",
+      "seconds": 0.022555124014616013
+    },
+    {
+      "phase": "resident_inference",
+      "seconds": 0.023488724604249
+    },
+    {
+      "phase": "resident_inference",
+      "seconds": 0.02732185833156109
+    },
+    {
+      "phase": "resident_inference",
+      "seconds": 0.02677021734416485
+    },
+    {
+      "phase": "resident_inference",
+      "seconds": 0.022674028761684895
+    },
+    {
+      "phase": "resident_inference",
+      "seconds": 0.02414178941398859
+    },
+    {
+      "phase": "resident_inference",
+      "seconds": 0.022619781084358692
+    },
+    {
+      "phase": "resident_inference",
+      "seconds": 0.02242867648601532
+    },
+    {
+      "phase": "resident_inference",
+      "seconds": 0.02438265737146139
+    },
+    {
+      "phase": "resident_inference",
+      "seconds": 0.022783435881137848
+    },
+    {
+      "phase": "resident_inference",
+      "seconds": 0.02319726999849081
+    },
+    {
+      "phase": "resident_inference",
+      "seconds": 0.022951871156692505
+    },
+    {
+      "phase": "resident_inference",
+      "seconds": 0.0228200051933527
+    },
+    {
+      "phase": "original_inference_after_probe",
+      "seconds": 0.024486344307661057
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.026378965005278587
+    },
+    {
+      "phase": "render_export",
+      "seconds": 0.08442801237106323
+    }
+  ],
+  "instrumented_seconds": 8.973803779110312
+}

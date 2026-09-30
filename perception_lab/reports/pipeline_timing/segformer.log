@@ -1,0 +1,22 @@
+/home/minglei/Desktop/CAR/perception_lab/third_party/mmsegmentation/mmseg/models/losses/cross_entropy_loss.py:250: UserWarning: Default ``avg_non_ignore`` is False, if you would like to ignore the certain label and average loss over non-ignore labels, which is the same with PyTorch official cross_entropy, set ``avg_non_ignore=True``.
+  warnings.warn(
+Loads checkpoint by local backend from path: /home/minglei/Desktop/CAR/perception_lab/checkpoints/segformer_b0_cityscapes.pth
+<All keys matched successfully>
+0 /home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402927612460.jpg passed
+1 /home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-07-24-11-22-45+0800__CAM_FRONT_RIGHT__1532402927620339.jpg passed
+2 /home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-07-24-11-22-45+0800__CAM_BACK_RIGHT__1532402927627893.jpg passed
+3 /home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/CAM_BACK/n015-2018-07-24-11-22-45+0800__CAM_BACK__1532402927637525.jpg passed
+4 /home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-07-24-11-22-45+0800__CAM_BACK_LEFT__1532402927647423.jpg passed
+5 /home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-07-24-11-22-45+0800__CAM_FRONT_LEFT__1532402927604844.jpg passed
+6 /home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402928112460.jpg passed
+7 /home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-07-24-11-22-45+0800__CAM_FRONT_RIGHT__1532402928120339.jpg passed
+8 /home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-07-24-11-22-45+0800__CAM_BACK_RIGHT__1532402928127893.jpg passed
+9 /home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/CAM_BACK/n015-2018-07-24-11-22-45+0800__CAM_BACK__1532402928137525.jpg passed
+10 /home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-07-24-11-22-45+0800__CAM_BACK_LEFT__1532402928147423.jpg passed
+11 /home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-07-24-11-22-45+0800__CAM_FRONT_LEFT__1532402928104844.jpg passed
+12 /home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402928662460.jpg passed
+13 /home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-07-24-11-22-45+0800__CAM_FRONT_RIGHT__1532402928670339.jpg passed
+14 /home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-07-24-11-22-45+0800__CAM_BACK_RIGHT__1532402928677893.jpg passed
+15 /home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/CAM_BACK/n015-2018-07-24-11-22-45+0800__CAM_BACK__1532402928687525.jpg passed
+16 /home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-07-24-11-22-45+0800__CAM_BACK_LEFT__1532402928697423.jpg passed
+17 /home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-07-24-11-22-45+0800__CAM_FRONT_LEFT__1532402928654844.jpg passed

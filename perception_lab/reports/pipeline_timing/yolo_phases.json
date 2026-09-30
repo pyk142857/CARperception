@@ -1,0 +1,301 @@
+{
+  "events": [
+    {
+      "phase": "imports_setup_weights",
+      "seconds": 1.2811925020068884
+    },
+    {
+      "phase": "input_decode",
+      "seconds": 0.010362539440393448
+    },
+    {
+      "phase": "adapter_validation",
+      "seconds": 0.00024132058024406433
+    },
+    {
+      "phase": "inference_api",
+      "seconds": 0.9537981189787388
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.01917074713855982
+    },
+    {
+      "phase": "input_decode",
+      "seconds": 0.008878691121935844
+    },
+    {
+      "phase": "adapter_validation",
+      "seconds": 0.00024783797562122345
+    },
+    {
+      "phase": "inference_api",
+      "seconds": 0.005427873693406582
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.016988839022815228
+    },
+    {
+      "phase": "input_decode",
+      "seconds": 0.00834965892136097
+    },
+    {
+      "phase": "adapter_validation",
+      "seconds": 0.0002407655119895935
+    },
+    {
+      "phase": "inference_api",
+      "seconds": 0.004238216206431389
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.01833463553339243
+    },
+    {
+      "phase": "input_decode",
+      "seconds": 0.007944711484014988
+    },
+    {
+      "phase": "adapter_validation",
+      "seconds": 0.00021741818636655807
+    },
+    {
+      "phase": "inference_api",
+      "seconds": 0.004491517320275307
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.018632877618074417
+    },
+    {
+      "phase": "input_decode",
+      "seconds": 0.007950247265398502
+    },
+    {
+      "phase": "adapter_validation",
+      "seconds": 0.00023856759071350098
+    },
+    {
+      "phase": "inference_api",
+      "seconds": 0.004234367981553078
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.0168041056022048
+    },
+    {
+      "phase": "input_decode",
+      "seconds": 0.007810836657881737
+    },
+    {
+      "phase": "adapter_validation",
+      "seconds": 0.00021027307957410812
+    },
+    {
+      "phase": "inference_api",
+      "seconds": 0.004030926153063774
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.01702731568366289
+    },
+    {
+      "phase": "input_decode",
+      "seconds": 0.007528744637966156
+    },
+    {
+      "phase": "adapter_validation",
+      "seconds": 0.001149727962911129
+    },
+    {
+      "phase": "inference_api",
+      "seconds": 0.004742680117487907
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.01801545638591051
+    },
+    {
+      "phase": "input_decode",
+      "seconds": 0.007995101623237133
+    },
+    {
+      "phase": "adapter_validation",
+      "seconds": 0.0001941164955496788
+    },
+    {
+      "phase": "inference_api",
+      "seconds": 0.005933405831456184
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.016608603298664093
+    },
+    {
+      "phase": "input_decode",
+      "seconds": 0.007979262620210648
+    },
+    {
+      "phase": "adapter_validation",
+      "seconds": 0.00024318788200616837
+    },
+    {
+      "phase": "inference_api",
+      "seconds": 0.004245092160999775
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.017918629571795464
+    },
+    {
+      "phase": "input_decode",
+      "seconds": 0.0074912793934345245
+    },
+    {
+      "phase": "adapter_validation",
+      "seconds": 0.00019727833569049835
+    },
+    {
+      "phase": "inference_api",
+      "seconds": 0.004154114052653313
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.01585226785391569
+    },
+    {
+      "phase": "input_decode",
+      "seconds": 0.007625868543982506
+    },
+    {
+      "phase": "adapter_validation",
+      "seconds": 0.0002452405169606209
+    },
+    {
+      "phase": "inference_api",
+      "seconds": 0.004368474707007408
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.016596192494034767
+    },
+    {
+      "phase": "input_decode",
+      "seconds": 0.007776336744427681
+    },
+    {
+      "phase": "adapter_validation",
+      "seconds": 0.00021115969866514206
+    },
+    {
+      "phase": "inference_api",
+      "seconds": 0.004714482463896275
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.017585454508662224
+    },
+    {
+      "phase": "input_decode",
+      "seconds": 0.007626967504620552
+    },
+    {
+      "phase": "adapter_validation",
+      "seconds": 0.00019800104200839996
+    },
+    {
+      "phase": "inference_api",
+      "seconds": 0.00404931977391243
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.018547137267887592
+    },
+    {
+      "phase": "input_decode",
+      "seconds": 0.007510972209274769
+    },
+    {
+      "phase": "adapter_validation",
+      "seconds": 0.0002189967781305313
+    },
+    {
+      "phase": "inference_api",
+      "seconds": 0.004299916326999664
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.01648110616952181
+    },
+    {
+      "phase": "input_decode",
+      "seconds": 0.007932345382869244
+    },
+    {
+      "phase": "adapter_validation",
+      "seconds": 0.00022926274687051773
+    },
+    {
+      "phase": "inference_api",
+      "seconds": 0.0042684003710746765
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.01803253497928381
+    },
+    {
+      "phase": "input_decode",
+      "seconds": 0.007424098439514637
+    },
+    {
+      "phase": "adapter_validation",
+      "seconds": 0.00021880213171243668
+    },
+    {
+      "phase": "inference_api",
+      "seconds": 0.005115062929689884
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.015965072438120842
+    },
+    {
+      "phase": "input_decode",
+      "seconds": 0.007665151730179787
+    },
+    {
+      "phase": "adapter_validation",
+      "seconds": 0.00020672287791967392
+    },
+    {
+      "phase": "inference_api",
+      "seconds": 0.003980281762778759
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.01594112068414688
+    },
+    {
+      "phase": "input_decode",
+      "seconds": 0.007737388834357262
+    },
+    {
+      "phase": "adapter_validation",
+      "seconds": 0.0002726195380091667
+    },
+    {
+      "phase": "inference_api",
+      "seconds": 0.004353548400104046
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.01767606846988201
+    },
+    {
+      "phase": "finalize",
+      "seconds": 0.003377603366971016
+    }
+  ],
+  "instrumented_seconds": 2.775781045667827
+}

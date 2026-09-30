@@ -1,0 +1,51 @@
+[
+  {
+    "module": "yolo",
+    "api_ms_per_call": 4.508687073693556,
+    "ms_per_sensor_tick": 27.052122442161338,
+    "samples": 17,
+    "scope": "exclude first call; consecutive real inputs"
+  },
+  {
+    "module": "depth",
+    "api_ms_per_call": 85.19156918148784,
+    "ms_per_sensor_tick": 511.149415088927,
+    "samples": 17,
+    "scope": "exclude first call; consecutive real inputs"
+  },
+  {
+    "module": "segformer",
+    "api_ms_per_call": 54.217130822293896,
+    "ms_per_sensor_tick": 325.3027849337634,
+    "samples": 17,
+    "scope": "exclude first call; consecutive real inputs"
+  },
+  {
+    "module": "maptr",
+    "api_ms_per_call": 42.39893238991499,
+    "ms_per_sensor_tick": 42.39893238991499,
+    "samples": 2,
+    "scope": "exclude first call; consecutive real inputs"
+  },
+  {
+    "module": "lidarseg",
+    "api_ms_per_call": 38.878888823091984,
+    "ms_per_sensor_tick": 38.878888823091984,
+    "samples": 2,
+    "scope": "exclude first call; consecutive real inputs"
+  },
+  {
+    "module": "centerpoint",
+    "api_ms_per_call": 25.216273637488484,
+    "ms_per_sensor_tick": 25.216273637488484,
+    "samples": 20,
+    "scope": "same first frame repeated, 3 warmups, 20 calls"
+  },
+  {
+    "module": "pointpillars",
+    "api_ms_per_call": 23.81030614487827,
+    "ms_per_sensor_tick": 23.81030614487827,
+    "samples": 20,
+    "scope": "same first frame repeated, 3 warmups, 20 calls"
+  }
+]

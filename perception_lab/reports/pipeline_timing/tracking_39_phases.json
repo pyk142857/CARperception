@@ -1,0 +1,29 @@
+{
+  "events": [
+    {
+      "phase": "imports_setup_weights",
+      "seconds": 0.2121962746605277
+    },
+    {
+      "phase": "tracking_with_coordinate_adapters",
+      "seconds": 2.0003877580165863e-05
+    },
+    {
+      "phase": "tracking_with_coordinate_adapters",
+      "seconds": 0.21618212200701237
+    },
+    {
+      "phase": "tracking_with_coordinate_adapters",
+      "seconds": 0.1911287745460868
+    },
+    {
+      "phase": "postprocess_export",
+      "seconds": 0.5326620060950518
+    },
+    {
+      "phase": "render_export",
+      "seconds": 16.51619443297386
+    }
+  ],
+  "instrumented_seconds": 17.668404277414083
+}

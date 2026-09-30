@@ -282,3 +282,7 @@ mini 结果用于理解流程，不代表全量验证集精度。原始计划的
 ### 跟踪 CPU 算子优化
 
 对S4_greedy_low候选优化复制、数组计算、类别矩阵和匹配矩阵复用。39帧输出与诊断逐项一致，30轮配对测试平均2.91→0.77 ms/帧（约3.77×），72项测试通过。仅代表CPU跟踪阶段，不包括CenterPoint推理或Rerun渲染。[报告、代码与逐帧计时](perception_lab/reports/tracking_operator_optimization/report.md)。
+
+### 全感知流程耗时剖析
+
+已实测13个离线任务（模型推理前3时刻/六相机，跟踪与Rerun另测39帧），GPU计时边界同步，总进程耗时123.48秒。导入/元数据/权重加载占53.2%，离线绘图/视频占13.9%；这不是统一实时流水线的单帧占比。补测常驻模型：CenterPoint预热后约25.22ms/帧；六相机深度和SegFormer去除首次调用后约511/325ms每时刻，应先消除逐帧加载和离线输出开销，再细分模型热点。[完整报告、计时口径与复现](perception_lab/reports/pipeline_timing/report.md)。

@@ -1,0 +1,8 @@
+/home/minglei/Desktop/CAR/perception_lab/third_party/mmdetection3d/mmdet3d/evaluation/functional/kitti_utils/eval.py:10: NumbaDeprecationWarning: [1mThe 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.[0m
+  def get_thresholds(scores: np.ndarray, num_gt, num_sample_pts=41):
+/home/minglei/Desktop/CAR/perception_lab/third_party/mmdetection3d/mmdet3d/models/dense_heads/anchor3d_head.py:94: UserWarning: dir_offset and dir_limit_offset will be depressed and be incorporated into box coder in the future
+  warnings.warn(
+/home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3526.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Loads checkpoint by local backend from path: /home/minglei/Desktop/CAR/perception_lab/checkpoints/pointpillars.pth
+Loads checkpoint by local backend from path: /home/minglei/Desktop/CAR/perception_lab/checkpoints/pointpillars.pth

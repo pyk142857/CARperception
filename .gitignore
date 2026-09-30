@@ -43,3 +43,6 @@ perception_lab/outputs/lidarseg/
 
 # Downloaded Rerun browser assets and local service state
 perception_lab/outputs/case_browser/
+
+# Isolated timing-run prediction images, arrays and Rerun recording
+perception_lab/outputs/pipeline_timing/
