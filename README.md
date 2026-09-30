@@ -278,3 +278,7 @@ mini 结果用于理解流程，不代表全量验证集精度。原始计划的
 ### 连续 ID 切换优化实验
 
 已按[优化方案](perception_lab/instruction/20260930_01_tracking_optimization.md)完成13组配置（含作者基线与镜像校验）的固定检测对照，每组复跑一致。当前39帧中，优先候选“贪心＋置信度分阶段，新轨迹阈值0.25”将全类连续ID切换46→38、行人42→36，FP/FN不变；全类连续及间隔后身份错误合计84→75。默认回放仍保留原基线，尚需其他mini场景验证。[完整报告、原始输出与复现](perception_lab/reports/tracking_optimization/report.md)。
+
+### 跟踪 CPU 算子优化
+
+对S4_greedy_low候选优化复制、数组计算、类别矩阵和匹配矩阵复用。39帧输出与诊断逐项一致，30轮配对测试平均2.91→0.77 ms/帧（约3.77×），72项测试通过。仅代表CPU跟踪阶段，不包括CenterPoint推理或Rerun渲染。[报告、代码与逐帧计时](perception_lab/reports/tracking_operator_optimization/report.md)。

@@ -1,0 +1,38 @@
+         154163 function calls in 0.050 seconds
+
+   Ordered by: cumulative time
+   List reduced from 51 to 30 due to restriction <30>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.001    0.001    0.050    0.050 benchmark_tracker_operators.py:31(run)
+       39    0.015    0.000    0.048    0.001 fast_candidate_tracker.py:30(step_centertrack)
+       39    0.001    0.000    0.021    0.001 fast_candidate_tracker.py:31(<listcomp>)
+     4547    0.008    0.000    0.020    0.000 fast_candidate_tracker.py:13(clone_detection)
+    18188    0.005    0.000    0.010    0.000 {built-in method builtins.all}
+    72752    0.006    0.000    0.006    0.000 fast_candidate_tracker.py:20(<genexpr>)
+      429    0.003    0.000    0.003    0.000 {built-in method numpy.array}
+     2031    0.000    0.000    0.002    0.000 {method 'min' of 'numpy.ndarray' objects}
+     9094    0.002    0.000    0.002    0.000 {method 'copy' of 'numpy.ndarray' objects}
+     2031    0.000    0.000    0.002    0.000 _methods.py:43(_amin)
+     2109    0.002    0.000    0.002    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+    18188    0.001    0.000    0.001    0.000 {method 'copy' of 'list' objects}
+     4391    0.001    0.000    0.001    0.000 {method 'argmin' of 'numpy.ndarray' objects}
+     2695    0.001    0.000    0.001    0.000 {method 'update' of 'dict' objects}
+     4547    0.001    0.000    0.001    0.000 {method 'copy' of 'dict' objects}
+       39    0.000    0.000    0.001    0.000 index_tricks.py:326(__getitem__)
+    10816    0.001    0.000    0.001    0.000 {method 'append' of 'list' objects}
+       39    0.000    0.000    0.000    0.000 fast_candidate_tracker.py:36(<listcomp>)
+       78    0.000    0.000    0.000    0.000 numeric.py:615(flatnonzero)
+       78    0.000    0.000    0.000    0.000 {method 'any' of 'numpy.ndarray' objects}
+       78    0.000    0.000    0.000    0.000 _methods.py:55(_any)
+       39    0.000    0.000    0.000    0.000 fast_candidate_tracker.py:37(<listcomp>)
+       39    0.000    0.000    0.000    0.000 fast_candidate_tracker.py:38(<listcomp>)
+       39    0.000    0.000    0.000    0.000 fast_candidate_tracker.py:45(<listcomp>)
+       39    0.000    0.000    0.000    0.000 fast_candidate_tracker.py:49(<listcomp>)
+       78    0.000    0.000    0.000    0.000 fromnumeric.py:1881(nonzero)
+       39    0.000    0.000    0.000    0.000 fast_candidate_tracker.py:42(<listcomp>)
+       78    0.000    0.000    0.000    0.000 fromnumeric.py:1768(ravel)
+       39    0.000    0.000    0.000    0.000 fast_candidate_tracker.py:46(<listcomp>)
+       78    0.000    0.000    0.000    0.000 fromnumeric.py:53(_wrapfunc)
+
+

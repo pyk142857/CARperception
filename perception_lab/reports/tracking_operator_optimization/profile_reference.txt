@@ -1,0 +1,38 @@
+         780569 function calls (671441 primitive calls) in 0.208 seconds
+
+   Ordered by: cumulative time
+   List reduced from 54 to 30 due to restriction <30>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.001    0.001    0.231    0.231 benchmark_tracker_operators.py:31(run)
+       39    0.024    0.001    0.229    0.006 experimental_tracker.py:40(step_centertrack)
+       39    0.002    0.000    0.128    0.003 experimental_tracker.py:41(<listcomp>)
+113675/4547    0.064    0.000    0.126    0.000 copy.py:128(deepcopy)
+     4547    0.010    0.000    0.119    0.000 copy.py:227(_deepcopy_dict)
+    18188    0.016    0.000    0.059    0.000 copy.py:201(_deepcopy_list)
+       39    0.001    0.000    0.023    0.001 experimental_tracker.py:53(<listcomp>)
+     9365    0.014    0.000    0.014    0.000 {built-in method numpy.array}
+     2271    0.013    0.000    0.013    0.000 experimental_tracker.py:79(<listcomp>)
+   227350    0.012    0.000    0.012    0.000 {method 'get' of 'dict' objects}
+    22735    0.007    0.000    0.009    0.000 copy.py:243(_keep_alive)
+   163692    0.008    0.000    0.008    0.000 {built-in method builtins.id}
+     6076    0.008    0.000    0.008    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+       39    0.003    0.000    0.005    0.000 experimental_tracker.py:49(<listcomp>)
+    83568    0.005    0.000    0.005    0.000 {method 'append' of 'list' objects}
+       78    0.003    0.000    0.004    0.000 experimental_tracker.py:9(assign)
+     4006    0.001    0.000    0.004    0.000 {method 'any' of 'numpy.ndarray' objects}
+    90940    0.004    0.000    0.004    0.000 copy.py:182(_deepcopy_atomic)
+       39    0.000    0.000    0.004    0.000 {method 'sum' of 'numpy.ndarray' objects}
+       39    0.000    0.000    0.004    0.000 _methods.py:47(_sum)
+     4006    0.001    0.000    0.003    0.000 _methods.py:55(_any)
+     2031    0.000    0.000    0.002    0.000 {method 'min' of 'numpy.ndarray' objects}
+     2031    0.000    0.000    0.002    0.000 _methods.py:43(_amin)
+       78    0.000    0.000    0.002    0.000 {method 'extend' of 'list' objects}
+     2354    0.001    0.000    0.001    0.000 experimental_tracker.py:68(<genexpr>)
+     4549    0.001    0.000    0.001    0.000 {method 'astype' of 'numpy.ndarray' objects}
+       78    0.001    0.000    0.001    0.000 experimental_tracker.py:69(<setcomp>)
+       78    0.000    0.000    0.001    0.000 index_tricks.py:34(ix_)
+       39    0.001    0.000    0.001    0.000 experimental_tracker.py:72(<setcomp>)
+     4391    0.001    0.000    0.001    0.000 {method 'argmin' of 'numpy.ndarray' objects}
+
+

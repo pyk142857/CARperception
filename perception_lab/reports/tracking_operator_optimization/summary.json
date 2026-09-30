@@ -1,0 +1,48 @@
+{
+  "checks": {
+    "all_39_frames_exact": true,
+    "diagnostics_exact": true,
+    "input_unchanged": true,
+    "archived_candidate_exact": true
+  },
+  "performance": {
+    "reference": {
+      "mean_ms": 2.9102219863247867,
+      "p50_ms": 2.8551634999999997,
+      "p95_ms": 4.218649399999999,
+      "round_mean_min_ms": 2.871193692307692,
+      "round_mean_max_ms": 3.266715512820513,
+      "samples": 1170
+    },
+    "optimized": {
+      "mean_ms": 0.7720181495726496,
+      "p50_ms": 0.77719,
+      "p95_ms": 1.0216724,
+      "round_mean_min_ms": 0.7612099230769231,
+      "round_mean_max_ms": 0.7809958461538462,
+      "samples": 1170
+    }
+  },
+  "speedup": 3.7696289756085903,
+  "latency_reduction_percent": 73.47219032773499,
+  "rounds": 30,
+  "warmup_rounds": 3,
+  "frames": 39,
+  "input_boxes": 4547,
+  "environment": {
+    "python": "3.10.13 (main, Sep 11 2023, 13:44:35) [GCC 11.2.0]",
+    "numpy": "1.26.2",
+    "scipy": "1.11.4",
+    "platform": "Linux-5.15.0-139-generic-x86_64-with-glibc2.31",
+    "cpu": "Intel(R) Core(TM) i9-14900KF",
+    "logical_cpus": 32
+  },
+  "source_sha256": {
+    "runs/20260923T043110_d6ae8066/M05/mini_scene/predictions.json": "43be7f1f42b1f77a16440ba99462ea789a30adcfa35fac1f221cdbe1ca126f56",
+    "manifests/frame_packets.json": "d161deb2618d9c357d8976eee4f7c0de3a567900afbb679c5961cf74248e958d",
+    "reports/tracking_optimization/S4_greedy_low_tracks.json.gz": "529b1d3bd7941e81ed580c72ec987bb1897aede89f1737692d827ae8fb7ea670",
+    "tools/experimental_tracker.py": "cd8e419af2e6b421990ed399633031c62e9d80583fb6c2d880b2b3c872738e66",
+    "tools/fast_candidate_tracker.py": "61eecf43bb2f4bd7aa49e3513639da88935925637c635340936c20aa7b441198",
+    "tools/benchmark_tracker_operators.py": "b964aa077248428f074b1caeec3578af174d0340c54f77a1d5082d58dc536656"
+  }
+}
