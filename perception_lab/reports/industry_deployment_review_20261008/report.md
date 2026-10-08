@@ -119,7 +119,50 @@ NVIDIA 当前 BEV pooling 技术资料讨论了不同 GPU 缓存容量下的内�
 
 面试可以这样回答技术年代问题：“我先用经典模型建立可解释、可复现的感知与评估流程，在固定输入下验证了跟踪策略和 CPU 关联实现的优化。现有公开量产资料已经强调时序、融合和联合决策，因此下一阶段重点是融合及时序感知，并把部署和算子优化补成可测量的完整分支。”最后一句是计划，讲述时须与已完成工作分开。
 
-## 9. 来源与阅读入口
+## 9. RTX 4090 单卡可行性补充
+
+补充日期：2026-10-08。目标硬件为一张 RTX 4090，官方显存为 24GB、计算能力为 8.9。[H1] 以下为根据作者代码与官方资料作出的资源可行性判断，本次没有访问或实测用户的 GPU，因此不填写未经测量的显存峰值、FPS 或训练天数。
+
+**单卡可以承担本项目的主体部署、评估、可视化及 CUDA/TensorRT 优化工作。** 训练需要逐模型判断，不能把“能推理”推导为“能按论文原始多卡配置完整训练”。
+
+| 模块 | 4090 上的推理/部署判断 | 微调/训练判断 | 首次运行选择 |
+|---|---|---|---|
+| BEVFusion + TensorRT | 可作为明确实施目标。NVIDIA 官方实现已报告 RTX 3090 的 PyTorch 推理，CUDA 实现要求计算能力至少 SM80；4090 满足架构门槛 [25,H1] | 可尝试小 batch 或冻结部分网络的微调；原始训练配置、实际显存和训练预算仍须核对 | 官方 R50 或 Swin-Tiny 权重，六相机 256×704、batch=1；先参考输出，再核验 FP16 TensorRT |
+| Sparse4D v3 | 可开展 R50 小分辨率的单卡推理与时序评估；作者提供单卡入口 [26,H2–H3] | 可以设计单卡小 batch 微调；原配置是 8 卡、总 batch 48，不能仅改启动命令便宣称复现原训练协议 | R50、六相机 256×704、batch=1；保留实例记忆与场景切换重置 |
+| GaussianWorld | 有单卡流式评估入口；24GB 能否容纳完整原配置须实测，作为有条件实施目标 [28,H4–H5] | 优先验证冻结感知分支的训练路径；不承诺原始高分辨率完整训练可直接放入 24GB | 官方权重、batch=1、按作者逐帧流式执行；优先保持原结构与占用网格 |
+| BEV pooling / scatter / deformable aggregation | 可以开发、编译和测量 CUDA/TensorRT 算子；不依赖多卡训练 | 单独的推理算子优化可不训练网络；若修改反向算子，另行验证梯度 | 固定真实输入 shape，先参考实现和正确性，再做 CUDA/Nsight 与整分支计时 |
+| SparseDrive / SparseDriveV2（可选） | 可安排单卡推理资源验收；V2 官方约 50M 参数和 R34 配置便于作为候选，但参数量本身不是显存保证 [29–31] | 小 batch 训练/微调需检查具体实现；NAVSIM 数据缓存和仿真资源独立准备 | 按作者已提供权重及数据协议运行，避免直接接到当前 mini 链后声称闭环 |
+| Alpamayo 1.5 10B（可选） | 官方单样本推理约 24GB，4090 可以尝试，但显存接近边界；多采样不适用同一判断 [H7–H8] | 本次不承诺单卡全量训练；LoRA/量化训练也必须核验模型和官方配方支持 | 单样本、单轨迹采样，先独立推理，不与其他感知模型同时常驻 |
+| Alpamayo 2 Super 34B（可选） | 完整 BF16 权重仅参数存储就理论约 68GB（34×10^9×2 字节），不适合 24GB 单卡完整常驻；量化/卸载另行评估 [32] | 不作为此阶段单卡全量训练目标 | 保留教师模型/蒸馏路线的学习，不占用当前感知部署主线 |
+
+### 为什么 GaussianWorld 需要先验收资源
+
+作者流式评估配置使用 R101-DCN、六相机 864×1600、25,600 个 Gaussian、200×200×16 输出网格，且设置 `amp=False`、`batch_size=1`。[H4] 这些是代码中的配置事实，不是测得的显存。
+
+作者评估脚本虽然逐帧调用模型并传播历史 anchor，但会先把一个片段的数据张量移到 GPU。[H5] 因此“流式”不自动保证全部数据的 GPU 驻留量最小。若发生显存不足，可以优先检查逐帧数据搬运、无梯度推理及临时张量生命周期；改动前后核验输出一致性。全局打开 FP16、减少 Gaussian 数量或降低占用网格都不能默认为无损修改；涉及自定义 CUDA 算子的精度改动尤其需要单独核验。
+
+### 单卡训练应怎样适配
+
+Sparse4D 选定配置已经启用 FP16 和 backbone activation checkpointing（以重算部分激活换取较低显存），但其总 batch、每 epoch 迭代数和总迭代数依原 8 卡配置计算。[H2] 单卡微调应明确：
+
+1. 将实际 batch 先设为 1，核对数据/时序采样器对单卡的支持。
+2. 需要时用梯度累积控制有效 batch；累积不能自动保持 BatchNorm 或时序采样语义等同于原始多卡训练。
+3. 联动检查学习率、warm-up、每 epoch 迭代数及总优化步数，记录与原配置的差异。
+4. 先用预训练权重完成部署与多场景评估，再根据实际失败案例决定是否需要微调。
+
+GaussianWorld 官方依赖包含 PyTorch cu118、MMCV 2.0.1、SpConv 及两个自定义 CUDA 扩展。[H6] 各模型应使用独立、锁定版本的环境，在 4090 上重新核验编译与数值；不能把所有依赖统一升级到最新版后假定旧实现仍兼容。
+
+### VLA 的可行范围补充
+
+上一节把 VLA 放在后续阶段，是项目优先级判断，并不意味着所有 VLA 都必须用数据中心 GPU。Alpamayo 1 的官方要求明确列出 RTX 4090/至少 24GB 显存；更新的 Alpamayo 1.5 官方给出单样本约 24GB、16 轨迹样本约 40GB、16 样本加 CFG 约 60GB，数据测于 H100。[H7–H8] 因而可以安排 10B 版本的最小推理实验，但不能保证 4090 在更长输入、更大采样量或 CUDA Graph 缓冲下仍能容纳。
+
+### 本项目的单卡实施顺序
+
+**先 BEVFusion 参考推理 → TensorRT/BEV pooling → Sparse4D 时序检测与跟踪 → GaussianWorld 资源验收及占用输出。** 四项按模块依次运行与保存结果，不要求所有网络同时常驻显存。希望进一步学习 VLA 时，再安排 Alpamayo 1.5 10B 的独立最小推理。
+
+每个阶段记录 GPU 名称、可用显存、驱动/依赖版本、峰值 allocated/reserved 显存、预热后 P50/P95 时延、精度和代表性失败案例。4090 上的测量属于桌面 GPU 实验，不能直接替代 Orin/Thor 车端时延。
+
+## 10. 来源与阅读入口
 
 全部网页于 2026-10-08 核对。年份标注表示论文会议/官方公告时间；滚动更新的文档和产品页不假定有固定发布日期。只使用下列原始发布者或作者来源。
 
@@ -169,3 +212,14 @@ NVIDIA 当前 BEV pooling 技术资料讨论了不同 GPU 缓存容量下的内�
 
 - [P1] [简历项目经历与成果依据](../resume_project_experience_20261008.md)。模型实验依据快照为 `cfe4083664fa1de377d6a84156bdcd42d5defffd`；当前简历文件核对到 blob `da93b33273111e635452a59bb72bae20eb261ef7`。
 - [P2] [项目 README](../../../README.md) / [任务状态](../../TASK_STATE.md)。本报告建议不替代现有状态文件，不把建议路线记为已完成任务。
+
+### 单卡硬件与配置补充来源
+
+- [H1] [NVIDIA RTX 4090 官方规格：24GB、CUDA 计算能力 8.9](https://www.nvidia.com/en-sg/geforce/graphics-cards/40-series/rtx-4090/)。
+- [H2] [Sparse4D v3 R50 官方配置](https://github.com/HorizonRobotics/Sparse4D/blob/main/projects/configs/sparse4dv3_temporal_r50_1x8_bs6_256x704.py)，核对 blob `fdf075bf9e739200218d1f70662961d0cddf85dd`。
+- [H3] [Sparse4D 单卡/多卡训练入口](https://github.com/HorizonRobotics/Sparse4D/blob/main/local_train.sh)，核对 blob `d584c4ce8332894af0b85925a92696666ced2cc5`。
+- [H4] [GaussianWorld 流式评估配置](https://github.com/zuosc19/GaussianWorld/blob/main/config/nusc_surroundocc_stream_eval.py)，核对 blob `166bdf45ab1ae5a6b4fe62d675e98baa56f02992`。
+- [H5] [GaussianWorld 评估代码](https://github.com/zuosc19/GaussianWorld/blob/main/eval.py) / [单 GPU 启动脚本](https://github.com/zuosc19/GaussianWorld/blob/main/scripts/eval_stream.sh)，代码 blob `a8b18348b1db9193536b9907105d8bdc0051a86f`，脚本 blob `25817bea6d62fda8ddd73a78830cddb32a459412`。
+- [H6] [GaussianWorld 作者安装说明](https://github.com/zuosc19/GaussianWorld/blob/main/docs/installation.md)，核对 blob `34f7b049fa00a77223d4f24fb15821e03acce7a8`。
+- [H7] [Alpamayo 1.5 官方代码与硬件要求](https://github.com/NVlabs/alpamayo1.5)。
+- [H8] [Alpamayo 1 官方要求与维护状态](https://github.com/NVlabs/alpamayo/blob/main/README.md)。该仓库已建议迁移至更新版本。
