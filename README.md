@@ -57,6 +57,8 @@ flowchart LR
 
 [实车部署技术与模型适用性报告（2026-10-08）](perception_lab/reports/industry_deployment_review_20261008/report.md)：核对 2026 年公开实车技术路线，评估现有模型的工程价值，并提出融合、时序、占用与 GPU 算子部署建议。区分实际推送、官方产品介绍、发布计划与开源研究；建议任务尚未执行。
 
+[4090 部署执行指令（2026-10-08）](perception_lab/instruction/20261008_01_4090_perception_deployment.md)：按 BEVFusion 参考推理、TensorRT FP16、BEV pooling CUDA 优化、Sparse4D 时序检测/跟踪、GaussianWorld 占用预测依次执行，接入 Rerun 并发布实测报告。指令已发布，实验待本地执行；新结果归档至 `perception_lab/reports/deployment_4090_20261008/`。
+
 ## 各模块可视化入口
 
 这些模块有可复用的可视化工具，但界面形态不同：**在线交互**可在浏览器操作，**本地 Web / 桌面**需安装并启动，**脚本 / 教程**需先准备模型和数据。下列链接优先选取作者仓库或官方文档；链接已核对，外部界面未逐个部署测试。最新文档可能使用新版模型或依赖，运行本项目时以锁定版本为准。
