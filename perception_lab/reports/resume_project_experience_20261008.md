@@ -8,11 +8,11 @@
 
 ### 项目名称
 
-自动驾驶感知算法部署与跟踪优化（CARperception）
+自动驾驶感知部署与 CPU 跟踪关联算子开发（CARperception）
 
 ### 担任角色
 
-感知算法开发与工程实现
+感知算法与 CPU 跟踪算子开发
 
 ### 项目时间
 
@@ -23,13 +23,13 @@
 
 ### 项目描述
 
-基于 nuScenes mini 搭建多相机与激光雷达感知实验平台，使用 Python、PyTorch、MMDetection3D 部署 CenterPoint 三维检测、PubTracker 多目标跟踪、Cylinder3D 点云分割及 MapTR 矢量地图预测。实现标定与坐标转换、Rerun 多视图同步回放，接入 nuScenes 官方评估及失败案例复核；完成 YOLOv8s ONNX 导出与 GPU 输出数值核验，并开展跟踪关联和 CPU 性能优化。
+基于 nuScenes mini 搭建多相机与激光雷达感知实验平台，使用 Python、PyTorch、MMDetection3D 部署 CenterPoint 三维检测、PubTracker 多目标跟踪、Cylinder3D 点云分割及 MapTR 矢量地图预测。基于 Python/NumPy 开发与优化 CPU 跟踪关联算子，覆盖批量速度回推、类别门控、二维中心距离矩阵计算及置信度两阶段贪心匹配。实现标定与坐标转换、Rerun 同步回放、nuScenes 官方评估及失败案例复核；完成 YOLOv8s ONNX 导出与 GPU 输出数值核验。
 
 ### 项目业绩
 
 - 完成 39 帧、234 幅相机图像及约 135 万个激光雷达点的离线处理和同步回放，形成模型输出、诊断报告与复现记录。
 - 固定检测输入完成 13 组跟踪对照，在 mini 单场景中将连续 ID 切换由 46 降至 38 次，减少 17.4%；行人 ID 切换由 42 降至 36 次，误检与漏检数量不变。
-- 通过 NumPy 批量计算、复制快路径与代价矩阵复用，将候选 CPU 跟踪函数平均耗时从 2.91 降至 0.77 ms/帧，加速 3.77 倍；完成 30 轮配对计时，39 帧输出逐项一致，该阶段通过 72 项测试。
+- 开发与优化类别门控、二维中心距离矩阵及两阶段贪心匹配算子，结合 NumPy 批量计算、数据复制快路径与代价矩阵复用，将候选 CPU 跟踪函数平均耗时从 2.91 降至 0.77 ms/帧，加速 3.77 倍；完成 30 轮配对计时，39 帧输出逐项一致，该阶段通过 72 项测试。
 - 构建可视化复核工作台，将 1,910 条失败记录归并为 1,268 个事件、84 个现象分组，支持置信度/距离筛选、目标定位、片段回放和人工标签修正。
 
 ### 项目链接
@@ -48,6 +48,7 @@ https://github.com/pyk142857/CARperception
 | 米制深度 | Depth Anything V2 Metric Depth | 首时刻六路相机预测及稀疏 LiDAR 投影诊断；耗时剖析独立补测 18 图 |
 | 三维检测 | PointPillars、CenterPoint | PointPillars 单帧与历史 sweeps 推理；CenterPoint 连续 39 帧输出及官方代码检测评估 |
 | 多目标跟踪 | PubTracker、实验候选跟踪器 | 39 帧七类目标跟踪；max_age 与 13 组关联配置对照；输出、关联诊断与身份事件归档 |
+| CPU 跟踪关联算子 | Python/NumPy、fast_candidate_tracker.py | 批量速度回推、类别门控、二维中心距离矩阵、两阶段贪心匹配、复制快路径与诊断筛选向量化；39 帧输出与参考实现精确一致 |
 | 点云语义分割 | Cylinder3D | 39 帧、1,354,112 点预测；16 个语义类及 ignore；mini 的 404 帧标签完成点数审计 |
 | 矢量地图预测 | MapTR tiny R50 | 39 帧六相机推理；分隔线、道路边界、人行横道三类折线；显示阈值 0.5 下 429 条逐帧预测 |
 | 导出核验 | YOLOv8s ONNX、ONNX Runtime GPU | 真实单图、FP32、opset 17 输出核验；核对 CUDA 执行，保留输出数组与误差记录 |
