@@ -1,0 +1,120 @@
+{
+  "sparse4d": {
+    "scene0061": {
+      "frames": 39,
+      "expected_frames": 39,
+      "input_packet_order_identical": true,
+      "token_set_coverage": true,
+      "ordered_token_coverage": true,
+      "prediction_uncompressed_sha256_matches": true,
+      "native_uncompressed_sha256_matches": true,
+      "all_300_boxes": true,
+      "native_ID_preserved": true,
+      "scene_namespaced_IDs": true,
+      "scene_reset_evidence_matches_boundaries": true,
+      "metrics": {
+        "mAP": 0.5845790291935306,
+        "NDS": 0.5453148423223022,
+        "AMOTA": 0.6794865962492069,
+        "AMOTP": 0.7779580852171059,
+        "IDS": 9.0
+      }
+    },
+    "mini_val": {
+      "frames": 81,
+      "expected_frames": 81,
+      "input_packet_order_identical": false,
+      "token_set_coverage": true,
+      "ordered_token_coverage": true,
+      "prediction_uncompressed_sha256_matches": true,
+      "native_uncompressed_sha256_matches": true,
+      "all_300_boxes": true,
+      "native_ID_preserved": true,
+      "scene_namespaced_IDs": true,
+      "scene_reset_evidence_matches_boundaries": true,
+      "metrics": {
+        "mAP": 0.4616075236235114,
+        "NDS": 0.4330716005865211,
+        "AMOTA": 0.6375665930302055,
+        "AMOTP": 0.8195541182004442,
+        "IDS": 16.0
+      }
+    }
+  },
+  "grid_count": 39,
+  "grid_checks_pass": true,
+  "provenance_mismatches": [
+    {
+      "path": "perception_lab/tools/gaussianworld_4090.py",
+      "exists": true,
+      "bytes": 10888,
+      "sha256": "9f4d16e013030db1e56fa713f5618732d4d87352f77df1542cf3482805c6c070",
+      "expected_sha256": "9b99b79bba08c2838f7c57c8ec51a3ea840a7a788559d4df85782542221124c3",
+      "matches": false
+    }
+  ],
+  "GT_matches": [],
+  "image_count": 27,
+  "video_decode": [
+    {
+      "model": "bevfusion_reference",
+      "frames": {
+        "programs": [],
+        "streams": [
+          {
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "2/1",
+            "nb_read_frames": "39"
+          }
+        ]
+      },
+      "rc": 0
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frames": {
+        "programs": [],
+        "streams": [
+          {
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "2/1",
+            "nb_read_frames": "39"
+          }
+        ]
+      },
+      "rc": 0
+    },
+    {
+      "model": "sparse4d",
+      "frames": {
+        "programs": [],
+        "streams": [
+          {
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "2/1",
+            "nb_read_frames": "39"
+          }
+        ]
+      },
+      "rc": 0
+    },
+    {
+      "model": "gaussianworld",
+      "frames": {
+        "programs": [],
+        "streams": [
+          {
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "2/1",
+            "nb_read_frames": "39"
+          }
+        ]
+      },
+      "rc": 0
+    }
+  ]
+}

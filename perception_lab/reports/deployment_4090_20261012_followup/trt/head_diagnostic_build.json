@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/home/minglei/Desktop/CAR/perception_lab/envs/tensorrt/bin/trtexec",
+    "--onnx=/home/minglei/Desktop/CAR/perception_lab/runs/deployment_4090_20261012_followup/trt/head.diagnostic.onnx",
+    "--fp16",
+    "--inputIOFormats=fp16:chw",
+    "--outputIOFormats=fp16:chw,fp16:chw,fp16:chw,fp16:chw,fp16:chw,fp16:chw,fp32:chw,fp32:chw,int32:chw",
+    "--plugins=/home/minglei/Desktop/CAR/perception_lab/third_party/Lidar_AI_Solution/CUDA-BEVFusion/build/libcustom_layernorm.so",
+    "--saveEngine=/home/minglei/Desktop/CAR/perception_lab/runs/deployment_4090_20261012_followup/trt/head.diagnostic.plan",
+    "--memPoolSize=workspace:2048",
+    "--skipInference",
+    "--profilingVerbosity=detailed",
+    "--exportLayerInfo=/home/minglei/Desktop/CAR/perception_lab/runs/deployment_4090_20261012_followup/trt/head.diagnostic.layers.json"
+  ],
+  "returncode": 0,
+  "log_sha256": "474c573a914dd6a0ce8c33cf837263398731ede2dedd551549e744e9ee149060",
+  "engine_sha256": "b3ae0d3751cc3d0f197276c6e6ee8d08278d99abd4b7230af47c5978e9fe0ecc",
+  "production_identity_unchanged": true
+}

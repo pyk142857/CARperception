@@ -1,0 +1,3187 @@
+{
+  "scope": "instrumented reference only; observations do not quantify TRT precision contribution",
+  "method": "exact value comparison of captured scatter arguments and sparse-depth output; repeat0 baseline",
+  "comparisons": [
+    {
+      "token": "747aa46b9a4641fe90db05d97db2acea",
+      "repeat": 1,
+      "actual_scatter_arguments_bitwise_equal": true,
+      "changed_sparse_depth_pixels": 591,
+      "changed_pixels_with_multiple_contributions": 591,
+      "changed_pixels_where_both_outputs_are_actual_contributions": 591,
+      "examples": [
+        {
+          "camera_index": 0,
+          "row": 10,
+          "col": 669,
+          "reference_depth": 12.683948516845703,
+          "candidate_depth": 12.68478775024414,
+          "actual_scatter_contribution_depths": [
+            12.68478775024414,
+            12.683948516845703
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 20,
+          "col": 667,
+          "reference_depth": 24.056358337402344,
+          "candidate_depth": 31.173877716064453,
+          "actual_scatter_contribution_depths": [
+            24.056358337402344,
+            31.173877716064453
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 28,
+          "col": 140,
+          "reference_depth": 29.911516189575195,
+          "candidate_depth": 30.049135208129883,
+          "actual_scatter_contribution_depths": [
+            30.049135208129883,
+            29.911516189575195
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 29,
+          "col": 171,
+          "reference_depth": 33.4575309753418,
+          "candidate_depth": 33.35618591308594,
+          "actual_scatter_contribution_depths": [
+            33.4575309753418,
+            33.35618591308594
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 40,
+          "col": 560,
+          "reference_depth": 39.42422103881836,
+          "candidate_depth": 39.44241714477539,
+          "actual_scatter_contribution_depths": [
+            39.44241714477539,
+            39.42422103881836
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 43,
+          "col": 98,
+          "reference_depth": 26.309980392456055,
+          "candidate_depth": 26.31421661376953,
+          "actual_scatter_contribution_depths": [
+            26.31421661376953,
+            26.309980392456055
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 43,
+          "col": 117,
+          "reference_depth": 27.790454864501953,
+          "candidate_depth": 27.853046417236328,
+          "actual_scatter_contribution_depths": [
+            27.853046417236328,
+            27.790454864501953
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 45,
+          "col": 188,
+          "reference_depth": 35.891845703125,
+          "candidate_depth": 35.90403366088867,
+          "actual_scatter_contribution_depths": [
+            35.90403366088867,
+            35.891845703125
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 45,
+          "col": 192,
+          "reference_depth": 36.11250686645508,
+          "candidate_depth": 36.16912841796875,
+          "actual_scatter_contribution_depths": [
+            36.16912841796875,
+            36.11250686645508
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 46,
+          "col": 221,
+          "reference_depth": 41.376094818115234,
+          "candidate_depth": 41.36654281616211,
+          "actual_scatter_contribution_depths": [
+            41.36654281616211,
+            41.376094818115234
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 53,
+          "col": 679,
+          "reference_depth": 20.579639434814453,
+          "candidate_depth": 20.369701385498047,
+          "actual_scatter_contribution_depths": [
+            20.337810516357422,
+            20.369701385498047,
+            20.579639434814453
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 55,
+          "col": 680,
+          "reference_depth": 23.934375762939453,
+          "candidate_depth": 23.857616424560547,
+          "actual_scatter_contribution_depths": [
+            23.857616424560547,
+            23.934375762939453
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 56,
+          "col": 228,
+          "reference_depth": 16.14162254333496,
+          "candidate_depth": 15.634033203125,
+          "actual_scatter_contribution_depths": [
+            15.634033203125,
+            16.14162254333496
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 56,
+          "col": 232,
+          "reference_depth": 16.057947158813477,
+          "candidate_depth": 15.593559265136719,
+          "actual_scatter_contribution_depths": [
+            15.593559265136719,
+            16.057947158813477
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 56,
+          "col": 236,
+          "reference_depth": 16.04347801208496,
+          "candidate_depth": 15.566682815551758,
+          "actual_scatter_contribution_depths": [
+            15.566682815551758,
+            16.04347801208496
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 56,
+          "col": 574,
+          "reference_depth": 23.834383010864258,
+          "candidate_depth": 23.834144592285156,
+          "actual_scatter_contribution_depths": [
+            23.83501434326172,
+            23.834144592285156,
+            23.834383010864258
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 57,
+          "col": 452,
+          "reference_depth": 34.037899017333984,
+          "candidate_depth": 34.41521453857422,
+          "actual_scatter_contribution_depths": [
+            34.41521453857422,
+            34.037899017333984
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 57,
+          "col": 456,
+          "reference_depth": 34.147804260253906,
+          "candidate_depth": 34.51178741455078,
+          "actual_scatter_contribution_depths": [
+            34.51178741455078,
+            34.147804260253906
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 59,
+          "col": 19,
+          "reference_depth": 24.729066848754883,
+          "candidate_depth": 24.707317352294922,
+          "actual_scatter_contribution_depths": [
+            24.707317352294922,
+            24.72150421142578,
+            24.729066848754883,
+            24.724782943725586
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 59,
+          "col": 24,
+          "reference_depth": 24.73807144165039,
+          "candidate_depth": 24.730504989624023,
+          "actual_scatter_contribution_depths": [
+            24.730504989624023,
+            24.721546173095703,
+            24.73807144165039,
+            24.740079879760742
+          ],
+          "both_outputs_are_actual_contributions": true
+        }
+      ]
+    },
+    {
+      "token": "747aa46b9a4641fe90db05d97db2acea",
+      "repeat": 2,
+      "actual_scatter_arguments_bitwise_equal": true,
+      "changed_sparse_depth_pixels": 631,
+      "changed_pixels_with_multiple_contributions": 631,
+      "changed_pixels_where_both_outputs_are_actual_contributions": 631,
+      "examples": [
+        {
+          "camera_index": 0,
+          "row": 10,
+          "col": 669,
+          "reference_depth": 12.683948516845703,
+          "candidate_depth": 12.68478775024414,
+          "actual_scatter_contribution_depths": [
+            12.68478775024414,
+            12.683948516845703
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 20,
+          "col": 667,
+          "reference_depth": 24.056358337402344,
+          "candidate_depth": 31.173877716064453,
+          "actual_scatter_contribution_depths": [
+            24.056358337402344,
+            31.173877716064453
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 28,
+          "col": 140,
+          "reference_depth": 29.911516189575195,
+          "candidate_depth": 30.049135208129883,
+          "actual_scatter_contribution_depths": [
+            30.049135208129883,
+            29.911516189575195
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 40,
+          "col": 560,
+          "reference_depth": 39.42422103881836,
+          "candidate_depth": 39.44241714477539,
+          "actual_scatter_contribution_depths": [
+            39.44241714477539,
+            39.42422103881836
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 43,
+          "col": 98,
+          "reference_depth": 26.309980392456055,
+          "candidate_depth": 26.31421661376953,
+          "actual_scatter_contribution_depths": [
+            26.31421661376953,
+            26.309980392456055
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 43,
+          "col": 117,
+          "reference_depth": 27.790454864501953,
+          "candidate_depth": 27.853046417236328,
+          "actual_scatter_contribution_depths": [
+            27.853046417236328,
+            27.790454864501953
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 45,
+          "col": 188,
+          "reference_depth": 35.891845703125,
+          "candidate_depth": 35.90403366088867,
+          "actual_scatter_contribution_depths": [
+            35.90403366088867,
+            35.891845703125
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 45,
+          "col": 192,
+          "reference_depth": 36.11250686645508,
+          "candidate_depth": 36.16912841796875,
+          "actual_scatter_contribution_depths": [
+            36.16912841796875,
+            36.11250686645508
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 46,
+          "col": 221,
+          "reference_depth": 41.376094818115234,
+          "candidate_depth": 41.36654281616211,
+          "actual_scatter_contribution_depths": [
+            41.36654281616211,
+            41.376094818115234
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 53,
+          "col": 657,
+          "reference_depth": 19.207332611083984,
+          "candidate_depth": 19.172128677368164,
+          "actual_scatter_contribution_depths": [
+            19.172128677368164,
+            19.207332611083984
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 53,
+          "col": 679,
+          "reference_depth": 20.579639434814453,
+          "candidate_depth": 20.369701385498047,
+          "actual_scatter_contribution_depths": [
+            20.337810516357422,
+            20.369701385498047,
+            20.579639434814453
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 55,
+          "col": 680,
+          "reference_depth": 23.934375762939453,
+          "candidate_depth": 23.857616424560547,
+          "actual_scatter_contribution_depths": [
+            23.857616424560547,
+            23.934375762939453
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 56,
+          "col": 228,
+          "reference_depth": 16.14162254333496,
+          "candidate_depth": 15.634033203125,
+          "actual_scatter_contribution_depths": [
+            15.634033203125,
+            16.14162254333496
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 56,
+          "col": 232,
+          "reference_depth": 16.057947158813477,
+          "candidate_depth": 15.593559265136719,
+          "actual_scatter_contribution_depths": [
+            15.593559265136719,
+            16.057947158813477
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 56,
+          "col": 236,
+          "reference_depth": 16.04347801208496,
+          "candidate_depth": 15.566682815551758,
+          "actual_scatter_contribution_depths": [
+            15.566682815551758,
+            16.04347801208496
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 56,
+          "col": 574,
+          "reference_depth": 23.834383010864258,
+          "candidate_depth": 23.834144592285156,
+          "actual_scatter_contribution_depths": [
+            23.83501434326172,
+            23.834144592285156,
+            23.834383010864258
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 57,
+          "col": 452,
+          "reference_depth": 34.037899017333984,
+          "candidate_depth": 34.41521453857422,
+          "actual_scatter_contribution_depths": [
+            34.41521453857422,
+            34.037899017333984
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 57,
+          "col": 456,
+          "reference_depth": 34.147804260253906,
+          "candidate_depth": 34.51178741455078,
+          "actual_scatter_contribution_depths": [
+            34.51178741455078,
+            34.147804260253906
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 59,
+          "col": 56,
+          "reference_depth": 24.8092041015625,
+          "candidate_depth": 24.79804801940918,
+          "actual_scatter_contribution_depths": [
+            24.79804801940918,
+            24.8092041015625
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 60,
+          "col": 122,
+          "reference_depth": 29.339326858520508,
+          "candidate_depth": 28.49170684814453,
+          "actual_scatter_contribution_depths": [
+            28.46901512145996,
+            28.49170684814453,
+            29.339326858520508
+          ],
+          "both_outputs_are_actual_contributions": true
+        }
+      ]
+    },
+    {
+      "token": "747aa46b9a4641fe90db05d97db2acea",
+      "repeat": 3,
+      "actual_scatter_arguments_bitwise_equal": true,
+      "changed_sparse_depth_pixels": 487,
+      "changed_pixels_with_multiple_contributions": 487,
+      "changed_pixels_where_both_outputs_are_actual_contributions": 487,
+      "examples": [
+        {
+          "camera_index": 0,
+          "row": 10,
+          "col": 669,
+          "reference_depth": 12.683948516845703,
+          "candidate_depth": 12.68478775024414,
+          "actual_scatter_contribution_depths": [
+            12.68478775024414,
+            12.683948516845703
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 20,
+          "col": 667,
+          "reference_depth": 24.056358337402344,
+          "candidate_depth": 31.173877716064453,
+          "actual_scatter_contribution_depths": [
+            24.056358337402344,
+            31.173877716064453
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 28,
+          "col": 140,
+          "reference_depth": 29.911516189575195,
+          "candidate_depth": 30.049135208129883,
+          "actual_scatter_contribution_depths": [
+            30.049135208129883,
+            29.911516189575195
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 40,
+          "col": 560,
+          "reference_depth": 39.42422103881836,
+          "candidate_depth": 39.44241714477539,
+          "actual_scatter_contribution_depths": [
+            39.44241714477539,
+            39.42422103881836
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 43,
+          "col": 98,
+          "reference_depth": 26.309980392456055,
+          "candidate_depth": 26.31421661376953,
+          "actual_scatter_contribution_depths": [
+            26.31421661376953,
+            26.309980392456055
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 43,
+          "col": 117,
+          "reference_depth": 27.790454864501953,
+          "candidate_depth": 27.853046417236328,
+          "actual_scatter_contribution_depths": [
+            27.853046417236328,
+            27.790454864501953
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 45,
+          "col": 188,
+          "reference_depth": 35.891845703125,
+          "candidate_depth": 35.90403366088867,
+          "actual_scatter_contribution_depths": [
+            35.90403366088867,
+            35.891845703125
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 45,
+          "col": 192,
+          "reference_depth": 36.11250686645508,
+          "candidate_depth": 36.16912841796875,
+          "actual_scatter_contribution_depths": [
+            36.16912841796875,
+            36.11250686645508
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 46,
+          "col": 221,
+          "reference_depth": 41.376094818115234,
+          "candidate_depth": 41.36654281616211,
+          "actual_scatter_contribution_depths": [
+            41.36654281616211,
+            41.376094818115234
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 53,
+          "col": 679,
+          "reference_depth": 20.579639434814453,
+          "candidate_depth": 20.369701385498047,
+          "actual_scatter_contribution_depths": [
+            20.337810516357422,
+            20.369701385498047,
+            20.579639434814453
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 55,
+          "col": 680,
+          "reference_depth": 23.934375762939453,
+          "candidate_depth": 23.857616424560547,
+          "actual_scatter_contribution_depths": [
+            23.857616424560547,
+            23.934375762939453
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 56,
+          "col": 228,
+          "reference_depth": 16.14162254333496,
+          "candidate_depth": 15.634033203125,
+          "actual_scatter_contribution_depths": [
+            15.634033203125,
+            16.14162254333496
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 56,
+          "col": 232,
+          "reference_depth": 16.057947158813477,
+          "candidate_depth": 15.593559265136719,
+          "actual_scatter_contribution_depths": [
+            15.593559265136719,
+            16.057947158813477
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 56,
+          "col": 236,
+          "reference_depth": 16.04347801208496,
+          "candidate_depth": 15.566682815551758,
+          "actual_scatter_contribution_depths": [
+            15.566682815551758,
+            16.04347801208496
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 56,
+          "col": 574,
+          "reference_depth": 23.834383010864258,
+          "candidate_depth": 23.834144592285156,
+          "actual_scatter_contribution_depths": [
+            23.83501434326172,
+            23.834144592285156,
+            23.834383010864258
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 57,
+          "col": 452,
+          "reference_depth": 34.037899017333984,
+          "candidate_depth": 34.41521453857422,
+          "actual_scatter_contribution_depths": [
+            34.41521453857422,
+            34.037899017333984
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 57,
+          "col": 456,
+          "reference_depth": 34.147804260253906,
+          "candidate_depth": 34.51178741455078,
+          "actual_scatter_contribution_depths": [
+            34.51178741455078,
+            34.147804260253906
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 60,
+          "col": 122,
+          "reference_depth": 29.339326858520508,
+          "candidate_depth": 28.49170684814453,
+          "actual_scatter_contribution_depths": [
+            28.46901512145996,
+            28.49170684814453,
+            29.339326858520508
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 60,
+          "col": 161,
+          "reference_depth": 32.19340515136719,
+          "candidate_depth": 32.29539108276367,
+          "actual_scatter_contribution_depths": [
+            32.29539108276367,
+            32.19340515136719
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 61,
+          "col": 187,
+          "reference_depth": 35.92190933227539,
+          "candidate_depth": 35.86742401123047,
+          "actual_scatter_contribution_depths": [
+            35.92190933227539,
+            35.86742401123047
+          ],
+          "both_outputs_are_actual_contributions": true
+        }
+      ]
+    },
+    {
+      "token": "747aa46b9a4641fe90db05d97db2acea",
+      "repeat": 4,
+      "actual_scatter_arguments_bitwise_equal": true,
+      "changed_sparse_depth_pixels": 564,
+      "changed_pixels_with_multiple_contributions": 564,
+      "changed_pixels_where_both_outputs_are_actual_contributions": 564,
+      "examples": [
+        {
+          "camera_index": 0,
+          "row": 10,
+          "col": 669,
+          "reference_depth": 12.683948516845703,
+          "candidate_depth": 12.68478775024414,
+          "actual_scatter_contribution_depths": [
+            12.68478775024414,
+            12.683948516845703
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 20,
+          "col": 667,
+          "reference_depth": 24.056358337402344,
+          "candidate_depth": 31.173877716064453,
+          "actual_scatter_contribution_depths": [
+            24.056358337402344,
+            31.173877716064453
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 28,
+          "col": 140,
+          "reference_depth": 29.911516189575195,
+          "candidate_depth": 30.049135208129883,
+          "actual_scatter_contribution_depths": [
+            30.049135208129883,
+            29.911516189575195
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 29,
+          "col": 171,
+          "reference_depth": 33.4575309753418,
+          "candidate_depth": 33.35618591308594,
+          "actual_scatter_contribution_depths": [
+            33.4575309753418,
+            33.35618591308594
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 40,
+          "col": 560,
+          "reference_depth": 39.42422103881836,
+          "candidate_depth": 39.44241714477539,
+          "actual_scatter_contribution_depths": [
+            39.44241714477539,
+            39.42422103881836
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 43,
+          "col": 98,
+          "reference_depth": 26.309980392456055,
+          "candidate_depth": 26.31421661376953,
+          "actual_scatter_contribution_depths": [
+            26.31421661376953,
+            26.309980392456055
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 43,
+          "col": 117,
+          "reference_depth": 27.790454864501953,
+          "candidate_depth": 27.853046417236328,
+          "actual_scatter_contribution_depths": [
+            27.853046417236328,
+            27.790454864501953
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 45,
+          "col": 188,
+          "reference_depth": 35.891845703125,
+          "candidate_depth": 35.90403366088867,
+          "actual_scatter_contribution_depths": [
+            35.90403366088867,
+            35.891845703125
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 45,
+          "col": 192,
+          "reference_depth": 36.11250686645508,
+          "candidate_depth": 36.16912841796875,
+          "actual_scatter_contribution_depths": [
+            36.16912841796875,
+            36.11250686645508
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 46,
+          "col": 221,
+          "reference_depth": 41.376094818115234,
+          "candidate_depth": 41.36654281616211,
+          "actual_scatter_contribution_depths": [
+            41.36654281616211,
+            41.376094818115234
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 53,
+          "col": 679,
+          "reference_depth": 20.579639434814453,
+          "candidate_depth": 20.369701385498047,
+          "actual_scatter_contribution_depths": [
+            20.337810516357422,
+            20.369701385498047,
+            20.579639434814453
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 55,
+          "col": 680,
+          "reference_depth": 23.934375762939453,
+          "candidate_depth": 23.857616424560547,
+          "actual_scatter_contribution_depths": [
+            23.857616424560547,
+            23.934375762939453
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 56,
+          "col": 228,
+          "reference_depth": 16.14162254333496,
+          "candidate_depth": 15.634033203125,
+          "actual_scatter_contribution_depths": [
+            15.634033203125,
+            16.14162254333496
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 56,
+          "col": 232,
+          "reference_depth": 16.057947158813477,
+          "candidate_depth": 15.593559265136719,
+          "actual_scatter_contribution_depths": [
+            15.593559265136719,
+            16.057947158813477
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 56,
+          "col": 236,
+          "reference_depth": 16.04347801208496,
+          "candidate_depth": 15.566682815551758,
+          "actual_scatter_contribution_depths": [
+            15.566682815551758,
+            16.04347801208496
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 56,
+          "col": 574,
+          "reference_depth": 23.834383010864258,
+          "candidate_depth": 23.834144592285156,
+          "actual_scatter_contribution_depths": [
+            23.83501434326172,
+            23.834144592285156,
+            23.834383010864258
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 57,
+          "col": 452,
+          "reference_depth": 34.037899017333984,
+          "candidate_depth": 34.41521453857422,
+          "actual_scatter_contribution_depths": [
+            34.41521453857422,
+            34.037899017333984
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 57,
+          "col": 456,
+          "reference_depth": 34.147804260253906,
+          "candidate_depth": 34.51178741455078,
+          "actual_scatter_contribution_depths": [
+            34.51178741455078,
+            34.147804260253906
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 60,
+          "col": 122,
+          "reference_depth": 29.339326858520508,
+          "candidate_depth": 28.49170684814453,
+          "actual_scatter_contribution_depths": [
+            28.46901512145996,
+            28.49170684814453,
+            29.339326858520508
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 61,
+          "col": 187,
+          "reference_depth": 35.92190933227539,
+          "candidate_depth": 35.86742401123047,
+          "actual_scatter_contribution_depths": [
+            35.92190933227539,
+            35.86742401123047
+          ],
+          "both_outputs_are_actual_contributions": true
+        }
+      ]
+    },
+    {
+      "token": "b26e791522294bec90f86fd72226e35c",
+      "repeat": 1,
+      "actual_scatter_arguments_bitwise_equal": true,
+      "changed_sparse_depth_pixels": 990,
+      "changed_pixels_with_multiple_contributions": 990,
+      "changed_pixels_where_both_outputs_are_actual_contributions": 990,
+      "examples": [
+        {
+          "camera_index": 0,
+          "row": 1,
+          "col": 629,
+          "reference_depth": 8.844993591308594,
+          "candidate_depth": 8.836556434631348,
+          "actual_scatter_contribution_depths": [
+            8.836556434631348,
+            8.844993591308594
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 1,
+          "col": 634,
+          "reference_depth": 23.539260864257812,
+          "candidate_depth": 24.176637649536133,
+          "actual_scatter_contribution_depths": [
+            23.539260864257812,
+            24.176637649536133
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 3,
+          "col": 406,
+          "reference_depth": 24.86792755126953,
+          "candidate_depth": 24.85893440246582,
+          "actual_scatter_contribution_depths": [
+            24.86792755126953,
+            24.85893440246582
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 3,
+          "col": 410,
+          "reference_depth": 24.739412307739258,
+          "candidate_depth": 24.70905113220215,
+          "actual_scatter_contribution_depths": [
+            24.739412307739258,
+            24.70905113220215
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 3,
+          "col": 500,
+          "reference_depth": 21.849180221557617,
+          "candidate_depth": 21.86789894104004,
+          "actual_scatter_contribution_depths": [
+            21.849180221557617,
+            21.86789894104004
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 14,
+          "col": 643,
+          "reference_depth": 7.611382007598877,
+          "candidate_depth": 7.599609851837158,
+          "actual_scatter_contribution_depths": [
+            7.599609851837158,
+            7.611382007598877,
+            7.621490955352783
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 15,
+          "col": 597,
+          "reference_depth": 7.730503559112549,
+          "candidate_depth": 7.742813587188721,
+          "actual_scatter_contribution_depths": [
+            7.730503559112549,
+            7.742813587188721
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 16,
+          "col": 553,
+          "reference_depth": 8.068400382995605,
+          "candidate_depth": 8.057500839233398,
+          "actual_scatter_contribution_depths": [
+            8.057500839233398,
+            8.068400382995605
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 16,
+          "col": 698,
+          "reference_depth": 8.239211082458496,
+          "candidate_depth": 8.203673362731934,
+          "actual_scatter_contribution_depths": [
+            8.203673362731934,
+            22.654165267944336,
+            8.239211082458496,
+            8.294718742370605
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 16,
+          "col": 702,
+          "reference_depth": 8.3572998046875,
+          "candidate_depth": 8.319374084472656,
+          "actual_scatter_contribution_depths": [
+            8.319374084472656,
+            23.495067596435547,
+            8.3572998046875
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 19,
+          "col": 409,
+          "reference_depth": 24.770986557006836,
+          "candidate_depth": 24.750486373901367,
+          "actual_scatter_contribution_depths": [
+            24.770986557006836,
+            24.750486373901367
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 22,
+          "col": 385,
+          "reference_depth": 39.520896911621094,
+          "candidate_depth": 32.47079849243164,
+          "actual_scatter_contribution_depths": [
+            32.47079849243164,
+            39.520896911621094
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 32,
+          "col": 629,
+          "reference_depth": 7.621440410614014,
+          "candidate_depth": 7.628804683685303,
+          "actual_scatter_contribution_depths": [
+            7.621440410614014,
+            7.628804683685303
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 32,
+          "col": 634,
+          "reference_depth": 7.606556415557861,
+          "candidate_depth": 7.622162342071533,
+          "actual_scatter_contribution_depths": [
+            7.606556415557861,
+            7.622162342071533
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 33,
+          "col": 576,
+          "reference_depth": 7.861764430999756,
+          "candidate_depth": 7.8684773445129395,
+          "actual_scatter_contribution_depths": [
+            7.861764430999756,
+            7.8684773445129395
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 33,
+          "col": 585,
+          "reference_depth": 7.802971363067627,
+          "candidate_depth": 7.805846691131592,
+          "actual_scatter_contribution_depths": [
+            7.802971363067627,
+            7.805846691131592
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 33,
+          "col": 590,
+          "reference_depth": 7.772683620452881,
+          "candidate_depth": 7.7774577140808105,
+          "actual_scatter_contribution_depths": [
+            7.772683620452881,
+            7.7774577140808105
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 33,
+          "col": 672,
+          "reference_depth": 22.667362213134766,
+          "candidate_depth": 7.811727046966553,
+          "actual_scatter_contribution_depths": [
+            7.811727046966553,
+            22.667362213134766,
+            22.71917724609375
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 33,
+          "col": 675,
+          "reference_depth": 7.866572856903076,
+          "candidate_depth": 7.841951847076416,
+          "actual_scatter_contribution_depths": [
+            7.841951847076416,
+            7.866572856903076
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 34,
+          "col": 405,
+          "reference_depth": 24.878576278686523,
+          "candidate_depth": 24.88379669189453,
+          "actual_scatter_contribution_depths": [
+            24.878576278686523,
+            24.88379669189453
+          ],
+          "both_outputs_are_actual_contributions": true
+        }
+      ]
+    },
+    {
+      "token": "b26e791522294bec90f86fd72226e35c",
+      "repeat": 2,
+      "actual_scatter_arguments_bitwise_equal": true,
+      "changed_sparse_depth_pixels": 1519,
+      "changed_pixels_with_multiple_contributions": 1519,
+      "changed_pixels_where_both_outputs_are_actual_contributions": 1519,
+      "examples": [
+        {
+          "camera_index": 0,
+          "row": 3,
+          "col": 406,
+          "reference_depth": 24.86792755126953,
+          "candidate_depth": 24.85893440246582,
+          "actual_scatter_contribution_depths": [
+            24.86792755126953,
+            24.85893440246582
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 3,
+          "col": 410,
+          "reference_depth": 24.739412307739258,
+          "candidate_depth": 24.70905113220215,
+          "actual_scatter_contribution_depths": [
+            24.739412307739258,
+            24.70905113220215
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 3,
+          "col": 500,
+          "reference_depth": 21.849180221557617,
+          "candidate_depth": 21.86789894104004,
+          "actual_scatter_contribution_depths": [
+            21.849180221557617,
+            21.86789894104004
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 14,
+          "col": 628,
+          "reference_depth": 7.62689733505249,
+          "candidate_depth": 7.610345363616943,
+          "actual_scatter_contribution_depths": [
+            7.610345363616943,
+            7.62689733505249,
+            7.642959117889404,
+            7.649417400360107
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 14,
+          "col": 643,
+          "reference_depth": 7.611382007598877,
+          "candidate_depth": 7.599609851837158,
+          "actual_scatter_contribution_depths": [
+            7.599609851837158,
+            7.611382007598877,
+            7.621490955352783
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 15,
+          "col": 597,
+          "reference_depth": 7.730503559112549,
+          "candidate_depth": 7.742813587188721,
+          "actual_scatter_contribution_depths": [
+            7.730503559112549,
+            7.742813587188721
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 18,
+          "col": 488,
+          "reference_depth": 22.188640594482422,
+          "candidate_depth": 22.229719161987305,
+          "actual_scatter_contribution_depths": [
+            22.188640594482422,
+            22.229719161987305,
+            22.239912033081055
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 18,
+          "col": 492,
+          "reference_depth": 22.082469940185547,
+          "candidate_depth": 22.115854263305664,
+          "actual_scatter_contribution_depths": [
+            22.082469940185547,
+            22.115854263305664,
+            22.13063621520996
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 19,
+          "col": 279,
+          "reference_depth": 31.1337890625,
+          "candidate_depth": 31.1413631439209,
+          "actual_scatter_contribution_depths": [
+            31.1337890625,
+            31.1413631439209
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 19,
+          "col": 283,
+          "reference_depth": 30.920181274414062,
+          "candidate_depth": 30.923625946044922,
+          "actual_scatter_contribution_depths": [
+            30.920181274414062,
+            30.923625946044922
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 19,
+          "col": 409,
+          "reference_depth": 24.770986557006836,
+          "candidate_depth": 24.750486373901367,
+          "actual_scatter_contribution_depths": [
+            24.770986557006836,
+            24.750486373901367
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 20,
+          "col": 651,
+          "reference_depth": 33.135169982910156,
+          "candidate_depth": 33.11582946777344,
+          "actual_scatter_contribution_depths": [
+            33.11582946777344,
+            33.135169982910156
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 21,
+          "col": 396,
+          "reference_depth": 31.27227210998535,
+          "candidate_depth": 31.269445419311523,
+          "actual_scatter_contribution_depths": [
+            31.27227210998535,
+            31.269445419311523
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 22,
+          "col": 385,
+          "reference_depth": 39.520896911621094,
+          "candidate_depth": 32.47079849243164,
+          "actual_scatter_contribution_depths": [
+            32.47079849243164,
+            39.520896911621094
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 23,
+          "col": 374,
+          "reference_depth": 40.211585998535156,
+          "candidate_depth": 40.26546859741211,
+          "actual_scatter_contribution_depths": [
+            40.211585998535156,
+            40.26546859741211
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 32,
+          "col": 638,
+          "reference_depth": 7.611221790313721,
+          "candidate_depth": 7.601330280303955,
+          "actual_scatter_contribution_depths": [
+            7.601330280303955,
+            7.611221790313721
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 33,
+          "col": 672,
+          "reference_depth": 22.667362213134766,
+          "candidate_depth": 7.811727046966553,
+          "actual_scatter_contribution_depths": [
+            7.811727046966553,
+            22.667362213134766,
+            22.71917724609375
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 34,
+          "col": 405,
+          "reference_depth": 24.878576278686523,
+          "candidate_depth": 24.88379669189453,
+          "actual_scatter_contribution_depths": [
+            24.878576278686523,
+            24.88379669189453
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 34,
+          "col": 408,
+          "reference_depth": 24.739566802978516,
+          "candidate_depth": 24.770206451416016,
+          "actual_scatter_contribution_depths": [
+            24.731182098388672,
+            24.770206451416016,
+            24.739566802978516,
+            24.76276397705078
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 34,
+          "col": 409,
+          "reference_depth": 24.760169982910156,
+          "candidate_depth": 24.737632751464844,
+          "actual_scatter_contribution_depths": [
+            24.716711044311523,
+            24.760169982910156,
+            24.737632751464844
+          ],
+          "both_outputs_are_actual_contributions": true
+        }
+      ]
+    },
+    {
+      "token": "b26e791522294bec90f86fd72226e35c",
+      "repeat": 3,
+      "actual_scatter_arguments_bitwise_equal": true,
+      "changed_sparse_depth_pixels": 1267,
+      "changed_pixels_with_multiple_contributions": 1267,
+      "changed_pixels_where_both_outputs_are_actual_contributions": 1267,
+      "examples": [
+        {
+          "camera_index": 0,
+          "row": 0,
+          "col": 638,
+          "reference_depth": 8.426961898803711,
+          "candidate_depth": 23.486804962158203,
+          "actual_scatter_contribution_depths": [
+            8.426961898803711,
+            23.486804962158203
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 1,
+          "col": 643,
+          "reference_depth": 24.558134078979492,
+          "candidate_depth": 23.542465209960938,
+          "actual_scatter_contribution_depths": [
+            23.542465209960938,
+            23.6386661529541,
+            24.558134078979492
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 1,
+          "col": 647,
+          "reference_depth": 24.458742141723633,
+          "candidate_depth": 24.4072322845459,
+          "actual_scatter_contribution_depths": [
+            24.4072322845459,
+            24.458742141723633
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 2,
+          "col": 488,
+          "reference_depth": 22.212299346923828,
+          "candidate_depth": 22.2305965423584,
+          "actual_scatter_contribution_depths": [
+            22.2305965423584,
+            22.228750228881836,
+            22.212299346923828
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 3,
+          "col": 401,
+          "reference_depth": 24.984785079956055,
+          "candidate_depth": 25.001264572143555,
+          "actual_scatter_contribution_depths": [
+            24.984785079956055,
+            25.001264572143555
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 3,
+          "col": 406,
+          "reference_depth": 24.86792755126953,
+          "candidate_depth": 24.85893440246582,
+          "actual_scatter_contribution_depths": [
+            24.86792755126953,
+            24.85893440246582
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 3,
+          "col": 409,
+          "reference_depth": 24.71933937072754,
+          "candidate_depth": 24.747560501098633,
+          "actual_scatter_contribution_depths": [
+            24.71933937072754,
+            24.747560501098633
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 3,
+          "col": 410,
+          "reference_depth": 24.739412307739258,
+          "candidate_depth": 24.70905113220215,
+          "actual_scatter_contribution_depths": [
+            24.739412307739258,
+            24.70905113220215
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 3,
+          "col": 504,
+          "reference_depth": 21.7600040435791,
+          "candidate_depth": 21.744218826293945,
+          "actual_scatter_contribution_depths": [
+            21.744218826293945,
+            21.7600040435791
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 14,
+          "col": 647,
+          "reference_depth": 7.625123500823975,
+          "candidate_depth": 7.604246616363525,
+          "actual_scatter_contribution_depths": [
+            7.604246616363525,
+            7.625123500823975
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 14,
+          "col": 653,
+          "reference_depth": 7.602652072906494,
+          "candidate_depth": 7.625229358673096,
+          "actual_scatter_contribution_depths": [
+            7.602652072906494,
+            7.625229358673096
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 15,
+          "col": 597,
+          "reference_depth": 7.730503559112549,
+          "candidate_depth": 7.742813587188721,
+          "actual_scatter_contribution_depths": [
+            7.730503559112549,
+            7.742813587188721
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 15,
+          "col": 610,
+          "reference_depth": 7.718413829803467,
+          "candidate_depth": 7.679173946380615,
+          "actual_scatter_contribution_depths": [
+            7.671823978424072,
+            7.679173946380615,
+            7.718413829803467
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 15,
+          "col": 615,
+          "reference_depth": 7.696533679962158,
+          "candidate_depth": 7.664928913116455,
+          "actual_scatter_contribution_depths": [
+            7.664928913116455,
+            7.696533679962158
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 15,
+          "col": 676,
+          "reference_depth": 7.864683628082275,
+          "candidate_depth": 7.846724987030029,
+          "actual_scatter_contribution_depths": [
+            7.846724987030029,
+            7.8871941566467285,
+            7.909518718719482,
+            7.864683628082275
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 16,
+          "col": 553,
+          "reference_depth": 8.068400382995605,
+          "candidate_depth": 8.057500839233398,
+          "actual_scatter_contribution_depths": [
+            8.057500839233398,
+            8.068400382995605
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 16,
+          "col": 690,
+          "reference_depth": 8.072537422180176,
+          "candidate_depth": 23.58796501159668,
+          "actual_scatter_contribution_depths": [
+            23.58796501159668,
+            8.072537422180176
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 16,
+          "col": 691,
+          "reference_depth": 8.135360717773438,
+          "candidate_depth": 23.569839477539062,
+          "actual_scatter_contribution_depths": [
+            22.757884979248047,
+            8.135360717773438,
+            23.569839477539062
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 16,
+          "col": 695,
+          "reference_depth": 8.144389152526855,
+          "candidate_depth": 8.167352676391602,
+          "actual_scatter_contribution_depths": [
+            8.179327011108398,
+            8.167352676391602,
+            22.69485092163086,
+            8.144389152526855
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 16,
+          "col": 699,
+          "reference_depth": 8.221687316894531,
+          "candidate_depth": 8.261395454406738,
+          "actual_scatter_contribution_depths": [
+            8.261395454406738,
+            8.221687316894531
+          ],
+          "both_outputs_are_actual_contributions": true
+        }
+      ]
+    },
+    {
+      "token": "b26e791522294bec90f86fd72226e35c",
+      "repeat": 4,
+      "actual_scatter_arguments_bitwise_equal": true,
+      "changed_sparse_depth_pixels": 848,
+      "changed_pixels_with_multiple_contributions": 848,
+      "changed_pixels_where_both_outputs_are_actual_contributions": 848,
+      "examples": [
+        {
+          "camera_index": 0,
+          "row": 0,
+          "col": 643,
+          "reference_depth": 8.506592750549316,
+          "candidate_depth": 8.524104118347168,
+          "actual_scatter_contribution_depths": [
+            8.524104118347168,
+            8.506592750549316
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 1,
+          "col": 629,
+          "reference_depth": 8.844993591308594,
+          "candidate_depth": 8.836556434631348,
+          "actual_scatter_contribution_depths": [
+            8.836556434631348,
+            8.844993591308594
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 1,
+          "col": 634,
+          "reference_depth": 23.539260864257812,
+          "candidate_depth": 24.176637649536133,
+          "actual_scatter_contribution_depths": [
+            23.539260864257812,
+            24.176637649536133
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 3,
+          "col": 406,
+          "reference_depth": 24.86792755126953,
+          "candidate_depth": 24.85893440246582,
+          "actual_scatter_contribution_depths": [
+            24.86792755126953,
+            24.85893440246582
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 3,
+          "col": 410,
+          "reference_depth": 24.739412307739258,
+          "candidate_depth": 24.70905113220215,
+          "actual_scatter_contribution_depths": [
+            24.739412307739258,
+            24.70905113220215
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 3,
+          "col": 500,
+          "reference_depth": 21.849180221557617,
+          "candidate_depth": 21.86789894104004,
+          "actual_scatter_contribution_depths": [
+            21.849180221557617,
+            21.86789894104004
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 14,
+          "col": 633,
+          "reference_depth": 7.617095470428467,
+          "candidate_depth": 7.602250576019287,
+          "actual_scatter_contribution_depths": [
+            7.602250576019287,
+            7.617095470428467,
+            7.63323450088501
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 14,
+          "col": 643,
+          "reference_depth": 7.611382007598877,
+          "candidate_depth": 7.599609851837158,
+          "actual_scatter_contribution_depths": [
+            7.599609851837158,
+            7.611382007598877,
+            7.621490955352783
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 15,
+          "col": 597,
+          "reference_depth": 7.730503559112549,
+          "candidate_depth": 7.742813587188721,
+          "actual_scatter_contribution_depths": [
+            7.730503559112549,
+            7.742813587188721
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 15,
+          "col": 639,
+          "reference_depth": 7.647104740142822,
+          "candidate_depth": 7.5953240394592285,
+          "actual_scatter_contribution_depths": [
+            7.5953240394592285,
+            7.647104740142822
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 15,
+          "col": 684,
+          "reference_depth": 8.009557723999023,
+          "candidate_depth": 7.983201503753662,
+          "actual_scatter_contribution_depths": [
+            7.983201503753662,
+            8.009557723999023,
+            8.05212688446045
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 16,
+          "col": 553,
+          "reference_depth": 8.068400382995605,
+          "candidate_depth": 8.057500839233398,
+          "actual_scatter_contribution_depths": [
+            8.057500839233398,
+            8.068400382995605
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 16,
+          "col": 689,
+          "reference_depth": 8.076058387756348,
+          "candidate_depth": 8.052973747253418,
+          "actual_scatter_contribution_depths": [
+            8.052973747253418,
+            8.076058387756348,
+            23.411954879760742
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 16,
+          "col": 698,
+          "reference_depth": 8.239211082458496,
+          "candidate_depth": 8.203673362731934,
+          "actual_scatter_contribution_depths": [
+            8.203673362731934,
+            22.654165267944336,
+            8.239211082458496,
+            8.294718742370605
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 16,
+          "col": 702,
+          "reference_depth": 8.3572998046875,
+          "candidate_depth": 8.319374084472656,
+          "actual_scatter_contribution_depths": [
+            8.319374084472656,
+            23.495067596435547,
+            8.3572998046875
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 17,
+          "col": 651,
+          "reference_depth": 24.328125,
+          "candidate_depth": 24.251821517944336,
+          "actual_scatter_contribution_depths": [
+            24.251821517944336,
+            24.328125
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 17,
+          "col": 666,
+          "reference_depth": 24.195192337036133,
+          "candidate_depth": 24.27288818359375,
+          "actual_scatter_contribution_depths": [
+            24.27288818359375,
+            24.195192337036133
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 18,
+          "col": 488,
+          "reference_depth": 22.188640594482422,
+          "candidate_depth": 22.229719161987305,
+          "actual_scatter_contribution_depths": [
+            22.188640594482422,
+            22.229719161987305,
+            22.239912033081055
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 18,
+          "col": 492,
+          "reference_depth": 22.082469940185547,
+          "candidate_depth": 22.115854263305664,
+          "actual_scatter_contribution_depths": [
+            22.082469940185547,
+            22.115854263305664,
+            22.13063621520996
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 19,
+          "col": 279,
+          "reference_depth": 31.1337890625,
+          "candidate_depth": 31.1413631439209,
+          "actual_scatter_contribution_depths": [
+            31.1337890625,
+            31.1413631439209
+          ],
+          "both_outputs_are_actual_contributions": true
+        }
+      ]
+    },
+    {
+      "token": "ca9a282c9e77460f8360f564131a8af5",
+      "repeat": 1,
+      "actual_scatter_arguments_bitwise_equal": true,
+      "changed_sparse_depth_pixels": 0,
+      "changed_pixels_with_multiple_contributions": 0,
+      "changed_pixels_where_both_outputs_are_actual_contributions": 0,
+      "examples": []
+    },
+    {
+      "token": "ca9a282c9e77460f8360f564131a8af5",
+      "repeat": 2,
+      "actual_scatter_arguments_bitwise_equal": true,
+      "changed_sparse_depth_pixels": 0,
+      "changed_pixels_with_multiple_contributions": 0,
+      "changed_pixels_where_both_outputs_are_actual_contributions": 0,
+      "examples": []
+    },
+    {
+      "token": "ca9a282c9e77460f8360f564131a8af5",
+      "repeat": 3,
+      "actual_scatter_arguments_bitwise_equal": true,
+      "changed_sparse_depth_pixels": 2,
+      "changed_pixels_with_multiple_contributions": 2,
+      "changed_pixels_where_both_outputs_are_actual_contributions": 2,
+      "examples": [
+        {
+          "camera_index": 4,
+          "row": 55,
+          "col": 537,
+          "reference_depth": 20.26238250732422,
+          "candidate_depth": 20.28193473815918,
+          "actual_scatter_contribution_depths": [
+            20.28193473815918,
+            20.26238250732422,
+            20.28193473815918,
+            20.26238250732422,
+            20.28193473815918,
+            20.26238250732422,
+            20.28193473815918,
+            20.26238250732422,
+            20.28193473815918,
+            20.26238250732422,
+            20.28193473815918,
+            20.26238250732422,
+            20.28193473815918,
+            20.26238250732422,
+            20.28193473815918,
+            20.26238250732422,
+            20.28193473815918,
+            20.26238250732422,
+            20.28193473815918,
+            20.26238250732422
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 4,
+          "row": 71,
+          "col": 545,
+          "reference_depth": 22.060382843017578,
+          "candidate_depth": 22.430809020996094,
+          "actual_scatter_contribution_depths": [
+            22.060382843017578,
+            22.430809020996094,
+            22.060382843017578,
+            22.430809020996094,
+            22.060382843017578,
+            22.430809020996094,
+            22.060382843017578,
+            22.430809020996094,
+            22.060382843017578,
+            22.430809020996094,
+            22.060382843017578,
+            22.430809020996094,
+            22.060382843017578,
+            22.430809020996094,
+            22.060382843017578,
+            22.430809020996094,
+            22.060382843017578,
+            22.430809020996094,
+            22.060382843017578,
+            22.430809020996094
+          ],
+          "both_outputs_are_actual_contributions": true
+        }
+      ]
+    },
+    {
+      "token": "ca9a282c9e77460f8360f564131a8af5",
+      "repeat": 4,
+      "actual_scatter_arguments_bitwise_equal": true,
+      "changed_sparse_depth_pixels": 0,
+      "changed_pixels_with_multiple_contributions": 0,
+      "changed_pixels_where_both_outputs_are_actual_contributions": 0,
+      "examples": []
+    },
+    {
+      "token": "e0845f5322254dafadbbed75aaa07969",
+      "repeat": 1,
+      "actual_scatter_arguments_bitwise_equal": true,
+      "changed_sparse_depth_pixels": 1380,
+      "changed_pixels_with_multiple_contributions": 1380,
+      "changed_pixels_where_both_outputs_are_actual_contributions": 1380,
+      "examples": [
+        {
+          "camera_index": 0,
+          "row": 1,
+          "col": 17,
+          "reference_depth": 6.041701316833496,
+          "candidate_depth": 6.076493263244629,
+          "actual_scatter_contribution_depths": [
+            6.076493263244629,
+            6.041701316833496
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 1,
+          "col": 23,
+          "reference_depth": 6.122037410736084,
+          "candidate_depth": 6.130943775177002,
+          "actual_scatter_contribution_depths": [
+            6.130943775177002,
+            6.122037410736084
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 15,
+          "col": 198,
+          "reference_depth": 23.136310577392578,
+          "candidate_depth": 23.130504608154297,
+          "actual_scatter_contribution_depths": [
+            23.136310577392578,
+            23.12650489807129,
+            23.130504608154297,
+            23.131694793701172
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 30,
+          "col": 139,
+          "reference_depth": 23.539709091186523,
+          "candidate_depth": 23.572921752929688,
+          "actual_scatter_contribution_depths": [
+            23.572921752929688,
+            23.47254753112793,
+            23.50148582458496,
+            23.539709091186523
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 64,
+          "col": 222,
+          "reference_depth": 32.32356262207031,
+          "candidate_depth": 32.31121826171875,
+          "actual_scatter_contribution_depths": [
+            32.31121826171875,
+            32.32356262207031
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 65,
+          "col": 189,
+          "reference_depth": 45.72124481201172,
+          "candidate_depth": 45.49507522583008,
+          "actual_scatter_contribution_depths": [
+            45.49507522583008,
+            45.72124481201172
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 66,
+          "col": 185,
+          "reference_depth": 45.31134033203125,
+          "candidate_depth": 45.186927795410156,
+          "actual_scatter_contribution_depths": [
+            45.186927795410156,
+            45.31134033203125
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 66,
+          "col": 189,
+          "reference_depth": 45.15785217285156,
+          "candidate_depth": 45.041141510009766,
+          "actual_scatter_contribution_depths": [
+            45.041141510009766,
+            45.15785217285156
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 78,
+          "col": 252,
+          "reference_depth": 29.620338439941406,
+          "candidate_depth": 29.593969345092773,
+          "actual_scatter_contribution_depths": [
+            29.593969345092773,
+            29.620338439941406
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 79,
+          "col": 555,
+          "reference_depth": 20.100120544433594,
+          "candidate_depth": 20.87242317199707,
+          "actual_scatter_contribution_depths": [
+            20.87242317199707,
+            20.100120544433594
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 80,
+          "col": 302,
+          "reference_depth": 34.44896697998047,
+          "candidate_depth": 34.662071228027344,
+          "actual_scatter_contribution_depths": [
+            34.44896697998047,
+            34.662071228027344
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 80,
+          "col": 310,
+          "reference_depth": 34.43511962890625,
+          "candidate_depth": 34.405086517333984,
+          "actual_scatter_contribution_depths": [
+            34.43511962890625,
+            34.405086517333984
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 80,
+          "col": 432,
+          "reference_depth": 32.4185676574707,
+          "candidate_depth": 32.89997100830078,
+          "actual_scatter_contribution_depths": [
+            32.4185676574707,
+            32.89997100830078
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 80,
+          "col": 436,
+          "reference_depth": 32.28480911254883,
+          "candidate_depth": 32.769142150878906,
+          "actual_scatter_contribution_depths": [
+            32.28480911254883,
+            32.769142150878906
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 80,
+          "col": 440,
+          "reference_depth": 32.0965690612793,
+          "candidate_depth": 32.508949279785156,
+          "actual_scatter_contribution_depths": [
+            32.23333740234375,
+            32.0965690612793,
+            32.508949279785156
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 80,
+          "col": 482,
+          "reference_depth": 32.716163635253906,
+          "candidate_depth": 31.34502410888672,
+          "actual_scatter_contribution_depths": [
+            31.345291137695312,
+            31.34502410888672,
+            32.716163635253906
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 80,
+          "col": 678,
+          "reference_depth": 16.279211044311523,
+          "candidate_depth": 16.14446449279785,
+          "actual_scatter_contribution_depths": [
+            16.14446449279785,
+            16.279211044311523
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 95,
+          "col": 188,
+          "reference_depth": 18.412092208862305,
+          "candidate_depth": 18.660125732421875,
+          "actual_scatter_contribution_depths": [
+            18.660125732421875,
+            18.412092208862305
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 95,
+          "col": 244,
+          "reference_depth": 21.629131317138672,
+          "candidate_depth": 21.944772720336914,
+          "actual_scatter_contribution_depths": [
+            21.787134170532227,
+            21.629131317138672,
+            21.944772720336914,
+            21.8721981048584
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 95,
+          "col": 248,
+          "reference_depth": 21.619121551513672,
+          "candidate_depth": 21.996910095214844,
+          "actual_scatter_contribution_depths": [
+            21.619121551513672,
+            21.996910095214844,
+            21.914894104003906
+          ],
+          "both_outputs_are_actual_contributions": true
+        }
+      ]
+    },
+    {
+      "token": "e0845f5322254dafadbbed75aaa07969",
+      "repeat": 2,
+      "actual_scatter_arguments_bitwise_equal": true,
+      "changed_sparse_depth_pixels": 1329,
+      "changed_pixels_with_multiple_contributions": 1329,
+      "changed_pixels_where_both_outputs_are_actual_contributions": 1329,
+      "examples": [
+        {
+          "camera_index": 0,
+          "row": 1,
+          "col": 17,
+          "reference_depth": 6.041701316833496,
+          "candidate_depth": 6.076493263244629,
+          "actual_scatter_contribution_depths": [
+            6.076493263244629,
+            6.041701316833496
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 1,
+          "col": 23,
+          "reference_depth": 6.122037410736084,
+          "candidate_depth": 6.130943775177002,
+          "actual_scatter_contribution_depths": [
+            6.130943775177002,
+            6.122037410736084
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 15,
+          "col": 194,
+          "reference_depth": 23.26082420349121,
+          "candidate_depth": 23.30501365661621,
+          "actual_scatter_contribution_depths": [
+            23.30501365661621,
+            23.2652530670166,
+            23.26082420349121,
+            23.27890396118164
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 15,
+          "col": 198,
+          "reference_depth": 23.136310577392578,
+          "candidate_depth": 23.130504608154297,
+          "actual_scatter_contribution_depths": [
+            23.136310577392578,
+            23.12650489807129,
+            23.130504608154297,
+            23.131694793701172
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 30,
+          "col": 139,
+          "reference_depth": 23.539709091186523,
+          "candidate_depth": 23.572921752929688,
+          "actual_scatter_contribution_depths": [
+            23.572921752929688,
+            23.47254753112793,
+            23.50148582458496,
+            23.539709091186523
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 32,
+          "col": 211,
+          "reference_depth": 26.908056259155273,
+          "candidate_depth": 26.913349151611328,
+          "actual_scatter_contribution_depths": [
+            26.908056259155273,
+            26.904733657836914,
+            26.913349151611328
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 52,
+          "col": 485,
+          "reference_depth": 37.54950714111328,
+          "candidate_depth": 37.966697692871094,
+          "actual_scatter_contribution_depths": [
+            38.203857421875,
+            37.966697692871094,
+            37.756282806396484,
+            37.54950714111328
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 52,
+          "col": 489,
+          "reference_depth": 37.531822204589844,
+          "candidate_depth": 37.942832946777344,
+          "actual_scatter_contribution_depths": [
+            38.17769241333008,
+            37.942832946777344,
+            37.73652267456055,
+            37.531822204589844
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 52,
+          "col": 493,
+          "reference_depth": 37.50295639038086,
+          "candidate_depth": 37.9293327331543,
+          "actual_scatter_contribution_depths": [
+            38.36574172973633,
+            38.146240234375,
+            37.9293327331543,
+            37.71344757080078,
+            37.50295639038086
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 64,
+          "col": 146,
+          "reference_depth": 28.531749725341797,
+          "candidate_depth": 27.841064453125,
+          "actual_scatter_contribution_depths": [
+            28.531749725341797,
+            27.841064453125
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 64,
+          "col": 222,
+          "reference_depth": 32.32356262207031,
+          "candidate_depth": 32.31121826171875,
+          "actual_scatter_contribution_depths": [
+            32.31121826171875,
+            32.32356262207031
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 65,
+          "col": 189,
+          "reference_depth": 45.72124481201172,
+          "candidate_depth": 45.49507522583008,
+          "actual_scatter_contribution_depths": [
+            45.49507522583008,
+            45.72124481201172
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 66,
+          "col": 185,
+          "reference_depth": 45.31134033203125,
+          "candidate_depth": 45.186927795410156,
+          "actual_scatter_contribution_depths": [
+            45.186927795410156,
+            45.31134033203125
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 66,
+          "col": 189,
+          "reference_depth": 45.15785217285156,
+          "candidate_depth": 45.041141510009766,
+          "actual_scatter_contribution_depths": [
+            45.041141510009766,
+            45.15785217285156
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 78,
+          "col": 252,
+          "reference_depth": 29.620338439941406,
+          "candidate_depth": 29.593969345092773,
+          "actual_scatter_contribution_depths": [
+            29.593969345092773,
+            29.620338439941406
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 79,
+          "col": 333,
+          "reference_depth": 28.06743812561035,
+          "candidate_depth": 34.02228546142578,
+          "actual_scatter_contribution_depths": [
+            34.02228546142578,
+            28.06743812561035
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 79,
+          "col": 555,
+          "reference_depth": 20.100120544433594,
+          "candidate_depth": 20.87242317199707,
+          "actual_scatter_contribution_depths": [
+            20.87242317199707,
+            20.100120544433594
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 80,
+          "col": 302,
+          "reference_depth": 34.44896697998047,
+          "candidate_depth": 34.662071228027344,
+          "actual_scatter_contribution_depths": [
+            34.44896697998047,
+            34.662071228027344
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 80,
+          "col": 310,
+          "reference_depth": 34.43511962890625,
+          "candidate_depth": 34.405086517333984,
+          "actual_scatter_contribution_depths": [
+            34.43511962890625,
+            34.405086517333984
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 80,
+          "col": 432,
+          "reference_depth": 32.4185676574707,
+          "candidate_depth": 32.89997100830078,
+          "actual_scatter_contribution_depths": [
+            32.4185676574707,
+            32.89997100830078
+          ],
+          "both_outputs_are_actual_contributions": true
+        }
+      ]
+    },
+    {
+      "token": "e0845f5322254dafadbbed75aaa07969",
+      "repeat": 3,
+      "actual_scatter_arguments_bitwise_equal": true,
+      "changed_sparse_depth_pixels": 1288,
+      "changed_pixels_with_multiple_contributions": 1288,
+      "changed_pixels_where_both_outputs_are_actual_contributions": 1288,
+      "examples": [
+        {
+          "camera_index": 0,
+          "row": 15,
+          "col": 202,
+          "reference_depth": 23.036834716796875,
+          "candidate_depth": 23.065044403076172,
+          "actual_scatter_contribution_depths": [
+            23.09491539001465,
+            23.036834716796875,
+            23.065044403076172
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 16,
+          "col": 176,
+          "reference_depth": 27.304529190063477,
+          "candidate_depth": 27.317180633544922,
+          "actual_scatter_contribution_depths": [
+            27.317180633544922,
+            27.304529190063477
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 19,
+          "col": 253,
+          "reference_depth": 30.29179573059082,
+          "candidate_depth": 30.331974029541016,
+          "actual_scatter_contribution_depths": [
+            30.29179573059082,
+            30.331974029541016
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 31,
+          "col": 194,
+          "reference_depth": 23.719284057617188,
+          "candidate_depth": 23.63595199584961,
+          "actual_scatter_contribution_depths": [
+            23.719284057617188,
+            23.68037223815918,
+            23.63595199584961,
+            23.624526977539062
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 31,
+          "col": 198,
+          "reference_depth": 24.79136085510254,
+          "candidate_depth": 24.740951538085938,
+          "actual_scatter_contribution_depths": [
+            24.79136085510254,
+            24.753389358520508,
+            24.740951538085938
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 31,
+          "col": 206,
+          "reference_depth": 39.932334899902344,
+          "candidate_depth": 27.18111228942871,
+          "actual_scatter_contribution_depths": [
+            27.18111228942871,
+            39.932334899902344
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 32,
+          "col": 211,
+          "reference_depth": 26.908056259155273,
+          "candidate_depth": 26.913349151611328,
+          "actual_scatter_contribution_depths": [
+            26.908056259155273,
+            26.904733657836914,
+            26.913349151611328
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 34,
+          "col": 135,
+          "reference_depth": 47.36457061767578,
+          "candidate_depth": 47.36848449707031,
+          "actual_scatter_contribution_depths": [
+            47.36457061767578,
+            47.36848449707031
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 34,
+          "col": 166,
+          "reference_depth": 39.07526397705078,
+          "candidate_depth": 39.07365798950195,
+          "actual_scatter_contribution_depths": [
+            39.07526397705078,
+            39.07776641845703,
+            39.07365798950195
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 34,
+          "col": 253,
+          "reference_depth": 31.58479118347168,
+          "candidate_depth": 31.585012435913086,
+          "actual_scatter_contribution_depths": [
+            31.58479118347168,
+            31.585012435913086
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 34,
+          "col": 269,
+          "reference_depth": 31.020893096923828,
+          "candidate_depth": 32.60350036621094,
+          "actual_scatter_contribution_depths": [
+            31.020893096923828,
+            32.60350036621094
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 35,
+          "col": 156,
+          "reference_depth": 48.37495040893555,
+          "candidate_depth": 48.377403259277344,
+          "actual_scatter_contribution_depths": [
+            48.377403259277344,
+            48.37495040893555
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 47,
+          "col": 115,
+          "reference_depth": 25.95452880859375,
+          "candidate_depth": 25.95550537109375,
+          "actual_scatter_contribution_depths": [
+            25.95452880859375,
+            25.95550537109375,
+            25.948522567749023
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 47,
+          "col": 198,
+          "reference_depth": 24.66716957092285,
+          "candidate_depth": 24.616886138916016,
+          "actual_scatter_contribution_depths": [
+            24.66716957092285,
+            24.618864059448242,
+            24.616886138916016
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 48,
+          "col": 122,
+          "reference_depth": 30.219505310058594,
+          "candidate_depth": 30.137041091918945,
+          "actual_scatter_contribution_depths": [
+            30.219505310058594,
+            30.137041091918945
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 48,
+          "col": 139,
+          "reference_depth": 29.876745223999023,
+          "candidate_depth": 29.86045265197754,
+          "actual_scatter_contribution_depths": [
+            29.876745223999023,
+            29.86045265197754,
+            29.28542137145996
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 52,
+          "col": 370,
+          "reference_depth": 49.67026901245117,
+          "candidate_depth": 49.46125793457031,
+          "actual_scatter_contribution_depths": [
+            49.67026901245117,
+            49.46125793457031
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 64,
+          "col": 222,
+          "reference_depth": 32.32356262207031,
+          "candidate_depth": 32.31121826171875,
+          "actual_scatter_contribution_depths": [
+            32.31121826171875,
+            32.32356262207031
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 64,
+          "col": 635,
+          "reference_depth": 21.934467315673828,
+          "candidate_depth": 21.95094871520996,
+          "actual_scatter_contribution_depths": [
+            21.934467315673828,
+            21.95094871520996
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 65,
+          "col": 189,
+          "reference_depth": 45.72124481201172,
+          "candidate_depth": 45.49507522583008,
+          "actual_scatter_contribution_depths": [
+            45.49507522583008,
+            45.72124481201172
+          ],
+          "both_outputs_are_actual_contributions": true
+        }
+      ]
+    },
+    {
+      "token": "e0845f5322254dafadbbed75aaa07969",
+      "repeat": 4,
+      "actual_scatter_arguments_bitwise_equal": true,
+      "changed_sparse_depth_pixels": 1353,
+      "changed_pixels_with_multiple_contributions": 1353,
+      "changed_pixels_where_both_outputs_are_actual_contributions": 1353,
+      "examples": [
+        {
+          "camera_index": 0,
+          "row": 1,
+          "col": 17,
+          "reference_depth": 6.041701316833496,
+          "candidate_depth": 6.076493263244629,
+          "actual_scatter_contribution_depths": [
+            6.076493263244629,
+            6.041701316833496
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 1,
+          "col": 23,
+          "reference_depth": 6.122037410736084,
+          "candidate_depth": 6.130943775177002,
+          "actual_scatter_contribution_depths": [
+            6.130943775177002,
+            6.122037410736084
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 15,
+          "col": 194,
+          "reference_depth": 23.26082420349121,
+          "candidate_depth": 23.30501365661621,
+          "actual_scatter_contribution_depths": [
+            23.30501365661621,
+            23.2652530670166,
+            23.26082420349121,
+            23.27890396118164
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 30,
+          "col": 139,
+          "reference_depth": 23.539709091186523,
+          "candidate_depth": 23.572921752929688,
+          "actual_scatter_contribution_depths": [
+            23.572921752929688,
+            23.47254753112793,
+            23.50148582458496,
+            23.539709091186523
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 34,
+          "col": 122,
+          "reference_depth": 48.45491409301758,
+          "candidate_depth": 48.56306838989258,
+          "actual_scatter_contribution_depths": [
+            48.45491409301758,
+            48.56306838989258
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 64,
+          "col": 146,
+          "reference_depth": 28.531749725341797,
+          "candidate_depth": 27.841064453125,
+          "actual_scatter_contribution_depths": [
+            28.531749725341797,
+            27.841064453125
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 66,
+          "col": 185,
+          "reference_depth": 45.31134033203125,
+          "candidate_depth": 45.186927795410156,
+          "actual_scatter_contribution_depths": [
+            45.186927795410156,
+            45.31134033203125
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 66,
+          "col": 189,
+          "reference_depth": 45.15785217285156,
+          "candidate_depth": 45.041141510009766,
+          "actual_scatter_contribution_depths": [
+            45.041141510009766,
+            45.15785217285156
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 78,
+          "col": 252,
+          "reference_depth": 29.620338439941406,
+          "candidate_depth": 29.593969345092773,
+          "actual_scatter_contribution_depths": [
+            29.593969345092773,
+            29.620338439941406
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 79,
+          "col": 333,
+          "reference_depth": 28.06743812561035,
+          "candidate_depth": 34.02228546142578,
+          "actual_scatter_contribution_depths": [
+            34.02228546142578,
+            28.06743812561035
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 79,
+          "col": 555,
+          "reference_depth": 20.100120544433594,
+          "candidate_depth": 20.87242317199707,
+          "actual_scatter_contribution_depths": [
+            20.87242317199707,
+            20.100120544433594
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 80,
+          "col": 302,
+          "reference_depth": 34.44896697998047,
+          "candidate_depth": 34.662071228027344,
+          "actual_scatter_contribution_depths": [
+            34.44896697998047,
+            34.662071228027344
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 80,
+          "col": 310,
+          "reference_depth": 34.43511962890625,
+          "candidate_depth": 34.405086517333984,
+          "actual_scatter_contribution_depths": [
+            34.43511962890625,
+            34.405086517333984
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 80,
+          "col": 436,
+          "reference_depth": 32.28480911254883,
+          "candidate_depth": 32.769142150878906,
+          "actual_scatter_contribution_depths": [
+            32.28480911254883,
+            32.769142150878906
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 80,
+          "col": 440,
+          "reference_depth": 32.0965690612793,
+          "candidate_depth": 32.508949279785156,
+          "actual_scatter_contribution_depths": [
+            32.23333740234375,
+            32.0965690612793,
+            32.508949279785156
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 80,
+          "col": 482,
+          "reference_depth": 32.716163635253906,
+          "candidate_depth": 31.34502410888672,
+          "actual_scatter_contribution_depths": [
+            31.345291137695312,
+            31.34502410888672,
+            32.716163635253906
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 80,
+          "col": 641,
+          "reference_depth": 18.758970260620117,
+          "candidate_depth": 18.70199966430664,
+          "actual_scatter_contribution_depths": [
+            18.70199966430664,
+            18.758970260620117
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 80,
+          "col": 678,
+          "reference_depth": 16.279211044311523,
+          "candidate_depth": 16.14446449279785,
+          "actual_scatter_contribution_depths": [
+            16.14446449279785,
+            16.279211044311523
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 80,
+          "col": 693,
+          "reference_depth": 15.50708293914795,
+          "candidate_depth": 15.389287948608398,
+          "actual_scatter_contribution_depths": [
+            15.389287948608398,
+            15.50708293914795
+          ],
+          "both_outputs_are_actual_contributions": true
+        },
+        {
+          "camera_index": 0,
+          "row": 80,
+          "col": 700,
+          "reference_depth": 15.129627227783203,
+          "candidate_depth": 15.078551292419434,
+          "actual_scatter_contribution_depths": [
+            15.078551292419434,
+            15.129627227783203
+          ],
+          "both_outputs_are_actual_contributions": true
+        }
+      ]
+    }
+  ]
+}

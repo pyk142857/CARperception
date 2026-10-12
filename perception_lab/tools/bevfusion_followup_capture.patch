@@ -1,0 +1,49 @@
+--- a/src/common/tensorrt.cpp
++++ b/src/common/tensorrt.cpp
+@@ -28,6 +28,8 @@
+ 
+ #include <algorithm>
+ #include <fstream>
++#include <cstdlib>
++#include <stdexcept>
+ #include <iostream>
+ #include <numeric>
+ #include <unordered_map>
+@@ -222,7 +224,36 @@
+         return false;
+       }
+     }
+-    return context->enqueueV3((cudaStream_t)stream);
++    const bool result = context->enqueueV3((cudaStream_t)stream);
++    const char* prefix = std::getenv("CAR_TRT_CAPTURE");
++    if (result && prefix && *prefix) {
++      // Diagnostic-only synchronized copies. Production plans and kernels unchanged.
++      for (int i = 0; i < engine->getNbIOTensors(); ++i) {
++        const char* name = engine->getIOTensorName(i);
++        const auto shape = context->getTensorShape(name);
++        const auto dt = engine->getTensorDataType(name);
++        size_t count = 1;
++        for (int j = 0; j < shape.nbDims; ++j) {
++          if (shape.d[j] < 0) throw std::runtime_error("Dynamic capture shape");
++          count *= shape.d[j];
++        }
++        const size_t itemsize = dt == nvinfer1::DataType::kHALF ? 2 :
++            (dt == nvinfer1::DataType::kFLOAT || dt == nvinfer1::DataType::kINT32 ? 4 : 1);
++        std::vector<unsigned char> host(count * itemsize);
++        checkRuntime(cudaMemcpyAsync(host.data(), bindings.at(name), host.size(), cudaMemcpyDeviceToHost, (cudaStream_t)stream));
++        checkRuntime(cudaStreamSynchronize((cudaStream_t)stream));
++        std::string path = std::string(prefix) + "/" + name;
++        // Shared producer/consumer names intentionally overwrite identical buffers.
++        std::ofstream out(path + ".bin", std::ios::binary);
++        out.write(reinterpret_cast<const char*>(host.data()), host.size());
++        std::ofstream meta(path + ".json");
++        meta << "{\"name\":\"" << name << "\",\"dtype\":\"" << data_type_string(dt) << "\",\"shape\":[";
++        for (int j = 0; j < shape.nbDims; ++j) { if (j) meta << ","; meta << shape.d[j]; }
++        meta << "]}";
++        if (!out || !meta) throw std::runtime_error("Capture write failed");
++      }
++    }
++    return result;
+   }
+ 
+   virtual std::vector<int> run_dims(const std::string &name) override { return run_dims(index(name)); }

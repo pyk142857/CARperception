@@ -1,0 +1,88 @@
+{
+  "status": "original_experiment_published_followup_in_progress",
+  "source_commit": "ce244828fe5ffd73753ed672dfaf665f43502999",
+  "main_before": "71604c1164c511334d9e56390a69ada14241dfe8",
+  "transport_before": "51d31c44838457e67618dd3c8804479a28559d80",
+  "original_experiment_verified_main": "1f866fc8c493588b722902cdd0e503c1cd5daedb",
+  "core_files": [
+    {
+      "path": "perception_lab/reports/deployment_4090_20261008/report.md",
+      "sha256": "dd4d10e366f5562fbb30309044ebbe328c640160eef16da98ecb2151819c49e4",
+      "bytes": 4129,
+      "remote_contents_verified": true
+    },
+    {
+      "path": "perception_lab/reports/deployment_4090_20261008/status.json",
+      "sha256": "2c6998b416ecbeaa26480da46878a89ad5887a9f5769c362c2e5bf3792e064e6",
+      "bytes": 2557,
+      "remote_contents_verified": true
+    },
+    {
+      "path": "perception_lab/reports/deployment_4090_20261008/metrics.csv",
+      "sha256": "6e25c4f481c39ea4452222e0937c0b5a9bfa0b3ac03738020ac0fac4c72f43ae",
+      "bytes": 2458,
+      "remote_contents_verified": true
+    },
+    {
+      "path": "perception_lab/reports/deployment_4090_20261008/run_commands.md",
+      "sha256": "234d30db8baf0719d2ab6441d166959de8691a767861db3270e88b42920dd39d",
+      "bytes": 1368,
+      "remote_contents_verified": true
+    },
+    {
+      "path": "perception_lab/reports/deployment_4090_20261008/artifacts_manifest.json",
+      "sha256": "736315f645e200061f53d16a5bc018d75f7a4558f23ac3dc0dfe6628254632d1",
+      "bytes": 61667,
+      "remote_contents_verified": true
+    },
+    {
+      "path": "perception_lab/reports/deployment_4090_20261008/bevfusion_tensorrt/pool_intermediate_audit.md",
+      "sha256": "b41fdbf3a1bde51bf07cdc3c7a7adee0743a4fa26316e345accea46d855d66be",
+      "bytes": 3049,
+      "remote_contents_verified": true
+    },
+    {
+      "path": "perception_lab/reports/deployment_4090_20261008/sparse4d/report.md",
+      "sha256": "c2c06f12a0e6fa60bd878054f91f510589004cba23fffbebc660074f52f967fe",
+      "bytes": 5194,
+      "remote_contents_verified": true
+    },
+    {
+      "path": "perception_lab/reports/deployment_4090_20261008/gaussianworld/summary.json",
+      "sha256": "d84c94b0bfeeee99130ac9a28162d5d6f881c5e227a280bad143c47c35366eb1",
+      "bytes": 4647,
+      "remote_contents_verified": true
+    },
+    {
+      "path": "perception_lab/reports/deployment_4090_20261008/visualize/status.json",
+      "sha256": "4a1cad313e9fde879c183e0b575a83c3c9578a054cab7592d0369d1c882cd21e",
+      "bytes": 391,
+      "remote_contents_verified": true
+    },
+    {
+      "path": "perception_lab/reports/deployment_4090_20261008/visualize/rerun_browser_19.png",
+      "sha256": "b001d4f8d89b3cfd39c013c51fdbd54af00a5bb19fd33628fe7c39b751912426",
+      "bytes": 1422047,
+      "remote_contents_verified": true
+    },
+    {
+      "path": "perception_lab/tools/run_4090_deployment.py",
+      "sha256": "0888d3369ef5e80f2c15aef88ed3c4dbc518a6dc53a1d3e8f67556580033de85",
+      "bytes": 10966,
+      "remote_contents_verified": true
+    },
+    {
+      "path": "perception_lab/tools/bevfusion_geometry_bounds.patch",
+      "sha256": "ed48008c851347cc31608b11a038b6daaffb010c26e275301810c8c128a62bb5",
+      "bytes": 760,
+      "remote_contents_verified": true
+    }
+  ],
+  "transport_record": "publication_transport.json",
+  "large_local_artifacts": "../deployment_4090_20261008/artifacts_manifest.json#large_local_artifacts",
+  "full_original_changed_files_verified": 570,
+  "merged_readme": true,
+  "all_original_paths_main_tree_verified": 571,
+  "inventory": "publication_inventory_verified.json",
+  "original_experiment_publication": "passed"
+}

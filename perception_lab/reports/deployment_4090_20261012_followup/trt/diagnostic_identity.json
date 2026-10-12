@@ -1,0 +1,22 @@
+{
+  "production": {
+    "third_party/Lidar_AI_Solution/CUDA-BEVFusion/build/libbevfusion_core.so": "4d9121b0bec7cc09e24a1302750d91c700d6ec0b8510e1d3525dff2735b1fa6b",
+    "third_party/Lidar_AI_Solution/CUDA-BEVFusion/build/libpybev.so": "47cae74f4c696f7ba2493c0630c2445296fb0a67e78428adb2a10bd22c687502",
+    "third_party/Lidar_AI_Solution/CUDA-BEVFusion/build/libcustom_layernorm.so": "bbc481c1e539ea5b01e5bdf9ca70382139940fd9048a308e98cea5b79ea55646",
+    "checkpoints/deployment_4090/nvidia/model/resnet50/build/camera.vtransform.plan": "6601cfc398270fb0e77af6bf93de8721181f193205b124db9adeb205152d20f8",
+    "checkpoints/deployment_4090/nvidia/model/resnet50/build/head.bbox.plan": "97da2a140a3867e696422f615b3a2153f37442cdc8b305d04990b0245349d311",
+    "checkpoints/deployment_4090/nvidia/model/resnet50/build/head.bbox.layernormplugin.plan": "3b58d7a6e1371fc943defb91b992872dc4d404bdac504b7e436cc3880a313053",
+    "checkpoints/deployment_4090/nvidia/model/resnet50/build/fuser.plan": "44808cd1218a3ea43b91513488e5dbf97156e435c8cd124b44b1b41a96456caa",
+    "checkpoints/deployment_4090/nvidia/model/resnet50/build/camera.backbone.plan": "45f3a77f353c809f3357103e7545c3bc0e08903b2ba83cf721056fc795bb016d",
+    "checkpoints/deployment_4090/nvidia/model/resnet50/head.bbox.layernormplugin.onnx": "1aac2d1eb5253d40d0973a220b069bd7417a6a08ac713dc29525d4c9f61b2b95",
+    "checkpoints/deployment_4090/nvidia/model/resnet50/camera.vtransform.onnx": "60f2f88706888dcc5447abf4010ce861b895b648f6745224e84ac788976c6059",
+    "checkpoints/deployment_4090/nvidia/model/resnet50/camera.backbone.onnx": "9c3316d8f111949dea7c8974bd2023073ef840cde10c3276b21a6c2bd7d83762",
+    "checkpoints/deployment_4090/nvidia/model/resnet50/head.bbox.onnx": "5f295ed6af274a4bfe88ee8fe02d27b3344e3a7253a13b02454471a66455efe4",
+    "checkpoints/deployment_4090/nvidia/model/resnet50/lidar.backbone.xyz.onnx": "e0f8a8f762fc946d1a8194bc086dcc86ee1290647b5efe407aa37fd11ef466f1",
+    "checkpoints/deployment_4090/nvidia/model/resnet50/fuser.onnx": "a5dc64e573d59e8494cf7bf261d9c7fe977c8082aa2eceddaa859d850f7f602c"
+  },
+  "loaded_core": "88b81e18f24d323709876494bcb4ac81deb060ec2f11f2870788d63c06f28fe2",
+  "repeats": 5,
+  "capture": true,
+  "timing": "diagnostic only; no performance claim"
+}

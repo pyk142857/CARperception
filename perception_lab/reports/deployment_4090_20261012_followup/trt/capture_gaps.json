@@ -1,0 +1,7 @@
+{
+  "raw_fuser": "Production fuser plan combines fusion+decoder; only combined middle exposed.",
+  "topk": "Marked-output diagnostic engine changes graph optimization; perturbation metrics govern attribution.",
+  "lidar_internal": "LiDAR voxelization and sparse convolution internals not captured; final LiDAR BEV captured.",
+  "pool_local": "Standalone production car_bev_pool_forward replay inputs saved with explicit captured TRT geometry; cross-backend module comparison requires reference replay.",
+  "timing": "All diagnostic capture/replay timings excluded from production performance."
+}

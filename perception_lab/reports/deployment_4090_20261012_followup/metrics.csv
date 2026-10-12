@@ -1,0 +1,10 @@
+scope,metric,value,unit,interpretation
+mini_val81_reference,mAP,0.5790331434,ratio,reused
+mini_val81_reference,NDS,0.5144708836,ratio,reused
+mini_val81_TRT,mAP,0.5764076609,ratio,reused
+mini_val81_TRT,NDS,0.5132377729,ratio,reused
+pooling_30_pairs,mean_saving,-0.035988233382,ms,no_stable_speedup
+Sparse4D_mini_val81,AMOTA,0.637566593,ratio,reused_verified
+Sparse4D_mini_val81,AMOTP,0.8195541182,m,reused_verified
+Sparse4D_mini_val81,IDS,16,count,reused_verified
+GaussianWorld_scene39,matched_GT,0,frames,blocked_data

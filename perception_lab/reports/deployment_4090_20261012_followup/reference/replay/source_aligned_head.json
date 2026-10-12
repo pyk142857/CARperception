@@ -1,0 +1,1424 @@
+[
+  {
+    "sample_token": "747aa46b9a4641fe90db05d97db2acea",
+    "case": "head.reference_upstream",
+    "common_source_count": 200,
+    "reference_only_sources": [],
+    "marked_trt_only_sources": [],
+    "marked_outputs_bitwise_equal_production": false,
+    "scope": "actual seed identity alignment to marked diagnostic graph, not proven production provenance",
+    "nodes": {
+      "reg": {
+        "passed": false,
+        "bitwise_equal": false,
+        "elements": 400,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 1,
+        "absolute_error": {
+          "p50": 0.015863418579101562,
+          "p95": 0.11538467407226488,
+          "p99": 0.33599945068359366,
+          "max": 0.5306320190429688
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.00019318505652961656,
+          "p95": 0.00370737009071237,
+          "p99": 0.011780065083102387,
+          "max": 0.05215151847042073
+        },
+        "reference_abs_le_001_elements": 0,
+        "near_zero_absolute_error": null,
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "height": {
+        "passed": true,
+        "bitwise_equal": false,
+        "elements": 200,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 0,
+        "absolute_error": {
+          "p50": 0.0056552886962890625,
+          "p95": 0.03133671283721923,
+          "p99": 0.0384565982222556,
+          "max": 0.06894111633300781
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.0069809476604455935,
+          "p95": 0.07472703337937237,
+          "p99": 0.28620884192124346,
+          "max": 0.7903128862476658
+        },
+        "reference_abs_le_001_elements": 0,
+        "near_zero_absolute_error": null,
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "dim": {
+        "passed": true,
+        "bitwise_equal": false,
+        "elements": 600,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 0,
+        "absolute_error": {
+          "p50": 0.0020164549350738525,
+          "p95": 0.014281073212623594,
+          "p99": 0.024229677915573084,
+          "max": 0.040326088666915894
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.004052259711830533,
+          "p95": 0.038118226240120796,
+          "p99": 0.08095693976582224,
+          "max": 0.2813450781511516
+        },
+        "reference_abs_le_001_elements": 0,
+        "near_zero_absolute_error": null,
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "rot": {
+        "passed": true,
+        "bitwise_equal": false,
+        "elements": 400,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 0,
+        "absolute_error": {
+          "p50": 0.0011311117559671402,
+          "p95": 0.01413924992084502,
+          "p99": 0.031103041432797896,
+          "max": 0.05354112386703491
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.006911484017911777,
+          "p95": 0.12332879008486491,
+          "p99": 0.32120687526344727,
+          "max": 1.0415192835038256
+        },
+        "reference_abs_le_001_elements": 4,
+        "near_zero_absolute_error": {
+          "p50": 0.0053701698780059814,
+          "p95": 0.010320621822029351,
+          "p99": 0.010824056584388017,
+          "max": 0.010949915274977684
+        },
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "vel": {
+        "passed": true,
+        "bitwise_equal": false,
+        "elements": 400,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 0,
+        "absolute_error": {
+          "p50": 0.0007566995918750763,
+          "p95": 0.008783687278628329,
+          "p99": 0.025883580297231618,
+          "max": 0.040557861328125
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.01025329058003816,
+          "p95": 0.1177622360694388,
+          "p99": 0.2401440364008393,
+          "max": 0.8539066503360025
+        },
+        "reference_abs_le_001_elements": 154,
+        "near_zero_absolute_error": {
+          "p50": 4.060915671288967e-05,
+          "p95": 0.002260586072225121,
+          "p99": 0.0044959337636828415,
+          "max": 0.0049294838681817055
+        },
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "score": {
+        "passed": true,
+        "bitwise_equal": false,
+        "elements": 2000,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 0,
+        "absolute_error": {
+          "p50": 0.0,
+          "p95": 7.01036304235457e-05,
+          "p99": 0.0017266282439231868,
+          "max": 0.005465209484100342
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.007781253140036989,
+          "p95": 0.030926907785292734,
+          "p99": 0.044659407021872724,
+          "max": 0.10616522195892387
+        },
+        "reference_abs_le_001_elements": 1890,
+        "near_zero_absolute_error": {
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 3.257936987210857e-06,
+          "max": 0.0009837858378887177
+        },
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      }
+    }
+  },
+  {
+    "sample_token": "747aa46b9a4641fe90db05d97db2acea",
+    "case": "head.trt_upstream",
+    "common_source_count": 200,
+    "reference_only_sources": [],
+    "marked_trt_only_sources": [],
+    "marked_outputs_bitwise_equal_production": false,
+    "scope": "actual seed identity alignment to marked diagnostic graph, not proven production provenance",
+    "nodes": {
+      "reg": {
+        "passed": false,
+        "bitwise_equal": false,
+        "elements": 400,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 1,
+        "absolute_error": {
+          "p50": 0.017381668090820312,
+          "p95": 0.15234584808349555,
+          "p99": 0.3429911041259762,
+          "max": 0.613739013671875
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.00021272552182250115,
+          "p95": 0.0038837123776890494,
+          "p99": 0.020527207380325607,
+          "max": 0.3394655016412725
+        },
+        "reference_abs_le_001_elements": 0,
+        "near_zero_absolute_error": null,
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "height": {
+        "passed": true,
+        "bitwise_equal": false,
+        "elements": 200,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 0,
+        "absolute_error": {
+          "p50": 0.005057379603385925,
+          "p95": 0.023884139955043782,
+          "p99": 0.0369334387779235,
+          "max": 0.07005763053894043
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.005571527530762928,
+          "p95": 0.0972268190166547,
+          "p99": 0.33694563698659413,
+          "max": 0.5812169402248176
+        },
+        "reference_abs_le_001_elements": 0,
+        "near_zero_absolute_error": null,
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "dim": {
+        "passed": true,
+        "bitwise_equal": false,
+        "elements": 600,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 0,
+        "absolute_error": {
+          "p50": 0.0018430352210998535,
+          "p95": 0.012468963861465442,
+          "p99": 0.024611989855766285,
+          "max": 0.046019673347473145
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.0040270264460245215,
+          "p95": 0.040737969091041146,
+          "p99": 0.10734320446397569,
+          "max": 0.34434049026672353
+        },
+        "reference_abs_le_001_elements": 0,
+        "near_zero_absolute_error": null,
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "rot": {
+        "passed": true,
+        "bitwise_equal": false,
+        "elements": 400,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 0,
+        "absolute_error": {
+          "p50": 0.0012980476021766663,
+          "p95": 0.014940041303634629,
+          "p99": 0.028394673168659165,
+          "max": 0.04197624325752258
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.006469917072650556,
+          "p95": 0.09250432908747121,
+          "p99": 0.3747668261721073,
+          "max": 0.606866935037371
+        },
+        "reference_abs_le_001_elements": 7,
+        "near_zero_absolute_error": {
+          "p50": 0.002175386995077133,
+          "p95": 0.007817932032048698,
+          "p99": 0.008876000456511973,
+          "max": 0.009140517562627792
+        },
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "vel": {
+        "passed": false,
+        "bitwise_equal": false,
+        "elements": 400,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 2,
+        "absolute_error": {
+          "p50": 0.0010175928473472595,
+          "p95": 0.018470337986946105,
+          "p99": 0.03982351973652837,
+          "max": 0.07204708456993103
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.011079752848079591,
+          "p95": 0.18105897496152917,
+          "p99": 0.508643953679582,
+          "max": 0.9224635250198806
+        },
+        "reference_abs_le_001_elements": 146,
+        "near_zero_absolute_error": {
+          "p50": 3.43772117048502e-05,
+          "p95": 0.0017514160135760903,
+          "p99": 0.005524489958770618,
+          "max": 0.010047035291790962
+        },
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "score": {
+        "passed": true,
+        "bitwise_equal": false,
+        "elements": 2000,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 0,
+        "absolute_error": {
+          "p50": 0.0,
+          "p95": 8.428138680756069e-05,
+          "p99": 0.0016125133633613585,
+          "max": 0.007645368576049805
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.007125400947056756,
+          "p95": 0.03311614490256065,
+          "p99": 0.04310768058594858,
+          "max": 0.051796978991839805
+        },
+        "reference_abs_le_001_elements": 1888,
+        "near_zero_absolute_error": {
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 1.1498003277665676e-06,
+          "max": 0.00023718387819826603
+        },
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      }
+    }
+  },
+  {
+    "sample_token": "b26e791522294bec90f86fd72226e35c",
+    "case": "head.reference_upstream",
+    "common_source_count": 200,
+    "reference_only_sources": [],
+    "marked_trt_only_sources": [],
+    "marked_outputs_bitwise_equal_production": false,
+    "scope": "actual seed identity alignment to marked diagnostic graph, not proven production provenance",
+    "nodes": {
+      "reg": {
+        "passed": false,
+        "bitwise_equal": false,
+        "elements": 400,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 2,
+        "absolute_error": {
+          "p50": 0.017871856689453125,
+          "p95": 0.21809883117675768,
+          "p99": 0.6308857917785642,
+          "max": 0.830078125
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.00019644928914766294,
+          "p95": 0.0023401296803056636,
+          "p99": 0.007966092814862397,
+          "max": 0.030872823217478428
+        },
+        "reference_abs_le_001_elements": 0,
+        "near_zero_absolute_error": null,
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "height": {
+        "passed": true,
+        "bitwise_equal": false,
+        "elements": 200,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 0,
+        "absolute_error": {
+          "p50": 0.003399468958377838,
+          "p95": 0.02001256942749022,
+          "p99": 0.05402000427246088,
+          "max": 0.07154321670532227
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.004568799166188874,
+          "p95": 0.05747220674830921,
+          "p99": 0.16750821261787247,
+          "max": 0.5208489698432399
+        },
+        "reference_abs_le_001_elements": 1,
+        "near_zero_absolute_error": {
+          "p50": 0.0008975863456726074,
+          "p95": 0.0008975863456726074,
+          "p99": 0.0008975863456726074,
+          "max": 0.0008975863456726074
+        },
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "dim": {
+        "passed": true,
+        "bitwise_equal": false,
+        "elements": 600,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 0,
+        "absolute_error": {
+          "p50": 0.002073138952255249,
+          "p95": 0.011083912849426229,
+          "p99": 0.022318767458200453,
+          "max": 0.05112797021865845
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.003878106035913001,
+          "p95": 0.04552833026057783,
+          "p99": 0.12896092019080915,
+          "max": 0.4517927988246202
+        },
+        "reference_abs_le_001_elements": 1,
+        "near_zero_absolute_error": {
+          "p50": 0.001648634672164917,
+          "p95": 0.001648634672164917,
+          "p99": 0.001648634672164917,
+          "max": 0.001648634672164917
+        },
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "rot": {
+        "passed": true,
+        "bitwise_equal": false,
+        "elements": 400,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 0,
+        "absolute_error": {
+          "p50": 0.0010908842086791992,
+          "p95": 0.012414885684847825,
+          "p99": 0.022304813265800468,
+          "max": 0.049075592309236526
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.0022860400318765886,
+          "p95": 0.050463819645121984,
+          "p99": 0.2383664188413119,
+          "max": 1.9998644353093038
+        },
+        "reference_abs_le_001_elements": 3,
+        "near_zero_absolute_error": {
+          "p50": 0.0006439797580242157,
+          "p95": 0.004264398664236068,
+          "p99": 0.004586213678121566,
+          "max": 0.004666667431592941
+        },
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "vel": {
+        "passed": false,
+        "bitwise_equal": false,
+        "elements": 400,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 1,
+        "absolute_error": {
+          "p50": 5.07147196913138e-05,
+          "p95": 0.009844981133937763,
+          "p99": 0.04160654217004776,
+          "max": 0.07484352588653564
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.009354477411347664,
+          "p95": 0.17622943191879617,
+          "p99": 0.2875291700367747,
+          "max": 0.42405390671920873
+        },
+        "reference_abs_le_001_elements": 246,
+        "near_zero_absolute_error": {
+          "p50": 9.104837772611063e-09,
+          "p95": 0.0003430517390370369,
+          "p99": 0.0036984615493565933,
+          "max": 0.00656521413475275
+        },
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "score": {
+        "passed": true,
+        "bitwise_equal": false,
+        "elements": 2000,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 0,
+        "absolute_error": {
+          "p50": 0.0,
+          "p95": 0.0003959002438932653,
+          "p99": 0.0022339755296707153,
+          "max": 0.011273294687271118
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.0029421592091675667,
+          "p95": 0.016628624220018377,
+          "p99": 0.036587829444090926,
+          "max": 0.07626642166696357
+        },
+        "reference_abs_le_001_elements": 1856,
+        "near_zero_absolute_error": {
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 5.0746253691614696e-06,
+          "max": 0.00040394533425569534
+        },
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      }
+    }
+  },
+  {
+    "sample_token": "b26e791522294bec90f86fd72226e35c",
+    "case": "head.trt_upstream",
+    "common_source_count": 200,
+    "reference_only_sources": [],
+    "marked_trt_only_sources": [],
+    "marked_outputs_bitwise_equal_production": false,
+    "scope": "actual seed identity alignment to marked diagnostic graph, not proven production provenance",
+    "nodes": {
+      "reg": {
+        "passed": false,
+        "bitwise_equal": false,
+        "elements": 400,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 3,
+        "absolute_error": {
+          "p50": 0.0184326171875,
+          "p95": 0.1811576843261705,
+          "p99": 0.6751807403564446,
+          "max": 0.837554931640625
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.00020107069146072984,
+          "p95": 0.0022920937987744227,
+          "p99": 0.01128322328635579,
+          "max": 0.04315261206917617
+        },
+        "reference_abs_le_001_elements": 0,
+        "near_zero_absolute_error": null,
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "height": {
+        "passed": false,
+        "bitwise_equal": false,
+        "elements": 200,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 2,
+        "absolute_error": {
+          "p50": 0.003735154867172241,
+          "p95": 0.02932100892066955,
+          "p99": 0.056071063280105506,
+          "max": 0.09486651420593262
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.005583736758669395,
+          "p95": 0.04553615851614204,
+          "p99": 0.14626319475550906,
+          "max": 0.3143672627571343
+        },
+        "reference_abs_le_001_elements": 1,
+        "near_zero_absolute_error": {
+          "p50": 0.004772275686264038,
+          "p95": 0.004772275686264038,
+          "p99": 0.004772275686264038,
+          "max": 0.004772275686264038
+        },
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "dim": {
+        "passed": true,
+        "bitwise_equal": false,
+        "elements": 600,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 0,
+        "absolute_error": {
+          "p50": 0.0019477158784866333,
+          "p95": 0.012829861044883723,
+          "p99": 0.02912445306777953,
+          "max": 0.04076027870178223
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.004446891846516804,
+          "p95": 0.04933675419514384,
+          "p99": 0.13325419068679692,
+          "max": 0.48213030272339946
+        },
+        "reference_abs_le_001_elements": 0,
+        "near_zero_absolute_error": null,
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "rot": {
+        "passed": true,
+        "bitwise_equal": false,
+        "elements": 400,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 0,
+        "absolute_error": {
+          "p50": 0.0010993145406246185,
+          "p95": 0.012683476228266948,
+          "p99": 0.02215036138892173,
+          "max": 0.04365730285644531
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.002203627322547211,
+          "p95": 0.04429048772819989,
+          "p99": 0.18757142577199049,
+          "max": 1.2653225124646343
+        },
+        "reference_abs_le_001_elements": 3,
+        "near_zero_absolute_error": {
+          "p50": 0.0016118772327899933,
+          "p95": 0.012579289078712462,
+          "p99": 0.013554170131683349,
+          "max": 0.013797890394926071
+        },
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "vel": {
+        "passed": true,
+        "bitwise_equal": false,
+        "elements": 400,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 0,
+        "absolute_error": {
+          "p50": 4.2818966903723776e-05,
+          "p95": 0.010263840854167936,
+          "p99": 0.031810979843139645,
+          "max": 0.06105375289916992
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.009526683665129246,
+          "p95": 0.1588276840491206,
+          "p99": 0.34337041402055296,
+          "max": 0.5959437737300982
+        },
+        "reference_abs_le_001_elements": 245,
+        "near_zero_absolute_error": {
+          "p50": 9.104837772611063e-09,
+          "p95": 0.0003063693120566308,
+          "p99": 0.002256399961188436,
+          "max": 0.006909727118909359
+        },
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "score": {
+        "passed": true,
+        "bitwise_equal": false,
+        "elements": 2000,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 0,
+        "absolute_error": {
+          "p50": 0.0,
+          "p95": 0.0003267478197813034,
+          "p99": 0.002269266843795776,
+          "max": 0.01041431725025177
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.0024635822973463474,
+          "p95": 0.01969816150082444,
+          "p99": 0.043641547805372084,
+          "max": 0.05797806724290938
+        },
+        "reference_abs_le_001_elements": 1857,
+        "near_zero_absolute_error": {
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 8.539150003344067e-06,
+          "max": 0.0006313333287835121
+        },
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      }
+    }
+  },
+  {
+    "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+    "case": "head.reference_upstream",
+    "common_source_count": 199,
+    "reference_only_sources": [
+      285517
+    ],
+    "marked_trt_only_sources": [
+      310664
+    ],
+    "marked_outputs_bitwise_equal_production": false,
+    "scope": "actual seed identity alignment to marked diagnostic graph, not proven production provenance",
+    "nodes": {
+      "reg": {
+        "passed": false,
+        "bitwise_equal": false,
+        "elements": 398,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 1,
+        "absolute_error": {
+          "p50": 0.021938323974609375,
+          "p95": 0.18837814331054686,
+          "p99": 0.5326639938354485,
+          "max": 0.9696884155273438
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.00020808819618947888,
+          "p95": 0.0019912056375164418,
+          "p99": 0.00892215003672883,
+          "max": 0.035289718912000174
+        },
+        "reference_abs_le_001_elements": 0,
+        "near_zero_absolute_error": null,
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "height": {
+        "passed": false,
+        "bitwise_equal": false,
+        "elements": 199,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 4,
+        "absolute_error": {
+          "p50": 0.006158351898193359,
+          "p95": 0.05013242661952972,
+          "p99": 0.08749938309192665,
+          "max": 0.4928622245788574
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.01061521672554424,
+          "p95": 0.12269727264734216,
+          "p99": 0.3463848878424471,
+          "max": 0.9434625258816396
+        },
+        "reference_abs_le_001_elements": 2,
+        "near_zero_absolute_error": {
+          "p50": 0.002751864492893219,
+          "p95": 0.0032283924520015717,
+          "p99": 0.003270750492811203,
+          "max": 0.003281340003013611
+        },
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "dim": {
+        "passed": false,
+        "bitwise_equal": false,
+        "elements": 597,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 10,
+        "absolute_error": {
+          "p50": 0.0030460357666015625,
+          "p95": 0.025914633274078364,
+          "p99": 0.1026631069183344,
+          "max": 0.2454432249069214
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.007390140441898707,
+          "p95": 0.07431259213509663,
+          "p99": 0.2828699413862475,
+          "max": 1.1279155763916182
+        },
+        "reference_abs_le_001_elements": 2,
+        "near_zero_absolute_error": {
+          "p50": 0.019252434372901917,
+          "p95": 0.033037714660167694,
+          "p99": 0.03426307290792465,
+          "max": 0.03456941246986389
+        },
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "rot": {
+        "passed": false,
+        "bitwise_equal": false,
+        "elements": 398,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 4,
+        "absolute_error": {
+          "p50": 0.0020214710384607315,
+          "p95": 0.020725439861416787,
+          "p99": 0.04173100624233445,
+          "max": 0.11722265928983688
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.012751878634354426,
+          "p95": 0.19372794054333434,
+          "p99": 0.6469599765215144,
+          "max": 1.7825629822471745
+        },
+        "reference_abs_le_001_elements": 17,
+        "near_zero_absolute_error": {
+          "p50": 0.0024580247700214386,
+          "p95": 0.007583052664995192,
+          "p99": 0.009396979361772537,
+          "max": 0.009850461035966873
+        },
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "vel": {
+        "passed": false,
+        "bitwise_equal": false,
+        "elements": 398,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 5,
+        "absolute_error": {
+          "p50": 0.0007332894019782543,
+          "p95": 0.02176608145236968,
+          "p99": 0.08571331948041915,
+          "max": 0.3987050950527191
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.02351297641245459,
+          "p95": 0.26508299664287244,
+          "p99": 0.481993134802081,
+          "max": 1.3132045923946893
+        },
+        "reference_abs_le_001_elements": 190,
+        "near_zero_absolute_error": {
+          "p50": 2.7169704026164254e-05,
+          "p95": 0.001221220742445437,
+          "p99": 0.0032671368541195883,
+          "max": 0.005200775107368827
+        },
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "score": {
+        "passed": true,
+        "bitwise_equal": false,
+        "elements": 1990,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 0,
+        "absolute_error": {
+          "p50": 0.0,
+          "p95": 0.00020712518598884345,
+          "p99": 0.0012850722484290598,
+          "max": 0.00986967608332634
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.006116513169040456,
+          "p95": 0.048613704057640074,
+          "p99": 0.11408574844077088,
+          "max": 0.4338682643359953
+        },
+        "reference_abs_le_001_elements": 1866,
+        "near_zero_absolute_error": {
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 1.217985118273642e-05,
+          "max": 0.002401934936642647
+        },
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      }
+    }
+  },
+  {
+    "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+    "case": "head.trt_upstream",
+    "common_source_count": 199,
+    "reference_only_sources": [
+      180479
+    ],
+    "marked_trt_only_sources": [
+      180298
+    ],
+    "marked_outputs_bitwise_equal_production": false,
+    "scope": "actual seed identity alignment to marked diagnostic graph, not proven production provenance",
+    "nodes": {
+      "reg": {
+        "passed": true,
+        "bitwise_equal": false,
+        "elements": 398,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 0,
+        "absolute_error": {
+          "p50": 0.021331787109375,
+          "p95": 0.11396560668945306,
+          "p99": 0.41198280334472526,
+          "max": 1.1053237915039062
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.00021337067368093124,
+          "p95": 0.0011093928184077854,
+          "p99": 0.004900338079291094,
+          "max": 0.028507308970885065
+        },
+        "reference_abs_le_001_elements": 0,
+        "near_zero_absolute_error": null,
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "height": {
+        "passed": false,
+        "bitwise_equal": false,
+        "elements": 199,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 2,
+        "absolute_error": {
+          "p50": 0.006913661956787109,
+          "p95": 0.037633791565895074,
+          "p99": 0.05778160870075229,
+          "max": 0.06207609176635742
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.009473810720437686,
+          "p95": 0.1296644426387966,
+          "p99": 0.25413718295211024,
+          "max": 4.047004527308638
+        },
+        "reference_abs_le_001_elements": 1,
+        "near_zero_absolute_error": {
+          "p50": 0.0007656067609786987,
+          "p95": 0.0007656067609786987,
+          "p99": 0.0007656067609786987,
+          "max": 0.0007656067609786987
+        },
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "dim": {
+        "passed": false,
+        "bitwise_equal": false,
+        "elements": 597,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 2,
+        "absolute_error": {
+          "p50": 0.004234731197357178,
+          "p95": 0.020683556795120222,
+          "p99": 0.034160466194152805,
+          "max": 0.10198885202407837
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.009010668286571943,
+          "p95": 0.07337972392939313,
+          "p99": 0.3086527883523516,
+          "max": 0.8179135255593047
+        },
+        "reference_abs_le_001_elements": 2,
+        "near_zero_absolute_error": {
+          "p50": 0.0069372206926345825,
+          "p95": 0.008454962074756623,
+          "p99": 0.008589872419834136,
+          "max": 0.008623600006103516
+        },
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "rot": {
+        "passed": false,
+        "bitwise_equal": false,
+        "elements": 398,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 3,
+        "absolute_error": {
+          "p50": 0.0027663111686706543,
+          "p95": 0.02909388095140455,
+          "p99": 0.05503001987934095,
+          "max": 0.09116847813129425
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.016236734558744286,
+          "p95": 0.28581797200612913,
+          "p99": 0.8421297746510903,
+          "max": 1.518167382887129
+        },
+        "reference_abs_le_001_elements": 13,
+        "near_zero_absolute_error": {
+          "p50": 0.0047509558498859406,
+          "p95": 0.018381326273083663,
+          "p99": 0.025962635651230796,
+          "max": 0.027857962995767593
+        },
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "vel": {
+        "passed": false,
+        "bitwise_equal": false,
+        "elements": 398,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 1,
+        "absolute_error": {
+          "p50": 0.0006040683947503567,
+          "p95": 0.022207592055201498,
+          "p99": 0.05107380092143995,
+          "max": 0.07620346546173096
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.024102287880381858,
+          "p95": 0.3575137651800871,
+          "p99": 0.6143777586675965,
+          "max": 2.1687187314233225
+        },
+        "reference_abs_le_001_elements": 195,
+        "near_zero_absolute_error": {
+          "p50": 2.6054010959342122e-05,
+          "p95": 0.0016570447944104618,
+          "p99": 0.0052901339455274895,
+          "max": 0.012720396975055337
+        },
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "score": {
+        "passed": true,
+        "bitwise_equal": false,
+        "elements": 1990,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 0,
+        "absolute_error": {
+          "p50": 0.0,
+          "p95": 0.00019606254063546608,
+          "p99": 0.0016031108051538464,
+          "max": 0.005141139030456543
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.006335950791503327,
+          "p95": 0.04208300778592845,
+          "p99": 0.06248993030804677,
+          "max": 0.1341300288819667
+        },
+        "reference_abs_le_001_elements": 1864,
+        "near_zero_absolute_error": {
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 1.2577472225529982e-05,
+          "max": 0.0011218339204788208
+        },
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      }
+    }
+  },
+  {
+    "sample_token": "e0845f5322254dafadbbed75aaa07969",
+    "case": "head.reference_upstream",
+    "common_source_count": 199,
+    "reference_only_sources": [
+      282190
+    ],
+    "marked_trt_only_sources": [
+      276106
+    ],
+    "marked_outputs_bitwise_equal_production": false,
+    "scope": "actual seed identity alignment to marked diagnostic graph, not proven production provenance",
+    "nodes": {
+      "reg": {
+        "passed": false,
+        "bitwise_equal": false,
+        "elements": 398,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 3,
+        "absolute_error": {
+          "p50": 0.02182769775390625,
+          "p95": 0.32285041809082005,
+          "p99": 0.7184736251830989,
+          "max": 1.4786605834960938
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.00022197695812314222,
+          "p95": 0.002385510968000169,
+          "p99": 0.018553464486821644,
+          "max": 0.10081972617896953
+        },
+        "reference_abs_le_001_elements": 0,
+        "near_zero_absolute_error": null,
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "height": {
+        "passed": false,
+        "bitwise_equal": false,
+        "elements": 199,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 1,
+        "absolute_error": {
+          "p50": 0.005994021892547607,
+          "p95": 0.037406563758850084,
+          "p99": 0.06132631063461313,
+          "max": 0.0883793830871582
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.0066730534082166185,
+          "p95": 0.10758363143609222,
+          "p99": 0.3866400934934567,
+          "max": 0.796133669940791
+        },
+        "reference_abs_le_001_elements": 0,
+        "near_zero_absolute_error": null,
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "dim": {
+        "passed": false,
+        "bitwise_equal": false,
+        "elements": 597,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 2,
+        "absolute_error": {
+          "p50": 0.0031434297561645508,
+          "p95": 0.020263528823852534,
+          "p99": 0.04278354167938216,
+          "max": 0.08865547180175781
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.007564148531903855,
+          "p95": 0.08328596040171703,
+          "p99": 0.17959704590898437,
+          "max": 2.0240144287601205
+        },
+        "reference_abs_le_001_elements": 4,
+        "near_zero_absolute_error": {
+          "p50": 0.0018516629934310913,
+          "p95": 0.002218012511730194,
+          "p99": 0.0022689351439476014,
+          "max": 0.002281665802001953
+        },
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "rot": {
+        "passed": true,
+        "bitwise_equal": false,
+        "elements": 398,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 0,
+        "absolute_error": {
+          "p50": 0.0011740624904632568,
+          "p95": 0.01480951085686683,
+          "p99": 0.031473123431205646,
+          "max": 0.05761450529098511
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.006536211441753115,
+          "p95": 0.10174210113884355,
+          "p99": 0.3864493301409582,
+          "max": 0.9749220167489722
+        },
+        "reference_abs_le_001_elements": 17,
+        "near_zero_absolute_error": {
+          "p50": 0.002411339432001114,
+          "p95": 0.007403777167201031,
+          "p99": 0.017023505493998524,
+          "max": 0.0194284375756979
+        },
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "vel": {
+        "passed": false,
+        "bitwise_equal": false,
+        "elements": 398,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 2,
+        "absolute_error": {
+          "p50": 0.000600842759013176,
+          "p95": 0.017068062722682947,
+          "p99": 0.041628339290618696,
+          "max": 0.0898142158985138
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.013754783843111315,
+          "p95": 0.19373551312220694,
+          "p99": 0.43509403367318306,
+          "max": 0.5719517421002718
+        },
+        "reference_abs_le_001_elements": 191,
+        "near_zero_absolute_error": {
+          "p50": 9.104837772611063e-09,
+          "p95": 0.0011211265809834003,
+          "p99": 0.0037944348761811833,
+          "max": 0.006967232096940279
+        },
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "score": {
+        "passed": true,
+        "bitwise_equal": false,
+        "elements": 1990,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 0,
+        "absolute_error": {
+          "p50": 0.0,
+          "p95": 0.00020020082592964153,
+          "p99": 0.0015038928389549207,
+          "max": 0.016004741191864014
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.004891611551228414,
+          "p95": 0.025148942902058158,
+          "p99": 0.06286200109215967,
+          "max": 0.06946570916391268
+        },
+        "reference_abs_le_001_elements": 1874,
+        "near_zero_absolute_error": {
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 1.9235611689509813e-05,
+          "max": 0.001157635822892189
+        },
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      }
+    }
+  },
+  {
+    "sample_token": "e0845f5322254dafadbbed75aaa07969",
+    "case": "head.trt_upstream",
+    "common_source_count": 200,
+    "reference_only_sources": [],
+    "marked_trt_only_sources": [],
+    "marked_outputs_bitwise_equal_production": false,
+    "scope": "actual seed identity alignment to marked diagnostic graph, not proven production provenance",
+    "nodes": {
+      "reg": {
+        "passed": false,
+        "bitwise_equal": false,
+        "elements": 400,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 3,
+        "absolute_error": {
+          "p50": 0.021240234375,
+          "p95": 0.21837196350097474,
+          "p99": 0.6297566223144518,
+          "max": 1.04290771484375
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.00020783933374045116,
+          "p95": 0.001955440728021463,
+          "p99": 0.010578084052129143,
+          "max": 0.15217358459398453
+        },
+        "reference_abs_le_001_elements": 0,
+        "near_zero_absolute_error": null,
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "height": {
+        "passed": false,
+        "bitwise_equal": false,
+        "elements": 200,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 3,
+        "absolute_error": {
+          "p50": 0.005704641342163086,
+          "p95": 0.03722654581069946,
+          "p99": 0.0739881014823912,
+          "max": 0.0919276773929596
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.0059662492095470645,
+          "p95": 0.09430684803763162,
+          "p99": 0.4202820574683655,
+          "max": 1.0275671932012116
+        },
+        "reference_abs_le_001_elements": 1,
+        "near_zero_absolute_error": {
+          "p50": 0.005444258451461792,
+          "p95": 0.005444258451461792,
+          "p99": 0.005444258451461792,
+          "max": 0.005444258451461792
+        },
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "dim": {
+        "passed": false,
+        "bitwise_equal": false,
+        "elements": 600,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 1,
+        "absolute_error": {
+          "p50": 0.002784162759780884,
+          "p95": 0.016552299261093112,
+          "p99": 0.0443972587585449,
+          "max": 0.06971526145935059
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.006711274740928744,
+          "p95": 0.05886984454629611,
+          "p99": 0.21124936204621445,
+          "max": 0.38241202097409543
+        },
+        "reference_abs_le_001_elements": 3,
+        "near_zero_absolute_error": {
+          "p50": 0.0034600645303726196,
+          "p95": 0.004524646699428558,
+          "p99": 0.004619276225566864,
+          "max": 0.00464293360710144
+        },
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "rot": {
+        "passed": false,
+        "bitwise_equal": false,
+        "elements": 400,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 1,
+        "absolute_error": {
+          "p50": 0.0009017679840326309,
+          "p95": 0.01247761696577069,
+          "p99": 0.032249122485518415,
+          "max": 0.08438107371330261
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.005632812014524895,
+          "p95": 0.08781430125481911,
+          "p99": 0.21253319161793055,
+          "max": 0.8451550715357581
+        },
+        "reference_abs_le_001_elements": 13,
+        "near_zero_absolute_error": {
+          "p50": 0.0012059751898050308,
+          "p95": 0.007599689811468122,
+          "p99": 0.008430920690298079,
+          "max": 0.00863872841000557
+        },
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "vel": {
+        "passed": false,
+        "bitwise_equal": false,
+        "elements": 400,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 1,
+        "absolute_error": {
+          "p50": 0.0004336558049544692,
+          "p95": 0.012642560154199598,
+          "p99": 0.03632580347359171,
+          "max": 0.06636732816696167
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.011634662787221813,
+          "p95": 0.1342526478477321,
+          "p99": 0.5650010435284623,
+          "max": 1.4500597583424744
+        },
+        "reference_abs_le_001_elements": 196,
+        "near_zero_absolute_error": {
+          "p50": 6.371396011672914e-06,
+          "p95": 0.0006974832504056394,
+          "p99": 0.002187081308511552,
+          "max": 0.003191164927557111
+        },
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      },
+      "score": {
+        "passed": true,
+        "bitwise_equal": false,
+        "elements": 2000,
+        "nonfinite_elements": 0,
+        "exceeded_elements": 0,
+        "absolute_error": {
+          "p50": 0.0,
+          "p95": 0.00021081529557704905,
+          "p99": 0.0019274410605430597,
+          "max": 0.005277186632156372
+        },
+        "relative_error_abs_gt001": {
+          "p50": 0.005026332747072328,
+          "p95": 0.043480188966646294,
+          "p99": 0.07858844686604331,
+          "max": 0.10225556733265892
+        },
+        "reference_abs_le_001_elements": 1885,
+        "near_zero_absolute_error": {
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 1.740368083119457e-05,
+          "max": 0.0005435403436422348
+        },
+        "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference); nonfinite fails",
+        "atol": 0.05,
+        "rtol": 0.02
+      }
+    }
+  }
+]

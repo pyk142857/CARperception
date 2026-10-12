@@ -1,0 +1,13 @@
+{
+  "path": "perception_lab/third_party/Lidar_AI_Solution/CUDA-BEVFusion/src/plugins/custom_layernorm.cu",
+  "sha256": "1ae326b38ee0cc2718fb5b2234509dc9fca8b1b0061bc0f44fa859ab73fb7b2f",
+  "scope": "read existing production plugin source; no new plugin modification",
+  "half_path": {
+    "sum_and_squared_sum_accumulation": "float32",
+    "mean_rstd": "float32",
+    "input_weights_bias_storage": "float16",
+    "affine_output": "normalize*weight computed float32, cast half before half bias addition"
+  },
+  "not_a_new_fix": "LayerNorm plugin was already selected in ce24482; no claim of new FP32 accumulation optimization",
+  "needs_evidence_before_change": true
+}

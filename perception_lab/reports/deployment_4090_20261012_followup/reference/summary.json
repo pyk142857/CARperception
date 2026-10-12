@@ -1,0 +1,95 @@
+{
+  "identity": {
+    "checkpoint_sha256": "4006d4b4cb74f16d1e1d1be2689eae4418fe4050bce07394f202fae2e4648376",
+    "upstream_commit": "db75150717a9462cb60241e36ba28d65f6908607",
+    "runner_sha256": "b4d55f6fa88dda8339dc118690a36bd03e54b26ac17680267194924d29806081",
+    "config_sha256": "12b17deee2ddd122f3cdd13350bb35f667220d4986c55ff9b6c74f938fdb280a",
+    "config_hierarchy": {
+      "/home/minglei/Desktop/CAR/perception_lab/third_party/bevfusion_4090/configs/nuscenes/det/transfusion/secfpn/camera+lidar/resnet50/convfuser.yaml": "cb7bbbc25e8fdf67c2e914b11661828b684312300deb2afc410793192713e04b",
+      "/home/minglei/Desktop/CAR/perception_lab/third_party/bevfusion_4090/configs/nuscenes/det/transfusion/secfpn/camera+lidar/resnet50/default.yaml": "7ede0e925193d439f7cb14c57bf5c7785b002043cd4a99a2b4ac89418496d305",
+      "/home/minglei/Desktop/CAR/perception_lab/third_party/bevfusion_4090/configs/nuscenes/det/transfusion/secfpn/camera+lidar/default.yaml": "ea024e79ec783224e8af44df3fb8f01612042e7db6d99c4c12fa91e70b044245",
+      "/home/minglei/Desktop/CAR/perception_lab/third_party/bevfusion_4090/configs/nuscenes/det/transfusion/secfpn/default.yaml": "b92f9e99cf5c99cbf28ac80790eb12bb202699fb7dc77b0237639f386d13ec00",
+      "/home/minglei/Desktop/CAR/perception_lab/third_party/bevfusion_4090/configs/nuscenes/det/transfusion/default.yaml": "772e0abef1a86a42f28511ab208dda3b0e3860eb2bbb4e42d70e04fe53b3c2d9",
+      "/home/minglei/Desktop/CAR/perception_lab/third_party/bevfusion_4090/configs/nuscenes/det/default.yaml": "beb347b03f6c9b7882b911aa99ecc1c2204b6b63e8e1d2fa63bc6d8e49855dce",
+      "/home/minglei/Desktop/CAR/perception_lab/third_party/bevfusion_4090/configs/nuscenes/default.yaml": "e0ca3942fc6c47e360dcee8053ccb1ff980b25ceb7c8476622d1ce99865464ce",
+      "/home/minglei/Desktop/CAR/perception_lab/third_party/bevfusion_4090/configs/default.yaml": "20bc613b189b066151204b68d9033bbe270ae5877b248daa7c4097642cefef9c"
+    },
+    "camera_order": [
+      "CAM_FRONT",
+      "CAM_FRONT_RIGHT",
+      "CAM_FRONT_LEFT",
+      "CAM_BACK",
+      "CAM_BACK_LEFT",
+      "CAM_BACK_RIGHT"
+    ],
+    "sweeps": 9,
+    "torch_version": "1.13.1+cu117",
+    "cuda_version": "11.7",
+    "device": "NVIDIA GeForce RTX 4090",
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": false,
+    "deterministic_algorithms": false,
+    "allow_tf32_matmul": false,
+    "allow_tf32_cudnn": true,
+    "source_files": {
+      "mmdet3d/models/heads/bbox/transfusion.py": "2f7118f92d4149d58c1c674bd4ef5648519eb8e3cff8debd1d699084d8eb4481",
+      "mmdet3d/core/bbox/coders/transfusion_bbox_coder.py": "76d06dcae029e07c6b3ef233d236d68d20ed85147cfc2e6c2204d2250eb407d7",
+      "mmdet3d/models/vtransforms/base.py": "210de50183f53853a7cd8b8513877e0fa36065119241122f1e7d8bf0f37d5ab3",
+      "mmdet3d/models/vtransforms/depth_lss.py": "c700bf1da3657e8588549bf4a524f51814951e39049e8fc5b799d796b192bad5"
+    },
+    "production_config_unchanged": true,
+    "warmup_per_token": 3,
+    "repeat_per_token": 5,
+    "performance_measurement": false,
+    "instrumentation": "CPU copies/hooks synchronize execution; no wall-clock speed claim"
+  },
+  "tokens": [
+    {
+      "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+      "report": "ca9a282c9e77460f8360f564131a8af5.json",
+      "all_nodes_bitwise_equal": false,
+      "all_nodes_within_tensor_tolerance": true,
+      "source_aligned_native_max_abs": 0.004932403564453125
+    },
+    {
+      "sample_token": "747aa46b9a4641fe90db05d97db2acea",
+      "report": "747aa46b9a4641fe90db05d97db2acea.json",
+      "all_nodes_bitwise_equal": false,
+      "all_nodes_within_tensor_tolerance": false,
+      "source_aligned_native_max_abs": 6.282009124755859
+    },
+    {
+      "sample_token": "e0845f5322254dafadbbed75aaa07969",
+      "report": "e0845f5322254dafadbbed75aaa07969.json",
+      "all_nodes_bitwise_equal": false,
+      "all_nodes_within_tensor_tolerance": false,
+      "source_aligned_native_max_abs": 0.0722503662109375
+    },
+    {
+      "sample_token": "b26e791522294bec90f86fd72226e35c",
+      "report": "b26e791522294bec90f86fd72226e35c.json",
+      "all_nodes_bitwise_equal": false,
+      "all_nodes_within_tensor_tolerance": false,
+      "source_aligned_native_max_abs": 6.278627872467041
+    }
+  ],
+  "node_layouts": {
+    "camera.feature": "NHWC; six cameras folded into N",
+    "camera.depth": "NDHW",
+    "camera.sparse_depth": "N1HW",
+    "camera.bev_pool": "BCZXY; collapse Z into C to compare TRT NCHW",
+    "camera.view_transform": "NCHW",
+    "lidar.bev": "NCHW",
+    "fuser.bev": "NCHW",
+    "head.input": "NCHW; TRT fuser middle/head input",
+    "query.pre_topk_scores": "B,(class*HW+spatial index); after local maximum suppression",
+    "query.source_indices": "actual argsort class*HW+spatial index; no row identity inference",
+    "head.*": "BCQ; score includes seed class mask and query heatmap score",
+    "output.native_boxes": "Nx9 lidar bottom-center xyz, dimensions, yaw, vx, vy"
+  },
+  "gaps": [
+    "No TRT raw-fuser binding without debug export",
+    "Geometry per-interval statistics derived from reference integer pooling coordinates; TRT ranks differ by representation"
+  ],
+  "comparison_scope": "each repeat versus repeat0; all finite elements use fixed tensor tolerances"
+}

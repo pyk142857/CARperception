@@ -1,0 +1,60 @@
+[10/12/2026-12:53:44] [I] 
+[10/12/2026-12:53:44] [I] TensorRT version: 8.6.1
+[10/12/2026-12:53:44] [I] Loading standard plugins
+[10/12/2026-12:53:44] [I] Loading supplied plugin library: /home/minglei/Desktop/CAR/perception_lab/third_party/Lidar_AI_Solution/CUDA-BEVFusion/build/libcustom_layernorm.so
+[10/12/2026-12:53:44] [I] [TRT] [MemUsageChange] Init CUDA: CPU +12, GPU +0, now: CPU 21, GPU 4418 (MiB)
+[10/12/2026-12:53:49] [I] [TRT] [MemUsageChange] Init builder kernel library: CPU +1444, GPU +264, now: CPU 1542, GPU 4687 (MiB)
+[10/12/2026-12:53:49] [I] Start parsing network model.
+[10/12/2026-12:53:49] [I] [TRT] ----------------------------------------------------------------
+[10/12/2026-12:53:49] [I] [TRT] Input filename:   /home/minglei/Desktop/CAR/perception_lab/runs/deployment_4090_20261012_followup/trt/head.diagnostic.onnx
+[10/12/2026-12:53:49] [I] [TRT] ONNX IR version:  0.0.6
+[10/12/2026-12:53:49] [I] [TRT] Opset version:    13
+[10/12/2026-12:53:49] [I] [TRT] Producer name:    pytorch
+[10/12/2026-12:53:49] [I] [TRT] Producer version: 1.9
+[10/12/2026-12:53:49] [I] [TRT] Domain:           
+[10/12/2026-12:53:49] [I] [TRT] Model version:    0
+[10/12/2026-12:53:49] [I] [TRT] Doc string:       
+[10/12/2026-12:53:49] [I] [TRT] ----------------------------------------------------------------
+[10/12/2026-12:53:49] [W] [TRT] onnx2trt_utils.cpp:374: Your ONNX model has been generated with INT64 weights, while TensorRT does not natively support INT64. Attempting to cast down to INT32.
+[10/12/2026-12:53:49] [W] [TRT] onnx2trt_utils.cpp:400: One or more weights outside the range of INT32 was clamped
+[10/12/2026-12:53:49] [I] [TRT] No importer registered for op: CustomLayerNormalization. Attempting to import as plugin.
+[10/12/2026-12:53:49] [I] [TRT] Searching for plugin: CustomLayerNormalization, plugin_version: 1, plugin_namespace: 
+epsilon = 1e-05, axis=-1
+[10/12/2026-12:53:49] [I] [TRT] Successfully created plugin: CustomLayerNormalization
+[10/12/2026-12:53:49] [I] [TRT] No importer registered for op: CustomLayerNormalization. Attempting to import as plugin.
+[10/12/2026-12:53:49] [I] [TRT] Searching for plugin: CustomLayerNormalization, plugin_version: 1, plugin_namespace: 
+epsilon = 1e-05, axis=-1
+[10/12/2026-12:53:49] [I] [TRT] Successfully created plugin: CustomLayerNormalization
+[10/12/2026-12:53:49] [I] [TRT] No importer registered for op: CustomLayerNormalization. Attempting to import as plugin.
+[10/12/2026-12:53:49] [I] [TRT] Searching for plugin: CustomLayerNormalization, plugin_version: 1, plugin_namespace: 
+epsilon = 1e-05, axis=-1
+[10/12/2026-12:53:49] [I] [TRT] Successfully created plugin: CustomLayerNormalization
+[10/12/2026-12:53:49] [I] Finished parsing network model. Parse time: 0.0248634
+[10/12/2026-12:53:49] [I] [TRT] Graph optimization time: 0.0090813 seconds.
+[10/12/2026-12:53:49] [I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +5, GPU +10, now: CPU 1556, GPU 4697 (MiB)
+[10/12/2026-12:53:49] [I] [TRT] [MemUsageChange] Init cuDNN: CPU +11, GPU +10, now: CPU 1567, GPU 4707 (MiB)
+[10/12/2026-12:53:49] [I] [TRT] Local timing cache in use. Profiling results in this builder pass will not be stored.
+[10/12/2026-12:55:59] [I] [TRT] Detected 1 inputs and 13 output network tensors.
+[10/12/2026-12:55:59] [I] [TRT] Total Host Persistent Memory: 152304
+[10/12/2026-12:55:59] [I] [TRT] Total Device Persistent Memory: 0
+[10/12/2026-12:55:59] [I] [TRT] Total Scratch Memory: 8294400
+[10/12/2026-12:55:59] [I] [TRT] [MemUsageStats] Peak memory usage of TRT CPU/GPU memory allocators: CPU 2 MiB, GPU 523 MiB
+[10/12/2026-12:55:59] [I] [TRT] [BlockAssignment] Started assigning block shifts. This will take 128 steps to complete.
+[10/12/2026-12:55:59] [I] [TRT] [BlockAssignment] Algorithm ShiftNTopDown took 10.3507ms to assign 17 blocks to 128 nodes requiring 225134592 bytes.
+[10/12/2026-12:55:59] [I] [TRT] Total Activation Memory: 225132032
+[10/12/2026-12:55:59] [I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +8, now: CPU 1810, GPU 4737 (MiB)
+[10/12/2026-12:55:59] [I] [TRT] [MemUsageChange] Init cuDNN: CPU +1, GPU +10, now: CPU 1811, GPU 4747 (MiB)
+[10/12/2026-12:55:59] [W] [TRT] TensorRT encountered issues when converting weights between types and that could affect accuracy.
+[10/12/2026-12:55:59] [W] [TRT] If this is not the desired behavior, please modify the weights or retrain with regularization to adjust the magnitude of the weights.
+[10/12/2026-12:55:59] [W] [TRT] Check verbose logs for the list of affected weights.
+[10/12/2026-12:55:59] [W] [TRT] - 17 weights are affected by this issue: Detected subnormal FP16 values.
+[10/12/2026-12:55:59] [W] [TRT] - 1 weights are affected by this issue: Detected values less than smallest positive FP16 subnormal value and converted them to the FP16 minimum subnormalized value.
+[10/12/2026-12:55:59] [I] [TRT] [MemUsageChange] TensorRT-managed allocation in building engine: CPU +2, GPU +4, now: CPU 2, GPU 4 (MiB)
+[10/12/2026-12:55:59] [I] Engine built in 134.996 sec.
+[10/12/2026-12:55:59] [I] [TRT] Loaded engine size: 3 MiB
+[10/12/2026-12:55:59] [I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +10, now: CPU 1810, GPU 4719 (MiB)
+[10/12/2026-12:55:59] [I] [TRT] [MemUsageChange] Init cuDNN: CPU +1, GPU +8, now: CPU 1811, GPU 4727 (MiB)
+[10/12/2026-12:55:59] [I] [TRT] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +2, now: CPU 0, GPU 2 (MiB)
+[10/12/2026-12:55:59] [I] Engine deserialized in 0.00932392 sec.
+[10/12/2026-12:55:59] [I] Skipped inference phase since --skipInference is added.
+&&&& PASSED TensorRT.trtexec [TensorRT v8601] # /home/minglei/Desktop/CAR/perception_lab/envs/tensorrt/bin/trtexec --onnx=/home/minglei/Desktop/CAR/perception_lab/runs/deployment_4090_20261012_followup/trt/head.diagnostic.onnx --fp16 --inputIOFormats=fp16:chw --outputIOFormats=fp16:chw,fp16:chw,fp16:chw,fp16:chw,fp16:chw,fp16:chw,fp32:chw,fp32:chw,int32:chw --plugins=/home/minglei/Desktop/CAR/perception_lab/third_party/Lidar_AI_Solution/CUDA-BEVFusion/build/libcustom_layernorm.so --saveEngine=/home/minglei/Desktop/CAR/perception_lab/runs/deployment_4090_20261012_followup/trt/head.diagnostic.plan --memPoolSize=workspace:2048 --skipInference --profilingVerbosity=detailed --exportLayerInfo=/home/minglei/Desktop/CAR/perception_lab/runs/deployment_4090_20261012_followup/trt/head.diagnostic.layers.json

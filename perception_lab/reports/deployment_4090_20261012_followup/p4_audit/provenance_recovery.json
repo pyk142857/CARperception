@@ -1,0 +1,54 @@
+{
+  "session_file": "rollout-2026-10-12T08-46-52-01a12d93-a0ed-7202-94cb-2920e4222c84.jsonl",
+  "reviewed_edit_lines": [
+    89,
+    142,
+    163,
+    215,
+    270
+  ],
+  "steps": [
+    {
+      "session_line": 142,
+      "timestamp": "2026-10-12T00:50:15.390Z",
+      "sha256": "165684a0c302550708a6fec3318d4023ac0f5a310419843f7a8297bae3e23cfd",
+      "bytes": 9502
+    },
+    {
+      "session_line": 163,
+      "timestamp": "2026-10-12T00:50:47.399Z",
+      "sha256": "7745dba622166959f5cbafef04238925809afbdf2bcba587ffef103503691c15",
+      "bytes": 9683
+    },
+    {
+      "session_line": 215,
+      "timestamp": "2026-10-12T00:52:12.277Z",
+      "sha256": "fd0f81cb610305df3263b341d802f64a0af73a071fdca3814e8ead5882de4595",
+      "bytes": 10645
+    },
+    {
+      "session_line": 270,
+      "timestamp": "2026-10-12T00:54:27.167Z",
+      "sha256": "9b99b79bba08c2838f7c57c8ec51a3ea840a7a788559d4df85782542221124c3",
+      "bytes": 10892
+    }
+  ],
+  "recovered_sha256": "9b99b79bba08c2838f7c57c8ec51a3ea840a7a788559d4df85782542221124c3",
+  "expected_sha256": "9b99b79bba08c2838f7c57c8ec51a3ea840a7a788559d4df85782542221124c3",
+  "matches": true,
+  "diff_to_current": [
+    "--- provenance_source\n",
+    "+++ ce24482_source\n",
+    "@@ -74,7 +74,7 @@\n",
+    "     nusc=NuScenes(version='v1.0-mini',dataroot=str(ROOT/'data/nuscenes'),verbose=False)\n",
+    "     scene=next(s for s in nusc.scene if s['name']==args.scene);samples=[];token=scene['first_sample_token']\n",
+    "     while token:s=nusc.get('sample',token);samples.append(s);token=s['next']\n",
+    "-    \n",
+    "+\n",
+    "     if args.packets:\n",
+    "         packets=json.loads(args.packets.read_text());samples=[nusc.get('sample',p['sample_token']) for p in packets]\n",
+    "         assert len({s['scene_token'] for s in samples})==1, 'Use one scene per run; explicit history reset required.'\n"
+  ],
+  "AST_equal": true,
+  "exact_difference_verified": true
+}

@@ -1,0 +1,22 @@
+{
+  "inference": {
+    "production_frames": 4,
+    "production_repeats_per_frame": 5,
+    "diagnostic_frames": 4,
+    "diagnostic_repeats_per_frame": 5,
+    "status": "completed"
+  },
+  "gpu_capture": "completed",
+  "module_replay": "completed_trt_and_reference_same_input_comparison",
+  "topk_engine": "built_separate_diagnostic_plan",
+  "topk_production_attribution": "not_exact_marking_perturbs_native_outputs",
+  "same_backend_determinism": "failed_full_pipeline; all_five_isolated_modules_stable_on_fixed_inputs",
+  "full_precision_consistency": "not_closed",
+  "precision_fix": "not_attempted_no_specific_sensitive_layer_confirmed",
+  "production_libraries_engines": "unchanged_hash_verified",
+  "timing": "diagnostic synchronization and capture excluded from published performance",
+  "raw_artifacts": "/home/minglei/Desktop/CAR/perception_lab/runs/deployment_4090_20261012_followup/trt",
+  "publication": "see ../publication_receipt.json",
+  "official_39_81_rerun": "not_run_production_model_engines_decode_unchanged",
+  "crossimplementation_local_modules": "camera_pool_view_fuser_pass_fixed_tolerance; source_aligned_marked_head_has_residual_failures"
+}

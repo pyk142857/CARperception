@@ -1,0 +1,39 @@
+{
+  "provenance": "Reconstructed after execution by reversing precisely logged in-session source edits; no launch-time runner hash was saved. Not an independently observed launch identity. Production model/library and loaded-library identities were captured during execution.",
+  "versions": {
+    "production_and_diagnostic": {
+      "sha256": "d3a578aeab7ed7a2acc64d2cc0f28978fcf2c11d43bdc00a0e5919a023479042",
+      "local_snapshot": "perception_lab/runs/deployment_4090_20261012_followup/trt/runner_snapshots/production_and_diagnostic.py",
+      "reconstruction": "GPU execution code unchanged; differences are subsequently added CPU analyze/cases reporting functions and action dispatch.",
+      "published_snapshot": "runner_snapshots/production_and_diagnostic.py"
+    },
+    "build_head": {
+      "sha256": "eb2296048e497606b3d964583589583b43de53e52275acda460e8f2b4e8c8ba0",
+      "local_snapshot": "perception_lab/runs/deployment_4090_20261012_followup/trt/runner_snapshots/build_head.py",
+      "reconstruction": "GPU execution code unchanged; differences are subsequently added CPU analyze/cases reporting functions and action dispatch.",
+      "published_snapshot": "runner_snapshots/build_head.py"
+    },
+    "replay_and_initial_cases": {
+      "sha256": "e04dfba157d02ca3772f30896da190670856361a9980e22aec89c715fd2c8d5c",
+      "local_snapshot": "perception_lab/runs/deployment_4090_20261012_followup/trt/runner_snapshots/replay_and_initial_cases.py",
+      "reconstruction": "GPU execution code unchanged; differences are subsequently added CPU analyze/cases reporting functions and action dispatch.",
+      "published_snapshot": "runner_snapshots/replay_and_initial_cases.py"
+    },
+    "current_cpu_cases": {
+      "sha256": "737f6a5b1f2fa733e3e65d77536c9fe9a27cb314acc32edc78f07aef4279a964",
+      "local_snapshot": "perception_lab/runs/deployment_4090_20261012_followup/trt/runner_snapshots/current_cpu_cases.py",
+      "reconstruction": "GPU execution code unchanged; differences are subsequently added CPU analyze/cases reporting functions and action dispatch.",
+      "published_snapshot": "runner_snapshots/current_cpu_cases.py"
+    },
+    "final_cpu_analysis": {
+      "sha256": "3ddf0b2a6051cc829dc867bd2ba82f44be4edb88a79e28b9f0bfde644b5d9a8a",
+      "published_snapshot": "runner_snapshots/final_cpu_analysis.py",
+      "provenance": "Current CPU analyze helper addition after all GPU runs; not claimed as earlier GPU execution version."
+    }
+  },
+  "not_reconstructed": [
+    "prepare initial CPU runner version",
+    "mark initial CPU runner version"
+  ],
+  "current_tool_sha256": "3ddf0b2a6051cc829dc867bd2ba82f44be4edb88a79e28b9f0bfde644b5d9a8a"
+}

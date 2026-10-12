@@ -1,0 +1,46 @@
+{
+  "experiment_completed": true,
+  "stable_speedup": false,
+  "selected_default": "upstream",
+  "new_candidate_attempted": false,
+  "kernel_rows": 90,
+  "full_model_rows": 30,
+  "kernel": {
+    "frame_0": {
+      "pairs": 30,
+      "upstream_p50_ms": 0.22465599328279495,
+      "candidate_p50_ms": 0.24780799448490143,
+      "median_speedup": 0.8998648653560471
+    },
+    "frame_19": {
+      "pairs": 30,
+      "upstream_p50_ms": 0.21289599686861038,
+      "candidate_p50_ms": 0.24780799448490143,
+      "median_speedup": 0.8620368833061274
+    },
+    "frame_38": {
+      "pairs": 30,
+      "upstream_p50_ms": 0.2170879989862442,
+      "candidate_p50_ms": 0.2500320002436638,
+      "median_speedup": 0.868279871417198
+    }
+  },
+  "full_model": {
+    "upstream_mean_ms": 8.466407566690274,
+    "candidate_mean_ms": 8.502395800072312,
+    "mean_saving_ms": -0.03598823338203753,
+    "candidate_faster_pairs": 13,
+    "by_order": {
+      "candidate-then-upstream": -0.3112968001308521,
+      "upstream-then-candidate": 0.23932033336677705
+    }
+  },
+  "hardware_counters": "blocked_permission: ERR_NVGPUCTRPERM",
+  "Amdahl_bound": null,
+  "Amdahl_reason": "No matching uninstrumented critical-path partition; no mixed-boundary ratio computed",
+  "repeatability_followup": "Completed four-token production/captured AA and identical-input module replay. Sparse-depth variation in both backends and additional TRT LiDAR BEV variation show independent upstream variability; isolated same-input TRT pool is bitwise stable. This explains why equal pool kernels need not imply equal full outputs, without retrospectively assigning every old difference to one cause.",
+  "source_sha256": {
+    "paired_timings.csv": "57de2975f332fa90dc3047c9825bf8655940377f9e30a1fc252760098b23eef8",
+    "full_model_paired_timings.csv": "08efd6c2943585db71469b6ade22f23d35e6b6aee217d2cb71351922c6e3b94f"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "scope": "five uninstrumented forwards per fixed preprocessed input; post-forward D2H only; no candidate-source capture or performance claim",
+  "tokens": [
+    {
+      "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+      "report": "ca9a282c9e77460f8360f564131a8af5.production.json",
+      "ordered_outputs_bitwise_equal": false
+    },
+    {
+      "sample_token": "747aa46b9a4641fe90db05d97db2acea",
+      "report": "747aa46b9a4641fe90db05d97db2acea.production.json",
+      "ordered_outputs_bitwise_equal": false
+    },
+    {
+      "sample_token": "e0845f5322254dafadbbed75aaa07969",
+      "report": "e0845f5322254dafadbbed75aaa07969.production.json",
+      "ordered_outputs_bitwise_equal": false
+    },
+    {
+      "sample_token": "b26e791522294bec90f86fd72226e35c",
+      "report": "b26e791522294bec90f86fd72226e35c.production.json",
+      "ordered_outputs_bitwise_equal": false
+    }
+  ]
+}

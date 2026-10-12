@@ -1,0 +1,6 @@
+error: RPC 失败。HTTP 408 curl 22 The requested URL returned error: 408
+fatal: 远端意外挂断了
+fatal: 远端意外挂断了
+Everything up-to-date
+To https://github.com/pyk142857/CARperception.git
+   6ee691d..b9c74eb  codex/20261012-publish -> codex/20261012-publish

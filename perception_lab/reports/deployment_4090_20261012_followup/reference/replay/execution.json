@@ -1,0 +1,12 @@
+{
+  "command": "OMP_NUM_THREADS=8 envs/bevfusion/bin/python -u tools/bevfusion_reference_followup.py --replay-dir runs/deployment_4090_20261012_followup/trt/replay > runs/deployment_4090_20261012_followup/reference/replay.log 2>&1",
+  "cwd": "/home/minglei/Desktop/CAR/perception_lab",
+  "exit_code": 0,
+  "case_count": 40,
+  "geometry_mapping_case_count": 8,
+  "OMP_NUM_THREADS": "8",
+  "runner_sha256": "cedbdb5c44b9b317cccacda0b2d32b37bab9465eea5aaf9c26e5ac1ff9cdd8c4",
+  "log_sha256": "9ac75fb01b7a39398c11ebcf0cdc11ebca07c1a727e05e2210c76e6ef279777a",
+  "checkpoint_sha256": "4006d4b4cb74f16d1e1d1be2689eae4418fe4050bce07394f202fae2e4648376",
+  "upstream_config_and_environment": "same as ../identity.json; runner now includes mapping-only replay; original capture runner snapshot retained separately"
+}

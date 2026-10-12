@@ -1,0 +1,145 @@
+sample_token,case,node,scope,passed,exceeded_elements,max_abs,p95_abs
+747aa46b9a4641fe90db05d97db2acea,camera.reference_upstream,camera_feature,identical input local module; head rowwise not source aligned,True,0,0.026071548461914062,0.004147084057331087
+747aa46b9a4641fe90db05d97db2acea,camera.reference_upstream,camera_depth_weights,identical input local module; head rowwise not source aligned,True,0,0.005475878715515137,6.027207709848872e-05
+747aa46b9a4641fe90db05d97db2acea,camera.trt_upstream,camera_feature,identical input local module; head rowwise not source aligned,True,0,0.02854180335998535,0.0041403204202652005
+747aa46b9a4641fe90db05d97db2acea,camera.trt_upstream,camera_depth_weights,identical input local module; head rowwise not source aligned,True,0,0.00503617525100708,5.9975311160087585e-05
+747aa46b9a4641fe90db05d97db2acea,fuser.reference_upstream,middle,identical input local module; head rowwise not source aligned,True,0,0.015754342079162598,0.0005287006497383118
+747aa46b9a4641fe90db05d97db2acea,fuser.trt_upstream,middle,identical input local module; head rowwise not source aligned,True,0,0.011930584907531738,0.0005354938097298124
+747aa46b9a4641fe90db05d97db2acea,head.reference_upstream,reg,identical input local module; head rowwise not source aligned,False,55,141.3923797607422,36.859255218505815
+747aa46b9a4641fe90db05d97db2acea,head.reference_upstream,height,identical input local module; head rowwise not source aligned,False,27,4.1402827501297,1.651402449607848
+747aa46b9a4641fe90db05d97db2acea,head.reference_upstream,dim,identical input local module; head rowwise not source aligned,False,66,1.3998898267745972,0.5137949496507634
+747aa46b9a4641fe90db05d97db2acea,head.reference_upstream,rot,identical input local module; head rowwise not source aligned,False,44,1.3474380373954773,0.3517309159040451
+747aa46b9a4641fe90db05d97db2acea,head.reference_upstream,vel,identical input local module; head rowwise not source aligned,False,47,1.250610589981079,0.23370198458433147
+747aa46b9a4641fe90db05d97db2acea,head.reference_upstream,score,identical input local module; head rowwise not source aligned,False,8,0.1135721281170845,0.0001802065409719937
+747aa46b9a4641fe90db05d97db2acea,head.reference_upstream,source_aligned.reg,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",False,1,0.5306320190429688,0.11538467407226488
+747aa46b9a4641fe90db05d97db2acea,head.reference_upstream,source_aligned.height,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",True,0,0.06894111633300781,0.03133671283721923
+747aa46b9a4641fe90db05d97db2acea,head.reference_upstream,source_aligned.dim,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",True,0,0.040326088666915894,0.014281073212623594
+747aa46b9a4641fe90db05d97db2acea,head.reference_upstream,source_aligned.rot,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",True,0,0.05354112386703491,0.01413924992084502
+747aa46b9a4641fe90db05d97db2acea,head.reference_upstream,source_aligned.vel,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",True,0,0.040557861328125,0.008783687278628329
+747aa46b9a4641fe90db05d97db2acea,head.reference_upstream,source_aligned.score,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",True,0,0.005465209484100342,7.01036304235457e-05
+747aa46b9a4641fe90db05d97db2acea,head.trt_upstream,reg,identical input local module; head rowwise not source aligned,False,48,119.88084888458252,43.675244903564455
+747aa46b9a4641fe90db05d97db2acea,head.trt_upstream,height,identical input local module; head rowwise not source aligned,False,25,5.446227788925171,1.6410010755062099
+747aa46b9a4641fe90db05d97db2acea,head.trt_upstream,dim,identical input local module; head rowwise not source aligned,False,67,2.078889697790146,0.5484735429286953
+747aa46b9a4641fe90db05d97db2acea,head.trt_upstream,rot,identical input local module; head rowwise not source aligned,False,42,1.1137065291404724,0.2499717030674217
+747aa46b9a4641fe90db05d97db2acea,head.trt_upstream,vel,identical input local module; head rowwise not source aligned,False,44,1.0861727595329285,0.28406666264630154
+747aa46b9a4641fe90db05d97db2acea,head.trt_upstream,score,identical input local module; head rowwise not source aligned,False,6,0.1572265625,0.0001422854140400883
+747aa46b9a4641fe90db05d97db2acea,head.trt_upstream,source_aligned.reg,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",False,1,0.613739013671875,0.15234584808349555
+747aa46b9a4641fe90db05d97db2acea,head.trt_upstream,source_aligned.height,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",True,0,0.07005763053894043,0.023884139955043782
+747aa46b9a4641fe90db05d97db2acea,head.trt_upstream,source_aligned.dim,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",True,0,0.046019673347473145,0.012468963861465442
+747aa46b9a4641fe90db05d97db2acea,head.trt_upstream,source_aligned.rot,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",True,0,0.04197624325752258,0.014940041303634629
+747aa46b9a4641fe90db05d97db2acea,head.trt_upstream,source_aligned.vel,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",False,2,0.07204708456993103,0.018470337986946105
+747aa46b9a4641fe90db05d97db2acea,head.trt_upstream,source_aligned.score,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",True,0,0.007645368576049805,8.428138680756069e-05
+747aa46b9a4641fe90db05d97db2acea,pool.reference_upstream,feat_in,identical input local module; head rowwise not source aligned,True,0,0.03064727783203125,1.3358891010284424e-05
+747aa46b9a4641fe90db05d97db2acea,pool.reference_upstream,pool_mapping_only,"same products, same FP32 kernel, canonical source order, different actual mappings",False,25,0.10862922668457031,0.0
+747aa46b9a4641fe90db05d97db2acea,pool.trt_upstream,feat_in,identical input local module; head rowwise not source aligned,True,0,0.02927398681640625,1.3366341590881348e-05
+747aa46b9a4641fe90db05d97db2acea,pool.trt_upstream,pool_mapping_only,"same products, same FP32 kernel, canonical source order, different actual mappings",False,25,0.10845565795898438,0.0
+747aa46b9a4641fe90db05d97db2acea,view.reference_upstream,feat_out,identical input local module; head rowwise not source aligned,True,0,0.1367950439453125,0.0004670768976211548
+747aa46b9a4641fe90db05d97db2acea,view.trt_upstream,feat_out,identical input local module; head rowwise not source aligned,True,0,0.14501953125,0.00046775490045547485
+b26e791522294bec90f86fd72226e35c,camera.reference_upstream,camera_feature,identical input local module; head rowwise not source aligned,True,0,0.026902198791503906,0.0044767275452613844
+b26e791522294bec90f86fd72226e35c,camera.reference_upstream,camera_depth_weights,identical input local module; head rowwise not source aligned,True,0,0.0060263872146606445,6.637722253799438e-05
+b26e791522294bec90f86fd72226e35c,camera.trt_upstream,camera_feature,identical input local module; head rowwise not source aligned,True,0,0.029667973518371582,0.004496574401855469
+b26e791522294bec90f86fd72226e35c,camera.trt_upstream,camera_depth_weights,identical input local module; head rowwise not source aligned,True,0,0.007107198238372803,6.652623414993286e-05
+b26e791522294bec90f86fd72226e35c,fuser.reference_upstream,middle,identical input local module; head rowwise not source aligned,True,0,0.026409268379211426,0.0004350729286670685
+b26e791522294bec90f86fd72226e35c,fuser.trt_upstream,middle,identical input local module; head rowwise not source aligned,True,0,0.010716080665588379,0.00043907761573791504
+b26e791522294bec90f86fd72226e35c,head.reference_upstream,reg,identical input local module; head rowwise not source aligned,False,60,96.84487915039062,40.76926269531242
+b26e791522294bec90f86fd72226e35c,head.reference_upstream,height,identical input local module; head rowwise not source aligned,False,31,5.305776119232178,0.8391506135463602
+b26e791522294bec90f86fd72226e35c,head.reference_upstream,dim,identical input local module; head rowwise not source aligned,False,69,2.6858441829681396,1.0568086959421614
+b26e791522294bec90f86fd72226e35c,head.reference_upstream,rot,identical input local module; head rowwise not source aligned,False,48,1.6262176036834717,0.5721812233328808
+b26e791522294bec90f86fd72226e35c,head.reference_upstream,vel,identical input local module; head rowwise not source aligned,False,27,1.6103521080466408,0.17505431100725535
+b26e791522294bec90f86fd72226e35c,head.reference_upstream,score,identical input local module; head rowwise not source aligned,False,32,0.7075086236000061,0.0006969213485717769
+b26e791522294bec90f86fd72226e35c,head.reference_upstream,source_aligned.reg,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",False,2,0.830078125,0.21809883117675768
+b26e791522294bec90f86fd72226e35c,head.reference_upstream,source_aligned.height,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",True,0,0.07154321670532227,0.02001256942749022
+b26e791522294bec90f86fd72226e35c,head.reference_upstream,source_aligned.dim,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",True,0,0.05112797021865845,0.011083912849426229
+b26e791522294bec90f86fd72226e35c,head.reference_upstream,source_aligned.rot,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",True,0,0.049075592309236526,0.012414885684847825
+b26e791522294bec90f86fd72226e35c,head.reference_upstream,source_aligned.vel,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",False,1,0.07484352588653564,0.009844981133937763
+b26e791522294bec90f86fd72226e35c,head.reference_upstream,source_aligned.score,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",True,0,0.011273294687271118,0.0003959002438932653
+b26e791522294bec90f86fd72226e35c,head.trt_upstream,reg,identical input local module; head rowwise not source aligned,False,56,99.97663116455078,44.66657028198173
+b26e791522294bec90f86fd72226e35c,head.trt_upstream,height,identical input local module; head rowwise not source aligned,False,24,3.9874110221862793,1.283415249735114
+b26e791522294bec90f86fd72226e35c,head.trt_upstream,dim,identical input local module; head rowwise not source aligned,False,76,2.70770001411438,0.9006810411810875
+b26e791522294bec90f86fd72226e35c,head.trt_upstream,rot,identical input local module; head rowwise not source aligned,False,48,1.7178175449371338,1.0237253800034494
+b26e791522294bec90f86fd72226e35c,head.trt_upstream,vel,identical input local module; head rowwise not source aligned,False,14,7.140634477808817,0.03277806900441647
+b26e791522294bec90f86fd72226e35c,head.trt_upstream,score,identical input local module; head rowwise not source aligned,False,36,0.779296875,0.000630709528923034
+b26e791522294bec90f86fd72226e35c,head.trt_upstream,source_aligned.reg,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",False,3,0.837554931640625,0.1811576843261705
+b26e791522294bec90f86fd72226e35c,head.trt_upstream,source_aligned.height,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",False,2,0.09486651420593262,0.02932100892066955
+b26e791522294bec90f86fd72226e35c,head.trt_upstream,source_aligned.dim,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",True,0,0.04076027870178223,0.012829861044883723
+b26e791522294bec90f86fd72226e35c,head.trt_upstream,source_aligned.rot,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",True,0,0.04365730285644531,0.012683476228266948
+b26e791522294bec90f86fd72226e35c,head.trt_upstream,source_aligned.vel,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",True,0,0.06105375289916992,0.010263840854167936
+b26e791522294bec90f86fd72226e35c,head.trt_upstream,source_aligned.score,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",True,0,0.01041431725025177,0.0003267478197813034
+b26e791522294bec90f86fd72226e35c,pool.reference_upstream,feat_in,identical input local module; head rowwise not source aligned,True,0,0.03121185302734375,1.633167266845703e-05
+b26e791522294bec90f86fd72226e35c,pool.reference_upstream,pool_mapping_only,"same products, same FP32 kernel, canonical source order, different actual mappings",False,140,0.19777527451515198,0.0
+b26e791522294bec90f86fd72226e35c,pool.trt_upstream,feat_in,identical input local module; head rowwise not source aligned,True,0,0.03099822998046875,1.636892557144165e-05
+b26e791522294bec90f86fd72226e35c,pool.trt_upstream,pool_mapping_only,"same products, same FP32 kernel, canonical source order, different actual mappings",False,134,0.18085740506649017,0.0
+b26e791522294bec90f86fd72226e35c,view.reference_upstream,feat_out,identical input local module; head rowwise not source aligned,True,0,0.0787043571472168,0.0004706382751464844
+b26e791522294bec90f86fd72226e35c,view.trt_upstream,feat_out,identical input local module; head rowwise not source aligned,True,0,0.12348556518554688,0.0004689544439315796
+ca9a282c9e77460f8360f564131a8af5,camera.reference_upstream,camera_feature,identical input local module; head rowwise not source aligned,True,0,0.024074792861938477,0.00436051767319441
+ca9a282c9e77460f8360f564131a8af5,camera.reference_upstream,camera_depth_weights,identical input local module; head rowwise not source aligned,True,0,0.005949676036834717,6.546233780682078e-05
+ca9a282c9e77460f8360f564131a8af5,camera.trt_upstream,camera_feature,identical input local module; head rowwise not source aligned,True,0,0.025971829891204834,0.00435459911823273
+ca9a282c9e77460f8360f564131a8af5,camera.trt_upstream,camera_depth_weights,identical input local module; head rowwise not source aligned,True,0,0.007474631071090698,6.522983312606812e-05
+ca9a282c9e77460f8360f564131a8af5,fuser.reference_upstream,middle,identical input local module; head rowwise not source aligned,True,0,0.009257018566131592,0.0004587472416460493
+ca9a282c9e77460f8360f564131a8af5,fuser.trt_upstream,middle,identical input local module; head rowwise not source aligned,True,0,0.02512305974960327,0.00046244263648986816
+ca9a282c9e77460f8360f564131a8af5,head.reference_upstream,reg,identical input local module; head rowwise not source aligned,False,94,140.7613582611084,60.20859069824216
+ca9a282c9e77460f8360f564131a8af5,head.reference_upstream,height,identical input local module; head rowwise not source aligned,False,51,3.0324273109436035,1.639520353078842
+ca9a282c9e77460f8360f564131a8af5,head.reference_upstream,dim,identical input local module; head rowwise not source aligned,False,142,2.0157339572906494,0.9870739340782163
+ca9a282c9e77460f8360f564131a8af5,head.reference_upstream,rot,identical input local module; head rowwise not source aligned,False,92,1.2418017387390137,0.8989650428295132
+ca9a282c9e77460f8360f564131a8af5,head.reference_upstream,vel,identical input local module; head rowwise not source aligned,False,82,4.242876589298248,0.4254918035818261
+ca9a282c9e77460f8360f564131a8af5,head.reference_upstream,score,identical input local module; head rowwise not source aligned,False,19,0.6577907800674438,0.0007242258638143526
+ca9a282c9e77460f8360f564131a8af5,head.reference_upstream,source_aligned.reg,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",False,1,0.9696884155273438,0.18837814331054686
+ca9a282c9e77460f8360f564131a8af5,head.reference_upstream,source_aligned.height,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",False,4,0.4928622245788574,0.05013242661952972
+ca9a282c9e77460f8360f564131a8af5,head.reference_upstream,source_aligned.dim,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",False,10,0.2454432249069214,0.025914633274078364
+ca9a282c9e77460f8360f564131a8af5,head.reference_upstream,source_aligned.rot,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",False,4,0.11722265928983688,0.020725439861416787
+ca9a282c9e77460f8360f564131a8af5,head.reference_upstream,source_aligned.vel,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",False,5,0.3987050950527191,0.02176608145236968
+ca9a282c9e77460f8360f564131a8af5,head.reference_upstream,source_aligned.score,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",True,0,0.00986967608332634,0.00020712518598884345
+ca9a282c9e77460f8360f564131a8af5,head.trt_upstream,reg,identical input local module; head rowwise not source aligned,False,60,136.40119552612305,51.98196716308593
+ca9a282c9e77460f8360f564131a8af5,head.trt_upstream,height,identical input local module; head rowwise not source aligned,False,32,3.0794339179992676,1.4780411005020138
+ca9a282c9e77460f8360f564131a8af5,head.trt_upstream,dim,identical input local module; head rowwise not source aligned,False,83,2.7599987983703613,0.6540468573570251
+ca9a282c9e77460f8360f564131a8af5,head.trt_upstream,rot,identical input local module; head rowwise not source aligned,False,52,1.5766451358795166,0.4066449172794797
+ca9a282c9e77460f8360f564131a8af5,head.trt_upstream,vel,identical input local module; head rowwise not source aligned,False,47,3.263429641723633,0.3406938731670373
+ca9a282c9e77460f8360f564131a8af5,head.trt_upstream,score,identical input local module; head rowwise not source aligned,False,4,0.4032164216041565,0.00042925328016281113
+ca9a282c9e77460f8360f564131a8af5,head.trt_upstream,source_aligned.reg,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",True,0,1.1053237915039062,0.11396560668945306
+ca9a282c9e77460f8360f564131a8af5,head.trt_upstream,source_aligned.height,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",False,2,0.06207609176635742,0.037633791565895074
+ca9a282c9e77460f8360f564131a8af5,head.trt_upstream,source_aligned.dim,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",False,2,0.10198885202407837,0.020683556795120222
+ca9a282c9e77460f8360f564131a8af5,head.trt_upstream,source_aligned.rot,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",False,3,0.09116847813129425,0.02909388095140455
+ca9a282c9e77460f8360f564131a8af5,head.trt_upstream,source_aligned.vel,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",False,1,0.07620346546173096,0.022207592055201498
+ca9a282c9e77460f8360f564131a8af5,head.trt_upstream,source_aligned.score,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",True,0,0.005141139030456543,0.00019606254063546608
+ca9a282c9e77460f8360f564131a8af5,pool.reference_upstream,feat_in,identical input local module; head rowwise not source aligned,True,0,0.02469635009765625,1.4826655387878418e-05
+ca9a282c9e77460f8360f564131a8af5,pool.reference_upstream,pool_mapping_only,"same products, same FP32 kernel, canonical source order, different actual mappings",False,26,0.17787402868270874,0.0
+ca9a282c9e77460f8360f564131a8af5,pool.trt_upstream,feat_in,identical input local module; head rowwise not source aligned,True,0,0.027679443359375,1.4826655387878418e-05
+ca9a282c9e77460f8360f564131a8af5,pool.trt_upstream,pool_mapping_only,"same products, same FP32 kernel, canonical source order, different actual mappings",False,26,0.18335264921188354,0.0
+ca9a282c9e77460f8360f564131a8af5,view.reference_upstream,feat_out,identical input local module; head rowwise not source aligned,True,0,0.05562019348144531,0.0004812479019165039
+ca9a282c9e77460f8360f564131a8af5,view.trt_upstream,feat_out,identical input local module; head rowwise not source aligned,True,0,0.09175682067871094,0.00048094242811203003
+e0845f5322254dafadbbed75aaa07969,camera.reference_upstream,camera_feature,identical input local module; head rowwise not source aligned,True,0,0.04352426528930664,0.004659447073936465
+e0845f5322254dafadbbed75aaa07969,camera.reference_upstream,camera_depth_weights,identical input local module; head rowwise not source aligned,True,0,0.008747577667236328,6.551668047904968e-05
+e0845f5322254dafadbbed75aaa07969,camera.trt_upstream,camera_feature,identical input local module; head rowwise not source aligned,True,0,0.04589581489562988,0.004639001190662385
+e0845f5322254dafadbbed75aaa07969,camera.trt_upstream,camera_depth_weights,identical input local module; head rowwise not source aligned,True,0,0.010582834482192993,6.513763219118118e-05
+e0845f5322254dafadbbed75aaa07969,fuser.reference_upstream,middle,identical input local module; head rowwise not source aligned,True,0,0.011312499642372131,0.00045796483755111694
+e0845f5322254dafadbbed75aaa07969,fuser.trt_upstream,middle,identical input local module; head rowwise not source aligned,True,0,0.020056679844856262,0.0004661977291107178
+e0845f5322254dafadbbed75aaa07969,head.reference_upstream,reg,identical input local module; head rowwise not source aligned,False,77,154.41653442382812,69.0412734985351
+e0845f5322254dafadbbed75aaa07969,head.reference_upstream,height,identical input local module; head rowwise not source aligned,False,40,3.1200191974639893,1.5591583579778667
+e0845f5322254dafadbbed75aaa07969,head.reference_upstream,dim,identical input local module; head rowwise not source aligned,False,105,2.107190251350403,0.7109135672450041
+e0845f5322254dafadbbed75aaa07969,head.reference_upstream,rot,identical input local module; head rowwise not source aligned,False,72,2.0206936597824097,0.9353267781436442
+e0845f5322254dafadbbed75aaa07969,head.reference_upstream,vel,identical input local module; head rowwise not source aligned,False,62,5.195311954453359,0.5505993104388334
+e0845f5322254dafadbbed75aaa07969,head.reference_upstream,score,identical input local module; head rowwise not source aligned,False,19,0.7421875,0.0004930675029754633
+e0845f5322254dafadbbed75aaa07969,head.reference_upstream,source_aligned.reg,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",False,3,1.4786605834960938,0.32285041809082005
+e0845f5322254dafadbbed75aaa07969,head.reference_upstream,source_aligned.height,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",False,1,0.0883793830871582,0.037406563758850084
+e0845f5322254dafadbbed75aaa07969,head.reference_upstream,source_aligned.dim,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",False,2,0.08865547180175781,0.020263528823852534
+e0845f5322254dafadbbed75aaa07969,head.reference_upstream,source_aligned.rot,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",True,0,0.05761450529098511,0.01480951085686683
+e0845f5322254dafadbbed75aaa07969,head.reference_upstream,source_aligned.vel,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",False,2,0.0898142158985138,0.017068062722682947
+e0845f5322254dafadbbed75aaa07969,head.reference_upstream,source_aligned.score,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",True,0,0.016004741191864014,0.00020020082592964153
+e0845f5322254dafadbbed75aaa07969,head.trt_upstream,reg,identical input local module; head rowwise not source aligned,False,81,149.6275634765625,65.38502235412598
+e0845f5322254dafadbbed75aaa07969,head.trt_upstream,height,identical input local module; head rowwise not source aligned,False,39,3.1772801876068115,1.6828739345073662
+e0845f5322254dafadbbed75aaa07969,head.trt_upstream,dim,identical input local module; head rowwise not source aligned,False,109,2.4216731786727905,1.110466183722019
+e0845f5322254dafadbbed75aaa07969,head.trt_upstream,rot,identical input local module; head rowwise not source aligned,False,75,1.9038276076316833,0.8915781699120994
+e0845f5322254dafadbbed75aaa07969,head.trt_upstream,vel,identical input local module; head rowwise not source aligned,False,50,8.53124945445336,0.5630270166089739
+e0845f5322254dafadbbed75aaa07969,head.trt_upstream,score,identical input local module; head rowwise not source aligned,False,26,0.6479549407958984,0.0006513744592666616
+e0845f5322254dafadbbed75aaa07969,head.trt_upstream,source_aligned.reg,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",False,3,1.04290771484375,0.21837196350097474
+e0845f5322254dafadbbed75aaa07969,head.trt_upstream,source_aligned.height,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",False,3,0.0919276773929596,0.03722654581069946
+e0845f5322254dafadbbed75aaa07969,head.trt_upstream,source_aligned.dim,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",False,1,0.06971526145935059,0.016552299261093112
+e0845f5322254dafadbbed75aaa07969,head.trt_upstream,source_aligned.rot,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",False,1,0.08438107371330261,0.01247761696577069
+e0845f5322254dafadbbed75aaa07969,head.trt_upstream,source_aligned.vel,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",False,1,0.06636732816696167,0.012642560154199598
+e0845f5322254dafadbbed75aaa07969,head.trt_upstream,source_aligned.score,"actual seed identity alignment to marked diagnostic graph, not proven production provenance",True,0,0.005277186632156372,0.00021081529557704905
+e0845f5322254dafadbbed75aaa07969,pool.reference_upstream,feat_in,identical input local module; head rowwise not source aligned,True,0,0.0303955078125,1.4632940292358398e-05
+e0845f5322254dafadbbed75aaa07969,pool.reference_upstream,pool_mapping_only,"same products, same FP32 kernel, canonical source order, different actual mappings",False,96,0.2268255054950714,0.0
+e0845f5322254dafadbbed75aaa07969,pool.trt_upstream,feat_in,identical input local module; head rowwise not source aligned,True,0,0.0309295654296875,1.4647841453552246e-05
+e0845f5322254dafadbbed75aaa07969,pool.trt_upstream,pool_mapping_only,"same products, same FP32 kernel, canonical source order, different actual mappings",False,98,0.2263857126235962,0.0
+e0845f5322254dafadbbed75aaa07969,view.reference_upstream,feat_out,identical input local module; head rowwise not source aligned,True,0,0.07135391235351562,0.0004721134901046753
+e0845f5322254dafadbbed75aaa07969,view.trt_upstream,feat_out,identical input local module; head rowwise not source aligned,True,0,0.07480621337890625,0.0004719683900475495

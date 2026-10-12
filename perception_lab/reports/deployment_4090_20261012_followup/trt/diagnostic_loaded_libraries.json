@@ -1,0 +1,6 @@
+{
+  "/home/minglei/Desktop/CAR/perception_lab/envs/tensorrt/lib/python3.10/site-packages/tensorrt_libs/libnvinfer.so.8": "394bc1b4b5b65c808ed265b4142f905591f26e4fe308a8a957ddf3690059bdbb",
+  "/home/minglei/Desktop/CAR/perception_lab/runs/deployment_4090_20261012_followup/trt/build/libbevfusion_core.so": "88b81e18f24d323709876494bcb4ac81deb060ec2f11f2870788d63c06f28fe2",
+  "/home/minglei/Desktop/CAR/perception_lab/runs/deployment_4090_20261012_followup/trt/build/libpybev.so": "47cae74f4c696f7ba2493c0630c2445296fb0a67e78428adb2a10bd22c687502",
+  "/home/minglei/Desktop/CAR/perception_lab/third_party/Lidar_AI_Solution/CUDA-BEVFusion/build/libcustom_layernorm.so": "bbc481c1e539ea5b01e5bdf9ca70382139940fd9048a308e98cea5b79ea55646"
+}

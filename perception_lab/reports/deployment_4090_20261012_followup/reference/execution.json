@@ -1,0 +1,26 @@
+{
+  "command": "OMP_NUM_THREADS=8 envs/bevfusion/bin/python -u tools/bevfusion_reference_followup.py > runs/deployment_4090_20261012_followup/reference/run.log 2>&1",
+  "cwd": "/home/minglei/Desktop/CAR/perception_lab",
+  "exit_code": 0,
+  "OMP_NUM_THREADS": "8",
+  "runner_sha256_at_execution": "b4d55f6fa88dda8339dc118690a36bd03e54b26ac17680267194924d29806081",
+  "git_head_at_completion": "ce244828fe5ffd73753ed672dfaf665f43502999",
+  "log_sha256": "5ab9e68156b87247771726299c0c3523f6f13c6e34ded11ecfd30ed5f911fe86",
+  "library_and_kernel_files": {
+    "third_party/bevfusion_4090/mmdet3d/ops/knn/knn_ext.cpython-310-x86_64-linux-gnu.so": "08e63e6c1ced90e3b7995363d59b95c59ffc8b975ed7a77f679d16ccf6688332",
+    "third_party/bevfusion_4090/mmdet3d/ops/group_points/group_points_ext.cpython-310-x86_64-linux-gnu.so": "c250789e6d1ddf31d3e1e6a6cbd6e9064645ef1c8b27294f4af6ad568f65b693",
+    "third_party/bevfusion_4090/mmdet3d/ops/interpolate/interpolate_ext.cpython-310-x86_64-linux-gnu.so": "264e78f023c9bbe1a1033244e570050207106e2ebd25aeae32437f5219b5120a",
+    "third_party/bevfusion_4090/mmdet3d/ops/iou3d/iou3d_cuda.cpython-310-x86_64-linux-gnu.so": "298d451b42899563f6d85668bfd11fcdc2c20c58a3805994e191add2d8c639d6",
+    "third_party/bevfusion_4090/mmdet3d/ops/spconv/sparse_conv_ext.cpython-310-x86_64-linux-gnu.so": "32ac7435bc547e8f8c595129eb16471fb3d40752bf4d1497752c8ece24299c67",
+    "third_party/bevfusion_4090/mmdet3d/ops/furthest_point_sample/furthest_point_sample_ext.cpython-310-x86_64-linux-gnu.so": "7c8e4dc43c90567467d49a29b54312aea8952dd4fe7fd5a3399ed0f46a134278",
+    "third_party/bevfusion_4090/mmdet3d/ops/voxel/voxel_layer.cpython-310-x86_64-linux-gnu.so": "40e830968aa5009364fe1e4e2c1860997f54de577e32b98da7ed30b514c3e301",
+    "third_party/bevfusion_4090/mmdet3d/ops/ball_query/ball_query_ext.cpython-310-x86_64-linux-gnu.so": "5623f51b15e7a3fe6c42e27b82e9b7851edc5880f04239d476ce9074e72cd95f",
+    "third_party/bevfusion_4090/mmdet3d/ops/paconv/assign_score_withk_ext.cpython-310-x86_64-linux-gnu.so": "41f7db2f57fe0f68212c418054fa2b7212a935ad551da32d08d94f9124041909",
+    "third_party/bevfusion_4090/mmdet3d/ops/gather_points/gather_points_ext.cpython-310-x86_64-linux-gnu.so": "0d80e4a772682b442200b599802ef1aaad3ccf253a8928c1b6919fac693d4976",
+    "third_party/bevfusion_4090/mmdet3d/ops/bev_pool/bev_pool_ext.cpython-310-x86_64-linux-gnu.so": "239b766ccc7a1b2e2e882756578608880005efca188219a4bf6f5bef6d2f1ad8",
+    "third_party/bevfusion_4090/mmdet3d/ops/roiaware_pool3d/roiaware_pool3d_ext.cpython-310-x86_64-linux-gnu.so": "8c3dc14ddfdaec02cdac3927a87c33c08ee2cdfd0abeefe32f87eb5f5765c680",
+    "third_party/bevfusion_4090/mmdet3d/ops/bev_pool/src/bev_pool_cuda.cu": "e1c4c668ae6a97b8ddf245187c81d94db1aaaff32b92050655cbb297c4e792b0"
+  },
+  "library_identity_scope": "on-disk extension files in the pinned source tree after execution; not a process loaded-library map",
+  "scope": "20 production forwards and 20 instrumented forwards; warmup3 per token before each mode; no performance measurement"
+}

@@ -1,0 +1,212 @@
+{
+  "scope": "Same exact saved half-representable middle tensor consumed by FP32 reference head and marked FP16 diagnostic head; query attribution conditional, not exact production. Separates changed upstream middle from local head computation.",
+  "cases": [
+    {
+      "token": "e0845f5322254dafadbbed75aaa07969",
+      "historical_case": "high_score_center",
+      "source": 181015,
+      "upstream": {
+        "reference": {
+          "reference_head_selects_source": true,
+          "marked_trt_head_selects_source": true,
+          "shared_input_sha256": "cdbbcf15f8f60a6cace15ad4dfc1e05c0b6bd611328116e31e13fff0ff498842",
+          "production_source_attribution": false,
+          "reference": {
+            "yaw": 1.5748086674179205,
+            "native_bottom_center": [
+              9.468008422851561,
+              15.528849792480472,
+              -0.8027725749479822
+            ],
+            "dim": [
+              2.0538792408511526,
+              0.6627123555321822,
+              1.0747931467030627
+            ],
+            "score": 0.5389233827590942
+          },
+          "marked_trt": {
+            "yaw": 1.5735918949474343,
+            "native_bottom_center": [
+              9.487499999999997,
+              15.524999999999991,
+              -0.7932132048846942
+            ],
+            "dim": [
+              2.0528689062023657,
+              0.6598310349590619,
+              1.0742193785193883
+            ],
+            "score": 0.5380859375
+          },
+          "same_middle_local_head_yaw_abs": 0.0012167724704861271,
+          "same_middle_local_head_center_m": 0.022048220741889436
+        },
+        "trt": {
+          "reference_head_selects_source": false,
+          "marked_trt_head_selects_source": false,
+          "shared_input_sha256": "cf7e4dda842a587461199b5f3609d2fa237ec797e9c9682de861fcf92b046435",
+          "production_source_attribution": false
+        }
+      }
+    },
+    {
+      "token": "b26e791522294bec90f86fd72226e35c",
+      "historical_case": "high_score_vehicle_yaw",
+      "source": 19731,
+      "upstream": {
+        "reference": {
+          "reference_head_selects_source": true,
+          "marked_trt_head_selects_source": true,
+          "shared_input_sha256": "7198c50f738ed5776f4a52180bf5eebb51eac4576459cdb672913f5d78f57c9a",
+          "production_source_attribution": false,
+          "reference": {
+            "yaw": -1.2794334206094835,
+            "native_bottom_center": [
+              11.757312011718753,
+              12.658955383300778,
+              -0.37382329973560036
+            ],
+            "dim": [
+              2.1447157900545615,
+              5.264741051845232,
+              2.2176914507743013
+            ],
+            "score": 0.5962985157966614
+          },
+          "marked_trt": {
+            "yaw": -1.2720220648191989,
+            "native_bottom_center": [
+              11.774999999999991,
+              12.674999999999997,
+              -0.37080587517948027
+            ],
+            "dim": [
+              2.144047317082982,
+              5.260132675970259,
+              2.2142680003589605
+            ],
+            "score": 0.59716796875
+          },
+          "same_middle_local_head_yaw_abs": 0.007411355790284624,
+          "same_middle_local_head_center_m": 0.024070718838745984
+        },
+        "trt": {
+          "reference_head_selects_source": true,
+          "marked_trt_head_selects_source": true,
+          "shared_input_sha256": "3a933415ee67f02d7d9a437e73e279277847c99f4fa381de130f6c299968f13e",
+          "production_source_attribution": false,
+          "reference": {
+            "yaw": -0.9413536671417658,
+            "native_bottom_center": [
+              11.778373718261719,
+              12.645854187011722,
+              -0.3738943069074674
+            ],
+            "dim": [
+              2.1172055787544934,
+              5.208621146313237,
+              2.1797484812923518
+            ],
+            "score": 0.5694387555122375
+          },
+          "marked_trt": {
+            "yaw": -0.9418237001958824,
+            "native_bottom_center": [
+              11.774999999999991,
+              12.637500000000003,
+              -0.3695382283874795
+            ],
+            "dim": [
+              2.1149336429197017,
+              5.198850274067211,
+              2.174623331774959
+            ],
+            "score": 0.56982421875
+          },
+          "same_middle_local_head_yaw_abs": 0.00047003305411674745,
+          "same_middle_local_head_center_m": 0.010007488976190885
+        }
+      }
+    },
+    {
+      "token": "747aa46b9a4641fe90db05d97db2acea",
+      "historical_case": "high_score_center",
+      "source": 278404,
+      "upstream": {
+        "reference": {
+          "reference_head_selects_source": true,
+          "marked_trt_head_selects_source": true,
+          "shared_input_sha256": "2007beb1b709b3770d3fc283b5b5a4596735d2c1cf79595f9b787e50514f1b8d",
+          "production_source_attribution": false,
+          "reference": {
+            "yaw": 0.3356331003083796,
+            "native_bottom_center": [
+              10.056811523437503,
+              20.909706115722656,
+              0.5880693632550077
+            ],
+            "dim": [
+              0.6583081279942368,
+              0.7451196098412186,
+              1.773900183402094
+            ],
+            "score": 0.5134285092353821
+          },
+          "marked_trt": {
+            "yaw": 0.3285425492589463,
+            "native_bottom_center": [
+              10.049999999999997,
+              20.924999999999997,
+              0.5805536737216405
+            ],
+            "dim": [
+              0.6596699630606897,
+              0.7484170358039601,
+              1.778345777556719
+            ],
+            "score": 0.5146484375
+          },
+          "same_middle_local_head_yaw_abs": 0.007090551049433458,
+          "same_middle_local_head_center_m": 0.018351712099702044
+        },
+        "trt": {
+          "reference_head_selects_source": true,
+          "marked_trt_head_selects_source": true,
+          "shared_input_sha256": "c75d354eba7bec284f0ff86817666871707642cc8fcd5c1bdbe6e907dd004aae",
+          "production_source_attribution": false,
+          "reference": {
+            "yaw": 0.4322726802525628,
+            "native_bottom_center": [
+              10.043714904785148,
+              20.924359130859372,
+              0.604092474637868
+            ],
+            "dim": [
+              0.6536343395886417,
+              0.7363470560378993,
+              1.768283375385519
+            ],
+            "score": 0.5149337649345398
+          },
+          "marked_trt": {
+            "yaw": 0.42443005895909797,
+            "native_bottom_center": [
+              10.049999999999997,
+              20.924999999999997,
+              0.5994203122208082
+            ],
+            "dim": [
+              0.6526215898810552,
+              0.7378940132887047,
+              1.7679562505583837
+            ],
+            "score": 0.517578125
+          },
+          "same_middle_local_head_yaw_abs": 0.007842621293464802,
+          "same_middle_local_head_center_m": 0.007857622844506782
+        }
+      }
+    }
+  ]
+}

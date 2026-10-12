@@ -1,0 +1,10 @@
+{
+  "source_sha256": "1aac2d1eb5253d40d0973a220b069bd7417a6a08ac713dc29525d4c9f61b2b95",
+  "diagnostic_sha256": "e52ef7a9c6dd761d704b33421068a709cfb6484af74ea2a7a0ddbe8d9ad72b8d",
+  "onnx_checker": "Standard checker cannot validate existing NVIDIA CustomLayerNormalization op; TensorRT parser validation required",
+  "topk_node": "TopK_211",
+  "input": "724",
+  "values": "728",
+  "indices": "729",
+  "warning": "Marked outputs may alter tactics. Validate original six outputs with identical middle before attributing production query sources."
+}

@@ -1,0 +1,39 @@
+{
+  "tool_sha256": "3ddf0b2a6051cc829dc867bd2ba82f44be4edb88a79e28b9f0bfde644b5d9a8a",
+  "capture_patch_sha256": "0fefcb080519d740f561f943f400c862d605cd3a49653a2466efcd3851f35436",
+  "logs": {
+    "runs/deployment_4090_20261012_followup/trt/diagnostic.log": {
+      "sha256": "ba8325f563c2069e771e938dcae6fb287a1546cd13353f86399cd827a9eee5de",
+      "bytes": 1000
+    },
+    "runs/deployment_4090_20261012_followup/trt/head.diagnostic.build.log": {
+      "sha256": "474c573a914dd6a0ce8c33cf837263398731ede2dedd551549e744e9ee149060",
+      "bytes": 12549
+    },
+    "runs/deployment_4090_20261012_followup/trt/production.log": {
+      "sha256": "ba8325f563c2069e771e938dcae6fb287a1546cd13353f86399cd827a9eee5de",
+      "bytes": 1000
+    },
+    "runs/deployment_4090_20261012_followup/trt/build-head.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "runs/deployment_4090_20261012_followup/trt/cases.log": {
+      "sha256": "ba8325f563c2069e771e938dcae6fb287a1546cd13353f86399cd827a9eee5de",
+      "bytes": 1000
+    },
+    "runs/deployment_4090_20261012_followup/trt/replay.log": {
+      "sha256": "cdee1a35b2f97260be5463e00fddf4a919a6870a77a7854ba4c8ce6291abf507",
+      "bytes": 1586
+    }
+  },
+  "diagnostic_engine_sha256": "b3ae0d3751cc3d0f197276c6e6ee8d08278d99abd4b7230af47c5978e9fe0ecc",
+  "raw_directory": "/home/minglei/Desktop/CAR/perception_lab/runs/deployment_4090_20261012_followup/trt",
+  "final_source_sha256": {
+    "tools/bevfusion_trt_followup.py": "3ddf0b2a6051cc829dc867bd2ba82f44be4edb88a79e28b9f0bfde644b5d9a8a",
+    "tools/bevfusion_followup_capture.patch": "0fefcb080519d740f561f943f400c862d605cd3a49653a2466efcd3851f35436",
+    "third_party/Lidar_AI_Solution/CUDA-BEVFusion/src/bevfusion/camera-geometry.cu": "ce7894d29cfa9a36a71f8f60e3e06b11f6de8eb9f1a0104f5e3ca35d78f4e870",
+    "third_party/Lidar_AI_Solution/CUDA-BEVFusion/src/bevfusion/camera-bevpool.cu": "6f57c7375dc0dd046f8568750934ef532b00674e1a3f5bd2fff7bd2b099b1fac",
+    "third_party/Lidar_AI_Solution/CUDA-BEVFusion/src/bevfusion/camera-depth.cu": "03c35830a6aa599e5bde60a011a524b480fee662f9cb8987a298d818a8d69584"
+  }
+}

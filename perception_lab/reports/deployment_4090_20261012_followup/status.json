@@ -1,0 +1,25 @@
+{
+  "overall": "partial",
+  "scope": "nuScenes mini teaching diagnostics, not full val",
+  "production_modified": false,
+  "official_39_81_evaluation": "reused_after_identity_verification",
+  "official_metric_drop_budget": "passed",
+  "full_candidate_consistency": "failed_original_preserved",
+  "repeat_baseline": "completed_4_tokens_5_repeats_per_backend_per_mode",
+  "same_input_module_replay": "completed",
+  "head_same_source_tensor_consistency": "partial_fail_diagnostic_graph_only",
+  "targeted_precision_change": "not_attempted_no_specific_sensitive_layer_confirmed",
+  "pooling": {
+    "experiment_completed": true,
+    "stable_speedup": false,
+    "default": "upstream"
+  },
+  "sparse4d_evidence": "verified",
+  "gaussianworld": {
+    "inference": "passed",
+    "evaluation": "blocked_data"
+  },
+  "visualization_evidence": "verified_existing_browser_evidence_new_cpu_decode",
+  "publication": "see publication_receipt.json",
+  "tests": "22 passed in 0.76s; see final_tests.log"
+}

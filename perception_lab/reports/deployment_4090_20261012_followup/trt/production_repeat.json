@@ -1,0 +1,1682 @@
+[
+  {
+    "token": "ca9a282c9e77460f8360f564131a8af5",
+    "repeat": 0,
+    "native_row_order": {
+      "shape": [
+        200,
+        11
+      ],
+      "reference_dtype": "float32",
+      "candidate_dtype": "float32",
+      "bitwise_equal": true,
+      "nonfinite_reference": 0,
+      "nonfinite_candidate": 0,
+      "absolute": {
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 0.0
+      },
+      "relative_abs_reference_gt_001": {
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 0.0
+      },
+      "near_zero_reference_elements": 283,
+      "near_zero_absolute": {
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 0.0
+      },
+      "elements": 2200,
+      "passed": true,
+      "exceeded_elements": 0,
+      "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference)"
+    },
+    "output_sameclass_2m_hungarian": {
+      "matching": "class constrained Hungarian 3D centre distance; unmatched reported separately",
+      "radius_m": 2.0,
+      "frames": [
+        {
+          "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+          "reference": 200,
+          "candidate": 200,
+          "matched": 200,
+          "unmatched_reference": 0,
+          "unmatched_candidate": 0
+        }
+      ],
+      "summary": {
+        "center_m": {
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        },
+        "size_m": {
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        },
+        "yaw_rad": {
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        },
+        "score_abs": {
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        },
+        "velocity_mps": {
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        }
+      }
+    }
+  },
+  {
+    "token": "ca9a282c9e77460f8360f564131a8af5",
+    "repeat": 1,
+    "native_row_order": {
+      "shape": [
+        200,
+        11
+      ],
+      "reference_dtype": "float32",
+      "candidate_dtype": "float32",
+      "bitwise_equal": false,
+      "nonfinite_reference": 0,
+      "nonfinite_candidate": 0,
+      "absolute": {
+        "p50": 0.007620573043823242,
+        "p95": 17.023125076293905,
+        "p99": 56.49600152969355,
+        "max": 90.67500305175781
+      },
+      "relative_abs_reference_gt_001": {
+        "p50": 0.019687026754164564,
+        "p95": 2.803104969010059,
+        "p99": 14.907713245593728,
+        "max": 212.3437699749381
+      },
+      "near_zero_reference_elements": 283,
+      "near_zero_absolute": {
+        "p50": 5.9604644775390625e-05,
+        "p95": 0.14797220230102454,
+        "p99": 8.180000000000007,
+        "max": 51.69726777076721
+      },
+      "elements": 2200,
+      "passed": false,
+      "exceeded_elements": 773,
+      "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference)"
+    },
+    "output_sameclass_2m_hungarian": {
+      "matching": "class constrained Hungarian 3D centre distance; unmatched reported separately",
+      "radius_m": 2.0,
+      "frames": [
+        {
+          "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+          "reference": 200,
+          "candidate": 200,
+          "matched": 199,
+          "unmatched_reference": 1,
+          "unmatched_candidate": 1
+        }
+      ],
+      "summary": {
+        "center_m": {
+          "mean": 0.04458095626166366,
+          "p50": 0.014892578124999832,
+          "p95": 0.13874960043352885,
+          "max": 1.0064408304995185
+        },
+        "size_m": {
+          "mean": 0.027279375486038437,
+          "p50": 0.010757684707641602,
+          "p95": 0.09797487258911126,
+          "max": 1.0548832416534424
+        },
+        "yaw_rad": {
+          "mean": 0.02497912922893285,
+          "p50": 0.0074350833892822266,
+          "p95": 0.06469998359680214,
+          "max": 1.0504710117923182
+        },
+        "score_abs": {
+          "mean": 0.0007397235937453994,
+          "p50": 0.0002593994140625,
+          "p95": 0.00341796875,
+          "max": 0.0109405517578125
+        },
+        "velocity_mps": {
+          "mean": 0.008937122325747152,
+          "p50": 0.0015655721919393812,
+          "p95": 0.03517256442427954,
+          "max": 0.23964764404714595
+        }
+      }
+    }
+  },
+  {
+    "token": "ca9a282c9e77460f8360f564131a8af5",
+    "repeat": 2,
+    "native_row_order": {
+      "shape": [
+        200,
+        11
+      ],
+      "reference_dtype": "float32",
+      "candidate_dtype": "float32",
+      "bitwise_equal": false,
+      "nonfinite_reference": 0,
+      "nonfinite_candidate": 0,
+      "absolute": {
+        "p50": 0.005769908428192139,
+        "p95": 16.496718406677058,
+        "p99": 57.56287691116332,
+        "max": 88.71562957763672
+      },
+      "relative_abs_reference_gt_001": {
+        "p50": 0.014541625684927983,
+        "p95": 2.8261245166338598,
+        "p99": 15.352488013864399,
+        "max": 124.13838979563846
+      },
+      "near_zero_reference_elements": 283,
+      "near_zero_absolute": {
+        "p50": 6.4849853515625e-05,
+        "p95": 0.06967183947563144,
+        "p99": 8.180000000000007,
+        "max": 38.47500014305115
+      },
+      "elements": 2200,
+      "passed": false,
+      "exceeded_elements": 702,
+      "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference)"
+    },
+    "output_sameclass_2m_hungarian": {
+      "matching": "class constrained Hungarian 3D centre distance; unmatched reported separately",
+      "radius_m": 2.0,
+      "frames": [
+        {
+          "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+          "reference": 200,
+          "candidate": 200,
+          "matched": 199,
+          "unmatched_reference": 1,
+          "unmatched_candidate": 1
+        }
+      ],
+      "summary": {
+        "center_m": {
+          "mean": 0.04388404990590541,
+          "p50": 0.018066406250000003,
+          "p95": 0.12775407342210113,
+          "max": 0.8556083307543314
+        },
+        "size_m": {
+          "mean": 0.027121064650952518,
+          "p50": 0.009387493133544922,
+          "p95": 0.10251333713531482,
+          "max": 1.1359658241271973
+        },
+        "yaw_rad": {
+          "mean": 0.025411727160837855,
+          "p50": 0.007461071014404297,
+          "p95": 0.07034745216369628,
+          "max": 1.0487696568118494
+        },
+        "score_abs": {
+          "mean": 0.0007039904594421387,
+          "p50": 0.000274658203125,
+          "p95": 0.0027099609374999986,
+          "max": 0.0113677978515625
+        },
+        "velocity_mps": {
+          "mean": 0.00906713601243934,
+          "p50": 0.001714926531980496,
+          "p95": 0.03364314676380888,
+          "max": 0.1694901117790865
+        }
+      }
+    }
+  },
+  {
+    "token": "ca9a282c9e77460f8360f564131a8af5",
+    "repeat": 3,
+    "native_row_order": {
+      "shape": [
+        200,
+        11
+      ],
+      "reference_dtype": "float32",
+      "candidate_dtype": "float32",
+      "bitwise_equal": false,
+      "nonfinite_reference": 0,
+      "nonfinite_candidate": 0,
+      "absolute": {
+        "p50": 0.0010583698749542236,
+        "p95": 2.078350768983328,
+        "p99": 39.40087594509063,
+        "max": 75.6187515258789
+      },
+      "relative_abs_reference_gt_001": {
+        "p50": 0.0021586616297895305,
+        "p95": 1.1590199797537166,
+        "p99": 6.022831493850881,
+        "max": 141.8838715803467
+      },
+      "near_zero_reference_elements": 283,
+      "near_zero_absolute": {
+        "p50": 9.59634780883789e-06,
+        "p95": 0.004320013523101791,
+        "p99": 0.3191870689392184,
+        "max": 9.0
+      },
+      "elements": 2200,
+      "passed": false,
+      "exceeded_elements": 321,
+      "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference)"
+    },
+    "output_sameclass_2m_hungarian": {
+      "matching": "class constrained Hungarian 3D centre distance; unmatched reported separately",
+      "radius_m": 2.0,
+      "frames": [
+        {
+          "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+          "reference": 200,
+          "candidate": 200,
+          "matched": 200,
+          "unmatched_reference": 0,
+          "unmatched_candidate": 0
+        }
+      ],
+      "summary": {
+        "center_m": {
+          "mean": 0.01764923363430373,
+          "p50": 0.004531860351562434,
+          "p95": 0.07577005464490426,
+          "max": 0.23743097532127258
+        },
+        "size_m": {
+          "mean": 0.00802328646183014,
+          "p50": 0.004233986139297485,
+          "p95": 0.031253707408905006,
+          "max": 0.09980273246765137
+        },
+        "yaw_rad": {
+          "mean": 0.011102270185947408,
+          "p50": 0.0035686492919921875,
+          "p95": 0.030348944664001433,
+          "max": 0.4236633777618408
+        },
+        "score_abs": {
+          "mean": 0.0003283172845840454,
+          "p50": 8.678436279296875e-05,
+          "p95": 0.00146484375,
+          "max": 0.005126953125
+        },
+        "velocity_mps": {
+          "mean": 0.004733480544365945,
+          "p50": 0.0010519027977237763,
+          "p95": 0.018278841918556183,
+          "max": 0.07241877263839194
+        }
+      }
+    }
+  },
+  {
+    "token": "ca9a282c9e77460f8360f564131a8af5",
+    "repeat": 4,
+    "native_row_order": {
+      "shape": [
+        200,
+        11
+      ],
+      "reference_dtype": "float32",
+      "candidate_dtype": "float32",
+      "bitwise_equal": false,
+      "nonfinite_reference": 0,
+      "nonfinite_candidate": 0,
+      "absolute": {
+        "p50": 0.0011985301971435547,
+        "p95": 3.0562496185302734,
+        "p99": 34.66875076293945,
+        "max": 90.63750076293945
+      },
+      "relative_abs_reference_gt_001": {
+        "p50": 0.0024410089503661514,
+        "p95": 1.3751967717951745,
+        "p99": 5.821681746368982,
+        "max": 123.90230242688239
+      },
+      "near_zero_reference_elements": 283,
+      "near_zero_absolute": {
+        "p50": 1.2814998626708984e-05,
+        "p95": 0.05720691680908188,
+        "p99": 2.5579519152641748,
+        "max": 9.0
+      },
+      "elements": 2200,
+      "passed": false,
+      "exceeded_elements": 356,
+      "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference)"
+    },
+    "output_sameclass_2m_hungarian": {
+      "matching": "class constrained Hungarian 3D centre distance; unmatched reported separately",
+      "radius_m": 2.0,
+      "frames": [
+        {
+          "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+          "reference": 200,
+          "candidate": 200,
+          "matched": 200,
+          "unmatched_reference": 0,
+          "unmatched_candidate": 0
+        }
+      ],
+      "summary": {
+        "center_m": {
+          "mean": 0.01802450884009197,
+          "p50": 0.004028320312500253,
+          "p95": 0.07533952531128972,
+          "max": 0.2705900850884791
+        },
+        "size_m": {
+          "mean": 0.011403242647647858,
+          "p50": 0.004109412431716919,
+          "p95": 0.038795554637908805,
+          "max": 0.23130202293395996
+        },
+        "yaw_rad": {
+          "mean": 0.012169173359870906,
+          "p50": 0.003710031509399414,
+          "p95": 0.032143700122833636,
+          "max": 0.7124660015106201
+        },
+        "score_abs": {
+          "mean": 0.00039925575256347654,
+          "p50": 0.000102996826171875,
+          "p95": 0.0015579223632812495,
+          "max": 0.0048828125
+        },
+        "velocity_mps": {
+          "mean": 0.006058959079086277,
+          "p50": 0.0010328777953390648,
+          "p95": 0.015950361844754214,
+          "max": 0.24916497108348729
+        }
+      }
+    }
+  },
+  {
+    "token": "e0845f5322254dafadbbed75aaa07969",
+    "repeat": 0,
+    "native_row_order": {
+      "shape": [
+        199,
+        11
+      ],
+      "reference_dtype": "float32",
+      "candidate_dtype": "float32",
+      "bitwise_equal": true,
+      "nonfinite_reference": 0,
+      "nonfinite_candidate": 0,
+      "absolute": {
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 0.0
+      },
+      "relative_abs_reference_gt_001": {
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 0.0
+      },
+      "near_zero_reference_elements": 290,
+      "near_zero_absolute": {
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 0.0
+      },
+      "elements": 2189,
+      "passed": true,
+      "exceeded_elements": 0,
+      "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference)"
+    },
+    "output_sameclass_2m_hungarian": {
+      "matching": "class constrained Hungarian 3D centre distance; unmatched reported separately",
+      "radius_m": 2.0,
+      "frames": [
+        {
+          "sample_token": "e0845f5322254dafadbbed75aaa07969",
+          "reference": 199,
+          "candidate": 199,
+          "matched": 199,
+          "unmatched_reference": 0,
+          "unmatched_candidate": 0
+        }
+      ],
+      "summary": {
+        "center_m": {
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        },
+        "size_m": {
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        },
+        "yaw_rad": {
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        },
+        "score_abs": {
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        },
+        "velocity_mps": {
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        }
+      }
+    }
+  },
+  {
+    "token": "e0845f5322254dafadbbed75aaa07969",
+    "repeat": 1,
+    "native_row_order": {
+      "shape": [
+        199,
+        11
+      ],
+      "reference_dtype": "float32",
+      "candidate_dtype": "float32",
+      "bitwise_equal": false,
+      "nonfinite_reference": 0,
+      "nonfinite_candidate": 0,
+      "absolute": {
+        "p50": 0.003493010997772217,
+        "p95": 10.27499771118164,
+        "p99": 53.296501235961806,
+        "max": 88.74375534057617
+      },
+      "relative_abs_reference_gt_001": {
+        "p50": 0.006180678072198355,
+        "p95": 2.6490505001099187,
+        "p99": 15.435638714206195,
+        "max": 184.14435919208145
+      },
+      "near_zero_reference_elements": 290,
+      "near_zero_absolute": {
+        "p50": 2.09808349609375e-05,
+        "p95": 0.08252827823162091,
+        "p99": 7.063250057697304,
+        "max": 8.0
+      },
+      "elements": 2189,
+      "passed": false,
+      "exceeded_elements": 642,
+      "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference)"
+    },
+    "output_sameclass_2m_hungarian": {
+      "matching": "class constrained Hungarian 3D centre distance; unmatched reported separately",
+      "radius_m": 2.0,
+      "frames": [
+        {
+          "sample_token": "e0845f5322254dafadbbed75aaa07969",
+          "reference": 199,
+          "candidate": 199,
+          "matched": 199,
+          "unmatched_reference": 0,
+          "unmatched_candidate": 0
+        }
+      ],
+      "summary": {
+        "center_m": {
+          "mean": 0.0302861835734371,
+          "p50": 0.007812499999999495,
+          "p95": 0.13987134910471397,
+          "max": 0.30949285555223643
+        },
+        "size_m": {
+          "mean": 0.0148791100212078,
+          "p50": 0.007111907005310059,
+          "p95": 0.058918344974517776,
+          "max": 0.21800446510314941
+        },
+        "yaw_rad": {
+          "mean": 0.009557556287301315,
+          "p50": 0.0020956993103027344,
+          "p95": 0.033150315284729,
+          "max": 0.34682512283325195
+        },
+        "score_abs": {
+          "mean": 0.001027631699739389,
+          "p50": 0.0001678466796875,
+          "p95": 0.004663085937499999,
+          "max": 0.015625
+        },
+        "velocity_mps": {
+          "mean": 0.007525815650149111,
+          "p50": 0.001335846136913347,
+          "p95": 0.02211982772022826,
+          "max": 0.20113373437298201
+        }
+      }
+    }
+  },
+  {
+    "token": "e0845f5322254dafadbbed75aaa07969",
+    "repeat": 2,
+    "native_row_order": {
+      "shape": [
+        199,
+        11
+      ],
+      "reference_dtype": "float32",
+      "candidate_dtype": "float32",
+      "bitwise_equal": false,
+      "nonfinite_reference": 0,
+      "nonfinite_candidate": 0,
+      "absolute": {
+        "p50": 0.0027924776077270508,
+        "p95": 6.0175639629363875,
+        "p99": 55.78500076293943,
+        "max": 111.48750305175781
+      },
+      "relative_abs_reference_gt_001": {
+        "p50": 0.004426135626185153,
+        "p95": 1.956605308535825,
+        "p99": 11.330954789434927,
+        "max": 339.67313323143395
+      },
+      "near_zero_reference_elements": 290,
+      "near_zero_absolute": {
+        "p50": 1.430511474609375e-06,
+        "p95": 0.10565819740295447,
+        "p99": 1.1767275315523154,
+        "max": 8.539061963558197
+      },
+      "elements": 2189,
+      "passed": false,
+      "exceeded_elements": 476,
+      "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference)"
+    },
+    "output_sameclass_2m_hungarian": {
+      "matching": "class constrained Hungarian 3D centre distance; unmatched reported separately",
+      "radius_m": 2.0,
+      "frames": [
+        {
+          "sample_token": "e0845f5322254dafadbbed75aaa07969",
+          "reference": 199,
+          "candidate": 199,
+          "matched": 199,
+          "unmatched_reference": 0,
+          "unmatched_candidate": 0
+        }
+      ],
+      "summary": {
+        "center_m": {
+          "mean": 0.030203776908269798,
+          "p50": 0.006835997104644804,
+          "p95": 0.15663821110851905,
+          "max": 0.39065785778709117
+        },
+        "size_m": {
+          "mean": 0.017971908177562695,
+          "p50": 0.006829023361206055,
+          "p95": 0.07198472023010252,
+          "max": 0.2769429683685303
+        },
+        "yaw_rad": {
+          "mean": 0.007727875801360273,
+          "p50": 0.0022683143615722656,
+          "p95": 0.023495697975159092,
+          "max": 0.2507133483886719
+        },
+        "score_abs": {
+          "mean": 0.0008953411375457917,
+          "p50": 0.00018310546875,
+          "p95": 0.004931640624999997,
+          "max": 0.0106201171875
+        },
+        "velocity_mps": {
+          "mean": 0.007754343419527874,
+          "p50": 0.0011849246100065348,
+          "p95": 0.023601444979888524,
+          "max": 0.3751777890014985
+        }
+      }
+    }
+  },
+  {
+    "token": "e0845f5322254dafadbbed75aaa07969",
+    "repeat": 3,
+    "native_row_order": {
+      "shape": [
+        199,
+        11
+      ],
+      "reference_dtype": "float32",
+      "candidate_dtype": "float32",
+      "bitwise_equal": false,
+      "nonfinite_reference": 0,
+      "nonfinite_candidate": 0,
+      "absolute": {
+        "p50": 0.003568887710571289,
+        "p95": 9.044998168945305,
+        "p99": 48.35550108909595,
+        "max": 91.10625457763672
+      },
+      "relative_abs_reference_gt_001": {
+        "p50": 0.006324110671936759,
+        "p95": 2.2929732729696126,
+        "p99": 12.714336677655677,
+        "max": 183.57292017556378
+      },
+      "near_zero_reference_elements": 290,
+      "near_zero_absolute": {
+        "p50": 9.924173355102539e-06,
+        "p95": 0.23036861419677823,
+        "p99": 5.313866710066821,
+        "max": 8.0
+      },
+      "elements": 2189,
+      "passed": false,
+      "exceeded_elements": 641,
+      "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference)"
+    },
+    "output_sameclass_2m_hungarian": {
+      "matching": "class constrained Hungarian 3D centre distance; unmatched reported separately",
+      "radius_m": 2.0,
+      "frames": [
+        {
+          "sample_token": "e0845f5322254dafadbbed75aaa07969",
+          "reference": 199,
+          "candidate": 199,
+          "matched": 199,
+          "unmatched_reference": 0,
+          "unmatched_candidate": 0
+        }
+      ],
+      "summary": {
+        "center_m": {
+          "mean": 0.03030832038665338,
+          "p50": 0.00781250000000018,
+          "p95": 0.13694391326834462,
+          "max": 0.43767374131347786
+        },
+        "size_m": {
+          "mean": 0.016826117757576795,
+          "p50": 0.007659554481506348,
+          "p95": 0.06084356904029825,
+          "max": 0.2130279541015625
+        },
+        "yaw_rad": {
+          "mean": 0.007232133168071969,
+          "p50": 0.0016164779663085938,
+          "p95": 0.027510190010070792,
+          "max": 0.12292623519897461
+        },
+        "score_abs": {
+          "mean": 0.0008469295861133978,
+          "p50": 0.0001068115234375,
+          "p95": 0.0034423828124999986,
+          "max": 0.020751953125
+        },
+        "velocity_mps": {
+          "mean": 0.006641232510129739,
+          "p50": 0.0012018622619757511,
+          "p95": 0.021313921702256607,
+          "max": 0.18718692801668602
+        }
+      }
+    }
+  },
+  {
+    "token": "e0845f5322254dafadbbed75aaa07969",
+    "repeat": 4,
+    "native_row_order": {
+      "shape": [
+        199,
+        11
+      ],
+      "reference_dtype": "float32",
+      "candidate_dtype": "float32",
+      "bitwise_equal": false,
+      "nonfinite_reference": 0,
+      "nonfinite_candidate": 0,
+      "absolute": {
+        "p50": 0.007703423500061035,
+        "p95": 19.485001325607247,
+        "p99": 64.52700218200681,
+        "max": 111.11250686645508
+      },
+      "relative_abs_reference_gt_001": {
+        "p50": 0.015004039784789853,
+        "p95": 3.143177030904071,
+        "p99": 25.830124744494192,
+        "max": 316.0090508265314
+      },
+      "near_zero_reference_elements": 290,
+      "near_zero_absolute": {
+        "p50": 7.82012939453125e-05,
+        "p95": 0.5898213297128683,
+        "p99": 7.1236291265487806,
+        "max": 47.32500243186951
+      },
+      "elements": 2189,
+      "passed": false,
+      "exceeded_elements": 763,
+      "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference)"
+    },
+    "output_sameclass_2m_hungarian": {
+      "matching": "class constrained Hungarian 3D centre distance; unmatched reported separately",
+      "radius_m": 2.0,
+      "frames": [
+        {
+          "sample_token": "e0845f5322254dafadbbed75aaa07969",
+          "reference": 199,
+          "candidate": 199,
+          "matched": 198,
+          "unmatched_reference": 1,
+          "unmatched_candidate": 1
+        }
+      ],
+      "summary": {
+        "center_m": {
+          "mean": 0.043630519360244154,
+          "p50": 0.015380829572677529,
+          "p95": 0.2340703080196977,
+          "max": 0.45394247570514906
+        },
+        "size_m": {
+          "mean": 0.02329211373521824,
+          "p50": 0.009191662073135376,
+          "p95": 0.09473034143447863,
+          "max": 0.2749369144439697
+        },
+        "yaw_rad": {
+          "mean": 0.012511998113959727,
+          "p50": 0.002645254135131614,
+          "p95": 0.04882256388664225,
+          "max": 0.31925201416015625
+        },
+        "score_abs": {
+          "mean": 0.0010171595847967899,
+          "p50": 0.000240325927734375,
+          "p95": 0.004098510742187499,
+          "max": 0.020263671875
+        },
+        "velocity_mps": {
+          "mean": 0.010707204279229733,
+          "p50": 0.0017820458055343392,
+          "p95": 0.034652680627134065,
+          "max": 0.2997392634727347
+        }
+      }
+    }
+  },
+  {
+    "token": "b26e791522294bec90f86fd72226e35c",
+    "repeat": 0,
+    "native_row_order": {
+      "shape": [
+        200,
+        11
+      ],
+      "reference_dtype": "float32",
+      "candidate_dtype": "float32",
+      "bitwise_equal": true,
+      "nonfinite_reference": 0,
+      "nonfinite_candidate": 0,
+      "absolute": {
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 0.0
+      },
+      "relative_abs_reference_gt_001": {
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 0.0
+      },
+      "near_zero_reference_elements": 315,
+      "near_zero_absolute": {
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 0.0
+      },
+      "elements": 2200,
+      "passed": true,
+      "exceeded_elements": 0,
+      "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference)"
+    },
+    "output_sameclass_2m_hungarian": {
+      "matching": "class constrained Hungarian 3D centre distance; unmatched reported separately",
+      "radius_m": 2.0,
+      "frames": [
+        {
+          "sample_token": "b26e791522294bec90f86fd72226e35c",
+          "reference": 200,
+          "candidate": 200,
+          "matched": 200,
+          "unmatched_reference": 0,
+          "unmatched_candidate": 0
+        }
+      ],
+      "summary": {
+        "center_m": {
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        },
+        "size_m": {
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        },
+        "yaw_rad": {
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        },
+        "score_abs": {
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        },
+        "velocity_mps": {
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        }
+      }
+    }
+  },
+  {
+    "token": "b26e791522294bec90f86fd72226e35c",
+    "repeat": 1,
+    "native_row_order": {
+      "shape": [
+        200,
+        11
+      ],
+      "reference_dtype": "float32",
+      "candidate_dtype": "float32",
+      "bitwise_equal": false,
+      "nonfinite_reference": 0,
+      "nonfinite_candidate": 0,
+      "absolute": {
+        "p50": 0.002776332199573517,
+        "p95": 12.774374389648408,
+        "p99": 40.0510323834419,
+        "max": 79.10156440734863
+      },
+      "relative_abs_reference_gt_001": {
+        "p50": 0.0056719153701535255,
+        "p95": 2.9186538045170254,
+        "p99": 12.31340699327213,
+        "max": 69.50032997949657
+      },
+      "near_zero_reference_elements": 315,
+      "near_zero_absolute": {
+        "p50": 2.1457672119140625e-06,
+        "p95": 0.6412014603614824,
+        "p99": 2.0776316642761343,
+        "max": 8.0
+      },
+      "elements": 2200,
+      "passed": false,
+      "exceeded_elements": 719,
+      "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference)"
+    },
+    "output_sameclass_2m_hungarian": {
+      "matching": "class constrained Hungarian 3D centre distance; unmatched reported separately",
+      "radius_m": 2.0,
+      "frames": [
+        {
+          "sample_token": "b26e791522294bec90f86fd72226e35c",
+          "reference": 200,
+          "candidate": 200,
+          "matched": 199,
+          "unmatched_reference": 1,
+          "unmatched_candidate": 1
+        }
+      ],
+      "summary": {
+        "center_m": {
+          "mean": 0.040815083978858725,
+          "p50": 0.0058593749999999835,
+          "p95": 0.1519334528651315,
+          "max": 0.9277418019854725
+        },
+        "size_m": {
+          "mean": 0.014565850472330447,
+          "p50": 0.005485057830810547,
+          "p95": 0.04763494729995727,
+          "max": 0.2192673683166504
+        },
+        "yaw_rad": {
+          "mean": 0.009169417410040641,
+          "p50": 0.0020546913146972656,
+          "p95": 0.026788973808288572,
+          "max": 0.3932666778564453
+        },
+        "score_abs": {
+          "mean": 0.0008789756190237687,
+          "p50": 0.00048828125,
+          "p95": 0.00341796875,
+          "max": 0.0087890625
+        },
+        "velocity_mps": {
+          "mean": 0.010519615604937575,
+          "p50": 0.0002672855950311254,
+          "p95": 0.023020734352937677,
+          "max": 0.5856154329101466
+        }
+      }
+    }
+  },
+  {
+    "token": "b26e791522294bec90f86fd72226e35c",
+    "repeat": 2,
+    "native_row_order": {
+      "shape": [
+        200,
+        11
+      ],
+      "reference_dtype": "float32",
+      "candidate_dtype": "float32",
+      "bitwise_equal": false,
+      "nonfinite_reference": 0,
+      "nonfinite_candidate": 0,
+      "absolute": {
+        "p50": 0.001220703125,
+        "p95": 2.4418251425027613,
+        "p99": 32.212501525878906,
+        "max": 71.86875343322754
+      },
+      "relative_abs_reference_gt_001": {
+        "p50": 0.0019512800634671713,
+        "p95": 1.1726160228511662,
+        "p99": 6.212461515162752,
+        "max": 322.99536759345926
+      },
+      "near_zero_reference_elements": 315,
+      "near_zero_absolute": {
+        "p50": 5.960464477539063e-08,
+        "p95": 0.009334963560104386,
+        "p99": 0.9675113976001741,
+        "max": 5.0
+      },
+      "elements": 2200,
+      "passed": false,
+      "exceeded_elements": 302,
+      "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference)"
+    },
+    "output_sameclass_2m_hungarian": {
+      "matching": "class constrained Hungarian 3D centre distance; unmatched reported separately",
+      "radius_m": 2.0,
+      "frames": [
+        {
+          "sample_token": "b26e791522294bec90f86fd72226e35c",
+          "reference": 200,
+          "candidate": 200,
+          "matched": 200,
+          "unmatched_reference": 0,
+          "unmatched_candidate": 0
+        }
+      ],
+      "summary": {
+        "center_m": {
+          "mean": 0.02620696454925471,
+          "p50": 0.0039061605930330173,
+          "p95": 0.1061481269325591,
+          "max": 0.522266145419729
+        },
+        "size_m": {
+          "mean": 0.009530279487371444,
+          "p50": 0.004589676856994629,
+          "p95": 0.03157324790954586,
+          "max": 0.1917794942855835
+        },
+        "yaw_rad": {
+          "mean": 0.005912309904866899,
+          "p50": 0.0018086433410644531,
+          "p95": 0.031572222709655706,
+          "max": 0.10028505325317338
+        },
+        "score_abs": {
+          "mean": 0.0008148622512817383,
+          "p50": 0.00048828125,
+          "p95": 0.003173828125,
+          "max": 0.007568359375
+        },
+        "velocity_mps": {
+          "mean": 0.003927101309663029,
+          "p50": 0.0002464363828114459,
+          "p95": 0.013905080162769142,
+          "max": 0.12400127355237213
+        }
+      }
+    }
+  },
+  {
+    "token": "b26e791522294bec90f86fd72226e35c",
+    "repeat": 3,
+    "native_row_order": {
+      "shape": [
+        200,
+        11
+      ],
+      "reference_dtype": "float32",
+      "candidate_dtype": "float32",
+      "bitwise_equal": false,
+      "nonfinite_reference": 0,
+      "nonfinite_candidate": 0,
+      "absolute": {
+        "p50": 0.002462625503540039,
+        "p95": 10.785937499999974,
+        "p99": 40.162970087528215,
+        "max": 81.98203468322754
+      },
+      "relative_abs_reference_gt_001": {
+        "p50": 0.004842615012106538,
+        "p95": 2.7852371598375343,
+        "p99": 13.159508951763696,
+        "max": 292.18331284618625
+      },
+      "near_zero_reference_elements": 315,
+      "near_zero_absolute": {
+        "p50": 5.364418029785156e-07,
+        "p95": 0.15176477432251048,
+        "p99": 1.2789767026901278,
+        "max": 9.0
+      },
+      "elements": 2200,
+      "passed": false,
+      "exceeded_elements": 671,
+      "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference)"
+    },
+    "output_sameclass_2m_hungarian": {
+      "matching": "class constrained Hungarian 3D centre distance; unmatched reported separately",
+      "radius_m": 2.0,
+      "frames": [
+        {
+          "sample_token": "b26e791522294bec90f86fd72226e35c",
+          "reference": 200,
+          "candidate": 200,
+          "matched": 199,
+          "unmatched_reference": 1,
+          "unmatched_candidate": 1
+        }
+      ],
+      "summary": {
+        "center_m": {
+          "mean": 0.03567900223359518,
+          "p50": 0.004394531249999934,
+          "p95": 0.15495848044628624,
+          "max": 0.7217710213686928
+        },
+        "size_m": {
+          "mean": 0.01273588903585271,
+          "p50": 0.005179405212402344,
+          "p95": 0.04478914737701416,
+          "max": 0.2192673683166504
+        },
+        "yaw_rad": {
+          "mean": 0.008278788633682027,
+          "p50": 0.0019664764404296875,
+          "p95": 0.02850570678710935,
+          "max": 0.36298513412475586
+        },
+        "score_abs": {
+          "mean": 0.000919254281413016,
+          "p50": 0.00048828125,
+          "p95": 0.0034301757812499993,
+          "max": 0.01806640625
+        },
+        "velocity_mps": {
+          "mean": 0.0091353029767215,
+          "p50": 0.0002729220828467296,
+          "p95": 0.021984247243977878,
+          "max": 0.5116581873690078
+        }
+      }
+    }
+  },
+  {
+    "token": "b26e791522294bec90f86fd72226e35c",
+    "repeat": 4,
+    "native_row_order": {
+      "shape": [
+        200,
+        11
+      ],
+      "reference_dtype": "float32",
+      "candidate_dtype": "float32",
+      "bitwise_equal": false,
+      "nonfinite_reference": 0,
+      "nonfinite_candidate": 0,
+      "absolute": {
+        "p50": 0.003338545560836792,
+        "p95": 12.825000762939453,
+        "p99": 39.79012538909906,
+        "max": 100.50703430175781
+      },
+      "relative_abs_reference_gt_001": {
+        "p50": 0.0065790167145706934,
+        "p95": 2.922328734658045,
+        "p99": 10.733573350423494,
+        "max": 69.20866532449618
+      },
+      "near_zero_reference_elements": 315,
+      "near_zero_absolute": {
+        "p50": 3.814697265625e-06,
+        "p95": 0.30078071355819785,
+        "p99": 2.082729320526134,
+        "max": 8.0
+      },
+      "elements": 2200,
+      "passed": false,
+      "exceeded_elements": 717,
+      "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference)"
+    },
+    "output_sameclass_2m_hungarian": {
+      "matching": "class constrained Hungarian 3D centre distance; unmatched reported separately",
+      "radius_m": 2.0,
+      "frames": [
+        {
+          "sample_token": "b26e791522294bec90f86fd72226e35c",
+          "reference": 200,
+          "candidate": 200,
+          "matched": 199,
+          "unmatched_reference": 1,
+          "unmatched_candidate": 1
+        }
+      ],
+      "summary": {
+        "center_m": {
+          "mean": 0.0348397069856662,
+          "p50": 0.004882693290710522,
+          "p95": 0.11530107608976721,
+          "max": 1.0108661608766782
+        },
+        "size_m": {
+          "mean": 0.013763451546280827,
+          "p50": 0.005138993263244629,
+          "p95": 0.0412502884864807,
+          "max": 0.23692750930786133
+        },
+        "yaw_rad": {
+          "mean": 0.008127434169826806,
+          "p50": 0.0023956298828125,
+          "p95": 0.024415576457977265,
+          "max": 0.3980717658996582
+        },
+        "score_abs": {
+          "mean": 0.0008889089277641258,
+          "p50": 0.00048828125,
+          "p95": 0.0037109374999999972,
+          "max": 0.0101318359375
+        },
+        "velocity_mps": {
+          "mean": 0.011100675779642038,
+          "p50": 0.0002856433336580507,
+          "p95": 0.02737490486526715,
+          "max": 0.6201243009804636
+        }
+      }
+    }
+  },
+  {
+    "token": "747aa46b9a4641fe90db05d97db2acea",
+    "repeat": 0,
+    "native_row_order": {
+      "shape": [
+        200,
+        11
+      ],
+      "reference_dtype": "float32",
+      "candidate_dtype": "float32",
+      "bitwise_equal": true,
+      "nonfinite_reference": 0,
+      "nonfinite_candidate": 0,
+      "absolute": {
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 0.0
+      },
+      "relative_abs_reference_gt_001": {
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 0.0
+      },
+      "near_zero_reference_elements": 250,
+      "near_zero_absolute": {
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 0.0
+      },
+      "elements": 2200,
+      "passed": true,
+      "exceeded_elements": 0,
+      "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference)"
+    },
+    "output_sameclass_2m_hungarian": {
+      "matching": "class constrained Hungarian 3D centre distance; unmatched reported separately",
+      "radius_m": 2.0,
+      "frames": [
+        {
+          "sample_token": "747aa46b9a4641fe90db05d97db2acea",
+          "reference": 200,
+          "candidate": 200,
+          "matched": 200,
+          "unmatched_reference": 0,
+          "unmatched_candidate": 0
+        }
+      ],
+      "summary": {
+        "center_m": {
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        },
+        "size_m": {
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        },
+        "yaw_rad": {
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        },
+        "score_abs": {
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        },
+        "velocity_mps": {
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        }
+      }
+    }
+  },
+  {
+    "token": "747aa46b9a4641fe90db05d97db2acea",
+    "repeat": 1,
+    "native_row_order": {
+      "shape": [
+        200,
+        11
+      ],
+      "reference_dtype": "float32",
+      "candidate_dtype": "float32",
+      "bitwise_equal": false,
+      "nonfinite_reference": 0,
+      "nonfinite_candidate": 0,
+      "absolute": {
+        "p50": 0.03423294425010681,
+        "p95": 22.55625088214864,
+        "p99": 57.319737796783315,
+        "max": 101.90625381469727
+      },
+      "relative_abs_reference_gt_001": {
+        "p50": 0.0711885162645242,
+        "p95": 3.4178021642023766,
+        "p99": 14.116258685713666,
+        "max": 132.64679631987298
+      },
+      "near_zero_reference_elements": 250,
+      "near_zero_absolute": {
+        "p50": 0.00013583898544311523,
+        "p95": 1.1008961796760535,
+        "p99": 8.0,
+        "max": 9.0
+      },
+      "elements": 2200,
+      "passed": false,
+      "exceeded_elements": 961,
+      "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference)"
+    },
+    "output_sameclass_2m_hungarian": {
+      "matching": "class constrained Hungarian 3D centre distance; unmatched reported separately",
+      "radius_m": 2.0,
+      "frames": [
+        {
+          "sample_token": "747aa46b9a4641fe90db05d97db2acea",
+          "reference": 200,
+          "candidate": 200,
+          "matched": 199,
+          "unmatched_reference": 1,
+          "unmatched_candidate": 1
+        }
+      ],
+      "summary": {
+        "center_m": {
+          "mean": 0.038444758802746344,
+          "p50": 0.013671875000000056,
+          "p95": 0.1371551586514431,
+          "max": 0.6056909559497947
+        },
+        "size_m": {
+          "mean": 0.013297095520412503,
+          "p50": 0.0072983503341674805,
+          "p95": 0.04119867086410522,
+          "max": 0.1574949026107788
+        },
+        "yaw_rad": {
+          "mean": 0.01748751455814992,
+          "p50": 0.006012201309204546,
+          "p95": 0.07432594299316408,
+          "max": 0.28150510787963867
+        },
+        "score_abs": {
+          "mean": 0.0006172477300442643,
+          "p50": 8.392333984375e-05,
+          "p95": 0.0032501220703124974,
+          "max": 0.007080078125
+        },
+        "velocity_mps": {
+          "mean": 0.010142996065843077,
+          "p50": 0.004585088094370803,
+          "p95": 0.04082483924110012,
+          "max": 0.16871531048678057
+        }
+      }
+    }
+  },
+  {
+    "token": "747aa46b9a4641fe90db05d97db2acea",
+    "repeat": 2,
+    "native_row_order": {
+      "shape": [
+        200,
+        11
+      ],
+      "reference_dtype": "float32",
+      "candidate_dtype": "float32",
+      "bitwise_equal": false,
+      "nonfinite_reference": 0,
+      "nonfinite_candidate": 0,
+      "absolute": {
+        "p50": 0.0027628540992736816,
+        "p95": 10.76812551021532,
+        "p99": 49.76521944522829,
+        "max": 104.21953582763672
+      },
+      "relative_abs_reference_gt_001": {
+        "p50": 0.004523633216304188,
+        "p95": 2.392239573071483,
+        "p99": 11.361895657269041,
+        "max": 64.49393636240237
+      },
+      "near_zero_reference_elements": 250,
+      "near_zero_absolute": {
+        "p50": 4.2438507080078125e-05,
+        "p95": 0.22509312927722888,
+        "p99": 5.328501034378956,
+        "max": 8.0
+      },
+      "elements": 2200,
+      "passed": false,
+      "exceeded_elements": 537,
+      "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference)"
+    },
+    "output_sameclass_2m_hungarian": {
+      "matching": "class constrained Hungarian 3D centre distance; unmatched reported separately",
+      "radius_m": 2.0,
+      "frames": [
+        {
+          "sample_token": "747aa46b9a4641fe90db05d97db2acea",
+          "reference": 200,
+          "candidate": 200,
+          "matched": 200,
+          "unmatched_reference": 0,
+          "unmatched_candidate": 0
+        }
+      ],
+      "summary": {
+        "center_m": {
+          "mean": 0.029837798306839237,
+          "p50": 0.006347656249999837,
+          "p95": 0.1359717690095555,
+          "max": 0.4951029529831927
+        },
+        "size_m": {
+          "mean": 0.009022971391677856,
+          "p50": 0.005008220672607422,
+          "p95": 0.031023645401000974,
+          "max": 0.06424963474273682
+        },
+        "yaw_rad": {
+          "mean": 0.00993599772453308,
+          "p50": 0.0038383007049562767,
+          "p95": 0.04385995864868163,
+          "max": 0.1488101482391362
+        },
+        "score_abs": {
+          "mean": 0.0004797664284706116,
+          "p50": 5.507469177246094e-05,
+          "p95": 0.002694702148437497,
+          "max": 0.0050048828125
+        },
+        "velocity_mps": {
+          "mean": 0.006226920711058912,
+          "p50": 0.003130287305219123,
+          "p95": 0.02728513282904315,
+          "max": 0.0639747931693027
+        }
+      }
+    }
+  },
+  {
+    "token": "747aa46b9a4641fe90db05d97db2acea",
+    "repeat": 3,
+    "native_row_order": {
+      "shape": [
+        200,
+        11
+      ],
+      "reference_dtype": "float32",
+      "candidate_dtype": "float32",
+      "bitwise_equal": false,
+      "nonfinite_reference": 0,
+      "nonfinite_candidate": 0,
+      "absolute": {
+        "p50": 0.018798530101776123,
+        "p95": 21.096564316749557,
+        "p99": 56.72559738159175,
+        "max": 101.90391159057617
+      },
+      "relative_abs_reference_gt_001": {
+        "p50": 0.046433170350429646,
+        "p95": 3.301575878283331,
+        "p99": 13.429363697225472,
+        "max": 132.7244970229574
+      },
+      "near_zero_reference_elements": 250,
+      "near_zero_absolute": {
+        "p50": 0.0001163482666015625,
+        "p95": 1.2712204933166487,
+        "p99": 8.0,
+        "max": 9.0
+      },
+      "elements": 2200,
+      "passed": false,
+      "exceeded_elements": 882,
+      "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference)"
+    },
+    "output_sameclass_2m_hungarian": {
+      "matching": "class constrained Hungarian 3D centre distance; unmatched reported separately",
+      "radius_m": 2.0,
+      "frames": [
+        {
+          "sample_token": "747aa46b9a4641fe90db05d97db2acea",
+          "reference": 200,
+          "candidate": 200,
+          "matched": 199,
+          "unmatched_reference": 1,
+          "unmatched_candidate": 1
+        }
+      ],
+      "summary": {
+        "center_m": {
+          "mean": 0.05337393884875123,
+          "p50": 0.03342067138076011,
+          "p95": 0.17063538345169937,
+          "max": 0.8774038265410131
+        },
+        "size_m": {
+          "mean": 0.014922104588705092,
+          "p50": 0.006525874137878418,
+          "p95": 0.050765693187713595,
+          "max": 0.1669917106628418
+        },
+        "yaw_rad": {
+          "mean": 0.024886746801922655,
+          "p50": 0.006529331207275391,
+          "p95": 0.08808264732360829,
+          "max": 0.8092570304870605
+        },
+        "score_abs": {
+          "mean": 0.0006140796982463281,
+          "p50": 9.1552734375e-05,
+          "p95": 0.0029296875,
+          "max": 0.00732421875
+        },
+        "velocity_mps": {
+          "mean": 0.010083430766878659,
+          "p50": 0.0040225469714948205,
+          "p95": 0.039009999177042745,
+          "max": 0.19296512593745102
+        }
+      }
+    }
+  },
+  {
+    "token": "747aa46b9a4641fe90db05d97db2acea",
+    "repeat": 4,
+    "native_row_order": {
+      "shape": [
+        200,
+        11
+      ],
+      "reference_dtype": "float32",
+      "candidate_dtype": "float32",
+      "bitwise_equal": false,
+      "nonfinite_reference": 0,
+      "nonfinite_candidate": 0,
+      "absolute": {
+        "p50": 0.002106696367263794,
+        "p95": 5.862709236145013,
+        "p99": 39.24637729644725,
+        "max": 104.21953582763672
+      },
+      "relative_abs_reference_gt_001": {
+        "p50": 0.0034121620273775627,
+        "p95": 1.905639005303625,
+        "p99": 10.348961883916896,
+        "max": 771.0441155227915
+      },
+      "near_zero_reference_elements": 250,
+      "near_zero_absolute": {
+        "p50": 3.3974647521972656e-05,
+        "p95": 0.2045753121376037,
+        "p99": 4.741692481040895,
+        "max": 8.0
+      },
+      "elements": 2200,
+      "passed": false,
+      "exceeded_elements": 438,
+      "tolerance": "abs(candidate-reference) <= 0.05 + 0.02*abs(reference)"
+    },
+    "output_sameclass_2m_hungarian": {
+      "matching": "class constrained Hungarian 3D centre distance; unmatched reported separately",
+      "radius_m": 2.0,
+      "frames": [
+        {
+          "sample_token": "747aa46b9a4641fe90db05d97db2acea",
+          "reference": 200,
+          "candidate": 200,
+          "matched": 200,
+          "unmatched_reference": 0,
+          "unmatched_candidate": 0
+        }
+      ],
+      "summary": {
+        "center_m": {
+          "mean": 0.02859281779144259,
+          "p50": 0.006317138671875128,
+          "p95": 0.13733899286633042,
+          "max": 0.39221218077138975
+        },
+        "size_m": {
+          "mean": 0.009588023275136947,
+          "p50": 0.004358768463134766,
+          "p95": 0.03322011828422545,
+          "max": 0.13698959350585938
+        },
+        "yaw_rad": {
+          "mean": 0.010314125418663025,
+          "p50": 0.003285050392150879,
+          "p95": 0.03952645063400259,
+          "max": 0.18499577045440674
+        },
+        "score_abs": {
+          "mean": 0.0004666280746459961,
+          "p50": 6.103515625e-05,
+          "p95": 0.002444458007812499,
+          "max": 0.005859375
+        },
+        "velocity_mps": {
+          "mean": 0.006337769073717989,
+          "p50": 0.0036049049926517368,
+          "p95": 0.026027447127368476,
+          "max": 0.08231964060083659
+        }
+      }
+    }
+  }
+]
