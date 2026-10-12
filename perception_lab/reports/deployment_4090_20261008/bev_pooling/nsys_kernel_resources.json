@@ -1,0 +1,28 @@
+[
+  {
+    "name": "bevfusion::camera::bevpool_half_pack10_kernel(const __half *, const __half *, unsigned int, const int3 *, unsigned int, const unsigned int *, unsigned int, unsigned int, unsigned int, unsigned int, __half *)",
+    "registersPerThread": 40,
+    "gridX": 1,
+    "gridY": 761,
+    "blockX": 8,
+    "blockY": 128,
+    "staticSharedMemory": 0,
+    "dynamicSharedMemory": 0,
+    "localMemoryPerThread": 0,
+    "localMemoryTotal": 176160768,
+    "isolated_profile_duration_ms": 0.22157
+  },
+  {
+    "name": "bevfusion::camera::car_bevpool_pack4_kernel(const __half *, const __half *, unsigned int, const int3 *, unsigned int, const unsigned int *, unsigned int, unsigned int, unsigned int, unsigned int, __half *)",
+    "registersPerThread": 38,
+    "gridX": 1,
+    "gridY": 12166,
+    "blockX": 20,
+    "blockY": 8,
+    "staticSharedMemory": 0,
+    "dynamicSharedMemory": 0,
+    "localMemoryPerThread": 0,
+    "localMemoryTotal": 176160768,
+    "isolated_profile_duration_ms": 0.233187
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "input_points": 500001,
+  "rejected_before_backend": true,
+  "error": "Point capacity exceeded; do not silently truncate",
+  "runner_sha256": "0d148bb9c91f7ae985af4e66cc1bf067e659e61e8b45e43f9ade929057bc0b8c",
+  "guard": "if not 0 < len(points) <= tcfg['max_input_points']:\n            raise ValueError('Point capacity exceeded; do not silently truncate')"
+}

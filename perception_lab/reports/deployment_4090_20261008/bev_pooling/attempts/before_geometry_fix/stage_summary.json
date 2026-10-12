@@ -1,0 +1,15 @@
+{
+  "experiment": "passed",
+  "correctness": "passed",
+  "paired_measurement": "passed",
+  "speedup_obtained": false,
+  "default": "upstream",
+  "nsight_systems": "passed",
+  "compute_sanitizer": "passed",
+  "nsight_compute": "blocked_permission",
+  "full_model": "passed",
+  "full_model_frames": 120,
+  "full_model_paired_rounds": 30,
+  "stable_full_model_speedup": false,
+  "capacity_boundaries": "passed"
+}

@@ -1,0 +1,5 @@
+[  5%] Building NVCC (Device) object CMakeFiles/bevfusion_core.dir/src/bevfusion/bevfusion_core_generated_camera-geometry.cu.o
+[ 10%] Linking CXX shared library libbevfusion_core.so
+[ 89%] Built target bevfusion_core
+[ 94%] Linking CXX shared library libpybev.so
+[100%] Built target pybev

@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "identity": {
+    "model_config": "cb7bbbc25e8fdf67c2e914b11661828b684312300deb2afc410793192713e04b",
+    "checkpoint": "4006d4b4cb74f16d1e1d1be2689eae4418fe4050bce07394f202fae2e4648376",
+    "packets": "9680b0d03e49cc78be200a9abe3b99602312123adbf8e12667b9fbbbe7d5c549",
+    "config_hierarchy": {
+      "/home/minglei/Desktop/CAR/perception_lab/third_party/bevfusion_4090/configs/nuscenes/det/transfusion/secfpn/camera+lidar/resnet50/convfuser.yaml": "cb7bbbc25e8fdf67c2e914b11661828b684312300deb2afc410793192713e04b",
+      "/home/minglei/Desktop/CAR/perception_lab/third_party/bevfusion_4090/configs/nuscenes/det/transfusion/secfpn/camera+lidar/resnet50/default.yaml": "7ede0e925193d439f7cb14c57bf5c7785b002043cd4a99a2b4ac89418496d305",
+      "/home/minglei/Desktop/CAR/perception_lab/third_party/bevfusion_4090/configs/nuscenes/det/transfusion/secfpn/camera+lidar/default.yaml": "ea024e79ec783224e8af44df3fb8f01612042e7db6d99c4c12fa91e70b044245",
+      "/home/minglei/Desktop/CAR/perception_lab/third_party/bevfusion_4090/configs/nuscenes/det/transfusion/secfpn/default.yaml": "b92f9e99cf5c99cbf28ac80790eb12bb202699fb7dc77b0237639f386d13ec00",
+      "/home/minglei/Desktop/CAR/perception_lab/third_party/bevfusion_4090/configs/nuscenes/det/transfusion/default.yaml": "772e0abef1a86a42f28511ab208dda3b0e3860eb2bbb4e42d70e04fe53b3c2d9",
+      "/home/minglei/Desktop/CAR/perception_lab/third_party/bevfusion_4090/configs/nuscenes/det/default.yaml": "beb347b03f6c9b7882b911aa99ecc1c2204b6b63e8e1d2fa63bc6d8e49855dce",
+      "/home/minglei/Desktop/CAR/perception_lab/third_party/bevfusion_4090/configs/nuscenes/default.yaml": "e0ca3942fc6c47e360dcee8053ccb1ff980b25ceb7c8476622d1ce99865464ce",
+      "/home/minglei/Desktop/CAR/perception_lab/third_party/bevfusion_4090/configs/default.yaml": "20bc613b189b066151204b68d9033bbe270ae5877b248daa7c4097642cefef9c"
+    },
+    "config_sha256": "638d79646c6ca195e7905bc91d3a9c873c5f52c60faad4ca3a4d856da7b1c2a8",
+    "compatibility_patch_sha256": "1e3ba3ec7ca8f3bb9a56b06a70c0c3f1e7a050661b4339c0fd867fd626ca78e6",
+    "sensor_files": {
+      "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/CAM_BACK/n015-2018-07-24-11-22-45+0800__CAM_BACK__1532402927637525.jpg": "51fe14c13dc4f2ab0f7f59b6634b98925b767939b3417a9db617bd3c178c9bb4",
+      "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-07-24-11-22-45+0800__CAM_BACK_LEFT__1532402927647423.jpg": "3ffae8abed7fc7e703cad8f10f92535c5f55314433660f11b1ed6ef02ebd41bf",
+      "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-07-24-11-22-45+0800__CAM_BACK_RIGHT__1532402927627893.jpg": "ab220a717b467d4fbed66b1a8a923dc522cc3aaaafa041613bcbfca3dd34ad9b",
+      "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402927612460.jpg": "b7b7d466207462cf46742297a36afdd65315c05ae33126d5d36412aae70a0b62",
+      "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-07-24-11-22-45+0800__CAM_FRONT_LEFT__1532402927604844.jpg": "2c8c49149411fa88cd36f9076d19e064be963deaf4e7c0dde4a7c691e83e1e5a",
+      "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-07-24-11-22-45+0800__CAM_FRONT_RIGHT__1532402927620339.jpg": "005ce4aff67c8df56233457218363687132fe7f40de758cf030aace578f55497",
+      "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402927647951.pcd.bin": "5f8f9b1b199ceff7d41cd319021a7a7b02dcd44d41f622a9e65a6a4a6be3cbdb"
+    },
+    "upstream_commit": "db75150717a9462cb60241e36ba28d65f6908607",
+    "adapter_sha256": "3a34e8954e09a08dd929bff0edf4dafaf87b0392601d9aafdd7dcf5163b4eca1",
+    "limit": 1,
+    "precision": "fp32",
+    "camera_order": [
+      "CAM_FRONT",
+      "CAM_FRONT_RIGHT",
+      "CAM_FRONT_LEFT",
+      "CAM_BACK",
+      "CAM_BACK_LEFT",
+      "CAM_BACK_RIGHT"
+    ]
+  },
+  "frames": 1,
+  "outputs_sha256": {
+    "predictions.json": "7b8311fd21463bf8211bad50a4b37ed60fc7660d4052d9ae8dac69d20521f6f7",
+    "native_predictions.json": "e4101a712d5d03a22e277ed9810c32273291f03b6f503232cc53ee93948462c4",
+    "coordinate_audit.json": "28ef08d62064d1db6cd48d9ce19bb5837c90c7defa0e4a22be951370e0e1b0ee",
+    "actual_inputs.json": "2bb77a5c2dc8edffef00fe89624cb80e0502f9957154e92bbbd75a47e4311cbd",
+    "timings.csv": "4a4acb02ef282ed89e2dbc373bd349d54f30be2134594e32bcc74518b583473a",
+    "performance.json": "d5f1009c87fdf5b8c41c03a85d5a232fecd28e4456bda0040344e463eefe22b9",
+    "resolved_config.json": "e70145d163de4c92e2f6cb41f4f82cb8abcf3ba58222d80fdbf463e6939f58ea",
+    "strict_load.json": "d78307a587e162a12ad664eae4ecd41f513679d0898fb35c5183647faddc6147"
+  },
+  "official_eval_status": "not_run"
+}

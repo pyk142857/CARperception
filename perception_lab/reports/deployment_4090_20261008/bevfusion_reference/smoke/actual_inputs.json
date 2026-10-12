@@ -1,0 +1,15 @@
+[
+  {
+    "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+    "points": 248834,
+    "image_shape": [
+      1,
+      6,
+      3,
+      256,
+      704
+    ],
+    "sweeps": [],
+    "first_frame_pad_empty": true
+  }
+]

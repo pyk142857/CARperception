@@ -1,0 +1,14 @@
+{
+  "convention": "pinned output_to_nusc_box; dims=wlh, yaw=-native_yaw-pi/2; gravity center then lidar-to-ego",
+  "frames": [
+    {
+      "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+      "boxes": 200,
+      "max_error": {
+        "center": 2.1316282072803006e-14,
+        "rotation": 5.551115123125783e-16,
+        "velocity": 8.187894806610529e-16
+      }
+    }
+  ]
+}

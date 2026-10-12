@@ -2,6 +2,15 @@
 
 2026-09-23，BOSS 明确改为理解流程：仅用 nuScenes mini，现有模型优先，其余模型作为扩展。
 
+## 4090 扩展部署（2026-10-12）
+
+- BEVFusion R50：严格加载 NVIDIA 官方权重，真实六相机与 LiDAR 融合完成 39 + 81 帧，官方 DetectionEval 已评估。
+- TensorRT 8.6 FP16：本机五个 engine（含失败的默认 head 与修复用 LayerNorm 插件 head）已构建；两个 split 的 mAP/NDS 下降预算通过。全部低分提案的几何诊断尚有超阈值项，不能宣称数值完全一致。
+- BEV pooling：自主可切换 CUDA 候选、真实输入与边界正确性、90 次配对测量和内存检查完成；候选更慢，保持上游默认。Nsight Compute 因驱动性能计数器权限受限，未虚构占用率数据。
+- Sparse4D v3：相机输入、原生时序 ID、跨场景重置与序列恢复检查，39 + 81 帧官方检测/跟踪评估。
+- GaussianWorld：原分辨率、25,600 Gaussian、FP32 连续 39 帧，全部预测占用网格保存；缺 SurroundOcc 标签，评估为 blocked_data。
+- 新结果独立入口 http://127.0.0.1:9094/；统一编排 `tools/run_4090_deployment.py`。完整验收与可复现证据见 [报告](reports/deployment_4090_20261008/report.md)、[状态](reports/deployment_4090_20261008/status.json)。
+
 ## 当前完成范围
 
 - M00 数据 / 标定投影；M01 YOLO、M02 SegFormer、M03 Metric Depth：首时刻六路相机真实结果。
@@ -21,7 +30,7 @@
 
 ## 范围边界
 
-原全量 A/B/C 未达到，但不再是当前目标。全量 nuScenes / Cityscapes / 占用标签不再阻塞本教学闭环。M06–M08、M10、TensorRT、训练微调为扩展且尚未完成；已有 COCO 评测为附加历史结果。未宣称多传感器模型融合、实时性能或全量泛化成绩。
+原全量 A/B/C 未达到，但不再是当前目标。全量 nuScenes / Cityscapes / 占用标签不再阻塞本教学闭环。旧规划 M06–M08、M10 与训练微调不作为 mini 闭环前置条件；新增融合、占用和 TensorRT 扩展的实际状态见上方 4090 报告；已有 COCO 评测为附加历史结果。历史闭环不宣称多传感器模型融合；新增 BEVFusion 已实测融合，仍不宣称车端实时性能或全量泛化成绩。
 
 模型运行命令见 LEARNING_GUIDE.md；不要直接运行旧 --phase all，它包含全量评测和扩展。当前无新后台训练或下载任务。
 

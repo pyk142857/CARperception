@@ -46,3 +46,9 @@ perception_lab/outputs/case_browser/
 
 # Isolated timing-run prediction images, arrays and Rerun recording
 perception_lab/outputs/pipeline_timing/
+
+# Deployment model runs; compact evidence is published under reports.
+perception_lab/outputs/sparse4d/
+perception_lab/outputs/bevfusion_reference/
+perception_lab/outputs/bevfusion_tensorrt/
+perception_lab/outputs/bevfusion_tensorrt_candidate/

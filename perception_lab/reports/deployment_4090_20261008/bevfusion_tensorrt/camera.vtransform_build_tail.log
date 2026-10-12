@@ -1,0 +1,50 @@
+[10/12/2026-09:01:34] [I] Average on 10 runs - GPU latency: 0.186108 ms - Host latency: 1.45891 ms (enqueue 0.0450928 ms)
+[10/12/2026-09:01:34] [I] Average on 10 runs - GPU latency: 0.187183 ms - Host latency: 1.46003 ms (enqueue 0.049707 ms)
+[10/12/2026-09:01:34] [I] Average on 10 runs - GPU latency: 0.182007 ms - Host latency: 1.45117 ms (enqueue 0.0486572 ms)
+[10/12/2026-09:01:34] [I] Average on 10 runs - GPU latency: 0.18186 ms - Host latency: 1.62122 ms (enqueue 0.0494629 ms)
+[10/12/2026-09:01:34] [I] Average on 10 runs - GPU latency: 0.191089 ms - Host latency: 1.41067 ms (enqueue 0.0773926 ms)
+[10/12/2026-09:01:34] [I] Average on 10 runs - GPU latency: 0.181494 ms - Host latency: 1.44343 ms (enqueue 0.0798828 ms)
+[10/12/2026-09:01:34] [I] Average on 10 runs - GPU latency: 0.182373 ms - Host latency: 1.46042 ms (enqueue 0.0719482 ms)
+[10/12/2026-09:01:34] [I] Average on 10 runs - GPU latency: 0.182104 ms - Host latency: 1.45017 ms (enqueue 0.0475342 ms)
+[10/12/2026-09:01:34] [I] Average on 10 runs - GPU latency: 0.181958 ms - Host latency: 1.45713 ms (enqueue 0.047168 ms)
+[10/12/2026-09:01:34] [I] Average on 10 runs - GPU latency: 0.182373 ms - Host latency: 1.54121 ms (enqueue 0.0521484 ms)
+[10/12/2026-09:01:34] [I] Average on 10 runs - GPU latency: 0.19187 ms - Host latency: 1.54331 ms (enqueue 0.0489258 ms)
+[10/12/2026-09:01:34] [I] 
+[10/12/2026-09:01:34] [I] === Performance summary ===
+[10/12/2026-09:01:34] [I] Throughput: 1013.75 qps
+[10/12/2026-09:01:34] [I] Latency: min = 1.28931 ms, max = 2.29077 ms, mean = 1.46342 ms, median = 1.45801 ms, percentile(90%) = 1.50537 ms, percentile(95%) = 1.58459 ms, percentile(99%) = 2.03735 ms
+[10/12/2026-09:01:34] [I] Enqueue Time: min = 0.0135803 ms, max = 0.231079 ms, mean = 0.0554049 ms, median = 0.0484619 ms, percentile(90%) = 0.103516 ms, percentile(95%) = 0.118164 ms, percentile(99%) = 0.145874 ms
+[10/12/2026-09:01:34] [I] H2D Latency: min = 0.874878 ms, max = 1.49695 ms, mean = 0.984239 ms, median = 0.984253 ms, percentile(90%) = 1.00732 ms, percentile(95%) = 1.01465 ms, percentile(99%) = 1.3158 ms
+[10/12/2026-09:01:34] [I] GPU Compute Time: min = 0.174072 ms, max = 0.289795 ms, mean = 0.183568 ms, median = 0.181152 ms, percentile(90%) = 0.188416 ms, percentile(95%) = 0.19043 ms, percentile(99%) = 0.27124 ms
+[10/12/2026-09:01:34] [I] D2H Latency: min = 0.199707 ms, max = 0.641113 ms, mean = 0.295616 ms, median = 0.286377 ms, percentile(90%) = 0.312622 ms, percentile(95%) = 0.352173 ms, percentile(99%) = 0.560059 ms
+[10/12/2026-09:01:34] [I] Total Host Walltime: 3.00172 s
+[10/12/2026-09:01:34] [I] Total GPU Compute Time: 0.558597 s
+[10/12/2026-09:01:34] [W] * Throughput may be bound by host-to-device transfers for the inputs rather than GPU Compute and the GPU may be under-utilized.
+[10/12/2026-09:01:34] [W]   Add --noDataTransfers flag to disable data transfers.
+[10/12/2026-09:01:34] [W] * Throughput may be bound by device-to-host transfers for the outputs rather than GPU Compute and the GPU may be under-utilized.
+[10/12/2026-09:01:34] [W]   Add --noDataTransfers flag to disable data transfers.
+[10/12/2026-09:01:34] [W] * GPU compute time is unstable, with coefficient of variance = 6.19495%.
+[10/12/2026-09:01:34] [W]   If not already in use, locking GPU clock frequency or adding --useSpinWait may improve the stability.
+[10/12/2026-09:01:34] [I] Explanations of the performance metrics are printed in the verbose logs.
+[10/12/2026-09:01:34] [V] 
+[10/12/2026-09:01:34] [V] === Explanations of the performance metrics ===
+[10/12/2026-09:01:34] [V] Total Host Walltime: the host walltime from when the first query (after warmups) is enqueued to when the last query is completed.
+[10/12/2026-09:01:34] [V] GPU Compute Time: the GPU latency to execute the kernels for a query.
+[10/12/2026-09:01:34] [V] Total GPU Compute Time: the summation of the GPU Compute Time of all the queries. If this is significantly shorter than Total Host Walltime, the GPU may be under-utilized because of host-side overheads or data transfers.
+[10/12/2026-09:01:34] [V] Throughput: the observed throughput computed by dividing the number of queries by the Total Host Walltime. If this is significantly lower than the reciprocal of GPU Compute Time, the GPU may be under-utilized because of host-side overheads or data transfers.
+[10/12/2026-09:01:34] [V] Enqueue Time: the host latency to enqueue a query. If this is longer than GPU Compute Time, the GPU may be under-utilized.
+[10/12/2026-09:01:34] [V] H2D Latency: the latency for host-to-device data transfers for input tensors of a single query.
+[10/12/2026-09:01:34] [V] D2H Latency: the latency for device-to-host data transfers for output tensors of a single query.
+[10/12/2026-09:01:34] [V] Latency: the summation of H2D Latency, GPU Compute Time, and D2H Latency. This is the latency to infer a single query.
+[10/12/2026-09:01:34] [I] 
+[10/12/2026-09:01:37] [I] 
+[10/12/2026-09:01:37] [I] === Profile (2897 iterations ) ===
+[10/12/2026-09:01:37] [I]    Time(ms)     Avg.(ms)   Median(ms)   Time(%)   Layer
+[10/12/2026-09:01:37] [I]       48.09       0.0166       0.0154       9.2   Reformatting CopyNode for Input Tensor 0 to Conv_0 + Relu_1
+[10/12/2026-09:01:37] [I]      296.27       0.1023       0.1016      56.6   Conv_0 + Relu_1
+[10/12/2026-09:01:37] [I]       81.03       0.0280       0.0276      15.5   Conv_2 + Relu_3
+[10/12/2026-09:01:37] [I]       80.63       0.0278       0.0276      15.4   Conv_4 + Relu_5
+[10/12/2026-09:01:37] [I]       17.31       0.0060       0.0061       3.3   Reformatting CopyNode for Output Tensor 0 to Conv_4 + Relu_5
+[10/12/2026-09:01:37] [I]      523.32       0.1806       0.1782     100.0   Total
+[10/12/2026-09:01:37] [I] 
+&&&& PASSED TensorRT.trtexec [TensorRT v8601] # trtexec --onnx=model/resnet50/camera.vtransform.onnx --fp16 --inputIOFormats=fp16:chw --outputIOFormats=fp16:chw --saveEngine=model/resnet50/build/camera.vtransform.plan --memPoolSize=workspace:2048 --verbose --dumpLayerInfo --dumpProfile --separateProfileRun --profilingVerbosity=detailed --exportLayerInfo=model/resnet50/build/camera.vtransform.json

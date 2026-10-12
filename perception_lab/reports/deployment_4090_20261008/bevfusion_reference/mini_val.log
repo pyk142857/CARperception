@@ -1,0 +1,742 @@
+/home/minglei/Desktop/CAR/perception_lab/envs/maptr/lib/python3.10/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+/home/minglei/Desktop/CAR/perception_lab/envs/maptr/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3190.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+2026-10-12 08:57:46,245 - mmcv - INFO - initialize ResNet with init_cfg [{'type': 'Kaiming', 'layer': 'Conv2d'}, {'type': 'Constant', 'val': 1, 'layer': ['_BatchNorm', 'GroupNorm']}]
+2026-10-12 08:57:46,328 - mmcv - INFO - initialize Bottleneck with init_cfg {'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+2026-10-12 08:57:46,328 - mmcv - INFO - initialize Bottleneck with init_cfg {'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+2026-10-12 08:57:46,329 - mmcv - INFO - initialize Bottleneck with init_cfg {'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+2026-10-12 08:57:46,330 - mmcv - INFO - initialize Bottleneck with init_cfg {'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+2026-10-12 08:57:46,330 - mmcv - INFO - initialize Bottleneck with init_cfg {'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+2026-10-12 08:57:46,331 - mmcv - INFO - initialize Bottleneck with init_cfg {'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+2026-10-12 08:57:46,331 - mmcv - INFO - initialize Bottleneck with init_cfg {'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+2026-10-12 08:57:46,332 - mmcv - INFO - initialize Bottleneck with init_cfg {'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+2026-10-12 08:57:46,333 - mmcv - INFO - initialize Bottleneck with init_cfg {'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+2026-10-12 08:57:46,333 - mmcv - INFO - initialize Bottleneck with init_cfg {'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+2026-10-12 08:57:46,334 - mmcv - INFO - initialize Bottleneck with init_cfg {'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+2026-10-12 08:57:46,334 - mmcv - INFO - initialize Bottleneck with init_cfg {'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+2026-10-12 08:57:46,335 - mmcv - INFO - initialize Bottleneck with init_cfg {'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+2026-10-12 08:57:46,336 - mmcv - INFO - initialize Bottleneck with init_cfg {'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+2026-10-12 08:57:46,337 - mmcv - INFO - initialize Bottleneck with init_cfg {'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+2026-10-12 08:57:46,338 - mmcv - INFO - initialize Bottleneck with init_cfg {'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+2026-10-12 08:57:46,340 - mmcv - INFO - 
+conv1.weight - torch.Size([64, 3, 7, 7]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,340 - mmcv - INFO - 
+bn1.weight - torch.Size([64]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,340 - mmcv - INFO - 
+bn1.bias - torch.Size([64]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,340 - mmcv - INFO - 
+layer1.0.conv1.weight - torch.Size([64, 64, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,340 - mmcv - INFO - 
+layer1.0.bn1.weight - torch.Size([64]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,340 - mmcv - INFO - 
+layer1.0.bn1.bias - torch.Size([64]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer1.0.conv2.weight - torch.Size([64, 64, 3, 3]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer1.0.bn2.weight - torch.Size([64]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer1.0.bn2.bias - torch.Size([64]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer1.0.conv3.weight - torch.Size([256, 64, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer1.0.bn3.weight - torch.Size([256]): 
+ConstantInit: val=0, bias=0 
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer1.0.bn3.bias - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer1.0.downsample.0.weight - torch.Size([256, 64, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer1.0.downsample.1.weight - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer1.0.downsample.1.bias - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer1.1.conv1.weight - torch.Size([64, 256, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer1.1.bn1.weight - torch.Size([64]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer1.1.bn1.bias - torch.Size([64]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer1.1.conv2.weight - torch.Size([64, 64, 3, 3]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer1.1.bn2.weight - torch.Size([64]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer1.1.bn2.bias - torch.Size([64]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer1.1.conv3.weight - torch.Size([256, 64, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer1.1.bn3.weight - torch.Size([256]): 
+ConstantInit: val=0, bias=0 
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer1.1.bn3.bias - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer1.2.conv1.weight - torch.Size([64, 256, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer1.2.bn1.weight - torch.Size([64]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer1.2.bn1.bias - torch.Size([64]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer1.2.conv2.weight - torch.Size([64, 64, 3, 3]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer1.2.bn2.weight - torch.Size([64]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer1.2.bn2.bias - torch.Size([64]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer1.2.conv3.weight - torch.Size([256, 64, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer1.2.bn3.weight - torch.Size([256]): 
+ConstantInit: val=0, bias=0 
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer1.2.bn3.bias - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer2.0.conv1.weight - torch.Size([128, 256, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer2.0.bn1.weight - torch.Size([128]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer2.0.bn1.bias - torch.Size([128]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer2.0.conv2.weight - torch.Size([128, 128, 3, 3]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer2.0.bn2.weight - torch.Size([128]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer2.0.bn2.bias - torch.Size([128]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer2.0.conv3.weight - torch.Size([512, 128, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer2.0.bn3.weight - torch.Size([512]): 
+ConstantInit: val=0, bias=0 
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer2.0.bn3.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer2.0.downsample.0.weight - torch.Size([512, 256, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer2.0.downsample.1.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer2.0.downsample.1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer2.1.conv1.weight - torch.Size([128, 512, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer2.1.bn1.weight - torch.Size([128]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer2.1.bn1.bias - torch.Size([128]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer2.1.conv2.weight - torch.Size([128, 128, 3, 3]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer2.1.bn2.weight - torch.Size([128]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer2.1.bn2.bias - torch.Size([128]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer2.1.conv3.weight - torch.Size([512, 128, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer2.1.bn3.weight - torch.Size([512]): 
+ConstantInit: val=0, bias=0 
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer2.1.bn3.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,341 - mmcv - INFO - 
+layer2.2.conv1.weight - torch.Size([128, 512, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer2.2.bn1.weight - torch.Size([128]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer2.2.bn1.bias - torch.Size([128]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer2.2.conv2.weight - torch.Size([128, 128, 3, 3]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer2.2.bn2.weight - torch.Size([128]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer2.2.bn2.bias - torch.Size([128]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer2.2.conv3.weight - torch.Size([512, 128, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer2.2.bn3.weight - torch.Size([512]): 
+ConstantInit: val=0, bias=0 
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer2.2.bn3.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer2.3.conv1.weight - torch.Size([128, 512, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer2.3.bn1.weight - torch.Size([128]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer2.3.bn1.bias - torch.Size([128]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer2.3.conv2.weight - torch.Size([128, 128, 3, 3]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer2.3.bn2.weight - torch.Size([128]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer2.3.bn2.bias - torch.Size([128]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer2.3.conv3.weight - torch.Size([512, 128, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer2.3.bn3.weight - torch.Size([512]): 
+ConstantInit: val=0, bias=0 
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer2.3.bn3.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.0.conv1.weight - torch.Size([256, 512, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.0.bn1.weight - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.0.bn1.bias - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.0.conv2.weight - torch.Size([256, 256, 3, 3]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.0.bn2.weight - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.0.bn2.bias - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.0.conv3.weight - torch.Size([1024, 256, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.0.bn3.weight - torch.Size([1024]): 
+ConstantInit: val=0, bias=0 
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.0.bn3.bias - torch.Size([1024]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.0.downsample.0.weight - torch.Size([1024, 512, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.0.downsample.1.weight - torch.Size([1024]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.0.downsample.1.bias - torch.Size([1024]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.1.conv1.weight - torch.Size([256, 1024, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.1.bn1.weight - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.1.bn1.bias - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.1.conv2.weight - torch.Size([256, 256, 3, 3]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.1.bn2.weight - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.1.bn2.bias - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.1.conv3.weight - torch.Size([1024, 256, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.1.bn3.weight - torch.Size([1024]): 
+ConstantInit: val=0, bias=0 
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.1.bn3.bias - torch.Size([1024]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.2.conv1.weight - torch.Size([256, 1024, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.2.bn1.weight - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.2.bn1.bias - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.2.conv2.weight - torch.Size([256, 256, 3, 3]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.2.bn2.weight - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.2.bn2.bias - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.2.conv3.weight - torch.Size([1024, 256, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.2.bn3.weight - torch.Size([1024]): 
+ConstantInit: val=0, bias=0 
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.2.bn3.bias - torch.Size([1024]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.3.conv1.weight - torch.Size([256, 1024, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.3.bn1.weight - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.3.bn1.bias - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.3.conv2.weight - torch.Size([256, 256, 3, 3]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.3.bn2.weight - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,342 - mmcv - INFO - 
+layer3.3.bn2.bias - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer3.3.conv3.weight - torch.Size([1024, 256, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer3.3.bn3.weight - torch.Size([1024]): 
+ConstantInit: val=0, bias=0 
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer3.3.bn3.bias - torch.Size([1024]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer3.4.conv1.weight - torch.Size([256, 1024, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer3.4.bn1.weight - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer3.4.bn1.bias - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer3.4.conv2.weight - torch.Size([256, 256, 3, 3]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer3.4.bn2.weight - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer3.4.bn2.bias - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer3.4.conv3.weight - torch.Size([1024, 256, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer3.4.bn3.weight - torch.Size([1024]): 
+ConstantInit: val=0, bias=0 
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer3.4.bn3.bias - torch.Size([1024]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer3.5.conv1.weight - torch.Size([256, 1024, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer3.5.bn1.weight - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer3.5.bn1.bias - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer3.5.conv2.weight - torch.Size([256, 256, 3, 3]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer3.5.bn2.weight - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer3.5.bn2.bias - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer3.5.conv3.weight - torch.Size([1024, 256, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer3.5.bn3.weight - torch.Size([1024]): 
+ConstantInit: val=0, bias=0 
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer3.5.bn3.bias - torch.Size([1024]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer4.0.conv1.weight - torch.Size([512, 1024, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer4.0.bn1.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer4.0.bn1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer4.0.conv2.weight - torch.Size([512, 512, 3, 3]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer4.0.bn2.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer4.0.bn2.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer4.0.conv3.weight - torch.Size([2048, 512, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer4.0.bn3.weight - torch.Size([2048]): 
+ConstantInit: val=0, bias=0 
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer4.0.bn3.bias - torch.Size([2048]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer4.0.downsample.0.weight - torch.Size([2048, 1024, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer4.0.downsample.1.weight - torch.Size([2048]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer4.0.downsample.1.bias - torch.Size([2048]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer4.1.conv1.weight - torch.Size([512, 2048, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer4.1.bn1.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer4.1.bn1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer4.1.conv2.weight - torch.Size([512, 512, 3, 3]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer4.1.bn2.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer4.1.bn2.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer4.1.conv3.weight - torch.Size([2048, 512, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer4.1.bn3.weight - torch.Size([2048]): 
+ConstantInit: val=0, bias=0 
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer4.1.bn3.bias - torch.Size([2048]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer4.2.conv1.weight - torch.Size([512, 2048, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer4.2.bn1.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer4.2.bn1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer4.2.conv2.weight - torch.Size([512, 512, 3, 3]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer4.2.bn2.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer4.2.bn2.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer4.2.conv3.weight - torch.Size([2048, 512, 1, 1]): 
+KaimingInit: a=0, mode=fan_out, nonlinearity=relu, distribution =normal, bias=0 
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer4.2.bn3.weight - torch.Size([2048]): 
+ConstantInit: val=0, bias=0 
+ 
+2026-10-12 08:57:46,343 - mmcv - INFO - 
+layer4.2.bn3.bias - torch.Size([2048]): 
+The value is the same before and after calling `init_weights` of ResNet  
+ 
+/home/minglei/Desktop/CAR/perception_lab/third_party/bevfusion_4090/mmdet3d/core/bbox/box_np_ops.py:781: NumbaDeprecationWarning: The 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.
+  def points_in_convex_polygon_jit(points, polygon, clockwise=True):
+/home/minglei/Desktop/CAR/perception_lab/third_party/bevfusion_4090/mmdet3d/core/bbox/coders/transfusion_bbox_coder.py:96: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  self.post_center_range = torch.tensor(
+{"frame": 0, "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2", "points": 207998, "preprocess_ms": 129.0695569998661, "h2d_ms": 2.5363290001223504, "forward_sync_ms": 108.30081499989319, "forward_cuda_event_ms": 108.25308990478516, "d2h_standardize_ms": 19.149011000081373, "end_to_end_ms": 259.055711999963}
+{"frame": 1, "sample_token": "3950bd41f74548429c0f7700ff3d8269", "points": 208595, "preprocess_ms": 126.99388800001543, "h2d_ms": 2.191566999954375, "forward_sync_ms": 119.70072600001913, "forward_cuda_event_ms": 119.65433502197266, "d2h_standardize_ms": 18.17526500008171, "end_to_end_ms": 267.06144600007065}
+{"frame": 2, "sample_token": "c5f58c19249d4137ae063b0e9ecd8b8e", "points": 211762, "preprocess_ms": 111.85484400016321, "h2d_ms": 1.5171589998317359, "forward_sync_ms": 118.35930799998096, "forward_cuda_event_ms": 118.31903839111328, "d2h_standardize_ms": 17.482492999988608, "end_to_end_ms": 249.2138039999645}
+{"frame": 3, "sample_token": "700c1a25559b4433be532de3475e58a9", "points": 216601, "preprocess_ms": 107.5513000000683, "h2d_ms": 1.5869049998400442, "forward_sync_ms": 137.34775500006435, "forward_cuda_event_ms": 137.30380249023438, "d2h_standardize_ms": 23.509439999997994, "end_to_end_ms": 269.9953999999707}
+{"frame": 4, "sample_token": "747aa46b9a4641fe90db05d97db2acea", "points": 222733, "preprocess_ms": 305.4265690000193, "h2d_ms": 2.0678199998656055, "forward_sync_ms": 129.96400299994093, "forward_cuda_event_ms": 129.9160919189453, "d2h_standardize_ms": 19.48117300003105, "end_to_end_ms": 456.9395649998569}
+{"frame": 5, "sample_token": "f4f86af4da3b49e79497deda5c5f223a", "points": 226294, "preprocess_ms": 201.93846200004373, "h2d_ms": 1.5363840000190976, "forward_sync_ms": 125.79470700006823, "forward_cuda_event_ms": 125.75308990478516, "d2h_standardize_ms": 17.68723999998656, "end_to_end_ms": 346.9567930001176}
+{"frame": 6, "sample_token": "6832e717621341568c759151b5974512", "points": 227057, "preprocess_ms": 107.26328999999168, "h2d_ms": 1.581711999961044, "forward_sync_ms": 124.37960800002656, "forward_cuda_event_ms": 124.33856201171875, "d2h_standardize_ms": 18.411212000046362, "end_to_end_ms": 251.63582200002566}
+{"frame": 7, "sample_token": "c59e60042a8643e899008da2e446acca", "points": 241007, "preprocess_ms": 98.70462300000327, "h2d_ms": 1.7568330001722643, "forward_sync_ms": 132.2471719997793, "forward_cuda_event_ms": 132.2076873779297, "d2h_standardize_ms": 17.298096000104124, "end_to_end_ms": 250.00672400005897}
+{"frame": 8, "sample_token": "fa65a298c01f44e7a182bbf9e5fe3697", "points": 246937, "preprocess_ms": 125.40214199998445, "h2d_ms": 2.0264980000774813, "forward_sync_ms": 133.4560479999709, "forward_cuda_event_ms": 133.40853881835938, "d2h_standardize_ms": 17.785315999844897, "end_to_end_ms": 278.67000399987774}
+{"frame": 9, "sample_token": "a98fba72bde9433fb882032d18aedb2e", "points": 248768, "preprocess_ms": 150.27424599998085, "h2d_ms": 2.0193259999814472, "forward_sync_ms": 135.9525200000462, "forward_cuda_event_ms": 135.9055938720703, "d2h_standardize_ms": 17.88060800004132, "end_to_end_ms": 306.1267000000498}
+{"frame": 10, "sample_token": "b6b0d9f2f2e14a3aaa2c8aedeb1edb69", "points": 253648, "preprocess_ms": 177.72323099984533, "h2d_ms": 1.711582000098133, "forward_sync_ms": 139.04769300006592, "forward_cuda_event_ms": 139.00335693359375, "d2h_standardize_ms": 17.70172800002001, "end_to_end_ms": 336.1842340000294}
+{"frame": 11, "sample_token": "796b1988dd254f74bf2fb19ba9c5b8c6", "points": 257690, "preprocess_ms": 177.37520800005768, "h2d_ms": 1.993294999920181, "forward_sync_ms": 139.95692799994686, "forward_cuda_event_ms": 139.91424560546875, "d2h_standardize_ms": 17.192100000102073, "end_to_end_ms": 336.5175310000268}
+{"frame": 12, "sample_token": "0d0700a2284e477db876c3ee1d864668", "points": 261528, "preprocess_ms": 147.93853700007276, "h2d_ms": 1.8156989999624784, "forward_sync_ms": 145.05027199993492, "forward_cuda_event_ms": 145.00717163085938, "d2h_standardize_ms": 18.227711999998064, "end_to_end_ms": 313.0322199999682}
+{"frame": 13, "sample_token": "de7593d76648450e947ba0c203dee1b0", "points": 263152, "preprocess_ms": 193.03409799999827, "h2d_ms": 1.807704999919224, "forward_sync_ms": 148.1053580000662, "forward_cuda_event_ms": 148.05990600585938, "d2h_standardize_ms": 18.046138000045175, "end_to_end_ms": 360.99329900002886}
+{"frame": 14, "sample_token": "f753d3f87e5b40af87ff2cbf7c8e7082", "points": 264083, "preprocess_ms": 163.4719789999508, "h2d_ms": 2.45812000002843, "forward_sync_ms": 144.87421100011488, "forward_cuda_event_ms": 144.830078125, "d2h_standardize_ms": 20.101415999988603, "end_to_end_ms": 330.9057260000827}
+{"frame": 15, "sample_token": "b22fa0b3c34f47b6a360b60f35d5d567", "points": 264273, "preprocess_ms": 129.5435179999913, "h2d_ms": 2.193626000007498, "forward_sync_ms": 145.3464950000125, "forward_cuda_event_ms": 145.29869079589844, "d2h_standardize_ms": 20.390082999938386, "end_to_end_ms": 297.4737219999497}
+{"frame": 16, "sample_token": "0a0d6b8c2e884134a3b48df43d54c36a", "points": 264264, "preprocess_ms": 104.62032400005228, "h2d_ms": 1.9924129999253637, "forward_sync_ms": 144.2005250000875, "forward_cuda_event_ms": 144.15469360351562, "d2h_standardize_ms": 18.50908400001572, "end_to_end_ms": 269.32234600008087}
+{"frame": 17, "sample_token": "8e9c2cba0ee74056aa3746e8391d54a9", "points": 264144, "preprocess_ms": 142.5925470000493, "h2d_ms": 2.787315999967177, "forward_sync_ms": 140.30572799993024, "forward_cuda_event_ms": 140.24386596679688, "d2h_standardize_ms": 18.412168000168094, "end_to_end_ms": 304.0977590001148}
+{"frame": 18, "sample_token": "fdc39b23ab4242eda6ec5e1e6574fe33", "points": 263748, "preprocess_ms": 133.41558000001896, "h2d_ms": 1.595065999936196, "forward_sync_ms": 144.23645800002305, "forward_cuda_event_ms": 144.19223022460938, "d2h_standardize_ms": 18.420281000089744, "end_to_end_ms": 297.66738500006795}
+{"frame": 19, "sample_token": "9ee4020153674b9e9943d395ff8cfdf3", "points": 263878, "preprocess_ms": 153.00258399997801, "h2d_ms": 1.9773660001192184, "forward_sync_ms": 140.78741799994532, "forward_cuda_event_ms": 140.7451171875, "d2h_standardize_ms": 18.055230000072697, "end_to_end_ms": 313.82259800011525}
+{"frame": 20, "sample_token": "5b03af7a953245b5a3b23191ed4da62a", "points": 263768, "preprocess_ms": 105.01160800004072, "h2d_ms": 1.6957309999270365, "forward_sync_ms": 144.29339999992408, "forward_cuda_event_ms": 144.25184631347656, "d2h_standardize_ms": 18.424071000026743, "end_to_end_ms": 269.4248099999186}
+{"frame": 21, "sample_token": "d0ecf474e0e64950aa265cd44b9c9d75", "points": 262892, "preprocess_ms": 103.66502900001251, "h2d_ms": 1.6968360000646499, "forward_sync_ms": 140.40618700005325, "forward_cuda_event_ms": 140.3639373779297, "d2h_standardize_ms": 18.80846499989275, "end_to_end_ms": 264.57651700002316}
+{"frame": 22, "sample_token": "456ec36cb4a44ca78f36fbd90c0c34fa", "points": 261691, "preprocess_ms": 113.67758400001549, "h2d_ms": 2.2260139999161765, "forward_sync_ms": 142.1574360001614, "forward_cuda_event_ms": 142.1115264892578, "d2h_standardize_ms": 18.713964999960808, "end_to_end_ms": 276.77499900005387}
+{"frame": 23, "sample_token": "6bfd42cf0aba4f1a94ec11fa43e2dd92", "points": 259680, "preprocess_ms": 111.89306599999327, "h2d_ms": 1.786916999890309, "forward_sync_ms": 136.93138899998303, "forward_cuda_event_ms": 136.89068603515625, "d2h_standardize_ms": 18.126630000097066, "end_to_end_ms": 268.73800199996367}
+{"frame": 24, "sample_token": "0af0feb5b1394b928dd13d648de898f5", "points": 257121, "preprocess_ms": 111.1798860001727, "h2d_ms": 1.6171989998383651, "forward_sync_ms": 138.8100570000006, "forward_cuda_event_ms": 138.76937866210938, "d2h_standardize_ms": 17.906322000044383, "end_to_end_ms": 269.51346400005605}
+{"frame": 25, "sample_token": "61d9340c5ad8418dafe7a4af1b96e6b9", "points": 255439, "preprocess_ms": 167.56153500000437, "h2d_ms": 2.1955659999548516, "forward_sync_ms": 144.9153920000299, "forward_cuda_event_ms": 144.86668395996094, "d2h_standardize_ms": 18.327920000047015, "end_to_end_ms": 333.00041300003613}
+{"frame": 26, "sample_token": "9e7683e8586542a1b6032980c45f15ce", "points": 253769, "preprocess_ms": 196.09909000018888, "h2d_ms": 2.032790999919598, "forward_sync_ms": 140.05799899996418, "forward_cuda_event_ms": 140.01402282714844, "d2h_standardize_ms": 18.91755099995862, "end_to_end_ms": 357.1074310000313}
+{"frame": 27, "sample_token": "cc57c1ea80fe46a7abddfdb15654c872", "points": 251169, "preprocess_ms": 182.4398349999683, "h2d_ms": 1.9364970000879111, "forward_sync_ms": 160.86125699985132, "forward_cuda_event_ms": 160.8131866455078, "d2h_standardize_ms": 50.68590800010497, "end_to_end_ms": 395.9234970000125}
+{"frame": 28, "sample_token": "4cf5d6c3f6ab42aab23f67b5a9782d1a", "points": 248805, "preprocess_ms": 161.03653100003612, "h2d_ms": 1.9492399999307963, "forward_sync_ms": 210.2825050001229, "forward_cuda_event_ms": 210.22901916503906, "d2h_standardize_ms": 28.70774200005144, "end_to_end_ms": 401.97601800014127}
+{"frame": 29, "sample_token": "6d9984d09d52479e837da2fd09e192cc", "points": 248362, "preprocess_ms": 200.34046300020236, "h2d_ms": 1.9700469999861525, "forward_sync_ms": 137.66430199984825, "forward_cuda_event_ms": 137.6165771484375, "d2h_standardize_ms": 18.816707000041788, "end_to_end_ms": 358.79151900007855}
+{"frame": 30, "sample_token": "38a28a3aaf2647f2a8c0e90e31267bf8", "points": 249982, "preprocess_ms": 125.72261799982698, "h2d_ms": 2.019387000018469, "forward_sync_ms": 138.7525469999673, "forward_cuda_event_ms": 138.70428466796875, "d2h_standardize_ms": 20.001918000161822, "end_to_end_ms": 286.4964699999746}
+{"frame": 31, "sample_token": "6402fd1ffaf041d0b9162bd92a7ba0a2", "points": 249790, "preprocess_ms": 195.81737499993324, "h2d_ms": 2.3905840000679746, "forward_sync_ms": 142.43956699988303, "forward_cuda_event_ms": 142.3928985595703, "d2h_standardize_ms": 17.66152000004695, "end_to_end_ms": 358.3090459999312}
+{"frame": 32, "sample_token": "ce94ef7a0522468e81c0e2b3a2f1e12d", "points": 249806, "preprocess_ms": 114.04524199997468, "h2d_ms": 1.990299999988565, "forward_sync_ms": 145.72286399993573, "forward_cuda_event_ms": 145.68006896972656, "d2h_standardize_ms": 18.916853000064293, "end_to_end_ms": 280.67525899996326}
+{"frame": 33, "sample_token": "9fcdc52b791045e99c623c5fc643331f", "points": 250111, "preprocess_ms": 133.37075800018283, "h2d_ms": 2.3056759998780763, "forward_sync_ms": 134.74026099993353, "forward_cuda_event_ms": 134.69549560546875, "d2h_standardize_ms": 17.95175899997048, "end_to_end_ms": 288.3684539999649}
+{"frame": 34, "sample_token": "1c9a906c40f6417bbe1cea06d6e55501", "points": 250044, "preprocess_ms": 114.2540639998515, "h2d_ms": 2.328550000129326, "forward_sync_ms": 142.31380999990506, "forward_cuda_event_ms": 142.27186584472656, "d2h_standardize_ms": 17.955736999965666, "end_to_end_ms": 276.85216099985155}
+{"frame": 35, "sample_token": "a771effa2a2648d78096c3e92b95b129", "points": 250127, "preprocess_ms": 110.55940199980796, "h2d_ms": 1.6076400002020819, "forward_sync_ms": 134.2926129998432, "forward_cuda_event_ms": 134.252197265625, "d2h_standardize_ms": 19.222366000121838, "end_to_end_ms": 265.68202099997507}
+{"frame": 36, "sample_token": "b9ea04a6121d4a8bb00199b885aa5ef0", "points": 250225, "preprocess_ms": 190.85117099984927, "h2d_ms": 2.274553000006563, "forward_sync_ms": 138.08514200013633, "forward_cuda_event_ms": 138.0410919189453, "d2h_standardize_ms": 19.326680999938617, "end_to_end_ms": 350.5375469999308}
+{"frame": 37, "sample_token": "87e772078a494d42bd34cd16172808bc", "points": 252153, "preprocess_ms": 129.63057399997524, "h2d_ms": 2.071485999977085, "forward_sync_ms": 143.93054000015582, "forward_cuda_event_ms": 143.88400268554688, "d2h_standardize_ms": 19.797878999952445, "end_to_end_ms": 295.4304790000606}
+{"frame": 38, "sample_token": "f40544fd4f5d42abbcfa948eeaf86850", "points": 253562, "preprocess_ms": 147.40430300003027, "h2d_ms": 2.0794780000414903, "forward_sync_ms": 160.3530810000393, "forward_cuda_event_ms": 160.3014373779297, "d2h_standardize_ms": 38.592927999843596, "end_to_end_ms": 348.42978999995466}
+{"frame": 39, "sample_token": "281b92269fd648d4b52d06ac06ca6d65", "points": 251717, "preprocess_ms": 283.20027399990977, "h2d_ms": 2.315799999905721, "forward_sync_ms": 136.8336040000031, "forward_cuda_event_ms": 136.77865600585938, "d2h_standardize_ms": 18.102443000088897, "end_to_end_ms": 440.4521209999075}
+{"frame": 40, "sample_token": "b5989651183643369174912bc5641d3b", "points": 259856, "preprocess_ms": 267.4140950000492, "h2d_ms": 1.9371989999399375, "forward_sync_ms": 127.30689499994696, "forward_cuda_event_ms": 127.25619506835938, "d2h_standardize_ms": 18.603324999958204, "end_to_end_ms": 415.2615139998943}
+{"frame": 41, "sample_token": "0bb62a68055249e381b039bf54b0ccf8", "points": 261211, "preprocess_ms": 151.49189100020521, "h2d_ms": 2.164395999898261, "forward_sync_ms": 146.2561089999781, "forward_cuda_event_ms": 146.2021484375, "d2h_standardize_ms": 19.878938999909224, "end_to_end_ms": 319.7913349999908}
+{"frame": 42, "sample_token": "07fad91090c746ccaa1b2bdb55329e20", "points": 259911, "preprocess_ms": 137.86702600009448, "h2d_ms": 2.4372459999995044, "forward_sync_ms": 142.16018899992378, "forward_cuda_event_ms": 142.10890197753906, "d2h_standardize_ms": 18.21354899993821, "end_to_end_ms": 300.678009999956}
+{"frame": 43, "sample_token": "ae5004bf4ebb4db0a84cb3c27bd398d1", "points": 259494, "preprocess_ms": 105.00543599982848, "h2d_ms": 1.844081000172082, "forward_sync_ms": 133.62985999992816, "forward_cuda_event_ms": 133.58755493164062, "d2h_standardize_ms": 18.717688999913662, "end_to_end_ms": 259.1970659998424}
+{"frame": 44, "sample_token": "ac8b4d49731d43289579f014cb7c97ef", "points": 256962, "preprocess_ms": 113.81254299999455, "h2d_ms": 2.0038780000959378, "forward_sync_ms": 141.44778499985478, "forward_cuda_event_ms": 141.40419006347656, "d2h_standardize_ms": 18.559988000106387, "end_to_end_ms": 275.82419400005165}
+{"frame": 45, "sample_token": "c1eed31234b94e9f8e22fbf3428b0ac2", "points": 252659, "preprocess_ms": 102.81234099988978, "h2d_ms": 1.9281859999864537, "forward_sync_ms": 137.55182800014154, "forward_cuda_event_ms": 137.51174926757812, "d2h_standardize_ms": 18.16292299986344, "end_to_end_ms": 260.4552779998812}
+{"frame": 46, "sample_token": "edba7d0cf1c64d2a9c8a5ebddab507a9", "points": 250298, "preprocess_ms": 137.589681999998, "h2d_ms": 1.929022000012992, "forward_sync_ms": 136.46366199986915, "forward_cuda_event_ms": 136.4176025390625, "d2h_standardize_ms": 18.18181800013008, "end_to_end_ms": 294.1641840000102}
+{"frame": 47, "sample_token": "a5afebb0aa5e4d7c95665788ce51ec58", "points": 248169, "preprocess_ms": 111.79816899993966, "h2d_ms": 1.6791109999303444, "forward_sync_ms": 129.40819000004922, "forward_cuda_event_ms": 129.36376953125, "d2h_standardize_ms": 18.539196000119773, "end_to_end_ms": 261.424666000039}
+{"frame": 48, "sample_token": "5b7cb170eee6468aa1fdbd3abcf63c5a", "points": 246377, "preprocess_ms": 111.89079400014634, "h2d_ms": 1.6343689999303024, "forward_sync_ms": 127.85583599998063, "forward_cuda_event_ms": 127.80931091308594, "d2h_standardize_ms": 102.26547299998856, "end_to_end_ms": 343.64647200004583}
+{"frame": 49, "sample_token": "d8251bbc2105497ab8ec80827d4429aa", "points": 245739, "preprocess_ms": 261.1563519999436, "h2d_ms": 1.6779290001522895, "forward_sync_ms": 139.75512999991224, "forward_cuda_event_ms": 139.70838928222656, "d2h_standardize_ms": 19.141999000112264, "end_to_end_ms": 421.7314100001204}
+{"frame": 50, "sample_token": "048a45dd2cf54aa5808d8ccc85731d44", "points": 246185, "preprocess_ms": 192.33260000009977, "h2d_ms": 2.443363000111276, "forward_sync_ms": 139.05670199983433, "forward_cuda_event_ms": 139.01129150390625, "d2h_standardize_ms": 17.996152000023358, "end_to_end_ms": 351.82881700006874}
+{"frame": 51, "sample_token": "858a1ece22cf45d9bc71e42336604b78", "points": 245264, "preprocess_ms": 113.51243500007513, "h2d_ms": 1.785814999948343, "forward_sync_ms": 123.51552100017216, "forward_cuda_event_ms": 123.4734115600586, "d2h_standardize_ms": 17.97320899981969, "end_to_end_ms": 256.7869800000153}
+{"frame": 52, "sample_token": "372725a4b00e49c78d6d0b1c4a38b6e0", "points": 243529, "preprocess_ms": 112.17042099997343, "h2d_ms": 1.8366819999755535, "forward_sync_ms": 124.4617949998883, "forward_cuda_event_ms": 124.419677734375, "d2h_standardize_ms": 19.653310000194324, "end_to_end_ms": 258.1222080000316}
+{"frame": 53, "sample_token": "61a7bd24f88a46c2963280d8b13ac675", "points": 242533, "preprocess_ms": 101.8031510000128, "h2d_ms": 1.4904800000294927, "forward_sync_ms": 133.08163600004264, "forward_cuda_event_ms": 133.04202270507812, "d2h_standardize_ms": 18.01427300006253, "end_to_end_ms": 254.38954000014746}
+{"frame": 54, "sample_token": "609d5177362340458a3bfd4949cd1e64", "points": 242398, "preprocess_ms": 104.78622699997686, "h2d_ms": 1.662152999870159, "forward_sync_ms": 137.03767000015432, "forward_cuda_event_ms": 136.99615478515625, "d2h_standardize_ms": 18.419266999899264, "end_to_end_ms": 261.9053169999006}
+{"frame": 55, "sample_token": "b1303058fa624645b753d7283d70de45", "points": 241958, "preprocess_ms": 102.12819200000922, "h2d_ms": 1.5989779999472375, "forward_sync_ms": 136.23791800000618, "forward_cuda_event_ms": 136.1978302001953, "d2h_standardize_ms": 18.834554000022763, "end_to_end_ms": 258.7996419999854}
+{"frame": 56, "sample_token": "a19a80c905674faab7203a3a4e0f5246", "points": 240115, "preprocess_ms": 107.24609399994733, "h2d_ms": 1.8411169999126287, "forward_sync_ms": 132.32508400005827, "forward_cuda_event_ms": 132.28067016601562, "d2h_standardize_ms": 19.328742999960014, "end_to_end_ms": 260.74103799987824}
+{"frame": 57, "sample_token": "b6c420c3a5bd4a219b1cb82ee5ea0aa7", "points": 237719, "preprocess_ms": 149.66923499991935, "h2d_ms": 1.969405999943774, "forward_sync_ms": 135.32191100011914, "forward_cuda_event_ms": 135.2749786376953, "d2h_standardize_ms": 18.11225899996316, "end_to_end_ms": 305.07281099994543}
+{"frame": 58, "sample_token": "8092909473464f80b9f791a4d31ddcb8", "points": 233333, "preprocess_ms": 148.68579800008774, "h2d_ms": 1.567222999938167, "forward_sync_ms": 133.71952100010276, "forward_cuda_event_ms": 133.67738342285156, "d2h_standardize_ms": 18.70071400003326, "end_to_end_ms": 302.6732560001619}
+{"frame": 59, "sample_token": "e174cb43655f49dab7ffa27b973670e3", "points": 229847, "preprocess_ms": 110.77808000004552, "h2d_ms": 1.941365999982736, "forward_sync_ms": 130.17857499994534, "forward_cuda_event_ms": 130.1294708251953, "d2h_standardize_ms": 19.580372000064017, "end_to_end_ms": 262.4783930000376}
+{"frame": 60, "sample_token": "6ff9723a60bf4e14b328b3b19f04dc32", "points": 226930, "preprocess_ms": 103.8030259999232, "h2d_ms": 1.5313760000026377, "forward_sync_ms": 126.84549200002948, "forward_cuda_event_ms": 126.80569458007812, "d2h_standardize_ms": 17.998296000087066, "end_to_end_ms": 250.17819000004238}
+{"frame": 61, "sample_token": "06be0e3b665c44fa8d17d9f4770bdf9c", "points": 225459, "preprocess_ms": 105.42794200000571, "h2d_ms": 1.581837000003361, "forward_sync_ms": 114.95499299985568, "forward_cuda_event_ms": 114.91551971435547, "d2h_standardize_ms": 17.944609000096534, "end_to_end_ms": 239.9093809999613}
+{"frame": 62, "sample_token": "9150678870764c1b87a649a25939c61b", "points": 225999, "preprocess_ms": 99.75655400012329, "h2d_ms": 1.9709589998910815, "forward_sync_ms": 115.53837700012082, "forward_cuda_event_ms": 115.49657440185547, "d2h_standardize_ms": 17.76792099985869, "end_to_end_ms": 235.03381099999388}
+{"frame": 63, "sample_token": "8573a885a7cb41d185c05029eeb9a54e", "points": 225908, "preprocess_ms": 102.32376499993734, "h2d_ms": 1.4851070000077016, "forward_sync_ms": 114.56156600002032, "forward_cuda_event_ms": 114.5208969116211, "d2h_standardize_ms": 18.12683699995432, "end_to_end_ms": 236.49727499991968}
+{"frame": 64, "sample_token": "55c258972acb4300a3a6077a531ab050", "points": 229676, "preprocess_ms": 98.13167900006192, "h2d_ms": 1.5220649997900182, "forward_sync_ms": 121.50953000013942, "forward_cuda_event_ms": 121.46956634521484, "d2h_standardize_ms": 18.052570000008927, "end_to_end_ms": 239.2158440000003}
+{"frame": 65, "sample_token": "44237858a539457da65822bfcf58c414", "points": 229223, "preprocess_ms": 106.14016400018045, "h2d_ms": 2.2490689998448943, "forward_sync_ms": 116.45589800014022, "forward_cuda_event_ms": 116.41532897949219, "d2h_standardize_ms": 17.858675999832485, "end_to_end_ms": 242.70380699999805}
+{"frame": 66, "sample_token": "8cd36e9531fb4eba8e6ac1d666c4641c", "points": 228875, "preprocess_ms": 104.53704700012167, "h2d_ms": 1.9328979999500007, "forward_sync_ms": 121.48715300008917, "forward_cuda_event_ms": 121.44441223144531, "d2h_standardize_ms": 17.93785699987893, "end_to_end_ms": 245.89495500003977}
+{"frame": 67, "sample_token": "7bebe3c9be714f02837f8617c56df122", "points": 230312, "preprocess_ms": 104.76300799996352, "h2d_ms": 1.6926880000482925, "forward_sync_ms": 123.43549399997755, "forward_cuda_event_ms": 123.39081573486328, "d2h_standardize_ms": 18.473299000106636, "end_to_end_ms": 248.364489000096}
+{"frame": 68, "sample_token": "4b894442c95141f9affd731d9da7b43c", "points": 232079, "preprocess_ms": 119.90633899995373, "h2d_ms": 1.5277810000497993, "forward_sync_ms": 124.6346939999512, "forward_cuda_event_ms": 124.58870697021484, "d2h_standardize_ms": 18.379918999926304, "end_to_end_ms": 264.44873299988103}
+{"frame": 69, "sample_token": "e00dc15130dc44e796687baadd076ae4", "points": 233287, "preprocess_ms": 106.32340699999077, "h2d_ms": 1.5664800000649848, "forward_sync_ms": 119.48930700009441, "forward_cuda_event_ms": 119.45286560058594, "d2h_standardize_ms": 19.27974099999119, "end_to_end_ms": 246.65893500014135}
+{"frame": 70, "sample_token": "e63b83b436a0479db7362338cdfab118", "points": 234372, "preprocess_ms": 100.974042000189, "h2d_ms": 1.520116999927268, "forward_sync_ms": 123.20361199999752, "forward_cuda_event_ms": 123.16377258300781, "d2h_standardize_ms": 17.992501999970045, "end_to_end_ms": 243.69027300008383}
+{"frame": 71, "sample_token": "c567f9b8e9f34817acdc9c49d791c557", "points": 233467, "preprocess_ms": 105.65731900010178, "h2d_ms": 1.576687999886417, "forward_sync_ms": 119.44839000011598, "forward_cuda_event_ms": 119.40892791748047, "d2h_standardize_ms": 18.12698199978513, "end_to_end_ms": 244.8093789998893}
+{"frame": 72, "sample_token": "8e352d4a6c6f40c8ad4f10a3d2c3f158", "points": 232789, "preprocess_ms": 103.42184299997825, "h2d_ms": 1.527633000023343, "forward_sync_ms": 116.704332999916, "forward_cuda_event_ms": 116.66595458984375, "d2h_standardize_ms": 18.19373600005747, "end_to_end_ms": 239.84754499997507}
+{"frame": 73, "sample_token": "841dd6709e9b4d7c9d6bf888f1fe6d7e", "points": 233125, "preprocess_ms": 101.9204180001907, "h2d_ms": 1.5975929998148786, "forward_sync_ms": 122.55242400010502, "forward_cuda_event_ms": 122.51532745361328, "d2h_standardize_ms": 17.72030500001165, "end_to_end_ms": 243.79074000012224}
+{"frame": 74, "sample_token": "e54b784a608644a2804fcf800c7499f7", "points": 233693, "preprocess_ms": 105.10318100000404, "h2d_ms": 1.7153119999875344, "forward_sync_ms": 128.38747299997522, "forward_cuda_event_ms": 128.3424072265625, "d2h_standardize_ms": 17.987265000101615, "end_to_end_ms": 253.1932310000684}
+{"frame": 75, "sample_token": "a1289b27ca1d41deb6fc982be9a3d03c", "points": 233600, "preprocess_ms": 106.88903499999469, "h2d_ms": 1.8795089999912307, "forward_sync_ms": 130.78324800017072, "forward_cuda_event_ms": 130.74464416503906, "d2h_standardize_ms": 17.970745999946303, "end_to_end_ms": 257.52253800010294}
+{"frame": 76, "sample_token": "e6e877f31dd447199b56cae07f86daad", "points": 234447, "preprocess_ms": 107.88090699998065, "h2d_ms": 1.6553399998429086, "forward_sync_ms": 132.59391900010087, "forward_cuda_event_ms": 132.553466796875, "d2h_standardize_ms": 18.46280800009481, "end_to_end_ms": 260.59297400001924}
+{"frame": 77, "sample_token": "cb4e6195faad467094fbd4d0a9e960e9", "points": 234238, "preprocess_ms": 104.42694899984417, "h2d_ms": 1.4721130000907579, "forward_sync_ms": 130.55094600008488, "forward_cuda_event_ms": 130.51065063476562, "d2h_standardize_ms": 18.787827999858564, "end_to_end_ms": 255.23783599987837}
+{"frame": 78, "sample_token": "7f594234e8034228b1a7d727f1981e09", "points": 235248, "preprocess_ms": 140.6706729999314, "h2d_ms": 2.2891510000135895, "forward_sync_ms": 128.46039100008966, "forward_cuda_event_ms": 128.41632080078125, "d2h_standardize_ms": 17.8905529999156, "end_to_end_ms": 289.31076799995026}
+{"frame": 79, "sample_token": "9cdbf5ff7f294549aea0a4307e5d104a", "points": 234657, "preprocess_ms": 99.45567299996583, "h2d_ms": 1.6615929998806678, "forward_sync_ms": 127.14250900012303, "forward_cuda_event_ms": 127.09967803955078, "d2h_standardize_ms": 18.317454999987604, "end_to_end_ms": 246.57722999995713}
+{"frame": 80, "sample_token": "b4ff30109dd14c89b24789dc5713cf8c", "points": 235522, "preprocess_ms": 99.72139399997104, "h2d_ms": 2.018042000145215, "forward_sync_ms": 131.42892099995152, "forward_cuda_event_ms": 131.38925170898438, "d2h_standardize_ms": 18.169557999954122, "end_to_end_ms": 251.3379150000219}

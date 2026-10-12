@@ -1,0 +1,4 @@
+Building the model: model/resnet50/build/camera.backbone.plan, this will take several minutes. Wait a moment 🤗🤗🤗~.
+Building the model: model/resnet50/build/fuser.plan, this will take several minutes. Wait a moment 🤗🤗🤗~.
+Building the model: model/resnet50/build/camera.vtransform.plan, this will take several minutes. Wait a moment 🤗🤗🤗~.
+Building the model: model/resnet50/build/head.bbox.plan, this will take several minutes. Wait a moment 🤗🤗🤗~.

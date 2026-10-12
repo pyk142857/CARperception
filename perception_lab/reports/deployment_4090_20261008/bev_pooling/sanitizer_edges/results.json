@@ -1,0 +1,194 @@
+{
+  "status": "passed",
+  "experiment": "CUDA-BEVFusion actual depth-weighted FP16 pooling",
+  "tolerance_fixed_before_run": {
+    "atol": 0.02,
+    "rtol": 0.002,
+    "config_sha256": "12b17deee2ddd122f3cdd13350bb35f667220d4986c55ff9b6c74f938fdb280a"
+  },
+  "paired_rounds": 30,
+  "independent_warmup": 10,
+  "cases": [
+    {
+      "name": "empty",
+      "real_capture": false,
+      "metadata": {
+        "shape": [
+          1,
+          80,
+          2,
+          2,
+          3
+        ],
+        "out_h": 2,
+        "out_w": 3,
+        "num_intervals": 0
+      },
+      "candidate_vs_upstream": {
+        "finite": true,
+        "elements": 480,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "upstream_vs_captured_or_cpu": {
+        "finite": true,
+        "elements": 480,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "captured_sha256": null,
+      "interval_length_min": 0,
+      "interval_length_max": 0
+    },
+    {
+      "name": "single",
+      "real_capture": false,
+      "metadata": {
+        "shape": [
+          1,
+          80,
+          2,
+          2,
+          3
+        ],
+        "out_h": 2,
+        "out_w": 3,
+        "num_intervals": 1
+      },
+      "candidate_vs_upstream": {
+        "finite": true,
+        "elements": 480,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "upstream_vs_captured_or_cpu": {
+        "finite": true,
+        "elements": 480,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "captured_sha256": null,
+      "interval_length_min": 1,
+      "interval_length_max": 1
+    },
+    {
+      "name": "collision",
+      "real_capture": false,
+      "metadata": {
+        "shape": [
+          1,
+          80,
+          2,
+          2,
+          3
+        ],
+        "out_h": 2,
+        "out_w": 3,
+        "num_intervals": 1
+      },
+      "candidate_vs_upstream": {
+        "finite": true,
+        "elements": 480,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "upstream_vs_captured_or_cpu": {
+        "finite": true,
+        "elements": 480,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "captured_sha256": null,
+      "interval_length_min": 4,
+      "interval_length_max": 4
+    },
+    {
+      "name": "boundary",
+      "real_capture": false,
+      "metadata": {
+        "shape": [
+          1,
+          80,
+          2,
+          2,
+          3
+        ],
+        "out_h": 2,
+        "out_w": 3,
+        "num_intervals": 2
+      },
+      "candidate_vs_upstream": {
+        "finite": true,
+        "elements": 480,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "upstream_vs_captured_or_cpu": {
+        "finite": true,
+        "elements": 480,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "captured_sha256": null,
+      "interval_length_min": 1,
+      "interval_length_max": 1
+    }
+  ],
+  "boundary_empty": "Both host dispatches return a zero tensor without an invalid zero-block launch; original upstream did not guard empty intervals.",
+  "timing_boundary": "same preallocated GPU inputs/outputs; zero output memset plus pooling kernel, CUDA event synchronized; no H2D/D2H, sort, allocation or capture I/O",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "torch": "1.13.1+cu117",
+  "cuda": "11.7",
+  "library_sha256": "f69af385c2a347127bd34fc9704c99a85073bc7adcf06eeba78b72a899967f14",
+  "adapter_sha256": "afa04edc183e1acca30577906ea96671a01f1d9c3fd796cc65497874cb016df5",
+  "default": "upstream",
+  "full_model_validation": "pending separate paired full-model evaluation"
+}

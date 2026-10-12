@@ -1,0 +1,139 @@
+{
+  "status": "passed",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "tensorrt": "8.6.1",
+  "fp16": true,
+  "workspace_mib": 2048,
+  "engines": [
+    {
+      "name": "camera.backbone",
+      "build_passed": true,
+      "artifacts": [
+        {
+          "path": "perception_lab/checkpoints/deployment_4090/nvidia/model/resnet50/camera.backbone.onnx",
+          "bytes": 108357032,
+          "sha256": "9c3316d8f111949dea7c8974bd2023073ef840cde10c3276b21a6c2bd7d83762"
+        },
+        {
+          "path": "perception_lab/checkpoints/deployment_4090/nvidia/model/resnet50/build/camera.backbone.plan",
+          "bytes": 56808292,
+          "sha256": "45f3a77f353c809f3357103e7545c3bc0e08903b2ba83cf721056fc795bb016d"
+        },
+        {
+          "path": "perception_lab/checkpoints/deployment_4090/nvidia/model/resnet50/build/camera.backbone.json",
+          "bytes": 89762,
+          "sha256": "213f0b7e1272b460c8c0fc8c3f19e9f611592c0583f1534ef393ec8d4a023753"
+        },
+        {
+          "path": "perception_lab/checkpoints/deployment_4090/nvidia/model/resnet50/build/camera.backbone.log",
+          "bytes": 3896523,
+          "sha256": "ac71d633c32ea4753c9c3496826bd905f4f1601c590b2e58b707311e5d9b1436"
+        }
+      ]
+    },
+    {
+      "name": "fuser",
+      "build_passed": true,
+      "artifacts": [
+        {
+          "path": "perception_lab/checkpoints/deployment_4090/nvidia/model/resnet50/fuser.onnx",
+          "bytes": 21402294,
+          "sha256": "a5dc64e573d59e8494cf7bf261d9c7fe977c8082aa2eceddaa859d850f7f602c"
+        },
+        {
+          "path": "perception_lab/checkpoints/deployment_4090/nvidia/model/resnet50/build/fuser.plan",
+          "bytes": 11276036,
+          "sha256": "44808cd1218a3ea43b91513488e5dbf97156e435c8cd124b44b1b41a96456caa"
+        },
+        {
+          "path": "perception_lab/checkpoints/deployment_4090/nvidia/model/resnet50/build/fuser.json",
+          "bytes": 21001,
+          "sha256": "16a985ac15b1ae299abbc47b0c8516c638216691c086763c132741b85b5f94a2"
+        },
+        {
+          "path": "perception_lab/checkpoints/deployment_4090/nvidia/model/resnet50/build/fuser.log",
+          "bytes": 653261,
+          "sha256": "6a2f7403538c52bbfc08a7115b7dd2b34df021eb14841760a2afec9ed662e725"
+        }
+      ]
+    },
+    {
+      "name": "camera.vtransform",
+      "build_passed": true,
+      "artifacts": [
+        {
+          "path": "perception_lab/checkpoints/deployment_4090/nvidia/model/resnet50/camera.vtransform.onnx",
+          "bytes": 692903,
+          "sha256": "60f2f88706888dcc5447abf4010ce861b895b648f6745224e84ac788976c6059"
+        },
+        {
+          "path": "perception_lab/checkpoints/deployment_4090/nvidia/model/resnet50/build/camera.vtransform.plan",
+          "bytes": 500988,
+          "sha256": "6601cfc398270fb0e77af6bf93de8721181f193205b124db9adeb205152d20f8"
+        },
+        {
+          "path": "perception_lab/checkpoints/deployment_4090/nvidia/model/resnet50/build/camera.vtransform.json",
+          "bytes": 5011,
+          "sha256": "d40ecac7b2d79f5b3472b4030aca7b1e553c4bb0227439247e95cbf1dbdb73cb"
+        },
+        {
+          "path": "perception_lab/checkpoints/deployment_4090/nvidia/model/resnet50/build/camera.vtransform.log",
+          "bytes": 194374,
+          "sha256": "43486ea4d3ac4e43e0ce9b201e0adaed7cc7f8f8038583c5e476edb894d68cab"
+        }
+      ]
+    },
+    {
+      "name": "head.bbox",
+      "build_passed": true,
+      "artifacts": [
+        {
+          "path": "perception_lab/checkpoints/deployment_4090/nvidia/model/resnet50/head.bbox.onnx",
+          "bytes": 4689295,
+          "sha256": "5f295ed6af274a4bfe88ee8fe02d27b3344e3a7253a13b02454471a66455efe4"
+        },
+        {
+          "path": "perception_lab/checkpoints/deployment_4090/nvidia/model/resnet50/build/head.bbox.plan",
+          "bytes": 3405140,
+          "sha256": "97da2a140a3867e696422f615b3a2153f37442cdc8b305d04990b0245349d311"
+        },
+        {
+          "path": "perception_lab/checkpoints/deployment_4090/nvidia/model/resnet50/build/head.bbox.json",
+          "bytes": 66699,
+          "sha256": "2378b9fefd4b51ab5c953a603083b63a849cc5a20181a524d5c156fd21f65f90"
+        },
+        {
+          "path": "perception_lab/checkpoints/deployment_4090/nvidia/model/resnet50/build/head.bbox.log",
+          "bytes": 2817127,
+          "sha256": "c9d72b029267e4d8dff91ec2c5ea587c086bef57cc270f5f05e7e6c2688dd537"
+        }
+      ]
+    },
+    {
+      "name": "head.bbox.layernormplugin",
+      "build_passed": true,
+      "artifacts": [
+        {
+          "path": "perception_lab/checkpoints/deployment_4090/nvidia/model/resnet50/head.bbox.layernormplugin.onnx",
+          "bytes": 4688228,
+          "sha256": "1aac2d1eb5253d40d0973a220b069bd7417a6a08ac713dc29525d4c9f61b2b95"
+        },
+        {
+          "path": "perception_lab/checkpoints/deployment_4090/nvidia/model/resnet50/build/head.bbox.layernormplugin.plan",
+          "bytes": 3701180,
+          "sha256": "3b58d7a6e1371fc943defb91b992872dc4d404bdac504b7e436cc3880a313053"
+        },
+        {
+          "path": "perception_lab/checkpoints/deployment_4090/nvidia/model/resnet50/build/head.bbox.layernormplugin.json",
+          "bytes": 100336,
+          "sha256": "806bb641c010ee98c5cff1f1b4471575c8427f2e7ecd5f0afd3bf6224f5d1b85"
+        },
+        {
+          "path": "perception_lab/checkpoints/deployment_4090/nvidia/model/resnet50/build/head.bbox.layernormplugin.log",
+          "bytes": 4540419,
+          "sha256": "932471dfd63b356cc75a45be7d9a8664bf98ea151826cc2420468ddf76576bc0"
+        }
+      ]
+    }
+  ]
+}

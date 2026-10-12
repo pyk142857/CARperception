@@ -1,0 +1,375 @@
+{
+  "protocol": "Teaching diagnostic: score >= .25, same-class Hungarian XY distance <= 2 m; GT visibility/range filtered. Not official DetectionEval or TrackingEval IDS.",
+  "cases": [
+    {
+      "frame_index": 21,
+      "sample_token": "fedfb3a6cb804635a0f47143f9ca8d6f",
+      "kind": "FN",
+      "annotation_token": "4d3ee21b5c164b9abef35803928296d7",
+      "class_name": "traffic_cone",
+      "center_xyz": [
+        -2.0459742744946685,
+        -8.592557092628898,
+        0.30477319779565026
+      ],
+      "distance_m": 8.832782580930042,
+      "nearest_model_score": 0.17238713800907135,
+      "nearest_same_class_center_distance_m": 0.060865792472859157,
+      "nearest_prediction_matched_other_gt": false,
+      "observation": "No same-class predicted box at score >= .25 matched within 2 m.",
+      "possible_reason": "Hypothesis: low confidence, localization ambiguity or nearby-instance assignment ambiguity; cause not verified.",
+      "next_step": "Inspect synchronized six-camera projections and adjacent native IDs."
+    },
+    {
+      "frame_index": 4,
+      "sample_token": "c923fe08b2ff4e27975d2bf30934383b",
+      "kind": "FN",
+      "annotation_token": "7f8e130ee6a7476e9fc67b6ce57480ee",
+      "class_name": "barrier",
+      "center_xyz": [
+        -3.305171344974445,
+        -8.333726799514086,
+        0.4301635385146652
+      ],
+      "distance_m": 8.965219461261363,
+      "nearest_model_score": 0.7771615386009216,
+      "nearest_same_class_center_distance_m": 1.2646379567153574,
+      "nearest_prediction_matched_other_gt": true,
+      "observation": "No same-class predicted box at score >= .25 matched within 2 m.",
+      "possible_reason": "Hypothesis: low confidence, localization ambiguity or nearby-instance assignment ambiguity; cause not verified.",
+      "next_step": "Inspect synchronized six-camera projections and adjacent native IDs."
+    },
+    {
+      "frame_index": 24,
+      "sample_token": "a34fabc7aa674713b71f98ec541eb2d4",
+      "kind": "FN",
+      "annotation_token": "7385ff997a4c47b3999a207686099a35",
+      "class_name": "pedestrian",
+      "center_xyz": [
+        -2.564803347591151,
+        -9.485938858713926,
+        0.783077609890162
+      ],
+      "distance_m": 9.82655851471275,
+      "nearest_model_score": 0.22296689450740814,
+      "nearest_same_class_center_distance_m": 0.1840246800948587,
+      "nearest_prediction_matched_other_gt": false,
+      "observation": "No same-class predicted box at score >= .25 matched within 2 m.",
+      "possible_reason": "Hypothesis: low confidence, localization ambiguity or nearby-instance assignment ambiguity; cause not verified.",
+      "next_step": "Inspect synchronized six-camera projections and adjacent native IDs."
+    },
+    {
+      "frame_index": 20,
+      "sample_token": "c844bf5a9f2243ff8f4bf2c85fe218ff",
+      "kind": "FN",
+      "annotation_token": "2401a4c146ca4312a917713f99371c8a",
+      "class_name": "motorcycle",
+      "center_xyz": [
+        6.767798640404177,
+        8.381051133848244,
+        1.3768390927246887
+      ],
+      "distance_m": 10.772423893685003,
+      "nearest_model_score": 0.14438380300998688,
+      "nearest_same_class_center_distance_m": 0.21635047504439348,
+      "nearest_prediction_matched_other_gt": false,
+      "observation": "No same-class predicted box at score >= .25 matched within 2 m.",
+      "possible_reason": "Hypothesis: low confidence, localization ambiguity or nearby-instance assignment ambiguity; cause not verified.",
+      "next_step": "Inspect synchronized six-camera projections and adjacent native IDs."
+    },
+    {
+      "frame_index": 38,
+      "sample_token": "ed5fc18c31904f96a8f0dbb99ff069c0",
+      "kind": "FN",
+      "annotation_token": "f2ab289776df4720b442a9816f2bb173",
+      "class_name": "bicycle",
+      "center_xyz": [
+        15.432630345939119,
+        1.1410663240488075,
+        0.9354184116151048
+      ],
+      "distance_m": 15.474757243662312,
+      "nearest_model_score": 0.7710658311843872,
+      "nearest_same_class_center_distance_m": 0.6503882241221799,
+      "nearest_prediction_matched_other_gt": true,
+      "observation": "No same-class predicted box at score >= .25 matched within 2 m.",
+      "possible_reason": "Hypothesis: low confidence, localization ambiguity or nearby-instance assignment ambiguity; cause not verified.",
+      "next_step": "Inspect synchronized six-camera projections and adjacent native IDs."
+    }
+  ],
+  "frame_counts": [
+    {
+      "frame_index": 0,
+      "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+      "tp": 28,
+      "fn": 5,
+      "fp": 10
+    },
+    {
+      "frame_index": 1,
+      "sample_token": "39586f9d59004284a7114a68825e8eec",
+      "tp": 34,
+      "fn": 2,
+      "fp": 11
+    },
+    {
+      "frame_index": 2,
+      "sample_token": "356d81f38dd9473ba590f39e266f54e5",
+      "tp": 42,
+      "fn": 3,
+      "fp": 12
+    },
+    {
+      "frame_index": 3,
+      "sample_token": "e0845f5322254dafadbbed75aaa07969",
+      "tp": 41,
+      "fn": 5,
+      "fp": 13
+    },
+    {
+      "frame_index": 4,
+      "sample_token": "c923fe08b2ff4e27975d2bf30934383b",
+      "tp": 43,
+      "fn": 6,
+      "fp": 16
+    },
+    {
+      "frame_index": 5,
+      "sample_token": "f1e3d9d08f044c439ce86a2d6fcca57b",
+      "tp": 44,
+      "fn": 3,
+      "fp": 11
+    },
+    {
+      "frame_index": 6,
+      "sample_token": "4f545737bf3347fbbc9af60b0be9a963",
+      "tp": 48,
+      "fn": 6,
+      "fp": 14
+    },
+    {
+      "frame_index": 7,
+      "sample_token": "7626dde27d604ac28a0240bdd54eba7a",
+      "tp": 50,
+      "fn": 5,
+      "fp": 18
+    },
+    {
+      "frame_index": 8,
+      "sample_token": "be99ffc878b24aca8956bbb4e0f97d0c",
+      "tp": 56,
+      "fn": 4,
+      "fp": 18
+    },
+    {
+      "frame_index": 9,
+      "sample_token": "9813c23a5f1448b09bb7910fea9baf20",
+      "tp": 60,
+      "fn": 7,
+      "fp": 15
+    },
+    {
+      "frame_index": 10,
+      "sample_token": "023c4df2d451409881d8e6ea82f14704",
+      "tp": 58,
+      "fn": 12,
+      "fp": 14
+    },
+    {
+      "frame_index": 11,
+      "sample_token": "c235638ed66145988d17f9d0601923f2",
+      "tp": 60,
+      "fn": 12,
+      "fp": 15
+    },
+    {
+      "frame_index": 12,
+      "sample_token": "bc3c8a953f6b4dcdb77b521d89f3d9d5",
+      "tp": 60,
+      "fn": 13,
+      "fp": 12
+    },
+    {
+      "frame_index": 13,
+      "sample_token": "1e3d79dae62742a0ad64c91679863358",
+      "tp": 69,
+      "fn": 10,
+      "fp": 18
+    },
+    {
+      "frame_index": 14,
+      "sample_token": "2afb9d32310e4546a71cbe432911eca2",
+      "tp": 72,
+      "fn": 7,
+      "fp": 18
+    },
+    {
+      "frame_index": 15,
+      "sample_token": "cd21dbfc3bd749c7b10a5c42562e0c42",
+      "tp": 71,
+      "fn": 6,
+      "fp": 27
+    },
+    {
+      "frame_index": 16,
+      "sample_token": "88449a5cb1644a199c1c11f6ac034867",
+      "tp": 70,
+      "fn": 13,
+      "fp": 21
+    },
+    {
+      "frame_index": 17,
+      "sample_token": "2ff86dc19c4644a1a88ce5ba848f56e5",
+      "tp": 67,
+      "fn": 9,
+      "fp": 25
+    },
+    {
+      "frame_index": 18,
+      "sample_token": "bf2938e43c6f487497cda76b51bfc406",
+      "tp": 61,
+      "fn": 15,
+      "fp": 24
+    },
+    {
+      "frame_index": 19,
+      "sample_token": "b26e791522294bec90f86fd72226e35c",
+      "tp": 61,
+      "fn": 13,
+      "fp": 17
+    },
+    {
+      "frame_index": 20,
+      "sample_token": "c844bf5a9f2243ff8f4bf2c85fe218ff",
+      "tp": 56,
+      "fn": 11,
+      "fp": 28
+    },
+    {
+      "frame_index": 21,
+      "sample_token": "fedfb3a6cb804635a0f47143f9ca8d6f",
+      "tp": 58,
+      "fn": 9,
+      "fp": 18
+    },
+    {
+      "frame_index": 22,
+      "sample_token": "965f6af5a92449348409029a5f048a38",
+      "tp": 56,
+      "fn": 4,
+      "fp": 22
+    },
+    {
+      "frame_index": 23,
+      "sample_token": "4711bcd34644420da8bc77163431888e",
+      "tp": 46,
+      "fn": 8,
+      "fp": 19
+    },
+    {
+      "frame_index": 24,
+      "sample_token": "a34fabc7aa674713b71f98ec541eb2d4",
+      "tp": 43,
+      "fn": 8,
+      "fp": 15
+    },
+    {
+      "frame_index": 25,
+      "sample_token": "c78067571d104caba7c568a847d56971",
+      "tp": 47,
+      "fn": 4,
+      "fp": 13
+    },
+    {
+      "frame_index": 26,
+      "sample_token": "4246e57f018745c9b2bc68feb3d71b58",
+      "tp": 42,
+      "fn": 7,
+      "fp": 19
+    },
+    {
+      "frame_index": 27,
+      "sample_token": "a7acb150914b40bdad9a2dc4e657cbf9",
+      "tp": 44,
+      "fn": 8,
+      "fp": 25
+    },
+    {
+      "frame_index": 28,
+      "sample_token": "0cd661df01aa40c3bb3a773ba86f753a",
+      "tp": 43,
+      "fn": 8,
+      "fp": 14
+    },
+    {
+      "frame_index": 29,
+      "sample_token": "378a3a3e9af346308ab9dff8ced46d9c",
+      "tp": 44,
+      "fn": 13,
+      "fp": 15
+    },
+    {
+      "frame_index": 30,
+      "sample_token": "eef55c3b48f34d949959b45130ee293a",
+      "tp": 43,
+      "fn": 9,
+      "fp": 18
+    },
+    {
+      "frame_index": 31,
+      "sample_token": "5fda58ee3ae44ab9b4bbac7a2de66c27",
+      "tp": 47,
+      "fn": 7,
+      "fp": 18
+    },
+    {
+      "frame_index": 32,
+      "sample_token": "919e3c4cec934168a3152077a9adcbea",
+      "tp": 49,
+      "fn": 3,
+      "fp": 15
+    },
+    {
+      "frame_index": 33,
+      "sample_token": "b73152cab88f49d9ba195da81fde1809",
+      "tp": 47,
+      "fn": 8,
+      "fp": 13
+    },
+    {
+      "frame_index": 34,
+      "sample_token": "6aa6fa91e0d1492e812eb7e57c47df6e",
+      "tp": 45,
+      "fn": 10,
+      "fp": 12
+    },
+    {
+      "frame_index": 35,
+      "sample_token": "aa581aac963a4fad848ac11fe66e8637",
+      "tp": 46,
+      "fn": 8,
+      "fp": 10
+    },
+    {
+      "frame_index": 36,
+      "sample_token": "67e5f88901214f3aa03d68e028185e22",
+      "tp": 51,
+      "fn": 10,
+      "fp": 9
+    },
+    {
+      "frame_index": 37,
+      "sample_token": "29e056fc277543c9bc42310b122c640e",
+      "tp": 53,
+      "fn": 5,
+      "fp": 9
+    },
+    {
+      "frame_index": 38,
+      "sample_token": "ed5fc18c31904f96a8f0dbb99ff069c0",
+      "tp": 49,
+      "fn": 10,
+      "fp": 9
+    }
+  ]
+}

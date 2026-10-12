@@ -1,0 +1,2 @@
+bash -c 'source tools/bevfusion_trt_env.sh
+exec envs/bevfusion/bin/python tools/bev_pooling_4090.py --capture runs/deployment_4090_20261008/trt_pooling_captures/frame_0 --capture runs/deployment_4090_20261008/trt_pooling_captures/frame_19 --capture runs/deployment_4090_20261008/trt_pooling_captures/frame_38 --out reports/deployment_4090_20261008/bev_pooling'
