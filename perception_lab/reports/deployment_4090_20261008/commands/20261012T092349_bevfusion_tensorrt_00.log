@@ -1,0 +1,79 @@
+/home/minglei/Desktop/CAR/perception_lab/envs/maptr/lib/python3.10/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+/home/minglei/Desktop/CAR/perception_lab/third_party/bevfusion_4090/mmdet3d/core/bbox/box_np_ops.py:781: NumbaDeprecationWarning: The 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.
+  def points_in_convex_polygon_jit(points, polygon, clockwise=True):
+{"frame": 0, "sample_token": "ca9a282c9e77460f8360f564131a8af5", "points": 248834, "preprocess_ms": 109.51431500006947, "geometry_update_ms": 1.3387069998316292, "forward_h2d_model_d2h_ms": 8.542237000256137, "standardize_ms": 18.295446999673004, "end_to_end_ms": 137.69070599983024, "process_gpu_mib": 1944}
+{"frame": 1, "sample_token": "39586f9d59004284a7114a68825e8eec", "points": 251099, "preprocess_ms": 118.08129700011705, "geometry_update_ms": 0.8853949998410826, "forward_h2d_model_d2h_ms": 12.11969299993143, "standardize_ms": 18.05219900006705, "end_to_end_ms": 149.1385839999566, "process_gpu_mib": 1944}
+{"frame": 2, "sample_token": "356d81f38dd9473ba590f39e266f54e5", "points": 252353, "preprocess_ms": 118.58969600007185, "geometry_update_ms": 1.1331880000398087, "forward_h2d_model_d2h_ms": 12.422329999935755, "standardize_ms": 17.526288999761164, "end_to_end_ms": 149.67150299980858, "process_gpu_mib": 1944}
+{"frame": 3, "sample_token": "e0845f5322254dafadbbed75aaa07969", "points": 252599, "preprocess_ms": 110.01796100026695, "geometry_update_ms": 0.8833609999783221, "forward_h2d_model_d2h_ms": 10.63027800000782, "standardize_ms": 18.660357000044314, "end_to_end_ms": 140.1919570002974, "process_gpu_mib": 1944}
+{"frame": 4, "sample_token": "c923fe08b2ff4e27975d2bf30934383b", "points": 253223, "preprocess_ms": 111.12181299995427, "geometry_update_ms": 1.3525650001611211, "forward_h2d_model_d2h_ms": 10.03289499976745, "standardize_ms": 17.999300000155927, "end_to_end_ms": 140.50657300003877, "process_gpu_mib": 1944}
+{"frame": 5, "sample_token": "f1e3d9d08f044c439ce86a2d6fcca57b", "points": 253819, "preprocess_ms": 122.60289000005287, "geometry_update_ms": 0.8934719999160734, "forward_h2d_model_d2h_ms": 10.257800000090356, "standardize_ms": 21.36629599999651, "end_to_end_ms": 155.1204580000558, "process_gpu_mib": 1944}
+{"frame": 6, "sample_token": "4f545737bf3347fbbc9af60b0be9a963", "points": 253219, "preprocess_ms": 113.42063399979452, "geometry_update_ms": 0.8853500003169756, "forward_h2d_model_d2h_ms": 10.77072499992937, "standardize_ms": 89.3579899998258, "end_to_end_ms": 214.43469899986667, "process_gpu_mib": 1944}
+{"frame": 7, "sample_token": "7626dde27d604ac28a0240bdd54eba7a", "points": 252264, "preprocess_ms": 113.38107899973693, "geometry_update_ms": 0.8737050002309843, "forward_h2d_model_d2h_ms": 11.268728999766608, "standardize_ms": 18.569325000044046, "end_to_end_ms": 144.09283799977857, "process_gpu_mib": 1944}
+{"frame": 8, "sample_token": "be99ffc878b24aca8956bbb4e0f97d0c", "points": 251371, "preprocess_ms": 110.47448999988774, "geometry_update_ms": 0.8944710002651846, "forward_h2d_model_d2h_ms": 11.00776399971437, "standardize_ms": 17.61549900038517, "end_to_end_ms": 139.99222400025246, "process_gpu_mib": 1944}
+{"frame": 9, "sample_token": "9813c23a5f1448b09bb7910fea9baf20", "points": 250163, "preprocess_ms": 112.02448699987144, "geometry_update_ms": 0.8918880002966034, "forward_h2d_model_d2h_ms": 9.64455299981637, "standardize_ms": 17.889900999762176, "end_to_end_ms": 140.4508289997466, "process_gpu_mib": 1944}
+{"frame": 10, "sample_token": "023c4df2d451409881d8e6ea82f14704", "points": 249386, "preprocess_ms": 108.09757100014394, "geometry_update_ms": 0.8696179997969011, "forward_h2d_model_d2h_ms": 9.45288699995217, "standardize_ms": 18.072451000080036, "end_to_end_ms": 136.49252699997305, "process_gpu_mib": 1944}
+{"frame": 11, "sample_token": "c235638ed66145988d17f9d0601923f2", "points": 249233, "preprocess_ms": 113.08245100008207, "geometry_update_ms": 0.8731890002309228, "forward_h2d_model_d2h_ms": 10.352884999974776, "standardize_ms": 18.710612999711884, "end_to_end_ms": 143.01913799999966, "process_gpu_mib": 1944}
+{"frame": 12, "sample_token": "bc3c8a953f6b4dcdb77b521d89f3d9d5", "points": 248211, "preprocess_ms": 121.27099700001054, "geometry_update_ms": 1.0255500001221662, "forward_h2d_model_d2h_ms": 11.300552999728097, "standardize_ms": 17.601462000129686, "end_to_end_ms": 151.1985619999905, "process_gpu_mib": 1944}
+{"frame": 13, "sample_token": "1e3d79dae62742a0ad64c91679863358", "points": 246469, "preprocess_ms": 119.21245499979705, "geometry_update_ms": 0.8780650000517198, "forward_h2d_model_d2h_ms": 12.187488000108715, "standardize_ms": 18.542318000072555, "end_to_end_ms": 150.82032600003004, "process_gpu_mib": 1944}
+{"frame": 14, "sample_token": "2afb9d32310e4546a71cbe432911eca2", "points": 246034, "preprocess_ms": 110.50969600000826, "geometry_update_ms": 0.8803900000202702, "forward_h2d_model_d2h_ms": 11.821220000001631, "standardize_ms": 18.973577999986446, "end_to_end_ms": 142.1848840000166, "process_gpu_mib": 1944}
+{"frame": 15, "sample_token": "cd21dbfc3bd749c7b10a5c42562e0c42", "points": 245342, "preprocess_ms": 107.95966300020154, "geometry_update_ms": 0.882435999756126, "forward_h2d_model_d2h_ms": 9.951259999979811, "standardize_ms": 18.164497000270785, "end_to_end_ms": 136.95785600020827, "process_gpu_mib": 1944}
+{"frame": 16, "sample_token": "88449a5cb1644a199c1c11f6ac034867", "points": 244964, "preprocess_ms": 117.46810700014976, "geometry_update_ms": 0.8905360000426299, "forward_h2d_model_d2h_ms": 12.087013999916962, "standardize_ms": 17.596892999790725, "end_to_end_ms": 148.04254999990007, "process_gpu_mib": 1944}
+{"frame": 17, "sample_token": "2ff86dc19c4644a1a88ce5ba848f56e5", "points": 245576, "preprocess_ms": 156.14973000037935, "geometry_update_ms": 1.103836999845953, "forward_h2d_model_d2h_ms": 9.480187999997725, "standardize_ms": 18.12934999998106, "end_to_end_ms": 184.8631050002041, "process_gpu_mib": 1944}
+{"frame": 18, "sample_token": "bf2938e43c6f487497cda76b51bfc406", "points": 246069, "preprocess_ms": 108.64150999987032, "geometry_update_ms": 0.8775979999882111, "forward_h2d_model_d2h_ms": 10.61850099995354, "standardize_ms": 19.64239600010842, "end_to_end_ms": 139.7800049999205, "process_gpu_mib": 1944}
+{"frame": 19, "sample_token": "b26e791522294bec90f86fd72226e35c", "points": 245281, "preprocess_ms": 117.3031949997494, "geometry_update_ms": 1.779347000137932, "forward_h2d_model_d2h_ms": 9.644236999974964, "standardize_ms": 17.629364000185888, "end_to_end_ms": 146.35614300004818, "process_gpu_mib": 1944}
+{"frame": 20, "sample_token": "c844bf5a9f2243ff8f4bf2c85fe218ff", "points": 244477, "preprocess_ms": 114.22822499980612, "geometry_update_ms": 0.8819409999887284, "forward_h2d_model_d2h_ms": 9.832556000219483, "standardize_ms": 17.878127000130917, "end_to_end_ms": 142.82084900014524, "process_gpu_mib": 1944}
+{"frame": 21, "sample_token": "fedfb3a6cb804635a0f47143f9ca8d6f", "points": 245057, "preprocess_ms": 111.3743760001853, "geometry_update_ms": 0.8849209998516017, "forward_h2d_model_d2h_ms": 10.01788099983969, "standardize_ms": 18.393905000266386, "end_to_end_ms": 140.67108300014297, "process_gpu_mib": 1944}
+{"frame": 22, "sample_token": "965f6af5a92449348409029a5f048a38", "points": 244111, "preprocess_ms": 110.71852200029753, "geometry_update_ms": 0.8836279998831742, "forward_h2d_model_d2h_ms": 10.956375000205298, "standardize_ms": 18.032601999948383, "end_to_end_ms": 140.59112700033438, "process_gpu_mib": 1944}
+{"frame": 23, "sample_token": "4711bcd34644420da8bc77163431888e", "points": 246002, "preprocess_ms": 109.3666899996606, "geometry_update_ms": 1.1651200002233963, "forward_h2d_model_d2h_ms": 10.946153000077175, "standardize_ms": 17.784805999781383, "end_to_end_ms": 139.26276899974255, "process_gpu_mib": 1944}
+{"frame": 24, "sample_token": "a34fabc7aa674713b71f98ec541eb2d4", "points": 247874, "preprocess_ms": 109.5825090001199, "geometry_update_ms": 1.249889000064286, "forward_h2d_model_d2h_ms": 10.617728999932297, "standardize_ms": 17.966218999845296, "end_to_end_ms": 139.41634599996178, "process_gpu_mib": 1944}
+{"frame": 25, "sample_token": "c78067571d104caba7c568a847d56971", "points": 248446, "preprocess_ms": 112.37612800005081, "geometry_update_ms": 1.2746049997076625, "forward_h2d_model_d2h_ms": 10.032443000000058, "standardize_ms": 17.574928000158252, "end_to_end_ms": 141.25810399991678, "process_gpu_mib": 1944}
+{"frame": 26, "sample_token": "4246e57f018745c9b2bc68feb3d71b58", "points": 249223, "preprocess_ms": 110.2191979998679, "geometry_update_ms": 0.8679799998390081, "forward_h2d_model_d2h_ms": 9.737580000091839, "standardize_ms": 18.887790999997378, "end_to_end_ms": 139.71254899979613, "process_gpu_mib": 1944}
+{"frame": 27, "sample_token": "a7acb150914b40bdad9a2dc4e657cbf9", "points": 250909, "preprocess_ms": 123.32405999995899, "geometry_update_ms": 0.8861960000103863, "forward_h2d_model_d2h_ms": 10.568449000402325, "standardize_ms": 19.591782999668794, "end_to_end_ms": 154.3704880000405, "process_gpu_mib": 1944}
+{"frame": 28, "sample_token": "0cd661df01aa40c3bb3a773ba86f753a", "points": 253075, "preprocess_ms": 111.70173899972724, "geometry_update_ms": 1.6431760000159557, "forward_h2d_model_d2h_ms": 10.539512999912404, "standardize_ms": 18.20484200015926, "end_to_end_ms": 142.08926999981486, "process_gpu_mib": 1944}
+{"frame": 29, "sample_token": "378a3a3e9af346308ab9dff8ced46d9c", "points": 253994, "preprocess_ms": 120.48805499989612, "geometry_update_ms": 0.8662210002512438, "forward_h2d_model_d2h_ms": 10.135364999769081, "standardize_ms": 18.2878260002326, "end_to_end_ms": 149.77746700014904, "process_gpu_mib": 1944}
+{"frame": 30, "sample_token": "eef55c3b48f34d949959b45130ee293a", "points": 254625, "preprocess_ms": 109.52310800030318, "geometry_update_ms": 0.8750649999456073, "forward_h2d_model_d2h_ms": 9.935490999851027, "standardize_ms": 18.252655000196683, "end_to_end_ms": 138.5863190002965, "process_gpu_mib": 1944}
+{"frame": 31, "sample_token": "5fda58ee3ae44ab9b4bbac7a2de66c27", "points": 255549, "preprocess_ms": 110.55429499992897, "geometry_update_ms": 0.874759999987873, "forward_h2d_model_d2h_ms": 10.413807000077213, "standardize_ms": 17.431293000299775, "end_to_end_ms": 139.27415500029383, "process_gpu_mib": 1944}
+{"frame": 32, "sample_token": "919e3c4cec934168a3152077a9adcbea", "points": 254860, "preprocess_ms": 110.36084199986362, "geometry_update_ms": 0.8869420003065898, "forward_h2d_model_d2h_ms": 11.01093099987338, "standardize_ms": 17.734690999986924, "end_to_end_ms": 139.99340600003052, "process_gpu_mib": 1944}
+{"frame": 33, "sample_token": "b73152cab88f49d9ba195da81fde1809", "points": 254927, "preprocess_ms": 112.70681199994215, "geometry_update_ms": 1.040564000049926, "forward_h2d_model_d2h_ms": 11.06112600018605, "standardize_ms": 22.62170799986052, "end_to_end_ms": 147.43021000003864, "process_gpu_mib": 1944}
+{"frame": 34, "sample_token": "6aa6fa91e0d1492e812eb7e57c47df6e", "points": 255918, "preprocess_ms": 111.03761499998654, "geometry_update_ms": 0.8905529998628481, "forward_h2d_model_d2h_ms": 9.857846000159043, "standardize_ms": 17.99576099983824, "end_to_end_ms": 139.78177499984668, "process_gpu_mib": 1944}
+{"frame": 35, "sample_token": "aa581aac963a4fad848ac11fe66e8637", "points": 255807, "preprocess_ms": 111.1975120002171, "geometry_update_ms": 0.8761639996919257, "forward_h2d_model_d2h_ms": 10.358637000081217, "standardize_ms": 17.596129000139626, "end_to_end_ms": 140.02844200012987, "process_gpu_mib": 1944}
+{"frame": 36, "sample_token": "67e5f88901214f3aa03d68e028185e22", "points": 254274, "preprocess_ms": 115.61251499961145, "geometry_update_ms": 0.8928620000006049, "forward_h2d_model_d2h_ms": 11.665785000332107, "standardize_ms": 18.373377999978402, "end_to_end_ms": 146.54453999992256, "process_gpu_mib": 1944}
+{"frame": 37, "sample_token": "29e056fc277543c9bc42310b122c640e", "points": 253720, "preprocess_ms": 200.21876999999222, "geometry_update_ms": 1.6213320000133535, "forward_h2d_model_d2h_ms": 10.616072000175336, "standardize_ms": 19.291651000003185, "end_to_end_ms": 231.7478250001841, "process_gpu_mib": 1944}
+{"frame": 38, "sample_token": "ed5fc18c31904f96a8f0dbb99ff069c0", "points": 253779, "preprocess_ms": 202.21718799984956, "geometry_update_ms": 0.8845420002216997, "forward_h2d_model_d2h_ms": 11.30364099981307, "standardize_ms": 18.839015000139625, "end_to_end_ms": 233.24438600002395, "process_gpu_mib": 1944}
+------------------------------------------------------
+Camerea Backbone 🌱 is Static Shape model
+Inputs: 2
+	0.img : {1 x 6 x 3 x 256 x 704} [float16]
+	1.depth : {1 x 6 x 1 x 256 x 704} [float16]
+Outputs: 2
+	0.camera_depth_weights : {6 x 118 x 32 x 88} [float16]
+	1.camera_feature : {6 x 32 x 88 x 80} [float16]
+------------------------------------------------------
+------------------------------------------------------
+Camerea VTransform 🌱 is Static Shape model
+Inputs: 1
+	0.feat_in : {1 x 80 x 360 x 360} [float16]
+Outputs: 1
+	0.feat_out : {1 x 80 x 180 x 180} [float16]
+------------------------------------------------------
+------------------------------------------------------
+Transfusion 🌱 is Static Shape model
+Inputs: 2
+	0.camera : {1 x 80 x 180 x 180} [float16]
+	1.lidar : {1 x 256 x 180 x 180} [float16]
+Outputs: 1
+	0.middle : {1 x 512 x 180 x 180} [float16]
+------------------------------------------------------
+------------------------------------------------------
+BBox 🌱 is Static Shape model
+Inputs: 1
+	0.middle : {1 x 512 x 180 x 180} [float16]
+Outputs: 6
+	0.reg : {1 x 2 x 200} [float16]
+	1.height : {1 x 1 x 200} [float16]
+	2.dim : {1 x 3 x 200} [float16]
+	3.rot : {1 x 2 x 200} [float16]
+	4.vel : {1 x 2 x 200} [float16]
+	5.score : {1 x 10 x 200} [float16]
+------------------------------------------------------

@@ -1,0 +1,2 @@
+pid, process_name, used_gpu_memory [MiB]
+87572, perception_lab/envs/sparse4d/bin/python, 1252 MiB

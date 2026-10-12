@@ -1,0 +1,41 @@
+{
+  "status": "failed",
+  "splits": [
+    {
+      "model": "bevfusion_trt",
+      "backend": "CUDA/TensorRT8.6.1+SpConv",
+      "precision": "FP16",
+      "split": "scene0061",
+      "frames": 39,
+      "mAP": 0.7106984104550191,
+      "NDS": 0.6218410937516219,
+      "mAP_delta": -0.0010623966744340851,
+      "NDS_delta": -0.0005067258395078378,
+      "model_with_transfers_p50_ms": 9.948930000064138,
+      "model_with_transfers_p95_ms": 10.748615200100176,
+      "e2e_p50_ms": 222.77241799974945,
+      "e2e_p95_ms": 556.3825765997539,
+      "process_gpu_peak_mib": 1944,
+      "fixed_metric_budget_passed": true,
+      "comparison_status": "failed"
+    },
+    {
+      "model": "bevfusion_trt",
+      "backend": "CUDA/TensorRT8.6.1+SpConv",
+      "precision": "FP16",
+      "split": "mini_val",
+      "frames": 81,
+      "mAP": 0.5764337501564303,
+      "NDS": 0.5131128473467921,
+      "mAP_delta": -0.0025993932766854577,
+      "NDS_delta": -0.0013580362521817824,
+      "model_with_transfers_p50_ms": 9.705870000288996,
+      "model_with_transfers_p95_ms": 10.58676499997091,
+      "e2e_p50_ms": 156.7175089999182,
+      "e2e_p95_ms": 300.93275999979596,
+      "process_gpu_peak_mib": 1944,
+      "fixed_metric_budget_passed": true,
+      "comparison_status": "failed"
+    }
+  ]
+}

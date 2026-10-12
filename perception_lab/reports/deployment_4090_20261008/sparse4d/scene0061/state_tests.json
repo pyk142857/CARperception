@@ -1,0 +1,31 @@
+{
+  "serialized_resume_max_abs": {
+    "boxes_3d": 5.982816219329834e-05,
+    "scores_3d": 1.004338264465332e-05,
+    "labels_3d": 0.0,
+    "cls_scores": 1.5363097190856934e-05,
+    "instance_ids": 0.0
+  },
+  "reset_max_abs": {
+    "boxes_3d": 4.89354133605957e-05,
+    "scores_3d": 1.3053417205810547e-05,
+    "labels_3d": 0.0,
+    "cls_scores": 1.996755599975586e-05,
+    "instance_ids": 0.0
+  },
+  "state_keys": [
+    "cached_feature",
+    "cached_anchor",
+    "metas",
+    "mask",
+    "confidence",
+    "temp_confidence",
+    "instance_id",
+    "prev_id"
+  ],
+  "checkpoint_frame": 1,
+  "test_frame": 2,
+  "bitwise_equal": false,
+  "initial_1e_5_check_passed": false,
+  "tolerance_note": "Upstream CUDA forward uses atomicAdd; numerical equivalence 1e-3 boxes, 1e-4 scores; IDs and classes exact. Initial 1e-5 check was too strict and is retained above."
+}

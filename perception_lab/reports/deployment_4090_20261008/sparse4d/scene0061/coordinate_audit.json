@@ -1,0 +1,248 @@
+{
+  "input_frames": 39,
+  "input_boxes": 11700,
+  "output_boxes": 11700,
+  "removed_top500": 0,
+  "attributes": "empty: model does not predict attributes",
+  "additional_score_filter": null,
+  "roundtrip_checks": [
+    {
+      "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+      "center": 6.794564910705958e-14,
+      "velocity": 2.1094237467877974e-15,
+      "rotation": 2.220446049250313e-16
+    },
+    {
+      "sample_token": "39586f9d59004284a7114a68825e8eec",
+      "center": 6.217248937900877e-14,
+      "velocity": 6.505213034913027e-19,
+      "rotation": 2.220446049250313e-16
+    },
+    {
+      "sample_token": "356d81f38dd9473ba590f39e266f54e5",
+      "center": 4.1744385725905886e-14,
+      "velocity": 1.0842021724855044e-19,
+      "rotation": 1.6653345369377348e-16
+    },
+    {
+      "sample_token": "e0845f5322254dafadbbed75aaa07969",
+      "center": 6.59472476627343e-14,
+      "velocity": 4.87890977618477e-19,
+      "rotation": 2.7755575615628914e-16
+    },
+    {
+      "sample_token": "c923fe08b2ff4e27975d2bf30934383b",
+      "center": 4.196643033083092e-14,
+      "velocity": 5.421010862427522e-20,
+      "rotation": 3.3306690738754696e-16
+    },
+    {
+      "sample_token": "f1e3d9d08f044c439ce86a2d6fcca57b",
+      "center": 9.281464485866309e-14,
+      "velocity": 3.7947076036992655e-19,
+      "rotation": 4.440892098500626e-16
+    },
+    {
+      "sample_token": "4f545737bf3347fbbc9af60b0be9a963",
+      "center": 2.3092638912203256e-14,
+      "velocity": 1.3552527156068805e-20,
+      "rotation": 1.1102230246251565e-16
+    },
+    {
+      "sample_token": "7626dde27d604ac28a0240bdd54eba7a",
+      "center": 3.68594044175552e-14,
+      "velocity": 2.168404344971009e-19,
+      "rotation": 2.220446049250313e-16
+    },
+    {
+      "sample_token": "be99ffc878b24aca8956bbb4e0f97d0c",
+      "center": 2.842170943040401e-14,
+      "velocity": 1.0842021724855044e-19,
+      "rotation": 2.220446049250313e-16
+    },
+    {
+      "sample_token": "9813c23a5f1448b09bb7910fea9baf20",
+      "center": 2.3092638912203256e-14,
+      "velocity": 9.75781955236954e-19,
+      "rotation": 2.220446049250313e-16
+    },
+    {
+      "sample_token": "023c4df2d451409881d8e6ea82f14704",
+      "center": 2.6645352591003757e-14,
+      "velocity": 2.710505431213761e-19,
+      "rotation": 3.3306690738754696e-16
+    },
+    {
+      "sample_token": "c235638ed66145988d17f9d0601923f2",
+      "center": 6.572520305780927e-14,
+      "velocity": 7.589415207398531e-19,
+      "rotation": 4.440892098500626e-16
+    },
+    {
+      "sample_token": "bc3c8a953f6b4dcdb77b521d89f3d9d5",
+      "center": 7.105427357601002e-14,
+      "velocity": 3.2526065174565133e-19,
+      "rotation": 0.0
+    },
+    {
+      "sample_token": "1e3d79dae62742a0ad64c91679863358",
+      "center": 8.79296635503124e-14,
+      "velocity": 2.168404344971009e-18,
+      "rotation": 2.220446049250313e-16
+    },
+    {
+      "sample_token": "2afb9d32310e4546a71cbe432911eca2",
+      "center": 3.907985046680551e-14,
+      "velocity": 1.4094628242311558e-18,
+      "rotation": 1.1102230246251565e-16
+    },
+    {
+      "sample_token": "cd21dbfc3bd749c7b10a5c42562e0c42",
+      "center": 3.197442310920451e-14,
+      "velocity": 1.4094628242311558e-18,
+      "rotation": 3.3306690738754696e-16
+    },
+    {
+      "sample_token": "88449a5cb1644a199c1c11f6ac034867",
+      "center": 1.2434497875801753e-14,
+      "velocity": 1.1926223897340549e-18,
+      "rotation": 6.938893903907228e-18
+    },
+    {
+      "sample_token": "2ff86dc19c4644a1a88ce5ba848f56e5",
+      "center": 4.263256414560601e-14,
+      "velocity": 2.710505431213761e-19,
+      "rotation": 1.1102230246251565e-16
+    },
+    {
+      "sample_token": "bf2938e43c6f487497cda76b51bfc406",
+      "center": 6.927791673660977e-14,
+      "velocity": 2.6020852139652106e-18,
+      "rotation": 2.220446049250313e-16
+    },
+    {
+      "sample_token": "b26e791522294bec90f86fd72226e35c",
+      "center": 6.661338147750939e-14,
+      "velocity": 2.3852447794681098e-18,
+      "rotation": 2.220446049250313e-16
+    },
+    {
+      "sample_token": "c844bf5a9f2243ff8f4bf2c85fe218ff",
+      "center": 3.019806626980426e-14,
+      "velocity": 2.168404344971009e-18,
+      "rotation": 5.551115123125783e-16
+    },
+    {
+      "sample_token": "fedfb3a6cb804635a0f47143f9ca8d6f",
+      "center": 2.6645352591003757e-14,
+      "velocity": 2.6020852139652106e-18,
+      "rotation": 2.220446049250313e-16
+    },
+    {
+      "sample_token": "965f6af5a92449348409029a5f048a38",
+      "center": 6.661338147750939e-14,
+      "velocity": 2.168404344971009e-19,
+      "rotation": 3.469446951953614e-18
+    },
+    {
+      "sample_token": "4711bcd34644420da8bc77163431888e",
+      "center": 5.284661597215745e-14,
+      "velocity": 8.673617379884035e-19,
+      "rotation": 2.220446049250313e-16
+    },
+    {
+      "sample_token": "a34fabc7aa674713b71f98ec541eb2d4",
+      "center": 4.085620730620576e-14,
+      "velocity": 2.168404344971009e-19,
+      "rotation": 3.469446951953614e-18
+    },
+    {
+      "sample_token": "c78067571d104caba7c568a847d56971",
+      "center": 2.4868995751603507e-14,
+      "velocity": 9.75781955236954e-19,
+      "rotation": 3.3306690738754696e-16
+    },
+    {
+      "sample_token": "4246e57f018745c9b2bc68feb3d71b58",
+      "center": 8.748557434046234e-14,
+      "velocity": 1.734723475976807e-18,
+      "rotation": 4.440892098500626e-16
+    },
+    {
+      "sample_token": "a7acb150914b40bdad9a2dc4e657cbf9",
+      "center": 1.0080825063596421e-13,
+      "velocity": 1.6263032587282567e-18,
+      "rotation": 3.3306690738754696e-16
+    },
+    {
+      "sample_token": "0cd661df01aa40c3bb3a773ba86f753a",
+      "center": 6.94999613415348e-14,
+      "velocity": 4.336808689942018e-19,
+      "rotation": 1.0408340855860843e-17
+    },
+    {
+      "sample_token": "378a3a3e9af346308ab9dff8ced46d9c",
+      "center": 2.398081733190338e-14,
+      "velocity": 9.75781955236954e-19,
+      "rotation": 3.3306690738754696e-16
+    },
+    {
+      "sample_token": "eef55c3b48f34d949959b45130ee293a",
+      "center": 1.5987211554602254e-14,
+      "velocity": 5.963111948670274e-19,
+      "rotation": 2.7755575615628914e-16
+    },
+    {
+      "sample_token": "5fda58ee3ae44ab9b4bbac7a2de66c27",
+      "center": 8.970602038971265e-14,
+      "velocity": 1.0842021724855044e-18,
+      "rotation": 2.220446049250313e-16
+    },
+    {
+      "sample_token": "919e3c4cec934168a3152077a9adcbea",
+      "center": 9.348077867343818e-14,
+      "velocity": 2.168404344971009e-19,
+      "rotation": 2.220446049250313e-16
+    },
+    {
+      "sample_token": "b73152cab88f49d9ba195da81fde1809",
+      "center": 9.08162434143378e-14,
+      "velocity": 6.505213034913027e-19,
+      "rotation": 3.3306690738754696e-16
+    },
+    {
+      "sample_token": "6aa6fa91e0d1492e812eb7e57c47df6e",
+      "center": 2.6867397195928788e-14,
+      "velocity": 1.0842021724855044e-19,
+      "rotation": 3.885780586188048e-16
+    },
+    {
+      "sample_token": "aa581aac963a4fad848ac11fe66e8637",
+      "center": 3.930189507173054e-14,
+      "velocity": 1.0842021724855044e-18,
+      "rotation": 2.220446049250313e-16
+    },
+    {
+      "sample_token": "67e5f88901214f3aa03d68e028185e22",
+      "center": 8.038014698286133e-14,
+      "velocity": 4.336808689942018e-19,
+      "rotation": 3.3306690738754696e-16
+    },
+    {
+      "sample_token": "29e056fc277543c9bc42310b122c640e",
+      "center": 5.0182080713057076e-14,
+      "velocity": 1.5178830414797062e-18,
+      "rotation": 4.440892098500626e-16
+    },
+    {
+      "sample_token": "ed5fc18c31904f96a8f0dbb99ff069c0",
+      "center": 2.6645352591003757e-14,
+      "velocity": 1.6263032587282567e-19,
+      "rotation": 2.220446049250313e-16
+    }
+  ],
+  "score_range": [
+    0.012374400161206722,
+    0.9219955801963806
+  ]
+}

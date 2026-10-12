@@ -1,0 +1,8 @@
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
+Collecting xmltodict==0.14.2
+  Downloading https://mirrors.aliyun.com/pypi/packages/d6/45/fc303eb433e8a2a271739c98e953728422fa61a3c1f36077a49e395c972e/xmltodict-0.14.2-py2.py3-none-any.whl (10.0 kB)
+Installing collected packages: xmltodict
+Successfully installed xmltodict-0.14.2
+
+[notice] A new release of pip is available: 23.0.1 -> 26.2.1
+[notice] To update, run: /home/minglei/Desktop/CAR/perception_lab/envs/sparse4d/bin/python -m pip install --upgrade pip

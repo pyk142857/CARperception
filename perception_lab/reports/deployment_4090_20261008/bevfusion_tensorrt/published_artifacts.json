@@ -1,0 +1,42 @@
+[
+  {
+    "path": "reports/deployment_4090_20261008/bevfusion_tensorrt/scene0061/predictions.json.gz",
+    "sha256": "b56b4026ec03a6c5f48baf390e4f5550cd95afb5c767256b05288b78162f59be",
+    "original_sha256": "228feda27554463714f602df49df9e87110b440a1195b58d549ee83f3db09988"
+  },
+  {
+    "path": "reports/deployment_4090_20261008/bevfusion_tensorrt/scene0061/native_predictions.json.gz",
+    "sha256": "87de0b4a379418c67ba5dc8b7fccebfb1c6e4c5efc1dfcfa78d38e955ab5f6bc",
+    "original_sha256": "d2e3348b754c149eaebc629e9ed9a567027c61210b9f2f959457e1381a7d42b1"
+  },
+  {
+    "path": "reports/deployment_4090_20261008/bevfusion_tensorrt/scene0061/actual_inputs.json.gz",
+    "sha256": "88abf25497e2c43982272c74bc50aad047506f5ff4637130d747360406b75bd1",
+    "original_sha256": "c1f512a195f8375e2e39b61dec46eddeba32c0f2111deccac4fca74c07282285"
+  },
+  {
+    "path": "reports/deployment_4090_20261008/bevfusion_tensorrt/scene0061/coordinate_audit.json.gz",
+    "sha256": "cdafeed83f424e8cff8a5d1b91ff5f188ee2679892f11efb0bc844854668ac7f",
+    "original_sha256": "3190685f1c56bfc37776220c465d902dfa1cb6fb50843fb32dceb46299480197"
+  },
+  {
+    "path": "reports/deployment_4090_20261008/bevfusion_tensorrt/mini_val/predictions.json.gz",
+    "sha256": "d130d243d5df0379a896d5fe34b4b32e1c8d0fb7e0e41cae36535750d9ea5f5a",
+    "original_sha256": "126f5fa0a8796b06e8803eb898fd1508949350bec72f9a44b95e15e04e2e4bf2"
+  },
+  {
+    "path": "reports/deployment_4090_20261008/bevfusion_tensorrt/mini_val/native_predictions.json.gz",
+    "sha256": "e1aceda69c90a66c0f648947d7878bf649d9bc673bb35a4486bbd5ab79b1b3b7",
+    "original_sha256": "9b0320b47cce086ac956adb028cd66a845ba6b350b9faf586d63c6040c9c4567"
+  },
+  {
+    "path": "reports/deployment_4090_20261008/bevfusion_tensorrt/mini_val/actual_inputs.json.gz",
+    "sha256": "72d09c8a5481f9a63198fd4b1d408a0c8070faf2b95339601396a8e3d5fd4c31",
+    "original_sha256": "49507579c4ae170d7790d57d614b0d3b070382ff43aacf031e1753e306397432"
+  },
+  {
+    "path": "reports/deployment_4090_20261008/bevfusion_tensorrt/mini_val/coordinate_audit.json.gz",
+    "sha256": "9c2eb1dd7a3a2d1b4a5d07eaab579466bbbde799a56ea1ccb726c10207649c7e",
+    "original_sha256": "f9d9e9345e3f5f1b5e47c8b61f0e3d118e78b9b155a0c21b7017f3763ffb69d3"
+  }
+]

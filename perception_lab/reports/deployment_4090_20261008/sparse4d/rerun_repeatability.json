@@ -1,0 +1,43 @@
+{
+  "initial_measured_run": {
+    "scene0061": {
+      "mAP": 0.5838645393140862,
+      "NDS": 0.5444884310349476,
+      "AMOTA": 0.6830704142941175,
+      "AMOTP": 0.7768469247618877,
+      "IDS": 6,
+      "prediction_sha256": "91b4a25546fb6e1fd24ff8d9f768e21be5346930669986b29c923ee9a04b281e",
+      "inference_log": "scene0061_run.log",
+      "official_evaluation_log": "scene0061_eval.log"
+    },
+    "mini_val": {
+      "mAP": 0.46113796019749004,
+      "NDS": 0.43304993099028516,
+      "AMOTA": 0.6386695941830177,
+      "AMOTP": 0.8200297530497225,
+      "IDS": 16,
+      "prediction_sha256": "48d059f6a6043f9a7fee6dec71cf9f21854bffa0ffc18338beb14c866de8d6f6",
+      "inference_log": "mini_val_run.log",
+      "official_evaluation_log": "mini_val_eval.log"
+    }
+  },
+  "final_cli_validation_run": {
+    "scene0061": {
+      "mAP": 0.5845790291935306,
+      "NDS": 0.5453148423223022,
+      "AMOTA": 0.6794865962492069,
+      "AMOTP": 0.7779580852171059,
+      "IDS": 9.0,
+      "prediction_sha256": "dd3ef96569b5f094e9f3509ae873dc5a3656235086f8aea0ac872dd8827bf721"
+    },
+    "mini_val": {
+      "mAP": 0.4616075236235114,
+      "NDS": 0.4330716005865211,
+      "AMOTA": 0.6375665930302055,
+      "AMOTP": 0.8195541182004442,
+      "IDS": 16.0,
+      "prediction_sha256": "06a03a3f08868be976eff0e91baf6c1ea2a17cba794d37db30cf8f7c030a2a0c"
+    }
+  },
+  "interpretation": "Repeated full temporal inference is not bitwise deterministic. Native ID matching metrics vary; upstream atomic accumulation is present but all sources of run-to-run change were not isolated. Published tables and compressed predictions use the final CLI run."
+}

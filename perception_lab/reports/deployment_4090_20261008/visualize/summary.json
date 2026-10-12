@@ -1,0 +1,1359 @@
+{
+  "status": "passed",
+  "scope": "RRD export and complete video decode; browser validation recorded separately",
+  "input_packet_sha256": "9680b0d03e49cc78be200a9abe3b99602312123adbf8e12667b9fbbbe7d5c549",
+  "frames": 39,
+  "models": [
+    "bevfusion_reference",
+    "bevfusion_tensorrt",
+    "sparse4d",
+    "gaussianworld"
+  ],
+  "sources": {
+    "bevfusion_reference": {
+      "path": "/home/minglei/Desktop/CAR/perception_lab/reports/deployment_4090_20261008/bevfusion_reference/scene0061/predictions.json",
+      "sha256": "7813146f2aae13e6adc54c42667c07540c7f58798ea82ae9c99bab9ddfca1697"
+    },
+    "bevfusion_tensorrt": {
+      "path": "/home/minglei/Desktop/CAR/perception_lab/outputs/bevfusion_tensorrt/scene0061/predictions.json",
+      "sha256": "228feda27554463714f602df49df9e87110b440a1195b58d549ee83f3db09988"
+    },
+    "sparse4d": {
+      "path": "/home/minglei/Desktop/CAR/perception_lab/outputs/sparse4d/scene0061/predictions.json",
+      "sha256": "dd3ef96569b5f094e9f3509ae873dc5a3656235086f8aea0ac872dd8827bf721"
+    },
+    "gaussianworld": {
+      "path": "/home/minglei/Desktop/CAR/perception_lab/runs/deployment_4090_20261008/gaussianworld/manifest.json",
+      "sha256": "69101fd45972fc39fca24f5172e5e90c8e3442b1522ef18dcbac42508bb15952"
+    }
+  },
+  "render_threshold": 0.25,
+  "ground_truth": "separate Rerun tab/entity from official annotations, excluded from all model videos and predictions",
+  "playback_fps": 2,
+  "occupancy_bev_slice": {
+    "axis": "LIDAR z",
+    "index": 6,
+    "center_m": -1.75,
+    "thickness_m": 0.5,
+    "output_frame": "ego"
+  },
+  "seconds": 45.84133581499964,
+  "video_verification": {
+    "bevfusion_reference": {
+      "path": "/home/minglei/Desktop/CAR/perception_lab/outputs/rerun/deployment_4090/bevfusion_reference/scene0061.mp4",
+      "sha256": "345bbcc9b82c6b31c3a2af2fef59ec60e1d3ebf81fe33e13ebd09e620912445c",
+      "decode_verified": true,
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "2/1",
+            "nb_read_frames": "39"
+          }
+        ]
+      }
+    },
+    "bevfusion_tensorrt": {
+      "path": "/home/minglei/Desktop/CAR/perception_lab/outputs/rerun/deployment_4090/bevfusion_tensorrt/scene0061.mp4",
+      "sha256": "5d572df8c509e080cd4ce15e633ef8e96d1952e27300acc24e33526e8bead9ad",
+      "decode_verified": true,
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "2/1",
+            "nb_read_frames": "39"
+          }
+        ]
+      }
+    },
+    "sparse4d": {
+      "path": "/home/minglei/Desktop/CAR/perception_lab/outputs/rerun/deployment_4090/sparse4d/scene0061.mp4",
+      "sha256": "f28acf66d1b3ce414155811aa09e8f25acae67a8b58c5f8a8d19b3b2f9cb1c7f",
+      "decode_verified": true,
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "2/1",
+            "nb_read_frames": "39"
+          }
+        ]
+      }
+    },
+    "gaussianworld": {
+      "path": "/home/minglei/Desktop/CAR/perception_lab/outputs/rerun/deployment_4090/gaussianworld/scene0061.mp4",
+      "sha256": "5d1ed740f5959082b2378ea243283942b969bcd3c2d95ed72272569e8ccfd714",
+      "decode_verified": true,
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "2/1",
+            "nb_read_frames": "39"
+          }
+        ]
+      }
+    }
+  },
+  "counts": [
+    {
+      "model": "bevfusion_reference",
+      "frame": 0,
+      "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+      "display_boxes": 38,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 0,
+      "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+      "display_boxes": 38,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "sparse4d",
+      "frame": 0,
+      "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+      "display_boxes": 45,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 0,
+      "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+      "display_boxes": 0,
+      "occupancy_voxels": 31890,
+      "lidar_points": 34688
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 1,
+      "sample_token": "39586f9d59004284a7114a68825e8eec",
+      "display_boxes": 45,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 1,
+      "sample_token": "39586f9d59004284a7114a68825e8eec",
+      "display_boxes": 44,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "sparse4d",
+      "frame": 1,
+      "sample_token": "39586f9d59004284a7114a68825e8eec",
+      "display_boxes": 38,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 1,
+      "sample_token": "39586f9d59004284a7114a68825e8eec",
+      "display_boxes": 0,
+      "occupancy_voxels": 34296,
+      "lidar_points": 34720
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 2,
+      "sample_token": "356d81f38dd9473ba590f39e266f54e5",
+      "display_boxes": 54,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 2,
+      "sample_token": "356d81f38dd9473ba590f39e266f54e5",
+      "display_boxes": 53,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "sparse4d",
+      "frame": 2,
+      "sample_token": "356d81f38dd9473ba590f39e266f54e5",
+      "display_boxes": 38,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 2,
+      "sample_token": "356d81f38dd9473ba590f39e266f54e5",
+      "display_boxes": 0,
+      "occupancy_voxels": 37924,
+      "lidar_points": 34720
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 3,
+      "sample_token": "e0845f5322254dafadbbed75aaa07969",
+      "display_boxes": 54,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 3,
+      "sample_token": "e0845f5322254dafadbbed75aaa07969",
+      "display_boxes": 53,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "sparse4d",
+      "frame": 3,
+      "sample_token": "e0845f5322254dafadbbed75aaa07969",
+      "display_boxes": 32,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 3,
+      "sample_token": "e0845f5322254dafadbbed75aaa07969",
+      "display_boxes": 0,
+      "occupancy_voxels": 39243,
+      "lidar_points": 34688
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 4,
+      "sample_token": "c923fe08b2ff4e27975d2bf30934383b",
+      "display_boxes": 59,
+      "occupancy_voxels": null,
+      "lidar_points": 34752
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 4,
+      "sample_token": "c923fe08b2ff4e27975d2bf30934383b",
+      "display_boxes": 60,
+      "occupancy_voxels": null,
+      "lidar_points": 34752
+    },
+    {
+      "model": "sparse4d",
+      "frame": 4,
+      "sample_token": "c923fe08b2ff4e27975d2bf30934383b",
+      "display_boxes": 33,
+      "occupancy_voxels": null,
+      "lidar_points": 34752
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 4,
+      "sample_token": "c923fe08b2ff4e27975d2bf30934383b",
+      "display_boxes": 0,
+      "occupancy_voxels": 43375,
+      "lidar_points": 34752
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 5,
+      "sample_token": "f1e3d9d08f044c439ce86a2d6fcca57b",
+      "display_boxes": 55,
+      "occupancy_voxels": null,
+      "lidar_points": 34784
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 5,
+      "sample_token": "f1e3d9d08f044c439ce86a2d6fcca57b",
+      "display_boxes": 56,
+      "occupancy_voxels": null,
+      "lidar_points": 34784
+    },
+    {
+      "model": "sparse4d",
+      "frame": 5,
+      "sample_token": "f1e3d9d08f044c439ce86a2d6fcca57b",
+      "display_boxes": 36,
+      "occupancy_voxels": null,
+      "lidar_points": 34784
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 5,
+      "sample_token": "f1e3d9d08f044c439ce86a2d6fcca57b",
+      "display_boxes": 0,
+      "occupancy_voxels": 46455,
+      "lidar_points": 34784
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 6,
+      "sample_token": "4f545737bf3347fbbc9af60b0be9a963",
+      "display_boxes": 62,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 6,
+      "sample_token": "4f545737bf3347fbbc9af60b0be9a963",
+      "display_boxes": 62,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "sparse4d",
+      "frame": 6,
+      "sample_token": "4f545737bf3347fbbc9af60b0be9a963",
+      "display_boxes": 35,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 6,
+      "sample_token": "4f545737bf3347fbbc9af60b0be9a963",
+      "display_boxes": 0,
+      "occupancy_voxels": 49152,
+      "lidar_points": 34720
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 7,
+      "sample_token": "7626dde27d604ac28a0240bdd54eba7a",
+      "display_boxes": 68,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 7,
+      "sample_token": "7626dde27d604ac28a0240bdd54eba7a",
+      "display_boxes": 68,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "sparse4d",
+      "frame": 7,
+      "sample_token": "7626dde27d604ac28a0240bdd54eba7a",
+      "display_boxes": 40,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 7,
+      "sample_token": "7626dde27d604ac28a0240bdd54eba7a",
+      "display_boxes": 0,
+      "occupancy_voxels": 50942,
+      "lidar_points": 34720
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 8,
+      "sample_token": "be99ffc878b24aca8956bbb4e0f97d0c",
+      "display_boxes": 74,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 8,
+      "sample_token": "be99ffc878b24aca8956bbb4e0f97d0c",
+      "display_boxes": 74,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "sparse4d",
+      "frame": 8,
+      "sample_token": "be99ffc878b24aca8956bbb4e0f97d0c",
+      "display_boxes": 46,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 8,
+      "sample_token": "be99ffc878b24aca8956bbb4e0f97d0c",
+      "display_boxes": 0,
+      "occupancy_voxels": 51840,
+      "lidar_points": 34688
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 9,
+      "sample_token": "9813c23a5f1448b09bb7910fea9baf20",
+      "display_boxes": 75,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 9,
+      "sample_token": "9813c23a5f1448b09bb7910fea9baf20",
+      "display_boxes": 75,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "sparse4d",
+      "frame": 9,
+      "sample_token": "9813c23a5f1448b09bb7910fea9baf20",
+      "display_boxes": 49,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 9,
+      "sample_token": "9813c23a5f1448b09bb7910fea9baf20",
+      "display_boxes": 0,
+      "occupancy_voxels": 52539,
+      "lidar_points": 34688
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 10,
+      "sample_token": "023c4df2d451409881d8e6ea82f14704",
+      "display_boxes": 72,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 10,
+      "sample_token": "023c4df2d451409881d8e6ea82f14704",
+      "display_boxes": 73,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "sparse4d",
+      "frame": 10,
+      "sample_token": "023c4df2d451409881d8e6ea82f14704",
+      "display_boxes": 50,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 10,
+      "sample_token": "023c4df2d451409881d8e6ea82f14704",
+      "display_boxes": 0,
+      "occupancy_voxels": 53400,
+      "lidar_points": 34688
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 11,
+      "sample_token": "c235638ed66145988d17f9d0601923f2",
+      "display_boxes": 75,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 11,
+      "sample_token": "c235638ed66145988d17f9d0601923f2",
+      "display_boxes": 76,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "sparse4d",
+      "frame": 11,
+      "sample_token": "c235638ed66145988d17f9d0601923f2",
+      "display_boxes": 52,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 11,
+      "sample_token": "c235638ed66145988d17f9d0601923f2",
+      "display_boxes": 0,
+      "occupancy_voxels": 54062,
+      "lidar_points": 34720
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 12,
+      "sample_token": "bc3c8a953f6b4dcdb77b521d89f3d9d5",
+      "display_boxes": 72,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 12,
+      "sample_token": "bc3c8a953f6b4dcdb77b521d89f3d9d5",
+      "display_boxes": 71,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "sparse4d",
+      "frame": 12,
+      "sample_token": "bc3c8a953f6b4dcdb77b521d89f3d9d5",
+      "display_boxes": 54,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 12,
+      "sample_token": "bc3c8a953f6b4dcdb77b521d89f3d9d5",
+      "display_boxes": 0,
+      "occupancy_voxels": 54173,
+      "lidar_points": 34688
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 13,
+      "sample_token": "1e3d79dae62742a0ad64c91679863358",
+      "display_boxes": 87,
+      "occupancy_voxels": null,
+      "lidar_points": 34752
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 13,
+      "sample_token": "1e3d79dae62742a0ad64c91679863358",
+      "display_boxes": 86,
+      "occupancy_voxels": null,
+      "lidar_points": 34752
+    },
+    {
+      "model": "sparse4d",
+      "frame": 13,
+      "sample_token": "1e3d79dae62742a0ad64c91679863358",
+      "display_boxes": 58,
+      "occupancy_voxels": null,
+      "lidar_points": 34752
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 13,
+      "sample_token": "1e3d79dae62742a0ad64c91679863358",
+      "display_boxes": 0,
+      "occupancy_voxels": 51802,
+      "lidar_points": 34752
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 14,
+      "sample_token": "2afb9d32310e4546a71cbe432911eca2",
+      "display_boxes": 90,
+      "occupancy_voxels": null,
+      "lidar_points": 34752
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 14,
+      "sample_token": "2afb9d32310e4546a71cbe432911eca2",
+      "display_boxes": 92,
+      "occupancy_voxels": null,
+      "lidar_points": 34752
+    },
+    {
+      "model": "sparse4d",
+      "frame": 14,
+      "sample_token": "2afb9d32310e4546a71cbe432911eca2",
+      "display_boxes": 61,
+      "occupancy_voxels": null,
+      "lidar_points": 34752
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 14,
+      "sample_token": "2afb9d32310e4546a71cbe432911eca2",
+      "display_boxes": 0,
+      "occupancy_voxels": 50075,
+      "lidar_points": 34752
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 15,
+      "sample_token": "cd21dbfc3bd749c7b10a5c42562e0c42",
+      "display_boxes": 98,
+      "occupancy_voxels": null,
+      "lidar_points": 34784
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 15,
+      "sample_token": "cd21dbfc3bd749c7b10a5c42562e0c42",
+      "display_boxes": 96,
+      "occupancy_voxels": null,
+      "lidar_points": 34784
+    },
+    {
+      "model": "sparse4d",
+      "frame": 15,
+      "sample_token": "cd21dbfc3bd749c7b10a5c42562e0c42",
+      "display_boxes": 62,
+      "occupancy_voxels": null,
+      "lidar_points": 34784
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 15,
+      "sample_token": "cd21dbfc3bd749c7b10a5c42562e0c42",
+      "display_boxes": 0,
+      "occupancy_voxels": 51693,
+      "lidar_points": 34784
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 16,
+      "sample_token": "88449a5cb1644a199c1c11f6ac034867",
+      "display_boxes": 91,
+      "occupancy_voxels": null,
+      "lidar_points": 34784
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 16,
+      "sample_token": "88449a5cb1644a199c1c11f6ac034867",
+      "display_boxes": 95,
+      "occupancy_voxels": null,
+      "lidar_points": 34784
+    },
+    {
+      "model": "sparse4d",
+      "frame": 16,
+      "sample_token": "88449a5cb1644a199c1c11f6ac034867",
+      "display_boxes": 68,
+      "occupancy_voxels": null,
+      "lidar_points": 34784
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 16,
+      "sample_token": "88449a5cb1644a199c1c11f6ac034867",
+      "display_boxes": 0,
+      "occupancy_voxels": 51630,
+      "lidar_points": 34784
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 17,
+      "sample_token": "2ff86dc19c4644a1a88ce5ba848f56e5",
+      "display_boxes": 92,
+      "occupancy_voxels": null,
+      "lidar_points": 34752
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 17,
+      "sample_token": "2ff86dc19c4644a1a88ce5ba848f56e5",
+      "display_boxes": 93,
+      "occupancy_voxels": null,
+      "lidar_points": 34752
+    },
+    {
+      "model": "sparse4d",
+      "frame": 17,
+      "sample_token": "2ff86dc19c4644a1a88ce5ba848f56e5",
+      "display_boxes": 65,
+      "occupancy_voxels": null,
+      "lidar_points": 34752
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 17,
+      "sample_token": "2ff86dc19c4644a1a88ce5ba848f56e5",
+      "display_boxes": 0,
+      "occupancy_voxels": 50450,
+      "lidar_points": 34752
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 18,
+      "sample_token": "bf2938e43c6f487497cda76b51bfc406",
+      "display_boxes": 85,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 18,
+      "sample_token": "bf2938e43c6f487497cda76b51bfc406",
+      "display_boxes": 85,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "sparse4d",
+      "frame": 18,
+      "sample_token": "bf2938e43c6f487497cda76b51bfc406",
+      "display_boxes": 76,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 18,
+      "sample_token": "bf2938e43c6f487497cda76b51bfc406",
+      "display_boxes": 0,
+      "occupancy_voxels": 47981,
+      "lidar_points": 34688
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 19,
+      "sample_token": "b26e791522294bec90f86fd72226e35c",
+      "display_boxes": 78,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 19,
+      "sample_token": "b26e791522294bec90f86fd72226e35c",
+      "display_boxes": 79,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "sparse4d",
+      "frame": 19,
+      "sample_token": "b26e791522294bec90f86fd72226e35c",
+      "display_boxes": 74,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 19,
+      "sample_token": "b26e791522294bec90f86fd72226e35c",
+      "display_boxes": 0,
+      "occupancy_voxels": 47644,
+      "lidar_points": 34688
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 20,
+      "sample_token": "c844bf5a9f2243ff8f4bf2c85fe218ff",
+      "display_boxes": 84,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 20,
+      "sample_token": "c844bf5a9f2243ff8f4bf2c85fe218ff",
+      "display_boxes": 82,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "sparse4d",
+      "frame": 20,
+      "sample_token": "c844bf5a9f2243ff8f4bf2c85fe218ff",
+      "display_boxes": 75,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 20,
+      "sample_token": "c844bf5a9f2243ff8f4bf2c85fe218ff",
+      "display_boxes": 0,
+      "occupancy_voxels": 47663,
+      "lidar_points": 34688
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 21,
+      "sample_token": "fedfb3a6cb804635a0f47143f9ca8d6f",
+      "display_boxes": 76,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 21,
+      "sample_token": "fedfb3a6cb804635a0f47143f9ca8d6f",
+      "display_boxes": 78,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "sparse4d",
+      "frame": 21,
+      "sample_token": "fedfb3a6cb804635a0f47143f9ca8d6f",
+      "display_boxes": 66,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 21,
+      "sample_token": "fedfb3a6cb804635a0f47143f9ca8d6f",
+      "display_boxes": 0,
+      "occupancy_voxels": 47050,
+      "lidar_points": 34720
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 22,
+      "sample_token": "965f6af5a92449348409029a5f048a38",
+      "display_boxes": 78,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 22,
+      "sample_token": "965f6af5a92449348409029a5f048a38",
+      "display_boxes": 79,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "sparse4d",
+      "frame": 22,
+      "sample_token": "965f6af5a92449348409029a5f048a38",
+      "display_boxes": 67,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 22,
+      "sample_token": "965f6af5a92449348409029a5f048a38",
+      "display_boxes": 0,
+      "occupancy_voxels": 45621,
+      "lidar_points": 34688
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 23,
+      "sample_token": "4711bcd34644420da8bc77163431888e",
+      "display_boxes": 65,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 23,
+      "sample_token": "4711bcd34644420da8bc77163431888e",
+      "display_boxes": 66,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "sparse4d",
+      "frame": 23,
+      "sample_token": "4711bcd34644420da8bc77163431888e",
+      "display_boxes": 60,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 23,
+      "sample_token": "4711bcd34644420da8bc77163431888e",
+      "display_boxes": 0,
+      "occupancy_voxels": 44888,
+      "lidar_points": 34720
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 24,
+      "sample_token": "a34fabc7aa674713b71f98ec541eb2d4",
+      "display_boxes": 58,
+      "occupancy_voxels": null,
+      "lidar_points": 34752
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 24,
+      "sample_token": "a34fabc7aa674713b71f98ec541eb2d4",
+      "display_boxes": 58,
+      "occupancy_voxels": null,
+      "lidar_points": 34752
+    },
+    {
+      "model": "sparse4d",
+      "frame": 24,
+      "sample_token": "a34fabc7aa674713b71f98ec541eb2d4",
+      "display_boxes": 58,
+      "occupancy_voxels": null,
+      "lidar_points": 34752
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 24,
+      "sample_token": "a34fabc7aa674713b71f98ec541eb2d4",
+      "display_boxes": 0,
+      "occupancy_voxels": 43849,
+      "lidar_points": 34752
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 25,
+      "sample_token": "c78067571d104caba7c568a847d56971",
+      "display_boxes": 60,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 25,
+      "sample_token": "c78067571d104caba7c568a847d56971",
+      "display_boxes": 61,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "sparse4d",
+      "frame": 25,
+      "sample_token": "c78067571d104caba7c568a847d56971",
+      "display_boxes": 59,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 25,
+      "sample_token": "c78067571d104caba7c568a847d56971",
+      "display_boxes": 0,
+      "occupancy_voxels": 41869,
+      "lidar_points": 34720
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 26,
+      "sample_token": "4246e57f018745c9b2bc68feb3d71b58",
+      "display_boxes": 61,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 26,
+      "sample_token": "4246e57f018745c9b2bc68feb3d71b58",
+      "display_boxes": 61,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "sparse4d",
+      "frame": 26,
+      "sample_token": "4246e57f018745c9b2bc68feb3d71b58",
+      "display_boxes": 60,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 26,
+      "sample_token": "4246e57f018745c9b2bc68feb3d71b58",
+      "display_boxes": 0,
+      "occupancy_voxels": 41026,
+      "lidar_points": 34720
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 27,
+      "sample_token": "a7acb150914b40bdad9a2dc4e657cbf9",
+      "display_boxes": 69,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 27,
+      "sample_token": "a7acb150914b40bdad9a2dc4e657cbf9",
+      "display_boxes": 68,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "sparse4d",
+      "frame": 27,
+      "sample_token": "a7acb150914b40bdad9a2dc4e657cbf9",
+      "display_boxes": 58,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 27,
+      "sample_token": "a7acb150914b40bdad9a2dc4e657cbf9",
+      "display_boxes": 0,
+      "occupancy_voxels": 41051,
+      "lidar_points": 34720
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 28,
+      "sample_token": "0cd661df01aa40c3bb3a773ba86f753a",
+      "display_boxes": 57,
+      "occupancy_voxels": null,
+      "lidar_points": 34752
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 28,
+      "sample_token": "0cd661df01aa40c3bb3a773ba86f753a",
+      "display_boxes": 55,
+      "occupancy_voxels": null,
+      "lidar_points": 34752
+    },
+    {
+      "model": "sparse4d",
+      "frame": 28,
+      "sample_token": "0cd661df01aa40c3bb3a773ba86f753a",
+      "display_boxes": 57,
+      "occupancy_voxels": null,
+      "lidar_points": 34752
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 28,
+      "sample_token": "0cd661df01aa40c3bb3a773ba86f753a",
+      "display_boxes": 0,
+      "occupancy_voxels": 41264,
+      "lidar_points": 34752
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 29,
+      "sample_token": "378a3a3e9af346308ab9dff8ced46d9c",
+      "display_boxes": 59,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 29,
+      "sample_token": "378a3a3e9af346308ab9dff8ced46d9c",
+      "display_boxes": 57,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "sparse4d",
+      "frame": 29,
+      "sample_token": "378a3a3e9af346308ab9dff8ced46d9c",
+      "display_boxes": 56,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 29,
+      "sample_token": "378a3a3e9af346308ab9dff8ced46d9c",
+      "display_boxes": 0,
+      "occupancy_voxels": 41533,
+      "lidar_points": 34720
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 30,
+      "sample_token": "eef55c3b48f34d949959b45130ee293a",
+      "display_boxes": 61,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 30,
+      "sample_token": "eef55c3b48f34d949959b45130ee293a",
+      "display_boxes": 61,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "sparse4d",
+      "frame": 30,
+      "sample_token": "eef55c3b48f34d949959b45130ee293a",
+      "display_boxes": 53,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 30,
+      "sample_token": "eef55c3b48f34d949959b45130ee293a",
+      "display_boxes": 0,
+      "occupancy_voxels": 41720,
+      "lidar_points": 34720
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 31,
+      "sample_token": "5fda58ee3ae44ab9b4bbac7a2de66c27",
+      "display_boxes": 65,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 31,
+      "sample_token": "5fda58ee3ae44ab9b4bbac7a2de66c27",
+      "display_boxes": 64,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "sparse4d",
+      "frame": 31,
+      "sample_token": "5fda58ee3ae44ab9b4bbac7a2de66c27",
+      "display_boxes": 57,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 31,
+      "sample_token": "5fda58ee3ae44ab9b4bbac7a2de66c27",
+      "display_boxes": 0,
+      "occupancy_voxels": 41630,
+      "lidar_points": 34720
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 32,
+      "sample_token": "919e3c4cec934168a3152077a9adcbea",
+      "display_boxes": 64,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 32,
+      "sample_token": "919e3c4cec934168a3152077a9adcbea",
+      "display_boxes": 65,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "sparse4d",
+      "frame": 32,
+      "sample_token": "919e3c4cec934168a3152077a9adcbea",
+      "display_boxes": 57,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 32,
+      "sample_token": "919e3c4cec934168a3152077a9adcbea",
+      "display_boxes": 0,
+      "occupancy_voxels": 42213,
+      "lidar_points": 34720
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 33,
+      "sample_token": "b73152cab88f49d9ba195da81fde1809",
+      "display_boxes": 60,
+      "occupancy_voxels": null,
+      "lidar_points": 34752
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 33,
+      "sample_token": "b73152cab88f49d9ba195da81fde1809",
+      "display_boxes": 61,
+      "occupancy_voxels": null,
+      "lidar_points": 34752
+    },
+    {
+      "model": "sparse4d",
+      "frame": 33,
+      "sample_token": "b73152cab88f49d9ba195da81fde1809",
+      "display_boxes": 58,
+      "occupancy_voxels": null,
+      "lidar_points": 34752
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 33,
+      "sample_token": "b73152cab88f49d9ba195da81fde1809",
+      "display_boxes": 0,
+      "occupancy_voxels": 42100,
+      "lidar_points": 34752
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 34,
+      "sample_token": "6aa6fa91e0d1492e812eb7e57c47df6e",
+      "display_boxes": 57,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 34,
+      "sample_token": "6aa6fa91e0d1492e812eb7e57c47df6e",
+      "display_boxes": 56,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "sparse4d",
+      "frame": 34,
+      "sample_token": "6aa6fa91e0d1492e812eb7e57c47df6e",
+      "display_boxes": 59,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 34,
+      "sample_token": "6aa6fa91e0d1492e812eb7e57c47df6e",
+      "display_boxes": 0,
+      "occupancy_voxels": 41683,
+      "lidar_points": 34720
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 35,
+      "sample_token": "aa581aac963a4fad848ac11fe66e8637",
+      "display_boxes": 56,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 35,
+      "sample_token": "aa581aac963a4fad848ac11fe66e8637",
+      "display_boxes": 56,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "sparse4d",
+      "frame": 35,
+      "sample_token": "aa581aac963a4fad848ac11fe66e8637",
+      "display_boxes": 58,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 35,
+      "sample_token": "aa581aac963a4fad848ac11fe66e8637",
+      "display_boxes": 0,
+      "occupancy_voxels": 41690,
+      "lidar_points": 34688
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 36,
+      "sample_token": "67e5f88901214f3aa03d68e028185e22",
+      "display_boxes": 60,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 36,
+      "sample_token": "67e5f88901214f3aa03d68e028185e22",
+      "display_boxes": 59,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "sparse4d",
+      "frame": 36,
+      "sample_token": "67e5f88901214f3aa03d68e028185e22",
+      "display_boxes": 59,
+      "occupancy_voxels": null,
+      "lidar_points": 34688
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 36,
+      "sample_token": "67e5f88901214f3aa03d68e028185e22",
+      "display_boxes": 0,
+      "occupancy_voxels": 42280,
+      "lidar_points": 34688
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 37,
+      "sample_token": "29e056fc277543c9bc42310b122c640e",
+      "display_boxes": 62,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 37,
+      "sample_token": "29e056fc277543c9bc42310b122c640e",
+      "display_boxes": 61,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "sparse4d",
+      "frame": 37,
+      "sample_token": "29e056fc277543c9bc42310b122c640e",
+      "display_boxes": 58,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 37,
+      "sample_token": "29e056fc277543c9bc42310b122c640e",
+      "display_boxes": 0,
+      "occupancy_voxels": 42314,
+      "lidar_points": 34720
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 38,
+      "sample_token": "ed5fc18c31904f96a8f0dbb99ff069c0",
+      "display_boxes": 58,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 38,
+      "sample_token": "ed5fc18c31904f96a8f0dbb99ff069c0",
+      "display_boxes": 60,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "sparse4d",
+      "frame": 38,
+      "sample_token": "ed5fc18c31904f96a8f0dbb99ff069c0",
+      "display_boxes": 58,
+      "occupancy_voxels": null,
+      "lidar_points": 34720
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 38,
+      "sample_token": "ed5fc18c31904f96a8f0dbb99ff069c0",
+      "display_boxes": 0,
+      "occupancy_voxels": 42840,
+      "lidar_points": 34720
+    }
+  ],
+  "rrd_path": "/home/minglei/Desktop/CAR/perception_lab/outputs/rerun/deployment_4090/deployment_4090.rrd",
+  "rrd_sha256": "e3ec01057816ddc11e150cba3e620e6aa08e81d7cda9ecd68cb079726f09b114"
+}

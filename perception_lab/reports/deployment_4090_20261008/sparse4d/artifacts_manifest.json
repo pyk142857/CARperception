@@ -1,0 +1,201 @@
+{
+  "input_packet_sha256": {
+    "scene0061": "9680b0d03e49cc78be200a9abe3b99602312123adbf8e12667b9fbbbe7d5c549",
+    "mini_val": "85fba9112c777485268e116fb22d4dcee3a6533de60b70e2421d0abc547b6291"
+  },
+  "source_url": "https://github.com/HorizonRobotics/Sparse4D",
+  "source_commit": "249ffbb695f4e9db628d953e2bf6d36de04bbb69",
+  "weight_url": "https://github.com/HorizonRobotics/Sparse4D/releases/download/v3.0/sparse4dv3_r50.pth",
+  "weight_size_bytes": 577164226,
+  "weight_sha256": "5beed4d4933ca6448d72586b0f8812863574289ff3c4192de71dc9f46a42f0ed",
+  "anchor_source": "Exact official checkpoint parameter head.instance_bank.anchor; no mini fitting",
+  "environment": "envs/sparse4d; read-only .pth base envs/maptr Python3.10, torch1.13.1+cu117/mmcv1.7.1/mmdet2.28.2; local nuscenes1.2.0/motmetrics1.4.0/yapf0.33.0/xmltodict0.14.2",
+  "cuda_extension": "CUDA11.8, GCC9, native SM89; explicit nvcc flag bypasses Torch1.13 architecture whitelist",
+  "artifacts": [
+    {
+      "local_path": "outputs/sparse4d/scene0061/predictions.json",
+      "size_bytes": 9475918,
+      "sha256": "dd3ef96569b5f094e9f3509ae873dc5a3656235086f8aea0ac872dd8827bf721"
+    },
+    {
+      "local_path": "outputs/sparse4d/scene0061/state_tests.json",
+      "size_bytes": 861,
+      "sha256": "437e802ec19cdac28177eda68e273255300c291516a9c6c62429fc0860f852a5"
+    },
+    {
+      "local_path": "outputs/sparse4d/scene0061/temporal_state.pt",
+      "size_bytes": 658395,
+      "sha256": "573535a1d5414f2a615ef0716d8c0b719ddd809421a41bf2af8018e69e126b24"
+    },
+    {
+      "local_path": "outputs/sparse4d/scene0061/native_predictions.json",
+      "size_bytes": 4417021,
+      "sha256": "244dc9e4ab8fa5a04cbb3b13342a49d1fa88ea26d4b52e7084b62c1e1dc73b82"
+    },
+    {
+      "local_path": "outputs/sparse4d/scene0061/input_coordinate_audit.json",
+      "size_bytes": 3975,
+      "sha256": "424d60b3dfabe68e0c07297f21fd7630225a0640351cfefab8dabf84161f74c7"
+    },
+    {
+      "local_path": "outputs/sparse4d/scene0061/coordinate_audit.json",
+      "size_bytes": 7760,
+      "sha256": "80fe2aef8c138dc120e4960820a0a95e7b969a109bc45852dc7b80c69cd4d35e"
+    },
+    {
+      "local_path": "outputs/sparse4d/scene0061/summary.json",
+      "size_bytes": 4494,
+      "sha256": "23da5eb40a3a8b7d2d46c1056816d493c8cc958200b1b0eb4acd71687248c6b9"
+    },
+    {
+      "local_path": "outputs/sparse4d/scene0061/resolved_config.py",
+      "size_bytes": 14778,
+      "sha256": "79006ba4c422de6beda4c3b541be5dacd9fb9d5d344f451a8fa4fd2f5e59b0a7"
+    },
+    {
+      "local_path": "outputs/sparse4d/scene0061/failure_cases.json",
+      "size_bytes": 9984,
+      "sha256": "43cd613d75b363c4f4567dd97497076e6f218595b4f6f72fada64015f4a3b751"
+    },
+    {
+      "local_path": "outputs/sparse4d/scene0061/tracking.json",
+      "size_bytes": 2288803,
+      "sha256": "b94d839571569c9c07b3f9e7fea976769080d5891e4ba260142a2526a8792d59"
+    },
+    {
+      "local_path": "outputs/sparse4d/scene0061/timings.csv",
+      "size_bytes": 5328,
+      "sha256": "9d2e0f3d877d506d628e7ba4ac24af4188257977312997d9fade1ec442859236"
+    },
+    {
+      "local_path": "outputs/sparse4d/scene0061/selected_infos.pkl",
+      "size_bytes": 1569021,
+      "sha256": "5aa57b927f24751091ce7e281be4898d39a1baf51c51f3a02052106669f4f837"
+    },
+    {
+      "local_path": "outputs/sparse4d/scene0061/detection.json",
+      "size_bytes": 8077139,
+      "sha256": "2391fe640e72dbc2acfb1160191fee117aba30280198f00f6f72434cdd1483ad"
+    },
+    {
+      "local_path": "outputs/sparse4d/scene0061/checkpoint_anchor.npy",
+      "size_bytes": 39728,
+      "sha256": "5582d4c4bbdd21644538b9ace986a16a4a1a7cb896daf2a6eff64463c69e738b"
+    },
+    {
+      "local_path": "outputs/sparse4d/scene0061/strict_weights.json",
+      "size_bytes": 351,
+      "sha256": "606a84467d306a43a282671955aae0dd635fd08b6bc84e5b163fa7c66c30972c"
+    },
+    {
+      "local_path": "outputs/sparse4d/scene0061/tracking_eval/metrics_details.json",
+      "size_bytes": 70638,
+      "sha256": "e27de43a871d44a12b7fadad076326cf33450e7f5ac122b9ae2bd1ebe4ad2703"
+    },
+    {
+      "local_path": "outputs/sparse4d/scene0061/tracking_eval/metrics_summary.json",
+      "size_bytes": 5242,
+      "sha256": "5d0a77b94d2175d1fd284f4ebc4d34850776d20cb35e625e1fa0953b6b030528"
+    },
+    {
+      "local_path": "outputs/sparse4d/scene0061/detection_eval/metrics_details.json",
+      "size_bytes": 641262,
+      "sha256": "8da59c5d3e8758774cbd8ed75eb32bf27861fd894998bd15f19985228b436b36"
+    },
+    {
+      "local_path": "outputs/sparse4d/scene0061/detection_eval/metrics_summary.json",
+      "size_bytes": 4849,
+      "sha256": "0d64d1214cfe49134f0379c51cdfb7bd6e5d2a2efb9da048edbcbb81d2577b91"
+    },
+    {
+      "local_path": "outputs/sparse4d/mini_val/predictions.json",
+      "size_bytes": 19630980,
+      "sha256": "06a03a3f08868be976eff0e91baf6c1ea2a17cba794d37db30cf8f7c030a2a0c"
+    },
+    {
+      "local_path": "outputs/sparse4d/mini_val/state_tests.json",
+      "size_bytes": 861,
+      "sha256": "47406e2891612b6dee6aeca76658ab1cb13000dce6e21563f97d45b5a93d615c"
+    },
+    {
+      "local_path": "outputs/sparse4d/mini_val/temporal_state.pt",
+      "size_bytes": 658395,
+      "sha256": "96d4884d2bd9b524f5e35145750024eb73364800ca075e157f7fe0fcaacc6b97"
+    },
+    {
+      "local_path": "outputs/sparse4d/mini_val/native_predictions.json",
+      "size_bytes": 9180412,
+      "sha256": "33b49d6138d502c9c5580bf8a6d66d93b15c8a7a0c90d59ccfe642b83d03ba6c"
+    },
+    {
+      "local_path": "outputs/sparse4d/mini_val/input_coordinate_audit.json",
+      "size_bytes": 3974,
+      "sha256": "8c568ec64446bf38fa1787e0d1d83c7057ec5fa6544d1c76f94424bf23febfdf"
+    },
+    {
+      "local_path": "outputs/sparse4d/mini_val/coordinate_audit.json",
+      "size_bytes": 15740,
+      "sha256": "7628777ba7ad8ceac713117c923ad368951d152a8044cb02282f4116359cf35e"
+    },
+    {
+      "local_path": "outputs/sparse4d/mini_val/summary.json",
+      "size_bytes": 6325,
+      "sha256": "5beeaf88a38467d5dbb13de65db9f91b9dbd453167fb4e2549583766046804f8"
+    },
+    {
+      "local_path": "outputs/sparse4d/mini_val/resolved_config.py",
+      "size_bytes": 14776,
+      "sha256": "e58838ce1d63dd5990fdc523f37cd98c7c9ad69ea8ce72080717f937b50fc8b8"
+    },
+    {
+      "local_path": "outputs/sparse4d/mini_val/tracking.json",
+      "size_bytes": 4930430,
+      "sha256": "113aef0322d6bdcfccfee733eb4d367014f6af1301a74acf310922d887699c28"
+    },
+    {
+      "local_path": "outputs/sparse4d/mini_val/timings.csv",
+      "size_bytes": 10978,
+      "sha256": "d9e6675c03d782f763f8a755351bf0d6f46a79077a322ad578ef0ff45456671d"
+    },
+    {
+      "local_path": "outputs/sparse4d/mini_val/selected_infos.pkl",
+      "size_bytes": 1931595,
+      "sha256": "4a1041d17487caabf2f3585f15326185a77b300e674f152c1e87535ac4a8fc91"
+    },
+    {
+      "local_path": "outputs/sparse4d/mini_val/detection.json",
+      "size_bytes": 16697972,
+      "sha256": "86be53299460a098b72b27a32726aa8ad11de66c66e04831e4d676ff8e8f8bd3"
+    },
+    {
+      "local_path": "outputs/sparse4d/mini_val/checkpoint_anchor.npy",
+      "size_bytes": 39728,
+      "sha256": "5582d4c4bbdd21644538b9ace986a16a4a1a7cb896daf2a6eff64463c69e738b"
+    },
+    {
+      "local_path": "outputs/sparse4d/mini_val/strict_weights.json",
+      "size_bytes": 351,
+      "sha256": "606a84467d306a43a282671955aae0dd635fd08b6bc84e5b163fa7c66c30972c"
+    },
+    {
+      "local_path": "outputs/sparse4d/mini_val/tracking_eval/metrics_details.json",
+      "size_bytes": 72382,
+      "sha256": "774ec14f7c48142a881e43d66f04e5c5275edd843969a6367f34d488ceab004e"
+    },
+    {
+      "local_path": "outputs/sparse4d/mini_val/tracking_eval/metrics_summary.json",
+      "size_bytes": 5353,
+      "sha256": "ab1c55fc2591480f5db5abae154abffb96e09fe83ec83c928134130cbee6061d"
+    },
+    {
+      "local_path": "outputs/sparse4d/mini_val/detection_eval/metrics_details.json",
+      "size_bytes": 605627,
+      "sha256": "57bb3c033878e7d8f5993bcbe14129d28a8d266e174fcd0399baaeaffebe3589"
+    },
+    {
+      "local_path": "outputs/sparse4d/mini_val/detection_eval/metrics_summary.json",
+      "size_bytes": 4727,
+      "sha256": "3af2521f2f4927a7906d691e4c563e99752342f09bd9793dc5ea23e588262975"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+diff --git a/projects/mmdet3d_plugin/ops/setup.py b/projects/mmdet3d_plugin/ops/setup.py
+index cbade27..82afa2b 100644
+--- a/projects/mmdet3d_plugin/ops/setup.py
++++ b/projects/mmdet3d_plugin/ops/setup.py
+@@ -25,6 +25,7 @@ def make_cuda_ext(
+         define_macros += [("WITH_CUDA", None)]
+         extension = CUDAExtension
+         extra_compile_args["nvcc"] = extra_args + [
++            "-gencode=arch=compute_89,code=sm_89",
+             "-D__CUDA_NO_HALF_OPERATORS__",
+             "-D__CUDA_NO_HALF_CONVERSIONS__",
+             "-D__CUDA_NO_HALF2_OPERATORS__",

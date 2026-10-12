@@ -1,0 +1,31 @@
+diff --git a/model/head/gaussian_occ_head.py b/model/head/gaussian_occ_head.py
+index 83e19e7..b5d07d2 100644
+--- a/model/head/gaussian_occ_head.py
++++ b/model/head/gaussian_occ_head.py
+@@ -150,11 +150,11 @@ class GaussianOccHead(BaseModule):
+                 CovInv[i:(i+1)]) # n, c
+             semantics.append(semantic)
+         semantics = torch.stack(semantics, dim=0).transpose(1, 2)
+-        spatial_shape = label.shape[2:]
++        spatial_shape = label.shape[2:] if label is not None else self.gt_xyz.shape[1:4]
+         
+         output_dict.update({
+             'ce_input': semantics.unflatten(-1, spatial_shape), # F, 17, 200, 200, 16
+-            'ce_label': label.squeeze(0),                       # F, 200, 200, 16
++            'ce_label': label.squeeze(0) if label is not None else None,                       # F, 200, 200, 16
+             # 'gaussians': gaussians,
+             # 'anchors': anchors,
+         })
+diff --git a/model/segmentor/gaussian_segmentor_stream.py b/model/segmentor/gaussian_segmentor_stream.py
+index a3d68aa..17ab87c 100644
+--- a/model/segmentor/gaussian_segmentor_stream.py
++++ b/model/segmentor/gaussian_segmentor_stream.py
+@@ -83,7 +83,7 @@ class GaussianSegmentorStream(BaseModule):
+         
+         output_dict = {'history_anchor': [anchor[-1].unsqueeze(0).detach(), instance_feature.unsqueeze(0).detach()]}
+         anchor = torch.stack(anchor, dim=1)
+-        label = label.repeat(1, anchor.shape[1], 1, 1, 1)
++        label = label.repeat(1, anchor.shape[1], 1, 1, 1) if label is not None else None
+         output_dict = self.head(
+             anchors=anchor, 
+             label=label, 

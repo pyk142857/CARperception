@@ -1,0 +1,40 @@
+Looking in indexes: https://pypi.org/simple, https://pypi.nvidia.com
+Collecting tensorrt==8.6.1.post1
+  Downloading https://pypi.nvidia.cn/tensorrt/tensorrt-8.6.1.post1.tar.gz (18 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting onnx==1.16.2
+  Downloading onnx-1.16.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (15.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.9/15.9 MB 15.0 MB/s eta 0:00:00
+Collecting numpy==1.26.2
+  Downloading numpy-1.26.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.2/18.2 MB 3.5 MB/s eta 0:00:00
+Collecting tensorrt_libs==8.6.1
+  Downloading https://pypi.nvidia.cn/tensorrt-libs/tensorrt_libs-8.6.1-py2.py3-none-manylinux_2_17_x86_64.whl (824.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 824.8/824.8 MB 6.7 MB/s eta 0:00:00
+Collecting tensorrt_bindings==8.6.1
+  Downloading https://pypi.nvidia.cn/tensorrt-bindings/tensorrt_bindings-8.6.1-cp310-none-manylinux_2_17_x86_64.whl (979 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 979.4/979.4 kB 8.4 MB/s eta 0:00:00
+Collecting protobuf>=3.20.2
+  Downloading protobuf-7.36.2-cp310-abi3-manylinux2014_x86_64.whl (343 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 343.2/343.2 kB 12.0 MB/s eta 0:00:00
+Collecting nvidia-cudnn-cu12
+  Downloading nvidia_cudnn_cu12-9.27.0.42-py3-none-manylinux_2_27_x86_64.whl (766.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 766.2/766.2 MB 5.6 MB/s eta 0:00:00
+Collecting nvidia-cublas-cu12
+  Downloading https://pypi.nvidia.cn/nvidia-cublas-cu12/nvidia_cublas_cu12-12.9.2.10-py3-none-manylinux_2_27_x86_64.whl (581.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 581.2/581.2 MB 8.4 MB/s eta 0:00:00
+Collecting nvidia-cuda-runtime-cu12
+  Downloading https://pypi.nvidia.cn/nvidia-cuda-runtime-cu12/nvidia_cuda_runtime_cu12-12.9.79-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (3.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.5/3.5 MB 24.2 MB/s eta 0:00:00
+Collecting nvidia-cuda-nvrtc-cu12
+  Downloading https://pypi.nvidia.cn/nvidia-cuda-nvrtc-cu12/nvidia_cuda_nvrtc_cu12-12.9.86-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl (89.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 89.6/89.6 MB 20.4 MB/s eta 0:00:00
+Installing collected packages: tensorrt_bindings, protobuf, nvidia-cuda-runtime-cu12, nvidia-cuda-nvrtc-cu12, numpy, onnx, nvidia-cublas-cu12, nvidia-cudnn-cu12, tensorrt_libs, tensorrt
+  DEPRECATION: tensorrt is being installed using the legacy 'setup.py install' method, because it does not have a 'pyproject.toml' and the 'wheel' package is not installed. pip 23.1 will enforce this behaviour change. A possible replacement is to enable the '--use-pep517' option. Discussion can be found at https://github.com/pypa/pip/issues/8559
+  Running setup.py install for tensorrt: started
+  Running setup.py install for tensorrt: finished with status 'done'
+Successfully installed numpy-1.26.2 nvidia-cublas-cu12-12.9.2.10 nvidia-cuda-nvrtc-cu12-12.9.86 nvidia-cuda-runtime-cu12-12.9.79 nvidia-cudnn-cu12-9.27.0.42 onnx-1.16.2 protobuf-7.36.2 tensorrt-8.6.1.post1 tensorrt_bindings-8.6.1 tensorrt_libs-8.6.1
+
+[notice] A new release of pip is available: 23.0.1 -> 26.2.1
+[notice] To update, run: /home/minglei/Desktop/CAR/perception_lab/envs/tensorrt/bin/python -m pip install --upgrade pip

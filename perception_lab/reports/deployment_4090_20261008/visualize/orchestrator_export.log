@@ -1,0 +1,5 @@
+envs/rerun/bin/python tools/deployment_visualize.py --prediction bevfusion_reference=reports/deployment_4090_20261008/bevfusion_reference/scene0061/predictions.json --prediction bevfusion_tensorrt=outputs/bevfusion_tensorrt/scene0061/predictions.json --prediction sparse4d=outputs/sparse4d/scene0061/predictions.json
+envs/rerun/bin/python tools/deployment_visualize.py --serve
+/usr/bin/python3 tools/deployment_visualize_qa.py
+/usr/bin/python3 tools/deployment_rerun_qa.py
+envs/nuscenes_eval/bin/python tools/deployment_visualize_report.py

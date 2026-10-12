@@ -1,0 +1,187 @@
+/home/minglei/Desktop/CAR/perception_lab/envs/maptr/lib/python3.10/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+{'version': 'v1.0-mini'}
+STATE_TESTS {'serialized_resume_max_abs': {'boxes_3d': 7.534027099609375e-05, 'scores_3d': 1.0594725608825684e-05, 'labels_3d': 0.0, 'cls_scores': 1.5772879123687744e-05, 'instance_ids': 0.0}, 'reset_max_abs': {'boxes_3d': 6.747245788574219e-05, 'scores_3d': 2.4110078811645508e-05, 'labels_3d': 0.0, 'cls_scores': 4.7206878662109375e-05, 'instance_ids': 0.0}, 'state_keys': ['cached_feature', 'cached_anchor', 'metas', 'mask', 'confidence', 'temp_confidence', 'instance_id', 'prev_id'], 'checkpoint_frame': 1, 'test_frame': 2}
+1/39 ca9a282c9e77460f8360f564131a8af5 boxes=300 forward_ms=24.76
+2/39 39586f9d59004284a7114a68825e8eec boxes=300 forward_ms=23.64
+3/39 356d81f38dd9473ba590f39e266f54e5 boxes=300 forward_ms=23.46
+4/39 e0845f5322254dafadbbed75aaa07969 boxes=300 forward_ms=24.40
+5/39 c923fe08b2ff4e27975d2bf30934383b boxes=300 forward_ms=23.78
+6/39 f1e3d9d08f044c439ce86a2d6fcca57b boxes=300 forward_ms=24.04
+7/39 4f545737bf3347fbbc9af60b0be9a963 boxes=300 forward_ms=26.16
+8/39 7626dde27d604ac28a0240bdd54eba7a boxes=300 forward_ms=24.86
+9/39 be99ffc878b24aca8956bbb4e0f97d0c boxes=300 forward_ms=24.25
+10/39 9813c23a5f1448b09bb7910fea9baf20 boxes=300 forward_ms=23.51
+11/39 023c4df2d451409881d8e6ea82f14704 boxes=300 forward_ms=24.52
+12/39 c235638ed66145988d17f9d0601923f2 boxes=300 forward_ms=25.21
+13/39 bc3c8a953f6b4dcdb77b521d89f3d9d5 boxes=300 forward_ms=24.22
+14/39 1e3d79dae62742a0ad64c91679863358 boxes=300 forward_ms=23.74
+15/39 2afb9d32310e4546a71cbe432911eca2 boxes=300 forward_ms=25.25
+16/39 cd21dbfc3bd749c7b10a5c42562e0c42 boxes=300 forward_ms=24.62
+17/39 88449a5cb1644a199c1c11f6ac034867 boxes=300 forward_ms=23.98
+18/39 2ff86dc19c4644a1a88ce5ba848f56e5 boxes=300 forward_ms=23.69
+19/39 bf2938e43c6f487497cda76b51bfc406 boxes=300 forward_ms=23.71
+20/39 b26e791522294bec90f86fd72226e35c boxes=300 forward_ms=23.88
+21/39 c844bf5a9f2243ff8f4bf2c85fe218ff boxes=300 forward_ms=23.80
+22/39 fedfb3a6cb804635a0f47143f9ca8d6f boxes=300 forward_ms=23.58
+23/39 965f6af5a92449348409029a5f048a38 boxes=300 forward_ms=24.04
+24/39 4711bcd34644420da8bc77163431888e boxes=300 forward_ms=23.68
+25/39 a34fabc7aa674713b71f98ec541eb2d4 boxes=300 forward_ms=23.88
+26/39 c78067571d104caba7c568a847d56971 boxes=300 forward_ms=23.71
+27/39 4246e57f018745c9b2bc68feb3d71b58 boxes=300 forward_ms=23.74
+28/39 a7acb150914b40bdad9a2dc4e657cbf9 boxes=300 forward_ms=23.47
+29/39 0cd661df01aa40c3bb3a773ba86f753a boxes=300 forward_ms=24.22
+30/39 378a3a3e9af346308ab9dff8ced46d9c boxes=300 forward_ms=23.97
+31/39 eef55c3b48f34d949959b45130ee293a boxes=300 forward_ms=23.97
+32/39 5fda58ee3ae44ab9b4bbac7a2de66c27 boxes=300 forward_ms=23.88
+33/39 919e3c4cec934168a3152077a9adcbea boxes=300 forward_ms=23.73
+34/39 b73152cab88f49d9ba195da81fde1809 boxes=300 forward_ms=23.45
+35/39 6aa6fa91e0d1492e812eb7e57c47df6e boxes=300 forward_ms=24.17
+36/39 aa581aac963a4fad848ac11fe66e8637 boxes=300 forward_ms=24.89
+37/39 67e5f88901214f3aa03d68e028185e22 boxes=300 forward_ms=24.72
+38/39 29e056fc277543c9bc42310b122c640e boxes=300 forward_ms=25.55
+39/39 ed5fc18c31904f96a8f0dbb99ff069c0 boxes=300 forward_ms=24.88
+{
+  "frames": 39,
+  "scenes": [
+    "scene-0061"
+  ],
+  "split": "scene0061",
+  "cold_start_seconds": 4.972288575999755,
+  "precision": "official fp16 wrapper; custom aggregation float32",
+  "peak_allocated_bytes": 493068288,
+  "peak_reserved_bytes": 736100352,
+  "scene_resets": [
+    {
+      "index": 0,
+      "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+      "cache_empty": true,
+      "prev_id": 0
+    }
+  ],
+  "source_commit": "249ffbb695f4e9db628d953e2bf6d36de04bbb69",
+  "weight_sha256": "5beed4d4933ca6448d72586b0f8812863574289ff3c4192de71dc9f46a42f0ed",
+  "config_sha256": "22ae67545157a43786356b1e7c4f9fc50076ab29062acef71f4163a3609626dc",
+  "prediction_sha256": "58959a2503e853c20db0764a602d2f19af7ddc368044154ee0bdc46e4a15ecdb",
+  "native_prediction_sha256": "edcdb621807608d7ffe1a897449b00880f3a671eee7288a69d6f71f5eb8533f9",
+  "packet_sha256": "9680b0d03e49cc78be200a9abe3b99602312123adbf8e12667b9fbbbe7d5c549",
+  "sample_tokens": [
+    "ca9a282c9e77460f8360f564131a8af5",
+    "39586f9d59004284a7114a68825e8eec",
+    "356d81f38dd9473ba590f39e266f54e5",
+    "e0845f5322254dafadbbed75aaa07969",
+    "c923fe08b2ff4e27975d2bf30934383b",
+    "f1e3d9d08f044c439ce86a2d6fcca57b",
+    "4f545737bf3347fbbc9af60b0be9a963",
+    "7626dde27d604ac28a0240bdd54eba7a",
+    "be99ffc878b24aca8956bbb4e0f97d0c",
+    "9813c23a5f1448b09bb7910fea9baf20",
+    "023c4df2d451409881d8e6ea82f14704",
+    "c235638ed66145988d17f9d0601923f2",
+    "bc3c8a953f6b4dcdb77b521d89f3d9d5",
+    "1e3d79dae62742a0ad64c91679863358",
+    "2afb9d32310e4546a71cbe432911eca2",
+    "cd21dbfc3bd749c7b10a5c42562e0c42",
+    "88449a5cb1644a199c1c11f6ac034867",
+    "2ff86dc19c4644a1a88ce5ba848f56e5",
+    "bf2938e43c6f487497cda76b51bfc406",
+    "b26e791522294bec90f86fd72226e35c",
+    "c844bf5a9f2243ff8f4bf2c85fe218ff",
+    "fedfb3a6cb804635a0f47143f9ca8d6f",
+    "965f6af5a92449348409029a5f048a38",
+    "4711bcd34644420da8bc77163431888e",
+    "a34fabc7aa674713b71f98ec541eb2d4",
+    "c78067571d104caba7c568a847d56971",
+    "4246e57f018745c9b2bc68feb3d71b58",
+    "a7acb150914b40bdad9a2dc4e657cbf9",
+    "0cd661df01aa40c3bb3a773ba86f753a",
+    "378a3a3e9af346308ab9dff8ced46d9c",
+    "eef55c3b48f34d949959b45130ee293a",
+    "5fda58ee3ae44ab9b4bbac7a2de66c27",
+    "919e3c4cec934168a3152077a9adcbea",
+    "b73152cab88f49d9ba195da81fde1809",
+    "6aa6fa91e0d1492e812eb7e57c47df6e",
+    "aa581aac963a4fad848ac11fe66e8637",
+    "67e5f88901214f3aa03d68e028185e22",
+    "29e056fc277543c9bc42310b122c640e",
+    "ed5fc18c31904f96a8f0dbb99ff069c0"
+  ],
+  "camera_order": [
+    "CAM_FRONT",
+    "CAM_FRONT_RIGHT",
+    "CAM_FRONT_LEFT",
+    "CAM_BACK",
+    "CAM_BACK_LEFT",
+    "CAM_BACK_RIGHT"
+  ],
+  "image_shape": [
+    1,
+    6,
+    3,
+    256,
+    704
+  ],
+  "state_tests": {
+    "serialized_resume_max_abs": {
+      "boxes_3d": 7.534027099609375e-05,
+      "scores_3d": 1.0594725608825684e-05,
+      "labels_3d": 0.0,
+      "cls_scores": 1.5772879123687744e-05,
+      "instance_ids": 0.0
+    },
+    "reset_max_abs": {
+      "boxes_3d": 6.747245788574219e-05,
+      "scores_3d": 2.4110078811645508e-05,
+      "labels_3d": 0.0,
+      "cls_scores": 4.7206878662109375e-05,
+      "instance_ids": 0.0
+    },
+    "state_keys": [
+      "cached_feature",
+      "cached_anchor",
+      "metas",
+      "mask",
+      "confidence",
+      "temp_confidence",
+      "instance_id",
+      "prev_id"
+    ],
+    "checkpoint_frame": 1,
+    "test_frame": 2,
+    "bitwise_equal": false,
+    "initial_1e_5_check_passed": false,
+    "tolerance_note": "Upstream CUDA forward uses atomicAdd; numerical equivalence 1e-3 boxes, 1e-4 scores; IDs and classes exact. Initial 1e-5 check was too strict and is retained above."
+  },
+  "timing": {
+    "e2e_ms": {
+      "mean": 218.7769642307616,
+      "p50": 217.85367299980862,
+      "p95": 222.98647429984157,
+      "first": 222.24859099969763
+    },
+    "forward_with_decode_d2h_ms": {
+      "mean": 24.17990389743024,
+      "p50": 23.971267999968404,
+      "p95": 25.278451299982407,
+      "first": 24.763333999999304
+    },
+    "preprocess_ms": {
+      "mean": 176.69627233334933,
+      "p50": 175.6278900002144,
+      "p95": 180.19086070012236,
+      "first": 179.0635420002218
+    },
+    "h2d_ms": {
+      "mean": 1.074119256419437,
+      "p50": 1.0366370001975156,
+      "p95": 1.2269243000901042,
+      "first": 1.2578780001604173
+    },
+    "standardize_ms": {
+      "mean": 16.822280128158475,
+      "p50": 16.801192999992054,
+      "p95": 17.1659826000905,
+      "first": 17.159915999855002
+    }
+  }
+}

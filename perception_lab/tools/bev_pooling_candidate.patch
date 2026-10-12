@@ -1,0 +1,142 @@
+diff --git a/CUDA-BEVFusion/src/bevfusion/camera-bevpool.cu b/CUDA-BEVFusion/src/bevfusion/camera-bevpool.cu
+index 55122e1..319db2e 100644
+--- a/CUDA-BEVFusion/src/bevfusion/camera-bevpool.cu
++++ b/CUDA-BEVFusion/src/bevfusion/camera-bevpool.cu
+@@ -23,6 +23,11 @@
+ 
+ #include <cuda_fp16.h>
+ #include <numeric>
++#include <cstdlib>
++#include <fstream>
++#include <set>
++#include <stdexcept>
++#include <string>
+ 
+ #include "camera-bevpool.hpp"
+ #include "common/check.hpp"
+@@ -72,6 +77,103 @@ static __global__ void bevpool_half_pack10_kernel(const half* camera_feature, co
+   }
+ }
+ 
++
++// CAR candidate: four adjacent half channels per thread, 160 threads/block.
++// Keeps the original per-cell index order and FP32 FMA accumulation. This
++// changes vector width/thread mapping only; there are no atomic reductions.
++struct __align__(8) CarHalf4 { half value[4]; };
++static __global__ void car_bevpool_pack4_kernel(
++    const half* camera_feature, const half* depth_weights, unsigned int channels,
++    const int3* intervals, unsigned int interval_count, const unsigned int* indices,
++    unsigned int out_h, unsigned int out_w, unsigned int depth, unsigned int area,
++    half* output) {
++  const unsigned int interval_index = blockIdx.y * blockDim.y + threadIdx.y;
++  if (interval_index >= interval_count) return;
++  const unsigned int first_channel = threadIdx.x * 4;
++  const int3 interval = intervals[interval_index];
++  float sum[4] = {0, 0, 0, 0};
++  for (int i = interval.x; i < interval.y; ++i) {
++    const unsigned int index = indices[i];
++    const unsigned int camera = index / (depth * area);
++    const unsigned int pixel = index % area;
++    const float weight = __half2float(depth_weights[index]);
++    const CarHalf4 feature = *reinterpret_cast<const CarHalf4*>(
++        camera_feature + (camera * area + pixel) * channels + first_channel);
++#pragma unroll
++    for (int j = 0; j < 4; ++j)
++      sum[j] = fma(__half2float(feature.value[j]), weight, sum[j]);
++  }
++#pragma unroll
++  for (int j = 0; j < 4; ++j)
++    output[interval.z + (first_channel + j) * out_h * out_w] = __float2half(sum[j]);
++}
++
++// Both the model and standalone paired benchmark dispatch through this exact
++// function. Buffers are caller-owned device pointers. mode: 0 upstream, 1 CAR.
++extern "C" int car_bev_pool_forward(
++    const void* features, const void* depth_weights, const void* indices,
++    const void* intervals, unsigned int interval_count, unsigned int C,
++    unsigned int D, unsigned int H, unsigned int W, unsigned int out_h,
++    unsigned int out_w, void* output, int mode, void* stream) {
++  if ((mode != 0 && mode != 1) || C == 0 || C % 10 || C % 4 || !D || !H || !W)
++    return static_cast<int>(cudaErrorInvalidValue);
++  cudaStream_t cuda_stream = static_cast<cudaStream_t>(stream);
++  cudaError_t error = cudaMemsetAsync(output, 0, C * out_h * out_w * sizeof(half), cuda_stream);
++  if (error != cudaSuccess || interval_count == 0) return static_cast<int>(error);
++  if (mode == 1) {
++    dim3 threads(C / 4, 8);
++    dim3 blocks(1, (interval_count + 7) / 8);
++    car_bevpool_pack4_kernel<<<blocks, threads, 0, cuda_stream>>>(
++        static_cast<const half*>(features), static_cast<const half*>(depth_weights), C,
++        static_cast<const int3*>(intervals), interval_count, static_cast<const unsigned int*>(indices),
++        out_h, out_w, D, W * H, static_cast<half*>(output));
++  } else {
++    const unsigned int thread_x = C / tile_size;
++    const unsigned int thread_y = 1024 / thread_x;
++    dim3 threads(thread_x, thread_y);
++    dim3 blocks(1, (interval_count + thread_y - 1) / thread_y);
++    bevpool_half_pack10_kernel<<<blocks, threads, 0, cuda_stream>>>(
++        static_cast<const half*>(features), static_cast<const half*>(depth_weights), C,
++        static_cast<const int3*>(intervals), interval_count, static_cast<const unsigned int*>(indices),
++        out_h, out_w, D, W * H, static_cast<half*>(output));
++  }
++  return static_cast<int>(cudaGetLastError());
++}
++
++static void car_save_device(const std::string& path, const void* data, size_t bytes, cudaStream_t stream) {
++  std::vector<unsigned char> host(bytes);
++  if (bytes) {
++    checkRuntime(cudaMemcpyAsync(host.data(), data, bytes, cudaMemcpyDeviceToHost, stream));
++    checkRuntime(cudaStreamSynchronize(stream));
++  }
++  std::ofstream file(path, std::ios::binary);
++  if (!file || !file.write(reinterpret_cast<const char*>(host.data()), bytes))
++    throw std::runtime_error("BEV pooling capture write failed: " + path);
++}
++
++static void car_capture_pool(const char* prefix, const std::vector<int>& shape,
++    const void* features, const void* depth, const void* indices, const void* intervals,
++    unsigned int interval_count, unsigned int out_h, unsigned int out_w,
++    const void* output, cudaStream_t stream) {
++  static std::set<std::string> completed;
++  if (!prefix || !*prefix || completed.count(prefix)) return;
++  const std::string path(prefix);
++  const size_t N = shape[0], C = shape[1], D = shape[2], H = shape[3], W = shape[4];
++  car_save_device(path + ".features.bin", features, N * C * H * W * sizeof(half), stream);
++  car_save_device(path + ".depth.bin", depth, N * D * H * W * sizeof(half), stream);
++  car_save_device(path + ".indices.bin", indices, N * D * H * W * sizeof(unsigned int), stream);
++  car_save_device(path + ".intervals.bin", intervals, interval_count * sizeof(int3), stream);
++  car_save_device(path + ".output.bin", output, C * out_h * out_w * sizeof(half), stream);
++  std::ofstream metadata(path + ".json");
++  metadata << "{\"shape\":[" << N << "," << C << "," << D << "," << H << "," << W
++           << "],\"out_h\":" << out_h << ",\"out_w\":" << out_w
++           << ",\"num_intervals\":" << interval_count
++           << ",\"features_layout\":\"NHWC\",\"depth_layout\":\"NDHW\",\"output_layout\":\"NCHW\","
++           << "\"feature_dtype\":\"float16\",\"index_dtype\":\"uint32\",\"interval_dtype\":\"int32\"}\n";
++  if (!metadata) throw std::runtime_error("BEV pooling capture metadata write failed");
++  completed.insert(path);
++}
++
+ class BEVPoolImplement : public BEVPool {
+  public:
+   virtual ~BEVPoolImplement() {
+@@ -103,14 +205,13 @@ class BEVPoolImplement : public BEVPool {
+ 
+     cudaStream_t _stream = static_cast<cudaStream_t>(stream);
+ 
+-    int thread_x = C / tile_size;
+-    int thread_y = 1024 / thread_x;
+-    dim3 threads(thread_x, thread_y);
+-    dim3 blocks(1, int((num_intervals + thread_y - 1) / thread_y));
+-    checkRuntime(cudaMemsetAsync(output_feature_, 0x00, volumn_output_ * sizeof(half), _stream));
+-    checkKernel(bevpool_half_pack10_kernel<<<blocks, threads, 0, _stream>>>(
+-        reinterpret_cast<const half*>(camera_feature), reinterpret_cast<const half*>(depth_weights), C,
+-        reinterpret_cast<const int3*>(intervals), num_intervals, indices, bev_height_, bev_width_, D, W * H, output_feature_));
++    const char* mode = std::getenv("CAR_BEV_POOLING");
++    const int candidate = mode && std::string(mode) == "candidate";
++    checkRuntime(static_cast<cudaError_t>(car_bev_pool_forward(
++        camera_feature, depth_weights, indices, intervals, num_intervals, C, D, H, W,
++        bev_height_, bev_width_, output_feature_, candidate, stream)));
++    car_capture_pool(std::getenv("CAR_BEV_POOL_CAPTURE"), camera_shape_, camera_feature,
++        depth_weights, indices, intervals, num_intervals, bev_height_, bev_width_, output_feature_, _stream);
+ 
+     return reinterpret_cast<nvtype::half*>(output_feature_);
+   }

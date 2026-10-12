@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "export": "passed",
+  "video_decode": "passed",
+  "html_interaction": "passed",
+  "rerun_render_and_timeline": "passed",
+  "models": [
+    "bevfusion_reference",
+    "bevfusion_tensorrt",
+    "sparse4d",
+    "gaussianworld"
+  ],
+  "frames": 39,
+  "url": "http://127.0.0.1:9094/",
+  "rrd_sha256": "e3ec01057816ddc11e150cba3e620e6aa08e81d7cda9ecd68cb079726f09b114"
+}

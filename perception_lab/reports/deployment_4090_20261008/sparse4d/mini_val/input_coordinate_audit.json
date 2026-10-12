@@ -1,0 +1,120 @@
+{
+  "frames": [
+    {
+      "sample_token": "b5989651183643369174912bc5641d3b",
+      "frame_index": 0,
+      "cameras": [
+        {
+          "camera": "CAM_FRONT",
+          "sensor_to_lidar_inverse_max_abs": 2.9929878020418244e-13,
+          "camera_lidar_timestamp_delta_us": -34789
+        },
+        {
+          "camera": "CAM_FRONT_RIGHT",
+          "sensor_to_lidar_inverse_max_abs": 3.1108449149996886e-13,
+          "camera_lidar_timestamp_delta_us": -26920
+        },
+        {
+          "camera": "CAM_FRONT_LEFT",
+          "sensor_to_lidar_inverse_max_abs": 2.149391775674303e-13,
+          "camera_lidar_timestamp_delta_us": -42415
+        },
+        {
+          "camera": "CAM_BACK",
+          "sensor_to_lidar_inverse_max_abs": 2.304822999121825e-13,
+          "camera_lidar_timestamp_delta_us": -9734
+        },
+        {
+          "camera": "CAM_BACK_LEFT",
+          "sensor_to_lidar_inverse_max_abs": 3.2307490016592055e-13,
+          "camera_lidar_timestamp_delta_us": 164
+        },
+        {
+          "camera": "CAM_BACK_RIGHT",
+          "sensor_to_lidar_inverse_max_abs": 2.022548795110879e-13,
+          "camera_lidar_timestamp_delta_us": -19366
+        }
+      ],
+      "native_ego_roundtrip_center_max_abs": 1.0658141036401503e-14
+    },
+    {
+      "sample_token": "b4ff30109dd14c89b24789dc5713cf8c",
+      "frame_index": 40,
+      "cameras": [
+        {
+          "camera": "CAM_FRONT",
+          "sensor_to_lidar_inverse_max_abs": 4.930725966412197e-13,
+          "camera_lidar_timestamp_delta_us": -35305
+        },
+        {
+          "camera": "CAM_FRONT_RIGHT",
+          "sensor_to_lidar_inverse_max_abs": 9.914291609902648e-14,
+          "camera_lidar_timestamp_delta_us": -27426
+        },
+        {
+          "camera": "CAM_FRONT_LEFT",
+          "sensor_to_lidar_inverse_max_abs": 5.789813073420191e-14,
+          "camera_lidar_timestamp_delta_us": -42921
+        },
+        {
+          "camera": "CAM_BACK",
+          "sensor_to_lidar_inverse_max_abs": 3.198552533945076e-13,
+          "camera_lidar_timestamp_delta_us": -10240
+        },
+        {
+          "camera": "CAM_BACK_LEFT",
+          "sensor_to_lidar_inverse_max_abs": 3.4755531785890525e-13,
+          "camera_lidar_timestamp_delta_us": -342
+        },
+        {
+          "camera": "CAM_BACK_RIGHT",
+          "sensor_to_lidar_inverse_max_abs": 6.468436897222318e-13,
+          "camera_lidar_timestamp_delta_us": -19872
+        }
+      ],
+      "native_ego_roundtrip_center_max_abs": 1.4210854715202004e-14
+    },
+    {
+      "sample_token": "281b92269fd648d4b52d06ac06ca6d65",
+      "frame_index": 80,
+      "cameras": [
+        {
+          "camera": "CAM_FRONT",
+          "sensor_to_lidar_inverse_max_abs": 4.561065067298919e-13,
+          "camera_lidar_timestamp_delta_us": -35823
+        },
+        {
+          "camera": "CAM_FRONT_RIGHT",
+          "sensor_to_lidar_inverse_max_abs": 3.1186164761720647e-13,
+          "camera_lidar_timestamp_delta_us": -27745
+        },
+        {
+          "camera": "CAM_FRONT_LEFT",
+          "sensor_to_lidar_inverse_max_abs": 4.0265013545592865e-13,
+          "camera_lidar_timestamp_delta_us": -43428
+        },
+        {
+          "camera": "CAM_BACK",
+          "sensor_to_lidar_inverse_max_abs": 3.5866969116948866e-13,
+          "camera_lidar_timestamp_delta_us": -10669
+        },
+        {
+          "camera": "CAM_BACK_LEFT",
+          "sensor_to_lidar_inverse_max_abs": 2.142730437526552e-14,
+          "camera_lidar_timestamp_delta_us": -822
+        },
+        {
+          "camera": "CAM_BACK_RIGHT",
+          "sensor_to_lidar_inverse_max_abs": 4.0362158060247566e-13,
+          "camera_lidar_timestamp_delta_us": -20114
+        }
+      ],
+      "native_ego_roundtrip_center_max_abs": 1.4210854715202004e-14
+    }
+  ],
+  "native_center": "gravity",
+  "native_frame": "LIDAR_TOP",
+  "standard_frame": "LIDAR_TOP timestamp ego",
+  "size_conversion": "native[4,3,5] \u2192 wlh",
+  "gt_used_for_prediction": false
+}

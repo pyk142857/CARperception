@@ -1,0 +1,175 @@
+{
+  "model": "GaussianWorld streaming",
+  "source": "measured",
+  "checkpoint_sha256": "5477081191e6d7fb8ac880bf5b99230b944a7cea76b0d87175c789a51cb97be3",
+  "upstream_commit": "b43629eaecffd5a7cbaac1a55517766e6263e4fc",
+  "config_sha256": "9ab985354786cb2ce55b12019a8064bba8912576246b1a0460606bb6e183bacd",
+  "strict_load": "<All keys matched successfully>",
+  "cold_model_load_s": 0.8288202660000934,
+  "protocol": "scene-stream",
+  "amp": false,
+  "image_shape": [
+    1,
+    6,
+    3,
+    864,
+    1600
+  ],
+  "gaussians": 25600,
+  "grid_shape": [
+    200,
+    200,
+    16
+  ],
+  "axis_order": "xyz",
+  "coordinate_frame": "LIDAR_TOP",
+  "pc_range": [
+    -50,
+    -50,
+    -5,
+    50,
+    50,
+    3
+  ],
+  "voxel_size_m": [
+    0.5,
+    0.5,
+    0.5
+  ],
+  "classes": [
+    "noise",
+    "barrier",
+    "bicycle",
+    "bus",
+    "car",
+    "construction_vehicle",
+    "motorcycle",
+    "pedestrian",
+    "traffic_cone",
+    "trailer",
+    "truck",
+    "driveable_surface",
+    "other_flat",
+    "sidewalk",
+    "terrain",
+    "manmade",
+    "vegetation",
+    "empty"
+  ],
+  "empty_index": 17,
+  "ignore_index": 0,
+  "evaluation": {
+    "status": "blocked_data",
+    "reason": "No SurroundOcc voxel ground truth for mini; no synthetic labels."
+  },
+  "label_independence_audit": {
+    "full_network_repeat": {
+      "max_abs": 1.2928307056427002,
+      "mean_abs": 0.00011208935757167637,
+      "voxel_class_disagreements": 11,
+      "num_voxels": 640000
+    },
+    "same_anchors_label_vs_none": {
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "voxel_class_disagreements": 0,
+      "num_voxels": 640000
+    },
+    "same_anchors_repeat": {
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "voxel_class_disagreements": 0,
+      "num_voxels": 640000
+    }
+  },
+  "status": "passed",
+  "frames_completed": 39,
+  "inference_status": "passed",
+  "evaluation_status": "blocked_data",
+  "frames": 39,
+  "sample_tokens": [
+    "ca9a282c9e77460f8360f564131a8af5",
+    "39586f9d59004284a7114a68825e8eec",
+    "356d81f38dd9473ba590f39e266f54e5",
+    "e0845f5322254dafadbbed75aaa07969",
+    "c923fe08b2ff4e27975d2bf30934383b",
+    "f1e3d9d08f044c439ce86a2d6fcca57b",
+    "4f545737bf3347fbbc9af60b0be9a963",
+    "7626dde27d604ac28a0240bdd54eba7a",
+    "be99ffc878b24aca8956bbb4e0f97d0c",
+    "9813c23a5f1448b09bb7910fea9baf20",
+    "023c4df2d451409881d8e6ea82f14704",
+    "c235638ed66145988d17f9d0601923f2",
+    "bc3c8a953f6b4dcdb77b521d89f3d9d5",
+    "1e3d79dae62742a0ad64c91679863358",
+    "2afb9d32310e4546a71cbe432911eca2",
+    "cd21dbfc3bd749c7b10a5c42562e0c42",
+    "88449a5cb1644a199c1c11f6ac034867",
+    "2ff86dc19c4644a1a88ce5ba848f56e5",
+    "bf2938e43c6f487497cda76b51bfc406",
+    "b26e791522294bec90f86fd72226e35c",
+    "c844bf5a9f2243ff8f4bf2c85fe218ff",
+    "fedfb3a6cb804635a0f47143f9ca8d6f",
+    "965f6af5a92449348409029a5f048a38",
+    "4711bcd34644420da8bc77163431888e",
+    "a34fabc7aa674713b71f98ec541eb2d4",
+    "c78067571d104caba7c568a847d56971",
+    "4246e57f018745c9b2bc68feb3d71b58",
+    "a7acb150914b40bdad9a2dc4e657cbf9",
+    "0cd661df01aa40c3bb3a773ba86f753a",
+    "378a3a3e9af346308ab9dff8ced46d9c",
+    "eef55c3b48f34d949959b45130ee293a",
+    "5fda58ee3ae44ab9b4bbac7a2de66c27",
+    "919e3c4cec934168a3152077a9adcbea",
+    "b73152cab88f49d9ba195da81fde1809",
+    "6aa6fa91e0d1492e812eb7e57c47df6e",
+    "aa581aac963a4fad848ac11fe66e8637",
+    "67e5f88901214f3aa03d68e028185e22",
+    "29e056fc277543c9bc42310b122c640e",
+    "ed5fc18c31904f96a8f0dbb99ff069c0"
+  ],
+  "model_ms": {
+    "mean": 220.3741157948524,
+    "p50": 217.02322999999524,
+    "p95": 226.69614120009103,
+    "first": 218.3583420001014,
+    "sum": 8594.590515999244
+  },
+  "e2e_ms": {
+    "mean": 413.1019471025796,
+    "p50": 409.3226780000805,
+    "p95": 422.1105549997447,
+    "first": 415.3321329999926,
+    "sum": 16110.975937000603
+  },
+  "preprocess_ms": {
+    "mean": 184.58057928206145,
+    "p50": 185.25286800013419,
+    "p95": 190.83698969993748,
+    "first": 187.42254800008595,
+    "sum": 7198.642592000397
+  },
+  "h2d_ms": {
+    "mean": 7.783986769237135,
+    "p50": 7.583343000078457,
+    "p95": 8.492716699720406,
+    "first": 9.175093999601813,
+    "sum": 303.57548400024825
+  },
+  "postprocess_d2h_ms": {
+    "mean": 0.36326525642858215,
+    "p50": 0.2853519999916898,
+    "p95": 0.7086721999712609,
+    "first": 0.37614900020344066,
+    "sum": 14.167345000714704
+  },
+  "allocated_peak_mb": 2347.29984,
+  "reserved_peak_mb": 9388.949504,
+  "process_gpu_memory_peak_mib": 9458,
+  "model_fps": 4.537738002456269,
+  "e2e_fps": 2.4207099652127386,
+  "grid_validation": {
+    "all_shapes_correct": true,
+    "all_classes_in_range": true
+  }
+}

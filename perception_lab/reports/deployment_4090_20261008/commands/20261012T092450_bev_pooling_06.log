@@ -1,0 +1,20 @@
+{
+  "experiment": "passed",
+  "correctness": "passed",
+  "paired_measurement": "passed",
+  "speedup_obtained": false,
+  "default": "upstream",
+  "nsight_systems": "passed",
+  "compute_sanitizer": "passed",
+  "nsight_compute": "blocked_permission",
+  "full_model": "passed",
+  "full_model_frames": 120,
+  "full_model_paired_rounds": 30,
+  "stable_full_model_speedup": false,
+  "capacity_boundaries": "passed",
+  "evidence_sha256": {
+    "results.json": "f31775a0e20ce9a33869329978f9af7d8a6bb2b13642759b494c5fb188699f81",
+    "full_model_comparison.json": "d7fc3e3a4df9a0896d1fcca2db9d29ad9129863650ff661f08aec48321812524",
+    "paired_timings.csv": "57de2975f332fa90dc3047c9825bf8655940377f9e30a1fc252760098b23eef8"
+  }
+}

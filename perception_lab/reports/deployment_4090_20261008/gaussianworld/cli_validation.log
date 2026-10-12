@@ -1,0 +1,2 @@
+envs/gaussianworld/bin/python tools/gaussianworld_4090.py --packets reports/deployment_4090_20261008/inputs/scene0061_packets.json --out runs/deployment_4090_20261008/gaussianworld --validate-label-independence
+envs/nuscenes_eval/bin/python tools/gaussianworld_summarize.py --run runs/deployment_4090_20261008/gaussianworld --report reports/deployment_4090_20261008/gaussianworld

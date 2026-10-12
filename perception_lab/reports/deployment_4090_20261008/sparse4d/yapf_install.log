@@ -1,0 +1,15 @@
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
+Collecting yapf==0.33.0
+  Downloading https://mirrors.aliyun.com/pypi/packages/32/ec/531851d561ecb656bd58dc102338d0aa07e086788f351c63a9f6b8a00fe6/yapf-0.33.0-py2.py3-none-any.whl (200 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 200.9/200.9 kB 4.9 MB/s eta 0:00:00
+WARNING: The candidate selected for download or install is a yanked version: 'yapf' candidate (version 0.33.0 at https://mirrors.aliyun.com/pypi/packages/32/ec/531851d561ecb656bd58dc102338d0aa07e086788f351c63a9f6b8a00fe6/yapf-0.33.0-py2.py3-none-any.whl#sha256=4c2b59bd5ffe46f3a7da48df87596877189148226ce267c16e8b44240e51578d (from https://mirrors.aliyun.com/pypi/simple/yapf/))
+Reason for being yanked: <none given>
+Installing collected packages: yapf
+  Attempting uninstall: yapf
+    Found existing installation: yapf 0.43.0
+    Not uninstalling yapf at /home/minglei/Desktop/CAR/perception_lab/envs/maptr/lib/python3.10/site-packages, outside environment /home/minglei/Desktop/CAR/perception_lab/envs/sparse4d
+    Can't uninstall 'yapf'. No files were found to uninstall.
+Successfully installed yapf-0.33.0
+
+[notice] A new release of pip is available: 23.0.1 -> 26.2.1
+[notice] To update, run: /home/minglei/Desktop/CAR/perception_lab/envs/sparse4d/bin/python -m pip install --upgrade pip

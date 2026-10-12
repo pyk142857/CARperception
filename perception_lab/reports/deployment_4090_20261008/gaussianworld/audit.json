@@ -1,0 +1,20 @@
+{
+  "full_network_repeat": {
+    "max_abs": 1.2928307056427002,
+    "mean_abs": 0.00011208935757167637,
+    "voxel_class_disagreements": 11,
+    "num_voxels": 640000
+  },
+  "same_anchors_label_vs_none": {
+    "max_abs": 0.0,
+    "mean_abs": 0.0,
+    "voxel_class_disagreements": 0,
+    "num_voxels": 640000
+  },
+  "same_anchors_repeat": {
+    "max_abs": 0.0,
+    "mean_abs": 0.0,
+    "voxel_class_disagreements": 0,
+    "num_voxels": 640000
+  }
+}

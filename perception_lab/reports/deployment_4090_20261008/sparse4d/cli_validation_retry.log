@@ -1,0 +1,8 @@
+envs/sparse4d/bin/python tools/sparse4d_4090.py --packets reports/deployment_4090_20261008/inputs/scene0061_packets.json --out outputs/sparse4d/scene0061 --split scene0061 --state-tests
+envs/nuscenes_eval/bin/python tools/sparse4d_audit.py --out outputs/sparse4d/scene0061
+envs/sparse4d/bin/python tools/sparse4d_evaluate.py --out outputs/sparse4d/scene0061 --split mini_scene_0061
+envs/sparse4d/bin/python tools/sparse4d_4090.py --packets reports/deployment_4090_20261008/inputs/mini_val_packets.json --out outputs/sparse4d/mini_val --split mini_val --state-tests
+envs/nuscenes_eval/bin/python tools/sparse4d_audit.py --out outputs/sparse4d/mini_val
+envs/sparse4d/bin/python tools/sparse4d_evaluate.py --out outputs/sparse4d/mini_val --split mini_val
+envs/sparse4d/bin/python tools/sparse4d_cases.py
+envs/nuscenes_eval/bin/python tools/sparse4d_summarize.py

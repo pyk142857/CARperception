@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "source": "measured",
+  "identity": {
+    "config": "12b17deee2ddd122f3cdd13350bb35f667220d4986c55ff9b6c74f938fdb280a",
+    "packets": "9680b0d03e49cc78be200a9abe3b99602312123adbf8e12667b9fbbbe7d5c549",
+    "adapter": "0d148bb9c91f7ae985af4e66cc1bf067e659e61e8b45e43f9ade929057bc0b8c",
+    "checkpoint": "4006d4b4cb74f16d1e1d1be2689eae4418fe4050bce07394f202fae2e4648376",
+    "limit": null,
+    "native_library": "47cae74f4c696f7ba2493c0630c2445296fb0a67e78428adb2a10bd22c687502",
+    "core_library": "4d9121b0bec7cc09e24a1302750d91c700d6ec0b8510e1d3525dff2735b1fa6b",
+    "pooling": "upstream",
+    "engines": {
+      "camera.backbone": "45f3a77f353c809f3357103e7545c3bc0e08903b2ba83cf721056fc795bb016d",
+      "camera.vtransform": "6601cfc398270fb0e77af6bf93de8721181f193205b124db9adeb205152d20f8",
+      "fuser": "44808cd1218a3ea43b91513488e5dbf97156e435c8cd124b44b1b41a96456caa",
+      "head.bbox.layernormplugin": "3b58d7a6e1371fc943defb91b992872dc4d404bdac504b7e436cc3880a313053"
+    },
+    "onnx": {
+      "camera.backbone.onnx": "9c3316d8f111949dea7c8974bd2023073ef840cde10c3276b21a6c2bd7d83762",
+      "camera.vtransform.onnx": "60f2f88706888dcc5447abf4010ce861b895b648f6745224e84ac788976c6059",
+      "fuser.onnx": "a5dc64e573d59e8494cf7bf261d9c7fe977c8082aa2eceddaa859d850f7f602c",
+      "head.bbox.layernormplugin.onnx": "1aac2d1eb5253d40d0973a220b069bd7417a6a08ac713dc29525d4c9f61b2b95",
+      "head.bbox.onnx": "5f295ed6af274a4bfe88ee8fe02d27b3344e3a7253a13b02454471a66455efe4",
+      "lidar.backbone.xyz.onnx": "e0f8a8f762fc946d1a8194bc086dcc86ee1290647b5efe407aa37fd11ef466f1"
+    }
+  },
+  "frames": 39,
+  "outputs_sha256": {
+    "predictions.json": "228feda27554463714f602df49df9e87110b440a1195b58d549ee83f3db09988",
+    "native_predictions.json": "d2e3348b754c149eaebc629e9ed9a567027c61210b9f2f959457e1381a7d42b1",
+    "coordinate_audit.json": "3190685f1c56bfc37776220c465d902dfa1cb6fb50843fb32dceb46299480197",
+    "actual_inputs.json": "c1f512a195f8375e2e39b61dec46eddeba32c0f2111deccac4fca74c07282285",
+    "timings.csv": "cc514f51f59a1357097e7de2cd22466d833679f85222c5d0b204bd08b31ce6f3",
+    "performance.json": "c51f35a99b9053261982c75e1d7600d50680f1560116db38c7a3b4a7315c04cc"
+  },
+  "accuracy_status": "not_evaluated"
+}

@@ -1,0 +1,432 @@
+Initializing nuScenes detection evaluation
+Loaded results from outputs/sparse4d/mini_val/detection.json. Found detections for 81 samples.
+Loading annotations for mini_val split from nuScenes version: v1.0-mini
+  0%|          | 0/81 [00:00<?, ?it/s] 89%|████████▉ | 72/81 [00:00<00:00, 717.17it/s]100%|██████████| 81/81 [00:00<00:00, 733.84it/s]
+Loaded ground truth annotations for 81 samples.
+Filtering predictions
+=> Original number of boxes: 24300
+=> After distance based filtering: 18326
+=> After LIDAR and RADAR points based filtering: 18326
+=> After bike rack filtering: 18257
+Filtering ground truth annotations
+=> Original number of boxes: 4441
+=> After distance based filtering: 3785
+=> After LIDAR and RADAR points based filtering: 3393
+=> After bike rack filtering: 3393
+Accumulating metric data...
+Calculating metrics...
+Saving metrics to: outputs/sparse4d/mini_val/detection_eval
+mAP: 0.4616
+mATE: 0.5483
+mASE: 0.4516
+mAOE: 0.5762
+mAVE: 0.4013
+mAAE: 1.0000
+NDS: 0.4331
+Eval time: 1.7s
+
+Per-class results:
+Object Class        	AP    	ATE   	ASE   	AOE   	AVE   	AAE   
+car                 	0.744 	0.310 	0.150 	0.066 	0.095 	1.000 
+truck               	0.657 	0.176 	0.134 	0.071 	0.046 	1.000 
+bus                 	0.747 	0.543 	0.122 	0.077 	0.488 	1.000 
+trailer             	0.000 	1.000 	1.000 	1.000 	1.000 	1.000 
+construction_vehicle	0.000 	1.000 	1.000 	1.000 	1.000 	1.000 
+pedestrian          	0.646 	0.460 	0.262 	0.339 	0.217 	1.000 
+motorcycle          	0.692 	0.389 	0.288 	1.083 	0.056 	1.000 
+bicycle             	0.332 	0.475 	0.211 	0.550 	0.308 	1.000 
+traffic_cone        	0.799 	0.130 	0.350 	nan   	nan   	nan   
+barrier             	0.000 	1.000 	1.000 	1.000 	nan   	nan   
+======
+Loading NuScenes tables for version v1.0-mini...
+Loading nuScenes-lidarseg...
+32 category,
+8 attribute,
+4 visibility,
+911 instance,
+12 sensor,
+120 calibrated_sensor,
+31206 ego_pose,
+8 log,
+10 scene,
+404 sample,
+31206 sample_data,
+18538 sample_annotation,
+4 map,
+404 lidarseg,
+Done loading in 0.222 seconds.
+======
+Reverse indexing ...
+Done reverse indexing in 0.0 seconds.
+======
+Initializing nuScenes tracking evaluation
+Loaded results from outputs/sparse4d/mini_val/tracking.json. Found detections for 81 samples.
+Loading annotations for mini_val split from nuScenes version: v1.0-mini
+  0%|          | 0/81 [00:00<?, ?it/s] 89%|████████▉ | 72/81 [00:00<00:00, 712.33it/s]100%|██████████| 81/81 [00:00<00:00, 728.11it/s]
+Loaded ground truth annotations for 81 samples.
+Filtering tracks
+=> Original number of boxes: 6863
+=> After distance based filtering: 5980
+=> After LIDAR and RADAR points based filtering: 5980
+=> After bike rack filtering: 5938
+Filtering ground truth tracks
+=> Original number of boxes: 4402
+=> After distance based filtering: 3748
+=> After LIDAR and RADAR points based filtering: 3358
+=> After bike rack filtering: 3358
+Accumulating metric data...
+Computing metrics for class bicycle...
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     Computed thresholds
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.1282	0.000	0.454	0.756	24	41	28	10	3	88	28	57	3
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.1569	0.000	0.454	0.756	23	41	28	10	3	79	28	48	3
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.1579	0.000	0.556	0.756	23	41	29	10	2	73	29	42	2
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.1651	0.000	0.586	0.756	22	41	30	10	1	69	30	38	1
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.1762	0.000	0.586	0.756	21	41	30	10	1	63	30	32	1
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.1847	0.000	0.643	0.659	21	41	27	14	0	56	27	29	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.1867	0.000	0.643	0.659	21	41	27	14	0	56	27	29	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.1984	0.000	0.647	0.610	21	41	25	16	0	52	25	27	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.2032	0.000	0.647	0.610	21	41	25	16	0	50	25	25	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.2516	0.316	0.608	0.463	21	41	19	22	0	32	19	13	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.3290	0.526	0.608	0.463	21	41	19	22	0	28	19	9	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.3985	0.100	0.256	0.244	21	41	10	31	0	19	10	9	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.5799	1.000	0.256	0.244	21	41	10	31	0	10	10	0	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.5887	1.000	0.292	0.171	21	41	7	34	0	7	7	0	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.6565	1.000	0.292	0.171	21	41	7	34	0	7	7	0	0
+
+Computing metrics for class bus...
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     Computed thresholds
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.6635	1.000	0.594	1.000	33	33	33	0	0	33	33	0	0
+
+Computing metrics for class car...
+
+  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:00<00:00,  7.86it/s]                                             Computed thresholds
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.1433	0.508	0.482	0.876	81	2188	1862	272	54	2833	1862	917	54
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.1581	0.617	0.478	0.856	81	2188	1844	314	30	2581	1844	707	30
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.1850	0.722	0.480	0.841	81	2188	1828	348	12	2348	1828	508	12
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.2274	0.793	0.469	0.824	81	2188	1798	385	5	2176	1798	373	5
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.2784	0.798	0.457	0.798	81	2188	1742	443	3	2097	1742	352	3
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.2897	0.810	0.450	0.770	81	2188	1681	504	3	2003	1681	319	3
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.3125	0.816	0.444	0.756	81	2188	1651	534	3	1958	1651	304	3
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.3365	0.821	0.425	0.711	81	2188	1554	633	1	1833	1554	278	1
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.3565	0.816	0.417	0.686	81	2188	1500	687	1	1777	1500	276	1
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.3952	0.828	0.407	0.671	81	2188	1467	720	1	1721	1467	253	1
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.4129	0.822	0.408	0.643	81	2188	1406	781	1	1657	1406	250	1
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.4674	0.839	0.396	0.614	81	2188	1343	845	0	1559	1343	216	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.4783	0.844	0.398	0.589	81	2188	1289	899	0	1490	1289	201	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.4942	0.861	0.397	0.566	81	2188	1238	950	0	1410	1238	172	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.5207	0.861	0.389	0.551	81	2188	1205	983	0	1372	1205	167	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.5324	0.867	0.394	0.520	81	2188	1138	1050	0	1289	1138	151	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.5428	0.864	0.374	0.505	81	2188	1104	1084	0	1254	1104	150	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.5560	0.859	0.372	0.476	81	2188	1041	1147	0	1188	1041	147	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.5660	0.866	0.345	0.443	81	2188	969	1219	0	1099	969	130	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.5718	0.872	0.342	0.432	81	2188	946	1242	0	1067	946	121	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.5819	0.866	0.331	0.405	81	2188	886	1302	0	1005	886	119	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.6006	0.887	0.320	0.373	81	2188	816	1372	0	908	816	92	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.6100	0.884	0.307	0.353	81	2188	773	1415	0	863	773	90	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.6124	0.893	0.310	0.325	81	2188	711	1477	0	787	711	76	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.6192	0.889	0.315	0.303	81	2188	664	1524	0	738	664	74	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.6359	0.898	0.309	0.277	81	2188	607	1581	0	669	607	62	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.6444	0.908	0.309	0.263	81	2188	575	1613	0	628	575	53	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.6489	0.896	0.323	0.229	81	2188	502	1686	0	554	502	52	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.6490	0.907	0.320	0.215	81	2188	471	1717	0	515	471	44	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.6522	0.897	0.324	0.186	81	2188	406	1782	0	448	406	42	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.6596	0.924	0.320	0.163	81	2188	356	1832	0	383	356	27	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.6631	0.929	0.325	0.135	81	2188	295	1893	0	316	295	21	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.6774	0.952	0.288	0.105	81	2188	230	1958	0	241	230	11	0
+
+Computing metrics for class motorcycle...
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     Computed thresholds
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.1393	0.753	0.806	0.799	54	224	166	45	13	220	166	41	13
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.1466	0.770	0.789	0.772	53	224	161	51	12	210	161	37	12
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.1486	0.814	0.809	0.768	53	224	161	52	11	202	161	30	11
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.1496	0.849	0.665	0.750	53	224	159	56	9	192	159	24	9
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.1616	0.888	0.630	0.701	53	224	152	67	5	174	152	17	5
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.2041	0.960	0.623	0.683	50	224	151	71	2	159	151	6	2
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.4459	0.966	0.467	0.652	50	224	145	78	1	151	145	5	1
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.4739	0.960	0.453	0.558	50	224	125	99	0	130	125	5	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.4948	0.952	0.441	0.464	50	224	104	120	0	109	104	5	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.5087	0.976	0.446	0.379	50	224	85	139	0	87	85	2	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.5115	0.972	0.486	0.317	50	224	71	153	0	73	71	2	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.5576	0.958	0.375	0.214	50	224	48	176	0	50	48	2	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.5607	0.958	0.375	0.214	50	224	48	176	0	50	48	2	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.5735	0.929	0.431	0.125	50	224	28	196	0	30	28	2	0
+
+Computing metrics for class pedestrian...
+
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00,  9.51it/s]                                             Computed thresholds
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.1333	0.000	0.655	0.882	70	1088	871	128	89	2064	871	1104	89
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.1436	0.000	0.657	0.869	69	1088	870	143	75	1864	870	919	75
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.1547	0.096	0.642	0.849	69	1088	858	164	66	1700	858	776	66
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.1701	0.368	0.640	0.841	69	1088	858	173	57	1457	858	542	57
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.1907	0.551	0.635	0.819	69	1088	845	197	46	1270	845	379	46
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.2577	0.779	0.592	0.779	69	1088	836	240	12	1033	836	185	12
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.2874	0.816	0.600	0.753	69	1088	810	269	9	968	810	149	9
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.3179	0.852	0.573	0.734	69	1088	790	289	9	916	790	117	9
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.3480	0.865	0.578	0.710	69	1088	764	316	8	875	764	103	8
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.3945	0.866	0.565	0.676	69	1088	729	353	6	833	729	98	6
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.4106	0.863	0.570	0.651	69	1088	703	380	5	804	703	96	5
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.4475	0.887	0.561	0.631	69	1088	682	402	4	763	682	77	4
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.4710	0.891	0.539	0.594	69	1088	643	442	3	716	643	70	3
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.4803	0.904	0.536	0.584	69	1088	633	453	2	696	633	61	2
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.5085	0.899	0.533	0.547	69	1088	593	493	2	655	593	60	2
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.5167	0.902	0.513	0.519	69	1088	564	523	1	620	564	55	1
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.5189	0.899	0.515	0.503	69	1088	546	541	1	602	546	55	1
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.5377	0.896	0.517	0.477	69	1088	518	569	1	573	518	54	1
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.5484	0.891	0.519	0.456	69	1088	495	592	1	550	495	54	1
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.5657	0.929	0.487	0.414	69	1088	450	638	0	482	450	32	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.5684	0.932	0.490	0.393	69	1088	428	660	0	457	428	29	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.5805	0.927	0.469	0.367	69	1088	399	689	0	428	399	29	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.5877	0.932	0.468	0.351	69	1088	382	706	0	408	382	26	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.5952	0.923	0.473	0.312	69	1088	339	749	0	365	339	26	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.5980	0.930	0.466	0.288	69	1088	313	775	0	335	313	22	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.6019	0.926	0.458	0.260	69	1088	283	805	0	304	283	21	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.6078	0.956	0.470	0.231	69	1088	251	837	0	262	251	11	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.6089	0.952	0.411	0.212	69	1088	231	857	0	242	231	11	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.6201	0.943	0.394	0.176	69	1088	192	896	0	203	192	11	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.6418	0.951	0.373	0.149	69	1088	162	926	0	170	162	8	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.6787	0.992	0.377	0.117	65	1088	127	961	0	128	127	1	0
+
+Computing metrics for class trailer...
+
+Computing metrics for class truck...
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     Computed thresholds
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.2889	0.971	0.328	0.716	57	95	68	27	0	70	68	2	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.4470	0.971	0.328	0.716	57	95	68	27	0	70	68	2	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.6168	0.968	0.319	0.663	57	95	63	32	0	65	63	2	0
+
+  0%|          | 0/2 [00:00<?, ?it/s]                                     		MOTAR	MOTP	Recall	Frames	GT	GT-Mtch	GT-Miss	GT-IDS	Pred	Pred-TP	Pred-FP	Pred-IDS
+thr_0.7145	1.000	0.207	0.389	57	95	37	58	0	37	37	0	0
+
+Calculating metrics...
+Saving metrics to: outputs/sparse4d/mini_val/tracking_eval
+
+### Final results ###
+
+Per-class results:
+		AMOTA	AMOTP	RECALL	MOTAR	GT	MOTA	MOTP	MT	ML	FAF	TP	FP	FN	IDS	FRAG	TID	LGD
+bicycle 	0.199	1.025	0.463	0.526	41	0.244	0.608	2	4	42.9	19	9	22	0	0	0.67	0.67
+bus     	1.000	0.594	1.000	1.000	33	1.000	0.594	1	0	0.0	33	0	0	0	0	0.00	0.00
+car     	0.695	0.661	0.824	0.793	2188	0.651	0.469	67	14	460.5	1798	373	385	5	11	1.29	1.53
+motorcy 	0.655	0.952	0.683	0.960	224	0.647	0.623	3	1	12.0	151	6	71	2	2	2.65	3.00
+pedestr 	0.613	0.857	0.734	0.852	1088	0.619	0.573	35	16	169.6	790	117	289	9	7	0.95	1.54
+trailer 	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan
+truck   	0.664	0.829	0.716	0.971	95	0.695	0.328	1	1	3.5	68	2	27	0	1	2.83	2.83
+
+Aggregated results:
+AMOTA	0.638
+AMOTP	0.820
+RECALL	0.737
+MOTAR	0.850
+GT	611
+MOTA	0.643
+MOTP	0.532
+MT	109
+ML	36
+FAF	114.7
+TP	2859
+FP	507
+FN	794
+IDS	16
+FRAG	21
+TID	1.40
+LGD	1.59
+Eval time: 13.2s
+

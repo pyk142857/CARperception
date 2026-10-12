@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/home/minglei/Desktop/CAR/perception_lab/envs/nuscenes_eval/lib/python3.10/site-packages/nuscenes/eval/tracking/algo.py", line 22, in <module>
+    import pandas
+ModuleNotFoundError: No module named 'pandas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/minglei/Desktop/CAR/perception_lab/tools/sparse4d_evaluate.py", line 7, in <module>
+    from nuscenes.eval.tracking.evaluate import TrackingEval
+  File "/home/minglei/Desktop/CAR/perception_lab/envs/nuscenes_eval/lib/python3.10/site-packages/nuscenes/eval/tracking/evaluate.py", line 22, in <module>
+    from nuscenes.eval.tracking.algo import TrackingEvaluation
+  File "/home/minglei/Desktop/CAR/perception_lab/envs/nuscenes_eval/lib/python3.10/site-packages/nuscenes/eval/tracking/algo.py", line 24, in <module>
+    raise unittest.SkipTest('Skipping test as pandas was not found!')
+unittest.case.SkipTest: Skipping test as pandas was not found!

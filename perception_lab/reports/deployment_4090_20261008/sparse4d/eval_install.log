@@ -1,0 +1,16 @@
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
+Collecting motmetrics==1.4.0
+  Downloading https://mirrors.aliyun.com/pypi/packages/2f/d9/7b77e1e2db80b6f8133065ffbccdaa3c911df5f95a7af30829fcaa10a3d7/motmetrics-1.4.0-py3-none-any.whl (161 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 161.5/161.5 kB 4.6 MB/s eta 0:00:00
+Collecting nuscenes-devkit==1.2.0
+  Downloading https://mirrors.aliyun.com/pypi/packages/3a/13/e9124913743cd815fff25a3438072e4d184100e1d548ad926189e3e6988c/nuscenes_devkit-1.2.0-py3-none-any.whl (315 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 316.0/316.0 kB 11.3 MB/s eta 0:00:00
+Installing collected packages: motmetrics, nuscenes-devkit
+  Attempting uninstall: nuscenes-devkit
+    Found existing installation: nuscenes-devkit 1.1.11
+    Not uninstalling nuscenes-devkit at /home/minglei/Desktop/CAR/perception_lab/envs/maptr/lib/python3.10/site-packages, outside environment /home/minglei/Desktop/CAR/perception_lab/envs/sparse4d
+    Can't uninstall 'nuscenes-devkit'. No files were found to uninstall.
+Successfully installed motmetrics-1.4.0 nuscenes-devkit-1.2.0
+
+[notice] A new release of pip is available: 23.0.1 -> 26.2.1
+[notice] To update, run: /home/minglei/Desktop/CAR/perception_lab/envs/sparse4d/bin/python -m pip install --upgrade pip

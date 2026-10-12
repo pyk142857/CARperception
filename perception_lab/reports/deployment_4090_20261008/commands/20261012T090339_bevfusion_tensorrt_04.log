@@ -1,0 +1,40 @@
+Initializing nuScenes detection evaluation
+Loaded results from reports/deployment_4090_20261008/bevfusion_tensorrt/mini_val/official/official_predictions.json. Found detections for 81 samples.
+Loading annotations for mini_val split from nuScenes version: v1.0-mini
+  0%|          | 0/81 [00:00<?, ?it/s] 93%|█████████▎| 75/81 [00:00<00:00, 749.84it/s]100%|██████████| 81/81 [00:00<00:00, 763.11it/s]
+Loaded ground truth annotations for 81 samples.
+Filtering predictions
+=> Original number of boxes: 16200
+=> After distance based filtering: 12763
+=> After LIDAR and RADAR points based filtering: 12763
+=> After bike rack filtering: 12761
+Filtering ground truth annotations
+=> Original number of boxes: 4441
+=> After distance based filtering: 3785
+=> After LIDAR and RADAR points based filtering: 3393
+=> After bike rack filtering: 3393
+Accumulating metric data...
+Calculating metrics...
+Saving metrics to: reports/deployment_4090_20261008/bevfusion_tensorrt/mini_val/official/metrics
+mAP: 0.4795
+mATE: 0.4804
+mASE: 0.6503
+mAOE: 1.0727
+mAVE: 0.8343
+mAAE: 1.0000
+NDS: 0.3432
+Eval time: 1.2s
+
+Per-class results:
+Object Class        	AP    	ATE   	ASE   	AOE   	AVE   	AAE   
+car                 	0.822 	0.266 	0.391 	0.920 	0.347 	1.000 
+truck               	0.635 	0.224 	0.335 	1.027 	0.142 	1.000 
+bus                 	0.935 	0.297 	0.443 	1.419 	2.250 	1.000 
+trailer             	0.000 	1.000 	1.000 	1.000 	1.000 	1.000 
+construction_vehicle	0.000 	1.000 	1.000 	1.000 	1.000 	1.000 
+pedestrian          	0.715 	0.292 	0.544 	1.005 	0.398 	1.000 
+motorcycle          	0.692 	0.258 	0.521 	1.242 	0.069 	1.000 
+bicycle             	0.407 	0.284 	0.481 	1.041 	1.467 	1.000 
+traffic_cone        	0.588 	0.183 	0.789 	nan   	nan   	nan   
+barrier             	0.000 	1.000 	1.000 	1.000 	nan   	nan   
+{"frames": 81, "mAP": 0.47947241652146283, "NDS": 0.34323847943394215}

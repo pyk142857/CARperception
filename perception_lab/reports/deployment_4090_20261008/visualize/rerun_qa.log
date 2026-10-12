@@ -1,0 +1,3 @@
+BOOTSTRAP {'hook': True, 'body': ''}
+RANGE {'min': 0, 'max': 7}
+[{'recording': '2f55dfcb100143fc86816a07f1407d62', 'timeline': 'frame', 'frame': 0, 'playing': False, 'range': {'min': 0, 'max': 38}, 'panic': False}, {'recording': '2f55dfcb100143fc86816a07f1407d62', 'timeline': 'frame', 'frame': 19, 'playing': False, 'range': {'min': 0, 'max': 38}, 'panic': False}, {'recording': '2f55dfcb100143fc86816a07f1407d62', 'timeline': 'frame', 'frame': 38, 'playing': False, 'range': {'min': 0, 'max': 38}, 'panic': False}]

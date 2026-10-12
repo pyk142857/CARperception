@@ -1,0 +1,12 @@
+{
+  "strict": true,
+  "missing_keys": [],
+  "unexpected_keys": [],
+  "weight_sha256": "5beed4d4933ca6448d72586b0f8812863574289ff3c4192de71dc9f46a42f0ed",
+  "anchor_source": "official checkpoint head.instance_bank.anchor",
+  "anchor_shape": [
+    900,
+    11
+  ],
+  "anchor_sha256": "5582d4c4bbdd21644538b9ace986a16a4a1a7cb896daf2a6eff64463c69e738b"
+}

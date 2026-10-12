@@ -1,0 +1,59 @@
+{
+  "upstream_url": "https://github.com/zuosc19/GaussianWorld",
+  "upstream_commit": "b43629eaecffd5a7cbaac1a55517766e6263e4fc",
+  "weight_url": "https://cloud.tsinghua.edu.cn/f/4939dcc50b2a44c1b98d/",
+  "weight_bytes": 298029831,
+  "weight_sha256": "5477081191e6d7fb8ac880bf5b99230b944a7cea76b0d87175c789a51cb97be3",
+  "python": "3.10.13",
+  "torch": "2.1.2+cu118",
+  "mmcv": "2.1.0",
+  "mmdet": "3.3.0",
+  "mmseg": "1.2.2",
+  "toolkit": "11.8",
+  "cuda_extension_arch": "sm89",
+  "dependency_layers": [
+    "perception_lab/envs/gaussianworld",
+    "perception_lab/envs/mmdet3d",
+    "/home/minglei/anaconda3/envs/autolabel"
+  ],
+  "data_protocol": "scene-stream",
+  "artifacts": [
+    {
+      "path": "perception_lab/checkpoints/gaussianworld/ckpt_stream.pth",
+      "sha256": "5477081191e6d7fb8ac880bf5b99230b944a7cea76b0d87175c789a51cb97be3",
+      "bytes": 298029831
+    },
+    {
+      "path": "perception_lab/tools/gaussianworld_4090.py",
+      "sha256": "9b99b79bba08c2838f7c57c8ec51a3ea840a7a788559d4df85782542221124c3",
+      "bytes": 10892
+    },
+    {
+      "path": "perception_lab/tools/gaussianworld_summarize.py",
+      "sha256": "524cb980152d8bdd5a76dfc35b641505d444561cae0122df9ef66571c5d57261",
+      "bytes": 7023
+    },
+    {
+      "path": "perception_lab/reports/deployment_4090_20261008/gaussianworld/official_config.py",
+      "sha256": "9ab985354786cb2ce55b12019a8064bba8912576246b1a0460606bb6e183bacd",
+      "bytes": 7326
+    },
+    {
+      "path": "perception_lab/reports/deployment_4090_20261008/gaussianworld/unlabelled.patch",
+      "sha256": "4776515b3bbcf2bdeb602ed4fce2f9a8b8499f08794c7ec4d1f27de468c49f6f",
+      "bytes": 1642
+    },
+    {
+      "path": "perception_lab/runs/deployment_4090_20261008/gaussianworld/manifest.json",
+      "sha256": "69101fd45972fc39fca24f5172e5e90c8e3442b1522ef18dcbac42508bb15952",
+      "bytes": 106208
+    },
+    {
+      "path": "perception_lab/runs/deployment_4090_20261008/gaussianworld/timing.csv",
+      "sha256": "3dd8acfdc713b4cb72517515c00007bcf58a124131119b857e67cf18715e8cac",
+      "bytes": 6695
+    }
+  ],
+  "published_grids_count": 39,
+  "published_grids_bytes": 664524
+}

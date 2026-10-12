@@ -1,0 +1,278 @@
+/home/minglei/Desktop/CAR/perception_lab/envs/maptr/lib/python3.10/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+{'version': 'v1.0-mini'}
+STATE_TESTS {'serialized_resume_max_abs': {'boxes_3d': 9.918212890625e-05, 'scores_3d': 2.3633241653442383e-05, 'labels_3d': 0.0, 'cls_scores': 3.8623809814453125e-05, 'instance_ids': 0.0}, 'reset_max_abs': {'boxes_3d': 6.413459777832031e-05, 'scores_3d': 1.0982155799865723e-05, 'labels_3d': 0.0, 'cls_scores': 1.4871358871459961e-05, 'instance_ids': 0.0}, 'state_keys': ['cached_feature', 'cached_anchor', 'metas', 'mask', 'confidence', 'temp_confidence', 'instance_id', 'prev_id'], 'checkpoint_frame': 1, 'test_frame': 2}
+1/81 b5989651183643369174912bc5641d3b boxes=300 forward_ms=23.10
+2/81 0bb62a68055249e381b039bf54b0ccf8 boxes=300 forward_ms=22.79
+3/81 07fad91090c746ccaa1b2bdb55329e20 boxes=300 forward_ms=23.26
+4/81 ae5004bf4ebb4db0a84cb3c27bd398d1 boxes=300 forward_ms=24.01
+5/81 ac8b4d49731d43289579f014cb7c97ef boxes=300 forward_ms=22.90
+6/81 c1eed31234b94e9f8e22fbf3428b0ac2 boxes=300 forward_ms=23.88
+7/81 edba7d0cf1c64d2a9c8a5ebddab507a9 boxes=300 forward_ms=24.75
+8/81 a5afebb0aa5e4d7c95665788ce51ec58 boxes=300 forward_ms=24.31
+9/81 5b7cb170eee6468aa1fdbd3abcf63c5a boxes=300 forward_ms=25.69
+10/81 d8251bbc2105497ab8ec80827d4429aa boxes=300 forward_ms=24.06
+11/81 048a45dd2cf54aa5808d8ccc85731d44 boxes=300 forward_ms=24.48
+12/81 858a1ece22cf45d9bc71e42336604b78 boxes=300 forward_ms=24.67
+13/81 372725a4b00e49c78d6d0b1c4a38b6e0 boxes=300 forward_ms=24.51
+14/81 61a7bd24f88a46c2963280d8b13ac675 boxes=300 forward_ms=24.44
+15/81 609d5177362340458a3bfd4949cd1e64 boxes=300 forward_ms=25.00
+16/81 b1303058fa624645b753d7283d70de45 boxes=300 forward_ms=24.67
+17/81 a19a80c905674faab7203a3a4e0f5246 boxes=300 forward_ms=25.93
+18/81 b6c420c3a5bd4a219b1cb82ee5ea0aa7 boxes=300 forward_ms=25.20
+19/81 8092909473464f80b9f791a4d31ddcb8 boxes=300 forward_ms=23.83
+20/81 e174cb43655f49dab7ffa27b973670e3 boxes=300 forward_ms=24.15
+21/81 6ff9723a60bf4e14b328b3b19f04dc32 boxes=300 forward_ms=24.02
+22/81 06be0e3b665c44fa8d17d9f4770bdf9c boxes=300 forward_ms=23.61
+23/81 9150678870764c1b87a649a25939c61b boxes=300 forward_ms=23.40
+24/81 8573a885a7cb41d185c05029eeb9a54e boxes=300 forward_ms=23.64
+25/81 55c258972acb4300a3a6077a531ab050 boxes=300 forward_ms=24.22
+26/81 44237858a539457da65822bfcf58c414 boxes=300 forward_ms=24.54
+27/81 8cd36e9531fb4eba8e6ac1d666c4641c boxes=300 forward_ms=24.85
+28/81 7bebe3c9be714f02837f8617c56df122 boxes=300 forward_ms=25.66
+29/81 4b894442c95141f9affd731d9da7b43c boxes=300 forward_ms=24.58
+30/81 e00dc15130dc44e796687baadd076ae4 boxes=300 forward_ms=24.69
+31/81 e63b83b436a0479db7362338cdfab118 boxes=300 forward_ms=25.40
+32/81 c567f9b8e9f34817acdc9c49d791c557 boxes=300 forward_ms=25.05
+33/81 8e352d4a6c6f40c8ad4f10a3d2c3f158 boxes=300 forward_ms=23.87
+34/81 841dd6709e9b4d7c9d6bf888f1fe6d7e boxes=300 forward_ms=24.21
+35/81 e54b784a608644a2804fcf800c7499f7 boxes=300 forward_ms=24.02
+36/81 a1289b27ca1d41deb6fc982be9a3d03c boxes=300 forward_ms=24.69
+37/81 e6e877f31dd447199b56cae07f86daad boxes=300 forward_ms=23.49
+38/81 cb4e6195faad467094fbd4d0a9e960e9 boxes=300 forward_ms=24.10
+39/81 7f594234e8034228b1a7d727f1981e09 boxes=300 forward_ms=24.18
+40/81 9cdbf5ff7f294549aea0a4307e5d104a boxes=300 forward_ms=24.82
+41/81 b4ff30109dd14c89b24789dc5713cf8c boxes=300 forward_ms=24.41
+42/81 3e8750f331d7499e9b5123e9eb70f2e2 boxes=300 forward_ms=23.49
+43/81 3950bd41f74548429c0f7700ff3d8269 boxes=300 forward_ms=24.20
+44/81 c5f58c19249d4137ae063b0e9ecd8b8e boxes=300 forward_ms=23.24
+45/81 700c1a25559b4433be532de3475e58a9 boxes=300 forward_ms=23.44
+46/81 747aa46b9a4641fe90db05d97db2acea boxes=300 forward_ms=24.72
+47/81 f4f86af4da3b49e79497deda5c5f223a boxes=300 forward_ms=24.72
+48/81 6832e717621341568c759151b5974512 boxes=300 forward_ms=26.57
+49/81 c59e60042a8643e899008da2e446acca boxes=300 forward_ms=24.04
+50/81 fa65a298c01f44e7a182bbf9e5fe3697 boxes=300 forward_ms=23.46
+51/81 a98fba72bde9433fb882032d18aedb2e boxes=300 forward_ms=24.36
+52/81 b6b0d9f2f2e14a3aaa2c8aedeb1edb69 boxes=300 forward_ms=25.15
+53/81 796b1988dd254f74bf2fb19ba9c5b8c6 boxes=300 forward_ms=24.86
+54/81 0d0700a2284e477db876c3ee1d864668 boxes=300 forward_ms=23.77
+55/81 de7593d76648450e947ba0c203dee1b0 boxes=300 forward_ms=23.64
+56/81 f753d3f87e5b40af87ff2cbf7c8e7082 boxes=300 forward_ms=24.11
+57/81 b22fa0b3c34f47b6a360b60f35d5d567 boxes=300 forward_ms=24.45
+58/81 0a0d6b8c2e884134a3b48df43d54c36a boxes=300 forward_ms=23.11
+59/81 8e9c2cba0ee74056aa3746e8391d54a9 boxes=300 forward_ms=23.50
+60/81 fdc39b23ab4242eda6ec5e1e6574fe33 boxes=300 forward_ms=24.08
+61/81 9ee4020153674b9e9943d395ff8cfdf3 boxes=300 forward_ms=25.13
+62/81 5b03af7a953245b5a3b23191ed4da62a boxes=300 forward_ms=25.44
+63/81 d0ecf474e0e64950aa265cd44b9c9d75 boxes=300 forward_ms=24.65
+64/81 456ec36cb4a44ca78f36fbd90c0c34fa boxes=300 forward_ms=24.84
+65/81 6bfd42cf0aba4f1a94ec11fa43e2dd92 boxes=300 forward_ms=24.52
+66/81 0af0feb5b1394b928dd13d648de898f5 boxes=300 forward_ms=25.11
+67/81 61d9340c5ad8418dafe7a4af1b96e6b9 boxes=300 forward_ms=24.95
+68/81 9e7683e8586542a1b6032980c45f15ce boxes=300 forward_ms=24.81
+69/81 cc57c1ea80fe46a7abddfdb15654c872 boxes=300 forward_ms=24.66
+70/81 4cf5d6c3f6ab42aab23f67b5a9782d1a boxes=300 forward_ms=25.17
+71/81 6d9984d09d52479e837da2fd09e192cc boxes=300 forward_ms=24.54
+72/81 38a28a3aaf2647f2a8c0e90e31267bf8 boxes=300 forward_ms=24.93
+73/81 6402fd1ffaf041d0b9162bd92a7ba0a2 boxes=300 forward_ms=24.94
+74/81 ce94ef7a0522468e81c0e2b3a2f1e12d boxes=300 forward_ms=24.46
+75/81 9fcdc52b791045e99c623c5fc643331f boxes=300 forward_ms=25.77
+76/81 1c9a906c40f6417bbe1cea06d6e55501 boxes=300 forward_ms=24.91
+77/81 a771effa2a2648d78096c3e92b95b129 boxes=300 forward_ms=23.62
+78/81 b9ea04a6121d4a8bb00199b885aa5ef0 boxes=300 forward_ms=23.67
+79/81 87e772078a494d42bd34cd16172808bc boxes=300 forward_ms=23.57
+80/81 f40544fd4f5d42abbcfa948eeaf86850 boxes=300 forward_ms=24.66
+81/81 281b92269fd648d4b52d06ac06ca6d65 boxes=300 forward_ms=25.44
+{
+  "frames": 81,
+  "scenes": [
+    "scene-0103",
+    "scene-0916"
+  ],
+  "split": "mini_val",
+  "cold_start_seconds": 5.030506905000038,
+  "precision": "official fp16 wrapper; custom aggregation float32",
+  "peak_allocated_bytes": 493068288,
+  "peak_reserved_bytes": 736100352,
+  "scene_resets": [
+    {
+      "index": 0,
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "cache_empty": true,
+      "prev_id": 0
+    },
+    {
+      "index": 41,
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "cache_empty": true,
+      "prev_id": 0
+    }
+  ],
+  "source_commit": "249ffbb695f4e9db628d953e2bf6d36de04bbb69",
+  "weight_sha256": "5beed4d4933ca6448d72586b0f8812863574289ff3c4192de71dc9f46a42f0ed",
+  "config_sha256": "22ae67545157a43786356b1e7c4f9fc50076ab29062acef71f4163a3609626dc",
+  "prediction_sha256": "06a03a3f08868be976eff0e91baf6c1ea2a17cba794d37db30cf8f7c030a2a0c",
+  "native_prediction_sha256": "33b49d6138d502c9c5580bf8a6d66d93b15c8a7a0c90d59ccfe642b83d03ba6c",
+  "packet_sha256": "85fba9112c777485268e116fb22d4dcee3a6533de60b70e2421d0abc547b6291",
+  "sample_tokens": [
+    "b5989651183643369174912bc5641d3b",
+    "0bb62a68055249e381b039bf54b0ccf8",
+    "07fad91090c746ccaa1b2bdb55329e20",
+    "ae5004bf4ebb4db0a84cb3c27bd398d1",
+    "ac8b4d49731d43289579f014cb7c97ef",
+    "c1eed31234b94e9f8e22fbf3428b0ac2",
+    "edba7d0cf1c64d2a9c8a5ebddab507a9",
+    "a5afebb0aa5e4d7c95665788ce51ec58",
+    "5b7cb170eee6468aa1fdbd3abcf63c5a",
+    "d8251bbc2105497ab8ec80827d4429aa",
+    "048a45dd2cf54aa5808d8ccc85731d44",
+    "858a1ece22cf45d9bc71e42336604b78",
+    "372725a4b00e49c78d6d0b1c4a38b6e0",
+    "61a7bd24f88a46c2963280d8b13ac675",
+    "609d5177362340458a3bfd4949cd1e64",
+    "b1303058fa624645b753d7283d70de45",
+    "a19a80c905674faab7203a3a4e0f5246",
+    "b6c420c3a5bd4a219b1cb82ee5ea0aa7",
+    "8092909473464f80b9f791a4d31ddcb8",
+    "e174cb43655f49dab7ffa27b973670e3",
+    "6ff9723a60bf4e14b328b3b19f04dc32",
+    "06be0e3b665c44fa8d17d9f4770bdf9c",
+    "9150678870764c1b87a649a25939c61b",
+    "8573a885a7cb41d185c05029eeb9a54e",
+    "55c258972acb4300a3a6077a531ab050",
+    "44237858a539457da65822bfcf58c414",
+    "8cd36e9531fb4eba8e6ac1d666c4641c",
+    "7bebe3c9be714f02837f8617c56df122",
+    "4b894442c95141f9affd731d9da7b43c",
+    "e00dc15130dc44e796687baadd076ae4",
+    "e63b83b436a0479db7362338cdfab118",
+    "c567f9b8e9f34817acdc9c49d791c557",
+    "8e352d4a6c6f40c8ad4f10a3d2c3f158",
+    "841dd6709e9b4d7c9d6bf888f1fe6d7e",
+    "e54b784a608644a2804fcf800c7499f7",
+    "a1289b27ca1d41deb6fc982be9a3d03c",
+    "e6e877f31dd447199b56cae07f86daad",
+    "cb4e6195faad467094fbd4d0a9e960e9",
+    "7f594234e8034228b1a7d727f1981e09",
+    "9cdbf5ff7f294549aea0a4307e5d104a",
+    "b4ff30109dd14c89b24789dc5713cf8c",
+    "3e8750f331d7499e9b5123e9eb70f2e2",
+    "3950bd41f74548429c0f7700ff3d8269",
+    "c5f58c19249d4137ae063b0e9ecd8b8e",
+    "700c1a25559b4433be532de3475e58a9",
+    "747aa46b9a4641fe90db05d97db2acea",
+    "f4f86af4da3b49e79497deda5c5f223a",
+    "6832e717621341568c759151b5974512",
+    "c59e60042a8643e899008da2e446acca",
+    "fa65a298c01f44e7a182bbf9e5fe3697",
+    "a98fba72bde9433fb882032d18aedb2e",
+    "b6b0d9f2f2e14a3aaa2c8aedeb1edb69",
+    "796b1988dd254f74bf2fb19ba9c5b8c6",
+    "0d0700a2284e477db876c3ee1d864668",
+    "de7593d76648450e947ba0c203dee1b0",
+    "f753d3f87e5b40af87ff2cbf7c8e7082",
+    "b22fa0b3c34f47b6a360b60f35d5d567",
+    "0a0d6b8c2e884134a3b48df43d54c36a",
+    "8e9c2cba0ee74056aa3746e8391d54a9",
+    "fdc39b23ab4242eda6ec5e1e6574fe33",
+    "9ee4020153674b9e9943d395ff8cfdf3",
+    "5b03af7a953245b5a3b23191ed4da62a",
+    "d0ecf474e0e64950aa265cd44b9c9d75",
+    "456ec36cb4a44ca78f36fbd90c0c34fa",
+    "6bfd42cf0aba4f1a94ec11fa43e2dd92",
+    "0af0feb5b1394b928dd13d648de898f5",
+    "61d9340c5ad8418dafe7a4af1b96e6b9",
+    "9e7683e8586542a1b6032980c45f15ce",
+    "cc57c1ea80fe46a7abddfdb15654c872",
+    "4cf5d6c3f6ab42aab23f67b5a9782d1a",
+    "6d9984d09d52479e837da2fd09e192cc",
+    "38a28a3aaf2647f2a8c0e90e31267bf8",
+    "6402fd1ffaf041d0b9162bd92a7ba0a2",
+    "ce94ef7a0522468e81c0e2b3a2f1e12d",
+    "9fcdc52b791045e99c623c5fc643331f",
+    "1c9a906c40f6417bbe1cea06d6e55501",
+    "a771effa2a2648d78096c3e92b95b129",
+    "b9ea04a6121d4a8bb00199b885aa5ef0",
+    "87e772078a494d42bd34cd16172808bc",
+    "f40544fd4f5d42abbcfa948eeaf86850",
+    "281b92269fd648d4b52d06ac06ca6d65"
+  ],
+  "camera_order": [
+    "CAM_FRONT",
+    "CAM_FRONT_RIGHT",
+    "CAM_FRONT_LEFT",
+    "CAM_BACK",
+    "CAM_BACK_LEFT",
+    "CAM_BACK_RIGHT"
+  ],
+  "image_shape": [
+    1,
+    6,
+    3,
+    256,
+    704
+  ],
+  "state_tests": {
+    "serialized_resume_max_abs": {
+      "boxes_3d": 9.918212890625e-05,
+      "scores_3d": 2.3633241653442383e-05,
+      "labels_3d": 0.0,
+      "cls_scores": 3.8623809814453125e-05,
+      "instance_ids": 0.0
+    },
+    "reset_max_abs": {
+      "boxes_3d": 6.413459777832031e-05,
+      "scores_3d": 1.0982155799865723e-05,
+      "labels_3d": 0.0,
+      "cls_scores": 1.4871358871459961e-05,
+      "instance_ids": 0.0
+    },
+    "state_keys": [
+      "cached_feature",
+      "cached_anchor",
+      "metas",
+      "mask",
+      "confidence",
+      "temp_confidence",
+      "instance_id",
+      "prev_id"
+    ],
+    "checkpoint_frame": 1,
+    "test_frame": 2,
+    "bitwise_equal": false,
+    "initial_1e_5_check_passed": false,
+    "tolerance_note": "Upstream CUDA forward uses atomicAdd; numerical equivalence 1e-3 boxes, 1e-4 scores; IDs and classes exact. Initial 1e-5 check was too strict and is retained above."
+  },
+  "timing": {
+    "e2e_ms": {
+      "mean": 219.2269554937939,
+      "p50": 217.0209179998892,
+      "p95": 224.77321499991376,
+      "first": 220.33905799980857
+    },
+    "forward_with_decode_d2h_ms": {
+      "mean": 24.392207790130254,
+      "p50": 24.46387899999536,
+      "p95": 25.66087900004277,
+      "first": 23.10126600013973
+    },
+    "preprocess_ms": {
+      "mean": 175.7283149753462,
+      "p50": 174.99719900024502,
+      "p95": 180.5895289999171,
+      "first": 179.3108779997965
+    },
+    "h2d_ms": {
+      "mean": 1.0619548271941672,
+      "p50": 1.014219000353478,
+      "p95": 1.3600869997389964,
+      "first": 1.2407269996401737
+    },
+    "standardize_ms": {
+      "mean": 18.04011150613439,
+      "p50": 16.528901999663503,
+      "p95": 17.255452999961562,
+      "first": 16.682166999999026
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "status": "passed",
+  "export_rrd_sha256": "e3ec01057816ddc11e150cba3e620e6aa08e81d7cda9ecd68cb079726f09b114",
+  "url": "http://127.0.0.1:9095/?url=http%3A%2F%2F127.0.0.1%3A9094%2Fdeployment_4090.rrd&renderer=webgl&persist=0",
+  "title": "Rerun Viewer",
+  "renderer": {
+    "backend": "WebGL2",
+    "renderer": "ANGLE (NVIDIA Corporation, NVIDIA GeForce RTX 4090/PCIe/SSE2, OpenGL 4.5.0)",
+    "max_color_attachments": 8
+  },
+  "checks": [
+    {
+      "recording": "6685e64a72bb469c85c9eb011a8f42c3",
+      "timeline": "frame",
+      "frame": 0,
+      "playing": false,
+      "range": {
+        "min": 0,
+        "max": 38
+      },
+      "panic": false
+    },
+    {
+      "recording": "6685e64a72bb469c85c9eb011a8f42c3",
+      "timeline": "frame",
+      "frame": 19,
+      "playing": false,
+      "range": {
+        "min": 0,
+        "max": 38
+      },
+      "panic": false
+    },
+    {
+      "recording": "6685e64a72bb469c85c9eb011a8f42c3",
+      "timeline": "frame",
+      "frame": 38,
+      "playing": false,
+      "range": {
+        "min": 0,
+        "max": 38
+      },
+      "panic": false
+    }
+  ],
+  "page_errors": [],
+  "console": [
+    {
+      "type": "warning",
+      "text": "using deprecated parameters for the initialization function; pass a single object instead"
+    },
+    {
+      "type": "warning",
+      "text": "found 0 values for \"notebook\" query. Expected one or none. Defaulting to \"false\"."
+    },
+    {
+      "type": "warning",
+      "text": "[eframe::web::app_runner] eframe-0.31.1/src/web/app_runner.rs:256: Unhandled egui viewport command: RequestUserAttention(Informational) - not implemented in web backend"
+    },
+    {
+      "type": "warning",
+      "text": "[eframe::web::app_runner] eframe-0.31.1/src/web/app_runner.rs:256: Unhandled egui viewport command: RequestUserAttention(Informational) - not implemented in web backend"
+    },
+    {
+      "type": "warning",
+      "text": "[eframe::web::app_runner] eframe-0.31.1/src/web/app_runner.rs:256: Unhandled egui viewport command: RequestUserAttention(Informational) - not implemented in web backend"
+    }
+  ]
+}

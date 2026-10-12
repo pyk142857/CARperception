@@ -1,0 +1,83 @@
+{
+  "status": "passed",
+  "export_rrd_sha256": "e3ec01057816ddc11e150cba3e620e6aa08e81d7cda9ecd68cb079726f09b114",
+  "browser": "System Chrome / Playwright; Browser plugin not available",
+  "url": "http://127.0.0.1:9094/",
+  "title": "CARperception \u00b7 4090 measured deployment",
+  "checks": [
+    {
+      "model": "bevfusion_reference",
+      "frame": 0,
+      "token": "ca9a282c9e77460f8360f564131a8af5 | 1532402927647951 us",
+      "image_loaded": true
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 19,
+      "token": "b26e791522294bec90f86fd72226e35c | 1532402937198682 us",
+      "image_loaded": true
+    },
+    {
+      "model": "bevfusion_reference",
+      "frame": 38,
+      "token": "ed5fc18c31904f96a8f0dbb99ff069c0 | 1532402946797517 us",
+      "image_loaded": true
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 0,
+      "token": "ca9a282c9e77460f8360f564131a8af5 | 1532402927647951 us",
+      "image_loaded": true
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 19,
+      "token": "b26e791522294bec90f86fd72226e35c | 1532402937198682 us",
+      "image_loaded": true
+    },
+    {
+      "model": "bevfusion_tensorrt",
+      "frame": 38,
+      "token": "ed5fc18c31904f96a8f0dbb99ff069c0 | 1532402946797517 us",
+      "image_loaded": true
+    },
+    {
+      "model": "sparse4d",
+      "frame": 0,
+      "token": "ca9a282c9e77460f8360f564131a8af5 | 1532402927647951 us",
+      "image_loaded": true
+    },
+    {
+      "model": "sparse4d",
+      "frame": 19,
+      "token": "b26e791522294bec90f86fd72226e35c | 1532402937198682 us",
+      "image_loaded": true
+    },
+    {
+      "model": "sparse4d",
+      "frame": 38,
+      "token": "ed5fc18c31904f96a8f0dbb99ff069c0 | 1532402946797517 us",
+      "image_loaded": true
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 0,
+      "token": "ca9a282c9e77460f8360f564131a8af5 | 1532402927647951 us",
+      "image_loaded": true
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 19,
+      "token": "b26e791522294bec90f86fd72226e35c | 1532402937198682 us",
+      "image_loaded": true
+    },
+    {
+      "model": "gaussianworld",
+      "frame": 38,
+      "token": "ed5fc18c31904f96a8f0dbb99ff069c0 | 1532402946797517 us",
+      "image_loaded": true
+    }
+  ],
+  "page_errors": [],
+  "console": []
+}

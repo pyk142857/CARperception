@@ -1,0 +1,4 @@
+[ 89%] Built target bevfusion_core
+[ 94%] Building CXX object CMakeFiles/pybev.dir/src/python.cpp.o
+[100%] Linking CXX shared library libpybev.so
+[100%] Built target pybev

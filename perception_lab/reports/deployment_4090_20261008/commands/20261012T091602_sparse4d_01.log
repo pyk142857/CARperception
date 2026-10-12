@@ -1,0 +1,113 @@
+[
+  {
+    "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+    "frame_index": 0,
+    "cameras": [
+      {
+        "camera": "CAM_FRONT",
+        "sensor_to_lidar_inverse_max_abs": 6.722400414105323e-14,
+        "camera_lidar_timestamp_delta_us": -35491
+      },
+      {
+        "camera": "CAM_FRONT_RIGHT",
+        "sensor_to_lidar_inverse_max_abs": 1.857403120197887e-13,
+        "camera_lidar_timestamp_delta_us": -27612
+      },
+      {
+        "camera": "CAM_FRONT_LEFT",
+        "sensor_to_lidar_inverse_max_abs": 4.3595682619468334e-13,
+        "camera_lidar_timestamp_delta_us": -43107
+      },
+      {
+        "camera": "CAM_BACK",
+        "sensor_to_lidar_inverse_max_abs": 1.0014211682118912e-13,
+        "camera_lidar_timestamp_delta_us": -10426
+      },
+      {
+        "camera": "CAM_BACK_LEFT",
+        "sensor_to_lidar_inverse_max_abs": 8.054668043655511e-14,
+        "camera_lidar_timestamp_delta_us": -528
+      },
+      {
+        "camera": "CAM_BACK_RIGHT",
+        "sensor_to_lidar_inverse_max_abs": 3.2807090377673376e-13,
+        "camera_lidar_timestamp_delta_us": -20058
+      }
+    ],
+    "native_ego_roundtrip_center_max_abs": 2.1316282072803006e-14
+  },
+  {
+    "sample_token": "b26e791522294bec90f86fd72226e35c",
+    "frame_index": 19,
+    "cameras": [
+      {
+        "camera": "CAM_FRONT",
+        "sensor_to_lidar_inverse_max_abs": 2.0450308113595383e-13,
+        "camera_lidar_timestamp_delta_us": -36222
+      },
+      {
+        "camera": "CAM_FRONT_RIGHT",
+        "sensor_to_lidar_inverse_max_abs": 3.1086244689504383e-13,
+        "camera_lidar_timestamp_delta_us": -28343
+      },
+      {
+        "camera": "CAM_FRONT_LEFT",
+        "sensor_to_lidar_inverse_max_abs": 9.126033262418787e-14,
+        "camera_lidar_timestamp_delta_us": -43838
+      },
+      {
+        "camera": "CAM_BACK",
+        "sensor_to_lidar_inverse_max_abs": 8.359979375427429e-14,
+        "camera_lidar_timestamp_delta_us": -11157
+      },
+      {
+        "camera": "CAM_BACK_LEFT",
+        "sensor_to_lidar_inverse_max_abs": 1.628142065612792e-13,
+        "camera_lidar_timestamp_delta_us": -1259
+      },
+      {
+        "camera": "CAM_BACK_RIGHT",
+        "sensor_to_lidar_inverse_max_abs": 3.910760604242114e-13,
+        "camera_lidar_timestamp_delta_us": -20789
+      }
+    ],
+    "native_ego_roundtrip_center_max_abs": 1.4210854715202004e-14
+  },
+  {
+    "sample_token": "ed5fc18c31904f96a8f0dbb99ff069c0",
+    "frame_index": 38,
+    "cameras": [
+      {
+        "camera": "CAM_FRONT",
+        "sensor_to_lidar_inverse_max_abs": 2.98734127712752e-13,
+        "camera_lidar_timestamp_delta_us": -35057
+      },
+      {
+        "camera": "CAM_FRONT_RIGHT",
+        "sensor_to_lidar_inverse_max_abs": 3.6204372833026355e-13,
+        "camera_lidar_timestamp_delta_us": -27178
+      },
+      {
+        "camera": "CAM_FRONT_LEFT",
+        "sensor_to_lidar_inverse_max_abs": 2.544631172440859e-13,
+        "camera_lidar_timestamp_delta_us": -42673
+      },
+      {
+        "camera": "CAM_BACK",
+        "sensor_to_lidar_inverse_max_abs": 2.9302298434896734e-13,
+        "camera_lidar_timestamp_delta_us": -9992
+      },
+      {
+        "camera": "CAM_BACK_LEFT",
+        "sensor_to_lidar_inverse_max_abs": 1.9340085088970227e-13,
+        "camera_lidar_timestamp_delta_us": -94
+      },
+      {
+        "camera": "CAM_BACK_RIGHT",
+        "sensor_to_lidar_inverse_max_abs": 2.0483614804334138e-13,
+        "camera_lidar_timestamp_delta_us": -19624
+      }
+    ],
+    "native_ego_roundtrip_center_max_abs": 2.1316282072803006e-14
+  }
+]

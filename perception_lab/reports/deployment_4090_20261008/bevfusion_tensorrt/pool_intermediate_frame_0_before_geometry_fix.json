@@ -1,0 +1,96 @@
+{
+  "scope": "real first-frame camera pre-downsample pooled BEV tensor; includes upstream camera/depth FP16 and geometry effects, not isolated pooling precision",
+  "frame": 0,
+  "reference_sha256": "54bd75e2f53e43f6105156ea79024dab87c0cf8a20c17f28d5a40a96747e9044",
+  "candidate_capture_sha256": "524558cf79bd3870391bfa591b9fab3f2c3ae297f2444c0747fd3b7da9b4a028",
+  "reference_shape": [
+    1,
+    80,
+    1,
+    360,
+    360
+  ],
+  "candidate_shape": [
+    1,
+    80,
+    360,
+    360
+  ],
+  "layout_alignment": "PyTorch B,C,D,X,Y with D=1 collapsed by concatenating depth -> CUDA N,C,X,Y; no spatial transpose",
+  "elements": 10368000,
+  "nan_or_inf": 0,
+  "absolute_error": {
+    "mean": 0.00039333131280727684,
+    "p50": 4.6864908654242754e-05,
+    "p95": 0.00131988525390625,
+    "p99": 0.0040529301017522695,
+    "max": 1.45013427734375
+  },
+  "reference_abs_p99": 0.21346654355525962,
+  "candidate_abs_p99": 0.2132568359375,
+  "relative_error_on_reference_abs_gt001_p95": 0.056679725646972656,
+  "normalized_rmse": 0.009713677689433098,
+  "cosine_similarity": 0.9999528527259827,
+  "fixed_tolerance": {
+    "atol": 0.05,
+    "rtol": 0.02,
+    "exceeded_elements": 1580,
+    "passed_all_elements": false
+  },
+  "reference_inputs": {
+    "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+    "points": 248834,
+    "image_shape": [
+      1,
+      6,
+      3,
+      256,
+      704
+    ],
+    "sweeps": [],
+    "first_frame_pad_empty": true
+  },
+  "candidate_inputs": {
+    "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+    "points": 248834,
+    "image_shape": [
+      1,
+      6,
+      3,
+      256,
+      704
+    ],
+    "fp32_image_sha256": "fc48b15aa6a58393f3e39080d14d6691a33e95b1f43026d49115405230c5e872",
+    "fp32_points_sha256": "1059c51f8810a86d2f4ec2918425f8f42d9044732193587b3ea060197025046d",
+    "matrices_sha256": [
+      "b1999070046484f2811664e31efaf0ceb318a17345128688b99838f09d78522f",
+      "c49bd22f7226ab8a63239e6b56ebfa2a02e90be41530143d4a2d30942d9a9fb3",
+      "fd3901b0a573b85c995cb75b604cf4b6f1813fcff14d8d1754400e748bcbba30",
+      "f83a0def6ecc3b75724dba0e6b6dd08a87904f4e0946f3e987671d9e97bb496b"
+    ]
+  },
+  "reference_valid_feature_rows": 1835478,
+  "candidate_valid_feature_rows": 1835477,
+  "support_cells": {
+    "reference": 97326,
+    "candidate": 97325,
+    "xor": 3
+  },
+  "transpose_control_mean_abs": 0.05091024562716484,
+  "upstream_last_interval_audit": {
+    "last_interval": [
+      1993722,
+      1993727,
+      129512
+    ],
+    "full_sorted_index_count": 1993728,
+    "omitted_last_depth_index": 664541,
+    "omitted_contribution_abs_max": 0.04948452115058899,
+    "output_xy": [
+      359,
+      272
+    ],
+    "source": "camera-geometry.cu last interval end=numel_geometry-1; pooling uses i<interval.y",
+    "changed": false
+  }
+}

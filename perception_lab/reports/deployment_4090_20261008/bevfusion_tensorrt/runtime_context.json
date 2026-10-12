@@ -1,0 +1,20 @@
+{
+  "captured_at": "2026-10-12T09:14:10",
+  "loadavg": "8.05 9.24 7.63 3/4830 145131",
+  "process_cpu": [
+    "    PID COMMAND         %CPU %MEM",
+    "  58890 code            20.1  0.4",
+    "  48201 sunloginclient_ 14.6  0.1",
+    "  99934 chrome          14.6  1.0",
+    "  61687 code            12.5  1.5",
+    "  57411 chrome          10.5  1.1",
+    "  52252 chrome           9.7  0.4",
+    "   1905 whoopsie         9.0  0.0",
+    "  60617 code             8.4  1.1",
+    "  12294 gnome-shell      8.1  0.7",
+    "   1560 Xorg             6.7  0.1",
+    "  55208 verge-mihomo     5.5  0.1"
+  ],
+  "gpu": "name, temperature.gpu, clocks.current.sm [MHz], power.draw [W], memory.used [MiB], utilization.gpu [%]\nNVIDIA GeForce RTX 4090, 36, 450 MHz, 32.73 W, 836 MiB, 19 %\n",
+  "limitations": "Shared workstation; unrelated CPU/background/display processes retained. Final timings rerun after closing our SwiftShader QA. Snapshot is context, not full continuous telemetry."
+}
