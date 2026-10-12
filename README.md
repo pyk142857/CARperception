@@ -30,7 +30,7 @@ flowchart LR
 - 导出：同一 mini 前视图的 PyTorch GPU / ONNX Runtime GPU 数值校验。
 - 回放：原始前视图、三维检测、跟踪轨迹三栏同步；**2 fps 是播放速率，不是推理性能**。
 - MapTR 已完成 mini 场景 39 帧六相机推理及 Rerun 车道分隔线 / 道路边界 / 人行横道展示，详见 [实现与复现说明](perception_lab/MAPTR.md)。
-- BEVFormer、BEVFusion、CenterFusion、SurroundOcc、TensorRT 与训练作为扩展，尚未完成。
+- BEVFusion、TensorRT FP16、Sparse4D 与 GaussianWorld 已完成下方 4090 扩展实测，整体验收仍为 partial；BEVFormer、CenterFusion、SurroundOcc 与训练尚未完成。
 
 [下载教学回放视频](perception_lab/outputs/replay/mini_learning.mp4) · [学习顺序与逐步命令](perception_lab/LEARNING_GUIDE.md) · [当前工作状态](perception_lab/TASK_STATE.md)
 
@@ -92,7 +92,7 @@ envs/rerun/bin/python tools/deployment_visualize.py --serve
 | M12 ONNX 导出与部署 | [Netron 浏览器界面](https://netron.app/)；[Netron 本地安装](https://github.com/lutzroeder/netron#install) | 浏览器 / 桌面模型结构查看器；打开导出的 `.onnx` 查看算子、张量形状和连接。数值一致性与速度仍需单独测试 | ONNX 导出与数值校验已完成；Netron 可自行打开模型，未嵌入项目 |
 | M14 教学报告与回放 | [本项目同步回放视频](perception_lab/outputs/replay/mini_learning.mp4)；[教学页面生成器](perception_lab/tools/mini_learning.py)；[运行说明](perception_lab/LEARNING_GUIDE.md) | MP4 播放器 / 本地 HTML；同帧查看前视相机、检测与跟踪，并查看各模块静态结果 | 已生成 39 帧同步视频和本地 HTML；未托管为在线应用 |
 
-### 扩展模块（尚未接入本教学闭环）
+### 扩展模型入口（接入状态见实测报告）
 
 | 模块 | 官方可视化链接 | 界面形态与用途 |
 |---|---|---|
