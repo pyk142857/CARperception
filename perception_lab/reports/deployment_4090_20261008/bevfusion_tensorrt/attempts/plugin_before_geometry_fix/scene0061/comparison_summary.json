@@ -1,0 +1,93 @@
+{
+  "matching": "class constrained Hungarian 3D centre distance; unmatched reported separately",
+  "radius_m": 2.0,
+  "summary": {
+    "center_m": {
+      "mean": 0.16183193165594573,
+      "p50": 0.03764916595527633,
+      "p95": 0.9159491366384003,
+      "max": 1.9962503312365472
+    },
+    "size_m": {
+      "mean": 0.07270838359458115,
+      "p50": 0.014025509357452393,
+      "p95": 0.3038196206092831,
+      "max": 5.768440008163452
+    },
+    "yaw_rad": {
+      "mean": 0.06481594834418909,
+      "p50": 0.011622846126556396,
+      "p95": 0.22620289921760556,
+      "max": 3.1383405923843384
+    },
+    "score_abs": {
+      "mean": 0.010724729609614419,
+      "p50": 0.003081992268562317,
+      "p95": 0.03957589194178579,
+      "max": 0.559153139591217
+    },
+    "velocity_mps": {
+      "mean": 0.03519540909008473,
+      "p50": 0.00041838772109041014,
+      "p95": 0.1534149527135987,
+      "max": 2.2686137757961387
+    }
+  },
+  "source": "measured",
+  "thresholds": {
+    "map_drop_max": 0.005,
+    "nds_drop_max": 0.005,
+    "same_class_match_radius_m": 2.0,
+    "diagnostic_p95_center_m": 0.2,
+    "diagnostic_p95_score_abs": 0.03,
+    "diagnostic_p95_size_m": 0.2,
+    "diagnostic_p95_yaw_rad": 0.1,
+    "diagnostic_p95_velocity_mps": 0.3,
+    "tensor_atol": 0.05,
+    "tensor_rtol": 0.02
+  },
+  "input_hashes": {
+    "reference": "7813146f2aae13e6adc54c42667c07540c7f58798ea82ae9c99bab9ddfca1697",
+    "candidate": "c207efc3518faca96f5e67bf87b9569bbd66305a22e1dde2ecd6572545afc383",
+    "reference_metrics": "9fee0690030c2456d18bbcf3a4d124222628d5274f13fae0395a4ea9205bea71",
+    "candidate_metrics": "84547bc7b5402fcac43a5a8539bdb2f152ab9268e6b4cd85eff012f694419d66",
+    "config": "12b17deee2ddd122f3cdd13350bb35f667220d4986c55ff9b6c74f938fdb280a"
+  },
+  "metrics": {
+    "mean_ap": {
+      "reference": 0.7117608071294532,
+      "candidate": 0.7105825719473752,
+      "delta": -0.0011782351820780468,
+      "drop": 0.0011782351820780468
+    },
+    "nd_score": {
+      "reference": 0.6223478195911297,
+      "candidate": 0.6218097500295242,
+      "delta": -0.0005380695616055142,
+      "drop": 0.0005380695616055142
+    }
+  },
+  "class_ap_deltas": {
+    "car": -0.0011509563532486888,
+    "truck": -0.0006043334455655414,
+    "bus": 0.0,
+    "trailer": 0.0,
+    "construction_vehicle": -0.0007942225975455797,
+    "pedestrian": 0.0009662336426173868,
+    "motorcycle": 0.0022723722517473677,
+    "bicycle": -0.013877056138002941,
+    "traffic_cone": 0.0016412620319651294,
+    "barrier": -0.0002356512127485999
+  },
+  "metric_budget_passed": true,
+  "geometry_diagnostics": {
+    "center_m": false,
+    "size_m": false,
+    "yaw_rad": false,
+    "score_abs": false,
+    "velocity_mps": true
+  },
+  "status": "failed",
+  "frame_count": 39,
+  "matched_box_count": 7298
+}
