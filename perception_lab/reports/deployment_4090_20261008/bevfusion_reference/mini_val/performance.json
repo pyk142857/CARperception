@@ -1,0 +1,56 @@
+{
+  "frames": 81,
+  "cold_start_seconds": 3.4311297249998916,
+  "warmup": 3,
+  "allocated_peak_bytes": 2342679552,
+  "reserved_peak_bytes": 3074424832,
+  "branch_executions": {
+    "camera": 84,
+    "lidar": 84,
+    "fusion": 84
+  },
+  "timings": {
+    "preprocess_ms": {
+      "mean": 135.2610106419849,
+      "p50": 113.67758400001549,
+      "p95": 201.93846200004373,
+      "first": 129.0695569998661
+    },
+    "h2d_ms": {
+      "mean": 1.8887452345490692,
+      "p50": 1.8795089999912307,
+      "p95": 2.4372459999995044,
+      "first": 2.5363290001223504
+    },
+    "forward_sync_ms": {
+      "mean": 134.42219985185943,
+      "p50": 134.74026099993353,
+      "p95": 146.2561089999781,
+      "first": 108.30081499989319
+    },
+    "forward_cuda_event_ms": {
+      "mean": 134.37804365746769,
+      "p50": 134.69549560546875,
+      "p95": 146.2021484375,
+      "first": 108.25308990478516
+    },
+    "d2h_standardize_ms": {
+      "mean": 20.311091037043568,
+      "p50": 18.327920000047015,
+      "p95": 23.509439999997994,
+      "first": 19.149011000081373
+    },
+    "end_to_end_ms": {
+      "mean": 291.883046765437,
+      "p50": 269.51346400005605,
+      "p95": 401.97601800014127,
+      "first": 259.055711999963
+    }
+  },
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "torch": "1.13.1+cu117",
+  "cuda_runtime": "11.7",
+  "cudnn_allow_tf32": true,
+  "matmul_allow_tf32": false,
+  "boundaries": "forward includes upstream output.cpu transfers; preprocessing includes raw sensor IO; JSON disk writes excluded"
+}
