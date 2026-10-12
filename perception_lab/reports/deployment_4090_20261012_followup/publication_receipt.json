@@ -1,5 +1,5 @@
 {
-  "status": "original_experiment_published_followup_in_progress",
+  "status": "original_and_followup_published_verified",
   "source_commit": "ce244828fe5ffd73753ed672dfaf665f43502999",
   "main_before": "71604c1164c511334d9e56390a69ada14241dfe8",
   "transport_before": "51d31c44838457e67618dd3c8804479a28559d80",
@@ -84,5 +84,96 @@
   "merged_readme": true,
   "all_original_paths_main_tree_verified": 571,
   "inventory": "publication_inventory_verified.json",
-  "original_experiment_publication": "passed"
+  "original_experiment_publication": "passed",
+  "followup_verified_main": "9e2f32835cee137943f0d759aa47003f2ac755fc",
+  "final_main_evidence_snapshot": "9e2f32835cee137943f0d759aa47003f2ac755fc",
+  "receipt_scope": "This receipt is committed after verification as a descendant of final_main_evidence_snapshot; its own commit/hash is intentionally not self-referenced. All substantive results and README are covered by this snapshot.",
+  "followup_files_verified": 106,
+  "followup_transport_record": "followup_transport.json",
+  "followup_tree_verified": true,
+  "followup_core_files": [
+    {
+      "path": "perception_lab/reports/deployment_4090_20261012_followup/metrics.csv",
+      "bytes": 528,
+      "sha256": "4386bc0436219adbb8a6f73ed70ceb54becf491d9509cbcdd5a9363100adba11",
+      "git_blob": "db0d8e8ca8bcc3f749809771bb15c4b512423f3f",
+      "remote_bytes_verified": true
+    },
+    {
+      "path": "perception_lab/reports/deployment_4090_20261012_followup/report.md",
+      "bytes": 7510,
+      "sha256": "95d383f64dbf93203182035790f3d49a96fba5615b305b3fb94f2b55fde1d4f8",
+      "git_blob": "b636105d6415665b72e3e89087f0f6a6af8a7f68",
+      "remote_bytes_verified": true
+    },
+    {
+      "path": "perception_lab/reports/deployment_4090_20261012_followup/run_commands.md",
+      "bytes": 1713,
+      "sha256": "7566ac9ea9d17aeec19c55add8d2ef071e6bff6518dc9e172416fb947673dc89",
+      "git_blob": "61de9bd7b7feba14bdb06d73da22cd504acadc29",
+      "remote_bytes_verified": true
+    },
+    {
+      "path": "perception_lab/reports/deployment_4090_20261012_followup/status.json",
+      "bytes": 991,
+      "sha256": "b0176a0a4877c3cf7f77e775baabe3695ea816eb95095b886e94811082d7eb56",
+      "git_blob": "1ba58fab4a2623696ab0d5ae05cec86f91566e83",
+      "remote_bytes_verified": true
+    },
+    {
+      "path": "perception_lab/tools/bevfusion_reference_followup.py",
+      "bytes": 38593,
+      "sha256": "cedbdb5c44b9b317cccacda0b2d32b37bab9465eea5aaf9c26e5ac1ff9cdd8c4",
+      "git_blob": "cf08cebcc318a0647fab6ce3d7b24beea2493df5",
+      "remote_bytes_verified": true
+    },
+    {
+      "path": "perception_lab/tools/bevfusion_trt_followup.py",
+      "bytes": 35303,
+      "sha256": "3ddf0b2a6051cc829dc867bd2ba82f44be4edb88a79e28b9f0bfde644b5d9a8a",
+      "git_blob": "4da701efb8efe5bd8e93d73dd9da8c28ec5d29f5",
+      "remote_bytes_verified": true
+    },
+    {
+      "path": "perception_lab/reports/deployment_4090_20261012_followup/reference/replay/summary.json",
+      "bytes": 202700,
+      "sha256": "a68e8da1e505ee76eb72198980212f04a9480e7f38057aaab225f9204c97822f",
+      "git_blob": "6d95966c9b09b0dd41b72cf4cbf3c49e1c31bc23",
+      "remote_bytes_verified": true
+    },
+    {
+      "path": "perception_lab/reports/deployment_4090_20261012_followup/trt/candidate_source_cases.json",
+      "bytes": 824772,
+      "sha256": "dee5e66b193ee0f22b8ac9bfb0e12431ca98ea9f9ab7d259ebb201a922d68a2d",
+      "git_blob": "f7916d7323a3c023e04bf3d264dd378159e8201c",
+      "remote_bytes_verified": true
+    },
+    {
+      "path": "README.md",
+      "bytes": 34729,
+      "sha256": "2b77b4001e193075e32658e3416a40027bd03da75801342018da1d90b08c4ebc",
+      "git_blob": "f1235b4a80290b023a74b65601d2e675e437099f",
+      "remote_bytes_verified": true
+    },
+    {
+      "path": "perception_lab/reports/deployment_4090_20261012_followup/final_review.md",
+      "bytes": 1967,
+      "sha256": "da6008421d1375d82b1e376f8996be190997c999fe87636aa48c76a2dc4d4652",
+      "git_blob": "3d712880369492e2dcea1fa8a05d64b403648c28",
+      "remote_bytes_verified": true
+    }
+  ],
+  "unpublished_artifacts": {
+    "reason": "excluded large reproducible artifacts, not missing small reports",
+    "paths": [
+      "perception_lab/runs/deployment_4090_20261012_followup/reference/",
+      "perception_lab/runs/deployment_4090_20261012_followup/trt/"
+    ],
+    "identity_records": [
+      "reference/execution.json",
+      "reference/replay/execution.json",
+      "trt/artifact_identity.json",
+      "trt/module_replay.json"
+    ]
+  }
 }
