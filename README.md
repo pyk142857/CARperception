@@ -1,5 +1,13 @@
 # CARperception
 
+## 2026-10-12：现有数据匹配的替代优化路线（计划）
+
+新候选为 D-FINE-S（COCO 2D 检测）、IS-Fusion（六相机–LiDAR 3D 检测）、SimpleTrack（2 Hz 3D 跟踪）和 SphereFormer（点云语义分割）。复用既有 COCO/nuScenes/lidarseg 真值，先跑原生参考，再做预取、坐标转换与图像后端优化。旧基线和 GaussianWorld 的占用真值阻塞状态保留。
+
+- [执行指令](perception_lab/instruction/20261012_02_data_matched_optimization.md)
+- [方案、数据匹配与官方资源](perception_lab/reports/data_matched_optimization_20261012/plan.md)
+- **当前仅发布计划，尚未执行本轮新模型实验。** 权重下载、SM89 编译、单帧显存和真实精度/速度须由本地执行核验。
+
 ## 2026-10-12：部署发布恢复与 FP16 补查
 
 原部署报告与代码已恢复发布；新增四异常帧的同后端重复、相同输入模块回放、几何映射与候选来源诊断。mini_val 精度下降满足原预算，但全候选一致性仍未通过，未替换生产 engine。Pooling 无稳定提速，继续使用 upstream；GaussianWorld 占用评估仍缺匹配真值。
