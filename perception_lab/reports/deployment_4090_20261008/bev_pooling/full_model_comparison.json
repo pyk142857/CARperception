@@ -1,0 +1,295 @@
+{
+  "status": "passed",
+  "scope": "candidate pooling versus identical upstream CUDA/TensorRT model; independent of TensorRT-versus-PyTorch acceptance",
+  "model_precision": "fp16",
+  "config_sha256": "12b17deee2ddd122f3cdd13350bb35f667220d4986c55ff9b6c74f938fdb280a",
+  "thresholds": {
+    "map_drop_max": 0.005,
+    "nds_drop_max": 0.005,
+    "same_class_match_radius_m": 2.0,
+    "diagnostic_p95_center_m": 0.2,
+    "diagnostic_p95_score_abs": 0.03,
+    "diagnostic_p95_size_m": 0.2,
+    "diagnostic_p95_yaw_rad": 0.1,
+    "diagnostic_p95_velocity_mps": 0.3,
+    "tensor_atol": 0.05,
+    "tensor_rtol": 0.02
+  },
+  "splits": {
+    "scene0061": {
+      "status": "passed",
+      "frames": 39,
+      "invariant_checks": {
+        "config": true,
+        "packets": true,
+        "checkpoint": true,
+        "native_library": true,
+        "core_library": true,
+        "engines": true,
+        "onnx": true,
+        "actual_inputs": true,
+        "pooling_switch": true
+      },
+      "verified_provenance": {
+        "upstream": {
+          "predictions_sha256": "228feda27554463714f602df49df9e87110b440a1195b58d549ee83f3db09988",
+          "inference_manifest_sha256": "637e9b2e191f2c4f17a5a047fdd99345b8879579fe55bf671f80a950df654772",
+          "export_audit_sha256": "f80ae2111bfd7716f0308662eb4b8bd874d506ea5988e9acc514ea3e248ca9d2",
+          "official_predictions_sha256": "e263a23afaee43b0a3aff61d5de277d5b71b450c8add649aa98a4b330e18d4ea",
+          "metrics_summary_sha256": "cd1db775aed3b69681ee2931271d3762d44373272e9b853176fcabaa44b84b10",
+          "metrics_details_sha256": "0387b0aecdd9648099121c9544c0a7c43343931aec9d812ad8e71a3e7cb6a420"
+        },
+        "candidate": {
+          "predictions_sha256": "be31256b95d20f361ce20203ac39b77fbb0271ea141d0a815873bc7e256a061d",
+          "inference_manifest_sha256": "7cd1ca7475fd1fe310527f1db7e5ceadbb1bc2779e59ce467c87c703c716757e",
+          "export_audit_sha256": "4fe2fbfff1c5eef83092badd2236a9610d54f18931e045c77a2ec98c9c5233c2",
+          "official_predictions_sha256": "2f5e351b4a96117f6618bc7e07813ab0c2f0708d08307e78974ba8aecea1a154",
+          "metrics_summary_sha256": "524a2111e932b0b5fa4868dc352b1ca4a0d3576124f74c4eb27da3afaa3b6958",
+          "metrics_details_sha256": "249b0700183f0426b486fbe12a8c486660085ab32a677aa2a0aaa57845f90051"
+        }
+      },
+      "metrics": {
+        "mean_ap": {
+          "upstream": 0.7097061456558997,
+          "candidate": 0.7102283153713621,
+          "delta": 0.0005221697154623728
+        },
+        "nd_score": {
+          "upstream": 0.6213294508369912,
+          "candidate": 0.6215918885233611,
+          "delta": 0.0002624376863699096
+        }
+      },
+      "geometry_summary": {
+        "center_m": {
+          "mean": 0.035503040534597755,
+          "p50": 0.007324218750000011,
+          "p95": 0.15931586879593593,
+          "max": 1.8716146864458438
+        },
+        "size_m": {
+          "mean": 0.013690535621958462,
+          "p50": 0.005338907241821289,
+          "p95": 0.04873955249786377,
+          "max": 1.623934030532837
+        },
+        "yaw_rad": {
+          "mean": 0.008442058308779555,
+          "p50": 0.00215911865234375,
+          "p95": 0.030211210250854492,
+          "max": 3.1305543184280396
+        },
+        "score_abs": {
+          "mean": 0.0008635403121734214,
+          "p50": 0.00030517578125,
+          "p95": 0.00341796875,
+          "max": 0.0537109375
+        },
+        "velocity_mps": {
+          "mean": 0.006288404265769927,
+          "p50": 0.00035756210107514176,
+          "p95": 0.02131514570886637,
+          "max": 0.8721167032315809
+        }
+      },
+      "geometry_diagnostics": {
+        "center_m": true,
+        "size_m": true,
+        "yaw_rad": true,
+        "score_abs": true,
+        "velocity_mps": true
+      },
+      "class_ap_deltas": {
+        "car": 0.005850535384194999,
+        "truck": 0.00132617658273404,
+        "bus": 0.0,
+        "trailer": 0.0,
+        "construction_vehicle": -0.0004398505480547321,
+        "pedestrian": 0.0011613215382629827,
+        "motorcycle": -0.0015185185185185857,
+        "bicycle": -0.001254630501007381,
+        "traffic_cone": 0.00011953756041216401,
+        "barrier": -2.287434339853789e-05
+      },
+      "upstream_forward_ms": {
+        "mean": 10.594887615379543,
+        "p50": 10.568449000402325,
+        "p95": 12.126472499949159,
+        "first": 8.542237000256137
+      },
+      "candidate_forward_ms": {
+        "mean": 9.768317923084023,
+        "p50": 9.736707000229217,
+        "p95": 11.007404000156384,
+        "first": 9.736707000229217
+      },
+      "upstream_process_peak_mib": 1944,
+      "candidate_process_peak_mib": 1944,
+      "matched_boxes": 7771,
+      "unmatched_upstream": 20,
+      "unmatched_candidate": 20,
+      "reference_manifest_sha256": "637e9b2e191f2c4f17a5a047fdd99345b8879579fe55bf671f80a950df654772",
+      "candidate_manifest_sha256": "7cd1ca7475fd1fe310527f1db7e5ceadbb1bc2779e59ce467c87c703c716757e"
+    },
+    "mini_val": {
+      "status": "passed",
+      "frames": 81,
+      "invariant_checks": {
+        "config": true,
+        "packets": true,
+        "checkpoint": true,
+        "native_library": true,
+        "core_library": true,
+        "engines": true,
+        "onnx": true,
+        "actual_inputs": true,
+        "pooling_switch": true
+      },
+      "verified_provenance": {
+        "upstream": {
+          "predictions_sha256": "126f5fa0a8796b06e8803eb898fd1508949350bec72f9a44b95e15e04e2e4bf2",
+          "inference_manifest_sha256": "e6a8ad70779c2bb2070f7dc00078ccbf5fd57807af74f84c338db518a3f0cee8",
+          "export_audit_sha256": "31caae386c8773415ca887c309921bb1d1dcb76a3f6aa9ac5903c5a34edd7013",
+          "official_predictions_sha256": "bb736226141d349171334a153dd044102ae55d8d8120f04170fbabd5ee58986f",
+          "metrics_summary_sha256": "79066519abc99e8951374dd2f4e442c6bf5d9b880e7597aba6624bb3a7c6ef69",
+          "metrics_details_sha256": "57324e3d84f30426bcb618c52b57461590fa1a903a6dca0015c84df3266c56de"
+        },
+        "candidate": {
+          "predictions_sha256": "7de0c0b6c9e92293b3f7babf748621ce317e0725eac44ce4b91b915806314135",
+          "inference_manifest_sha256": "fbc2b922f861366f17e858ad902c2a82721f8840609774854d1fb375c12bf17c",
+          "export_audit_sha256": "a108cf92b01c3d942f5df07cdf82ed0d1a770f93e789b5831ea9c96ad24b7041",
+          "official_predictions_sha256": "ec5b54a97d953ea14be90b32fc66afc1d44c68e48c9e3dc4229a79a5e93b3dd8",
+          "metrics_summary_sha256": "9df2908e091606a567ab33c33789826b0a7613f7d67820e68c29a2e5e9e64c8e",
+          "metrics_details_sha256": "3c3f097e6741a850f62cd4b630e04e5961be35413a5d4ea60c006c2b7b63041f"
+        }
+      },
+      "metrics": {
+        "mean_ap": {
+          "upstream": 0.576407660895464,
+          "candidate": 0.576024849518427,
+          "delta": -0.00038281137703699564
+        },
+        "nd_score": {
+          "upstream": 0.5132377729242095,
+          "candidate": 0.5129405288139905,
+          "delta": -0.0002972441102189194
+        }
+      },
+      "geometry_summary": {
+        "center_m": {
+          "mean": 0.03169587988624718,
+          "p50": 0.009765624999999913,
+          "p95": 0.11867935690087801,
+          "max": 1.815702400593259
+        },
+        "size_m": {
+          "mean": 0.016868782464139212,
+          "p50": 0.006782993674278259,
+          "p95": 0.05625909566879271,
+          "max": 2.023979663848877
+        },
+        "yaw_rad": {
+          "mean": 0.013578713754237259,
+          "p50": 0.0031737089157106713,
+          "p95": 0.04828259348869319,
+          "max": 2.964229464530945
+        },
+        "score_abs": {
+          "mean": 0.0004764552201490772,
+          "p50": 9.1552734375e-05,
+          "p95": 0.00213623046875,
+          "max": 0.03173828125
+        },
+        "velocity_mps": {
+          "mean": 0.006368757808521118,
+          "p50": 0.0004992382992845623,
+          "p95": 0.022745419171250086,
+          "max": 0.8484370215132032
+        }
+      },
+      "geometry_diagnostics": {
+        "center_m": true,
+        "size_m": true,
+        "yaw_rad": true,
+        "score_abs": true,
+        "velocity_mps": true
+      },
+      "class_ap_deltas": {
+        "car": 0.0004230907849368526,
+        "truck": 0.00046186220323485294,
+        "bus": 0.0,
+        "trailer": 0.0,
+        "construction_vehicle": 0.0,
+        "pedestrian": -4.4992158484857825e-05,
+        "motorcycle": -0.0027067403548518554,
+        "bicycle": -2.6881540106105106e-05,
+        "traffic_cone": -0.0019344527050983995,
+        "barrier": 0.0
+      },
+      "upstream_forward_ms": {
+        "mean": 10.079444246929159,
+        "p50": 10.035647999757202,
+        "p95": 11.49713300037547,
+        "first": 10.569738999947731
+      },
+      "candidate_forward_ms": {
+        "mean": 9.54866938272859,
+        "p50": 9.465778000048886,
+        "p95": 10.612642000069172,
+        "first": 9.437418999823421
+      },
+      "upstream_process_peak_mib": 1944,
+      "candidate_process_peak_mib": 1944,
+      "matched_boxes": 16138,
+      "unmatched_upstream": 61,
+      "unmatched_candidate": 61,
+      "reference_manifest_sha256": "e6a8ad70779c2bb2070f7dc00078ccbf5fd57807af74f84c338db518a3f0cee8",
+      "candidate_manifest_sha256": "fbc2b922f861366f17e858ad902c2a82721f8840609774854d1fb375c12bf17c"
+    }
+  },
+  "paired": {
+    "status": "measured",
+    "rounds": 30,
+    "independent_warmup": 10,
+    "timing": "synchronized resident-core forward, including H2D and native box D2H; same preprocessed CPU FP16 image/point arrays; geometry updated once; no capture I/O, model reload, preprocessing or rendering",
+    "statistics": {
+      "upstream_ms": {
+        "mean": 8.466407566690274,
+        "p50": 8.332453999855716,
+        "p95": 9.443395250059439
+      },
+      "candidate_ms": {
+        "mean": 8.502395800072312,
+        "p50": 8.446905500022694,
+        "p95": 9.733642099968165
+      },
+      "speedup": {
+        "mean": 1.0011108097279198,
+        "p50": 0.9715290201950008,
+        "p95": 1.1625321552150558
+      }
+    },
+    "all_native_outputs_bitwise_equal": false,
+    "input_sha256": {
+      "images": "23b2cb38d27761e3428ec5f8dcea2c2df1f20ad60dfd6fb7eb8b8c74ef37f98d",
+      "points": "52c00c7bd3d1db21dba8d9452de20004fd62705760df6491885778f1fa144001"
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "mean_saved_ms": -0.03598823338203753,
+    "bootstrap_mean_saved_ms_95ci": [
+      -0.3499540800635259,
+      0.2822955141872777
+    ],
+    "bootstrap_seed": 4090,
+    "bootstrap_resamples": 10000,
+    "candidate_faster_pairs": 13,
+    "upstream_first_mean_saved_ms": 0.23932033336677705,
+    "candidate_first_mean_saved_ms": -0.3112968001308521,
+    "stable_speedup_supported": false,
+    "caveat": "Single fixed frame; inspect execution-order effects and do not extrapolate a whole-scene gain."
+  },
+  "stable_speedup_obtained": false,
+  "selected_default": "upstream",
+  "selection_reason": "Isolated pooling does not show consistent gain; keep upstream. Full-model paired mean-saving CI does not support a positive saving.",
+  "helper_sha256": "45cc7c71aa22412f1d146066feaf1ee83a27486419f8f136863b42040b5ba2af"
+}

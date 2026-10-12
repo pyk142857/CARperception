@@ -1,0 +1,82 @@
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
+Collecting torchpack==0.3.1
+  Downloading https://mirrors.aliyun.com/pypi/packages/e8/9e/ce231bd1d301c4d756a9caf5671895458aa1a77c98ae4276f140a47266c5/torchpack-0.3.1-py3-none-any.whl (34 kB)
+Collecting mpi4py
+  Downloading https://mirrors.aliyun.com/pypi/packages/b4/90/40619a2fd4bda50d38ca22da51106cae66d2573676a3029824ad9300093e/mpi4py-4.1.2-cp310-cp310-manylinux1_x86_64.manylinux_2_5_x86_64.whl (1.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 1.6 MB/s eta 0:00:00
+Requirement already satisfied: tqdm in ./perception_lab/envs/maptr/lib/python3.10/site-packages (from torchpack==0.3.1) (4.70.1)
+Requirement already satisfied: torchvision in ./perception_lab/envs/maptr/lib/python3.10/site-packages (from torchpack==0.3.1) (0.14.1)
+Requirement already satisfied: torch>=1.5.0 in ./perception_lab/envs/maptr/lib/python3.10/site-packages (from torchpack==0.3.1) (1.13.1)
+Collecting tensorboard
+  Downloading https://mirrors.aliyun.com/pypi/packages/37/4b/cd2eec9642781a8f5b2fb9994e3933a7b259ab18e9d49aeede9b5acf6311/tensorboard-2.21.0-py3-none-any.whl (5.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.5/5.5 MB 1.1 MB/s eta 0:00:00
+Collecting toml
+  Downloading https://mirrors.aliyun.com/pypi/packages/44/6f/7120676b6d73228c96e17f1f794d8ab046fc910d781c8d151120c3f1569e/toml-0.10.2-py2.py3-none-any.whl (16 kB)
+Requirement already satisfied: scipy in ./perception_lab/envs/maptr/lib/python3.10/site-packages (from torchpack==0.3.1) (1.10.1)
+Requirement already satisfied: pyyaml in ./perception_lab/envs/maptr/lib/python3.10/site-packages (from torchpack==0.3.1) (6.0.3)
+Collecting tensorpack
+  Downloading https://mirrors.aliyun.com/pypi/packages/f9/8c/63e5f5a4a04dea36b75850f9daa885ccbfad64bec1fae0ee4ca9f31b3eaa/tensorpack-0.11-py2.py3-none-any.whl (296 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 296.3/296.3 kB 18.5 MB/s eta 0:00:00
+Collecting h5py
+  Downloading https://mirrors.aliyun.com/pypi/packages/cb/92/a8851d936547efe30cc0ce5245feac01f3ec6171f7899bc3f775c72030b3/h5py-3.16.0-cp310-cp310-manylinux_2_28_x86_64.whl (5.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.1/5.1 MB 1.1 MB/s eta 0:00:00
+Collecting multimethod
+  Downloading https://mirrors.aliyun.com/pypi/packages/e2/3d/44e60142e058f7e41d0ab19e7f5cc9d77a00833fd6f0197dbbd4f13c0321/multimethod-2.0.2-py3-none-any.whl (9.6 kB)
+Collecting loguru
+  Downloading https://mirrors.aliyun.com/pypi/packages/0c/29/0348de65b8cc732daa3e33e67806420b2ae89bdce2b04af740289c5c6c8c/loguru-0.7.3-py3-none-any.whl (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.6/61.6 kB 7.0 MB/s eta 0:00:00
+Requirement already satisfied: numpy in ./perception_lab/envs/maptr/lib/python3.10/site-packages (from torchpack==0.3.1) (1.23.5)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu11==11.7.99 in ./perception_lab/envs/maptr/lib/python3.10/site-packages (from torch>=1.5.0->torchpack==0.3.1) (11.7.99)
+Requirement already satisfied: nvidia-cublas-cu11==11.10.3.66 in ./perception_lab/envs/maptr/lib/python3.10/site-packages (from torch>=1.5.0->torchpack==0.3.1) (11.10.3.66)
+Requirement already satisfied: nvidia-cuda-runtime-cu11==11.7.99 in ./perception_lab/envs/maptr/lib/python3.10/site-packages (from torch>=1.5.0->torchpack==0.3.1) (11.7.99)
+Requirement already satisfied: typing-extensions in ./perception_lab/envs/maptr/lib/python3.10/site-packages (from torch>=1.5.0->torchpack==0.3.1) (4.16.0)
+Requirement already satisfied: nvidia-cudnn-cu11==8.5.0.96 in ./perception_lab/envs/maptr/lib/python3.10/site-packages (from torch>=1.5.0->torchpack==0.3.1) (8.5.0.96)
+Requirement already satisfied: setuptools in ./perception_lab/envs/bevfusion/lib/python3.10/site-packages (from nvidia-cublas-cu11==11.10.3.66->torch>=1.5.0->torchpack==0.3.1) (65.5.0)
+Requirement already satisfied: wheel in ./perception_lab/envs/maptr/lib/python3.10/site-packages (from nvidia-cublas-cu11==11.10.3.66->torch>=1.5.0->torchpack==0.3.1) (0.48.0)
+Collecting grpcio<2.0,>=1.74.0
+  Downloading https://mirrors.aliyun.com/pypi/packages/a6/7c/da97476f3c2e90e9f00bfb19def7cbb5f841b7661e3cd09c6a89beaa5b98/grpcio-1.84.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (7.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.2/7.2 MB 1.1 MB/s eta 0:00:00
+Requirement already satisfied: packaging in ./perception_lab/envs/maptr/lib/python3.10/site-packages (from tensorboard->torchpack==0.3.1) (26.3)
+Collecting tensorboard-data-server<0.8.0,>=0.7.0
+  Downloading https://mirrors.aliyun.com/pypi/packages/73/c6/825dab04195756cf8ff2e12698f22513b3db2f64925bdd41671bfb33aaa5/tensorboard_data_server-0.7.2-py3-none-manylinux_2_31_x86_64.whl (6.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.6/6.6 MB 1.2 MB/s eta 0:00:00
+Requirement already satisfied: pillow in ./perception_lab/envs/maptr/lib/python3.10/site-packages (from tensorboard->torchpack==0.3.1) (12.3.0)
+Collecting protobuf<8.0.0,>=6.31.1
+  Downloading https://mirrors.aliyun.com/pypi/packages/db/f3/3996583dd2906297a637af12114deddf7658af6e683fedb83be061983fb5/protobuf-7.36.2-cp310-abi3-manylinux2014_x86_64.whl (343 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 343.2/343.2 kB 1.6 MB/s eta 0:00:00
+Collecting markdown>=2.6.8
+  Downloading https://mirrors.aliyun.com/pypi/packages/64/69/4a5af2bc115a9a33fefe51709749de8262be3f9ba063d1753a837cdbc49c/markdown-3.10.3-py3-none-any.whl (110 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 110.8/110.8 kB 12.0 MB/s eta 0:00:00
+Collecting absl-py>=0.4
+  Downloading https://mirrors.aliyun.com/pypi/packages/b3/7d/01e62f59e4166af1be6238d9f2b7f3453630c51b8044b412d05b5606532a/absl_py-2.5.1-py3-none-any.whl (137 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 137.7/137.7 kB 15.4 MB/s eta 0:00:00
+Collecting werkzeug>=1.0.1
+  Downloading https://mirrors.aliyun.com/pypi/packages/a1/38/df03f564f43cec2684823f3cccae1a652ee7face1cbaa76fb223096e64d7/werkzeug-3.1.9-py3-none-any.whl (228 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 228.7/228.7 kB 16.9 MB/s eta 0:00:00
+Requirement already satisfied: termcolor>=1.1 in ./perception_lab/envs/maptr/lib/python3.10/site-packages (from tensorpack->torchpack==0.3.1) (3.3.0)
+Requirement already satisfied: six in ./perception_lab/envs/maptr/lib/python3.10/site-packages (from tensorpack->torchpack==0.3.1) (1.17.0)
+Collecting msgpack-numpy>=0.4.4.2
+  Downloading https://mirrors.aliyun.com/pypi/packages/9b/5d/f25ac7d4fb77cbd53ddc6d05d833c6bf52b12770a44fa9a447eed470ca9a/msgpack_numpy-0.4.8-py2.py3-none-any.whl (6.9 kB)
+Collecting msgpack>=0.5.2
+  Downloading https://mirrors.aliyun.com/pypi/packages/2b/21/ea60a8fd0d9e0897fce823e9fd9bf6742567784b35c7eee8f4a18a56eb19/msgpack-1.2.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (459 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 459.8/459.8 kB 2.1 MB/s eta 0:00:00
+Collecting psutil>=5
+  Downloading https://mirrors.aliyun.com/pypi/packages/b5/70/5d8df3b09e25bce090399cf48e452d25c935ab72dad19406c77f4e828045/psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl (155 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 155.6/155.6 kB 6.3 MB/s eta 0:00:00
+Collecting pyzmq>=16
+  Downloading https://mirrors.aliyun.com/pypi/packages/3b/fd/aee8c87f4854a012e232a6557b1167b6cd207506f59f378954b2d8bb6ed1/pyzmq-27.2.0-cp310-cp310-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl (888 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 888.2/888.2 kB 1.4 MB/s eta 0:00:00
+Collecting tabulate>=0.7.7
+  Downloading https://mirrors.aliyun.com/pypi/packages/99/55/db07de81b5c630da5cbf5c7df646580ca26dfaefa593667fc6f2fe016d2e/tabulate-0.10.0-py3-none-any.whl (39 kB)
+Requirement already satisfied: requests in ./perception_lab/envs/maptr/lib/python3.10/site-packages (from torchvision->torchpack==0.3.1) (2.34.2)
+Collecting markupsafe>=2.1.1
+  Downloading https://mirrors.aliyun.com/pypi/packages/00/26/c4708ed3b0f08e8e6d7cbce3314ac130cb5352d1f62951b6fef7878f2b1e/markupsafe-3.0.4-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (20 kB)
+Requirement already satisfied: idna<4,>=2.5 in ./perception_lab/envs/maptr/lib/python3.10/site-packages (from requests->torchvision->torchpack==0.3.1) (3.20)
+Requirement already satisfied: urllib3<3,>=1.26 in ./perception_lab/envs/maptr/lib/python3.10/site-packages (from requests->torchvision->torchpack==0.3.1) (2.8.0)
+Requirement already satisfied: charset_normalizer<4,>=2 in ./perception_lab/envs/maptr/lib/python3.10/site-packages (from requests->torchvision->torchpack==0.3.1) (3.5.1)
+Requirement already satisfied: certifi>=2023.5.7 in ./perception_lab/envs/maptr/lib/python3.10/site-packages (from requests->torchvision->torchpack==0.3.1) (2026.7.22)
+Installing collected packages: toml, tensorboard-data-server, tabulate, pyzmq, psutil, protobuf, multimethod, msgpack, mpi4py, markupsafe, markdown, loguru, h5py, grpcio, absl-py, werkzeug, msgpack-numpy, tensorpack, tensorboard, torchpack
+Successfully installed absl-py-2.5.1 grpcio-1.84.0 h5py-3.16.0 loguru-0.7.3 markdown-3.10.3 markupsafe-3.0.4 mpi4py-4.1.2 msgpack-1.2.3 msgpack-numpy-0.4.8 multimethod-2.0.2 protobuf-7.36.2 psutil-7.2.2 pyzmq-27.2.0 tabulate-0.10.0 tensorboard-2.21.0 tensorboard-data-server-0.7.2 tensorpack-0.11 toml-0.10.2 torchpack-0.3.1 werkzeug-3.1.9
+
+[notice] A new release of pip is available: 23.0.1 -> 26.2.1
+[notice] To update, run: /home/minglei/Desktop/CAR/perception_lab/envs/bevfusion/bin/python -m pip install --upgrade pip

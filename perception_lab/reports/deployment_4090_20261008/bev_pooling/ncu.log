@@ -1,0 +1,6 @@
+/bin/bash: /home/minglei/anaconda3/envs/autolabel/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+==PROF== Connected to process 127852 (/home/minglei/anaconda3/envs/autolabel/bin/python3.10)
+==ERROR== ERR_NVGPUCTRPERM - The user does not have permission to access NVIDIA GPU Performance Counters on the target device 0. For instructions on enabling permissions and to get more information see https://developer.nvidia.com/ERR_NVGPUCTRPERM
+Profile pair: frame_0
+==PROF== Disconnected from process 127852
+==WARNING== No kernels were profiled.
