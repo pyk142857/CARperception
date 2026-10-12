@@ -1,0 +1,137 @@
+[
+  {
+    "split": "scene0061",
+    "case": "high_score_center",
+    "sample_token": "e0845f5322254dafadbbed75aaa07969",
+    "class_name": "barrier",
+    "reference_score": 0.5388445854187012,
+    "candidate_score": 0.64111328125,
+    "center_m": 0.9443686233008889,
+    "size_m": 0.03278040885925293,
+    "yaw_rad": 0.010382652282714844,
+    "score_abs": 0.10226869583129883,
+    "velocity_mps": 9.12690706494322e-09,
+    "distance_ego_m": 18.9891085833712,
+    "reference_center": [
+      16.480767679927954,
+      -9.432419703941504,
+      1.1428705621957378
+    ],
+    "candidate_center": [
+      16.700429136483272,
+      -8.514118998565404,
+      1.1603278152720637
+    ],
+    "same_class_reference_neighbours_2m": 2,
+    "same_class_candidate_neighbours_2m": 2,
+    "interpretation": "Multiple neighbouring proposals can change Hungarian correspondence; not proof of root cause. Inspect cameras and proposal-level pre-decode outputs."
+  },
+  {
+    "split": "scene0061",
+    "case": "barrier_yaw",
+    "sample_token": "bc3c8a953f6b4dcdb77b521d89f3d9d5",
+    "class_name": "barrier",
+    "reference_score": 0.1633853316307068,
+    "candidate_score": 0.1295166015625,
+    "center_m": 0.10239483628481778,
+    "size_m": 0.019120216369628906,
+    "yaw_rad": 3.08993923664093,
+    "score_abs": 0.03386873006820679,
+    "velocity_mps": 9.12690706494322e-09,
+    "distance_ego_m": 52.810077963910956,
+    "reference_center": [
+      36.689557858293895,
+      -37.98395291063396,
+      0.6701311256856548
+    ],
+    "candidate_center": [
+      36.78402440263786,
+      -38.02104650822742,
+      0.6837266953713459
+    ],
+    "same_class_reference_neighbours_2m": 2,
+    "same_class_candidate_neighbours_2m": 1,
+    "interpretation": "Multiple neighbouring proposals can change Hungarian correspondence; not proof of root cause. Inspect cameras and proposal-level pre-decode outputs."
+  },
+  {
+    "split": "scene0061",
+    "case": "high_score_vehicle_yaw",
+    "sample_token": "b26e791522294bec90f86fd72226e35c",
+    "class_name": "car",
+    "reference_score": 0.5957097411155701,
+    "candidate_score": 0.56982421875,
+    "center_m": 0.03127430814972347,
+    "size_m": 0.06237506866455078,
+    "yaw_rad": 0.33926481008529663,
+    "score_abs": 0.02588552236557007,
+    "velocity_mps": 9.12690706494322e-09,
+    "distance_ego_m": 17.993104087390876,
+    "reference_center": [
+      13.640153782115979,
+      -11.734479089414638,
+      2.198912692951722
+    ],
+    "candidate_center": [
+      13.61885306456035,
+      -11.751484909676185,
+      2.1835776396720257
+    ],
+    "same_class_reference_neighbours_2m": 1,
+    "same_class_candidate_neighbours_2m": 1,
+    "interpretation": "Multiple neighbouring proposals can change Hungarian correspondence; not proof of root cause. Inspect cameras and proposal-level pre-decode outputs."
+  },
+  {
+    "split": "mini_val",
+    "case": "high_score_center",
+    "sample_token": "747aa46b9a4641fe90db05d97db2acea",
+    "class_name": "pedestrian",
+    "reference_score": 0.5135619044303894,
+    "candidate_score": 0.63720703125,
+    "center_m": 1.6286253541128555,
+    "size_m": 0.017104387283325195,
+    "yaw_rad": 0.19169116020202637,
+    "score_abs": 0.1236451268196106,
+    "velocity_mps": 0.4051578679230969,
+    "distance_ego_m": 24.136620184037387,
+    "reference_center": [
+      21.935807747239274,
+      -10.069596436036472,
+      2.317373141492514
+    ],
+    "candidate_center": [
+      20.592864946014547,
+      -9.161633064887946,
+      2.160759944888546
+    ],
+    "same_class_reference_neighbours_2m": 6,
+    "same_class_candidate_neighbours_2m": 6,
+    "interpretation": "Multiple neighbouring proposals can change Hungarian correspondence; not proof of root cause. Inspect cameras and proposal-level pre-decode outputs."
+  },
+  {
+    "split": "mini_val",
+    "case": "barrier_yaw",
+    "sample_token": "8cd36e9531fb4eba8e6ac1d666c4641c",
+    "class_name": "barrier",
+    "reference_score": 0.007533322554081678,
+    "candidate_score": 0.00572967529296875,
+    "center_m": 0.023107955932012227,
+    "size_m": 0.05574655532836914,
+    "yaw_rad": 3.0007287899600428,
+    "score_abs": 0.0018036472611129284,
+    "velocity_mps": 9.12690706494322e-09,
+    "distance_ego_m": 42.24487632851294,
+    "reference_center": [
+      41.553790776413585,
+      -7.609996591418284,
+      1.6512183820257889
+    ],
+    "candidate_center": [
+      41.54317326431793,
+      -7.604101582055751,
+      1.6708778563033493
+    ],
+    "same_class_reference_neighbours_2m": 1,
+    "same_class_candidate_neighbours_2m": 1,
+    "interpretation": "Multiple neighbouring proposals can change Hungarian correspondence; not proof of root cause. Inspect cameras and proposal-level pre-decode outputs."
+  }
+]

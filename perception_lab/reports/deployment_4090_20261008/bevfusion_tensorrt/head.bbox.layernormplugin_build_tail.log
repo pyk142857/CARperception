@@ -1,0 +1,50 @@
+[10/12/2026-09:06:41] [I]        3.62       0.0046       0.0041       0.2   Transpose_396 + (Unnamed Layer* 626) [Shuffle]
+[10/12/2026-09:06:41] [I]      422.66       0.5384       0.4772      20.9   MatMul_397
+[10/12/2026-09:06:41] [I]       11.79       0.0150       0.0123       0.6   Add_398
+[10/12/2026-09:06:41] [I]       14.57       0.0186       0.0175       0.7   Reshape_441 + Transpose_442
+[10/12/2026-09:06:41] [I]        2.25       0.0029       0.0031       0.1   (Unnamed Layer* 587) [Shuffle]_copy_input
+[10/12/2026-09:06:41] [I]        2.35       0.0030       0.0031       0.1   Add_362
+[10/12/2026-09:06:41] [I]        2.71       0.0035       0.0031       0.1   Transpose_385 + (Unnamed Layer* 585) [Shuffle]
+[10/12/2026-09:06:41] [I]        4.27       0.0054       0.0051       0.2   MatMul_386
+[10/12/2026-09:06:41] [I]        2.32       0.0030       0.0031       0.1   PWN(Add_387, PWN(971 + (Unnamed Layer* 687) [Shuffle], Mul_414))
+[10/12/2026-09:06:41] [I]        2.35       0.0030       0.0031       0.1   Reshape_424 + Transpose_425
+[10/12/2026-09:06:41] [I]        5.40       0.0069       0.0070       0.3   Reformatting CopyNode for Input Tensor 0 to Reshape_433 + Transpose_443
+[10/12/2026-09:06:41] [I]       12.79       0.0163       0.0154       0.6   Reshape_433 + Transpose_443
+[10/12/2026-09:06:41] [I]       74.76       0.0952       0.0911       3.7   MatMul_444
+[10/12/2026-09:06:41] [I]      420.57       0.5358       0.5356      20.8   Softmax_445
+[10/12/2026-09:06:41] [I]       96.36       0.1227       0.1229       4.8   MatMul_446
+[10/12/2026-09:06:41] [I]        2.57       0.0033       0.0031       0.1   Transpose_447 + Reshape_455 + reshape_before_MatMul_456
+[10/12/2026-09:06:41] [I]        3.41       0.0043       0.0041       0.2   MatMul_456
+[10/12/2026-09:06:41] [I]        2.84       0.0036       0.0041       0.1   Add_458
+[10/12/2026-09:06:41] [I]        3.10       0.0039       0.0041       0.2   layernorm_1
+[10/12/2026-09:06:41] [I]        3.66       0.0047       0.0051       0.2   MatMul_470
+[10/12/2026-09:06:41] [I]        2.30       0.0029       0.0031       0.1   PWN(Relu_472)
+[10/12/2026-09:06:41] [I]        3.41       0.0043       0.0041       0.2   MatMul_473
+[10/12/2026-09:06:41] [I]        2.27       0.0029       0.0031       0.1   Add_475
+[10/12/2026-09:06:41] [I]        3.07       0.0039       0.0041       0.2   layernorm_2
+[10/12/2026-09:06:41] [I]        3.18       0.0041       0.0041       0.2   Transpose_487 + (Unnamed Layer* 751) [Shuffle]
+[10/12/2026-09:06:41] [I]        3.40       0.0043       0.0041       0.2   Conv_503 + Relu_504 || Conv_500 + Relu_501 || Conv_497 + Relu_498 || Conv_494 + Relu_495 || Conv_491 + Relu_492 || Conv_488 + Relu_489
+[10/12/2026-09:06:41] [I]        2.42       0.0031       0.0031       0.1   shuffle_after_Relu_504_out_tensor_copy_input
+[10/12/2026-09:06:41] [I]        2.41       0.0031       0.0031       0.1   shuffle_after_Relu_501_out_tensor_copy_input
+[10/12/2026-09:06:41] [I]        2.41       0.0031       0.0031       0.1   shuffle_after_Relu_498_out_tensor_copy_input
+[10/12/2026-09:06:41] [I]        2.42       0.0031       0.0031       0.1   shuffle_after_Relu_495_out_tensor_copy_input
+[10/12/2026-09:06:41] [I]        2.49       0.0032       0.0031       0.1   shuffle_after_Relu_492_out_tensor_copy_input
+[10/12/2026-09:06:41] [I]        2.42       0.0031       0.0031       0.1   shuffle_after_Relu_489_out_tensor_copy_input
+[10/12/2026-09:06:41] [I]        3.09       0.0039       0.0041       0.2   Conv_490
+[10/12/2026-09:06:41] [I]        2.15       0.0027       0.0029       0.1   Reformatting CopyNode for Input Tensor 0 to shuffle_after_(Unnamed Layer* 756) [Convolution]_output
+[10/12/2026-09:06:41] [I]        3.01       0.0038       0.0041       0.1   Conv_493
+[10/12/2026-09:06:41] [I]        2.16       0.0027       0.0031       0.1   Reformatting CopyNode for Output Tensor 0 to (Unnamed Layer* 764) [Shuffle]
+[10/12/2026-09:06:41] [I]        3.08       0.0039       0.0041       0.2   Conv_496
+[10/12/2026-09:06:41] [I]        2.17       0.0028       0.0031       0.1   Reformatting CopyNode for Input Tensor 0 to (Unnamed Layer* 771) [Shuffle]
+[10/12/2026-09:06:41] [I]        2.99       0.0038       0.0041       0.1   Conv_499
+[10/12/2026-09:06:41] [I]        2.12       0.0027       0.0031       0.1   Reformatting CopyNode for Input Tensor 0 to shuffle_after_(Unnamed Layer* 777) [Convolution]_output
+[10/12/2026-09:06:41] [I]        3.11       0.0040       0.0041       0.2   Conv_502
+[10/12/2026-09:06:41] [I]        2.07       0.0026       0.0028       0.1   Reformatting CopyNode for Input Tensor 0 to shuffle_after_(Unnamed Layer* 784) [Convolution]_output
+[10/12/2026-09:06:41] [I]        3.11       0.0040       0.0041       0.2   Conv_505
+[10/12/2026-09:06:41] [I]        2.18       0.0028       0.0029       0.1   Reformatting CopyNode for Input Tensor 0 to shuffle_after_(Unnamed Layer* 791) [Convolution]_output
+[10/12/2026-09:06:41] [I]        2.41       0.0031       0.0031       0.1   PWN(PWN(PWN(Sigmoid_525), Mul_526), Mul_527)
+[10/12/2026-09:06:41] [I]        2.19       0.0028       0.0031       0.1   {ForeignNode[Transpose_506...Concat_519]}
+[10/12/2026-09:06:41] [I]     2023.69       2.5779       2.4609     100.0   Total
+[10/12/2026-09:06:41] [I] 
+[10/12/2026-09:06:41] [W] The engine uses 1 auxiliary streams, so the "Total" latency may not be accurate because some layers may have run in parallel!
+&&&& PASSED TensorRT.trtexec [TensorRT v8601] # trtexec --onnx=model/resnet50/head.bbox.layernormplugin.onnx --fp16 --inputIOFormats=fp16:chw --outputIOFormats=fp16:chw,fp16:chw,fp16:chw,fp16:chw,fp16:chw,fp16:chw --plugins=build/libcustom_layernorm.so --saveEngine=model/resnet50/build/head.bbox.layernormplugin.plan --memPoolSize=workspace:2048 --verbose --dumpLayerInfo --dumpProfile --separateProfileRun --profilingVerbosity=detailed --exportLayerInfo=model/resnet50/build/head.bbox.layernormplugin.json

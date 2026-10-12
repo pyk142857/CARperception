@@ -1,0 +1,11 @@
+{
+  "before_returncode": 1,
+  "fixed_returncode": 0,
+  "test": "Actual production collect_starts_kernel included in CUDA translation unit; three interval edge cases",
+  "gpu": "RTX 4090",
+  "cases": [
+    "only_one_projection",
+    "last_cell_single_projection",
+    "invalid_prefix_and_last_multi_projection"
+  ]
+}

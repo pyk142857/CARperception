@@ -1,0 +1,50 @@
+[10/12/2026-09:01:21] [I] Latency: min = 2.91113 ms, max = 4.76904 ms, mean = 3.19419 ms, median = 3.11304 ms, percentile(90%) = 3.49493 ms, percentile(95%) = 3.62366 ms, percentile(99%) = 3.87537 ms
+[10/12/2026-09:01:21] [I] Enqueue Time: min = 0.0386963 ms, max = 0.485596 ms, mean = 0.08897 ms, median = 0.0848999 ms, percentile(90%) = 0.129883 ms, percentile(95%) = 0.1521 ms, percentile(99%) = 0.207031 ms
+[10/12/2026-09:01:21] [I] H2D Latency: min = 0.911133 ms, max = 1.93579 ms, mean = 1.04868 ms, median = 0.983887 ms, percentile(90%) = 1.2666 ms, percentile(95%) = 1.37195 ms, percentile(99%) = 1.58716 ms
+[10/12/2026-09:01:21] [I] GPU Compute Time: min = 0.703491 ms, max = 0.837646 ms, mean = 0.726816 ms, median = 0.723969 ms, percentile(90%) = 0.739258 ms, percentile(95%) = 0.749512 ms, percentile(99%) = 0.788574 ms
+[10/12/2026-09:01:21] [I] D2H Latency: min = 1.26172 ms, max = 2.58936 ms, mean = 1.41869 ms, median = 1.3916 ms, percentile(90%) = 1.52844 ms, percentile(95%) = 1.65479 ms, percentile(99%) = 1.88037 ms
+[10/12/2026-09:01:21] [I] Total Host Walltime: 3.00708 s
+[10/12/2026-09:01:21] [I] Total GPU Compute Time: 1.30754 s
+[10/12/2026-09:01:21] [W] * Throughput may be bound by host-to-device transfers for the inputs rather than GPU Compute and the GPU may be under-utilized.
+[10/12/2026-09:01:21] [W]   Add --noDataTransfers flag to disable data transfers.
+[10/12/2026-09:01:21] [W] * Throughput may be bound by device-to-host transfers for the outputs rather than GPU Compute and the GPU may be under-utilized.
+[10/12/2026-09:01:21] [W]   Add --noDataTransfers flag to disable data transfers.
+[10/12/2026-09:01:21] [W] * GPU compute time is unstable, with coefficient of variance = 2.06833%.
+[10/12/2026-09:01:21] [W]   If not already in use, locking GPU clock frequency or adding --useSpinWait may improve the stability.
+[10/12/2026-09:01:21] [I] Explanations of the performance metrics are printed in the verbose logs.
+[10/12/2026-09:01:21] [V] 
+[10/12/2026-09:01:21] [V] === Explanations of the performance metrics ===
+[10/12/2026-09:01:21] [V] Total Host Walltime: the host walltime from when the first query (after warmups) is enqueued to when the last query is completed.
+[10/12/2026-09:01:21] [V] GPU Compute Time: the GPU latency to execute the kernels for a query.
+[10/12/2026-09:01:21] [V] Total GPU Compute Time: the summation of the GPU Compute Time of all the queries. If this is significantly shorter than Total Host Walltime, the GPU may be under-utilized because of host-side overheads or data transfers.
+[10/12/2026-09:01:21] [V] Throughput: the observed throughput computed by dividing the number of queries by the Total Host Walltime. If this is significantly lower than the reciprocal of GPU Compute Time, the GPU may be under-utilized because of host-side overheads or data transfers.
+[10/12/2026-09:01:21] [V] Enqueue Time: the host latency to enqueue a query. If this is longer than GPU Compute Time, the GPU may be under-utilized.
+[10/12/2026-09:01:21] [V] H2D Latency: the latency for host-to-device data transfers for input tensors of a single query.
+[10/12/2026-09:01:21] [V] D2H Latency: the latency for device-to-host data transfers for output tensors of a single query.
+[10/12/2026-09:01:21] [V] Latency: the summation of H2D Latency, GPU Compute Time, and D2H Latency. This is the latency to infer a single query.
+[10/12/2026-09:01:21] [I] 
+[10/12/2026-09:01:24] [I] 
+[10/12/2026-09:01:24] [I] === Profile (1811 iterations ) ===
+[10/12/2026-09:01:24] [I]    Time(ms)     Avg.(ms)   Median(ms)   Time(%)   Layer
+[10/12/2026-09:01:24] [I]       14.97       0.0083       0.0082       1.1   camera copy
+[10/12/2026-09:01:24] [I]       55.63       0.0307       0.0307       4.1   lidar copy
+[10/12/2026-09:01:24] [I]      321.79       0.1777       0.1772      23.8   Conv_1 + Relu_2
+[10/12/2026-09:01:24] [I]      120.26       0.0664       0.0666       8.9   Conv_3 + Relu_4
+[10/12/2026-09:01:24] [I]       69.88       0.0386       0.0389       5.2   Conv_5 + Relu_6
+[10/12/2026-09:01:24] [I]       65.50       0.0362       0.0358       4.9   Conv_7 + Relu_8
+[10/12/2026-09:01:24] [I]       65.92       0.0364       0.0361       4.9   Conv_9 + Relu_10
+[10/12/2026-09:01:24] [I]       65.69       0.0363       0.0359       4.9   Conv_11 + Relu_12
+[10/12/2026-09:01:24] [I]       65.38       0.0361       0.0358       4.8   Conv_13 + Relu_14
+[10/12/2026-09:01:24] [I]       39.24       0.0217       0.0215       2.9   Conv_15 + Relu_16
+[10/12/2026-09:01:24] [I]       77.56       0.0428       0.0461       5.7   Conv_17 + Relu_18
+[10/12/2026-09:01:24] [I]       66.62       0.0368       0.0369       4.9   Conv_19 + Relu_20
+[10/12/2026-09:01:24] [I]       64.85       0.0358       0.0338       4.8   Conv_21 + Relu_22
+[10/12/2026-09:01:24] [I]       61.97       0.0342       0.0338       4.6   Conv_23 + Relu_24
+[10/12/2026-09:01:24] [I]       62.92       0.0347       0.0338       4.7   Conv_25 + Relu_26
+[10/12/2026-09:01:24] [I]       33.95       0.0187       0.0184       2.5   Conv_27 + Relu_28
+[10/12/2026-09:01:24] [I]       23.31       0.0129       0.0129       1.7   Reformatting CopyNode for Output Tensor 0 to Conv_27 + Relu_28
+[10/12/2026-09:01:24] [I]       51.62       0.0285       0.0287       3.8   ConvTranspose_29 + BatchNormalization_30 + Relu_31
+[10/12/2026-09:01:24] [I]       23.04       0.0127       0.0123       1.7   Reformatting CopyNode for Output Tensor 0 to ConvTranspose_29 + BatchNormalization_30 + Relu_31
+[10/12/2026-09:01:24] [I]     1350.09       0.7455       0.7434     100.0   Total
+[10/12/2026-09:01:24] [I] 
+&&&& PASSED TensorRT.trtexec [TensorRT v8601] # trtexec --onnx=model/resnet50/fuser.onnx --fp16 --inputIOFormats=fp16:chw,fp16:chw --outputIOFormats=fp16:chw --saveEngine=model/resnet50/build/fuser.plan --memPoolSize=workspace:2048 --verbose --dumpLayerInfo --dumpProfile --separateProfileRun --profilingVerbosity=detailed --exportLayerInfo=model/resnet50/build/fuser.json

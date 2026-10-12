@@ -1,0 +1,68 @@
+[  5%] Building NVCC (Device) object CMakeFiles/bevfusion_core.dir/src/common/bevfusion_core_generated_tensor.cu.o
+[ 10%] Building NVCC (Device) object CMakeFiles/bevfusion_core.dir/src/bevfusion/bevfusion_core_generated_camera-backbone.cu.o
+[ 15%] Building NVCC (Device) object CMakeFiles/bevfusion_core.dir/src/bevfusion/bevfusion_core_generated_camera-bevpool.cu.o
+[ 21%] Building NVCC (Device) object CMakeFiles/bevfusion_core.dir/src/bevfusion/bevfusion_core_generated_camera-depth.cu.o
+[ 26%] Building NVCC (Device) object CMakeFiles/bevfusion_core.dir/src/bevfusion/bevfusion_core_generated_camera-geometry.cu.o
+[ 31%] Building NVCC (Device) object CMakeFiles/bevfusion_core.dir/src/bevfusion/bevfusion_core_generated_camera-normalization.cu.o
+[ 36%] Building NVCC (Device) object CMakeFiles/bevfusion_core.dir/src/bevfusion/bevfusion_core_generated_camera-vtransform.cu.o
+[ 42%] Building NVCC (Device) object CMakeFiles/bevfusion_core.dir/src/bevfusion/bevfusion_core_generated_head-transbbox.cu.o
+[ 47%] Building NVCC (Device) object CMakeFiles/bevfusion_core.dir/src/bevfusion/bevfusion_core_generated_lidar-voxelization.cu.o
+[ 52%] Building NVCC (Device) object CMakeFiles/bevfusion_core.dir/src/bevfusion/bevfusion_core_generated_transfusion.cu.o
+[ 57%] Building CXX object CMakeFiles/bevfusion_core.dir/src/bevfusion/bevfusion.cpp.o
+[ 68%] Building CXX object CMakeFiles/bevfusion_core.dir/src/bevfusion/lidar-scn-onnx-parser.cpp.o
+[ 73%] Building CXX object CMakeFiles/bevfusion_core.dir/src/bevfusion/lidar-scn.cpp.o
+[ 73%] Building CXX object CMakeFiles/bevfusion_core.dir/src/common/tensorrt.cpp.o
+[ 78%] Building CXX object CMakeFiles/bevfusion_core.dir/src/onnx/onnx-ml.pb.cpp.o
+[ 84%] Building CXX object CMakeFiles/bevfusion_core.dir/src/onnx/onnx-operators-ml.pb.cpp.o
+/home/minglei/Desktop/CAR/perception_lab/third_party/Lidar_AI_Solution/CUDA-BEVFusion/src/bevfusion/lidar-scn-onnx-parser.cpp: In function ‘std::vector<int> spconv::get_attribute_as_intarray(const onnx::NodeProto&, const string&)’:
+/home/minglei/Desktop/CAR/perception_lab/third_party/Lidar_AI_Solution/CUDA-BEVFusion/src/bevfusion/lidar-scn-onnx-parser.cpp:96:26: warning: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+   96 |     for (size_t i = 0; i < ints.size(); ++i)
+      |                        ~~^~~~~~~~~~~~~
+/home/minglei/Desktop/CAR/perception_lab/third_party/Lidar_AI_Solution/CUDA-BEVFusion/src/bevfusion/lidar-scn-onnx-parser.cpp: In function ‘std::shared_ptr<spconv::Engine> spconv::load_engine_from_onnx(const string&, spconv::Precision, bool, bool, bool, unsigned int, void*)’:
+/home/minglei/Desktop/CAR/perception_lab/third_party/Lidar_AI_Solution/CUDA-BEVFusion/src/bevfusion/lidar-scn-onnx-parser.cpp:227:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<spconv::ITensor*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  227 |     for (int i = 0; i < collect_outputs.size(); ++i) {
+      |                     ~~^~~~~~~~~~~~~~~~~~~~~~~~
+[ 89%] Linking CXX shared library libbevfusion_core.so
+[ 89%] Built target bevfusion_core
+[ 94%] Building CXX object CMakeFiles/pybev.dir/src/python.cpp.o
+[100%] Linking CXX shared library libpybev.so
+[100%] Built target pybev
+CMake Deprecation Warning at CMakeLists.txt:22 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+CMake Warning (dev) at CMakeLists.txt:30 (find_package):
+  Policy CMP0146 is not set: The FindCUDA module is removed.  Run "cmake
+  --help-policy CMP0146" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- spconv_lib = ../libraries/3DSparseConvolution/libspconv/lib/x86_64_cuda11.4
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/minglei/Desktop/CAR/perception_lab/third_party/Lidar_AI_Solution/CUDA-BEVFusion/build
+[ 50%] Building NVCC (Device) object CMakeFiles/custom_layernorm.dir/src/plugins/custom_layernorm_generated_custom_layernorm.cu.o
+/home/minglei/Desktop/CAR/perception_lab/third_party/Lidar_AI_Solution/CUDA-BEVFusion/src/plugins/custom_layernorm.cu(103): warning #997-D: function "nvinfer1::IPluginV2::getOutputDimensions(int32_t, const nvinfer1::Dims *, int32_t)" is hidden by "LayerNormPlugin::getOutputDimensions" -- virtual function override intended?
+
+/home/minglei/Desktop/CAR/perception_lab/third_party/Lidar_AI_Solution/CUDA-BEVFusion/src/plugins/custom_layernorm.cu(117): warning #997-D: function "nvinfer1::IPluginV2::getWorkspaceSize(int32_t) const" is hidden by "LayerNormPlugin::getWorkspaceSize" -- virtual function override intended?
+
+/home/minglei/Desktop/CAR/perception_lab/third_party/Lidar_AI_Solution/CUDA-BEVFusion/src/plugins/custom_layernorm.cu(122): warning #997-D: function "nvinfer1::IPluginV2::enqueue(int32_t, const void *const *, void *const *, void *, cudaStream_t)" is hidden by "LayerNormPlugin::enqueue" -- virtual function override intended?
+
+/home/minglei/Desktop/CAR/perception_lab/third_party/Lidar_AI_Solution/CUDA-BEVFusion/src/plugins/custom_layernorm.cu(113): warning #997-D: function "nvinfer1::IPluginV2Ext::configurePlugin(const nvinfer1::Dims *, int32_t, const nvinfer1::Dims *, int32_t, const nvinfer1::DataType *, const nvinfer1::DataType *, const __nv_bool *, const __nv_bool *, nvinfer1::PluginFormat, int32_t)" is hidden by "LayerNormPlugin::configurePlugin" -- virtual function override intended?
+
+/home/minglei/Desktop/CAR/perception_lab/third_party/Lidar_AI_Solution/CUDA-BEVFusion/src/plugins/custom_layernorm.cu(103): warning #997-D: function "nvinfer1::IPluginV2::getOutputDimensions(int32_t, const nvinfer1::Dims *, int32_t)" is hidden by "LayerNormPlugin::getOutputDimensions" -- virtual function override intended?
+
+/home/minglei/Desktop/CAR/perception_lab/third_party/Lidar_AI_Solution/CUDA-BEVFusion/src/plugins/custom_layernorm.cu(117): warning #997-D: function "nvinfer1::IPluginV2::getWorkspaceSize(int32_t) const" is hidden by "LayerNormPlugin::getWorkspaceSize" -- virtual function override intended?
+
+/home/minglei/Desktop/CAR/perception_lab/third_party/Lidar_AI_Solution/CUDA-BEVFusion/src/plugins/custom_layernorm.cu(122): warning #997-D: function "nvinfer1::IPluginV2::enqueue(int32_t, const void *const *, void *const *, void *, cudaStream_t)" is hidden by "LayerNormPlugin::enqueue" -- virtual function override intended?
+
+/home/minglei/Desktop/CAR/perception_lab/third_party/Lidar_AI_Solution/CUDA-BEVFusion/src/plugins/custom_layernorm.cu(113): warning #997-D: function "nvinfer1::IPluginV2Ext::configurePlugin(const nvinfer1::Dims *, int32_t, const nvinfer1::Dims *, int32_t, const nvinfer1::DataType *, const nvinfer1::DataType *, const bool *, const bool *, nvinfer1::PluginFormat, int32_t)" is hidden by "LayerNormPlugin::configurePlugin" -- virtual function override intended?
+
+[100%] Linking CXX shared library libcustom_layernorm.so
+[100%] Built target custom_layernorm

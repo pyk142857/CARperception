@@ -1,0 +1,50 @@
+[10/12/2026-09:02:17] [V] Enqueue Time: the host latency to enqueue a query. If this is longer than GPU Compute Time, the GPU may be under-utilized.
+[10/12/2026-09:02:17] [V] H2D Latency: the latency for host-to-device data transfers for input tensors of a single query.
+[10/12/2026-09:02:17] [V] D2H Latency: the latency for device-to-host data transfers for output tensors of a single query.
+[10/12/2026-09:02:17] [V] Latency: the summation of H2D Latency, GPU Compute Time, and D2H Latency. This is the latency to infer a single query.
+[10/12/2026-09:02:17] [I] 
+[10/12/2026-09:02:20] [I] 
+[10/12/2026-09:02:20] [I] === Profile (1093 iterations ) ===
+[10/12/2026-09:02:20] [I]    Time(ms)     Avg.(ms)   Median(ms)   Time(%)   Layer
+[10/12/2026-09:02:20] [I]       40.32       0.0369       0.0348       2.5   Reformatting CopyNode for Input Tensor 0 to Conv_0
+[10/12/2026-09:02:20] [I]      141.27       0.1292       0.1290       8.9   Conv_0
+[10/12/2026-09:02:20] [I]       42.15       0.0386       0.0389       2.6   Conv_4 + Relu_5
+[10/12/2026-09:02:20] [I]       24.71       0.0226       0.0225       1.5   Conv_6 + PWN(Sigmoid_7)
+[10/12/2026-09:02:20] [I]        4.16       0.0038       0.0041       0.3   Reformatting CopyNode for Output Tensor 0 to Conv_6 + PWN(Sigmoid_7)
+[10/12/2026-09:02:20] [I]        6.24       0.0057       0.0060       0.4   MaxPool_10
+[10/12/2026-09:02:20] [I]      775.00       0.7091       0.6726      48.6   {ForeignNode[(Unnamed Layer* 7) [Constant] + (Unnamed Layer* 8) [Shuffle]...Transpose_259 + (Unnamed Layer* 360) [Shuffle]]}
+[10/12/2026-09:02:20] [I]        4.57       0.0042       0.0041       0.3   Reformatting CopyNode for Input Tensor 0 to shuffle_between_(Unnamed Layer* 369) [Shuffle]_output_and_Conv_265 + BatchNormalization_266 + Relu_267
+[10/12/2026-09:02:20] [I]        9.36       0.0086       0.0082       0.6   Conv_265 + BatchNormalization_266 + Relu_267
+[10/12/2026-09:02:20] [I]       13.49       0.0123       0.0123       0.8   Conv_268
+[10/12/2026-09:02:20] [I]        3.68       0.0034       0.0031       0.2   Reformatting CopyNode for Input Tensor 0 to Conv_260 + Relu_261
+[10/12/2026-09:02:20] [I]        5.82       0.0053       0.0051       0.4   Conv_260 + Relu_261
+[10/12/2026-09:02:20] [I]        4.21       0.0038       0.0031       0.3   Reformatting CopyNode for Input Tensor 0 to Conv_245
+[10/12/2026-09:02:20] [I]        5.43       0.0050       0.0051       0.3   Conv_245
+[10/12/2026-09:02:20] [I]        5.64       0.0052       0.0051       0.4   Conv_262
+[10/12/2026-09:02:20] [I]        4.32       0.0040       0.0041       0.3   Reformatting CopyNode for Input Tensor 1 to {ForeignNode[Unsqueeze_509...(Unnamed Layer* 793) [Shuffle]]}
+[10/12/2026-09:02:20] [I]      424.89       0.3887       0.3727      26.6   {ForeignNode[Unsqueeze_509...(Unnamed Layer* 793) [Shuffle]]}
+[10/12/2026-09:02:20] [I]        5.02       0.0046       0.0041       0.3   Conv_488 + Relu_489
+[10/12/2026-09:02:20] [I]        4.72       0.0043       0.0041       0.3   Conv_491 + Relu_492
+[10/12/2026-09:02:20] [I]        4.41       0.0040       0.0041       0.3   Conv_494 + Relu_495
+[10/12/2026-09:02:20] [I]        4.66       0.0043       0.0041       0.3   Conv_497 + Relu_498
+[10/12/2026-09:02:20] [I]        4.43       0.0041       0.0041       0.3   Conv_500 + Relu_501
+[10/12/2026-09:02:20] [I]        4.39       0.0040       0.0041       0.3   Conv_503 + Relu_504
+[10/12/2026-09:02:20] [I]        4.19       0.0038       0.0041       0.3   Conv_505
+[10/12/2026-09:02:20] [I]        3.03       0.0028       0.0031       0.2   Reformatting CopyNode for Input Tensor 0 to (Unnamed Layer* 834) [Shuffle]
+[10/12/2026-09:02:20] [I]        3.02       0.0028       0.0031       0.2   Reformatting CopyNode for Input Tensor 1 to PWN(PWN(PWN(Sigmoid_525), Mul_526), Mul_527)
+[10/12/2026-09:02:20] [I]        3.18       0.0029       0.0031       0.2   PWN(PWN(PWN(Sigmoid_525), Mul_526), Mul_527)
+[10/12/2026-09:02:20] [I]        4.23       0.0039       0.0041       0.3   Conv_502
+[10/12/2026-09:02:20] [I]        3.04       0.0028       0.0031       0.2   Reformatting CopyNode for Input Tensor 0 to shuffle_after_(Unnamed Layer* 826) [Convolution]_output
+[10/12/2026-09:02:20] [I]        4.54       0.0042       0.0041       0.3   Conv_499
+[10/12/2026-09:02:20] [I]        3.03       0.0028       0.0031       0.2   Reformatting CopyNode for Input Tensor 0 to shuffle_after_(Unnamed Layer* 819) [Convolution]_output
+[10/12/2026-09:02:20] [I]        4.42       0.0040       0.0041       0.3   Conv_496
+[10/12/2026-09:02:20] [I]        2.99       0.0027       0.0029       0.2   Reformatting CopyNode for Input Tensor 0 to shuffle_after_(Unnamed Layer* 812) [Convolution]_output
+[10/12/2026-09:02:20] [I]        4.20       0.0038       0.0041       0.3   Conv_493
+[10/12/2026-09:02:20] [I]        3.06       0.0028       0.0031       0.2   Reformatting CopyNode for Input Tensor 0 to shuffle_after_(Unnamed Layer* 805) [Convolution]_output
+[10/12/2026-09:02:20] [I]        4.19       0.0038       0.0041       0.3   Conv_490
+[10/12/2026-09:02:20] [I]        3.06       0.0028       0.0031       0.2   Reformatting CopyNode for Input Tensor 0 to shuffle_after_(Unnamed Layer* 798) [Convolution]_output
+[10/12/2026-09:02:20] [I]        2.93       0.0027       0.0031       0.2   {ForeignNode[Transpose_506...Concat_519]}
+[10/12/2026-09:02:20] [I]     1595.99       1.4602       1.4030     100.0   Total
+[10/12/2026-09:02:20] [I] 
+[10/12/2026-09:02:20] [W] The engine uses 1 auxiliary streams, so the "Total" latency may not be accurate because some layers may have run in parallel!
+&&&& PASSED TensorRT.trtexec [TensorRT v8601] # trtexec --onnx=model/resnet50/head.bbox.onnx --fp16 --inputIOFormats=fp16:chw --outputIOFormats=fp16:chw,fp16:chw,fp16:chw,fp16:chw,fp16:chw,fp16:chw --saveEngine=model/resnet50/build/head.bbox.plan --memPoolSize=workspace:2048 --verbose --dumpLayerInfo --dumpProfile --separateProfileRun --profilingVerbosity=detailed --exportLayerInfo=model/resnet50/build/head.bbox.json

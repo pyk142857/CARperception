@@ -1,0 +1,1334 @@
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:31,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:33:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeBase.h: In member function ‘virtual bool nvinfer1::IGpuAllocator::deallocate(void*)’:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeBase.h:484:26: warning: ‘virtual void nvinfer1::IGpuAllocator::free(void*)’ is deprecated [-Wdeprecated-declarations]
+  484 |         this->free(memory);
+      |                          ^
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeBase.h:415:33: note: declared here
+  415 |     TRT_DEPRECATED virtual void free(void* const memory) noexcept = 0;
+      |                                 ^~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:33:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h: At global scope:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:871:104: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+  871 |     virtual IPluginV2* createPlugin(AsciiChar const* name, PluginFieldCollection const* fc) noexcept = 0;
+      |                                                                                                        ^
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:883:11: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+  883 |         = 0;
+      |           ^
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:27,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:33:
+perception_lab/third_party/TensorRT_8_6/include/NvInferImpl.h:653:47: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+  653 |     virtual IPluginV2& getPlugin() noexcept = 0;
+      |                                               ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:33:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:27,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:33:
+perception_lab/third_party/TensorRT_8_6/include/NvInferImpl.h:1019:113: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+ 1019 |     virtual IPluginV2Layer* addPluginV2(ITensor* const* inputs, int32_t nbInputs, IPluginV2& plugin) noexcept = 0;
+      |                                                                                                                 ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:33:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:33:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:3652:28: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+ 3652 |     IPluginV2& getPlugin() noexcept
+      |                            ^~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:33:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:33:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:6970:88: warning: ‘IFullyConnectedLayer’ is deprecated [-Wdeprecated-declarations]
+ 6970 |         ITensor& input, int32_t nbOutputs, Weights kernelWeights, Weights biasWeights) noexcept
+      |                                                                                        ^~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:33:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:1523:22: note: declared here
+ 1523 | class TRT_DEPRECATED IFullyConnectedLayer : public ILayer
+      |                      ^~~~~~~~~~~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:33:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:7547:101: warning: ‘IRNNv2Layer’ is deprecated [-Wdeprecated-declarations]
+ 7547 |         ITensor& input, int32_t layerCount, int32_t hiddenSize, int32_t maxSeqLen, RNNOperation op) noexcept
+      |                                                                                                     ^~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:33:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:3354:22: note: declared here
+ 3354 | class TRT_DEPRECATED IRNNv2Layer : public ILayer
+      |                      ^~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:33:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:7622:94: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+ 7622 |     IPluginV2Layer* addPluginV2(ITensor* const* inputs, int32_t nbInputs, IPluginV2& plugin) noexcept
+      |                                                                                              ^~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:33:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEntrypoints.h:31,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/common.h:34,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/buffers.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:36:
+perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:111:70: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+  111 |         int32_t nbWeights, char const* libNamespace = "") noexcept = 0;
+      |                                                                      ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:33:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:36:
+perception_lab/third_party/TensorRT_8_6/samples/common/buffers.h: In constructor ‘samplesCommon::BufferManager::BufferManager(std::shared_ptr<nvinfer1::ICudaEngine>, int, const nvinfer1::IExecutionContext*)’:
+perception_lab/third_party/TensorRT_8_6/samples/common/buffers.h:253:52: warning: ‘int32_t nvinfer1::ICudaEngine::getNbBindings() const’ is deprecated [-Wdeprecated-declarations]
+  253 |         for (int i = 0; i < mEngine->getNbBindings(); i++)
+      |                                                    ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:33:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:1564:28: note: declared here
+ 1564 |     TRT_DEPRECATED int32_t getNbBindings() const noexcept
+      |                            ^~~~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:36:
+perception_lab/third_party/TensorRT_8_6/samples/common/buffers.h:255:66: warning: ‘nvinfer1::Dims nvinfer1::IExecutionContext::getBindingDimensions(int32_t) const’ is deprecated [-Wdeprecated-declarations]
+  255 |             auto dims = context ? context->getBindingDimensions(i) : mEngine->getBindingDimensions(i);
+      |                                                                  ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:33:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:2894:25: note: declared here
+ 2894 |     TRT_DEPRECATED Dims getBindingDimensions(int32_t bindingIndex) const noexcept
+      |                         ^~~~~~~~~~~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:36:
+perception_lab/third_party/TensorRT_8_6/samples/common/buffers.h:255:101: warning: ‘nvinfer1::Dims nvinfer1::ICudaEngine::getBindingDimensions(int32_t) const’ is deprecated [-Wdeprecated-declarations]
+  255 |             auto dims = context ? context->getBindingDimensions(i) : mEngine->getBindingDimensions(i);
+      |                                                                                                     ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:33:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:1657:25: note: declared here
+ 1657 |     TRT_DEPRECATED Dims getBindingDimensions(int32_t bindingIndex) const noexcept
+      |                         ^~~~~~~~~~~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:36:
+perception_lab/third_party/TensorRT_8_6/samples/common/buffers.h:257:68: warning: ‘nvinfer1::DataType nvinfer1::ICudaEngine::getBindingDataType(int32_t) const’ is deprecated [-Wdeprecated-declarations]
+  257 |             nvinfer1::DataType type = mEngine->getBindingDataType(i);
+      |                                                                    ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:33:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:1687:29: note: declared here
+ 1687 |     TRT_DEPRECATED DataType getBindingDataType(int32_t bindingIndex) const noexcept
+      |                             ^~~~~~~~~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:36:
+perception_lab/third_party/TensorRT_8_6/samples/common/buffers.h:258:60: warning: ‘int32_t nvinfer1::ICudaEngine::getBindingVectorizedDim(int32_t) const’ is deprecated [-Wdeprecated-declarations]
+  258 |             int vecDim = mEngine->getBindingVectorizedDim(i);
+      |                                                            ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:33:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:2114:28: note: declared here
+ 2114 |     TRT_DEPRECATED int32_t getBindingVectorizedDim(int32_t bindingIndex) const noexcept
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:36:
+perception_lab/third_party/TensorRT_8_6/samples/common/buffers.h:261:78: warning: ‘int32_t nvinfer1::ICudaEngine::getBindingComponentsPerElement(int32_t) const’ is deprecated [-Wdeprecated-declarations]
+  261 |                 int scalarsPerVec = mEngine->getBindingComponentsPerElement(i);
+      |                                                                              ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:33:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:1945:28: note: declared here
+ 1945 |     TRT_DEPRECATED int32_t getBindingComponentsPerElement(int32_t bindingIndex) const noexcept
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:36:
+perception_lab/third_party/TensorRT_8_6/samples/common/buffers.h: In member function ‘size_t samplesCommon::BufferManager::size(const string&) const’:
+perception_lab/third_party/TensorRT_8_6/samples/common/buffers.h:315:64: warning: ‘int32_t nvinfer1::ICudaEngine::getBindingIndex(const char*) const’ is deprecated [-Wdeprecated-declarations]
+  315 |         int index = mEngine->getBindingIndex(tensorName.c_str());
+      |                                                                ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:33:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:1592:28: note: declared here
+ 1592 |     TRT_DEPRECATED int32_t getBindingIndex(char const* name) const noexcept
+      |                            ^~~~~~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:36:
+perception_lab/third_party/TensorRT_8_6/samples/common/buffers.h: In member function ‘void* samplesCommon::BufferManager::getBuffer(bool, const string&) const’:
+perception_lab/third_party/TensorRT_8_6/samples/common/buffers.h:387:64: warning: ‘int32_t nvinfer1::ICudaEngine::getBindingIndex(const char*) const’ is deprecated [-Wdeprecated-declarations]
+  387 |         int index = mEngine->getBindingIndex(tensorName.c_str());
+      |                                                                ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:33:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:1592:28: note: declared here
+ 1592 |     TRT_DEPRECATED int32_t getBindingIndex(char const* name) const noexcept
+      |                            ^~~~~~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:36:
+perception_lab/third_party/TensorRT_8_6/samples/common/buffers.h: In member function ‘void samplesCommon::BufferManager::memcpyBuffers(bool, bool, bool, CUstream_st* const&)’:
+perception_lab/third_party/TensorRT_8_6/samples/common/buffers.h:395:52: warning: ‘int32_t nvinfer1::ICudaEngine::getNbBindings() const’ is deprecated [-Wdeprecated-declarations]
+  395 |         for (int i = 0; i < mEngine->getNbBindings(); i++)
+      |                                                    ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:33:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:1564:28: note: declared here
+ 1564 |     TRT_DEPRECATED int32_t getNbBindings() const noexcept
+      |                            ^~~~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:36:
+perception_lab/third_party/TensorRT_8_6/samples/common/buffers.h:403:56: warning: ‘bool nvinfer1::ICudaEngine::bindingIsInput(int32_t) const’ is deprecated [-Wdeprecated-declarations]
+  403 |             if ((copyInput && mEngine->bindingIsInput(i)) || (!copyInput && !mEngine->bindingIsInput(i)))
+      |                                                        ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:33:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:1630:25: note: declared here
+ 1630 |     TRT_DEPRECATED bool bindingIsInput(int32_t bindingIndex) const noexcept
+      |                         ^~~~~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:36:
+perception_lab/third_party/TensorRT_8_6/samples/common/buffers.h:403:103: warning: ‘bool nvinfer1::ICudaEngine::bindingIsInput(int32_t) const’ is deprecated [-Wdeprecated-declarations]
+  403 |             if ((copyInput && mEngine->bindingIsInput(i)) || (!copyInput && !mEngine->bindingIsInput(i)))
+      |                                                                                                       ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/trtexec/trtexec.cpp:33:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:1630:25: note: declared here
+ 1630 |     TRT_DEPRECATED bool bindingIsInput(int32_t bindingIndex) const noexcept
+      |                         ^~~~~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:31,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.cpp:30:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeBase.h: In member function ‘virtual bool nvinfer1::IGpuAllocator::deallocate(void*)’:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeBase.h:484:26: warning: ‘virtual void nvinfer1::IGpuAllocator::free(void*)’ is deprecated [-Wdeprecated-declarations]
+  484 |         this->free(memory);
+      |                          ^
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeBase.h:415:33: note: declared here
+  415 |     TRT_DEPRECATED virtual void free(void* const memory) noexcept = 0;
+      |                                 ^~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.cpp:30:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h: At global scope:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:871:104: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+  871 |     virtual IPluginV2* createPlugin(AsciiChar const* name, PluginFieldCollection const* fc) noexcept = 0;
+      |                                                                                                        ^
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:883:11: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+  883 |         = 0;
+      |           ^
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:27,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.cpp:30:
+perception_lab/third_party/TensorRT_8_6/include/NvInferImpl.h:653:47: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+  653 |     virtual IPluginV2& getPlugin() noexcept = 0;
+      |                                               ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.cpp:30:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:27,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.cpp:30:
+perception_lab/third_party/TensorRT_8_6/include/NvInferImpl.h:1019:113: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+ 1019 |     virtual IPluginV2Layer* addPluginV2(ITensor* const* inputs, int32_t nbInputs, IPluginV2& plugin) noexcept = 0;
+      |                                                                                                                 ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.cpp:30:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.cpp:30:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:3652:28: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+ 3652 |     IPluginV2& getPlugin() noexcept
+      |                            ^~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.cpp:30:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.cpp:30:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:6970:88: warning: ‘IFullyConnectedLayer’ is deprecated [-Wdeprecated-declarations]
+ 6970 |         ITensor& input, int32_t nbOutputs, Weights kernelWeights, Weights biasWeights) noexcept
+      |                                                                                        ^~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.cpp:30:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:1523:22: note: declared here
+ 1523 | class TRT_DEPRECATED IFullyConnectedLayer : public ILayer
+      |                      ^~~~~~~~~~~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.cpp:30:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:7547:101: warning: ‘IRNNv2Layer’ is deprecated [-Wdeprecated-declarations]
+ 7547 |         ITensor& input, int32_t layerCount, int32_t hiddenSize, int32_t maxSeqLen, RNNOperation op) noexcept
+      |                                                                                                     ^~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.cpp:30:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:3354:22: note: declared here
+ 3354 | class TRT_DEPRECATED IRNNv2Layer : public ILayer
+      |                      ^~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.cpp:30:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:7622:94: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+ 7622 |     IPluginV2Layer* addPluginV2(ITensor* const* inputs, int32_t nbInputs, IPluginV2& plugin) noexcept
+      |                                                                                              ^~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.cpp:30:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.cpp:30:
+perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:111:70: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+  111 |         int32_t nbWeights, char const* libNamespace = "") noexcept = 0;
+      |                                                                      ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.cpp:30:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.cpp: In function ‘void sample::{anonymous}::setPreviewFeatures(nvinfer1::IBuilderConfig&, const sample::BuildOptions&)’:
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.cpp:694:29: warning: ‘nvinfer1::PreviewFeature::kFASTER_DYNAMIC_SHAPES_0805’ is deprecated [-Wdeprecated-declarations]
+  694 |     setFlag(PreviewFeature::kFASTER_DYNAMIC_SHAPES_0805);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.cpp:30:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:9019:5: note: declared here
+ 9019 |     kFASTER_DYNAMIC_SHAPES_0805 TRT_DEPRECATED_ENUM = 0,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.cpp:694:29: warning: ‘nvinfer1::PreviewFeature::kFASTER_DYNAMIC_SHAPES_0805’ is deprecated [-Wdeprecated-declarations]
+  694 |     setFlag(PreviewFeature::kFASTER_DYNAMIC_SHAPES_0805);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.cpp:30:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:9019:5: note: declared here
+ 9019 |     kFASTER_DYNAMIC_SHAPES_0805 TRT_DEPRECATED_ENUM = 0,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.cpp: In function ‘bool sample::setupNetworkAndConfig(const sample::BuildOptions&, const sample::SystemOptions&, nvinfer1::IBuilder&, nvinfer1::INetworkDefinition&, nvinfer1::IBuilderConfig&, std::unique_ptr<nvinfer1::IInt8Calibrator>&, std::ostream&, std::vector<std::vector<signed char> >&)’:
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.cpp:708:47: warning: ‘void nvinfer1::IBuilder::setMaxBatchSize(int32_t)’ is deprecated [-Wdeprecated-declarations]
+  708 |         builder.setMaxBatchSize(build.maxBatch);
+      |                                               ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.cpp:30:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:9978:25: note: declared here
+ 9978 |     TRT_DEPRECATED void setMaxBatchSize(int32_t batchSize) noexcept
+      |                         ^~~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.cpp:962:50: warning: ‘virtual void nvinfer1::IBuilderConfig::setMinTimingIterations(int32_t)’ is deprecated [-Wdeprecated-declarations]
+  962 |     config.setMinTimingIterations(build.minTiming);
+      |                                                  ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.cpp:30:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:9112:33: note: declared here
+ 9112 |     TRT_DEPRECATED virtual void setMinTimingIterations(int32_t minTiming) noexcept
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.cpp: In function ‘std::vector<std::pair<nvinfer1::WeightsRole, nvinfer1::Weights> > sample::getAllRefitWeightsForLayer(const nvinfer1::ILayer&)’:
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.cpp:1454:77: warning: ‘IFullyConnectedLayer’ is deprecated [-Wdeprecated-declarations]
+ 1454 |         auto const& layer = static_cast<const nvinfer1::IFullyConnectedLayer&>(l);
+      |                                                                             ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.cpp:30:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:1523:22: note: declared here
+ 1523 | class TRT_DEPRECATED IFullyConnectedLayer : public ILayer
+      |                      ^~~~~~~~~~~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:31,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeBase.h: In member function ‘virtual bool nvinfer1::IGpuAllocator::deallocate(void*)’:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeBase.h:484:26: warning: ‘virtual void nvinfer1::IGpuAllocator::free(void*)’ is deprecated [-Wdeprecated-declarations]
+  484 |         this->free(memory);
+      |                          ^
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeBase.h:415:33: note: declared here
+  415 |     TRT_DEPRECATED virtual void free(void* const memory) noexcept = 0;
+      |                                 ^~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h: At global scope:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:871:104: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+  871 |     virtual IPluginV2* createPlugin(AsciiChar const* name, PluginFieldCollection const* fc) noexcept = 0;
+      |                                                                                                        ^
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:883:11: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+  883 |         = 0;
+      |           ^
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:27,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInferImpl.h:653:47: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+  653 |     virtual IPluginV2& getPlugin() noexcept = 0;
+      |                                               ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:27,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInferImpl.h:1019:113: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+ 1019 |     virtual IPluginV2Layer* addPluginV2(ITensor* const* inputs, int32_t nbInputs, IPluginV2& plugin) noexcept = 0;
+      |                                                                                                                 ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:3652:28: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+ 3652 |     IPluginV2& getPlugin() noexcept
+      |                            ^~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:6970:88: warning: ‘IFullyConnectedLayer’ is deprecated [-Wdeprecated-declarations]
+ 6970 |         ITensor& input, int32_t nbOutputs, Weights kernelWeights, Weights biasWeights) noexcept
+      |                                                                                        ^~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:1523:22: note: declared here
+ 1523 | class TRT_DEPRECATED IFullyConnectedLayer : public ILayer
+      |                      ^~~~~~~~~~~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:7547:101: warning: ‘IRNNv2Layer’ is deprecated [-Wdeprecated-declarations]
+ 7547 |         ITensor& input, int32_t layerCount, int32_t hiddenSize, int32_t maxSeqLen, RNNOperation op) noexcept
+      |                                                                                                     ^~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:3354:22: note: declared here
+ 3354 | class TRT_DEPRECATED IRNNv2Layer : public ILayer
+      |                      ^~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:7622:94: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+ 7622 |     IPluginV2Layer* addPluginV2(ITensor* const* inputs, int32_t nbInputs, IPluginV2& plugin) noexcept
+      |                                                                                              ^~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEntrypoints.h:31,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/common.h:34,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.h:35,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleDevice.h:27,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:42:
+perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:111:70: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+  111 |         int32_t nbWeights, char const* libNamespace = "") noexcept = 0;
+      |                                                                      ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp: In member function ‘void sample::FillBindingClosure<EngineType, ContextType>::getTensorInfo(sample::TensorInfo&) [with EngineType = nvinfer1::ICudaEngine; ContextType = nvinfer1::IExecutionContext]’:
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:169:47: warning: ‘const char* nvinfer1::ICudaEngine::getBindingName(int32_t) const’ is deprecated [-Wdeprecated-declarations]
+  169 |     auto const name = engine->getBindingName(b);
+      |                                               ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:1615:32: note: declared here
+ 1615 |     TRT_DEPRECATED char const* getBindingName(int32_t bindingIndex) const noexcept
+      |                                ^~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:173:58: warning: ‘nvinfer1::Dims nvinfer1::IExecutionContext::getBindingDimensions(int32_t) const’ is deprecated [-Wdeprecated-declarations]
+  173 |         tensorInfo.dims = context->getBindingDimensions(b);
+      |                                                          ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:2894:25: note: declared here
+ 2894 |     TRT_DEPRECATED Dims getBindingDimensions(int32_t bindingIndex) const noexcept
+      |                         ^~~~~~~~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:174:68: warning: ‘int32_t nvinfer1::ICudaEngine::getBindingComponentsPerElement(int32_t) const’ is deprecated [-Wdeprecated-declarations]
+  174 |         tensorInfo.comps = engine->getBindingComponentsPerElement(b);
+      |                                                                    ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:1945:28: note: declared here
+ 1945 |     TRT_DEPRECATED int32_t getBindingComponentsPerElement(int32_t bindingIndex) const noexcept
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:175:51: warning: ‘nvinfer1::Dims nvinfer1::IExecutionContext::getStrides(int32_t) const’ is deprecated [-Wdeprecated-declarations]
+  175 |         tensorInfo.strides = context->getStrides(b);
+      |                                                   ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:2731:25: note: declared here
+ 2731 |     TRT_DEPRECATED Dims getStrides(int32_t bindingIndex) const noexcept
+      |                         ^~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:176:70: warning: ‘int32_t nvinfer1::ICudaEngine::getBindingVectorizedDim(int32_t) const’ is deprecated [-Wdeprecated-declarations]
+  176 |         tensorInfo.vectorDimIndex = engine->getBindingVectorizedDim(b);
+      |                                                                      ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:2114:28: note: declared here
+ 2114 |     TRT_DEPRECATED int32_t getBindingVectorizedDim(int32_t bindingIndex) const noexcept
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:177:54: warning: ‘bool nvinfer1::ICudaEngine::bindingIsInput(int32_t) const’ is deprecated [-Wdeprecated-declarations]
+  177 |         tensorInfo.isInput = engine->bindingIsInput(b);
+      |                                                      ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:1630:25: note: declared here
+ 1630 |     TRT_DEPRECATED bool bindingIsInput(int32_t bindingIndex) const noexcept
+      |                         ^~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:178:59: warning: ‘nvinfer1::DataType nvinfer1::ICudaEngine::getBindingDataType(int32_t) const’ is deprecated [-Wdeprecated-declarations]
+  178 |         tensorInfo.dataType = engine->getBindingDataType(b);
+      |                                                           ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:1687:29: note: declared here
+ 1687 |     TRT_DEPRECATED DataType getBindingDataType(int32_t bindingIndex) const noexcept
+      |                             ^~~~~~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp: In function ‘bool sample::setUpInference(sample::InferenceEnvironment&, const sample::InferenceOptions&, const sample::SystemOptions&)’:
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:243:62: warning: ‘virtual int32_t nvinfer1::safe::ICudaEngine::getNbBindings() const’ is deprecated [-Wdeprecated-declarations]
+  243 |         int32_t const nbBindings = safeEngine->getNbBindings();
+      |                                                              ^
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.h:27,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:43:
+perception_lab/third_party/TensorRT_8_6/include/NvInferSafeRuntime.h:164:41: note: declared here
+  164 |     TRT_DEPRECATED virtual std::int32_t getNbBindings() const noexcept = 0;
+      |                                         ^~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:255:101: warning: ‘int32_t nvinfer1::ICudaEngine::getMaxBatchSize() const’ is deprecated [-Wdeprecated-declarations]
+  255 |     if (engine->hasImplicitBatchDimension() && hasDLA && inference.batch != engine->getMaxBatchSize())
+      |                                                                                                     ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:1718:28: note: declared here
+ 1718 |     TRT_DEPRECATED int32_t getMaxBatchSize() const noexcept
+      |                            ^~~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:259:54: warning: ‘int32_t nvinfer1::ICudaEngine::getMaxBatchSize() const’ is deprecated [-Wdeprecated-declarations]
+  259 |                           << engine->getMaxBatchSize() << "' to your command." << std::endl;
+      |                                                      ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:1718:28: note: declared here
+ 1718 |     TRT_DEPRECATED int32_t getMaxBatchSize() const noexcept
+      |                            ^~~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:327:62: warning: ‘bool nvinfer1::ICudaEngine::isShapeBinding(int32_t) const’ is deprecated [-Wdeprecated-declarations]
+  327 |                 isShapeInferenceIO = engine->isShapeBinding(b);
+      |                                                              ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:2294:25: note: declared here
+ 2294 |     TRT_DEPRECATED bool isShapeBinding(int32_t bindingIndex) const noexcept
+      |                         ^~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:345:117: warning: ‘const char* nvinfer1::ICudaEngine::getBindingName(int32_t) const’ is deprecated [-Wdeprecated-declarations]
+  345 |                         sample::gLogWarning << "Values missing for input shape tensor: " << engine->getBindingName(b)
+      |                                                                                                                     ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:1615:32: note: declared here
+ 1615 |     TRT_DEPRECATED char const* getBindingName(int32_t bindingIndex) const noexcept
+      |                                ^~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:355:106: warning: ‘const char* nvinfer1::ICudaEngine::getBindingName(int32_t) const’ is deprecated [-Wdeprecated-declarations]
+  355 |                             << "Shape missing for input with dynamic shape: " << engine->getBindingName(b)
+      |                                                                                                          ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:1615:32: note: declared here
+ 1615 |     TRT_DEPRECATED char const* getBindingName(int32_t bindingIndex) const noexcept
+      |                                ^~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:405:76: warning: ‘bool nvinfer1::IExecutionContext::setInputShapeBinding(int32_t, const int32_t*)’ is deprecated [-Wdeprecated-declarations]
+  405 |                             if (!c->setInputShapeBinding(b, shapeTensorData))
+      |                                                                            ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:2966:25: note: declared here
+ 2966 |     TRT_DEPRECATED bool setInputShapeBinding(int32_t bindingIndex, int32_t const* data) noexcept
+      |                         ^~~~~~~~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:412:78: warning: ‘bool nvinfer1::IExecutionContext::setBindingDimensions(int32_t, nvinfer1::Dims)’ is deprecated [-Wdeprecated-declarations]
+  412 |                             if (!c->setBindingDimensions(b, toDims(shapeData)))
+      |                                                                              ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:2843:25: note: declared here
+ 2843 |     TRT_DEPRECATED bool setBindingDimensions(int32_t bindingIndex, Dims dimensions) noexcept
+      |                         ^~~~~~~~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp: In member function ‘bool sample::{anonymous}::EnqueueImplicit::operator()(sample::TrtCudaStream&) const’:
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:522:89: warning: ‘bool nvinfer1::IExecutionContext::enqueue(int32_t, void* const*, cudaStream_t, CUevent_st**)’ is deprecated [-Wdeprecated-declarations]
+  522 |             bool const result = mContext.enqueue(mBatch, mBuffers, stream.get(), nullptr);
+      |                                                                                         ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:2601:25: note: declared here
+ 2601 |     TRT_DEPRECATED bool enqueue(
+      |                         ^~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp: In lambda function:
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:1213:110: warning: ‘nvinfer1::ICudaEngine* nvinfer1::IRuntime::deserializeCudaEngine(const void*, std::size_t, nvinfer1::IPluginFactory*)’ is deprecated [-Wdeprecated-declarations]
+ 1213 |                 rt->deserializeCudaEngine(iEnv.engine.getBlob().data(), iEnv.engine.getBlob().size(), nullptr));
+      |                                                                                                              ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:678:43: note: declared here
+  678 |     TRT_DEPRECATED nvinfer1::ICudaEngine* deserializeCudaEngine(
+      |                                           ^~~~~~~~~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp: In member function ‘void sample::Bindings::dumpBindingValues(const ContextType&, int32_t, std::ostream&, const string&, int32_t) const [with ContextType = nvinfer1::IExecutionContext; int32_t = int; std::ostream = std::basic_ostream<char>; std::string = std::__cxx11::basic_string<char>]’:
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:1480:53: warning: ‘nvinfer1::Dims nvinfer1::IExecutionContext::getBindingDimensions(int32_t) const’ is deprecated [-Wdeprecated-declarations]
+ 1480 |     Dims dims = context.getBindingDimensions(binding);
+      |                                                     ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:2894:25: note: declared here
+ 2894 |     TRT_DEPRECATED Dims getBindingDimensions(int32_t bindingIndex) const noexcept
+      |                         ^~~~~~~~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:1481:46: warning: ‘nvinfer1::Dims nvinfer1::IExecutionContext::getStrides(int32_t) const’ is deprecated [-Wdeprecated-declarations]
+ 1481 |     Dims strides = context.getStrides(binding);
+      |                                              ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:2731:25: note: declared here
+ 2731 |     TRT_DEPRECATED Dims getStrides(int32_t bindingIndex) const noexcept
+      |                         ^~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:1482:76: warning: ‘int32_t nvinfer1::ICudaEngine::getBindingVectorizedDim(int32_t) const’ is deprecated [-Wdeprecated-declarations]
+ 1482 |     int32_t vectorDim = context.getEngine().getBindingVectorizedDim(binding);
+      |                                                                            ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:2114:28: note: declared here
+ 2114 |     TRT_DEPRECATED int32_t getBindingVectorizedDim(int32_t bindingIndex) const noexcept
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:1483:83: warning: ‘int32_t nvinfer1::ICudaEngine::getBindingComponentsPerElement(int32_t) const’ is deprecated [-Wdeprecated-declarations]
+ 1483 |     int32_t const spv = context.getEngine().getBindingComponentsPerElement(binding);
+      |                                                                                   ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:1945:28: note: declared here
+ 1945 |     TRT_DEPRECATED int32_t getBindingComponentsPerElement(int32_t bindingIndex) const noexcept
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp: In function ‘nvinfer1::Dims sample::{anonymous}::getBindingDimensions(const ContextType&, int32_t) [with ContextType = nvinfer1::IExecutionContext; nvinfer1::Dims = nvinfer1::Dims32; int32_t = int]’:
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:1535:48: warning: ‘nvinfer1::Dims nvinfer1::IExecutionContext::getBindingDimensions(int32_t) const’ is deprecated [-Wdeprecated-declarations]
+ 1535 |     return context.getBindingDimensions(binding);
+      |                                                ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:2894:25: note: declared here
+ 2894 |     TRT_DEPRECATED Dims getBindingDimensions(int32_t bindingIndex) const noexcept
+      |                         ^~~~~~~~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp: In function ‘nvinfer1::Dims sample::{anonymous}::getBindingDimensions(const ContextType&, int32_t) [with ContextType = nvinfer1::safe::IExecutionContext; nvinfer1::Dims = nvinfer1::Dims32; int32_t = int]’:
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:1541:60: warning: ‘virtual nvinfer1::Dims nvinfer1::safe::ICudaEngine::getBindingDimensions(int32_t) const’ is deprecated [-Wdeprecated-declarations]
+ 1541 |     return context.getEngine().getBindingDimensions(binding);
+      |                                                            ^
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.h:27,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:43:
+perception_lab/third_party/TensorRT_8_6/include/NvInferSafeRuntime.h:238:33: note: declared here
+  238 |     TRT_DEPRECATED virtual Dims getBindingDimensions(std::int32_t const bindingIndex) const noexcept = 0;
+      |                                 ^~~~~~~~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp: In member function ‘void sample::Bindings::dumpBindingDimensions(int32_t, const ContextType&, std::ostream&) const [with ContextType = nvinfer1::IExecutionContext; int32_t = int; std::ostream = std::basic_ostream<char>]’:
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:1611:59: warning: ‘nvinfer1::Dims nvinfer1::IExecutionContext::getBindingDimensions(int32_t) const’ is deprecated [-Wdeprecated-declarations]
+ 1611 |     auto const dims = context.getBindingDimensions(binding);
+      |                                                           ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:2894:25: note: declared here
+ 2894 |     TRT_DEPRECATED Dims getBindingDimensions(int32_t bindingIndex) const noexcept
+      |                         ^~~~~~~~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp: In member function ‘void sample::Bindings::dumpBindingDimensions(int32_t, const ContextType&, std::ostream&) const [with ContextType = nvinfer1::safe::IExecutionContext; int32_t = int; std::ostream = std::basic_ostream<char>]’:
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:1619:71: warning: ‘virtual nvinfer1::Dims nvinfer1::safe::ICudaEngine::getBindingDimensions(int32_t) const’ is deprecated [-Wdeprecated-declarations]
+ 1619 |     auto const dims = context.getEngine().getBindingDimensions(binding);
+      |                                                                       ^
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.h:27,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:43:
+perception_lab/third_party/TensorRT_8_6/include/NvInferSafeRuntime.h:238:33: note: declared here
+  238 |     TRT_DEPRECATED virtual Dims getBindingDimensions(std::int32_t const bindingIndex) const noexcept = 0;
+      |                                 ^~~~~~~~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp: In member function ‘void sample::Bindings::dumpBindingValues(const ContextType&, int32_t, std::ostream&, const string&, int32_t) const [with ContextType = nvinfer1::safe::IExecutionContext; int32_t = int; std::ostream = std::basic_ostream<char>; std::string = std::__cxx11::basic_string<char>]’:
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:1628:71: warning: ‘virtual nvinfer1::Dims nvinfer1::safe::ICudaEngine::getBindingDimensions(int32_t) const’ is deprecated [-Wdeprecated-declarations]
+ 1628 |     Dims const dims = context.getEngine().getBindingDimensions(binding);
+      |                                                                       ^
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.h:27,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:43:
+perception_lab/third_party/TensorRT_8_6/include/NvInferSafeRuntime.h:238:33: note: declared here
+  238 |     TRT_DEPRECATED virtual Dims getBindingDimensions(std::int32_t const bindingIndex) const noexcept = 0;
+      |                                 ^~~~~~~~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:1629:52: warning: ‘virtual nvinfer1::Dims nvinfer1::safe::IExecutionContext::getStrides(int32_t) const’ is deprecated [-Wdeprecated-declarations]
+ 1629 |     Dims const strides = context.getStrides(binding);
+      |                                                    ^
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.h:27,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:43:
+perception_lab/third_party/TensorRT_8_6/include/NvInferSafeRuntime.h:688:33: note: declared here
+  688 |     TRT_DEPRECATED virtual Dims getStrides(std::int32_t const bindingIndex) const noexcept = 0;
+      |                                 ^~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:1630:82: warning: ‘virtual int32_t nvinfer1::safe::ICudaEngine::getBindingVectorizedDim(int32_t) const’ is deprecated [-Wdeprecated-declarations]
+ 1630 |     int32_t const vectorDim = context.getEngine().getBindingVectorizedDim(binding);
+      |                                                                                  ^
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.h:27,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:43:
+perception_lab/third_party/TensorRT_8_6/include/NvInferSafeRuntime.h:359:41: note: declared here
+  359 |     TRT_DEPRECATED virtual std::int32_t getBindingVectorizedDim(std::int32_t const bindingIndex) const noexcept = 0;
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:1631:83: warning: ‘virtual int32_t nvinfer1::safe::ICudaEngine::getBindingComponentsPerElement(int32_t) const’ is deprecated [-Wdeprecated-declarations]
+ 1631 |     int32_t const spv = context.getEngine().getBindingComponentsPerElement(binding);
+      |                                                                                   ^
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.h:27,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:43:
+perception_lab/third_party/TensorRT_8_6/include/NvInferSafeRuntime.h:327:41: note: declared here
+  327 |     TRT_DEPRECATED virtual std::int32_t getBindingComponentsPerElement(std::int32_t const bindingIndex) const noexcept = 0;
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp: In instantiation of ‘bool sample::validateTensorNames(const MapType&, const EngineType*, int32_t) [with MapType = std::unordered_map<std::__cxx11::basic_string<char>, std::vector<int> >; EngineType = nvinfer1::ICudaEngine; int32_t = int]’:
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:301:71:   required from here
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:63:43: warning: ‘bool nvinfer1::ICudaEngine::bindingIsInput(int32_t) const’ is deprecated [-Wdeprecated-declarations]
+   63 |             if (engine->bindingIsInput(b) && engine->getBindingName(b) == item.first)
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:1630:25: note: declared here
+ 1630 |     TRT_DEPRECATED bool bindingIsInput(int32_t bindingIndex) const noexcept
+      |                         ^~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:63:72: warning: ‘const char* nvinfer1::ICudaEngine::getBindingName(int32_t) const’ is deprecated [-Wdeprecated-declarations]
+   63 |             if (engine->bindingIsInput(b) && engine->getBindingName(b) == item.first)
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:1615:32: note: declared here
+ 1615 |     TRT_DEPRECATED char const* getBindingName(int32_t bindingIndex) const noexcept
+      |                                ^~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp: In instantiation of ‘bool sample::validateTensorNames(const MapType&, const EngineType*, int32_t) [with MapType = std::unordered_map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >; EngineType = nvinfer1::safe::ICudaEngine; int32_t = int]’:
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:129:33:   required from ‘bool sample::FillBindingClosure<EngineType, ContextType>::fillAllBindings(int32_t, int32_t) [with EngineType = nvinfer1::safe::ICudaEngine; ContextType = nvinfer1::safe::IExecutionContext; int32_t = int]’
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:161:16:   required from ‘bool sample::FillBindingClosure<EngineType, ContextType>::operator()() [with EngineType = nvinfer1::safe::ICudaEngine; ContextType = nvinfer1::safe::IExecutionContext]’
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:246:106:   required from here
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:63:43: warning: ‘virtual bool nvinfer1::safe::ICudaEngine::bindingIsInput(int32_t) const’ is deprecated [-Wdeprecated-declarations]
+   63 |             if (engine->bindingIsInput(b) && engine->getBindingName(b) == item.first)
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.h:27,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:43:
+perception_lab/third_party/TensorRT_8_6/include/NvInferSafeRuntime.h:222:33: note: declared here
+  222 |     TRT_DEPRECATED virtual bool bindingIsInput(std::int32_t const bindingIndex) const noexcept = 0;
+      |                                 ^~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:63:72: warning: ‘virtual const AsciiChar* nvinfer1::safe::ICudaEngine::getBindingName(int32_t) const’ is deprecated [-Wdeprecated-declarations]
+   63 |             if (engine->bindingIsInput(b) && engine->getBindingName(b) == item.first)
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.h:27,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:43:
+perception_lab/third_party/TensorRT_8_6/include/NvInferSafeRuntime.h:206:45: note: declared here
+  206 |     TRT_DEPRECATED virtual AsciiChar const* getBindingName(std::int32_t const bindingIndex) const noexcept = 0;
+      |                                             ^~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp: In instantiation of ‘bool sample::validateTensorNames(const MapType&, const EngineType*, int32_t) [with MapType = std::unordered_map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >; EngineType = nvinfer1::ICudaEngine; int32_t = int]’:
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:129:33:   required from ‘bool sample::FillBindingClosure<EngineType, ContextType>::fillAllBindings(int32_t, int32_t) [with EngineType = nvinfer1::ICudaEngine; ContextType = nvinfer1::IExecutionContext; int32_t = int]’
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:161:16:   required from ‘bool sample::FillBindingClosure<EngineType, ContextType>::operator()() [with EngineType = nvinfer1::ICudaEngine; ContextType = nvinfer1::IExecutionContext]’
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:436:102:   required from here
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:63:43: warning: ‘bool nvinfer1::ICudaEngine::bindingIsInput(int32_t) const’ is deprecated [-Wdeprecated-declarations]
+   63 |             if (engine->bindingIsInput(b) && engine->getBindingName(b) == item.first)
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:1630:25: note: declared here
+ 1630 |     TRT_DEPRECATED bool bindingIsInput(int32_t bindingIndex) const noexcept
+      |                         ^~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:63:72: warning: ‘const char* nvinfer1::ICudaEngine::getBindingName(int32_t) const’ is deprecated [-Wdeprecated-declarations]
+   63 |             if (engine->bindingIsInput(b) && engine->getBindingName(b) == item.first)
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.cpp:38:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:1615:32: note: declared here
+ 1615 |     TRT_DEPRECATED char const* getBindingName(int32_t bindingIndex) const noexcept
+      |                                ^~~~~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:31,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.cpp:27:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeBase.h: In member function ‘virtual bool nvinfer1::IGpuAllocator::deallocate(void*)’:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeBase.h:484:26: warning: ‘virtual void nvinfer1::IGpuAllocator::free(void*)’ is deprecated [-Wdeprecated-declarations]
+  484 |         this->free(memory);
+      |                          ^
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeBase.h:415:33: note: declared here
+  415 |     TRT_DEPRECATED virtual void free(void* const memory) noexcept = 0;
+      |                                 ^~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.cpp:27:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h: At global scope:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:871:104: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+  871 |     virtual IPluginV2* createPlugin(AsciiChar const* name, PluginFieldCollection const* fc) noexcept = 0;
+      |                                                                                                        ^
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:883:11: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+  883 |         = 0;
+      |           ^
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:27,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.cpp:27:
+perception_lab/third_party/TensorRT_8_6/include/NvInferImpl.h:653:47: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+  653 |     virtual IPluginV2& getPlugin() noexcept = 0;
+      |                                               ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.cpp:27:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:27,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.cpp:27:
+perception_lab/third_party/TensorRT_8_6/include/NvInferImpl.h:1019:113: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+ 1019 |     virtual IPluginV2Layer* addPluginV2(ITensor* const* inputs, int32_t nbInputs, IPluginV2& plugin) noexcept = 0;
+      |                                                                                                                 ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.cpp:27:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.cpp:27:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:3652:28: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+ 3652 |     IPluginV2& getPlugin() noexcept
+      |                            ^~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.cpp:27:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.cpp:27:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:6970:88: warning: ‘IFullyConnectedLayer’ is deprecated [-Wdeprecated-declarations]
+ 6970 |         ITensor& input, int32_t nbOutputs, Weights kernelWeights, Weights biasWeights) noexcept
+      |                                                                                        ^~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.cpp:27:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:1523:22: note: declared here
+ 1523 | class TRT_DEPRECATED IFullyConnectedLayer : public ILayer
+      |                      ^~~~~~~~~~~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.cpp:27:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:7547:101: warning: ‘IRNNv2Layer’ is deprecated [-Wdeprecated-declarations]
+ 7547 |         ITensor& input, int32_t layerCount, int32_t hiddenSize, int32_t maxSeqLen, RNNOperation op) noexcept
+      |                                                                                                     ^~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.cpp:27:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:3354:22: note: declared here
+ 3354 | class TRT_DEPRECATED IRNNv2Layer : public ILayer
+      |                      ^~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.cpp:27:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:7622:94: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+ 7622 |     IPluginV2Layer* addPluginV2(ITensor* const* inputs, int32_t nbInputs, IPluginV2& plugin) noexcept
+      |                                                                                              ^~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.cpp:27:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEntrypoints.h:31,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/common.h:34,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.h:35,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.cpp:31:
+perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:111:70: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+  111 |         int32_t nbWeights, char const* libNamespace = "") noexcept = 0;
+      |                                                                      ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.cpp:27:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.cpp: In function ‘std::string sample::{anonymous}::previewFeatureToString(nvinfer1::PreviewFeature)’:
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.cpp:649:26: warning: ‘nvinfer1::PreviewFeature::kFASTER_DYNAMIC_SHAPES_0805’ is deprecated [-Wdeprecated-declarations]
+  649 |     case PreviewFeature::kFASTER_DYNAMIC_SHAPES_0805: return "kFASTER_DYNAMIC_SHAPES_0805";
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.cpp:27:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:9019:5: note: declared here
+ 9019 |     kFASTER_DYNAMIC_SHAPES_0805 TRT_DEPRECATED_ENUM = 0,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.cpp:649:26: warning: ‘nvinfer1::PreviewFeature::kFASTER_DYNAMIC_SHAPES_0805’ is deprecated [-Wdeprecated-declarations]
+  649 |     case PreviewFeature::kFASTER_DYNAMIC_SHAPES_0805: return "kFASTER_DYNAMIC_SHAPES_0805";
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.cpp:27:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:9019:5: note: declared here
+ 9019 |     kFASTER_DYNAMIC_SHAPES_0805 TRT_DEPRECATED_ENUM = 0,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.cpp: In function ‘std::ostream& sample::{anonymous}::printPreviewFlags(std::ostream&, const sample::BuildOptions&)’:
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.cpp:673:29: warning: ‘nvinfer1::PreviewFeature::kFASTER_DYNAMIC_SHAPES_0805’ is deprecated [-Wdeprecated-declarations]
+  673 |     addFlag(PreviewFeature::kFASTER_DYNAMIC_SHAPES_0805);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.cpp:27:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:9019:5: note: declared here
+ 9019 |     kFASTER_DYNAMIC_SHAPES_0805 TRT_DEPRECATED_ENUM = 0,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.cpp:673:29: warning: ‘nvinfer1::PreviewFeature::kFASTER_DYNAMIC_SHAPES_0805’ is deprecated [-Wdeprecated-declarations]
+  673 |     addFlag(PreviewFeature::kFASTER_DYNAMIC_SHAPES_0805);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.cpp:27:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:9019:5: note: declared here
+ 9019 |     kFASTER_DYNAMIC_SHAPES_0805 TRT_DEPRECATED_ENUM = 0,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.cpp: In member function ‘virtual void sample::BuildOptions::parse(sample::Arguments&)’:
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.cpp:1208:36: warning: ‘nvinfer1::PreviewFeature::kFASTER_DYNAMIC_SHAPES_0805’ is deprecated [-Wdeprecated-declarations]
+ 1208 |             feat = PreviewFeature::kFASTER_DYNAMIC_SHAPES_0805;
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.cpp:27:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:9019:5: note: declared here
+ 9019 |     kFASTER_DYNAMIC_SHAPES_0805 TRT_DEPRECATED_ENUM = 0,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.cpp:1208:36: warning: ‘nvinfer1::PreviewFeature::kFASTER_DYNAMIC_SHAPES_0805’ is deprecated [-Wdeprecated-declarations]
+ 1208 |             feat = PreviewFeature::kFASTER_DYNAMIC_SHAPES_0805;
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.cpp:27:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:9019:5: note: declared here
+ 9019 |     kFASTER_DYNAMIC_SHAPES_0805 TRT_DEPRECATED_ENUM = 0,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:31,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.h:24,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleReporting.cpp:26:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeBase.h: In member function ‘virtual bool nvinfer1::IGpuAllocator::deallocate(void*)’:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeBase.h:484:26: warning: ‘virtual void nvinfer1::IGpuAllocator::free(void*)’ is deprecated [-Wdeprecated-declarations]
+  484 |         this->free(memory);
+      |                          ^
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeBase.h:415:33: note: declared here
+  415 |     TRT_DEPRECATED virtual void free(void* const memory) noexcept = 0;
+      |                                 ^~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.h:24,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleReporting.cpp:26:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h: At global scope:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:871:104: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+  871 |     virtual IPluginV2* createPlugin(AsciiChar const* name, PluginFieldCollection const* fc) noexcept = 0;
+      |                                                                                                        ^
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:883:11: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+  883 |         = 0;
+      |           ^
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:27,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.h:24,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleReporting.cpp:26:
+perception_lab/third_party/TensorRT_8_6/include/NvInferImpl.h:653:47: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+  653 |     virtual IPluginV2& getPlugin() noexcept = 0;
+      |                                               ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.h:24,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleReporting.cpp:26:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:27,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.h:24,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleReporting.cpp:26:
+perception_lab/third_party/TensorRT_8_6/include/NvInferImpl.h:1019:113: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+ 1019 |     virtual IPluginV2Layer* addPluginV2(ITensor* const* inputs, int32_t nbInputs, IPluginV2& plugin) noexcept = 0;
+      |                                                                                                                 ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.h:24,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleReporting.cpp:26:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.h:24,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleReporting.cpp:26:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:3652:28: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+ 3652 |     IPluginV2& getPlugin() noexcept
+      |                            ^~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.h:24,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleReporting.cpp:26:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.h:24,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleReporting.cpp:26:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:6970:88: warning: ‘IFullyConnectedLayer’ is deprecated [-Wdeprecated-declarations]
+ 6970 |         ITensor& input, int32_t nbOutputs, Weights kernelWeights, Weights biasWeights) noexcept
+      |                                                                                        ^~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.h:24,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleReporting.cpp:26:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:1523:22: note: declared here
+ 1523 | class TRT_DEPRECATED IFullyConnectedLayer : public ILayer
+      |                      ^~~~~~~~~~~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.h:24,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleReporting.cpp:26:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:7547:101: warning: ‘IRNNv2Layer’ is deprecated [-Wdeprecated-declarations]
+ 7547 |         ITensor& input, int32_t layerCount, int32_t hiddenSize, int32_t maxSeqLen, RNNOperation op) noexcept
+      |                                                                                                     ^~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.h:24,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleReporting.cpp:26:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:3354:22: note: declared here
+ 3354 | class TRT_DEPRECATED IRNNv2Layer : public ILayer
+      |                      ^~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.h:24,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleReporting.cpp:26:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:7622:94: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+ 7622 |     IPluginV2Layer* addPluginV2(ITensor* const* inputs, int32_t nbInputs, IPluginV2& plugin) noexcept
+      |                                                                                              ^~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.h:24,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleReporting.cpp:26:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.h:24,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleReporting.cpp:26:
+perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:111:70: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+  111 |         int32_t nbWeights, char const* libNamespace = "") noexcept = 0;
+      |                                                                      ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEngines.h:24,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleInference.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleReporting.cpp:26:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:31,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.h:33,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.cpp:18:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeBase.h: In member function ‘virtual bool nvinfer1::IGpuAllocator::deallocate(void*)’:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeBase.h:484:26: warning: ‘virtual void nvinfer1::IGpuAllocator::free(void*)’ is deprecated [-Wdeprecated-declarations]
+  484 |         this->free(memory);
+      |                          ^
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeBase.h:415:33: note: declared here
+  415 |     TRT_DEPRECATED virtual void free(void* const memory) noexcept = 0;
+      |                                 ^~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.h:33,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.cpp:18:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h: At global scope:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:871:104: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+  871 |     virtual IPluginV2* createPlugin(AsciiChar const* name, PluginFieldCollection const* fc) noexcept = 0;
+      |                                                                                                        ^
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:883:11: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+  883 |         = 0;
+      |           ^
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:27,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.h:33,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.cpp:18:
+perception_lab/third_party/TensorRT_8_6/include/NvInferImpl.h:653:47: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+  653 |     virtual IPluginV2& getPlugin() noexcept = 0;
+      |                                               ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.h:33,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.cpp:18:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:27,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.h:33,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.cpp:18:
+perception_lab/third_party/TensorRT_8_6/include/NvInferImpl.h:1019:113: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+ 1019 |     virtual IPluginV2Layer* addPluginV2(ITensor* const* inputs, int32_t nbInputs, IPluginV2& plugin) noexcept = 0;
+      |                                                                                                                 ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.h:33,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.cpp:18:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.h:33,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.cpp:18:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:3652:28: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+ 3652 |     IPluginV2& getPlugin() noexcept
+      |                            ^~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.h:33,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.cpp:18:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.h:33,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.cpp:18:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:6970:88: warning: ‘IFullyConnectedLayer’ is deprecated [-Wdeprecated-declarations]
+ 6970 |         ITensor& input, int32_t nbOutputs, Weights kernelWeights, Weights biasWeights) noexcept
+      |                                                                                        ^~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.h:33,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.cpp:18:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:1523:22: note: declared here
+ 1523 | class TRT_DEPRECATED IFullyConnectedLayer : public ILayer
+      |                      ^~~~~~~~~~~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.h:33,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.cpp:18:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:7547:101: warning: ‘IRNNv2Layer’ is deprecated [-Wdeprecated-declarations]
+ 7547 |         ITensor& input, int32_t layerCount, int32_t hiddenSize, int32_t maxSeqLen, RNNOperation op) noexcept
+      |                                                                                                     ^~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.h:33,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.cpp:18:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:3354:22: note: declared here
+ 3354 | class TRT_DEPRECATED IRNNv2Layer : public ILayer
+      |                      ^~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.h:33,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.cpp:18:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:7622:94: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+ 7622 |     IPluginV2Layer* addPluginV2(ITensor* const* inputs, int32_t nbInputs, IPluginV2& plugin) noexcept
+      |                                                                                              ^~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.h:33,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.cpp:18:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleEntrypoints.h:31,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/common.h:34,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.h:35,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.cpp:18:
+perception_lab/third_party/TensorRT_8_6/include/NvCaffeParser.h:111:70: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+  111 |         int32_t nbWeights, char const* libNamespace = "") noexcept = 0;
+      |                                                                      ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInferLegacyDims.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.h:33,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.cpp:18:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.cpp:326:32: warning: ‘IFullyConnectedLayer’ is deprecated [-Wdeprecated-declarations]
+  326 | template void setSparseWeights<IFullyConnectedLayer>(
+      |                                ^~~~~~~~~~~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.h:33,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.cpp:18:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:1523:22: note: declared here
+ 1523 | class TRT_DEPRECATED IFullyConnectedLayer : public ILayer
+      |                      ^~~~~~~~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.cpp:327:88: warning: ‘IFullyConnectedLayer’ is deprecated [-Wdeprecated-declarations]
+  327 |     IFullyConnectedLayer& l, int32_t k, int32_t trs, std::vector<int8_t>& sparseWeights);
+      |                                                                                        ^
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.h:33,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.cpp:18:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:1523:22: note: declared here
+ 1523 | class TRT_DEPRECATED IFullyConnectedLayer : public ILayer
+      |                      ^~~~~~~~~~~~~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.cpp: In function ‘void sample::sparsify(nvinfer1::INetworkDefinition&, std::vector<std::vector<signed char> >&)’:
+perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.cpp:347:67: warning: ‘IFullyConnectedLayer’ is deprecated [-Wdeprecated-declarations]
+  347 |             auto& fc = *static_cast<nvinfer1::IFullyConnectedLayer*>(layer);
+      |                                                                   ^
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.h:33,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleUtils.cpp:18:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:1523:22: note: declared here
+ 1523 | class TRT_DEPRECATED IFullyConnectedLayer : public ILayer
+      |                      ^~~~~~~~~~~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:31,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logging.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logger.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logger.cpp:18:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeBase.h: In member function ‘virtual bool nvinfer1::IGpuAllocator::deallocate(void*)’:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeBase.h:484:26: warning: ‘virtual void nvinfer1::IGpuAllocator::free(void*)’ is deprecated [-Wdeprecated-declarations]
+  484 |         this->free(memory);
+      |                          ^
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeBase.h:415:33: note: declared here
+  415 |     TRT_DEPRECATED virtual void free(void* const memory) noexcept = 0;
+      |                                 ^~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logging.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logger.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logger.cpp:18:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h: At global scope:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:871:104: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+  871 |     virtual IPluginV2* createPlugin(AsciiChar const* name, PluginFieldCollection const* fc) noexcept = 0;
+      |                                                                                                        ^
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:883:11: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+  883 |         = 0;
+      |           ^
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:27,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.h:30,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logging.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logger.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logger.cpp:18:
+perception_lab/third_party/TensorRT_8_6/include/NvInferImpl.h:653:47: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+  653 |     virtual IPluginV2& getPlugin() noexcept = 0;
+      |                                               ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logging.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logger.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logger.cpp:18:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntime.h:27,
+                 from perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.h:30,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logging.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logger.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logger.cpp:18:
+perception_lab/third_party/TensorRT_8_6/include/NvInferImpl.h:1019:113: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+ 1019 |     virtual IPluginV2Layer* addPluginV2(ITensor* const* inputs, int32_t nbInputs, IPluginV2& plugin) noexcept = 0;
+      |                                                                                                                 ^
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logging.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logger.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logger.cpp:18:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.h:30,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logging.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logger.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logger.cpp:18:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:3652:28: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+ 3652 |     IPluginV2& getPlugin() noexcept
+      |                            ^~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logging.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logger.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logger.cpp:18:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.h:30,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logging.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logger.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logger.cpp:18:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:6970:88: warning: ‘IFullyConnectedLayer’ is deprecated [-Wdeprecated-declarations]
+ 6970 |         ITensor& input, int32_t nbOutputs, Weights kernelWeights, Weights biasWeights) noexcept
+      |                                                                                        ^~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.h:30,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logging.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logger.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logger.cpp:18:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:1523:22: note: declared here
+ 1523 | class TRT_DEPRECATED IFullyConnectedLayer : public ILayer
+      |                      ^~~~~~~~~~~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.h:30,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logging.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logger.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logger.cpp:18:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:7547:101: warning: ‘IRNNv2Layer’ is deprecated [-Wdeprecated-declarations]
+ 7547 |         ITensor& input, int32_t layerCount, int32_t hiddenSize, int32_t maxSeqLen, RNNOperation op) noexcept
+      |                                                                                                     ^~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.h:30,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logging.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logger.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logger.cpp:18:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:3354:22: note: declared here
+ 3354 | class TRT_DEPRECATED IRNNv2Layer : public ILayer
+      |                      ^~~~~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/samples/common/sampleOptions.h:30,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logging.h:22,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logger.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logger.cpp:18:
+perception_lab/third_party/TensorRT_8_6/include/NvInfer.h:7622:94: warning: ‘IPluginV2’ is deprecated [-Wdeprecated-declarations]
+ 7622 |     IPluginV2Layer* addPluginV2(ITensor* const* inputs, int32_t nbInputs, IPluginV2& plugin) noexcept
+      |                                                                                              ^~~~~~~~
+In file included from perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimeCommon.h:32,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logging.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logger.h:21,
+                 from perception_lab/third_party/TensorRT_8_6/samples/common/logger.cpp:18:
+perception_lab/third_party/TensorRT_8_6/include/NvInferRuntimePlugin.h:102:22: note: declared here
+  102 | class TRT_DEPRECATED IPluginV2
+      |                      ^~~~~~~~~
