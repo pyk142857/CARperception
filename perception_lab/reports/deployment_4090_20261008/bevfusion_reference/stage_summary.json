@@ -1,0 +1,45 @@
+{
+  "inference": "passed",
+  "official_detection_evaluation": "passed",
+  "visualization": "delegated_to_S6",
+  "results": {
+    "scene0061": {
+      "model": "bevfusion_reference",
+      "backend": "pytorch",
+      "precision": "fp32",
+      "split": "scene0061",
+      "frames": 39,
+      "mAP": 0.7117608071294532,
+      "NDS": 0.6223478195911297,
+      "forward_p50_ms": 122.33683013916016,
+      "forward_p95_ms": 126.76732177734377,
+      "end_to_end_p50_ms": 244.27903500009052,
+      "end_to_end_p95_ms": 286.4772307001204,
+      "allocated_peak_GiB": 2.1809473037719727,
+      "reserved_peak_GiB": 2.294921875,
+      "min_points": 244111,
+      "max_points": 255918,
+      "coordinate_roundtrip_max_error": 2.842170943040401e-14,
+      "status": "passed"
+    },
+    "mini_val": {
+      "model": "bevfusion_reference",
+      "backend": "pytorch",
+      "precision": "fp32",
+      "split": "mini_val",
+      "frames": 81,
+      "mAP": 0.5790331434331157,
+      "NDS": 0.5144708835989739,
+      "forward_p50_ms": 134.69549560546875,
+      "forward_p95_ms": 146.2021484375,
+      "end_to_end_p50_ms": 269.51346400005605,
+      "end_to_end_p95_ms": 401.97601800014127,
+      "allocated_peak_GiB": 2.181790351867676,
+      "reserved_peak_GiB": 2.86328125,
+      "min_points": 207998,
+      "max_points": 264273,
+      "coordinate_roundtrip_max_error": 4.263256414560601e-14,
+      "status": "passed"
+    }
+  }
+}
