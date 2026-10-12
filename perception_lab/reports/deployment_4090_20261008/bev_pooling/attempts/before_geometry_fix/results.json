@@ -1,0 +1,410 @@
+{
+  "status": "passed",
+  "experiment": "CUDA-BEVFusion actual depth-weighted FP16 pooling",
+  "tolerance_fixed_before_run": {
+    "atol": 0.02,
+    "rtol": 0.002,
+    "config_sha256": "12b17deee2ddd122f3cdd13350bb35f667220d4986c55ff9b6c74f938fdb280a"
+  },
+  "paired_rounds": 30,
+  "independent_warmup": 10,
+  "cases": [
+    {
+      "name": "empty",
+      "real_capture": false,
+      "metadata": {
+        "shape": [
+          1,
+          80,
+          2,
+          2,
+          3
+        ],
+        "out_h": 2,
+        "out_w": 3,
+        "num_intervals": 0
+      },
+      "candidate_vs_upstream": {
+        "finite": true,
+        "elements": 480,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "upstream_vs_captured_or_cpu": {
+        "finite": true,
+        "elements": 480,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "captured_sha256": null,
+      "interval_length_min": 0,
+      "interval_length_max": 0
+    },
+    {
+      "name": "single",
+      "real_capture": false,
+      "metadata": {
+        "shape": [
+          1,
+          80,
+          2,
+          2,
+          3
+        ],
+        "out_h": 2,
+        "out_w": 3,
+        "num_intervals": 1
+      },
+      "candidate_vs_upstream": {
+        "finite": true,
+        "elements": 480,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "upstream_vs_captured_or_cpu": {
+        "finite": true,
+        "elements": 480,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "captured_sha256": null,
+      "interval_length_min": 1,
+      "interval_length_max": 1
+    },
+    {
+      "name": "collision",
+      "real_capture": false,
+      "metadata": {
+        "shape": [
+          1,
+          80,
+          2,
+          2,
+          3
+        ],
+        "out_h": 2,
+        "out_w": 3,
+        "num_intervals": 1
+      },
+      "candidate_vs_upstream": {
+        "finite": true,
+        "elements": 480,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "upstream_vs_captured_or_cpu": {
+        "finite": true,
+        "elements": 480,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "captured_sha256": null,
+      "interval_length_min": 4,
+      "interval_length_max": 4
+    },
+    {
+      "name": "boundary",
+      "real_capture": false,
+      "metadata": {
+        "shape": [
+          1,
+          80,
+          2,
+          2,
+          3
+        ],
+        "out_h": 2,
+        "out_w": 3,
+        "num_intervals": 2
+      },
+      "candidate_vs_upstream": {
+        "finite": true,
+        "elements": 480,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "upstream_vs_captured_or_cpu": {
+        "finite": true,
+        "elements": 480,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "captured_sha256": null,
+      "interval_length_min": 1,
+      "interval_length_max": 1
+    },
+    {
+      "name": "frame_0",
+      "real_capture": true,
+      "metadata": {
+        "shape": [
+          6,
+          80,
+          118,
+          32,
+          88
+        ],
+        "out_h": 360,
+        "out_w": 360,
+        "num_intervals": 97326,
+        "features_layout": "NHWC",
+        "depth_layout": "NDHW",
+        "output_layout": "NCHW",
+        "feature_dtype": "float16",
+        "index_dtype": "uint32",
+        "interval_dtype": "int32"
+      },
+      "candidate_vs_upstream": {
+        "finite": true,
+        "elements": 10368000,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "upstream_vs_captured_or_cpu": {
+        "finite": true,
+        "elements": 10368000,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "captured_sha256": {
+        "features": "b6610f3105ac6cd5dbd2512cfd787bdcc22dc4331aa40b582723e8597a4d5391",
+        "depth": "c6128b8dd0e86bb743edfe7dcef373d0194052863a3f3b7034d8b70804c73d8c",
+        "indices": "2042667c9975c88d40cf09bd38ef325cd64fed7f878fef895521ad2f6a13948c",
+        "intervals": "ec2a8473dcaf982cd707ef969a8acddd1cc32aac3dbd70efba2e9e08c514314c",
+        "output": "524558cf79bd3870391bfa591b9fab3f2c3ae297f2444c0747fd3b7da9b4a028"
+      },
+      "interval_length_min": 1,
+      "interval_length_max": 886,
+      "timing": {
+        "upstream_ms": {
+          "mean": 0.22525973369677862,
+          "p50": 0.225600004196167,
+          "p95": 0.233668801933527
+        },
+        "candidate_ms": {
+          "mean": 0.24922666649023692,
+          "p50": 0.24958399683237076,
+          "p95": 0.2538271963596344
+        },
+        "speedup": {
+          "mean": 0.903905766759938,
+          "p50": 0.9006011218809999,
+          "p95": 0.9440438471262995
+        }
+      }
+    },
+    {
+      "name": "frame_19",
+      "real_capture": true,
+      "metadata": {
+        "shape": [
+          6,
+          80,
+          118,
+          32,
+          88
+        ],
+        "out_h": 360,
+        "out_w": 360,
+        "num_intervals": 96046,
+        "features_layout": "NHWC",
+        "depth_layout": "NDHW",
+        "output_layout": "NCHW",
+        "feature_dtype": "float16",
+        "index_dtype": "uint32",
+        "interval_dtype": "int32"
+      },
+      "candidate_vs_upstream": {
+        "finite": true,
+        "elements": 10368000,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "upstream_vs_captured_or_cpu": {
+        "finite": true,
+        "elements": 10368000,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "captured_sha256": {
+        "features": "c9517c4bfc652fae137def11810b46c493ec236d9921a47daafe6d7abeebfd78",
+        "depth": "9ea8cb6439a441d44b4950574b9534ec75742831b5fc493740d81612c42e6e6d",
+        "indices": "659f20ff84b1cfb34e592a0649cc068d13beed41fe569e58995e7837fdcb6c1f",
+        "intervals": "bcbf0aa1bd843040aba24da6aad3dc7112351951b7d739fa481d233b8951e106",
+        "output": "6d23beb4898f658f3f79402b6c6b12888a2797709867f70e5adb9b62bbac189c"
+      },
+      "interval_length_min": 1,
+      "interval_length_max": 859,
+      "timing": {
+        "upstream_ms": {
+          "mean": 0.2163456012805303,
+          "p50": 0.21508800238370895,
+          "p95": 0.22390400394797325
+        },
+        "candidate_ms": {
+          "mean": 0.24430186698834103,
+          "p50": 0.2446879968047142,
+          "p95": 0.24782559871673585
+        },
+        "speedup": {
+          "mean": 0.8856195195736921,
+          "p50": 0.8867686569737862,
+          "p95": 0.9209298946973199
+        }
+      }
+    },
+    {
+      "name": "frame_38",
+      "real_capture": true,
+      "metadata": {
+        "shape": [
+          6,
+          80,
+          118,
+          32,
+          88
+        ],
+        "out_h": 360,
+        "out_w": 360,
+        "num_intervals": 96306,
+        "features_layout": "NHWC",
+        "depth_layout": "NDHW",
+        "output_layout": "NCHW",
+        "feature_dtype": "float16",
+        "index_dtype": "uint32",
+        "interval_dtype": "int32"
+      },
+      "candidate_vs_upstream": {
+        "finite": true,
+        "elements": 10368000,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "upstream_vs_captured_or_cpu": {
+        "finite": true,
+        "elements": 10368000,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "captured_sha256": {
+        "features": "9ba10c2edd22bc27ad2f979578689ddb38110e442b6bd36b655bba2d9d60d1f9",
+        "depth": "651e475706c9d9bd18b48b59f516ccbf49cf842fb724c330338185cad263a695",
+        "indices": "42aac7cadd016ec4b386c305cfd7f9b8a596611228a886ffa18f09cb1462f411",
+        "intervals": "f84574c406eee5442f7cc8c5c09106519e7bef1d3116538af8436a063a9dc8f4",
+        "output": "a55d1ca69311527fb249d76b5728d8d4ee028f9f7cdbd1e0ed4e37e1ad5c0b9f"
+      },
+      "interval_length_min": 1,
+      "interval_length_max": 889,
+      "timing": {
+        "upstream_ms": {
+          "mean": 0.21745386570692063,
+          "p50": 0.2170879989862442,
+          "p95": 0.2206175960600376
+        },
+        "candidate_ms": {
+          "mean": 0.24883626451094945,
+          "p50": 0.24883200228214264,
+          "p95": 0.2533327952027321
+        },
+        "speedup": {
+          "mean": 0.8738641433567869,
+          "p50": 0.8688619818245893,
+          "p95": 0.8950306935979523
+        }
+      }
+    }
+  ],
+  "boundary_empty": "Both host dispatches return a zero tensor without an invalid zero-block launch; original upstream did not guard empty intervals.",
+  "timing_boundary": "same preallocated GPU inputs/outputs; zero output memset plus pooling kernel, CUDA event synchronized; no H2D/D2H, sort, allocation or capture I/O",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "torch": "1.13.1+cu117",
+  "cuda": "11.7",
+  "library_sha256": "f69af385c2a347127bd34fc9704c99a85073bc7adcf06eeba78b72a899967f14",
+  "adapter_sha256": "afa04edc183e1acca30577906ea96671a01f1d9c3fd796cc65497874cb016df5",
+  "default": "upstream",
+  "full_model_validation": "pending separate paired full-model evaluation"
+}

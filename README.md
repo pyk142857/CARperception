@@ -57,7 +57,16 @@ flowchart LR
 
 [实车部署技术与模型适用性报告（2026-10-08）](perception_lab/reports/industry_deployment_review_20261008/report.md)：核对 2026 年公开实车技术路线，评估现有模型的工程价值，并提出融合、时序、占用与 GPU 算子部署建议。区分实际推送、官方产品介绍、发布计划与开源研究；建议任务尚未执行。
 
-[4090 部署执行指令（2026-10-08）](perception_lab/instruction/20261008_01_4090_perception_deployment.md)：按 BEVFusion 参考推理、TensorRT FP16、BEV pooling CUDA 优化、Sparse4D 时序检测/跟踪、GaussianWorld 占用预测依次执行，接入 Rerun 并发布实测报告。指令已发布，实验待本地执行；新结果归档至 `perception_lab/reports/deployment_4090_20261008/`。
+[4090 部署实测报告（2026-10-12）](perception_lab/reports/deployment_4090_20261008/report.md)：BEVFusion R50 与 Sparse4D 已实际运行 scene-0061 的 39 帧和官方 mini_val 的 81 帧；GaussianWorld 原配置完成 39 帧流式占用。TensorRT FP16 已构建并运行，LayerNorm 插件版本达到 mAP/NDS 各下降不超过 0.005 的预算，但全量低分框的几何差异仍保留诊断未通过项。自主 BEV pooling CUDA 候选输出正确但更慢，默认保持上游实现。占用 IoU/mIoU 因缺少 SurroundOcc 标签未计算，整体验收状态以报告为准。
+
+新增本机结果页：[http://127.0.0.1:9094/](http://127.0.0.1:9094/)，包含独立模型图层、六相机、BEV、三维框/ID 与语义占用的同步回放。启动：
+
+```bash
+cd perception_lab
+envs/rerun/bin/python tools/deployment_visualize.py --serve
+```
+
+[各阶段复现命令](perception_lab/reports/deployment_4090_20261008/run_commands.md) · [原始指标](perception_lab/reports/deployment_4090_20261008/metrics.csv) · [逐阶段状态](perception_lab/reports/deployment_4090_20261008/status.json) · [执行指令](perception_lab/instruction/20261008_01_4090_perception_deployment.md)。所有成绩均为 mini 教学诊断与桌面 4090 实测，视频播放速度不等于模型 FPS。
 
 [GPU 算子优化与模型原理讲解（2026-10-10）](perception_lab/reports/gpu_operator_and_models_20261010/report.md)：对照论文与官方源码，解释 BEVFusion、Sparse4D v3、GaussianWorld 及经典感知模型的实现；给出 profiling、Roofline、Amdahl 判断方法和 CUDA 优化候选。属于原理分析，未新增 GPU 性能实验。
 

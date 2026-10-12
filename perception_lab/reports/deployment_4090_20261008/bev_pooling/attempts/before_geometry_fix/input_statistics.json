@@ -1,0 +1,113 @@
+[
+  {
+    "frame": 0,
+    "metadata": {
+      "shape": [
+        6,
+        80,
+        118,
+        32,
+        88
+      ],
+      "out_h": 360,
+      "out_w": 360,
+      "num_intervals": 97326,
+      "features_layout": "NHWC",
+      "depth_layout": "NDHW",
+      "output_layout": "NCHW",
+      "feature_dtype": "float16",
+      "index_dtype": "uint32",
+      "interval_dtype": "int32"
+    },
+    "interval_count": 97326,
+    "interval_length_min": 1,
+    "interval_length_max": 886,
+    "interval_length_p50": 14.0,
+    "interval_length_p95": 49.0,
+    "feature_min": -7.74609375,
+    "feature_max": 6.2421875,
+    "depth_min": 0.0,
+    "depth_max": 0.97998046875,
+    "hashes": {
+      "features": "b6610f3105ac6cd5dbd2512cfd787bdcc22dc4331aa40b582723e8597a4d5391",
+      "depth": "c6128b8dd0e86bb743edfe7dcef373d0194052863a3f3b7034d8b70804c73d8c",
+      "indices": "2042667c9975c88d40cf09bd38ef325cd64fed7f878fef895521ad2f6a13948c",
+      "intervals": "ec2a8473dcaf982cd707ef969a8acddd1cc32aac3dbd70efba2e9e08c514314c",
+      "output": "524558cf79bd3870391bfa591b9fab3f2c3ae297f2444c0747fd3b7da9b4a028"
+    }
+  },
+  {
+    "frame": 19,
+    "metadata": {
+      "shape": [
+        6,
+        80,
+        118,
+        32,
+        88
+      ],
+      "out_h": 360,
+      "out_w": 360,
+      "num_intervals": 96046,
+      "features_layout": "NHWC",
+      "depth_layout": "NDHW",
+      "output_layout": "NCHW",
+      "feature_dtype": "float16",
+      "index_dtype": "uint32",
+      "interval_dtype": "int32"
+    },
+    "interval_count": 96046,
+    "interval_length_min": 1,
+    "interval_length_max": 859,
+    "interval_length_p50": 14.0,
+    "interval_length_p95": 50.0,
+    "feature_min": -8.6875,
+    "feature_max": 6.99609375,
+    "depth_min": 0.0,
+    "depth_max": 0.9970703125,
+    "hashes": {
+      "features": "da469c1d147d67e351996675b3e49813ec67510c4cc502be6ea502f18d503b47",
+      "depth": "e3950d47e4231c7bcc4b0db3640e440893ede5233a57660d12764d9e751f1188",
+      "indices": "659f20ff84b1cfb34e592a0649cc068d13beed41fe569e58995e7837fdcb6c1f",
+      "intervals": "bcbf0aa1bd843040aba24da6aad3dc7112351951b7d739fa481d233b8951e106",
+      "output": "05fbb80a1d15ee558ac4539d01cf6566ae3d7d6f65344ebf01f1e1a16723fab2"
+    }
+  },
+  {
+    "frame": 38,
+    "metadata": {
+      "shape": [
+        6,
+        80,
+        118,
+        32,
+        88
+      ],
+      "out_h": 360,
+      "out_w": 360,
+      "num_intervals": 96306,
+      "features_layout": "NHWC",
+      "depth_layout": "NDHW",
+      "output_layout": "NCHW",
+      "feature_dtype": "float16",
+      "index_dtype": "uint32",
+      "interval_dtype": "int32"
+    },
+    "interval_count": 96306,
+    "interval_length_min": 1,
+    "interval_length_max": 889,
+    "interval_length_p50": 14.0,
+    "interval_length_p95": 49.0,
+    "feature_min": -8.59375,
+    "feature_max": 8.09375,
+    "depth_min": 0.0,
+    "depth_max": 0.9736328125,
+    "hashes": {
+      "features": "4020cf9e98e3964ebdbc912ed818f13ea487b672cb2870577bedbd8c8648a373",
+      "depth": "9cade8e87a38597b6df9ea755629a6d83f177e716c7c95eedc2e0ad0d09eaca2",
+      "indices": "42aac7cadd016ec4b386c305cfd7f9b8a596611228a886ffa18f09cb1462f411",
+      "intervals": "f84574c406eee5442f7cc8c5c09106519e7bef1d3116538af8436a063a9dc8f4",
+      "output": "8fb1f4a4cdfaaf70ed57f2825ff5dcafc6df28d23e7148321b785e36d1161afd"
+    }
+  }
+]

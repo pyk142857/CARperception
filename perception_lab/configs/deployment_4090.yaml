@@ -1,0 +1,129 @@
+{
+  "experiment": "deployment_4090_20261008",
+  "starting_commit": "e903935",
+  "report": "reports/deployment_4090_20261008",
+  "data": "data/nuscenes",
+  "splits": {
+    "scene0061": "reports/deployment_4090_20261008/inputs/scene0061_packets.json",
+    "mini_val": "reports/deployment_4090_20261008/inputs/mini_val_packets.json"
+  },
+  "environments": {
+    "preflight": "envs/nuscenes_eval/bin/python",
+    "bevfusion_reference": "envs/bevfusion/bin/python",
+    "bevfusion_tensorrt": "envs/bevfusion/bin/python",
+    "bev_pooling": "envs/bevfusion/bin/python",
+    "sparse4d": "envs/sparse4d/bin/python",
+    "gaussianworld": "envs/gaussianworld/bin/python",
+    "visualize": "envs/rerun/bin/python",
+    "evaluate": "envs/nuscenes_eval/bin/python"
+  },
+  "bevfusion": {
+    "source": "third_party/bevfusion_4090",
+    "commit": "db75150717a9462cb60241e36ba28d65f6908607",
+    "config": "third_party/bevfusion_4090/configs/nuscenes/det/transfusion/secfpn/camera+lidar/resnet50/convfuser.yaml",
+    "checkpoint": "checkpoints/deployment_4090/nvidia/model/resnet50/bevfusion-det.pth",
+    "image_shape": [
+      1,
+      6,
+      3,
+      256,
+      704
+    ],
+    "sweeps": 9,
+    "test_mode": true,
+    "camera_order": [
+      "CAM_FRONT",
+      "CAM_FRONT_RIGHT",
+      "CAM_FRONT_LEFT",
+      "CAM_BACK",
+      "CAM_BACK_LEFT",
+      "CAM_BACK_RIGHT"
+    ]
+  },
+  "tensorrt": {
+    "source": "third_party/Lidar_AI_Solution",
+    "commit": "7c1623f234d5a9794fd862c9456f68f87ae7b900",
+    "version": "8.6.1",
+    "cuda_toolkit": "/usr/local/cuda-11.8",
+    "sm": 89,
+    "precision": "fp16",
+    "workspace_mib": 2048,
+    "model_dir": "checkpoints/deployment_4090/nvidia/model/resnet50",
+    "max_input_points": 500000,
+    "max_voxels": 160000,
+    "image_preprocess": "same pinned PyTorch CPU pipeline; bypass CUDA image normalization",
+    "acceptance_fixed_before_run": {
+      "map_drop_max": 0.005,
+      "nds_drop_max": 0.005,
+      "same_class_match_radius_m": 2.0,
+      "diagnostic_p95_center_m": 0.2,
+      "diagnostic_p95_score_abs": 0.03,
+      "diagnostic_p95_size_m": 0.2,
+      "diagnostic_p95_yaw_rad": 0.1,
+      "diagnostic_p95_velocity_mps": 0.3,
+      "tensor_atol": 0.05,
+      "tensor_rtol": 0.02
+    },
+    "head_engine": "head.bbox.layernormplugin"
+  },
+  "pooling": {
+    "paired_rounds": 30,
+    "warmup": 10,
+    "fp32_atol": 0.0001,
+    "fp32_rtol": 0.0001,
+    "fp16_atol": 0.02,
+    "fp16_rtol": 0.002,
+    "default": "upstream",
+    "selection_requires_accuracy_and_stable_speedup": true
+  },
+  "sparse4d": {
+    "source": "third_party/Sparse4D",
+    "checkpoint": "checkpoints/sparse4d/sparse4dv3_r50.pth",
+    "image_shape": [
+      1,
+      6,
+      3,
+      256,
+      704
+    ],
+    "camera_only": true,
+    "reset_at_scene_boundary": true
+  },
+  "gaussianworld": {
+    "source": "third_party/GaussianWorld",
+    "checkpoint": "checkpoints/gaussianworld/ckpt_stream.pth",
+    "image_shape": [
+      1,
+      6,
+      3,
+      864,
+      1600
+    ],
+    "gaussians": 25600,
+    "grid_shape": [
+      200,
+      200,
+      16
+    ],
+    "amp": false,
+    "protocol": "scene-stream",
+    "evaluation_requires_surroundocc_labels": true
+  },
+  "timing": {
+    "warmup": 3,
+    "gpu_exclusive": true,
+    "report_percentiles": [
+      50,
+      95
+    ]
+  },
+  "visualize": {
+    "score_threshold": 0.25,
+    "playback_fps": 2,
+    "representative_frames": [
+      0,
+      19,
+      38
+    ]
+  }
+}

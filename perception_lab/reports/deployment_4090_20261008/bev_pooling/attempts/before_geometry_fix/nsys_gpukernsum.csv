@@ -1,0 +1,3 @@
+Time (%),Total Time (ns),Instances,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),GridXYZ,BlockXYZ,Name
+50.1,235173,1,235173.0,235173.0,235173,235173,0.0,   1  761    1,   8  128    1,"bevfusion::camera::bevpool_half_pack10_kernel(const __half *, const __half *, unsigned int, const int3 *, unsigned int, const unsigned int *, unsigned int, unsigned int, unsigned int, unsigned int, __half *)"
+49.9,234565,1,234565.0,234565.0,234565,234565,0.0,   1 12166    1,  20    8    1,"bevfusion::camera::car_bevpool_pack4_kernel(const __half *, const __half *, unsigned int, const int3 *, unsigned int, const unsigned int *, unsigned int, unsigned int, unsigned int, unsigned int, __half *)"

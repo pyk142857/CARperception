@@ -1,0 +1,14 @@
+{
+  "core_sha256": "4d9121b0bec7cc09e24a1302750d91c700d6ec0b8510e1d3525dff2735b1fa6b",
+  "capture_meta_sha256": "fa68d0acf2febc335cb1eb15957486590257e605a6f3f2b966165cdcc56cb719",
+  "current_geometry": "last interval has exclusive end numel_geometry",
+  "files": {
+    "sanitizer_real.log": "5bb9133c558c11a463677882ba4f93a5a41b869c258fb1d8778cd7d71471cfb7",
+    "nsys.log": "ce417683e26261a7e7d759392bfdc18568c0fc5f3eafb71555bc21a56b34ed61",
+    "nsys_gpukernsum.csv": "6789e6bc7b4f6578dfbf4ed99314af939b43607cacce6acccb41c065f4bc4388",
+    "nsys_gpumemtimesum.csv": "4faa9da72646437d174a1fb8659df35f00803b0e2a6e299ae7883a655b17e93d",
+    "nsys_kernel_resources.json": "d89bbb39bad05a64a56cf5b2661ad2782bf5cba0fdb643378311371a08729e3f",
+    "capacity_max.json": "cb97fb65c2b520fdd6c861363af4c6aac6ecd3ba92b8267e8b833ad0278bd0f0",
+    "capacity_min.json": "d41002117a07e8755427c04d78c6207e6565532fcb84d2257f688ee5bce34ca8"
+  }
+}

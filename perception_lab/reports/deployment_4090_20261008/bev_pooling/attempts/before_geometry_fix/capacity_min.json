@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "scope": "synthetic capacity test, not accuracy evaluation or representative model timing",
+  "source_sample_token": "ca9a282c9e77460f8360f564131a8af5",
+  "original_points": 248834,
+  "input_points": 1,
+  "preparation": "take first actual preprocessed point",
+  "native_boxes": 200,
+  "finite_output": true,
+  "one_call_wall_ms": 86.74995599994872,
+  "capacity": 500000,
+  "config_sha256": "12b17deee2ddd122f3cdd13350bb35f667220d4986c55ff9b6c74f938fdb280a",
+  "runner_sha256": "0d148bb9c91f7ae985af4e66cc1bf067e659e61e8b45e43f9ade929057bc0b8c",
+  "core_sha256": "f69af385c2a347127bd34fc9704c99a85073bc7adcf06eeba78b72a899967f14"
+}

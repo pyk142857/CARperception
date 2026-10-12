@@ -1,0 +1,11 @@
+{
+  "status": "compiled_not_yet_measured",
+  "changes": "tile4 block20x8 candidate; runtime switch; optional capture; shared C ABI dispatcher; empty interval guard",
+  "hashes": {
+    "perception_lab/third_party/Lidar_AI_Solution/CUDA-BEVFusion/build/libbevfusion_core.so": "f69af385c2a347127bd34fc9704c99a85073bc7adcf06eeba78b72a899967f14",
+    "perception_lab/third_party/Lidar_AI_Solution/CUDA-BEVFusion/build/libpybev.so": "cb91b42da73dd69dbbf8c5eb018f132ae3fb6222d13f5cb07d5a451e961ffbd5",
+    "perception_lab/third_party/Lidar_AI_Solution/CUDA-BEVFusion/src/bevfusion/camera-bevpool.cu": "6f57c7375dc0dd046f8568750934ef532b00674e1a3f5bd2fff7bd2b099b1fac",
+    "perception_lab/tools/bev_pooling_candidate.patch": "1878a36a0785c33a006ece98956df758502981ff135152bc2490877681c5b402"
+  },
+  "upstream_default_unchanged": true
+}
