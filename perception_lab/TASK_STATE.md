@@ -79,3 +79,7 @@ results/metrics.csv、results/status.json、results/mini_learning.json 与 repor
 ## 置信度统计（2026-09-29）
 
 完成0.10–0.90的10档阈值重评及0.25基线分数分档，原案例/总计完全复现。FN无分数；ID取当帧新轨迹分数。跟踪器未重跑。见 [分析报告](reports/confidence_analysis/analysis-report.md)。
+
+## 4090 部署恢复发布与一致性补查（2026-10-12）
+
+原部署 571 路径恢复并核验，保留原完成提交和最新主分支文档。四帧各后端 5 次生产/5 次捕获运行完成；40 组同输入模块回放及 8 组几何对照完成。发现稀疏深度/LiDAR BEV 变异、几何分配差异和候选交换；head 同源仍有残差，尚未定位具体敏感层。生产模型未改，复用已核验的 39/81 帧评估，原全候选失败保留。Pooling 无稳定提速、默认 upstream；Sparse4D 证据复核，GaussianWorld 推理完成但 GT 缺失。22 项测试通过。详见[补查报告](reports/deployment_4090_20261012_followup/report.md)和[远端回执](reports/deployment_4090_20261012_followup/publication_receipt.json)。

@@ -1,0 +1,744 @@
+{
+  "main_before": "1f866fc8c493588b722902cdd0e503c1cd5daedb",
+  "batches": [
+    {
+      "commit": "8614ed4a1cf5d17b873088134a81a8f916598bc4",
+      "files": [
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/baseline_tests.log",
+          "bytes": 99,
+          "sha256": "9daf8c8a9c3ab7d749cba828058ba813f1c74db5a48d6786c1a347ed9fb8980a",
+          "git_blob": "13d417b6c53913d6307085fdbd9cf0b36d93f460",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/final_tests.log",
+          "bytes": 99,
+          "sha256": "9e815bcfb75bce0460da54fd7182e810b1e7f0f7c5033b95d1fac664a10fc8f7",
+          "git_blob": "afc24b97cd8eb2da86bfef1e1c9fb321b57b908d",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/layernorm_existing_implementation.json",
+          "bytes": 668,
+          "sha256": "0f28c98b2ace8b42c056bb473cb744656147932368c3643404bd16595aae0c75",
+          "git_blob": "12fe88bb40fdd355cf03f763b09f24705fb169d8",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/metrics.csv",
+          "bytes": 528,
+          "sha256": "4386bc0436219adbb8a6f73ed70ceb54becf491d9509cbcdd5a9363100adba11",
+          "git_blob": "db0d8e8ca8bcc3f749809771bb15c4b512423f3f",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/p4_audit/audit.json",
+          "bytes": 66705,
+          "sha256": "7f3d83f0005355f33952161314201bdcc23cf63f39e0dace6231a48e17c3903e",
+          "git_blob": "75af0efa49545e6a259d294fe67c7293d76cff76",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/p4_audit/audit.py",
+          "bytes": 9250,
+          "sha256": "590b0a754aa524c9df85440a8ff37687254ce0d3fdd8031d4bb960ad55a517b6",
+          "git_blob": "f010d54a2776e2f287b928fda10df17c17d55ca0",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/p4_audit/gaussianworld_4090_provenance_snapshot.py",
+          "bytes": 10892,
+          "sha256": "9b99b79bba08c2838f7c57c8ec51a3ea840a7a788559d4df85782542221124c3",
+          "git_blob": "c811a07c513adaadfdbf67824dc36301501b98ab",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/p4_audit/provenance_recovery.json",
+          "bytes": 1937,
+          "sha256": "45922da7133641437bdf5e86ce3f8e02ede0c4198868d1148c8b63edeeb4c243",
+          "git_blob": "426dfff590a6bd2aa844447defc79f80b5c7b610",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/p4_audit/recover_provenance.py",
+          "bytes": 2392,
+          "sha256": "093426516d588c9e1de0af9314855274b967e898f2e728d61a34f95a88f4d31d",
+          "git_blob": "2751731551eba50f98d309117e23bbdbb6cf2b3d",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/p4_audit/report.md",
+          "bytes": 5459,
+          "sha256": "41f13bffd745415db11f6c45e1c0a1c622a22cf4f4502258bdccaab56c490738",
+          "git_blob": "b9d717e3af4eb26fe9e3564250ebab2013491037",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/p4_audit/verification.log",
+          "bytes": 2933,
+          "sha256": "7db7846d156ff5967c61eea3675a019abb4fbfe3b46974b5e537097f4bc2ccc4",
+          "git_blob": "d5f51bdf791eac13ebebc9707f81831a85bbcb61",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/pooling/recomputed.json",
+          "bytes": 1886,
+          "sha256": "0e0becafb4f8272c8ad5404c9927109c2c1e7d64a2981a8db46ac711686b34b4",
+          "git_blob": "741c5a789e9b10687cd6e0da55d979bfe9f54614",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/preflight.json",
+          "bytes": 10208,
+          "sha256": "0f1c5d16a1c70501a7e941c0ff23298644e08c78da189fa3d517d526ce9e7dbb",
+          "git_blob": "61f29579e6763ff7cf38631acbd0c4651ef4f5a5",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/publication_push_01.log",
+          "bytes": 120,
+          "sha256": "7f5724f01bfa19d97513acdbb357523a85d5a09d998f37258b542890c38901c0",
+          "git_blob": "dac206d5a15b31df6839c0ab41f9b05fe0c7b9dd",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/publication_push_02.log",
+          "bytes": 120,
+          "sha256": "66a7dc57ff98c44625c8355a8df1516efb8ee095b00c9e68ba70c26989dc55d3",
+          "git_blob": "74b21dcc8d20fc0304127371ae0dba1dac36e9c3",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/publication_push_03.log",
+          "bytes": 120,
+          "sha256": "ee5c01f29d65b8b5edadb31064ad84c700453b7f4ddc7aac713e824d12148209",
+          "git_blob": "b02ef81a14ed87047a63d73605cde1cf77a82174",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/publication_push_04.log",
+          "bytes": 120,
+          "sha256": "1694cb3925f081844d208645c27b7de39bfbf76a0194e79a5372b73e7c00119f",
+          "git_blob": "9840579c70184f5b5603e68f39dabd047783d8b0",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/publication_push_05.log",
+          "bytes": 120,
+          "sha256": "bdca8be81a3368b7d56e5ad76882e9ea34cd3526dc5b021c177a8932c6151ae4",
+          "git_blob": "66dc5d5c93fa410c3f58941ba14fdbc8a38351a0",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/publication_push_06.log",
+          "bytes": 120,
+          "sha256": "b13571ca21dd948a87c6c093d539756db69718eb58b7292e27f9d65540db3361",
+          "git_blob": "918d2fb29f925bf4bb618d973009df3191f68bc3",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/publication_push_07.log",
+          "bytes": 275,
+          "sha256": "6c5a14423ff299dc88da9fbcb03277d22cb6d43580e6fea6294bdaffa6a3e1e9",
+          "git_blob": "e3353713733f975fbc18adb6ad82936da99261cc",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/publication_push_08.log",
+          "bytes": 120,
+          "sha256": "439d020b26f641f2b424bda2cc872e16b4ff23150b067217e3f50416c6aad385",
+          "git_blob": "d49493cc11e5c8ba0ce17d97d2d4743122f4071c",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/publication_push_09.log",
+          "bytes": 120,
+          "sha256": "0198c8652ec28814567b86ab5a47756ccd7ed0a3397e3f85ca5f8d561a9851ae",
+          "git_blob": "1e7bc25023c8b03f0bfa85dfd8d73f28da960447",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/publication_push_10.log",
+          "bytes": 120,
+          "sha256": "c0cf81a01cc70d85cdde9768dec47778d56ffea9b959d855ca8b5b69e4104d56",
+          "git_blob": "7ae207326d254634c1b39bba7cf94ea7ffbc27f9",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/publication_push_11.log",
+          "bytes": 120,
+          "sha256": "7b6393a5bc51953720ce22954e0ba6f68906b287ebf0624438663708cc3fae39",
+          "git_blob": "5eb8ab553fee100c2fb0119e37337745fa0c5849",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/publication_push_12.log",
+          "bytes": 120,
+          "sha256": "69b5c09634a8cfb89b3c88ae4943e40586bc0a0371d54e0404ece576be174a13",
+          "git_blob": "e9bf101da5014a956f1c98c38e5144fc9ac17cc6",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/publication_push_13.log",
+          "bytes": 120,
+          "sha256": "7e17cc71dab0f45d0dd2485d00a53ae5b067d15df639f36fa33c59f8f670c287",
+          "git_blob": "5e16bc5a978d1c9780d953898d45deb743436a2d",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/publication_push_14.log",
+          "bytes": 120,
+          "sha256": "d19fae47df28774387074264c1105fbeac43c5b390867a75f20f115b6de9717d",
+          "git_blob": "0a7bb304ec74c1c574d86f413f70c75151618bac",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/publication_push_15.log",
+          "bytes": 120,
+          "sha256": "252c414cec5e75c9879edf3b07dee875bb43962f4e679ef7ff2b9a092dbf9b24",
+          "git_blob": "51066a9cbeed95834a289d934679ae66bd483e22",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/publication_push_16.log",
+          "bytes": 120,
+          "sha256": "74cbd6a3dcfab9e7e3169579240a0e446bee2e867a82d12aa7a9b5c43828b24b",
+          "git_blob": "c8b02fe18468d75dc34becdf6ae4c064737ba721",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/publication_push_17.log",
+          "bytes": 120,
+          "sha256": "6da1a04d9b04a3b6e7c3a5e74519c283846c8f91f3d6bd98708cc54ad24b2e1d",
+          "git_blob": "f0fc9ad27d36809efb90c3355e8d433fb90da63c",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/publication_push_18.log",
+          "bytes": 120,
+          "sha256": "31825dbda85ca22ad7ffbff12a7739fdc315d4c1351e85f9c803525b18b802b2",
+          "git_blob": "1ae1a459c0c43551ea9e75bc5ae2022c71a2ed67",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/publication_receipt.json",
+          "bytes": 3628,
+          "sha256": "da805aefa825f032e6b34549293cbbb2e28fe46f28e168d7d348720b360b1cf3",
+          "git_blob": "d2b60a16874b8577ab861e919ee211b79379f76e",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/publication_transport.json",
+          "bytes": 117895,
+          "sha256": "c7b7d7e539c62fe34e51c167e75ed52b06578c5cf202e719cb4cbcd4d7b5c8ae",
+          "git_blob": "95bb62dcf6571b479e7ec36c95dad1132f27370b",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/reference/analyze_raster_collisions.py",
+          "bytes": 5549,
+          "sha256": "d7177d206b84cfe3e2a76f3787299c3c0d658977771f787c05f5eee1ea6f81a1",
+          "git_blob": "99f5d7896851ee6003a02a5cfb15a93df2b5cbce",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/reference/execution.json",
+          "bytes": 3036,
+          "sha256": "4132d2af4cd2b5109cedeb927017cf600cde74a6db9bc37d43c0e396e642d651",
+          "git_blob": "bd6dba08cc01f8d5fe5d08df18a6d310d7af448d",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/reference/identity.json",
+          "bytes": 3028,
+          "sha256": "eede04f4e72bff3ba086373607dbcee55b127fdd7735b4929fb73f4c69df9a6d",
+          "git_blob": "41cf4929e7bfdfb346bbca3f979f75170e9b6c0b",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/reference/metrics.csv",
+          "bytes": 1484,
+          "sha256": "35d67d1518fb26fe90cb64591c6e8a22597ad43ea8be992abda0f703fa898f17",
+          "git_blob": "32ac823a14ee3d6554be64578d144a9009dd0b81",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/reference/production_aa_audit.md",
+          "bytes": 2991,
+          "sha256": "f9de3ec030219b9866964727638e6074ae806cb1dd7e963a63d3cc3e3b62370e",
+          "git_blob": "2d00ec6de060f423a0d217c9ef9bf0848abdf2a5",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/reference/production_aa_audit.py",
+          "bytes": 9993,
+          "sha256": "d58337408907f692cdebebd6f2fd18e216a9947448aa8f7866f4140540735bc3",
+          "git_blob": "f39fbdbc84e6e277e9cc6aae9a0b34b5228b1907",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/reference/production_summary.json",
+          "bytes": 902,
+          "sha256": "1ce783edd31aa1c81af7a89a82158c8b71b667c598e8061d141aa370867b679f",
+          "git_blob": "dc9abe75c7c59932f75828d5eaf575ec5c3cc6cd",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/reference/raster_collision_evidence.json",
+          "bytes": 98929,
+          "sha256": "fa95471fd8f0e2f771f195bf5643fb5de9857b080cea753f5692354680f4e937",
+          "git_blob": "bd2568863778f19986641726a6d5fc666f7788cd",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/reference/replay/analyze_replay.py",
+          "bytes": 3118,
+          "sha256": "08a48080bc8e5b5f703face258cadfd9e0476ef915f09e10298680c81f3a06c1",
+          "git_blob": "840690f69ba55dfe240e5ca1e2f113c453a45042",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/reference/replay/execution.json",
+          "bytes": 809,
+          "sha256": "855c98cdc939c0626742ef40d5225d230c5165b3e1896e58e9957ff633f21fd8",
+          "git_blob": "14c2690bf0ae62b0da63308056c383dd5a43010c",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/reference/replay/metrics.csv",
+          "bytes": 27254,
+          "sha256": "7144c816df201db7d797422067687a593ccce4f9a83b80fc1a550ab3f6e8d516",
+          "git_blob": "df02dbb2bed5d44186c7d1adb0bb4df5e68a3d6b",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/reference/replay/report.md",
+          "bytes": 4007,
+          "sha256": "9c7b88fe74cc19e1e4f32a29c41d55a3807e04ea958a36ed2844877d4c2030fd",
+          "git_blob": "148c03b2b5d3e951046670fa0050817e698a8e05",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/reference/replay/run.log",
+          "bytes": 32607,
+          "sha256": "9ac75fb01b7a39398c11ebcf0cdc11ebca07c1a727e05e2210c76e6ef279777a",
+          "git_blob": "3b0f69dc1e930ae25a20af2c2041ad68420483c4",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/reference/replay/source_aligned_head.json",
+          "bytes": 46269,
+          "sha256": "b634c7a98f5253b19e3ee4cc79fe6c761ad65b7f1882db9f1077b53abc26ef24",
+          "git_blob": "5a3a174747ad3c13bf665fb0413a4f75ecfcdff9",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/reference/report.md",
+          "bytes": 4710,
+          "sha256": "aeabb613a0c563b9e9da1a82997c91a5fbf26a5c92848512462d80a49167cb28",
+          "git_blob": "8c9ef6b4c2c83f763f04da24e94d3751832cbba2",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/reference/resolved_config.json",
+          "bytes": 9618,
+          "sha256": "07680a770b0aeab9c94731dea9b0e4c99e89949b927142ee85bce99a39426c47",
+          "git_blob": "238376242d411ede0cbbfaa5583b020d36b3b7db",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/reference/run.log",
+          "bytes": 32063,
+          "sha256": "5ab9e68156b87247771726299c0c3523f6f13c6e34ded11ecfd30ed5f911fe86",
+          "git_blob": "4d93710c3ce0d972d9f478a49c923a6ba362d1c2",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/reference/run_commands.md",
+          "bytes": 1276,
+          "sha256": "34ce3aac0f6ac861a86d04d72593f80998d14b8a4cd0ab72ce30439ad49a99eb",
+          "git_blob": "49f847bcc123dda78f2cc4d1b4331a1e8684e890",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/reference/source_aligned_metrics.json",
+          "bytes": 3508,
+          "sha256": "4670c9a83e7e6d10cf1f345c6b53a0f23c4899edf6af90bddc7d19d6279a5d14",
+          "git_blob": "695478e008a1d9f08822e9f147ae886dc25cbcf5",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/reference/summary.json",
+          "bytes": 5255,
+          "sha256": "bc0e1c402939e9d79f4c28eabb416f6a2aed25a44b3de66267c4ffccd220ea3f",
+          "git_blob": "404c684ad189b1454f342af4a7ae6679ad051fac",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/report.md",
+          "bytes": 7510,
+          "sha256": "95d383f64dbf93203182035790f3d49a96fba5615b305b3fb94f2b55fde1d4f8",
+          "git_blob": "b636105d6415665b72e3e89087f0f6a6af8a7f68",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/run_commands.md",
+          "bytes": 1713,
+          "sha256": "7566ac9ea9d17aeec19c55add8d2ef071e6bff6518dc9e172416fb947673dc89",
+          "git_blob": "61de9bd7b7feba14bdb06d73da22cd504acadc29",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/status.json",
+          "bytes": 991,
+          "sha256": "b0176a0a4877c3cf7f77e775baabe3695ea816eb95095b886e94811082d7eb56",
+          "git_blob": "1ba58fab4a2623696ab0d5ae05cec86f91566e83",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/trt/artifact_identity.json",
+          "bytes": 2177,
+          "sha256": "d8be43a1ca233e8c54265428adcd6e2e4c03c69e62fef9fae18b5e705bcfc83e",
+          "git_blob": "a876df272cf0320fedf5b3d6ff71a81fa4866fd6",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/trt/build.json",
+          "bytes": 4766,
+          "sha256": "fc60d3fc0b9da7a5aa47ce88dfb3930364061e153f7273ee94aa2c0fa9864578",
+          "git_blob": "99a188045eb7320317b9b93192ff195ef6cd4867",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/trt/capture_gaps.json",
+          "bytes": 596,
+          "sha256": "16e34cc71a86fa494b5283d08f368d25e6153c06e1bf9e75e19892be55fa2dd4",
+          "git_blob": "f73086d11a0ff7a6eb6c9d275a443ff26d25db1b",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/trt/capture_nodes.json",
+          "bytes": 10459,
+          "sha256": "bc25e1a2709b9e641b6a60bc18787a7a9b96f37c6323cd77454b8734c4b80c9a",
+          "git_blob": "9a9f469637d957f44afa142ec8113991606b4791",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/trt/diagnostic_identity.json",
+          "bytes": 2263,
+          "sha256": "bda826a335c5bfa15b27b91787305204b8931e08059ee60195aeb249aad8a7f5",
+          "git_blob": "629511797a0526ea4ac6a78ba54259a09ba29664",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/trt/diagnostic_loaded_libraries.json",
+          "bytes": 737,
+          "sha256": "d7fea0a69bc0f760a7404f34039db692e8528964f2af9c9522a78593501d1549",
+          "git_blob": "9f892a65be70f0ad586bd82c4c2c0eecdda18f06",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/trt/head_diagnostic_build.json",
+          "bytes": 1090,
+          "sha256": "169d47fe07dc89fd4b49fe765914a01887858c321660b6829c650b5fed2c2e6c",
+          "git_blob": "3ce137475edf295359a7913a8a276b660b6ea718",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/trt/head_diagnostic_build_tail.log",
+          "bytes": 6393,
+          "sha256": "91cd98e14908f5fc5d6da4fda57272cac59f8f9bf8c890b1de9f31f9d3820407",
+          "git_blob": "7403ec8d7e03e72f08e5ac53bff9d64871e0a10e",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/trt/head_diagnostic_export.json",
+          "bytes": 547,
+          "sha256": "b7fed5d20d17748a157329dafba72c4fec43e08b15a3b956d5ea56d0bdfc24a5",
+          "git_blob": "b14c48500fbf14a902af6fcec8da95d78dce200c",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/trt/high_score_same_input_head_control.json",
+          "bytes": 7159,
+          "sha256": "e41b1e5509d532e25766f6b9d9e31e9799e5e622f42f1de9a05e146bdf92566b",
+          "git_blob": "ec46b4f0c3cd1d936684d1b5dd24598b19705318",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/trt/independent_review.json",
+          "bytes": 68613,
+          "sha256": "9372af687ec9cee17fd80c6b15c3bcf02ccfcbb045bf7de1b5314a9e1257dbcb",
+          "git_blob": "dec67e48945817024453f20e9e56b1792cab3fae",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/trt/independent_review.md",
+          "bytes": 2036,
+          "sha256": "eedb5e3e86e427d5f6eda6344ae350b451288e9d11978561f4dea9d0b99b0673",
+          "git_blob": "bf4685a19dfc8a696a8edccf8021a5b8410849b3",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/trt/input_identity_comparison.json",
+          "bytes": 11407,
+          "sha256": "ce450218d847519cadfdc30cba384899900d1379025ac172f4c699e150f7ca34",
+          "git_blob": "ebf2be7d580270a702e404f9aaf7ee0b20de5b7b",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/trt/metrics.csv",
+          "bytes": 15941,
+          "sha256": "5b78d1d0501ca64d619eb21bd033cb9f00f368684d3f79d1713ce9c80a2fe6ee",
+          "git_blob": "419efd7aa700809be7d5323db2045ab620e224a5",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/trt/output_repeat_score_groups.json",
+          "bytes": 91960,
+          "sha256": "3036bd6fb8459e552025ea3074bed5d5c7717b19347db8a15c1c3145ff085d0c",
+          "git_blob": "8992d960e6f59e62d7218731436ab43c8bed08e5",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/trt/packets.json",
+          "bytes": 122894,
+          "sha256": "6844f6c123e82472c0dfb47d71388fc4edde50812dbfe49c7a3f17cbfa2d1840",
+          "git_blob": "6c7142571d524f776e3e23d4869b008951de52b6",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/trt/production_identity.json",
+          "bytes": 2264,
+          "sha256": "54ac56e076c098c02a3fa617345d316e8331f2b9db8bf958bb865a23b5ea3640",
+          "git_blob": "e9983c72039405a5ac410898682b79b76a8bfe01",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/trt/production_loaded_libraries.json",
+          "bytes": 741,
+          "sha256": "5cfbd0955d85bf922f901ffcf839e866f4e30c41fd2ab5eae4bd37f344b5ea4f",
+          "git_blob": "f6f5035f8bcc5c60ed25143fc0ae365e8606e9ae",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/trt/production_repeat.json",
+          "bytes": 46623,
+          "sha256": "f124c3e94e6aec5aed4aea53d7b39f0f9885caee61b947945cb1e33017fe8599",
+          "git_blob": "f9876372b058970b407202e8d8c466794b70c4e3",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/trt/report.md",
+          "bytes": 8369,
+          "sha256": "e5e8e034252d9926dcb8133241006111681c737d062199ce3ff9ff12e9803c86",
+          "git_blob": "f6511a445a4c20c5143327973c2b0d190109c7bc",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/trt/run_commands.md",
+          "bytes": 2114,
+          "sha256": "7a398c2396ed9cf05bff7289ebec2152394d752d901277bd208be70b2227f612",
+          "git_blob": "ddeaebb58bc7211682b1321e956ae72a9ffaeb7c",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/trt/runner_snapshots/build_head.py",
+          "bytes": 25860,
+          "sha256": "eb2296048e497606b3d964583589583b43de53e52275acda460e8f2b4e8c8ba0",
+          "git_blob": "1adc509a4a54a91390229eae5088283da7786b1e",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/trt/runner_snapshots/current_cpu_cases.py",
+          "bytes": 32708,
+          "sha256": "737f6a5b1f2fa733e3e65d77536c9fe9a27cb314acc32edc78f07aef4279a964",
+          "git_blob": "f0ef1379752f6e30054eb151816105a74e264dde",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/trt/runner_snapshots/final_cpu_analysis.py",
+          "bytes": 35303,
+          "sha256": "3ddf0b2a6051cc829dc867bd2ba82f44be4edb88a79e28b9f0bfde644b5d9a8a",
+          "git_blob": "4da701efb8efe5bd8e93d73dd9da8c28ec5d29f5",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/trt/runner_snapshots/production_and_diagnostic.py",
+          "bytes": 24858,
+          "sha256": "d3a578aeab7ed7a2acc64d2cc0f28978fcf2c11d43bdc00a0e5919a023479042",
+          "git_blob": "8729bb276948952ad8f0ddd3b9499d71a32a2001",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/trt/runner_snapshots/replay_and_initial_cases.py",
+          "bytes": 31511,
+          "sha256": "e04dfba157d02ca3772f30896da190670856361a9980e22aec89c715fd2c8d5c",
+          "git_blob": "1de925aad32bf3c3ad3384844e30c97f8b5f7f64",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/trt/runner_version_provenance.json",
+          "bytes": 2679,
+          "sha256": "983c524f0c1d816e1eddd20314a1196f7e002de5dc8e7670217073f568b8d07a",
+          "git_blob": "bb4f7f1f0b37ce90aedacc4682f899ab6976a0eb",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/trt/status.json",
+          "bytes": 1164,
+          "sha256": "0f24b328065f4dc7b2af967f575c659d52b8801e9d928381da439ad478ccdb43",
+          "git_blob": "5a3d32759b5be2fea5bb334dce41aefad4f5e909",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/tests/test_bevfusion_reference_followup.py",
+          "bytes": 2668,
+          "sha256": "ceb9f40f1a95efdd479d01484cfdca8aead7954dab9d86708ca12ed8d1bfbe05",
+          "git_blob": "785419e5a81c5158bde5bdcdcfe6b2dd13dd0a7d",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/tools/bevfusion_followup_capture.patch",
+          "bytes": 2233,
+          "sha256": "0fefcb080519d740f561f943f400c862d605cd3a49653a2466efcd3851f35436",
+          "git_blob": "3e372caee58bf1b99985c76bfda6437f2b8034b6",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/tools/bevfusion_reference_followup.py",
+          "bytes": 38593,
+          "sha256": "cedbdb5c44b9b317cccacda0b2d32b37bab9465eea5aaf9c26e5ac1ff9cdd8c4",
+          "git_blob": "cf08cebcc318a0647fab6ce3d7b24beea2493df5",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/tools/bevfusion_trt_followup.py",
+          "bytes": 35303,
+          "sha256": "3ddf0b2a6051cc829dc867bd2ba82f44be4edb88a79e28b9f0bfde644b5d9a8a",
+          "git_blob": "4da701efb8efe5bd8e93d73dd9da8c28ec5d29f5",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/publication_inventory_verified.json",
+          "bytes": 222019,
+          "sha256": "d9489420784a752877575923464df65ee24f3f8a41b8331ac542b159cc33f08e",
+          "git_blob": "f9d786dff77267cf3a0235e5c84c314e783db3eb",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/reference/747aa46b9a4641fe90db05d97db2acea.json",
+          "bytes": 1520712,
+          "sha256": "205044161e44e19f54a9267f5315e57f2ffe6ae1adbfd49b8e622b8fb18fd8e7",
+          "git_blob": "8387a45e7e1e60cd86560953d3cc6c3497305a9b",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/reference/747aa46b9a4641fe90db05d97db2acea.production.json",
+          "bytes": 1004312,
+          "sha256": "8c14f5a637fdb61b35b2a3df305d6948a54589f849f85f9e380b51a1dd80841f",
+          "git_blob": "c9888517feadf233b190ad552fb1d1584f981796",
+          "remote_bytes_verified": true
+        }
+      ]
+    },
+    {
+      "commit": "1a428913ddbe50bdc8022b24f9b15ae988a55efe",
+      "files": [
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/reference/b26e791522294bec90f86fd72226e35c.json",
+          "bytes": 1524949,
+          "sha256": "4df47490d232f23071f46f4eb2ad0081204d926a37aed952f429e095d16c154a",
+          "git_blob": "78783bd11db56acf6459d775f334e111aa82cf7d",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/reference/b26e791522294bec90f86fd72226e35c.production.json",
+          "bytes": 1006263,
+          "sha256": "167a65ce73ee57a5b8d3bb1b8cf06a7ed44701f49ccbc7fe5fb1c0301bc08f06",
+          "git_blob": "d991ead916ed2dfc3dcefef39b42ec33112b31e4",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/reference/ca9a282c9e77460f8360f564131a8af5.json",
+          "bytes": 1507019,
+          "sha256": "a7f2023a8eead1da722a8dd0657749b5ea65eaebc3a7a4b9c9e6a8b5697f8397",
+          "git_blob": "d52f4555afa627cf95fca08127bf476b7875e84d",
+          "remote_bytes_verified": true
+        }
+      ]
+    },
+    {
+      "commit": "c4e22f6112510883f837134ed72c95d881137d8b",
+      "files": [
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/reference/ca9a282c9e77460f8360f564131a8af5.production.json",
+          "bytes": 1007470,
+          "sha256": "0ee0026ae246c321abd6e07435ba0d23b84d6b8808fb992f76becbd35f433500",
+          "git_blob": "c1ed669dee97f2528b9c7c15115d453867585c74",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/reference/e0845f5322254dafadbbed75aaa07969.json",
+          "bytes": 1518721,
+          "sha256": "a6058ef7fe8868381d1b0b9c97556dfa5d31e4f4de6862d1827d57e3b3554a25",
+          "git_blob": "ce2a3eefc96c6c3768684ede967c8940320af297",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/reference/e0845f5322254dafadbbed75aaa07969.production.json",
+          "bytes": 1001008,
+          "sha256": "517509a9fcf66d8944130afec3219d9e411911b858762165e60147253fe92b97",
+          "git_blob": "f020bbd1b9dbcdb5b1c3bc9a46304bf39ad01c42",
+          "remote_bytes_verified": true
+        }
+      ]
+    },
+    {
+      "commit": "f38650f381f67480bddea22cef28742735500898",
+      "files": [
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/reference/production_aa_audit.json",
+          "bytes": 2627684,
+          "sha256": "b41463d5528c8364e327afa4fc0c59fa52bfd2d1afd4e72b8227e961c0fe5d6a",
+          "git_blob": "93487fc945f94cfbd634d2304bbf55425df582ad",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/reference/replay/summary.json",
+          "bytes": 202700,
+          "sha256": "a68e8da1e505ee76eb72198980212f04a9480e7f38057aaab225f9204c97822f",
+          "git_blob": "6d95966c9b09b0dd41b72cf4cbf3c49e1c31bc23",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/trt/candidate_source_cases.json",
+          "bytes": 824772,
+          "sha256": "dee5e66b193ee0f22b8ac9bfb0e12431ca98ea9f9ab7d259ebb201a922d68a2d",
+          "git_blob": "f7916d7323a3c023e04bf3d264dd378159e8201c",
+          "remote_bytes_verified": true
+        },
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/trt/diagnostic_repeat.json",
+          "bytes": 343155,
+          "sha256": "6383c1db14003cdb38f6756ce24739ca2864da959b04c5618f2c52f98ad75bf8",
+          "git_blob": "f2eab002c174436dfe0ac61991c517c3cd0df9b5",
+          "remote_bytes_verified": true
+        }
+      ]
+    },
+    {
+      "commit": "e92d2f916318e5acd9dfd35e89ef91c7bdf84d66",
+      "files": [
+        {
+          "path": "perception_lab/reports/deployment_4090_20261012_followup/trt/module_replay.json",
+          "bytes": 790320,
+          "sha256": "d538343bbee23b08552075491720a16b9b6752eab13cbd4034951caf621ac8a0",
+          "git_blob": "7eb296e114127857c2feea65423c47f44c9c540a",
+          "remote_bytes_verified": true
+        }
+      ]
+    }
+  ]
+}

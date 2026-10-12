@@ -1,5 +1,13 @@
 # CARperception
 
+## 2026-10-12：部署发布恢复与 FP16 补查
+
+原部署报告与代码已恢复发布；新增四异常帧的同后端重复、相同输入模块回放、几何映射与候选来源诊断。mini_val 精度下降满足原预算，但全候选一致性仍未通过，未替换生产 engine。Pooling 无稳定提速，继续使用 upstream；GaussianWorld 占用评估仍缺匹配真值。
+
+- [补查总报告与复现](perception_lab/reports/deployment_4090_20261012_followup/report.md)
+- [原部署报告](perception_lab/reports/deployment_4090_20261008/report.md) · [发布核验回执](perception_lab/reports/deployment_4090_20261012_followup/publication_receipt.json)
+
+
 用 **nuScenes mini** 理解自动驾驶感知流程的学习工程。包含真实模型推理、坐标变换、检测、分割、深度、3D 检测、跟踪、ONNX 导出校验与同步回放。
 
 ## 流程与完成范围
