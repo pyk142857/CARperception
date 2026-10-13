@@ -1,0 +1,230 @@
+{
+  "status": "passed",
+  "frames_preprocessed": 6,
+  "inference_frames": 0,
+  "pipeline": "unmodified pinned author NuScenesDataset(training=False)",
+  "rows": [
+    {
+      "split": "scene0061",
+      "index": 0,
+      "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+      "points": [
+        266054,
+        5
+      ],
+      "camera_imgs": [
+        6,
+        3,
+        256,
+        704
+      ],
+      "keys": [
+        "points",
+        "frame_id",
+        "metadata",
+        "image_paths",
+        "lidar2camera",
+        "lidar2image",
+        "camera2ego",
+        "camera_intrinsics",
+        "camera2lidar",
+        "camera_imgs",
+        "ori_shape",
+        "img_process_infos",
+        "lidar_aug_matrix",
+        "lidar2image_aug",
+        "use_lead_xyz",
+        "img_aug_matrix",
+        "auged_img"
+      ],
+      "cpu_ms_including_repeat_check": 521.8979749915889,
+      "seeded_repeat_equal": true,
+      "annotations_absent": true
+    },
+    {
+      "split": "scene0061",
+      "index": 19,
+      "sample_token": "b26e791522294bec90f86fd72226e35c",
+      "points": [
+        259536,
+        5
+      ],
+      "camera_imgs": [
+        6,
+        3,
+        256,
+        704
+      ],
+      "keys": [
+        "points",
+        "frame_id",
+        "metadata",
+        "image_paths",
+        "lidar2camera",
+        "lidar2image",
+        "camera2ego",
+        "camera_intrinsics",
+        "camera2lidar",
+        "camera_imgs",
+        "ori_shape",
+        "img_process_infos",
+        "lidar_aug_matrix",
+        "lidar2image_aug",
+        "use_lead_xyz",
+        "img_aug_matrix",
+        "auged_img"
+      ],
+      "cpu_ms_including_repeat_check": 507.683581992751,
+      "seeded_repeat_equal": true,
+      "annotations_absent": true
+    },
+    {
+      "split": "scene0061",
+      "index": 38,
+      "sample_token": "ed5fc18c31904f96a8f0dbb99ff069c0",
+      "points": [
+        272842,
+        5
+      ],
+      "camera_imgs": [
+        6,
+        3,
+        256,
+        704
+      ],
+      "keys": [
+        "points",
+        "frame_id",
+        "metadata",
+        "image_paths",
+        "lidar2camera",
+        "lidar2image",
+        "camera2ego",
+        "camera_intrinsics",
+        "camera2lidar",
+        "camera_imgs",
+        "ori_shape",
+        "img_process_infos",
+        "lidar_aug_matrix",
+        "lidar2image_aug",
+        "use_lead_xyz",
+        "img_aug_matrix",
+        "auged_img"
+      ],
+      "cpu_ms_including_repeat_check": 526.6754309996031,
+      "seeded_repeat_equal": true,
+      "annotations_absent": true
+    },
+    {
+      "split": "mini_val",
+      "index": 0,
+      "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "points": [
+        215028,
+        5
+      ],
+      "camera_imgs": [
+        6,
+        3,
+        256,
+        704
+      ],
+      "keys": [
+        "points",
+        "frame_id",
+        "metadata",
+        "image_paths",
+        "lidar2camera",
+        "lidar2image",
+        "camera2ego",
+        "camera_intrinsics",
+        "camera2lidar",
+        "camera_imgs",
+        "ori_shape",
+        "img_process_infos",
+        "lidar_aug_matrix",
+        "lidar2image_aug",
+        "use_lead_xyz",
+        "img_aug_matrix",
+        "auged_img"
+      ],
+      "cpu_ms_including_repeat_check": 497.2662599902833,
+      "seeded_repeat_equal": true,
+      "annotations_absent": true
+    },
+    {
+      "split": "mini_val",
+      "index": 40,
+      "sample_token": "b5989651183643369174912bc5641d3b",
+      "points": [
+        283416,
+        5
+      ],
+      "camera_imgs": [
+        6,
+        3,
+        256,
+        704
+      ],
+      "keys": [
+        "points",
+        "frame_id",
+        "metadata",
+        "image_paths",
+        "lidar2camera",
+        "lidar2image",
+        "camera2ego",
+        "camera_intrinsics",
+        "camera2lidar",
+        "camera_imgs",
+        "ori_shape",
+        "img_process_infos",
+        "lidar_aug_matrix",
+        "lidar2image_aug",
+        "use_lead_xyz",
+        "img_aug_matrix",
+        "auged_img"
+      ],
+      "cpu_ms_including_repeat_check": 589.9381929921219,
+      "seeded_repeat_equal": true,
+      "annotations_absent": true
+    },
+    {
+      "split": "mini_val",
+      "index": 80,
+      "sample_token": "b4ff30109dd14c89b24789dc5713cf8c",
+      "points": [
+        257788,
+        5
+      ],
+      "camera_imgs": [
+        6,
+        3,
+        256,
+        704
+      ],
+      "keys": [
+        "points",
+        "frame_id",
+        "metadata",
+        "image_paths",
+        "lidar2camera",
+        "lidar2image",
+        "camera2ego",
+        "camera_intrinsics",
+        "camera2lidar",
+        "camera_imgs",
+        "ori_shape",
+        "img_process_infos",
+        "lidar_aug_matrix",
+        "lidar2image_aug",
+        "use_lead_xyz",
+        "img_aug_matrix",
+        "auged_img"
+      ],
+      "cpu_ms_including_repeat_check": 480.7486119971145,
+      "seeded_repeat_equal": true,
+      "annotations_absent": true
+    }
+  ]
+}

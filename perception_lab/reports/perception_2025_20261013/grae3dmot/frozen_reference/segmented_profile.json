@@ -1,0 +1,33 @@
+{
+  "adapter_sha256": "0c532f24d6c320411983f1c6affacb630e91a9414b215be87b85022d9dae55a6",
+  "input_sha256": "dd6df55652026f2b04c7b18f9adde44123b664e8cb3706e53d6d30faca344d2f",
+  "frames": [
+    "ca9a282c9e77460f8360f564131a8af5",
+    "39586f9d59004284a7114a68825e8eec",
+    "356d81f38dd9473ba590f39e266f54e5"
+  ],
+  "batch": 1,
+  "warmup_sequences": 3,
+  "cold_model_load_and_first_cuda_context_ms": 1228.7550069886493,
+  "cold_scope": "Torch import if not cached, author model construction, strict checkpoint load, model H2D; excludes interpreter start",
+  "input_read_wall_ms": 42.166269005974755,
+  "allowlist_and_official_nms_wall_ms": 345.03072199004237,
+  "cpu_instance_format_wall_ms": 0.26986699958797544,
+  "h2d_and_initial_state_cuda_ms": 0.7826240062713623,
+  "model_forward_cuda_ms": 4.550912082195282,
+  "model_forward_calls": 3,
+  "native_association_and_export_wall_ms": 26.65294799953699,
+  "final_output_d2h_and_record_wall_ms": 7.201353975688107,
+  "raw_detection_file_to_consumable_tracks_wall_ms": 415.161191005609,
+  "peak_gpu_allocated_bytes": 11777024,
+  "peak_gpu_reserved_bytes": 33554432,
+  "process_peak_rss_bytes": 2015973376,
+  "outputs_exactly_equal_uninstrumented": true,
+  "boundary_notes": "3 consecutive frames; whole source JSON parsed; filesystem cache warm; coordinate system already global so no coordinate conversion. GPU forward excludes graph preparation, matching and export. Forward CUDA and export wall are subregions of association wall, not additive. Cold model includes strict verification and manifest writes. RAM is process lifetime high water including warmup.",
+  "torch": "1.13.1+cu117",
+  "cuda_runtime": "11.7",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "precision": "float32",
+  "cudnn_benchmark": false,
+  "allow_tf32_matmul": false
+}

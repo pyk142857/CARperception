@@ -1,0 +1,10 @@
+{
+  "pred_logits": {
+    "max_abs": 0.00013124942779541016,
+    "passed": true
+  },
+  "pred_boxes": {
+    "max_abs": 1.996755599975586e-06,
+    "passed": true
+  }
+}

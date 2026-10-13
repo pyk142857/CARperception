@@ -1,0 +1,18 @@
+{
+  "status": "partial",
+  "onnx": {
+    "paired_rounds": 30,
+    "adopted_for_speed": false,
+    "reason": "13.344ms slower on measured paired range"
+  },
+  "tensorrt": {
+    "paired_rounds": 30,
+    "mean_e2e_saving_ms": 9.139038567082025,
+    "ap_drop": 0.0005410348097334428,
+    "ap_budget_pass": true,
+    "default_adopted": false,
+    "available": true,
+    "reason": "real score-threshold crossings remain; native remains teaching default"
+  },
+  "default_backend": "native"
+}

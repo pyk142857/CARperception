@@ -1,0 +1,59 @@
+{
+  "tensorrt": "10.6.0",
+  "torch": "2.6.0+cu124",
+  "cuda": "12.4",
+  "io": [
+    {
+      "name": "images",
+      "shape": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "dtype": "DataType.FLOAT",
+      "mode": "input"
+    },
+    {
+      "name": "orig_target_sizes",
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "DataType.INT64",
+      "mode": "input"
+    },
+    {
+      "name": "labels",
+      "shape": [
+        1,
+        300
+      ],
+      "dtype": "DataType.INT64",
+      "mode": "output"
+    },
+    {
+      "name": "boxes",
+      "shape": [
+        1,
+        300,
+        4
+      ],
+      "dtype": "DataType.FLOAT",
+      "mode": "output"
+    },
+    {
+      "name": "scores",
+      "shape": [
+        1,
+        300
+      ],
+      "dtype": "DataType.FLOAT",
+      "mode": "output"
+    }
+  ],
+  "engine_sha256": "3c38751c077fcdc41042d9118e925899b3cb39614073ad1011559aebdc604088",
+  "tool_sha256": "5ba4803f7ddd1753108ac0e59728f08559e5cc39fb3201f38906ef2892395dca",
+  "runtime_load_ms": 254.36733999231365,
+  "cold_start_scope": "engine deserialize, execution context and buffer allocation after Python imports; not complete process startup"
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "file": "tensorrt_cu12_libs-10.6.0-py2.py3-none-manylinux_2_17_x86_64.whl",
+    "bytes": 2069009565,
+    "sha256": "7ff7c51a574b4d3d9f7df718edec66a3550922740f3718ccd72792bbc463e02d",
+    "index_href": "tensorrt_cu12_libs-10.6.0-py2.py3-none-manylinux_2_17_x86_64.whl#sha256=7ff7c51a574b4d3d9f7df718edec66a3550922740f3718ccd72792bbc463e02d",
+    "index_sha256": "7ff7c51a574b4d3d9f7df718edec66a3550922740f3718ccd72792bbc463e02d",
+    "hash_matches_index": true,
+    "verified_index_snapshot": "trt_nvidia_index.html",
+    "source_url": "https://pypi.nvidia.cn/tensorrt-cu12-libs/tensorrt_cu12_libs-10.6.0-py2.py3-none-manylinux_2_17_x86_64.whl",
+    "source_note": "Index href/hash preserved from download session; NVIDIA redirect corroborated by response header; Aliyun base inferred from configured pip index"
+  },
+  {
+    "file": "tensorrt_cu12_bindings-10.6.0-cp311-none-manylinux_2_17_x86_64.whl",
+    "bytes": 1181192,
+    "sha256": "fd1f4b4b48ac9ab070f0e9fc012892a936e7651c9c43382304a8a081f640b723",
+    "index_href": "../../packages/15/b9/c1a27ed050f1cf148eb3e5385204a984105a5310ded60f95bb098ca5e71f/tensorrt_cu12_bindings-10.6.0-cp311-none-manylinux_2_17_x86_64.whl#sha256=fd1f4b4b48ac9ab070f0e9fc012892a936e7651c9c43382304a8a081f640b723",
+    "index_sha256": "fd1f4b4b48ac9ab070f0e9fc012892a936e7651c9c43382304a8a081f640b723",
+    "hash_matches_index": true,
+    "verified_index_snapshot": "trt_bindings_index.html",
+    "source_url": "https://mirrors.aliyun.com/pypi/packages/15/b9/c1a27ed050f1cf148eb3e5385204a984105a5310ded60f95bb098ca5e71f/tensorrt_cu12_bindings-10.6.0-cp311-none-manylinux_2_17_x86_64.whl",
+    "source_note": "Index href/hash preserved from download session; NVIDIA redirect corroborated by response header; Aliyun base inferred from configured pip index"
+  },
+  {
+    "file": "tensorrt-cu12-10.6.0.tar.gz",
+    "bytes": 18331,
+    "sha256": "ca9e611ff8a9424cf6431a5f649eacb35721f25335112d17dea248e9334b59a7",
+    "index_href": "../../packages/b8/ca/7fbe8f3f454b324e548b69697b3965b3a11e82bffaf6fb7901393fcdb2ff/tensorrt-cu12-10.6.0.tar.gz#sha256=ca9e611ff8a9424cf6431a5f649eacb35721f25335112d17dea248e9334b59a7",
+    "index_sha256": "ca9e611ff8a9424cf6431a5f649eacb35721f25335112d17dea248e9334b59a7",
+    "hash_matches_index": true,
+    "verified_index_snapshot": "trt_cu12_index.html",
+    "source_url": "https://mirrors.aliyun.com/pypi/packages/b8/ca/7fbe8f3f454b324e548b69697b3965b3a11e82bffaf6fb7901393fcdb2ff/tensorrt-cu12-10.6.0.tar.gz",
+    "source_note": "Index href/hash preserved from download session; NVIDIA redirect corroborated by response header; Aliyun base inferred from configured pip index"
+  }
+]

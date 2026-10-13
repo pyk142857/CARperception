@@ -1,0 +1,7 @@
+{
+  "scope": "Post-run reconciliation, not an original export launch receipt. Current source/config/checkpoint match frozen native evidence; ONNX matches measured CUDA session hash.",
+  "checkpoint_sha256": "9491ab33b68ecfc0e34043abb3009599ab1e892fb953a1faad12ef4fca5a35c4",
+  "model_config_sha256": "a12d0507156becb9dff718664eb4112222190a446bd0bd53d4da220803178661",
+  "onnx_sha256": "0df8b3ec31c6e99a6ccdb1059b9c9dacb1d12623f48688787b6094beea74d8a9",
+  "source_manifest_sha256": "be0d4fbfdedcdb227f056b6f967463d9ca0b301708b13c7c4eeb722b8472fec8"
+}

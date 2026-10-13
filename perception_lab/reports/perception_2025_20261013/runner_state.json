@@ -1,0 +1,28 @@
+{
+  "summarize": {
+    "status": "passed",
+    "fingerprint": "109266f69449c5a0ea05d4c318d501fe45ff2bb3417f573c02723235897e9739",
+    "commands": [
+      [
+        "/usr/bin/python3",
+        "tools/perception_2025_summarize.py",
+        "--config",
+        "/home/minglei/Desktop/CAR/perception_lab/configs/perception_2025.yaml"
+      ]
+    ],
+    "start": 1791865011.4718082,
+    "runs": [
+      {
+        "returncode": 0,
+        "fresh_result": true,
+        "result": "/home/minglei/Desktop/CAR/perception_lab/reports/perception_2025_20261013/summarize/status.json",
+        "result_sha256": "20d43ea8d09669102077c2886af1f278bc9f95378827e172a5b69cca166df51a",
+        "module_status": "passed",
+        "status": "passed",
+        "log": "logs/summarize_0.log"
+      }
+    ],
+    "finish": 1791865011.5322292,
+    "resume_disabled": "No verified complete artifact manifest"
+  }
+}

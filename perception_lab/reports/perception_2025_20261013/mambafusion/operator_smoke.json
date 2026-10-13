@@ -1,0 +1,133 @@
+{
+  "torch": "2.1.2+cu118",
+  "runtime": "11.8",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "capability": [
+    8,
+    9
+  ],
+  "operators": {
+    "selective_scan_cuda_core": {
+      "passed": true,
+      "shape": [
+        1,
+        4,
+        16
+      ],
+      "max_abs_error_to_analytic_recurrence": 0.0
+    },
+    "selective_scan_cuda_oflex": {
+      "passed": true,
+      "shape": [
+        1,
+        4,
+        16
+      ],
+      "max_abs_error_to_analytic_recurrence": 0.0
+    },
+    "selective_scan_cuda_ndstate": {
+      "passed": true,
+      "shape": [
+        1,
+        4,
+        16
+      ],
+      "max_abs_error_to_analytic_recurrence": 0.0
+    },
+    "selective_scan_cuda": {
+      "passed": true,
+      "shape": [
+        1,
+        4,
+        16
+      ],
+      "max_abs_error_to_analytic_recurrence": 0.0
+    },
+    "iou3d_nms_cuda": {
+      "passed": true,
+      "iou": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "roiaware_pool3d_cuda": {
+      "passed": true,
+      "indices": [
+        [
+          0,
+          1,
+          -1
+        ]
+      ]
+    },
+    "flattened_window_cuda": {
+      "passed": true,
+      "outputs": [
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.int64"
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.int64"
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "dtype": "torch.int64"
+        }
+      ]
+    },
+    "torch_scatter_mean": {
+      "passed": true,
+      "output": [
+        2.0,
+        5.0
+      ]
+    },
+    "spconv_submconv3d": {
+      "passed": true,
+      "output": [
+        [
+          3.0
+        ],
+        [
+          3.0
+        ]
+      ],
+      "scope": "unit operator with explicit all-one kernel, not detector inference"
+    },
+    "spconv_point_to_voxel": {
+      "passed": true,
+      "coordinates_zyx": [
+        [
+          20,
+          180,
+          183
+        ],
+        [
+          20,
+          180,
+          180
+        ]
+      ],
+      "point_counts": [
+        1,
+        2
+      ]
+    }
+  },
+  "peak_gpu_bytes": 15872
+}

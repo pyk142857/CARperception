@@ -1,0 +1,8 @@
+Looking in indexes: https://download.pytorch.org/whl/cu118
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', TimeoutError('_ssl.c:990: The handshake operation timed out'))': /whl/cu118/torch/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', TimeoutError('_ssl.c:990: The handshake operation timed out'))': /whl/cu118/torch/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', TimeoutError('_ssl.c:990: The handshake operation timed out'))': /whl/cu118/torch/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', TimeoutError('_ssl.c:990: The handshake operation timed out'))': /whl/cu118/torch/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', TimeoutError('_ssl.c:990: The handshake operation timed out'))': /whl/cu118/torch/
+ERROR: Could not find a version that satisfies the requirement torch==2.5.1 (from versions: none)
+ERROR: No matching distribution found for torch==2.5.1

@@ -1,0 +1,23 @@
+Traceback (most recent call last):
+  File "/home/minglei/Desktop/CAR/perception_lab/tools/grae3dmot_2025.py", line 225, in main
+    model=load_model('cpu' if a.phase=='prepare' else 'cuda:0')
+  File "/home/minglei/Desktop/CAR/perception_lab/tools/grae3dmot_2025.py", line 143, in load_model
+    incompatible=model.load_state_dict(weights,strict=True)
+  File "/home/minglei/Desktop/CAR/perception_lab/envs/maptr/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1671, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for GRAE:
+	Missing key(s) in state_dict: "spatial_dffl._layer.weight", "spatial_dffl._layer.bias", "spatial_dffl.reduce.0.weight", "spatial_dffl.reduce.0.bias", "spatial_dffl.gamma.weight", "spatial_dffl.gamma.bias", "spatial_dffl.beta.weight", "spatial_dffl.beta.bias", "temporal_dffl._layer.weight", "temporal_dffl._layer.bias", "temporal_dffl.reduce.0.weight", "temporal_dffl.reduce.0.bias", "temporal_dffl.gamma.weight", "temporal_dffl.gamma.bias", "temporal_dffl.beta.weight", "temporal_dffl.beta.bias". 
+	Unexpected key(s) in state_dict: "spatial_mfl._layer.weight", "spatial_mfl._layer.bias", "spatial_mfl.reduce.0.weight", "spatial_mfl.reduce.0.bias", "spatial_mfl.gamma.weight", "spatial_mfl.gamma.bias", "spatial_mfl.beta.weight", "spatial_mfl.beta.bias", "temporal_mfl._layer.weight", "temporal_mfl._layer.bias", "temporal_mfl.reduce.0.weight", "temporal_mfl.reduce.0.bias", "temporal_mfl.gamma.weight", "temporal_mfl.gamma.bias", "temporal_mfl.beta.weight", "temporal_mfl.beta.bias". 
+
+Traceback (most recent call last):
+  File "/home/minglei/Desktop/CAR/perception_lab/tools/grae3dmot_2025.py", line 309, in <module>
+    if __name__=='__main__':main()
+  File "/home/minglei/Desktop/CAR/perception_lab/tools/grae3dmot_2025.py", line 225, in main
+    model=load_model('cpu' if a.phase=='prepare' else 'cuda:0')
+  File "/home/minglei/Desktop/CAR/perception_lab/tools/grae3dmot_2025.py", line 143, in load_model
+    incompatible=model.load_state_dict(weights,strict=True)
+  File "/home/minglei/Desktop/CAR/perception_lab/envs/maptr/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1671, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for GRAE:
+	Missing key(s) in state_dict: "spatial_dffl._layer.weight", "spatial_dffl._layer.bias", "spatial_dffl.reduce.0.weight", "spatial_dffl.reduce.0.bias", "spatial_dffl.gamma.weight", "spatial_dffl.gamma.bias", "spatial_dffl.beta.weight", "spatial_dffl.beta.bias", "temporal_dffl._layer.weight", "temporal_dffl._layer.bias", "temporal_dffl.reduce.0.weight", "temporal_dffl.reduce.0.bias", "temporal_dffl.gamma.weight", "temporal_dffl.gamma.bias", "temporal_dffl.beta.weight", "temporal_dffl.beta.bias". 
+	Unexpected key(s) in state_dict: "spatial_mfl._layer.weight", "spatial_mfl._layer.bias", "spatial_mfl.reduce.0.weight", "spatial_mfl.reduce.0.bias", "spatial_mfl.gamma.weight", "spatial_mfl.gamma.bias", "spatial_mfl.beta.weight", "spatial_mfl.beta.bias", "temporal_mfl._layer.weight", "temporal_mfl._layer.bias", "temporal_mfl.reduce.0.weight", "temporal_mfl.reduce.0.bias", "temporal_mfl.gamma.weight", "temporal_mfl.gamma.bias", "temporal_mfl.beta.weight", "temporal_mfl.beta.bias". 

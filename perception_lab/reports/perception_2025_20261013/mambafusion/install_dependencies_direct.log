@@ -1,0 +1,210 @@
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
+Collecting spconv-cu118
+  Downloading https://mirrors.aliyun.com/pypi/packages/f0/43/6bc7940e9d6b582b729c1abe8b4987e9652e555016bc38868f8cd69d30e0/spconv_cu118-2.3.8-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (75.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 75.9/75.9 MB 352.9 kB/s eta 0:00:00
+Collecting ipdb
+  Downloading https://mirrors.aliyun.com/pypi/packages/0c/4c/b075da0092003d9a55cf2ecc1cae9384a1ca4f650d51b00fc59875fe76f6/ipdb-0.13.13-py3-none-any.whl (12 kB)
+Requirement already satisfied: einops in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (0.7.0)
+Collecting timm==1.0.8
+  Downloading https://mirrors.aliyun.com/pypi/packages/1a/02/f11f8f9178242a694cd99f3a234731d833df77bf01cbb21c0085f021e3d7/timm-1.0.8-py3-none-any.whl (2.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 368.1 kB/s eta 0:00:00
+Collecting kornia==0.7.3
+  Downloading https://mirrors.aliyun.com/pypi/packages/58/26/9e6fad0f5e8c25b19e3c25fd0efa0817b9e1a3d9670df8454162e053f283/kornia-0.7.3-py2.py3-none-any.whl (833 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 833.3/833.3 kB 409.5 kB/s eta 0:00:00
+Collecting nuscenes-devkit==1.1.11
+  Downloading https://mirrors.aliyun.com/pypi/packages/b0/06/9029f796dcf7854f0681f11ae81fe42542fb15e02830f6b4239749f59739/nuscenes_devkit-1.1.11-py3-none-any.whl (313 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 313.1/313.1 kB 501.1 kB/s eta 0:00:00
+Collecting SharedArray
+  Downloading https://mirrors.aliyun.com/pypi/packages/a6/d2/6818d35a7abba9b2410813f2160630e125b12a52ca11acfd1fb0959433ad/SharedArray-3.2.4.tar.gz (19 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting av2==0.2.1
+  Downloading https://mirrors.aliyun.com/pypi/packages/9a/03/788c9e55fd04986b64639226d4119a2e8bc6d9197f3f16d96a02064a60af/av2-0.2.1-py3-none-any.whl (640 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 641.0/641.0 kB 447.9 kB/s eta 0:00:00
+Requirement already satisfied: safetensors in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from timm==1.0.8) (0.4.1)
+Requirement already satisfied: huggingface_hub in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from timm==1.0.8) (0.19.4)
+Requirement already satisfied: torchvision in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from timm==1.0.8) (0.16.2+cu118)
+Requirement already satisfied: torch in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from timm==1.0.8) (2.1.2+cu118)
+Requirement already satisfied: pyyaml in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from timm==1.0.8) (6.0.1)
+Collecting kornia-rs>=0.1.0
+  Downloading https://mirrors.aliyun.com/pypi/packages/4a/5d/1fcfe37afd3c6c5e2226129e451b2747655a7dc49058233a406bf6c88475/kornia_rs-0.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (5.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.3/5.3 MB 374.9 kB/s eta 0:00:00
+Requirement already satisfied: packaging in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from kornia==0.7.3) (23.2)
+Requirement already satisfied: Pillow>6.2.1 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from nuscenes-devkit==1.1.11) (10.0.1)
+Collecting matplotlib<3.6.0
+  Downloading https://mirrors.aliyun.com/pypi/packages/e5/ca/3ed0e1de9df496392a4c9d75b0c78f82fe5758c66bb875903cf7a9402f0b/matplotlib-3.5.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.9/11.9 MB 371.5 kB/s eta 0:00:00
+Requirement already satisfied: tqdm in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from nuscenes-devkit==1.1.11) (4.65.2)
+Requirement already satisfied: cachetools in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from nuscenes-devkit==1.1.11) (5.3.2)
+Requirement already satisfied: pyquaternion>=0.9.5 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from nuscenes-devkit==1.1.11) (0.9.9)
+Collecting descartes
+  Downloading https://mirrors.aliyun.com/pypi/packages/e5/b6/1ed2eb03989ae574584664985367ba70cd9cf8b32ee8cad0e8aaeac819f3/descartes-1.1.0-py3-none-any.whl (5.8 kB)
+Requirement already satisfied: scipy in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from nuscenes-devkit==1.1.11) (1.11.4)
+Requirement already satisfied: scikit-learn in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from nuscenes-devkit==1.1.11) (1.3.2)
+Requirement already satisfied: opencv-python>=4.5.4.58 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from nuscenes-devkit==1.1.11) (4.8.1.78)
+Collecting Shapely<2.0.0
+  Downloading https://mirrors.aliyun.com/pypi/packages/96/3a/c34e35e3181e593c72357353e8fa60052c751eff37c4a6f4e473cbf9aafd/Shapely-1.8.5.post1-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (2.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 361.5 kB/s eta 0:00:00
+Collecting fire
+  Downloading https://mirrors.aliyun.com/pypi/packages/e5/4c/93d0f85318da65923e4b91c1c2ff03d8a458cbefebe3bc612a6693c7906d/fire-0.7.1-py3-none-any.whl (115 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 115.9/115.9 kB 555.1 kB/s eta 0:00:00
+Requirement already satisfied: numpy>=1.22.0 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from nuscenes-devkit==1.1.11) (1.26.2)
+Requirement already satisfied: pycocotools>=2.0.1 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from nuscenes-devkit==1.1.11) (2.0.7)
+Requirement already satisfied: joblib in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from av2==0.2.1) (1.3.2)
+Requirement already satisfied: pyarrow in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from av2==0.2.1) (11.0.0)
+Collecting nox
+  Downloading https://mirrors.aliyun.com/pypi/packages/81/71/e0829a0500646070e98bc4442afa2917bfe5b6f1289511d8de853ae86497/nox-2026.8.17-py3-none-any.whl (94 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 94.8/94.8 kB 13.2 MB/s eta 0:00:00
+Collecting pyproj
+  Downloading https://mirrors.aliyun.com/pypi/packages/76/a5/c6e11b9a99ce146741fb4d184d5c468446c6d6015b183cae82ac822a6cfa/pyproj-3.7.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (9.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.3/9.3 MB 344.7 kB/s eta 0:00:00
+Requirement already satisfied: rich in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from av2==0.2.1) (13.4.2)
+Requirement already satisfied: click in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from av2==0.2.1) (8.1.7)
+Collecting av
+  Downloading https://mirrors.aliyun.com/pypi/packages/04/a4/542d4bfd9f4aec5f3265985b9dbc6b259d45c2e668f9714e5f4e05b71e64/av-17.1.0-cp310-cp310-manylinux_2_28_x86_64.whl (36.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 36.6/36.6 MB 306.7 kB/s eta 0:00:00
+Requirement already satisfied: pandas in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from av2==0.2.1) (2.1.4)
+Requirement already satisfied: numba in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from av2==0.2.1) (0.58.1)
+Collecting cumm-cu118<0.8.0,>=0.7.11
+  Downloading https://mirrors.aliyun.com/pypi/packages/06/35/b560a2b58bbf8b08e92fc5b5befdf738f4d1b231e92f55281db3a81c65e9/cumm_cu118-0.7.11-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (25.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 25.6/25.6 MB 312.9 kB/s eta 0:00:00
+Collecting pccm>=0.4.16
+  Downloading https://mirrors.aliyun.com/pypi/packages/8a/53/39e6cd6b19e1be302c22bc6db8683968fd52f1df5ed6e38921a16d013406/pccm-0.4.16-py3-none-any.whl (73 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.7/73.7 kB 110.7 MB/s eta 0:00:00
+Collecting ccimport>=0.4.4
+  Downloading https://mirrors.aliyun.com/pypi/packages/a3/fa/c069b7befe2f02825186ea1cd1dceb9c5356a80928271aa539b909daeaf4/ccimport-0.4.4-py3-none-any.whl (27 kB)
+Collecting pybind11>=2.6.0
+  Downloading https://mirrors.aliyun.com/pypi/packages/33/fd/8762f7ee3e4e4be6d1d846cffb4916dd9bb02b2f800d3603718a0efe494c/pybind11-3.1.0-py3-none-any.whl (319 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 319.4/319.4 kB 308.3 kB/s eta 0:00:00
+Requirement already satisfied: ipython>=7.31.1 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from ipdb) (8.18.1)
+Requirement already satisfied: decorator in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from ipdb) (5.1.1)
+Requirement already satisfied: tomli in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from ipdb) (2.0.1)
+Requirement already satisfied: requests in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from ccimport>=0.4.4->spconv-cu118) (2.28.2)
+Collecting ninja
+  Downloading https://mirrors.aliyun.com/pypi/packages/6e/53/ebfed7b689c338dd8ebeec9c0730c8d56821292f14e2536e5f3ef1a05744/ninja-1.13.2-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (183 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 183.4/183.4 kB 431.6 kB/s eta 0:00:00
+Requirement already satisfied: sympy in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from cumm-cu118<0.8.0,>=0.7.11->spconv-cu118) (1.12)
+Requirement already satisfied: stack-data in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from ipython>=7.31.1->ipdb) (0.6.3)
+Requirement already satisfied: exceptiongroup in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from ipython>=7.31.1->ipdb) (1.2.0)
+Requirement already satisfied: pexpect>4.3 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from ipython>=7.31.1->ipdb) (4.9.0)
+Requirement already satisfied: prompt-toolkit<3.1.0,>=3.0.41 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from ipython>=7.31.1->ipdb) (3.0.41)
+Requirement already satisfied: jedi>=0.16 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from ipython>=7.31.1->ipdb) (0.19.1)
+Requirement already satisfied: traitlets>=5 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from ipython>=7.31.1->ipdb) (5.14.0)
+Requirement already satisfied: pygments>=2.4.0 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from ipython>=7.31.1->ipdb) (2.17.2)
+Requirement already satisfied: matplotlib-inline in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from ipython>=7.31.1->ipdb) (0.1.6)
+Requirement already satisfied: pyparsing>=2.2.1 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from matplotlib<3.6.0->nuscenes-devkit==1.1.11) (3.1.1)
+Requirement already satisfied: cycler>=0.10 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from matplotlib<3.6.0->nuscenes-devkit==1.1.11) (0.12.1)
+Requirement already satisfied: kiwisolver>=1.0.1 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from matplotlib<3.6.0->nuscenes-devkit==1.1.11) (1.4.5)
+Requirement already satisfied: fonttools>=4.22.0 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from matplotlib<3.6.0->nuscenes-devkit==1.1.11) (4.46.0)
+Requirement already satisfied: python-dateutil>=2.7 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from matplotlib<3.6.0->nuscenes-devkit==1.1.11) (2.8.2)
+Collecting lark>=1.0.0
+  Downloading https://mirrors.aliyun.com/pypi/packages/82/3d/14ce75ef66813643812f3093ab17e46d3a206942ce7376d31ec2d36229e7/lark-1.3.1-py3-none-any.whl (113 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 113.2/113.2 kB 510.1 kB/s eta 0:00:00
+Collecting portalocker>=2.3.2
+  Downloading https://mirrors.aliyun.com/pypi/packages/52/6c/07fa2775e87b6e241c2aca5cef79f65e450bc115de55f03cda6251f81690/portalocker-4.4.0-py3-none-any.whl (129 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 129.6/129.6 kB 583.4 kB/s eta 0:00:00
+Requirement already satisfied: jinja2 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from torch->timm==1.0.8) (3.1.2)
+Requirement already satisfied: networkx in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from torch->timm==1.0.8) (3.1)
+Requirement already satisfied: typing-extensions in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from torch->timm==1.0.8) (4.9.0)
+Requirement already satisfied: fsspec in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from torch->timm==1.0.8) (2023.12.1)
+Requirement already satisfied: triton==2.1.0 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from torch->timm==1.0.8) (2.1.0)
+Requirement already satisfied: filelock in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from torch->timm==1.0.8) (3.13.1)
+Collecting termcolor
+  Downloading https://mirrors.aliyun.com/pypi/packages/33/d1/8bb87d21e9aeb323cc03034f5eaf2c8f69841e40e4853c2627edf8111ed3/termcolor-3.3.0-py3-none-any.whl (7.7 kB)
+Collecting colorlog<7,>=6.6
+  Downloading https://mirrors.aliyun.com/pypi/packages/d4/19/0b6647bf5e331521e55d2b63bfbdc210bd9cd605189273f03614a05f702d/colorlog-6.12.0-py3-none-any.whl (12 kB)
+Collecting virtualenv>=20.15
+  Downloading https://mirrors.aliyun.com/pypi/packages/52/5b/799c3e5b8e04d5fa1c9b61a4c1f5079603e747205c7311b92abd30283df5/virtualenv-21.14.7-py3-none-any.whl (5.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.5/5.5 MB 305.8 kB/s eta 0:00:00
+Collecting dependency-groups>=1.1
+  Downloading https://mirrors.aliyun.com/pypi/packages/a1/e4/da5f2f176050efcfb9222a76a3e81c41f69f775be8e563b76ca4292a134f/dependency_groups-1.3.2-py3-none-any.whl (9.8 kB)
+Collecting humanize>=4
+  Downloading https://mirrors.aliyun.com/pypi/packages/b0/aa/0b7365d30fed43e7a3449aba1fe20a0a7174d9cf13e282af4e69ac825441/humanize-4.16.0-py3-none-any.whl (137 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 137.2/137.2 kB 627.3 kB/s eta 0:00:00
+Collecting python-discovery>=1
+  Downloading https://mirrors.aliyun.com/pypi/packages/61/3b/50ed32583bfffa737df67d33b9c15d7b25df232c55ab606d059f610ef6ca/python_discovery-1.6.2-py3-none-any.whl (38 kB)
+Requirement already satisfied: platformdirs>=2 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from nox->av2==0.2.1) (4.1.0)
+Collecting attrs>=24.1
+  Downloading https://mirrors.aliyun.com/pypi/packages/64/b4/17d4b0b2a2dc85a6df63d1157e028ed19f90d4cd97c36717afef2bc2f395/attrs-26.1.0-py3-none-any.whl (67 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.5/67.5 kB 17.4 MB/s eta 0:00:00
+Collecting argcomplete<4,>=1.9.4
+  Downloading https://mirrors.aliyun.com/pypi/packages/46/bd/551ee6af426af84ca33e02622be722925c196608e9127d731ef17c47f06e/argcomplete-3.7.2-py3-none-any.whl (43 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.3/43.3 kB 6.3 MB/s eta 0:00:00
+Requirement already satisfied: llvmlite<0.42,>=0.41.0dev0 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from numba->av2==0.2.1) (0.41.1)
+Requirement already satisfied: tzdata>=2022.1 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from pandas->av2==0.2.1) (2023.3)
+Requirement already satisfied: pytz>=2020.1 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from pandas->av2==0.2.1) (2023.3.post1)
+Requirement already satisfied: certifi in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from pyproj->av2==0.2.1) (2023.11.17)
+Requirement already satisfied: markdown-it-py>=2.2.0 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from rich->av2==0.2.1) (3.0.0)
+Requirement already satisfied: threadpoolctl>=2.0.0 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from scikit-learn->nuscenes-devkit==1.1.11) (3.2.0)
+Requirement already satisfied: parso<0.9.0,>=0.8.3 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from jedi>=0.16->ipython>=7.31.1->ipdb) (0.8.3)
+Requirement already satisfied: mdurl~=0.1 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from markdown-it-py>=2.2.0->rich->av2==0.2.1) (0.1.2)
+Requirement already satisfied: ptyprocess>=0.5 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from pexpect>4.3->ipython>=7.31.1->ipdb) (0.7.0)
+Requirement already satisfied: wcwidth in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from prompt-toolkit<3.1.0,>=3.0.41->ipython>=7.31.1->ipdb) (0.2.12)
+Requirement already satisfied: six>=1.5 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from python-dateutil>=2.7->matplotlib<3.6.0->nuscenes-devkit==1.1.11) (1.16.0)
+Collecting filelock
+  Downloading https://mirrors.aliyun.com/pypi/packages/ee/86/032133892a5de43b5a98200b01aadcad68cc255e274a762f08b8a76d2912/filelock-4.1.0-py3-none-any.whl (133 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.0/133.0 kB 628.5 kB/s eta 0:00:00
+Collecting typing-extensions
+  Downloading https://mirrors.aliyun.com/pypi/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.6/45.6 kB 74.2 MB/s eta 0:00:00
+Collecting distlib<1,>=0.4.3
+  Downloading https://mirrors.aliyun.com/pypi/packages/02/08/9c41fb51ab5b43eb21674aff13df270e8ba6c4b29c8624e328dc7a9482af/distlib-0.4.3-py2.py3-none-any.whl (470 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 470.6/470.6 kB 327.3 kB/s eta 0:00:00
+Collecting packaging
+  Downloading https://mirrors.aliyun.com/pypi/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl (129 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 130.0/130.0 kB 588.6 kB/s eta 0:00:00
+Collecting platformdirs>=2
+  Downloading https://mirrors.aliyun.com/pypi/packages/f4/ba/223e00b885e960edd5d4b4d178c88acce019bd5b83786093681b8c393492/platformdirs-4.12.4-py3-none-any.whl (32 kB)
+Requirement already satisfied: MarkupSafe>=2.0 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from jinja2->torch->timm==1.0.8) (2.1.1)
+Requirement already satisfied: charset-normalizer<4,>=2 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from requests->ccimport>=0.4.4->spconv-cu118) (2.0.4)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from requests->ccimport>=0.4.4->spconv-cu118) (1.26.18)
+Requirement already satisfied: idna<4,>=2.5 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from requests->ccimport>=0.4.4->spconv-cu118) (3.4)
+Requirement already satisfied: pure-eval in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from stack-data->ipython>=7.31.1->ipdb) (0.2.2)
+Requirement already satisfied: asttokens>=2.1.0 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from stack-data->ipython>=7.31.1->ipdb) (2.4.1)
+Requirement already satisfied: executing>=1.2.0 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from stack-data->ipython>=7.31.1->ipdb) (2.0.1)
+Requirement already satisfied: mpmath>=0.19 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from sympy->cumm-cu118<0.8.0,>=0.7.11->spconv-cu118) (1.3.0)
+Building wheels for collected packages: SharedArray
+  Building wheel for SharedArray (pyproject.toml): started
+  Building wheel for SharedArray (pyproject.toml): finished with status 'done'
+  Created wheel for SharedArray: filename=sharedarray-3.2.4-cp310-cp310-linux_x86_64.whl size=21157 sha256=f65f7b7b2f58202d086fd301e217d4b38b81ea672bfcbab4b8e24c69fb51829a
+  Stored in directory: /tmp/pip-ephem-wheel-cache-84uw9rz_/wheels/45/87/8a/bb79ad7760943ecc98009b218b4c56eebd69a2d4270b3c0f89
+Successfully built SharedArray
+Installing collected packages: distlib, typing-extensions, termcolor, SharedArray, Shapely, pyproj, pybind11, portalocker, platformdirs, packaging, ninja, lark, kornia-rs, humanize, filelock, colorlog, av, attrs, argcomplete, python-discovery, matplotlib, fire, dependency-groups, ccimport, virtualenv, pccm, descartes, nuscenes-devkit, nox, kornia, ipdb, cumm-cu118, timm, spconv-cu118, av2
+  Attempting uninstall: typing-extensions
+    Found existing installation: typing_extensions 4.9.0
+    Not uninstalling typing-extensions at /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages, outside environment /home/minglei/Desktop/CAR/perception_lab/envs/mambafusion_2025
+    Can't uninstall 'typing_extensions'. No files were found to uninstall.
+  Attempting uninstall: platformdirs
+    Found existing installation: platformdirs 4.1.0
+    Not uninstalling platformdirs at /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages, outside environment /home/minglei/Desktop/CAR/perception_lab/envs/mambafusion_2025
+    Can't uninstall 'platformdirs'. No files were found to uninstall.
+  Attempting uninstall: packaging
+    Found existing installation: packaging 23.2
+    Not uninstalling packaging at /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages, outside environment /home/minglei/Desktop/CAR/perception_lab/envs/mambafusion_2025
+    Can't uninstall 'packaging'. No files were found to uninstall.
+  Attempting uninstall: filelock
+    Found existing installation: filelock 3.13.1
+    Not uninstalling filelock at /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages, outside environment /home/minglei/Desktop/CAR/perception_lab/envs/mambafusion_2025
+    Can't uninstall 'filelock'. No files were found to uninstall.
+  Attempting uninstall: attrs
+    Found existing installation: attrs 23.1.0
+    Not uninstalling attrs at /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages, outside environment /home/minglei/Desktop/CAR/perception_lab/envs/mambafusion_2025
+    Can't uninstall 'attrs'. No files were found to uninstall.
+  Attempting uninstall: matplotlib
+    Found existing installation: matplotlib 3.8.2
+    Not uninstalling matplotlib at /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages, outside environment /home/minglei/Desktop/CAR/perception_lab/envs/mambafusion_2025
+    Can't uninstall 'matplotlib'. No files were found to uninstall.
+  Attempting uninstall: timm
+    Found existing installation: timm 0.4.12
+    Not uninstalling timm at /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages, outside environment /home/minglei/Desktop/CAR/perception_lab/envs/mambafusion_2025
+    Can't uninstall 'timm'. No files were found to uninstall.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+datasets 2.14.6 requires fsspec[http]<=2023.10.0,>=2023.1.0, but you have fsspec 2023.12.1 which is incompatible.
+Successfully installed Shapely-1.8.5.post1 SharedArray-3.2.4 argcomplete-3.7.2 attrs-26.1.0 av-17.1.0 av2-0.2.1 ccimport-0.4.4 colorlog-6.12.0 cumm-cu118-0.7.11 dependency-groups-1.3.2 descartes-1.1.0 distlib-0.4.3 filelock-4.1.0 fire-0.7.1 humanize-4.16.0 ipdb-0.13.13 kornia-0.7.3 kornia-rs-0.2.0 lark-1.3.1 matplotlib-3.5.3 ninja-1.13.2 nox-2026.8.17 nuscenes-devkit-1.1.11 packaging-26.3 pccm-0.4.16 platformdirs-4.12.4 portalocker-4.4.0 pybind11-3.1.0 pyproj-3.7.1 python-discovery-1.6.2 spconv-cu118-2.3.8 termcolor-3.3.0 timm-1.0.8 typing-extensions-4.16.0 virtualenv-21.14.7
+
+[notice] A new release of pip is available: 23.0.1 -> 26.2.1
+[notice] To update, run: /home/minglei/Desktop/CAR/perception_lab/envs/mambafusion_2025/bin/python -m pip install --upgrade pip

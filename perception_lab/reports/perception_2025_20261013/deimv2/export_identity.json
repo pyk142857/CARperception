@@ -1,0 +1,12 @@
+{
+  "author_sha256": "5ac51351db92fb519f7bd9bb49fd1c0296dc8996a9154d7d03aad3911a47466e",
+  "executed_sha256": "934e185a04718259c562768fb64151f01aa3a678ec463879dd8ea45cf6152a65",
+  "changes": [
+    "example batch32 to1",
+    "absolute pinned-source import path"
+  ],
+  "args": [
+    "--check"
+  ],
+  "device": "CPU export only; no GPU timing"
+}

@@ -52,3 +52,8 @@ perception_lab/outputs/sparse4d/
 perception_lab/outputs/bevfusion_reference/
 perception_lab/outputs/bevfusion_tensorrt/
 perception_lab/outputs/bevfusion_tensorrt_candidate/
+
+# 2025 full COCO prediction intermediates; metrics, cases and hash receipts are published.
+perception_lab/reports/perception_2025_20261013/deimv2/coco_predictions.json.gz
+perception_lab/reports/perception_2025_20261013/deimv2/onnx/predictions.json.gz
+perception_lab/reports/perception_2025_20261013/deimv2/tensorrt/predictions.json.gz

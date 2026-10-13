@@ -1,0 +1,73 @@
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
+Collecting fvcore
+  Downloading https://mirrors.aliyun.com/pypi/packages/a5/93/d056a9c4efc6c79ba7b5159cc66bb436db93d2cc46dca18ed65c59cc8e4e/fvcore-0.1.5.post20221221.tar.gz (50 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.2/50.2 kB 9.0 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: yacs in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (0.1.8)
+Requirement already satisfied: tensorboardX in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (2.6.2.2)
+Collecting transformers==4.43.3
+  Downloading https://mirrors.aliyun.com/pypi/packages/ad/ff/b3e311e58b9c90b149fb957953b228287d7c9fe78df9a3a72e8715c5fc56/transformers-4.43.3-py3-none-any.whl (9.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.4/9.4 MB 217.2 kB/s eta 0:00:00
+Requirement already satisfied: pyyaml>=5.1 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from transformers==4.43.3) (6.0.1)
+Requirement already satisfied: requests in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from transformers==4.43.3) (2.28.2)
+Requirement already satisfied: tqdm>=4.27 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from transformers==4.43.3) (4.65.2)
+Collecting huggingface-hub<1.0,>=0.23.2
+  Downloading https://mirrors.aliyun.com/pypi/packages/a8/af/48ac8483240de756d2438c380746e7130d1c6f75802ef22f3c6d49982787/huggingface_hub-0.36.2-py3-none-any.whl (566 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 566.4/566.4 kB 185.0 kB/s eta 0:00:00
+Requirement already satisfied: safetensors>=0.4.1 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from transformers==4.43.3) (0.4.1)
+Collecting tokenizers<0.20,>=0.19
+  Downloading https://mirrors.aliyun.com/pypi/packages/40/4f/eb78de4af3b17b589f43a369cbf0c3a7173f25c3d2cd93068852c07689aa/tokenizers-0.19.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.6/3.6 MB 165.8 kB/s eta 0:00:00
+Requirement already satisfied: filelock in ./perception_lab/envs/mambafusion_2025/lib/python3.10/site-packages (from transformers==4.43.3) (4.1.0)
+Requirement already satisfied: numpy>=1.17 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from transformers==4.43.3) (1.26.2)
+Requirement already satisfied: packaging>=20.0 in ./perception_lab/envs/mambafusion_2025/lib/python3.10/site-packages (from transformers==4.43.3) (26.3)
+Requirement already satisfied: regex!=2019.12.17 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from transformers==4.43.3) (2023.10.3)
+Requirement already satisfied: termcolor>=1.1 in ./perception_lab/envs/mambafusion_2025/lib/python3.10/site-packages (from fvcore) (3.3.0)
+Requirement already satisfied: Pillow in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from fvcore) (10.0.1)
+Requirement already satisfied: tabulate in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from fvcore) (0.9.0)
+Collecting iopath>=0.1.7
+  Downloading https://mirrors.aliyun.com/pypi/packages/72/73/b3d451dfc523756cf177d3ebb0af76dc7751b341c60e2a21871be400ae29/iopath-0.1.10.tar.gz (42 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.2/42.2 kB 119.3 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: protobuf>=3.20 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from tensorboardX) (4.25.1)
+Collecting hf-xet<2.0.0,>=1.1.3
+  Downloading https://mirrors.aliyun.com/pypi/packages/a3/4c/2bf3b66c215d409655f28de1622393dde04c9461280d48c7924bb3b2decd/hf_xet-1.7.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.2/4.2 MB 197.2 kB/s eta 0:00:00
+Requirement already satisfied: fsspec>=2023.5.0 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from huggingface-hub<1.0,>=0.23.2->transformers==4.43.3) (2023.12.1)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in ./perception_lab/envs/mambafusion_2025/lib/python3.10/site-packages (from huggingface-hub<1.0,>=0.23.2->transformers==4.43.3) (4.16.0)
+Requirement already satisfied: portalocker in ./perception_lab/envs/mambafusion_2025/lib/python3.10/site-packages (from iopath>=0.1.7->fvcore) (4.4.0)
+Requirement already satisfied: idna<4,>=2.5 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from requests->transformers==4.43.3) (3.4)
+Requirement already satisfied: certifi>=2017.4.17 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from requests->transformers==4.43.3) (2023.11.17)
+Requirement already satisfied: charset-normalizer<4,>=2 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from requests->transformers==4.43.3) (2.0.4)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages (from requests->transformers==4.43.3) (1.26.18)
+Building wheels for collected packages: fvcore, iopath
+  Building wheel for fvcore (setup.py): started
+  Building wheel for fvcore (setup.py): finished with status 'done'
+  Created wheel for fvcore: filename=fvcore-0.1.5.post20221221-py3-none-any.whl size=61400 sha256=a89c7953a3e0c443e7a4e1a149050d778fcec1230025f602183c9dd0f9b321c8
+  Stored in directory: /tmp/pip-ephem-wheel-cache-zgpqupav/wheels/70/79/4d/dfac6e193ba348a677f4f3c564d227991d2c393f3433d9a5fa
+  Building wheel for iopath (setup.py): started
+  Building wheel for iopath (setup.py): finished with status 'done'
+  Created wheel for iopath: filename=iopath-0.1.10-py3-none-any.whl size=31530 sha256=58ac9b643a9a0721cee5cc4d3163829628d2438bed043ef3edb665214c8009ce
+  Stored in directory: /tmp/pip-ephem-wheel-cache-zgpqupav/wheels/b9/f0/a3/1abb6cf2aae51e388efa8caea8f63d067dd546a4577616844f
+Successfully built fvcore iopath
+Installing collected packages: iopath, hf-xet, huggingface-hub, fvcore, tokenizers, transformers
+  Attempting uninstall: huggingface-hub
+    Found existing installation: huggingface-hub 0.19.4
+    Not uninstalling huggingface-hub at /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages, outside environment /home/minglei/Desktop/CAR/perception_lab/envs/mambafusion_2025
+    Can't uninstall 'huggingface-hub'. No files were found to uninstall.
+  Attempting uninstall: tokenizers
+    Found existing installation: tokenizers 0.13.3
+    Not uninstalling tokenizers at /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages, outside environment /home/minglei/Desktop/CAR/perception_lab/envs/mambafusion_2025
+    Can't uninstall 'tokenizers'. No files were found to uninstall.
+  Attempting uninstall: transformers
+    Found existing installation: transformers 4.32.1
+    Not uninstalling transformers at /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages, outside environment /home/minglei/Desktop/CAR/perception_lab/envs/mambafusion_2025
+    Can't uninstall 'transformers'. No files were found to uninstall.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+datasets 2.14.6 requires fsspec[http]<=2023.10.0,>=2023.1.0, but you have fsspec 2023.12.1 which is incompatible.
+Successfully installed fvcore-0.1.5.post20221221 hf-xet-1.7.0 huggingface-hub-0.36.2 iopath-0.1.10 tokenizers-0.19.1 transformers-4.43.3
+
+[notice] A new release of pip is available: 23.0.1 -> 26.2.1
+[notice] To update, run: /home/minglei/Desktop/CAR/perception_lab/envs/mambafusion_2025/bin/python -m pip install --upgrade pip

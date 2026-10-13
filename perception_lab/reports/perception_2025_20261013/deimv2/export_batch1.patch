@@ -1,0 +1,20 @@
+--- author/export_onnx.py
++++ diagnostic/export_onnx_batch1.py
+@@ -12,7 +12,7 @@
+ import os
+ import sys
+ 
+-sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '../..'))
++sys.path.insert(0, '/home/minglei/Desktop/CAR/perception_lab/third_party/DEIMv2_2025')
+ 
+ import torch
+ import torch.nn as nn
+@@ -56,7 +56,7 @@
+     model = Model()
+ 
+     img_size = cfg.yaml_cfg["eval_spatial_size"]
+-    data = torch.rand(32, 3, *img_size)
++    data = torch.rand(1, 3, *img_size)
+     size = torch.tensor([img_size])
+     _ = model(data, size)
+ 

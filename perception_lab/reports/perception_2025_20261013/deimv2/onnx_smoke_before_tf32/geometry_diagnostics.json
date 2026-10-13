@@ -1,0 +1,20 @@
+[
+  {
+    "image_id": 397133,
+    "max_box_component_px": 0.37454986572265625,
+    "max_score_difference": 0.01244644820690155,
+    "unmatched_by_class": 2
+  },
+  {
+    "image_id": 37777,
+    "max_box_component_px": 0.150054931640625,
+    "max_score_difference": 0.005620427429676056,
+    "unmatched_by_class": 0
+  },
+  {
+    "image_id": 252219,
+    "max_box_component_px": 0.733428955078125,
+    "max_score_difference": 0.004312939941883087,
+    "unmatched_by_class": 0
+  }
+]

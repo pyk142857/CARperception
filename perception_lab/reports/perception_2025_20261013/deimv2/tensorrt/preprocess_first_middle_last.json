@@ -1,0 +1,41 @@
+{
+  "native": {
+    "torch": "2.6.0+cu124",
+    "torchvision": "0.21.0+cu124",
+    "pillow": "12.3.0",
+    "images": [
+      {
+        "id": 397133,
+        "sha256": "fd651c2679315b138b702bc87dede27686f1bd5f173aa02ba062aa137d3df53a"
+      },
+      {
+        "id": 180878,
+        "sha256": "7daa795d3f9acd3df3d0bb9423b613450c8eb7c7af37746a00785a1dd390a887"
+      },
+      {
+        "id": 15335,
+        "sha256": "7a9ead8c381bddb14b11bbaa05cf5d16e998782d3ea8ba2e5ecaf5a3e4ae8c58"
+      }
+    ]
+  },
+  "candidate": {
+    "torch": "2.6.0+cu124",
+    "torchvision": "0.21.0+cu124",
+    "pillow": "12.3.0",
+    "images": [
+      {
+        "id": 397133,
+        "sha256": "fd651c2679315b138b702bc87dede27686f1bd5f173aa02ba062aa137d3df53a"
+      },
+      {
+        "id": 180878,
+        "sha256": "7daa795d3f9acd3df3d0bb9423b613450c8eb7c7af37746a00785a1dd390a887"
+      },
+      {
+        "id": 15335,
+        "sha256": "7a9ead8c381bddb14b11bbaa05cf5d16e998782d3ea8ba2e5ecaf5a3e4ae8c58"
+      }
+    ]
+  },
+  "bitwise_equal": true
+}

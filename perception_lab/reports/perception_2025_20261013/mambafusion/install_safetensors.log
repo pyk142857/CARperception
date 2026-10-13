@@ -1,0 +1,9 @@
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
+Collecting safetensors==0.4.5
+  Downloading https://mirrors.aliyun.com/pypi/packages/b9/df/6f766b56690709d22e83836e4067a1109a7d84ea152a6deb5692743a2805/safetensors-0.4.5-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (435 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 435.0/435.0 kB 351.7 kB/s eta 0:00:00
+Installing collected packages: safetensors
+Successfully installed safetensors-0.4.5
+
+[notice] A new release of pip is available: 23.0.1 -> 26.2.1
+[notice] To update, run: /home/minglei/Desktop/CAR/perception_lab/envs/mambafusion_2025/bin/python -m pip install --upgrade pip

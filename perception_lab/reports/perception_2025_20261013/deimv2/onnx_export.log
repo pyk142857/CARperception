@@ -1,0 +1,15 @@
+/home/minglei/Desktop/CAR/perception_lab/third_party/DEIMv2_2025/engine/backbone/dinov3_adapter.py:154: TracerWarning: Converting a tensor to a Python integer might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  resize_H, resize_W = int(H_c * 2**(num_scales-i)), int(W_c * 2**(num_scales-i))
+/home/minglei/Desktop/CAR/perception_lab/third_party/DEIMv2_2025/engine/deim/deim_decoder.py:468: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if memory.shape[0] > 1:
+/home/minglei/Desktop/CAR/perception_lab/third_party/DEIMv2_2025/engine/deim/dfine_decoder.py:129: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if reference_points.shape[-1] == 2:
+/home/minglei/Desktop/CAR/perception_lab/third_party/DEIMv2_2025/engine/deim/dfine_decoder.py:133: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  elif reference_points.shape[-1] == 4:
+Training ViT-Tiny from scratch...
+Using Lite Spatial Prior Module with inplanes=16
+     --- Use Gateway@True ---
+     --- Use Share Bbox Head@False ---
+     --- Use Share Score Head@False ---
+     --- Wide Layer@1 ---
+Check export onnx model done...

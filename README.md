@@ -1,12 +1,14 @@
 # CARperception
 
-## 2026-10-13：2025 方法限定的优化路线（计划）
+## 2026-10-13：2025 方法部署实测（部分完成）
 
 当前候选为 **DEIMv2-S、MambaFusion、GRAE-3DMOT、HARP-NeXt**，覆盖2D检测、相机–LiDAR融合3D检测、学习式3D跟踪、点云语义分割。沿用现有COCO、nuScenes mini及lidarseg标签。
 
 - [当前执行指令](perception_lab/instruction/20261013_01_2025_perception_deployment.md)
 - [选型、官方资源及部署检查](perception_lab/reports/perception_2025_20261013/plan.md)
-- **当前仅发布方案和指令，本轮新模型尚未执行。** 本机需先核验checkpoint、CUDA/显存及mini接口。DEIMv2 FP16使用独立TensorRT>=10.6环境。
+- [实测报告、指标与复现](perception_lab/reports/perception_2025_20261013/report.md)：DEIMv2-S 完成 COCO 5,000 张评价（AP 50.86）和 mini 六相机234张；GRAE 在封存检测上完成39/81帧跟踪，mini_val AMOTA 0.82296、IDS 13。
+- HARP/Mamba 缺完整作者权重，整网尚未部署；预处理/算子检查不能当作模型精度。TensorRT使用独立10.6环境；30轮配对中DEIM FP16耗时16.66→7.53ms（约2.21倍），AP下降0.0541个百分点；置信度异常另列，默认保留native。后端结果与采用决定见报告。
+- [2025本地同步回放](http://127.0.0.1:9094/perception_2025/)：完整原始点云、DEIM 2D框、GRAE轨迹和独立GT；缺失模型显式标记。
 - 20261012_02候选方案已被替代，停止其候选部署；旧结果保留为历史证据。
 
 ## 2026-10-12：部署发布恢复与 FP16 补查

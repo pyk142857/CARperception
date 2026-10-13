@@ -1,0 +1,6 @@
+{
+  "scope": "CPU-only separate replay of archived detector JSON and author NMS on 120 frames; no GPU inference; cached files",
+  "all_120_frames_wall_ms": 25109.50667799625,
+  "per_frame_timings": "input_manifest.json cpu_reader_nms_timings",
+  "inference_repeated": false
+}

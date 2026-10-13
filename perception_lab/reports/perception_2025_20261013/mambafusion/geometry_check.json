@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "camera_matrices_compared": 720,
+  "camera_max_abs_error": 7.433671733725333e-13,
+  "sweep_matrices_compared": 1053,
+  "sweep_max_abs_error": 1.1055323323461153e-12,
+  "camera_reference": "unmodified pinned author obtain_sensor2top",
+  "annotation_fields_in_infos": false,
+  "native_dataset_integration_validated": false
+}

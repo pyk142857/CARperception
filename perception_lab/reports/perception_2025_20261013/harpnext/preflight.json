@@ -1,0 +1,63 @@
+{
+  "status": "passed",
+  "source": "new_measured",
+  "inference_frames": 0,
+  "synthetic_boundary_probe": {
+    "device": "cpu",
+    "purpose": "algorithm boundary probe, not GPU performance",
+    "original_points": 3,
+    "cpu_output_points": 3,
+    "vectorized_output_points": 4,
+    "equal": false,
+    "note": "torch.roll wraps columns; CPU refuses interpolation at first and last columns; both use proj_idx>0"
+  },
+  "point_index_zero_probe": {
+    "original_points": 3,
+    "output_points_before_reorder": 3,
+    "output_points_after_reorder": 4,
+    "same_geometric_input": true,
+    "note": "Which point has index0 changes interpolation; index0 occupancy is false"
+  },
+  "split_counts": {
+    "scene0061": 39,
+    "mini_val": 81,
+    "mini_all": 404
+  },
+  "original_points": 14026208,
+  "cpu_gt_feature_independence": [
+    {
+      "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+      "original_points": 34688,
+      "appended_points": 18950,
+      "gt_variants": 3,
+      "features_equal": true,
+      "original_prefix_exact": true,
+      "model_predictions_checked": false,
+      "native_manager_would_consume_processed_labels": 53638
+    },
+    {
+      "sample_token": "b26e791522294bec90f86fd72226e35c",
+      "original_points": 34688,
+      "appended_points": 18603,
+      "gt_variants": 3,
+      "features_equal": true,
+      "original_prefix_exact": true,
+      "model_predictions_checked": false,
+      "native_manager_would_consume_processed_labels": 53291
+    },
+    {
+      "sample_token": "ed5fc18c31904f96a8f0dbb99ff069c0",
+      "original_points": 34720,
+      "appended_points": 20203,
+      "gt_variants": 3,
+      "features_equal": true,
+      "original_prefix_exact": true,
+      "model_predictions_checked": false,
+      "native_manager_would_consume_processed_labels": 54923
+    }
+  ],
+  "limitations": [
+    "GT independence tested through CPU network inputs only; predictions require checkpoint",
+    "Author CPU/GPU boundary semantics differ; GPU candidate requires explicit validation"
+  ]
+}

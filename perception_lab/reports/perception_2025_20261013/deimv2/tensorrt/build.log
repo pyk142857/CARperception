@@ -1,0 +1,19 @@
+[10/13/2026-11:47:28] [TRT] [I] [MemUsageChange] Init CUDA: CPU +14, GPU +0, now: CPU 21, GPU 1550 (MiB)
+[10/13/2026-11:47:29] [TRT] [I] [MemUsageChange] Init builder kernel library: CPU +2259, GPU +442, now: CPU 2436, GPU 1992 (MiB)
+[10/13/2026-11:47:30] [TRT] [W] ModelImporter.cpp:429: Make sure input orig_target_sizes has Int64 binding.
+[10/13/2026-11:47:30] [TRT] [W] ModelImporter.cpp:787: Make sure output labels has Int64 binding.
+[10/13/2026-11:47:30] [TRT] [W] Detected layernorm nodes in FP16.
+[10/13/2026-11:47:30] [TRT] [W] Running layernorm after self-attention with FP16 Reduce or Pow may cause overflow. Forcing Reduce or Pow Layers in FP32 precision, or exporting the model to use INormalizationLayer (available with ONNX opset >= 17) can help preserving accuracy.
+[10/13/2026-11:47:30] [TRT] [I] Local timing cache in use. Profiling results in this builder pass will not be stored.
+[10/13/2026-11:48:32] [TRT] [I] Compiler backend is used during engine build.
+[10/13/2026-11:53:39] [TRT] [I] Detected 2 inputs and 3 output network tensors.
+[10/13/2026-11:53:41] [TRT] [I] Total Host Persistent Memory: 283952 bytes
+[10/13/2026-11:53:41] [TRT] [I] Total Device Persistent Memory: 1024 bytes
+[10/13/2026-11:53:41] [TRT] [I] Max Scratch Memory: 10269696 bytes
+[10/13/2026-11:53:41] [TRT] [I] [BlockAssignment] Started assigning block shifts. This will take 93 steps to complete.
+[10/13/2026-11:53:41] [TRT] [I] [BlockAssignment] Algorithm ShiftNTopDown took 5.2909ms to assign 11 blocks to 93 nodes requiring 22100992 bytes.
+[10/13/2026-11:53:41] [TRT] [I] Total Activation Memory: 22100992 bytes
+[10/13/2026-11:53:41] [TRT] [I] Total Weights Memory: 19741824 bytes
+[10/13/2026-11:53:41] [TRT] [I] Compiler backend is used during engine execution.
+[10/13/2026-11:53:41] [TRT] [I] Engine generation completed in 371.075 seconds.
+[10/13/2026-11:53:41] [TRT] [I] [MemUsageStats] Peak memory usage of TRT CPU/GPU memory allocators: CPU 15 MiB, GPU 94 MiB

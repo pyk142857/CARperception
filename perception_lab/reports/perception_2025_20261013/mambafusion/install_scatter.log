@@ -1,0 +1,7 @@
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
+Collecting torch-scatter==2.1.2+pt21cu118
+ERROR: Could not install packages due to an OSError: HTTPSConnectionPool(host='data.pyg.org', port=443): Max retries exceeded with url: /whl/torch-2.1.0%2Bcu118/torch_scatter-2.1.2%2Bpt21cu118-cp310-cp310-linux_x86_64.whl (Caused by ReadTimeoutError("HTTPSConnectionPool(host='data.pyg.org', port=443): Read timed out. (read timeout=15.0)"))
+
+
+[notice] A new release of pip is available: 23.0.1 -> 26.2.1
+[notice] To update, run: /home/minglei/Desktop/CAR/perception_lab/envs/mambafusion_2025/bin/python -m pip install --upgrade pip

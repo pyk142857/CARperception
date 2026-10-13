@@ -1,0 +1,8 @@
+Training ViT-Tiny from scratch...
+Using Lite Spatial Prior Module with inplanes=16
+     --- Use Gateway@True ---
+     --- Use Share Bbox Head@False ---
+     --- Use Share Score Head@False ---
+     --- Wide Layer@1 ---
+<All keys matched successfully>
+2.6.0+cu124 9779838

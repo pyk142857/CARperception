@@ -1,0 +1,24 @@
+{
+  "status": "partial",
+  "native_inference": "passed",
+  "coco_images": 3,
+  "mini_camera_images": 234,
+  "backend": "not_yet_run",
+  "source": "new_measured",
+  "prediction_sha256": "77c78e3924fd0ab6954712aaa8436b3c183ff332f44ed06298610e2a6a44d5b6",
+  "author_faster_coco_eval": {
+    "AP": 0.5081511255313826,
+    "AP50": 0.6485147629732444,
+    "AP75": 0.5970755703240295,
+    "APs": 0.3274567153143886,
+    "APm": 0.8392372570590392,
+    "APl": 0.7333333333333333,
+    "AR1": 0.3785964912280702,
+    "AR10": 0.5817543859649122,
+    "AR100": 0.6570175438596492,
+    "ARs": 0.5447222222222223,
+    "ARm": 0.8462962962962962,
+    "ARl": 0.7333333333333333
+  },
+  "common_pycocotools_eval": "pending independent process; author import replaced module"
+}

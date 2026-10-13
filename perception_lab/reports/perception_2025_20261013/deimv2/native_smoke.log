@@ -1,0 +1,27 @@
+Training ViT-Tiny from scratch...
+Using Lite Spatial Prior Module with inplanes=16
+     --- Use Gateway@True ---
+     --- Use Share Bbox Head@False ---
+     --- Use Share Score Head@False ---
+     --- Wide Layer@1 ---
+COCO 0 3
+Evaluate annotation type *bbox*
+COCOeval_opt.evaluate() finished...
+DONE (t=0.02s).
+Accumulating evaluation results...
+COCOeval_opt.accumulate() finished...
+DONE (t=0.00s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.508
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.649
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.597
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.327
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.839
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.733
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.379
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.582
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.657
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.545
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.846
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.733
+ Average Recall     (AR) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.877
+ Average Recall     (AR) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.754

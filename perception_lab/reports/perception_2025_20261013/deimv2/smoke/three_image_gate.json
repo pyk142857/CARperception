@@ -1,0 +1,44 @@
+[
+  {
+    "image_id": 397133,
+    "predictions": 300,
+    "size": [
+      640,
+      427
+    ],
+    "timings": {
+      "read_preprocess_ms": 7.609118998516351,
+      "h2d_wall_ms": 0.5379409994930029,
+      "forward_post_gpu_ms": 11.652128219604492,
+      "e2e_ms": 19.932018010877073
+    }
+  },
+  {
+    "image_id": 180878,
+    "predictions": 300,
+    "size": [
+      640,
+      427
+    ],
+    "timings": {
+      "read_preprocess_ms": 5.205495006521232,
+      "h2d_wall_ms": 0.5350049905246124,
+      "forward_post_gpu_ms": 12.317440032958984,
+      "e2e_ms": 18.17365500028245
+    }
+  },
+  {
+    "image_id": 15335,
+    "predictions": 300,
+    "size": [
+      640,
+      480
+    ],
+    "timings": {
+      "read_preprocess_ms": 6.317067993222736,
+      "h2d_wall_ms": 0.5491600022651255,
+      "forward_post_gpu_ms": 12.090656280517578,
+      "e2e_ms": 19.065259999479167
+    }
+  }
+]

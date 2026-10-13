@@ -1,0 +1,78 @@
+{
+  "process_exit_codes": {
+    "pcdet": 0,
+    "window": 0,
+    "selective_scan": 0,
+    "mamba_diffv": 0,
+    "torch_scatter": 0
+  },
+  "extensions": [
+    {
+      "path": "perception_lab/third_party/MambaFusion2025/selective_scan/selective_scan_cuda_oflex.cpython-310-x86_64-linux-gnu.so",
+      "bytes": 25647264,
+      "sha256": "4b41075c94bc4663893329642ad07b0ddc89aaae673082343a3c9a75b1b8b207"
+    },
+    {
+      "path": "perception_lab/third_party/MambaFusion2025/selective_scan/selective_scan_cuda_ndstate.cpython-310-x86_64-linux-gnu.so",
+      "bytes": 31281376,
+      "sha256": "6d3f2cb8b8df8f0b80b8c5264706bca9b0606b7559d0ae33cd55fd9069bb0f25"
+    },
+    {
+      "path": "perception_lab/third_party/MambaFusion2025/selective_scan/selective_scan_cuda_core.cpython-310-x86_64-linux-gnu.so",
+      "bytes": 33050832,
+      "sha256": "8a5537ede07924bdca7f628974f7cd27b94fb582070cb27e7cb87de144880973"
+    },
+    {
+      "path": "perception_lab/third_party/MambaFusion2025/pcdet/ops/pointnet2/pointnet2_batch/pointnet2_batch_cuda.cpython-310-x86_64-linux-gnu.so",
+      "bytes": 950552,
+      "sha256": "9239209565e8d9123b785ea15560ab194e543c8b7141868ba67a66d4ad5c099d"
+    },
+    {
+      "path": "perception_lab/third_party/MambaFusion2025/pcdet/ops/pointnet2/pointnet2_stack/pointnet2_stack_cuda.cpython-310-x86_64-linux-gnu.so",
+      "bytes": 1565424,
+      "sha256": "e1ef6e2200f73ea8e2c6366339ea9ee70073d033631baadf9d7aaabeb4b7d998"
+    },
+    {
+      "path": "perception_lab/third_party/MambaFusion2025/pcdet/ops/ingroup_inds/ingroup_inds_cuda.cpython-310-x86_64-linux-gnu.so",
+      "bytes": 516848,
+      "sha256": "03dfaea882832ecba0fde3798f4a86a37c704bde3e701edc0b0920e725d0843b"
+    },
+    {
+      "path": "perception_lab/third_party/MambaFusion2025/pcdet/ops/bev_pool_v2/bev_pool_v2_ext.cpython-310-x86_64-linux-gnu.so",
+      "bytes": 199504,
+      "sha256": "1c27468747e5d40070385ee4b07db153db2cbd6fe1703a4c6b3d423ddc36f134"
+    },
+    {
+      "path": "perception_lab/third_party/MambaFusion2025/pcdet/ops/roipoint_pool3d/roipoint_pool3d_cuda.cpython-310-x86_64-linux-gnu.so",
+      "bytes": 175968,
+      "sha256": "9a5ba87173e7f10049b09808132647ee63caead535e1607f3045a3619c76f0ac"
+    },
+    {
+      "path": "perception_lab/third_party/MambaFusion2025/pcdet/ops/iou3d_nms/iou3d_nms_cuda.cpython-310-x86_64-linux-gnu.so",
+      "bytes": 579336,
+      "sha256": "b47d5b144c4fb255c95d93177c6a242102f457514d6261c2e9a68159f20ae703"
+    },
+    {
+      "path": "perception_lab/third_party/MambaFusion2025/pcdet/ops/win_coors/flattened_window_cuda.cpython-310-x86_64-linux-gnu.so",
+      "bytes": 878256,
+      "sha256": "f0a9ea4219e7be788d9b26e9d572ea1d78a2f7f3b82249873dca79b5b83c4d0b"
+    },
+    {
+      "path": "perception_lab/third_party/MambaFusion2025/pcdet/ops/bev_pool/bev_pool_ext.cpython-310-x86_64-linux-gnu.so",
+      "bytes": 205792,
+      "sha256": "0544e38c4c5d5ddb9a6a89c97b5fa011e5253d6866d7d96bf9c6f1b8b66ccd7c"
+    },
+    {
+      "path": "perception_lab/third_party/MambaFusion2025/pcdet/ops/roiaware_pool3d/roiaware_pool3d_cuda.cpython-310-x86_64-linux-gnu.so",
+      "bytes": 218496,
+      "sha256": "368338a710fa4f8e26027f4e524510c0fd62f0da98602853b79b0a5303c9bda3"
+    },
+    {
+      "path": "perception_lab/third_party/MambaFusion2025/mamba_diffv/mamba/selective_scan_cuda.cpython-310-x86_64-linux-gnu.so",
+      "bytes": 459411272,
+      "sha256": "68bfcf279afec6468914a37bd6e64ad6bb3e9460d4e984a1f3f740cd5be0b730"
+    }
+  ],
+  "model_import_passed": true,
+  "model_constructor_executed": false
+}

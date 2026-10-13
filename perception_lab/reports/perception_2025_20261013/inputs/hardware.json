@@ -1,0 +1,31 @@
+{
+  "nvidia_smi": {
+    "returncode": 0,
+    "stdout": "Tue Oct 13 10:51:41 2026       \n+---------------------------------------------------------------------------------------+\n| NVIDIA-SMI 535.183.01             Driver Version: 535.183.01   CUDA Version: 12.2     |\n|-----------------------------------------+----------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |\n|                                         |                      |               MIG M. |\n|=========================================+======================+======================|\n|   0  NVIDIA GeForce RTX 4090        Off | 00000000:01:00.0  On |                  Off |\n| 31%   35C    P8              34W / 450W |   1074MiB / 24564MiB |     20%      Default |\n|                                         |                      |                  N/A |\n+-----------------------------------------+----------------------+----------------------+\n                                                                                         \n+---------------------------------------------------------------------------------------+\n| Processes:                                                                            |\n|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |\n|        ID   ID                                                             Usage      |\n|=======================================================================================|\n|    0   N/A  N/A      1560      G   /usr/lib/xorg/Xorg                          503MiB |\n|    0   N/A  N/A     12294      G   /usr/bin/gnome-shell                         64MiB |\n|    0   N/A  N/A     12534      G   ...in/bin/sunloginclient --cmd=autorun       22MiB |\n|    0   N/A  N/A     12664      G   ...) Chrome/58.0.3029.81 Safari/537.36        6MiB |\n|    0   N/A  N/A     12689      G   ...en=397C4A0F3686401D7D3A2246F054A6C4       10MiB |\n|    0   N/A  N/A     52252      G   ...n=20260929-170043.057000-production       85MiB |\n|    0   N/A  N/A     55073      G   ...gnu/webkit2gtk-4.0/WebKitWebProcess       31MiB |\n|    0   N/A  N/A     58890      G   ...cess-track-uuid=3190708988185955192      132MiB |\n|    0   N/A  N/A   1481076      G   ...AAAAAAAIAAAAAAAAAA== --shared-files       62MiB |\n+---------------------------------------------------------------------------------------+\n",
+    "stderr": ""
+  },
+  "gpu": {
+    "returncode": 0,
+    "stdout": "name, memory.total [MiB], memory.free [MiB], driver_version\nNVIDIA GeForce RTX 4090, 24564 MiB, 23120 MiB, 535.183.01\n",
+    "stderr": ""
+  },
+  "compiler": {
+    "returncode": 0,
+    "stdout": "gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0\nCopyright (C) 2019 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+    "stderr": ""
+  },
+  "cuda_118": {
+    "returncode": 0,
+    "stdout": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2022 NVIDIA Corporation\nBuilt on Wed_Sep_21_10:33:58_PDT_2022\nCuda compilation tools, release 11.8, V11.8.89\nBuild cuda_11.8.r11.8/compiler.31833905_0\n",
+    "stderr": ""
+  },
+  "cuda_122": {
+    "returncode": 0,
+    "stdout": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2023 NVIDIA Corporation\nBuilt on Tue_Jun_13_19:16:58_PDT_2023\nCuda compilation tools, release 12.2, V12.2.91\nBuild cuda_12.2.r12.2/compiler.32965470_0\n",
+    "stderr": ""
+  },
+  "platform": "Linux-5.15.0-139-generic-x86_64-with-glibc2.31",
+  "python": "3.10.13 (main, Sep 11 2023, 13:44:35) [GCC 11.2.0]",
+  "disk_free_bytes": 39206535168,
+  "git_start_commit": "30ed61a9f8a76425301b92f927c4854c0304a43a"
+}

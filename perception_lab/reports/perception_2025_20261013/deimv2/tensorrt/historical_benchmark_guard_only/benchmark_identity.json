@@ -1,0 +1,15 @@
+{
+  "checkpoint_sha256": "9491ab33b68ecfc0e34043abb3009599ab1e892fb953a1faad12ef4fca5a35c4",
+  "model_config_sha256": "a12d0507156becb9dff718664eb4112222190a446bd0bd53d4da220803178661",
+  "checkpoint_branch": "model",
+  "source_commit": "1d2ca42171570c713e78fc6a766ec5104b7f4724",
+  "source_files_checked": 155,
+  "resource_manifest_sha256": "be0d4fbfdedcdb227f056b6f967463d9ca0b301708b13c7c4eeb722b8472fec8",
+  "strict_load_manifest_sha256": "5d4d6c1e9f504bcc708b0355d246e6aab673f9ab4c0c7732409480955887a475",
+  "export_identity_manifest_sha256": "651a8307dd41a32aa44370e6348334e4b0c1f464474c452a470bfc78352e7e53",
+  "export_author_sha256": "5ac51351db92fb519f7bd9bb49fd1c0296dc8996a9154d7d03aad3911a47466e",
+  "export_executed_sha256": "934e185a04718259c562768fb64151f01aa3a678ec463879dd8ea45cf6152a65",
+  "onnx_sha256": "0df8b3ec31c6e99a6ccdb1059b9c9dacb1d12623f48688787b6094beea74d8a9",
+  "scope": "Current post-run reconciliation: checkpoint/config match native strict_load recorded before export; pinned files match resource_manifest; exporter hashes match original export_identity; ONNX is separately checked against build. Original export receipt did not bind launch checkpoint or ONNX hash.",
+  "original_build_has_native_binding": false
+}

@@ -1,10 +1,10 @@
 # TASK_STATE — mini 教学闭环已验证
 
-## 当前候选：2025方法限定（2026-10-13，planned）
+## 当前候选：2025方法限定（2026-10-13，partial）
 
 BOSS要求“找点2025的，旧的不考虑”。当前候选更新为DEIMv2-S、MambaFusion、GRAE-3DMOT、HARP-NeXt；20261012_02方案已被替代，不继续执行其候选部署。
 [当前指令](instruction/20261013_01_2025_perception_deployment.md) · [方案与资源](reports/perception_2025_20261013/plan.md)。
-本轮仅完成选型、资源核查和文档发布，尚未下载/编译/运行新模型。既有部署及指标保留历史状态；不得把planned写为executed。
+本轮实测：DEIMv2-S COCO val5000 AP0.50861及mini六相机234张；GRAE封存检测输入39/81帧官方跟踪评价（mini_val AMOTA0.82296、IDS13）。HARP/Mamba完整权重缺失，整网与相应预测回放受阻。HARP预处理、Mamba CUDA算子实测不计为完整模型部署。后端、优化采用决定、真实失败案例与回放验收见[执行报告](reports/perception_2025_20261013/report.md)。既有旧模型仅保留历史状态。
 
 
 2026-09-23，BOSS 明确改为理解流程：仅用 nuScenes mini，现有模型优先，其余模型作为扩展。

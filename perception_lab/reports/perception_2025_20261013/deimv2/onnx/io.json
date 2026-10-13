@@ -1,0 +1,77 @@
+{
+  "inputs": [
+    {
+      "name": "images",
+      "type": "tensor(float)",
+      "shape": [
+        "N",
+        3,
+        640,
+        640
+      ]
+    },
+    {
+      "name": "orig_target_sizes",
+      "type": "tensor(int64)",
+      "shape": [
+        "N",
+        2
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "name": "labels",
+      "type": "tensor(int64)",
+      "shape": [
+        "Sublabels_dim_0",
+        "Sublabels_dim_1"
+      ]
+    },
+    {
+      "name": "boxes",
+      "type": "tensor(float)",
+      "shape": [
+        "GatherElementsboxes_dim_0",
+        "GatherElementsboxes_dim_1",
+        "Sublabels_dim_0"
+      ]
+    },
+    {
+      "name": "scores",
+      "type": "tensor(float)",
+      "shape": [
+        "GatherElementsboxes_dim_0",
+        "GatherElementsboxes_dim_1"
+      ]
+    }
+  ],
+  "runtime": "1.16.3",
+  "providers": [
+    "CUDAExecutionProvider",
+    "CPUExecutionProvider"
+  ],
+  "provider_options": {
+    "CPUExecutionProvider": {},
+    "CUDAExecutionProvider": {
+      "tunable_op_max_tuning_duration_ms": "0",
+      "enable_skip_layer_norm_strict_mode": "0",
+      "tunable_op_tuning_enable": "0",
+      "device_id": "0",
+      "has_user_compute_stream": "0",
+      "gpu_mem_limit": "18446744073709551615",
+      "gpu_external_alloc": "0",
+      "gpu_external_free": "0",
+      "gpu_external_empty_cache": "0",
+      "cudnn_conv_algo_search": "EXHAUSTIVE",
+      "cudnn_conv1d_pad_to_nc1d": "0",
+      "arena_extend_strategy": "kNextPowerOfTwo",
+      "do_copy_in_default_stream": "1",
+      "enable_cuda_graph": "0",
+      "cudnn_conv_use_max_workspace": "1",
+      "tunable_op_enable": "0"
+    }
+  },
+  "tf32_override": "0",
+  "model_sha256": "0df8b3ec31c6e99a6ccdb1059b9c9dacb1d12623f48688787b6094beea74d8a9"
+}

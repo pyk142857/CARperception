@@ -1,0 +1,175 @@
+{
+  "backbone.dinov3": {
+    "calls": 2,
+    "output": [
+      [
+        {
+          "shape": [
+            1,
+            1600,
+            192
+          ],
+          "dtype": "torch.float32"
+        },
+        {
+          "shape": [
+            1,
+            192
+          ],
+          "dtype": "torch.float32"
+        }
+      ],
+      [
+        {
+          "shape": [
+            1,
+            1600,
+            192
+          ],
+          "dtype": "torch.float32"
+        },
+        {
+          "shape": [
+            1,
+            192
+          ],
+          "dtype": "torch.float32"
+        }
+      ],
+      [
+        {
+          "shape": [
+            1,
+            1600,
+            192
+          ],
+          "dtype": "torch.float32"
+        },
+        {
+          "shape": [
+            1,
+            192
+          ],
+          "dtype": "torch.float32"
+        }
+      ]
+    ]
+  },
+  "backbone.sta": {
+    "calls": 2,
+    "output": [
+      {
+        "shape": [
+          1,
+          32,
+          80,
+          80
+        ],
+        "dtype": "torch.float32"
+      },
+      {
+        "shape": [
+          1,
+          64,
+          40,
+          40
+        ],
+        "dtype": "torch.float32"
+      },
+      {
+        "shape": [
+          1,
+          64,
+          20,
+          20
+        ],
+        "dtype": "torch.float32"
+      }
+    ]
+  },
+  "backbone": {
+    "calls": 2,
+    "output": [
+      {
+        "shape": [
+          1,
+          192,
+          80,
+          80
+        ],
+        "dtype": "torch.float32"
+      },
+      {
+        "shape": [
+          1,
+          192,
+          40,
+          40
+        ],
+        "dtype": "torch.float32"
+      },
+      {
+        "shape": [
+          1,
+          192,
+          20,
+          20
+        ],
+        "dtype": "torch.float32"
+      }
+    ]
+  },
+  "encoder": {
+    "calls": 2,
+    "output": [
+      {
+        "shape": [
+          1,
+          192,
+          80,
+          80
+        ],
+        "dtype": "torch.float32"
+      },
+      {
+        "shape": [
+          1,
+          192,
+          40,
+          40
+        ],
+        "dtype": "torch.float32"
+      },
+      {
+        "shape": [
+          1,
+          192,
+          20,
+          20
+        ],
+        "dtype": "torch.float32"
+      }
+    ]
+  },
+  "decoder": {
+    "calls": 2,
+    "output": {
+      "pred_logits": {
+        "shape": [
+          1,
+          300,
+          80
+        ],
+        "dtype": "torch.float32"
+      },
+      "pred_boxes": {
+        "shape": [
+          1,
+          300,
+          4
+        ],
+        "dtype": "torch.float32"
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+Training ViT-Tiny from scratch...
+Using Lite Spatial Prior Module with inplanes=16
+     --- Use Gateway@True ---
+     --- Use Share Bbox Head@False ---
+     --- Use Share Score Head@False ---
+     --- Wide Layer@1 ---
+COCO 0 5000
+COCO 100 5000
+COCO 200 5000
+COCO 300 5000
+COCO 400 5000
+COCO 500 5000
+COCO 600 5000
+COCO 700 5000
+COCO 800 5000
+COCO 900 5000
+COCO 1000 5000
+COCO 1100 5000
+COCO 1200 5000
+COCO 1300 5000
+COCO 1400 5000
+COCO 1500 5000
+COCO 1600 5000
+COCO 1700 5000
+COCO 1800 5000
+COCO 1900 5000
+COCO 2000 5000
+COCO 2100 5000
+COCO 2200 5000
+COCO 2300 5000
+COCO 2400 5000
+COCO 2500 5000
+COCO 2600 5000
+COCO 2700 5000
+COCO 2800 5000
+COCO 2900 5000
+COCO 3000 5000
+COCO 3100 5000
+COCO 3200 5000
+COCO 3300 5000
+COCO 3400 5000
+COCO 3500 5000
+COCO 3600 5000
+COCO 3700 5000
+COCO 3800 5000
+COCO 3900 5000
+COCO 4000 5000
+COCO 4100 5000
+COCO 4200 5000
+COCO 4300 5000
+COCO 4400 5000
+COCO 4500 5000
+COCO 4600 5000
+COCO 4700 5000
+COCO 4800 5000
+COCO 4900 5000
+Evaluate annotation type *bbox*
+COCOeval_opt.evaluate() finished...
+DONE (t=3.94s).
+Accumulating evaluation results...
+COCOeval_opt.accumulate() finished...
+DONE (t=0.00s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.509
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.683
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.551
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.314
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.553
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.703
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.383
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.641
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.703
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.528
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.755
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.864
+ Average Recall     (AR) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.911
+ Average Recall     (AR) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.761

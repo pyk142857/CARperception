@@ -1,0 +1,251 @@
+{
+  "boundary": "prepared CPU detections through H2D, learned association, CPU output; excludes JSON read/NMS, same both sides",
+  "frames_per_round": 3,
+  "warmup": 3,
+  "paired_rounds": [
+    {
+      "round": 0,
+      "native_ms": 31.160155005636625,
+      "batched_d2h_ms": 33.13786299258936,
+      "associations_and_outputs_equal": true,
+      "order": "AB"
+    },
+    {
+      "round": 1,
+      "native_ms": 31.198976997984573,
+      "batched_d2h_ms": 32.43825401295908,
+      "associations_and_outputs_equal": true,
+      "order": "BA"
+    },
+    {
+      "round": 2,
+      "native_ms": 30.555139994248748,
+      "batched_d2h_ms": 30.631849993369542,
+      "associations_and_outputs_equal": true,
+      "order": "AB"
+    },
+    {
+      "round": 3,
+      "native_ms": 31.806593004148453,
+      "batched_d2h_ms": 30.028433000552468,
+      "associations_and_outputs_equal": true,
+      "order": "BA"
+    },
+    {
+      "round": 4,
+      "native_ms": 31.048671997268684,
+      "batched_d2h_ms": 31.72743899631314,
+      "associations_and_outputs_equal": true,
+      "order": "AB"
+    },
+    {
+      "round": 5,
+      "native_ms": 30.962375007220544,
+      "batched_d2h_ms": 29.539843002567068,
+      "associations_and_outputs_equal": true,
+      "order": "BA"
+    },
+    {
+      "round": 6,
+      "native_ms": 29.772674999549054,
+      "batched_d2h_ms": 31.005981989437714,
+      "associations_and_outputs_equal": true,
+      "order": "AB"
+    },
+    {
+      "round": 7,
+      "native_ms": 32.00675699918065,
+      "batched_d2h_ms": 30.08774999761954,
+      "associations_and_outputs_equal": true,
+      "order": "BA"
+    },
+    {
+      "round": 8,
+      "native_ms": 33.19361500325613,
+      "batched_d2h_ms": 34.72002600028645,
+      "associations_and_outputs_equal": true,
+      "order": "AB"
+    },
+    {
+      "round": 9,
+      "native_ms": 35.017232003156096,
+      "batched_d2h_ms": 33.512535999761894,
+      "associations_and_outputs_equal": true,
+      "order": "BA"
+    },
+    {
+      "round": 10,
+      "native_ms": 35.41694000887219,
+      "batched_d2h_ms": 38.40825500083156,
+      "associations_and_outputs_equal": true,
+      "order": "AB"
+    },
+    {
+      "round": 11,
+      "native_ms": 34.98640100588091,
+      "batched_d2h_ms": 34.46183699998073,
+      "associations_and_outputs_equal": true,
+      "order": "BA"
+    },
+    {
+      "round": 12,
+      "native_ms": 34.56290099711623,
+      "batched_d2h_ms": 34.00579500885215,
+      "associations_and_outputs_equal": true,
+      "order": "AB"
+    },
+    {
+      "round": 13,
+      "native_ms": 35.67705099703744,
+      "batched_d2h_ms": 34.34130900132004,
+      "associations_and_outputs_equal": true,
+      "order": "BA"
+    },
+    {
+      "round": 14,
+      "native_ms": 35.461082006804645,
+      "batched_d2h_ms": 35.42241199465934,
+      "associations_and_outputs_equal": true,
+      "order": "AB"
+    },
+    {
+      "round": 15,
+      "native_ms": 35.53603700129315,
+      "batched_d2h_ms": 33.9429659943562,
+      "associations_and_outputs_equal": true,
+      "order": "BA"
+    },
+    {
+      "round": 16,
+      "native_ms": 33.030373000656255,
+      "batched_d2h_ms": 31.994012009818107,
+      "associations_and_outputs_equal": true,
+      "order": "AB"
+    },
+    {
+      "round": 17,
+      "native_ms": 33.82084499753546,
+      "batched_d2h_ms": 32.78284000407439,
+      "associations_and_outputs_equal": true,
+      "order": "BA"
+    },
+    {
+      "round": 18,
+      "native_ms": 33.1909490050748,
+      "batched_d2h_ms": 32.64882099756505,
+      "associations_and_outputs_equal": true,
+      "order": "AB"
+    },
+    {
+      "round": 19,
+      "native_ms": 34.09089500200935,
+      "batched_d2h_ms": 33.6826819984708,
+      "associations_and_outputs_equal": true,
+      "order": "BA"
+    },
+    {
+      "round": 20,
+      "native_ms": 42.86580000189133,
+      "batched_d2h_ms": 39.79362000245601,
+      "associations_and_outputs_equal": true,
+      "order": "AB"
+    },
+    {
+      "round": 21,
+      "native_ms": 43.21523700491525,
+      "batched_d2h_ms": 35.7782580103958,
+      "associations_and_outputs_equal": true,
+      "order": "BA"
+    },
+    {
+      "round": 22,
+      "native_ms": 35.06089799338952,
+      "batched_d2h_ms": 34.63302600721363,
+      "associations_and_outputs_equal": true,
+      "order": "AB"
+    },
+    {
+      "round": 23,
+      "native_ms": 36.29427301348187,
+      "batched_d2h_ms": 34.07329799665604,
+      "associations_and_outputs_equal": true,
+      "order": "BA"
+    },
+    {
+      "round": 24,
+      "native_ms": 34.80784498970024,
+      "batched_d2h_ms": 34.79906600841787,
+      "associations_and_outputs_equal": true,
+      "order": "AB"
+    },
+    {
+      "round": 25,
+      "native_ms": 35.77243100153282,
+      "batched_d2h_ms": 35.99258699978236,
+      "associations_and_outputs_equal": true,
+      "order": "BA"
+    },
+    {
+      "round": 26,
+      "native_ms": 36.03772399947047,
+      "batched_d2h_ms": 36.62342998723034,
+      "associations_and_outputs_equal": true,
+      "order": "AB"
+    },
+    {
+      "round": 27,
+      "native_ms": 44.30135199800134,
+      "batched_d2h_ms": 39.13184801058378,
+      "associations_and_outputs_equal": true,
+      "order": "BA"
+    },
+    {
+      "round": 28,
+      "native_ms": 37.55163500318304,
+      "batched_d2h_ms": 34.775758991600014,
+      "associations_and_outputs_equal": true,
+      "order": "AB"
+    },
+    {
+      "round": 29,
+      "native_ms": 35.278903000289574,
+      "batched_d2h_ms": 35.62727400276344,
+      "associations_and_outputs_equal": true,
+      "order": "BA"
+    }
+  ],
+  "candidate": "batch final tensor D2H only, author association/state unchanged",
+  "adoption": "native retained; three-frame association-only timing is too narrow to claim end-to-end optimization, irrespective of paired CI",
+  "summary": {
+    "native": {
+      "mean_ms": 34.78939210132618,
+      "p50_ms": 34.897122997790575,
+      "p95_ms": 43.05799035355449,
+      "std_ms": 3.5517149409249043
+    },
+    "batched_d2h": {
+      "mean_ms": 33.99163570041613,
+      "p50_ms": 34.03954650275409,
+      "p95_ms": 38.80623115619528,
+      "std_ms": 2.544863918486806
+    }
+  },
+  "paired_difference": {
+    "mean_saved_ms_per_3_frames": 0.797756400910051,
+    "mean_saved_ms_per_frame": 0.2659188003033503,
+    "p50_saved_ms": 0.53334600670496,
+    "wins": 20,
+    "rounds": 30,
+    "mean_bootstrap_95ci_ms": [
+      0.09718526798678796,
+      1.5664344417624911
+    ],
+    "bootstrap_seed": 20251013,
+    "order_means": {
+      "AB": -0.0407301316348215,
+      "BA": 1.6362429334549233
+    }
+  },
+  "stable_speedup": false,
+  "peak_memory_limitation": "Per-mode peaks were not recorded during the original 30 A/B pairs; separate native validation/profile peak measurements must not be relabeled as an A/B memory comparison."
+}

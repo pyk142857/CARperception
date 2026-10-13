@@ -1,0 +1,4 @@
+EP Error /onnxruntime_src/onnxruntime/core/providers/cuda/cuda_execution_provider_info.cc:51 static onnxruntime::CUDAExecutionProviderInfo onnxruntime::CUDAExecutionProviderInfo::FromProviderOptions(const ProviderOptions&) [ONNXRuntimeError] : 1 : FAIL : provider_options_utils.h:146 Parse Unknown provider option: "use_tf32".
+ when using [('CUDAExecutionProvider', {'use_tf32': 0}), 'CPUExecutionProvider']
+Falling back to ['CUDAExecutionProvider', 'CPUExecutionProvider'] and retrying.
+ONNX 0 3

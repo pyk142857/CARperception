@@ -1,0 +1,27 @@
+{
+  "status": "partial",
+  "native_inference": "passed",
+  "coco_images": 5000,
+  "mini_camera_images": 234,
+  "official_eval": {
+    "AP": 0.5086100689592818,
+    "AP50": 0.6831533654838128,
+    "AP75": 0.5506000450744917,
+    "APs": 0.3137841100273837,
+    "APm": 0.5529168907219435,
+    "APl": 0.7031043329781212,
+    "AR1": 0.38317899169973346,
+    "AR10": 0.6413325329882974,
+    "AR100": 0.7032626776233042,
+    "ARs": 0.5281377472442819,
+    "ARm": 0.7548129305205904,
+    "ARl": 0.8635586008255811
+  },
+  "backend": "native/ONNX5000/TensorRT10.6_FP16_5000 measured",
+  "source": "new_measured",
+  "prediction_sha256": "640e5ef3f63bebf8cb808495ca452f0b82b2b71f5cac1d8d6d8e40abdd98fe1a",
+  "default_backend": "native",
+  "strict_candidate_equivalence": "not claimed; FP16 confidence outliers recorded",
+  "onnx_ap_budget_pass": true,
+  "tensorrt_ap_budget_pass": true
+}

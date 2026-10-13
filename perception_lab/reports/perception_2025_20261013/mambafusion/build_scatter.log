@@ -1,0 +1,22 @@
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
+Collecting torch-scatter==2.1.2
+  Downloading https://mirrors.aliyun.com/pypi/packages/f5/ab/2a44ecac0f891dd0d765fc59ac8d277c6283a31907626560e72685df2ed6/torch_scatter-2.1.2.tar.gz (108 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 108.0/108.0 kB 487.7 kB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Building wheels for collected packages: torch-scatter
+  Building wheel for torch-scatter (setup.py): started
+  Building wheel for torch-scatter (setup.py): still running...
+  Building wheel for torch-scatter (setup.py): still running...
+  Building wheel for torch-scatter (setup.py): still running...
+  Building wheel for torch-scatter (setup.py): still running...
+  Building wheel for torch-scatter (setup.py): still running...
+  Building wheel for torch-scatter (setup.py): finished with status 'done'
+  Created wheel for torch-scatter: filename=torch_scatter-2.1.2-cp310-cp310-linux_x86_64.whl size=2290662 sha256=de1b930dd9778f672e0af2125dcb528682340f2918b8c0d4c5e3bad25a1b6b93
+  Stored in directory: /tmp/pip-ephem-wheel-cache-hpx4vb9p/wheels/bc/bb/6b/361d73a09015dc612368c4bcdfa8c5e1f9b6d7f49c15446a7e
+Successfully built torch-scatter
+Installing collected packages: torch-scatter
+Successfully installed torch-scatter-2.1.2
+
+[notice] A new release of pip is available: 23.0.1 -> 26.2.1
+[notice] To update, run: /home/minglei/Desktop/CAR/perception_lab/envs/mambafusion_2025/bin/python -m pip install --upgrade pip

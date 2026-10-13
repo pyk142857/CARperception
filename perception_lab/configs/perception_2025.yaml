@@ -1,0 +1,59 @@
+{
+  "experiment": "perception_2025_20261013",
+  "instruction_commit": "30ed61a",
+  "report": "reports/perception_2025_20261013",
+  "data": "data/nuscenes",
+  "coco": "data/coco",
+  "splits": {
+    "scene0061": "reports/perception_2025_20261013/inputs/scene0061_packets.json",
+    "mini_val": "reports/perception_2025_20261013/inputs/mini_val_packets.json"
+  },
+  "environments": {
+    "preflight": "envs/nuscenes_eval/bin/python",
+    "deimv2": "envs/deimv2_compat_2025/bin/python",
+    "harpnext": "envs/harpnext_2025/bin/python",
+    "mambafusion": "envs/mambafusion_2025/bin/python",
+    "grae3dmot": "envs/grae3dmot_2025/bin/python",
+    "visualize": "envs/rerun/bin/python",
+    "onnx": "envs/deimv2_onnx_2025/bin/python",
+    "tensorrt": "envs/deimv2_trt_2025/bin/python"
+  },
+  "models": {
+    "deimv2": {
+      "source": "third_party/DEIMv2_2025",
+      "commit": "1d2ca42171570c713e78fc6a766ec5104b7f4724",
+      "checkpoint": "checkpoints/perception_2025/deimv2/deimv2_s.pth",
+      "config": "configs/deimv2/deimv2_dinov3_s_coco.yml",
+      "runtime_note": "Compatibility validation on isolated existing Torch2.6.0+cu124/torchvision0.21.0; author2.5.1 download pending, not claimed identical environment"
+    },
+    "harpnext": {
+      "commit": "532df2659700ae870c0e0d4137a4d35bcc9903b9",
+      "source": "third_party/HARP-NeXt_2025",
+      "checkpoint": "checkpoints/harpnext_2025/ckpt_best.pth",
+      "config": "configs/net/harpnext-nuscenes.yaml"
+    },
+    "mambafusion": {
+      "commit": "d85c2feeb19207b20e42d50421afb11c095f3efa",
+      "source": "third_party/MambaFusion2025",
+      "checkpoint": "checkpoints/mambafusion_2025/checkpoint_epoch_10.pth",
+      "config": "tools/cfgs/mambafusion_models/mamba_fusion.yaml"
+    },
+    "grae3dmot": {
+      "commit": "63def8bde5e199a4e77fdf4fab76a4b3511fe132",
+      "source": "third_party/GRAE-3DMOT",
+      "checkpoint": "checkpoints/grae3dmot_2025/model.pth",
+      "config": "config/val.json",
+      "mamba_inputs": {
+        "scene0061": "reports/perception_2025_20261013/mambafusion/scene0061_predictions.json",
+        "mini_val": "reports/perception_2025_20261013/mambafusion/mini_val_predictions.json"
+      }
+    }
+  },
+  "acceptance": {
+    "metric_drop_max": 0.005,
+    "paired_rounds": 30,
+    "batch_size": 1,
+    "training": false,
+    "gpu_serial": true
+  }
+}

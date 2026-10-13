@@ -1,0 +1,16 @@
+{
+  "python": "3.11.15 | packaged by conda-forge | (main, Aug 11 2026, 10:26:29) [GCC 14.4.0]",
+  "executable": "/home/minglei/Desktop/CAR/perception_lab/envs/deimv2_trt_2025/bin/python",
+  "platform": "Linux-5.15.0-139-generic-x86_64-with-glibc2.31",
+  "packages": {
+    "tensorrt-cu12": "10.6.0",
+    "tensorrt-cu12-libs": "10.6.0",
+    "tensorrt-cu12-bindings": "10.6.0",
+    "torch": "2.6.0+cu124",
+    "torchvision": "0.21.0+cu124",
+    "Pillow": "12.3.0",
+    "numpy": "2.3.5",
+    "scipy": "1.17.1"
+  },
+  "isolation": "Only local envs/deimv2_trt_2025 receives TensorRT10.6; inherits native deimv2 compatibility dependencies; existing TensorRT8.6 not modified"
+}

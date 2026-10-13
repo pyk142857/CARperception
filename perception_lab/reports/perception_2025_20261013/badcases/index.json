@@ -1,0 +1,25 @@
+{
+  "scope": "Index of actual per-module evidence; not additional measurements",
+  "artifacts": [
+    {
+      "path": "../deimv2/badcases/summary.json",
+      "bytes": 4914,
+      "sha256": "3faa750e92d25ba0523d7d847cc67c520e9447be09a4f1f21ce901cc0532d138"
+    },
+    {
+      "path": "../deimv2/tensorrt/worst_three_iou_audit.json",
+      "bytes": 61630,
+      "sha256": "a04981f52094385d9ef00c13b435c434b74489f83a13a22471d646769bb32e24"
+    },
+    {
+      "path": "../grae3dmot/frozen_reference/scene0061/teaching_audit.json",
+      "bytes": 65656,
+      "sha256": "eb42c119285fbbb5a5f957e3668f5dbfa32283b994dfc79fb27aaebfbbb87612"
+    },
+    {
+      "path": "../grae3dmot/frozen_reference/mini_val/teaching_audit.json",
+      "bytes": 110071,
+      "sha256": "773b3d971e103767017949810058210f960577d47a37bcaed3581e5b7f907242"
+    }
+  ]
+}

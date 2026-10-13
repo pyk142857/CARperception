@@ -1,0 +1,11 @@
+{
+  "nvcc": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2022 NVIDIA Corporation\nBuilt on Wed_Sep_21_10:33:58_PDT_2022\nCuda compilation tools, release 11.8, V11.8.89\nBuild cuda_11.8.r11.8/compiler.31833905_0\n",
+  "gcc": "gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0",
+  "isolation": "venv --system-site-packages over /home/minglei/anaconda3/envs/autolabel; existing environment unchanged",
+  "author_runtime": "torch2.1.0/cu118",
+  "actual_runtime": "torch2.1.2+cu118",
+  "cuda_arch_pcdet_window": "TORCH_CUDA_ARCH_LIST=8.9",
+  "cuda_arch_scan": "author explicit gencode architectures, including sm80/90; actual RTX4090 GPU smoke passed",
+  "full_model_strict_load": false,
+  "metrics_source": "no model metrics"
+}

@@ -1,0 +1,15 @@
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple
+Collecting Pillow==12.3.0
+  Downloading https://mirrors.aliyun.com/pypi/packages/4e/89/36f4cd76cf4baf05c50ababb976249153f18c959171c7f6ba09a6f217260/pillow-12.3.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.9/6.9 MB 291.6 kB/s eta 0:00:00
+Installing collected packages: Pillow
+  Attempting uninstall: Pillow
+    Found existing installation: Pillow 10.0.1
+    Not uninstalling pillow at /home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages, outside environment /home/minglei/Desktop/CAR/perception_lab/envs/deimv2_onnx_2025
+    Can't uninstall 'Pillow'. No files were found to uninstall.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+gradio 3.50.2 requires pillow<11.0,>=8.0, but you have pillow 12.3.0 which is incompatible.
+Successfully installed Pillow-12.3.0
+
+[notice] A new release of pip is available: 23.0.1 -> 26.2.1
+[notice] To update, run: /home/minglei/Desktop/CAR/perception_lab/envs/deimv2_onnx_2025/bin/python -m pip install --upgrade pip
