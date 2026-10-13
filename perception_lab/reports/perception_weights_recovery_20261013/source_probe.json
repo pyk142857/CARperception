@@ -1,0 +1,60 @@
+{
+  "audit_date": "2026-10-13",
+  "project": "pyk142857/CARperception",
+  "report_baseline_commit": "bddc28f51a101fd118b6e09e9f13e0bfd4f0478d",
+  "scope": "read-only source metadata plus two 64KiB Mamba HTTP probes in the assistant cloud environment",
+  "full_weight_download_completed": false,
+  "gpu_inference_executed": false,
+  "harpnext": {
+    "model_card": "https://huggingface.co/samir-abh/HARP-NeXt",
+    "publisher": "samir-abh; model card links HARP paper and SamirAbouHaidar/HARP-NeXt",
+    "gated": false,
+    "revision": "c2cd3ce5940be23bfbc2d1cf22131fd2fd3dc149",
+    "filename": "harpnext-nuscenes-32x480/ckpt_best.pth",
+    "bytes": 64865210,
+    "expected_sha256": "6f7fc5a1c03e9123541458358b1c703babf37ffc0b8b4ea6beac6c9f8478a147",
+    "checksum_source": "Hugging Face API LFS metadata",
+    "target_path": "perception_lab/checkpoints/harpnext_2025/ckpt_best.pth",
+    "binary_download_tested": false,
+    "strict_load_tested": false
+  },
+  "mambafusion": {
+    "author_folder": "https://drive.google.com/drive/folders/1TqvpIHA7plzoFdnGWvFgVYr45bgz-nQ3",
+    "file_id": "10-FBWHbsCMJseKovJwGKncJ96Flp3umM",
+    "filename": "checkpoint_epoch_10.pth",
+    "expected_bytes": 391545251,
+    "direct_endpoint": "https://drive.usercontent.google.com/download?id=10-FBWHbsCMJseKovJwGKncJ96Flp3umM&export=download&confirm=t",
+    "first_range_probe": {
+      "status": 206,
+      "content_type": "application/octet-stream",
+      "content_length": "65536",
+      "content_range": "bytes 0-65535/391545251",
+      "content_disposition": "attachment; filename=\"checkpoint_epoch_10.pth\"",
+      "bytes_read": 65536,
+      "prefix_hex": "80028a0a6cfc9c46f9206aa850192e80",
+      "zip_header": false,
+      "html": false
+    },
+    "last_range_probe": {
+      "status": 206,
+      "content_range": "bytes 391479715-391545250/391545251",
+      "content_type": "application/octet-stream",
+      "bytes_read": 65536,
+      "expected_bytes": 65536,
+      "range_matches": true
+    },
+    "probe_bytes_read": 131072,
+    "provider_checksum": null,
+    "provider_checksum_note": "Drive metadata wrapper did not expose a checksum; none invented",
+    "source_access_note": "Only these ranges verified. Complete transport and strict model load remain to be executed locally.",
+    "serialization_note": "First 16 bytes match a legacy pickle-based PyTorch stream; ZIP magic not required",
+    "target_path": "perception_lab/checkpoints/mambafusion_2025/checkpoint_epoch_10.pth"
+  },
+  "integration_findings": [
+    "Mamba current run writes partial and has no independent evaluate phase.",
+    "Mamba native results are global nuScenes JSON; existing bevfusion_evaluate expects measured ego-frame record lists and must not be called on that JSON directly.",
+    "Existing summary expects flat mambafusion/<split>/official_eval/metrics_summary.json; reconcile evaluator output layout.",
+    "Current visualization hardcodes missing Mamba/HARP and frozen_reference; update to actual measured artifacts.",
+    "HARP GPU preprocessing remains not adopted; native CPU reference evaluation is the completion target."
+  ]
+}

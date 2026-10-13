@@ -1,5 +1,12 @@
 # TASK_STATE — mini 教学闭环已验证
 
+## 当前补充任务：恢复权重与完整评价（2026-10-13，指令已发布）
+
+BOSS授权恢复HARP-NeXt、MambaFusion完整权重并完成整网评价。执行 [20261013_02](instruction/20261013_02_weights_recovery_full_evaluation.md)，基础候选仍遵循20261013_01。
+已核验HARP Hub nuScenes32×480文件/revision/大小/SHA256，以及Mamba作者usercontent首尾64KiB Range响应；[来源探测](reports/perception_weights_recovery_20261013/source_probe.json)。**尚未完成完整权重下载、严格加载或新GPU评价。**
+执行需包含Mamba官方DetectionEval、HARP原始点语义评价、新Mamba→GRAE和真实回放；保留既有partial及未采用优化结论，不把发布指令写成实验完成。
+
+
 ## 当前候选：2025方法限定（2026-10-13，partial）
 
 BOSS要求“找点2025的，旧的不考虑”。当前候选更新为DEIMv2-S、MambaFusion、GRAE-3DMOT、HARP-NeXt；20261012_02方案已被替代，不继续执行其候选部署。

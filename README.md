@@ -4,7 +4,9 @@
 
 当前候选为 **DEIMv2-S、MambaFusion、GRAE-3DMOT、HARP-NeXt**，覆盖2D检测、相机–LiDAR融合3D检测、学习式3D跟踪、点云语义分割。沿用现有COCO、nuScenes mini及lidarseg标签。
 
-- [当前执行指令](perception_lab/instruction/20261013_01_2025_perception_deployment.md)
+- [当前补充指令：权重恢复与整网评价](perception_lab/instruction/20261013_02_weights_recovery_full_evaluation.md)：HARP使用已核验的固定Hub权重，Mamba使用实测Range端点/分段中转，补齐官方评价和新检测→GRAE。**指令已发布，完整下载与新GPU实验尚未执行。**
+- [来源与首尾传输探测记录](perception_lab/reports/perception_weights_recovery_20261013/source_probe.json)
+- [基础部署指令](perception_lab/instruction/20261013_01_2025_perception_deployment.md)
 - [选型、官方资源及部署检查](perception_lab/reports/perception_2025_20261013/plan.md)
 - [实测报告、指标与复现](perception_lab/reports/perception_2025_20261013/report.md)：DEIMv2-S 完成 COCO 5,000 张评价（AP 50.86）和 mini 六相机234张；GRAE 在封存检测上完成39/81帧跟踪，mini_val AMOTA 0.82296、IDS 13。
 - HARP/Mamba 缺完整作者权重，整网尚未部署；预处理/算子检查不能当作模型精度。TensorRT使用独立10.6环境；30轮配对中DEIM FP16耗时16.66→7.53ms（约2.21倍），AP下降0.0541个百分点；置信度异常另列，默认保留native。后端结果与采用决定见报告。
