@@ -1,5 +1,13 @@
 # TASK_STATE — mini 教学闭环已验证
 
+## 保留方案与简历说明更新（2026-10-13）
+
+已整理[保留方案](RETAINED_ALGORITHMS.md)及[简历项目经历](reports/resume_project_experience_20261008.md)，README新增入口。优先保留DEIMv2原生检测（COCO AP提高5.91个百分点）、S4_greedy_low两阶段关联（固定39帧连续ID切换46→38）及FastCandidateTracker CPU优化（配对2.910→0.772ms/帧，3.77倍，输出一致）。
+
+BEVFusion原生融合检测、其固定检测→GRAE原生跟踪及Cylinder3D分割作为已验证功能/基线保留。DEIM TensorRT FP16列为有一致性限制的可选后端；Mamba新输入、HARP GPU预处理、自主pooling和批量D2H不列为完整通过的优化。CPU策略收益仅对应CenterPoint输入，不拼接为新的统一管线。
+
+本次只更新文档与成果说明；未新增推理测量、切换默认engine或重写历史指标。权重恢复与回放验收结论按下节保留，整个优化项目仍为partial。
+
 ## 当前补充任务：权重恢复与完整评价（2026-10-13）
 
 执行 [20261013_02](instruction/20261013_02_weights_recovery_full_evaluation.md)。两份作者完整权重已下载、全文件哈希核对并严格加载；旧partial与158份恢复前小文件快照保留。

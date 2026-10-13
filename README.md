@@ -1,5 +1,19 @@
 # CARperception
 
+## 已验证的保留方案与简历成果（2026-10-13）
+
+优先保留 **DEIMv2-S原生检测、置信度两阶段贪心跟踪与FastCandidateTracker CPU算子优化**；融合检测保留BEVFusion原生FP32，学习型跟踪保留其固定检测→GRAE原生链路，点云分割保留Cylinder3D。
+
+| 已验证成果 | 结果 | 范围 |
+|---|---|---|
+| DEIMv2-S模型部署方案 | COCO AP44.95%→50.86%，+5.91个百分点 | COCO val2017全5,000图，相对历史YOLOv8s；不同模型/权重对比 |
+| 两阶段贪心关联 | 连续ID切换46→38，减少17.4%；FP/FN不变 | 固定CenterPoint检测、mini scene-0061的39帧教学诊断 |
+| CPU关联算子优化 | 平均2.91→0.77ms/帧，3.77倍；完整输出一致 | 同一候选，30轮交替顺序配对；仅CPU跟踪函数 |
+
+[保留方案、实现与复现说明](perception_lab/RETAINED_ALGORITHMS.md) · [更新后的简历项目经历](perception_lab/reports/resume_project_experience_20261008.md)。
+
+DEIM TensorRT FP16保留为**可选已测加速后端**：三张暖缓存图30轮配对约2.21倍，COCO AP下降0.0541个百分点，置信度一致性仍有限制，默认保持native。Mamba新链路、HARP GPU预处理、自主BEV pooling及GRAE批量D2H不列为完整通过的优化；原始代码与对照结果保留。此次为文档与成果口径更新，运行入口和历史默认回放的切换状态见各实验报告。
+
 ## 2026-10-13：2025 方法权重恢复与 mini 整网评价
 
 本轮使用作者真实权重完成 **MambaFusion → GRAE-3DMOT** 检测跟踪及 **HARP-NeXt** 点云语义分割。DEIMv2-S 既有 COCO5000/mini 六相机结果保留，本轮未重跑。
@@ -27,7 +41,7 @@
 
 用 **nuScenes mini** 理解自动驾驶感知流程的学习工程。包含真实模型推理、坐标变换、检测、分割、深度、3D 检测、跟踪、ONNX 导出校验与同步回放。
 
-## 流程与完成范围
+## 历史教学流程与完成范围
 
 ```mermaid
 flowchart LR
@@ -76,7 +90,7 @@ flowchart LR
 
 ## 简历项目经历
 
-[简历成稿与成果依据](perception_lab/reports/resume_project_experience_20261008.md)：汇总已实现任务、可用于简历的项目经历、跟踪优化与 CPU 提速结果，以及对应报告和实验范围。
+[简历成稿与成果依据（2026-10-13更新）](perception_lab/reports/resume_project_experience_20261008.md)：按招聘平台模板填写，加入DEIMv2精度收益、BEVFusion→GRAE原生链路与可选TensorRT部署表述；保留已验证的两阶段跟踪及CPU提速，并逐项绑定数据范围和报告。[方案取舍](perception_lab/RETAINED_ALGORITHMS.md)独立记录未采用候选。
 
 ## 实车部署技术调研
 
