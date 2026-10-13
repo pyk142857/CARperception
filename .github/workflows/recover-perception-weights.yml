@@ -1,0 +1,94 @@
+name: Recover fixed public perception weights
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Download fixed author objects and hash each chunk
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import hashlib,json,os,pathlib,urllib.request,time
+          sources = [
+            ('harpnext','https://huggingface.co/samir-abh/HARP-NeXt/resolve/c2cd3ce5940be23bfbc2d1cf22131fd2fd3dc149/harpnext-nuscenes-32x480/ckpt_best.pth?download=true',64865210,'6f7fc5a1c03e9123541458358b1c703babf37ffc0b8b4ea6beac6c9f8478a147'),
+            ('mambafusion','https://drive.usercontent.google.com/download?id=10-FBWHbsCMJseKovJwGKncJ96Flp3umM&export=download&confirm=t',391545251,None),
+          ]
+          root=pathlib.Path('relay');root.mkdir()
+          manifest={'run_id':os.environ['GITHUB_RUN_ID'],'source_commit':os.environ['GITHUB_SHA'],'created_unix':time.time(),'objects':[]}
+          for name,url,total,expected in sources:
+            path=root/(name+'.staging');h=hashlib.sha256();n=0
+            with urllib.request.urlopen(url,timeout=180) as response,path.open('wb') as stream:
+              if response.status!=200: raise ValueError('Expected whole-object 200')
+              while True:
+                block=response.read(1024*1024)
+                if not block: break
+                if n==0 and not block.startswith((b'PK\x03\x04',b'\x80\x02')): raise ValueError('Not Torch checkpoint')
+                n+=len(block)
+                if n>total: raise ValueError('Object oversized')
+                stream.write(block);h.update(block)
+            digest=h.hexdigest()
+            if n!=total or expected and digest!=expected: raise ValueError('Object size/hash mismatch')
+            row={'model':name,'source_url':url,'bytes':n,'sha256':digest,'author_expected_sha256':expected,'chunks':[]}
+            with path.open('rb') as stream:
+              i=0
+              while True:
+                block=stream.read(64*1024*1024)
+                if not block: break
+                folder=root/(name+'-'+str(i));folder.mkdir()
+                file=folder/'chunk.bin';file.write_bytes(block)
+                row['chunks'].append({'index':i,'artifact':folder.name,'file':'chunk.bin','bytes':len(block),'sha256':hashlib.sha256(block).hexdigest()});i+=1
+            path.unlink();manifest['objects'].append(row)
+            (root/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
+            print(name,n,digest)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: weights-manifest
+          path: relay/manifest.json
+          retention-days: 1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: harpnext-0
+          path: relay/harpnext-0/chunk.bin
+          compression-level: 0
+          retention-days: 1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mambafusion-0
+          path: relay/mambafusion-0/chunk.bin
+          compression-level: 0
+          retention-days: 1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mambafusion-1
+          path: relay/mambafusion-1/chunk.bin
+          compression-level: 0
+          retention-days: 1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mambafusion-2
+          path: relay/mambafusion-2/chunk.bin
+          compression-level: 0
+          retention-days: 1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mambafusion-3
+          path: relay/mambafusion-3/chunk.bin
+          compression-level: 0
+          retention-days: 1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mambafusion-4
+          path: relay/mambafusion-4/chunk.bin
+          compression-level: 0
+          retention-days: 1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mambafusion-5
+          path: relay/mambafusion-5/chunk.bin
+          compression-level: 0
+          retention-days: 1
