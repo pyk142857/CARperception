@@ -180,6 +180,15 @@ def sources(config,input_name):
 
 
 def prepare(config,input_name):
+    if input_name=='mambafusion_native':
+        folder=ROOT/config.get('report','reports/perception_2025_20261013')/'mambafusion'
+        state=json.loads((folder/'status.json').read_text())
+        if state.get('status') not in ('passed','partial') or state.get('official_evaluation')!='passed':
+            raise ValueError('Current completed Mamba native inference and evaluation required')
+        for split,path in sources(config,input_name).items():
+            bound=(state.get('official_metrics') or {}).get(split,{})
+            if not path.is_file() or sha(path)!=bound.get('prediction_sha256'):
+                raise ValueError('Mamba input differs from evaluated native output')
     files=sources(config,input_name);sequences={};manifest=[]
     for split,path in files.items():
         if not path.exists():raise FileNotFoundError('Detection input unavailable: '+str(path))
@@ -235,6 +244,8 @@ def evaluate(config,input_name):
         if set(predictions)!={p['sample_token'] for p in packets}:
             raise ValueError('Evaluation tracking token coverage mismatch '+split)
         rows.append(dict(input=input_name,split=split,frames=len(predictions),
+            tracking_sha256=sha(folder/'tracking.json'),metrics_sha256=sha(summary),
+            input_manifest_sha256=sha(OUT/input_name/'input_manifest.json'),
             **{key:metrics[key] for key in ['amota','amotp','ids','fp','fn','recall','mota']}))
     return rows
 
@@ -242,7 +253,10 @@ def evaluate(config,input_name):
 def postprocess(config,input_name,phase):
     """Evaluate frozen inference only; publish a distinct fresh runner receipt."""
     receipt=OUT/(phase+'_status.json')
-    status_path=OUT/'status.json'
+    status_path=OUT/input_name/'status.json'
+    if not status_path.exists():
+        legacy=json.loads((OUT/'status.json').read_text()) if (OUT/'status.json').exists() else {}
+        if legacy.get('input_family')==input_name:write(status_path,legacy)
     state=json.loads(status_path.read_text()) if status_path.exists() else {}
     if state.get('inference')!='passed' or state.get('input_family')!=input_name or state.get('status') not in ('passed','partial'):
         write(receipt,dict(status='blocked_data',reason='Matching completed inference required',input_family=input_name))
@@ -252,19 +266,28 @@ def postprocess(config,input_name,phase):
         state['official_evaluation']='running';write(status_path,state)
     try:
         if phase=='evaluate':
+            if input_name=='mambafusion_native':
+                native=json.loads((OUT/input_name/'native_receipt.json').read_text())
+                for split in ['scene0061','mini_val']:
+                    if sha(OUT/input_name/split/'tracking.json')!=native['tracking_sha256'][split]:
+                        raise ValueError('Tracking output differs from current inference receipt')
             rows=evaluate(config,input_name)
+            write(OUT/input_name/'metrics.json',rows)
+            # Retain each detection family independently, including frozen baseline.
+            old=json.loads((OUT/'metrics.json').read_text()) if (OUT/'metrics.json').exists() else []
+            rows=[r for r in old if r.get('input','frozen_reference')!=input_name]+rows
             write(OUT/'metrics.json',rows)
             import csv
             with (OUT/'metrics.csv').open('w') as stream:
-                writer=csv.DictWriter(stream,fieldnames=list(rows[0]));writer.writeheader();writer.writerows(rows)
-            state['official_evaluation']='passed';write(status_path,state)
+                writer=csv.DictWriter(stream,fieldnames=list(dict.fromkeys(key for row in rows for key in row)),lineterminator="\n");writer.writeheader();writer.writerows(rows)
+            state['official_evaluation']='passed';write(status_path,state);write(OUT/'status.json',state)
         else:
             teaching_audit(config,input_name)
         write(receipt,dict(status='passed',input_family=input_name,phase=phase))
         return 0
     except Exception as exc:
         if phase=='evaluate':
-            state['official_evaluation']='failed';write(status_path,state)
+            state['official_evaluation']='failed';write(status_path,state);write(OUT/'status.json',state)
         write(receipt,dict(status='failed',input_family=input_name,error=repr(exc)))
         raise
 
@@ -444,7 +467,13 @@ def main():
     if a.phase=='profile':profile(cfg,a.input);return
     status={'model':'GRAE-3DMOT','status':'running','phase':a.phase,'input_family':a.input,'gpu_executed':False}
     status_path=OUT/('optimization.json' if a.phase=='optimize' else 'status.json')
+    # Preserve the prior family's verified status before switching active input.
+    if a.phase!='optimize' and status_path.exists():
+        previous=json.loads(status_path.read_text())
+        if previous.get('input_family') in ('frozen_reference','mambafusion_native'):
+            write(OUT/previous['input_family']/'status.json',previous)
     write(status_path,status)
+    if a.phase!='optimize':write(OUT/a.input/'status.json',status)
     try:
         resource={'source_repository':'https://github.com/altkddhfcjs/GRAE-3DMOT','commit':COMMIT,
             'source_acquisition':'official pinned-commit codeload archive (git transport timed out)',
@@ -539,13 +568,19 @@ def main():
         for h in handles:h.remove()
         if any(calls.get(k,{}).get('calls',0)==0 for k in ['spatial_dffl','temporal_dffl','spatial_proj','temporal_proj','affinity.0']):raise ValueError('Required learned module zero calls')
         write(OUT/a.input/'module_calls.json',calls)
+        write(OUT/a.input/'native_receipt.json',{
+            'input_family':a.input,'checkpoint_sha256':sha(CHECKPOINT),
+            'input_manifest_sha256':sha(OUT/a.input/'input_manifest.json'),
+            'tracking_sha256':{split:sha(OUT/a.input/split/'tracking.json') for split in ['scene0061','mini_val']}})
         status.update(status='partial',gpu_executed=True,inference='passed',official_evaluation='pending',frames=120)
     except Exception as exc:
         status.update(status='blocked_resource' if isinstance(exc,(FileNotFoundError,ModuleNotFoundError)) else 'failed',error=type(exc).__name__+': '+str(exc))
         write(status_path,status)
+        if a.phase!='optimize':write(OUT/a.input/'status.json',status)
         print(traceback.format_exc())
         if status['status']=='blocked_resource':return 2
         raise
     write(status_path,status)
+    if a.phase!='optimize':write(OUT/a.input/'status.json',status)
 
 if __name__=='__main__':sys.exit(main())

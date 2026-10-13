@@ -1,0 +1,34 @@
+{
+  "source": {
+    "commit": "63def8bde5e199a4e77fdf4fab76a4b3511fe132",
+    "source": "third_party/GRAE-3DMOT",
+    "checkpoint": "checkpoints/grae3dmot_2025/model.pth",
+    "config": "config/val.json"
+  },
+  "data": "data/nuscenes",
+  "splits": {
+    "scene0061": "reports/perception_2025_20261013/inputs/scene0061_packets.json",
+    "mini_val": "reports/perception_2025_20261013/inputs/mini_val_packets.json"
+  },
+  "alpha": 0.24,
+  "conf_th": 0.12,
+  "age": 12,
+  "detection_score_min": 0.1,
+  "nms_threshold": 0.1,
+  "classes": [
+    "car",
+    "pedestrian",
+    "bicycle",
+    "bus",
+    "motorcycle",
+    "trailer",
+    "truck"
+  ],
+  "gt_inference": false,
+  "timestamp": "packet timestamp_us / 1e6",
+  "state_resume": "scene reset and frozen prefix replay",
+  "precision": "float32",
+  "batch_size": 1,
+  "official_eval": "tracking_nips_2019; mini_scene_0061 or mini_val",
+  "teaching_eval": "raw score>=.25, same class XY<2m, previous valid then Hungarian"
+}

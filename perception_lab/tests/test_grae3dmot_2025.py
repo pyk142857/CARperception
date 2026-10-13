@@ -4,6 +4,24 @@ import unittest
 import numpy as np
 P=Path(__file__).parents[1]/'tools/grae3dmot_2025.py'
 class GraeTests(unittest.TestCase):
+ def test_each_family_retains_status_and_metrics(self):
+  import tempfile,json
+  from unittest.mock import patch
+  m=self.module()
+  with tempfile.TemporaryDirectory() as d,patch.object(m,'OUT',Path(d)):
+   old={'input':'frozen_reference','split':'mini_val','frames':81,'amota':.8}
+   new={'input':'mambafusion_native','split':'mini_val','frames':81,'amota':.9}
+   state={'status':'partial','inference':'passed','input_family':'frozen_reference','official_evaluation':'passed'}
+   m.write(m.OUT/'frozen_reference/status.json',state);m.write(m.OUT/'metrics.json',[old])
+   m.write(m.OUT/'mambafusion_native/status.json',dict(state,input_family='mambafusion_native',official_evaluation='pending'))
+   for split in ['scene0061','mini_val']:m.write(m.OUT/'mambafusion_native'/split/'tracking.json',{})
+   m.write(m.OUT/'mambafusion_native/native_receipt.json',{'tracking_sha256':{split:m.sha(m.OUT/'mambafusion_native'/split/'tracking.json') for split in ['scene0061','mini_val']}})
+   with patch.object(m,'evaluate',return_value=[new]):m.postprocess({},'mambafusion_native','evaluate')
+   self.assertEqual(json.loads((m.OUT/'metrics.json').read_text()),[old,new])
+   self.assertEqual(json.loads((m.OUT/'frozen_reference/status.json').read_text()),state)
+   with patch.object(m,'evaluate',side_effect=RuntimeError('new failure')):
+    with self.assertRaises(RuntimeError):m.postprocess({},'mambafusion_native','evaluate')
+   self.assertEqual(json.loads((m.OUT/'frozen_reference/status.json').read_text()),state)
  def test_evaluation_receipt_and_metrics_require_successful_call(self):
   import tempfile,json
   from unittest.mock import patch

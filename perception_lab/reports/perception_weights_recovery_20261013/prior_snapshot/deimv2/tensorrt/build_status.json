@@ -1,0 +1,5 @@
+{
+  "status": "passed",
+  "phase": "build",
+  "evidence": "build.json, build.log; process exit0"
+}

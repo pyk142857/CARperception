@@ -1,0 +1,120 @@
+{
+  "run_id": "38360862641",
+  "repository": "pyk142857/CARperception",
+  "time_unix": 1791877860.4456105,
+  "prerequisite": "both local installed weights verified; relay_source_manifest.json retained",
+  "artifacts": [
+    {
+      "id": 11795265148,
+      "name": "mambafusion-2",
+      "expires_at": "2026-10-14T07:09:20Z",
+      "attempts": [
+        {
+          "task_proxy_port": 19099,
+          "curl_exit": 0,
+          "http_status": "204"
+        }
+      ],
+      "result": "deleted"
+    },
+    {
+      "id": 11795240143,
+      "name": "harpnext-0",
+      "expires_at": "2026-10-14T07:09:15Z",
+      "attempts": [
+        {
+          "task_proxy_port": 19099,
+          "curl_exit": 0,
+          "http_status": "204"
+        }
+      ],
+      "result": "deleted"
+    },
+    {
+      "id": 11795215321,
+      "name": "mambafusion-5",
+      "expires_at": "2026-10-14T07:09:24Z",
+      "attempts": [
+        {
+          "task_proxy_port": 19099,
+          "curl_exit": 0,
+          "http_status": "204"
+        }
+      ],
+      "result": "deleted"
+    },
+    {
+      "id": 11795215296,
+      "name": "mambafusion-1",
+      "expires_at": "2026-10-14T07:09:18Z",
+      "attempts": [
+        {
+          "task_proxy_port": 19099,
+          "curl_exit": 0,
+          "http_status": "204"
+        }
+      ],
+      "result": "deleted"
+    },
+    {
+      "id": 11795205258,
+      "name": "weights-manifest",
+      "expires_at": "2026-10-14T07:09:14Z",
+      "attempts": [
+        {
+          "task_proxy_port": 19099,
+          "curl_exit": 0,
+          "http_status": "204"
+        }
+      ],
+      "result": "deleted"
+    },
+    {
+      "id": 11794980630,
+      "name": "mambafusion-0",
+      "expires_at": "2026-10-14T07:09:16Z",
+      "attempts": [
+        {
+          "task_proxy_port": 19099,
+          "curl_exit": 0,
+          "http_status": "204"
+        }
+      ],
+      "result": "deleted"
+    },
+    {
+      "id": 11794144562,
+      "name": "mambafusion-4",
+      "expires_at": "2026-10-14T07:09:23Z",
+      "attempts": [
+        {
+          "task_proxy_port": 19099,
+          "curl_exit": 0,
+          "http_status": "204"
+        }
+      ],
+      "result": "deleted"
+    },
+    {
+      "id": 11793779911,
+      "name": "mambafusion-3",
+      "expires_at": "2026-10-14T07:09:21Z",
+      "attempts": [
+        {
+          "task_proxy_port": 19099,
+          "curl_exit": 0,
+          "http_status": "204"
+        }
+      ],
+      "result": "deleted"
+    }
+  ],
+  "all_deleted_or_absent": true,
+  "task_proxies_stopped": false,
+  "post_delete_listing": {
+    "time_unix": 1791877882.0904775,
+    "curl_exit": 0,
+    "total_count": 0,
+    "remaining_ids": []
+  }
+}

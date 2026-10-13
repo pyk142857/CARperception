@@ -1,0 +1,43 @@
+usage: hf <command> [<args>] download [-h] [--repo-type {model,dataset,space}]
+                                      [--revision REVISION]
+                                      [--include [INCLUDE [INCLUDE ...]]]
+                                      [--exclude [EXCLUDE [EXCLUDE ...]]]
+                                      [--cache-dir CACHE_DIR]
+                                      [--local-dir LOCAL_DIR]
+                                      [--force-download] [--token TOKEN]
+                                      [--quiet] [--max-workers MAX_WORKERS]
+                                      repo_id [filenames [filenames ...]]
+
+positional arguments:
+  repo_id               ID of the repo to download from (e.g. `username/repo-
+                        name`).
+  filenames             Files to download (e.g. `config.json`,
+                        `data/metadata.jsonl`).
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --repo-type {model,dataset,space}
+                        Type of repo to download from (defaults to 'model').
+  --revision REVISION   An optional Git revision id which can be a branch
+                        name, a tag, or a commit hash.
+  --include [INCLUDE [INCLUDE ...]]
+                        Glob patterns to match files to download.
+  --exclude [EXCLUDE [EXCLUDE ...]]
+                        Glob patterns to exclude from files to download.
+  --cache-dir CACHE_DIR
+                        Path to the directory where to save the downloaded
+                        files.
+  --local-dir LOCAL_DIR
+                        If set, the downloaded file will be placed under this
+                        directory. Check out https://huggingface.co/docs/huggi
+                        ngface_hub/guides/download#download-files-to-local-
+                        folder for more details.
+  --force-download      If True, the files will be downloaded even if they are
+                        already cached.
+  --token TOKEN         A User Access Token generated from
+                        https://huggingface.co/settings/tokens
+  --quiet               If True, progress bars are disabled and only the path
+                        to the download files is printed.
+  --max-workers MAX_WORKERS
+                        Maximum number of workers to use for downloading
+                        files. Default is 8.

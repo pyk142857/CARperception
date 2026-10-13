@@ -1,0 +1,77 @@
+[
+  {
+    "selection_rule": "scene0061_lowest_frame_miou",
+    "sample_token": "88449a5cb1644a199c1c11f6ac034867",
+    "image": "scene0061_lowest_frame_miou.png",
+    "valid_points": 25627,
+    "error_points": 4396,
+    "frame_miou": 0.5113505123002697,
+    "largest_confusions": [
+      {
+        "ground_truth": "other_flat",
+        "predicted": "terrain",
+        "points": 2284
+      },
+      {
+        "ground_truth": "sidewalk",
+        "predicted": "driveable_surface",
+        "points": 708
+      },
+      {
+        "ground_truth": "terrain",
+        "predicted": "sidewalk",
+        "points": 262
+      }
+    ]
+  },
+  {
+    "selection_rule": "mini_val_lowest_frame_miou",
+    "sample_token": "281b92269fd648d4b52d06ac06ca6d65",
+    "image": "mini_val_lowest_frame_miou.png",
+    "valid_points": 25509,
+    "error_points": 1084,
+    "frame_miou": 0.48358931251677745,
+    "largest_confusions": [
+      {
+        "ground_truth": "truck",
+        "predicted": "car",
+        "points": 731
+      },
+      {
+        "ground_truth": "driveable_surface",
+        "predicted": "car",
+        "points": 45
+      },
+      {
+        "ground_truth": "car",
+        "predicted": "driveable_surface",
+        "points": 37
+      }
+    ]
+  },
+  {
+    "selection_rule": "mini_all_median_frame_miou",
+    "sample_token": "4b894442c95141f9affd731d9da7b43c",
+    "image": "mini_all_median_frame_miou.png",
+    "valid_points": 25584,
+    "error_points": 1011,
+    "frame_miou": 0.6395287366481992,
+    "largest_confusions": [
+      {
+        "ground_truth": "manmade",
+        "predicted": "vegetation",
+        "points": 205
+      },
+      {
+        "ground_truth": "terrain",
+        "predicted": "manmade",
+        "points": 114
+      },
+      {
+        "ground_truth": "vegetation",
+        "predicted": "manmade",
+        "points": 94
+      }
+    ]
+  }
+]

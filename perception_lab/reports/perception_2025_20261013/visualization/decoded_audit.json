@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "decoded_frames": 39,
+  "decoded_points": 1354112,
+  "float32_position_max_abs_m": 3.8144487888303047e-06,
+  "decoded_layer_counts": {
+    "mambafusion": 2976,
+    "grae_frozen_reference": 1189,
+    "grae_mambafusion_native": 1403,
+    "models/harpnext": 1354112,
+    "ground_truth/semantics": 1354112
+  },
+  "decoded_camera_semantic_points": {
+    "harpnext/CAM_FRONT_LEFT": 134037,
+    "harpnext/CAM_FRONT": 119629,
+    "harpnext/CAM_FRONT_RIGHT": 128504,
+    "harpnext/CAM_BACK_LEFT": 159525,
+    "harpnext/CAM_BACK": 173645,
+    "harpnext/CAM_BACK_RIGHT": 136627,
+    "ground_truth/CAM_FRONT_LEFT": 134037,
+    "ground_truth/CAM_FRONT": 119629,
+    "ground_truth/CAM_FRONT_RIGHT": 128504,
+    "ground_truth/CAM_BACK_LEFT": 159525,
+    "ground_truth/CAM_BACK": 173645,
+    "ground_truth/CAM_BACK_RIGHT": 136627
+  },
+  "token_order_exact": true,
+  "box_counts_exact": true,
+  "representative_frames": [
+    0,
+    19,
+    38
+  ],
+  "recursive_clear_frames": 39
+}

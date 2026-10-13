@@ -3,7 +3,11 @@
   "source_url": "https://github.com/AutoLab-SAI-SJTU/MambaFusion",
   "source_commit": "d85c2feeb19207b20e42d50421afb11c095f3efa",
   "checkpoint_url": "https://drive.google.com/file/d/10-FBWHbsCMJseKovJwGKncJ96Flp3umM/view",
-  "checkpoint": null,
+  "checkpoint": {
+    "path": "/home/minglei/Desktop/CAR/perception_lab/checkpoints/mambafusion_2025/checkpoint_epoch_10.pth",
+    "bytes": 391545251,
+    "sha256": "d2454354b762a5a4b0b85af8b23c4b1f63da9357af7160aa313bc689a8d11ea6"
+  },
   "actual_commit": "d85c2feeb19207b20e42d50421afb11c095f3efa",
   "author_config_sha256": "3c4e207e436d481857d0b8946416909df70dcf92a5726e3dc6bb112d6f5a1d0b",
   "license": {

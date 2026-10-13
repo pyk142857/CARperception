@@ -1,0 +1,795 @@
+{
+  "source_commit": "bddc28f51a101fd118b6e09e9f13e0bfd4f0478d",
+  "files": [
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/artifact_receipt.json",
+      "sha256": "6d9c88b55212540c5874a9d88b31a0ac2cba685110ab31ed8f1919567d094e43",
+      "bytes": 2623
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/badcases/README.md",
+      "sha256": "550349e722bc876e0fefbd5302b97628fcdd83d3deb38f00b283d9b5ca4a1f3d",
+      "bytes": 414
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/badcases/index.json",
+      "sha256": "b3106c0fde2b752af07d26933f164943bf1cdc2e378bd3c339fd23bf34aa9956",
+      "bytes": 840
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/author_faster_coco_eval/metrics.json",
+      "sha256": "a361ec2acea2f942c47d97200a9761485b90b740d88390d138160b4250084081",
+      "bytes": 356
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/backend_identity_verification.json",
+      "sha256": "a9f2ce63983b7616cdcaf5610505732e522a3ed57c75dbba333bd8b908a65d63",
+      "bytes": 550
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/badcases/per_image.json",
+      "sha256": "5cb5aff2ccf9737c3f6e34190b7226473090cf006869593a8063e6ede20764a6",
+      "bytes": 355099
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/badcases/summary.json",
+      "sha256": "3faa750e92d25ba0523d7d847cc67c520e9447be09a4f1f21ce901cc0532d138",
+      "bytes": 4914
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/deploy_equivalence.json",
+      "sha256": "2328bb8e49e1285d84ff0bec1cd0fb6755c29937f1f37ba45dbaad8a10b221fd",
+      "bytes": 165
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/export_identity.json",
+      "sha256": "651a8307dd41a32aa44370e6348334e4b0c1f464474c452a470bfc78352e7e53",
+      "bytes": 344
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/hooks.json",
+      "sha256": "714b8fc7c0cdd25b43dbf16facb5ab488a3343be866c28ee7fff7cdd0127c1e4",
+      "bytes": 2612
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/image_ids.json",
+      "sha256": "2d7aec916542511ca9d52065b4bb6399c35dca3e297d679764d907280f22a0f5",
+      "bytes": 49040
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/official_eval/metrics.json",
+      "sha256": "727ad576103fb5ee4cb54f13a657d419e8510bfb28c7a5f1f17a0a7188e24e7c",
+      "bytes": 356
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/official_eval/protocol.json",
+      "sha256": "224fa7c7b3b4977a3f5d931dcd7df3a6f2c4f85d386752bb73aaef1cea45d623",
+      "bytes": 459
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/onnx/geometry_diagnostics.json",
+      "sha256": "b7ba36246a74c2c5eecf4db67230154e275448951229b046e38c1789ecf2a8a2",
+      "bytes": 794007
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/onnx/geometry_score025_summary.json",
+      "sha256": "56edb324a43efd585abffda8ddd8116afd7001ebef22a564e0b0591871911620",
+      "bytes": 468
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/onnx/image_ids.json",
+      "sha256": "2d7aec916542511ca9d52065b4bb6399c35dca3e297d679764d907280f22a0f5",
+      "bytes": 49040
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/onnx/io.json",
+      "sha256": "75a6bb481698f04271cfa37b6b4d416f1d595209c38b4a1b44e686382c635961",
+      "bytes": 1752
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/onnx/official_eval/metrics.json",
+      "sha256": "f58b3a17e7ed4824a0c4f223ec2253efd68e552d1ac531f0983d577a4532d6b3",
+      "bytes": 356
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/onnx/official_eval/protocol.json",
+      "sha256": "704650e1e92ab22907b0f309149cdbcd80c493204fcf1216ba791dbc3c46fd3f",
+      "bytes": 459
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/onnx/paired_benchmark.json",
+      "sha256": "13254a3a1633688243b5d866113db3130de57e0738071a2fb1e7321681332d6c",
+      "bytes": 40362
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/onnx/paired_status.json",
+      "sha256": "07c6694ee8ce1583fd6ca5d81bda00084f3ea3e5255f04b9e317f6772237398a",
+      "bytes": 35
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/onnx/status.json",
+      "sha256": "d43094aa1fbb795c269da4a6f80d4f594950f7ee03429b7f81d21e77e1622f4f",
+      "bytes": 1150
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/onnx/timings.json",
+      "sha256": "cbeb7a5a92913a8cc334c8fa889eebcb485fa853ef12f3eb3b176a2f36e88b94",
+      "bytes": 754868
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/onnx_smoke_before_tf32/geometry_diagnostics.json",
+      "sha256": "8d0a9c623b2b97ad0dd68fcef9e3ace99093a81b40ae9ba1ed370365a5051d25",
+      "bytes": 477
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/onnx_smoke_before_tf32/image_ids.json",
+      "sha256": "896bf0c9ac180fd927aa882988a07ffd3e0bff35586d15df0bb8577af796d1f7",
+      "bytes": 32
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/onnx_smoke_before_tf32/io.json",
+      "sha256": "568beda6fabeb52aefcde17c5ab6bb64a009725e6b7751202a381143a134cc6c",
+      "bytes": 1000
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/onnx_smoke_before_tf32/official_eval/metrics.json",
+      "sha256": "4efa8874ca8300c38cc24a70ec352c0385a550fa11ceaef75d0d7d8f6d8c0928",
+      "bytes": 354
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/onnx_smoke_before_tf32/official_eval/protocol.json",
+      "sha256": "18235773413bbd36c8e6840fcdc7f67b06e3875b631a1bdd4c65d0eaee9b72f7",
+      "bytes": 456
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/onnx_smoke_before_tf32/status.json",
+      "sha256": "445abcdf2cd2442c83fa3df939028849bb255987682497375b34ab18e8e347f3",
+      "bytes": 1047
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/onnx_smoke_before_tf32/timings.json",
+      "sha256": "c1da9e400a56edda650f2d33cfbaa2618cacfb9b1360590c3e50d104113cc305",
+      "bytes": 455
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/optimization.json",
+      "sha256": "c54e76dd9288f2670407f18520447f85645b8b872de0416d47b3b7e272f36a40",
+      "bytes": 485
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/preprocess_identity.json",
+      "sha256": "d55c73035b855bbefc251c566706200d1b101c951ef9b18771ebf8a24e705f97",
+      "bytes": 2329
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/profile.json",
+      "sha256": "afcb1b09be8f04e54c2a5920c16f24615a8acbfeb5a98657a34b6ec3ce3aaf89",
+      "bytes": 723
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/report.md",
+      "sha256": "98344392b27e37ed8fa9ab4e9bc72e5d1d3c6e7a4b2dddc3e1a6781c8337b67a",
+      "bytes": 6833
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/resolved_config.json",
+      "sha256": "4fd176d3ded63ec194f72e60667d68d1ec6e933ae2b6b3e18d6e98a3c02fbd72",
+      "bytes": 7871
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/resource_manifest.json",
+      "sha256": "be0d4fbfdedcdb227f056b6f967463d9ca0b301708b13c7c4eeb722b8472fec8",
+      "bytes": 23518
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/smoke/deploy_equivalence.json",
+      "sha256": "2328bb8e49e1285d84ff0bec1cd0fb6755c29937f1f37ba45dbaad8a10b221fd",
+      "bytes": 165
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/smoke/hooks.json",
+      "sha256": "714b8fc7c0cdd25b43dbf16facb5ab488a3343be866c28ee7fff7cdd0127c1e4",
+      "bytes": 2612
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/smoke/profile.json",
+      "sha256": "9dfe1bc852d56b273898171425a3d2a3354ea153aafb178c00e507626d7333e6",
+      "bytes": 725
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/smoke/status.json",
+      "sha256": "d42c7526371fd8ddb510cbe77b6192b916b97ca10d0227cf67c374f6f7ae7c00",
+      "bytes": 756
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/smoke/strict_load.json",
+      "sha256": "5d4d6c1e9f504bcc708b0355d246e6aab673f9ab4c0c7732409480955887a475",
+      "bytes": 471
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/smoke/three_image_gate.json",
+      "sha256": "ab266da69676829991afaa1e7ece28604992d28c797c6ee5c43d79e6286d8db2",
+      "bytes": 883
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/status.json",
+      "sha256": "1728cfe05d9684c9f97a419a6e4cb8919803ecc2190fc7da9c84a193c8bfe320",
+      "bytes": 876
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/strict_load.json",
+      "sha256": "5d4d6c1e9f504bcc708b0355d246e6aab673f9ab4c0c7732409480955887a475",
+      "bytes": 471
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/tensorrt/adapter_checks.json",
+      "sha256": "4b71a738716b45b909d6c9723126c55203f0215a74b0aaeab384d47fc0e8e11b",
+      "bytes": 485
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/tensorrt/audit_status.json",
+      "sha256": "2d07fa7a3fb129c6b9f425ecd85cfe7ccd77afe904309aab58f24f353a692846",
+      "bytes": 135
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/tensorrt/benchmark_identity.json",
+      "sha256": "64ee6e18056a99dcca817a42aada60b6992b56b3b3c792528c11511ccb8c9a61",
+      "bytes": 1249
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/tensorrt/benchmark_status.json",
+      "sha256": "1298ff2916d0bc7b2b2b446342fb754bf95e08e1d404376d9e1bb6eacb9747d9",
+      "bytes": 65
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/tensorrt/build.json",
+      "sha256": "afe9ce0ea4988433e6c5660ded348d2f7e1fa0f32c98259d9afe1b742583a446",
+      "bytes": 537
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/tensorrt/build_status.json",
+      "sha256": "ddfcde82cb05a8f10a6661a46f99a2d69a4492ab85087f82487794476507ee94",
+      "bytes": 99
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/tensorrt/environment.json",
+      "sha256": "ddd9753db1f91705e50d341b784ebf408884a62ed01f143bc9fca5f9b8259eaf",
+      "bytes": 670
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/tensorrt/geometry_summary.json",
+      "sha256": "86c36c895169aa60f774c4767d87cc21a7ff3c99ae2e93542116471499c1057a",
+      "bytes": 710
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/tensorrt/historical_benchmark_guard_only/benchmark_identity.json",
+      "sha256": "64ee6e18056a99dcca817a42aada60b6992b56b3b3c792528c11511ccb8c9a61",
+      "bytes": 1249
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/tensorrt/historical_benchmark_guard_only/benchmark_status.json",
+      "sha256": "1298ff2916d0bc7b2b2b446342fb754bf95e08e1d404376d9e1bb6eacb9747d9",
+      "bytes": 65
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/tensorrt/historical_benchmark_guard_only/io.json",
+      "sha256": "ed823c4a6cd7e1a17fb73314439d851f0136d72e8410120346496e3bb1f72aa4",
+      "bytes": 1185
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/tensorrt/historical_benchmark_guard_only/paired_benchmark.json",
+      "sha256": "9c5aaf1438e9ad56845c426284d75acedcd997cfaab7b8730586f3d55ba64b2c",
+      "bytes": 24099
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/tensorrt/historical_first_image_warmup/benchmark_status.json",
+      "sha256": "1298ff2916d0bc7b2b2b446342fb754bf95e08e1d404376d9e1bb6eacb9747d9",
+      "bytes": 65
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/tensorrt/historical_first_image_warmup/io.json",
+      "sha256": "a92d7bafc36b13bae32c165f13700458c40847d4a9a06bc9bf7d5e434cd480f6",
+      "bytes": 1184
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/tensorrt/historical_first_image_warmup/paired_benchmark.json",
+      "sha256": "e4e46474d7967a5cf2e71fa6b2170b9a64633f9f643216cbaa7e39d24e8d96c6",
+      "bytes": 22085
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/tensorrt/image_ids.json",
+      "sha256": "2d7aec916542511ca9d52065b4bb6399c35dca3e297d679764d907280f22a0f5",
+      "bytes": 49040
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/tensorrt/io.json",
+      "sha256": "2d5c3eaf411e00133a17ca53020e3624be1da854cdb0386ffdc505db3b07ff86",
+      "bytes": 1184
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/tensorrt/official_eval/metrics.json",
+      "sha256": "1db3d5bb249bd2b2f9a8884c49c596a7e1620abef157eadd3cbc30c67fa29d41",
+      "bytes": 356
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/tensorrt/official_eval/protocol.json",
+      "sha256": "99882727dfabd91c7521194c933126caf4dcf693721b16bba608e5a5338b942a",
+      "bytes": 459
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/tensorrt/packages.json",
+      "sha256": "7734d3bfb55907b2fdb8def22c2a3f1a72e802eb3371c2442c3f80fd956693d0",
+      "bytes": 2658
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/tensorrt/paired_benchmark.json",
+      "sha256": "7dacb97e31a9c137be16f2ddccaa34cab06c54e3e439aafc3f3a3eba72b7b9e6",
+      "bytes": 24097
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/tensorrt/preprocess_first_middle_last.json",
+      "sha256": "7678df9203d434d898d36173611b9b9147ed046052b0f5278bc354f8dde5d4e6",
+      "bytes": 1027
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/tensorrt/preprocess_identity.json",
+      "sha256": "71144c7d7b4e094064f73a08912d8fbf6a5890410a80963124f958ca3d9f99bc",
+      "bytes": 449
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/tensorrt/report.md",
+      "sha256": "0e1bc9b7c83d36c33a99e0d3e1881239b58eaa5d55908742b6c732c78697be43",
+      "bytes": 4612
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/tensorrt/reproduce.md",
+      "sha256": "11f1413a4550881b20d1b267b8d81fc0b1a0cd4b8bb3e224b0edf6b8bfdc5071",
+      "bytes": 3858
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/tensorrt/status.json",
+      "sha256": "a2c25f46a59582242d6d306d7f7e30dc5b0685a934c953d1cd0a5570dd9aff42",
+      "bytes": 1145
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/tensorrt/three_image_geometry.json",
+      "sha256": "49b4c0ec4305c99276fdfd8c2330c93723ed6714d219f5239cc719d10a8fd80f",
+      "bytes": 35492
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/tensorrt/timings.json",
+      "sha256": "70e5ecd6e8d45323545d0b1b8828428e2e80b73d497f64b72b8ad118889d9293",
+      "bytes": 1187889
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/tensorrt/worst_three_iou_audit.json",
+      "sha256": "a04981f52094385d9ef00c13b435c434b74489f83a13a22471d646769bb32e24",
+      "bytes": 61630
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/three_image_gate.json",
+      "sha256": "87c446ed69676f26437615946cc5db3ff3aabb1d4631072b642e76d8064412de",
+      "bytes": 881
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/deimv2/timings.json",
+      "sha256": "ffbb8a2a131673ca04396409c0a3cd1871d8fc3fffb50b6dfffae7605d6d7ef2",
+      "bytes": 982713
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/environment.md",
+      "sha256": "19f161178b0ac36b56ff191552a6cdcf37d966225da4023f723d0a34eebf0c51",
+      "bytes": 511
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/author_val_config.json",
+      "sha256": "7ce334cf92bed0ca556def3c8863e58b48bf374a1476dcc5c249d9acad70129d",
+      "bytes": 570
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/checkpoint_key_mapping.json",
+      "sha256": "0c464d54fc4fcf05b249408f414bd97ae164c9447cedb3f6a6ffb9b9d0f825ad",
+      "bytes": 4654
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/environment.json",
+      "sha256": "d75ed2bf4411d531f013fe4bdcd1374f389cafc29a9aa2c58bc55005469cd015",
+      "bytes": 374
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/environment.md",
+      "sha256": "216e96107ff5a0a75a905d1b01bc644ff39488d00314f83c50d48817b45e450a",
+      "bytes": 1003
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/execution_manifest.json",
+      "sha256": "23950e09c1e4bd7f14d18ac1d49a8651623b479a07ef127f9622470a3052a71a",
+      "bytes": 1078
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/frozen_reference/cpu_preprocessing_profile.json",
+      "sha256": "cda3a7a9cdf56cfc52b320fbca44e5d08fbef550bc0ca5908e45084c057c6be7",
+      "bytes": 276
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/frozen_reference/input_manifest.json",
+      "sha256": "6410032394a0a8a5d05310b096452307d026afa8cad1fcf6dd1b359309d5892c",
+      "bytes": 20291
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/frozen_reference/mini_val/official_eval/metrics_details.json",
+      "sha256": "c17d3bb69d41509c80a94bb2bc42647098689a9771ebb35d653cc81ab2798ae2",
+      "bytes": 74253
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/frozen_reference/mini_val/official_eval/metrics_summary.json",
+      "sha256": "64623b60ee41d38a2ef44682317a1127b491ce2d7785e59683a5d84952211f48",
+      "bytes": 5258
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/frozen_reference/mini_val/performance.json",
+      "sha256": "1c9b32831cda169d638fa9e1808dd3bc2fa55d773413fb22db2bd7125e247a6f",
+      "bytes": 617
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/frozen_reference/mini_val/teaching_audit.json",
+      "sha256": "773b3d971e103767017949810058210f960577d47a37bcaed3581e5b7f907242",
+      "bytes": 110071
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/frozen_reference/mini_val/tracking.json",
+      "sha256": "dffd9176551b2dc866807fcaf2f9ab1a0289c48fc19c49d75d69c320f17fce99",
+      "bytes": 3233804
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/frozen_reference/module_calls.json",
+      "sha256": "31675aaa8983c01da19f72fb15bf1ec6341f739277e9e0123c4e2bd043f3c07a",
+      "bytes": 966
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/frozen_reference/optimization.json",
+      "sha256": "ecb1f79719c0774f55aebcd2e58be9b3a86be72a99a62910472793a33ceaf17d",
+      "bytes": 6796
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/frozen_reference/scene0061/official_eval/metrics_details.json",
+      "sha256": "c55ac0d721af1faef90b35f8c8c91dbbefc866f43900da132bac88f39de19326",
+      "bytes": 71988
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/frozen_reference/scene0061/official_eval/metrics_summary.json",
+      "sha256": "1a868bb1b417dd1b504b16d4064950ebb3563157d289904ae5c8e093eb7a8a9f",
+      "bytes": 5272
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/frozen_reference/scene0061/performance.json",
+      "sha256": "8b392800b9c2a1a29cdfdb60516736036eee3ba02c9be673ff5991563323217c",
+      "bytes": 413
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/frozen_reference/scene0061/teaching_audit.json",
+      "sha256": "eb42c119285fbbb5a5f957e3668f5dbfa32283b994dfc79fb27aaebfbbb87612",
+      "bytes": 65656
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/frozen_reference/scene0061/tracking.json",
+      "sha256": "ceaf64c45d71bf7fddf7e56f55946262e31614104f9c238bf863c05bd6facb89",
+      "bytes": 1273439
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/frozen_reference/segmented_profile.json",
+      "sha256": "e7fc0b79cf1508aecdb6e1c4ef2a49a15a8ff94819a68b2f5c79c17bb894fe32",
+      "bytes": 1787
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/frozen_reference/segmented_profile_instrumentation_overhead.json",
+      "sha256": "7f549ae6c4f1432a9888464be229e6bdf0e96ecf2f07eaf183e54a88653db5e9",
+      "bytes": 1951
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/frozen_reference/state_checks.json",
+      "sha256": "829e2e32f4d30974a36c7d0dda94445e88f01993160e9751ce26adc6c2abf14f",
+      "bytes": 262
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/metrics.csv",
+      "sha256": "b58429fdcc27c50d0ff5abf46e5ff46d7feb2c1d2fd8f3f936eabfa0a1de70a0",
+      "bytes": 300
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/metrics.json",
+      "sha256": "0acd7bbf0e8d530e2e4afc96bafce9b0ca415908033fd210030bdb0cfcde4fe3",
+      "bytes": 537
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/report.md",
+      "sha256": "37c63b0e206935e216e1fc66578a99dab7ce26c7905d877adc0a321fd1cdb79c",
+      "bytes": 5430
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/resolved_config.json",
+      "sha256": "e4cb179628c17d52d9c38c7b1d41fa00e48923236754320a66c86ac0d13cfe56",
+      "bytes": 970
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/resource_manifest.json",
+      "sha256": "869e13b452d9ca7bd3ab842d14e0996cf4ff7b49fb4c706acd89518b291a22cd",
+      "bytes": 7481
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/run_commands.md",
+      "sha256": "1e9f54d2c8564da99ac79dc0282db225102f13f94f88a87bb235d61ab7651767",
+      "bytes": 1236
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/status.json",
+      "sha256": "4d80150b09e714e7dd6077b44d4f8d0fe3955dad14803638e6f464957388c4f1",
+      "bytes": 573
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/strict_load.json",
+      "sha256": "e1639b393bf30052f063e045df99933d55498e670448f5f7d4ec42289fd08d49",
+      "bytes": 281
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/harpnext/environment.md",
+      "sha256": "58dde2501185601a4c8ab3e6a88651621f81d1cad2fcd60d6ea08268adfaab6d",
+      "bytes": 709
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/harpnext/gpu_preprocessing_audit.json",
+      "sha256": "90a3644aef376d5bc23ec5485c64f7047558cea100b5f428b72246d949869104",
+      "bytes": 3949
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/harpnext/mini_frames.json",
+      "sha256": "a0b5e16a9bc20d012551c108f42f0598ba9ce64ddff1b78622aebd32f507e656",
+      "bytes": 247251
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/harpnext/preflight.json",
+      "sha256": "8e1d24223751329b581d9c134fb063a9c314717e1a643b0da3663f8d64a9fb94",
+      "bytes": 2032
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/harpnext/report.md",
+      "sha256": "c0df6741669d3068d3e4834c380d5ac33dff3df8045ef3f45fc64d817f5d184f",
+      "bytes": 5074
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/harpnext/resource_manifest.json",
+      "sha256": "ac6fb8ec9ec27bcbadfab760f0244ce515980a6b4c5e496e5122e2919d483af8",
+      "bytes": 2678
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/harpnext/status.json",
+      "sha256": "87a0b6949ded79b0ab14bbbef4172a6098c845cdf642d2a976e5d9b64e3775fa",
+      "bytes": 744
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/inputs/coco_files.json",
+      "sha256": "14e53504ada9ebd9a20f33c95cb45d70849074711e3d271879cf7482dedb4a5f",
+      "bytes": 1133245
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/inputs/hardware.json",
+      "sha256": "575020b350d9401d24438cf1df123b95421fa23f45b03050530dcfa3fe3acb04",
+      "bytes": 3900
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/inputs/input_hashes.json",
+      "sha256": "d0c2f0dadf9f7203c4dc8ad4bf53917f09c722a90b66cd934fda29d999d9656b",
+      "bytes": 378206
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/inputs/lidarseg_files.json",
+      "sha256": "79ca81281bbe7dc93cc1d4a5ddbd3e13aeef127f5d0359c47ee966a0723dbec9",
+      "bytes": 229475
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/inputs/mini_val_packets.json",
+      "sha256": "85fba9112c777485268e116fb22d4dcee3a6533de60b70e2421d0abc547b6291",
+      "bytes": 2900324
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/inputs/mini_val_samples.json",
+      "sha256": "5761d70b9dc57b515d40e15b5ce94799f5875fac45a69f98b9f8b2c2a9109a5f",
+      "bytes": 15312
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/inputs/scene0061_packets.json",
+      "sha256": "9680b0d03e49cc78be200a9abe3b99602312123adbf8e12667b9fbbbe7d5c549",
+      "bytes": 1396178
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/inputs/scene0061_samples.json",
+      "sha256": "3b432d8125d68b34c0ef6507700cd7ebf5aca183ff63f73d8bb9c23e18bae261",
+      "bytes": 7374
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/inputs/summary.json",
+      "sha256": "129d50b191f473f391339ceef41151792cf9169fe4fb4423b99b732aad26aa16",
+      "bytes": 669
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/mambafusion/build_manifest.json",
+      "sha256": "268b9d90cd802b40f68a7b365723222060faf89414c98a7603e72b215f9ef63e",
+      "bytes": 3540
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/mambafusion/cpu_pipeline.json",
+      "sha256": "b7eb79b0f69dd1133d86c3308b90ec08450b6e08e1a0df382770e7fa30151325",
+      "bytes": 4974
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/mambafusion/download_attempts.json",
+      "sha256": "36c380d66a2fa8b42a4bbc483455f4ab751a8de4487e024ee211ae221aea59e4",
+      "bytes": 899
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/mambafusion/drive_listing.json",
+      "sha256": "c7c54d0df86af9509e600039f1087ff936f20b6f44e2b72e5928771d3081e7c0",
+      "bytes": 1244
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/mambafusion/environment.json",
+      "sha256": "b9b67396e50d94f5d9e84d871bff2fbb718cd42a6316d141c233dd8242aaf541",
+      "bytes": 730
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/mambafusion/geometry_check.json",
+      "sha256": "2e4e912b3c9d94a890be84952dcc509ddf7f00460cfdad1d4410b402367364e4",
+      "bytes": 349
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/mambafusion/hilbert_manifest.json",
+      "sha256": "0778ef808764f4abb9a18a1f52209e69d843789ad08cbadcf870e8098a389451",
+      "bytes": 2073
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/mambafusion/mini_infos.json",
+      "sha256": "121a01f8a5d8965fe6ac601d5e1c5d48c9b262b875d1779dc03642787d3c416e",
+      "bytes": 44484
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/mambafusion/operator_smoke.json",
+      "sha256": "05fdd97d265be9a2cb16ef14dacfec11fea383d2fe98e93498439fd8c97d1d3a",
+      "bytes": 2204
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/mambafusion/report.md",
+      "sha256": "4a6b3b34c6f83d8da2d6978aae4718285de36c65d505aa2ed364feb9c93d028e",
+      "bytes": 6190
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/mambafusion/resolved_mini_val.json",
+      "sha256": "77201cae1bdb5a94b6ba40407eee45008796c191edd0a8fbb8a0b0e285e281b5",
+      "bytes": 15796
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/mambafusion/resolved_scene0061.json",
+      "sha256": "61aceceed30599394ab4034a91caabe98c2a4c6a1874359c1045e878ab0a35c2",
+      "bytes": 15797
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/mambafusion/resource_manifest.json",
+      "sha256": "b5b546e107239f54328917de69ffdfbc5ec718c210ae4ba6da63eeeae6b45600",
+      "bytes": 1818
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/mambafusion/source_manifest.json",
+      "sha256": "94aa47608a34256c71497e905ef0ba241ebc51e1c1f82e262c5f8681c16e1a0e",
+      "bytes": 116689
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/mambafusion/status.json",
+      "sha256": "dce281a21e47d2c05ef2f634e29452b522bceb2760237de4f941a722ae6c6f8d",
+      "bytes": 3158
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/metrics.csv",
+      "sha256": "0c8e8ef943e8d6b2af86eac3a39ec7fb9007f2c56acad0c6f2cbc07044199a67",
+      "bytes": 3370
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/metrics.json",
+      "sha256": "73cd9676f783135c0eb79e94f20ff6f92ff8ce54578f6319fe16fb1a2e795d0a",
+      "bytes": 8070
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/official_eval/README.md",
+      "sha256": "78181f6df2ef2851573ab93e6c7b8caac7840d4cd9bca8ed6029f7eae7f9308a",
+      "bytes": 575
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/official_eval/index.json",
+      "sha256": "a688d97df4fe8dcda40fe14688ecf2fd8669e620cd0da9968515613610a46936",
+      "bytes": 1044
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/plan.md",
+      "sha256": "df96eb286192ecf2ef6a79537f2416ab6512e291be0789f93d6ecf7a2db0216b",
+      "bytes": 6089
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/preflight.json",
+      "sha256": "131a50bc5c396e1d34e67d3feb4c847fcd49b62db9bdc32834c278786dc560a6",
+      "bytes": 316
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/profile/README.md",
+      "sha256": "a2f89ba3335b61ed3a73e80a361afc801f7b2a600048de726f476cabb52ad454",
+      "bytes": 509
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/profile/index.json",
+      "sha256": "8ea65b5d5da4bc291e12e9136c095bbb670ab1f96e0eaf14561afe8182630853",
+      "bytes": 1151
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/report.md",
+      "sha256": "0b9cc19a9a9f00dd634a230c04116e6838003829877f63aaab42248038e89e48",
+      "bytes": 2820
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/resolved_configs/README.md",
+      "sha256": "b5173d80ce21b1c8071dcca94bce61edf81ef25a1c0ba3d876d567adb64c73d3",
+      "bytes": 380
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/resolved_configs/index.json",
+      "sha256": "ccd2795396d2cdd375b9a61bc13de3d6c5a65a47d2b587cbd679ed73fed24fac",
+      "bytes": 949
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/resource_manifest.json",
+      "sha256": "f84229efb35c4c6c3b482b0c0a6adbb7404edc61b8ba9240c65bfa5879b5b0d1",
+      "bytes": 1491
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/review.md",
+      "sha256": "b28d36e75ed72e83747d3d996376d102a0aa4e73a4467a3c881e35e6684285ee",
+      "bytes": 12505
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/run_commands.md",
+      "sha256": "56ccf5bbb365c1b4d28d252cb443478dbe96d85898158bb52434b310ce0a6f56",
+      "bytes": 3479
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/runner_state.json",
+      "sha256": "ec2ff2907bc38a351c708f5fbb57f8488b7b7b72cfaf63df656fa009adc164b2",
+      "bytes": 885
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/status.json",
+      "sha256": "b9dcab9151f5ed51a7144c5051a29473e020af3b89ae1ec57e3cbb4d6d4aafc5",
+      "bytes": 7051
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/summarize/status.json",
+      "sha256": "20d43ea8d09669102077c2886af1f278bc9f95378827e172a5b69cca166df51a",
+      "bytes": 72
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/trt_review.md",
+      "sha256": "cba1a46cbc303eeba9155816cd35fa571ba1d984dc4e4ec731371243d1cdc926",
+      "bytes": 6709
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/visualization/README.md",
+      "sha256": "108f37d5f457ed3693ccb1889cea5271de59747a36f54ccc119c52293324f7a3",
+      "bytes": 3892
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/visualization/rerun_browser_qa.json",
+      "sha256": "01811c0d3dfe20c197b9267c7bb24b1186220eb4b51ef8262ea26f51d894399c",
+      "bytes": 17238
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/visualization/status.json",
+      "sha256": "6b1aa28158824ddf327f34f4e3bde922546ba52d3aa986a083468aff6bd89d4d",
+      "bytes": 9682
+    }
+  ]
+}

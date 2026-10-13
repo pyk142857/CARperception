@@ -9,7 +9,11 @@
     "fp": 67.0,
     "fn": 104.0,
     "recall": 0.9114723803082004,
-    "mota": 0.8702829477579679
+    "mota": 0.8702829477579679,
+    "tracking_sha256": "ceaf64c45d71bf7fddf7e56f55946262e31614104f9c238bf863c05bd6facb89",
+    "metrics_sha256": "1a868bb1b417dd1b504b16d4064950ebb3563157d289904ae5c8e093eb7a8a9f",
+    "input_manifest_sha256": "6410032394a0a8a5d05310b096452307d026afa8cad1fcf6dd1b359309d5892c",
+    "binding_provenance": "Post-run byte verification against bddc28f; no new tracker/evaluator execution"
   },
   {
     "input": "frozen_reference",
@@ -21,6 +25,40 @@
     "fp": 299.0,
     "fn": 400.0,
     "recall": 0.8213113451807188,
-    "mota": 0.7879691863336332
+    "mota": 0.7879691863336332,
+    "tracking_sha256": "dffd9176551b2dc866807fcaf2f9ab1a0289c48fc19c49d75d69c320f17fce99",
+    "metrics_sha256": "64623b60ee41d38a2ef44682317a1127b491ce2d7785e59683a5d84952211f48",
+    "input_manifest_sha256": "6410032394a0a8a5d05310b096452307d026afa8cad1fcf6dd1b359309d5892c",
+    "binding_provenance": "Post-run byte verification against bddc28f; no new tracker/evaluator execution"
+  },
+  {
+    "input": "mambafusion_native",
+    "split": "scene0061",
+    "frames": 39,
+    "tracking_sha256": "8d8cd1196607657666d0effebeee65e7fffbc7ee71047b65a574e14fc37c5419",
+    "metrics_sha256": "86abba1c74a28d8ef06f077b23c5d2521fd0e6cc2b2ee91aeb0e915dadad81e3",
+    "input_manifest_sha256": "05e44d64e586d7eba52ba9de9983ec114ff72b0b9d517efa5b2395475c8fda33",
+    "amota": 0.8739118773081327,
+    "amotp": 0.33850248736723276,
+    "ids": 3.0,
+    "fp": 67.0,
+    "fn": 94.0,
+    "recall": 0.9172947294540161,
+    "mota": 0.8751470890927955
+  },
+  {
+    "input": "mambafusion_native",
+    "split": "mini_val",
+    "frames": 81,
+    "tracking_sha256": "2df0cba926f07c41a1bcd4787e68b38f7247297ed47b242a2fd9b6e1b25badcd",
+    "metrics_sha256": "6dd0d787f61267ed690a2688848858df162ab7e883c181c7c818f43b63107e7d",
+    "input_manifest_sha256": "05e44d64e586d7eba52ba9de9983ec114ff72b0b9d517efa5b2395475c8fda33",
+    "amota": 0.8497284519734606,
+    "amotp": 0.38917468383995074,
+    "ids": 19.0,
+    "fp": 405.0,
+    "fn": 344.0,
+    "recall": 0.8495088988420676,
+    "mota": 0.8026799867470649
   }
 ]

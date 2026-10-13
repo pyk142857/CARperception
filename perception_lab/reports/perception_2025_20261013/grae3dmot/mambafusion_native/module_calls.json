@@ -1,0 +1,67 @@
+{
+  "spatial_proj": {
+    "calls": 137,
+    "output_shapes": [
+      {
+        "shape": [
+          45,
+          45,
+          128
+        ],
+        "dtype": "torch.float32"
+      }
+    ]
+  },
+  "spatial_dffl": {
+    "calls": 137,
+    "output_shapes": [
+      {
+        "shape": [
+          45,
+          45,
+          128
+        ],
+        "dtype": "torch.float32"
+      }
+    ]
+  },
+  "temporal_proj": {
+    "calls": 125,
+    "output_shapes": [
+      {
+        "shape": [
+          45,
+          100,
+          128
+        ],
+        "dtype": "torch.float32"
+      }
+    ]
+  },
+  "temporal_dffl": {
+    "calls": 125,
+    "output_shapes": [
+      {
+        "shape": [
+          45,
+          100,
+          128
+        ],
+        "dtype": "torch.float32"
+      }
+    ]
+  },
+  "affinity.0": {
+    "calls": 375,
+    "output_shapes": [
+      {
+        "shape": [
+          100,
+          45,
+          1
+        ],
+        "dtype": "torch.float32"
+      }
+    ]
+  }
+}

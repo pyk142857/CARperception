@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "phase": "audit",
+  "images": 3,
+  "meaning": "diagnostic generated; not candidate equivalence acceptance"
+}

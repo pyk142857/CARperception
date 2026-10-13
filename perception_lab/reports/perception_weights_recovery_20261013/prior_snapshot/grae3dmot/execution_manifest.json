@@ -1,0 +1,14 @@
+{
+  "native_and_optimization_executed_adapter_sha256": "81153d212c8364b6668e66d8d24a9274e6cbfe7355a215dd90ad6db344e34ddf",
+  "executed_snapshot_local_ignored": "perception_lab/runs/perception_2025_20261013/grae3dmot/executed_native_and_ab_runner.py",
+  "native_and_optimization_exit_code": 0,
+  "official_evaluation_exit_code": 0,
+  "teaching_audit_exit_code": 0,
+  "current_code_additions_after_native": "post-inference teaching audit, separate CPU preprocessing profile, standalone CUDA segmented profile; native learned association unchanged",
+  "official_eval_environment": "existing envs/sparse4d/bin/python; nuscenes-devkit 1.2.0",
+  "evaluation_initial_environment_attempt": "envs/nuscenes_eval failed because motmetrics pandas dependency absent; switched evaluation interpreter without modifying either environment",
+  "profile": "separate run, exact executed adapter hash recorded in segmented_profile.json",
+  "corrected_profile_exit_code": 0,
+  "current_adapter_sha256": "0c532f24d6c320411983f1c6affacb630e91a9414b215be87b85022d9dae55a6",
+  "cpu_tests": "5 passed"
+}

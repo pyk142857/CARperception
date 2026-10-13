@@ -1,0 +1,12 @@
+{
+  "scope": "instrumented diagnostic run, not exclusive GPU benchmark",
+  "diagnostic_hooks": "finite checks synchronize during timed forward",
+  "external_gpu_process_observed": {
+    "pid": 4174964,
+    "project": "RS/PhyFlow",
+    "used_memory_mib": 12626,
+    "observed_after_native_run": true
+  },
+  "concurrent_activity_during_each_frame": "not sampled; cannot establish exclusive GPU",
+  "action": "No external process stopped; do not use timings for speedup claims"
+}

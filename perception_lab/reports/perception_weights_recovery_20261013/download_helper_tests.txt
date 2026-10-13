@@ -1,0 +1,21 @@
+test_200_partial_body_is_not_complete (test_recover_perception_weights_2025.RecoveryTests) ... ok
+test_200_writes_fresh_whole_object_never_appends (test_recover_perception_weights_2025.RecoveryTests) ... ok
+test_416_never_success (test_recover_perception_weights_2025.RecoveryTests) ... ok
+test_atomic_install_refuses_size_hash_or_parse_failure (test_recover_perception_weights_2025.RecoveryTests) ... ok
+test_atomic_install_success (test_recover_perception_weights_2025.RecoveryTests) ... ok
+test_block_index_rejects_path_traversal_symlink_and_bad_ranges (test_recover_perception_weights_2025.RecoveryTests) ... ok
+test_corrupted_block_is_not_reused (test_recover_perception_weights_2025.RecoveryTests) ... ok
+test_cpu_structure_checks_survive_pythonoptimize (test_recover_perception_weights_2025.RecoveryTests) ... ok
+test_disconnect_keeps_previously_verified_block (test_recover_perception_weights_2025.RecoveryTests) ... ok
+test_disk_commit_failure_stops_after_two_attempts (test_recover_perception_weights_2025.RecoveryTests) ... ok
+test_exact_206_accepts_legacy_torch_header (test_recover_perception_weights_2025.RecoveryTests) ... ok
+test_html_json_and_lfs_pointer_rejected (test_recover_perception_weights_2025.RecoveryTests) ... ok
+test_imported_mamba_requires_source_hash_before_reading_file (test_recover_perception_weights_2025.RecoveryTests) ... ok
+test_malformed_length_exception_is_sanitized_in_attempt_log (test_recover_perception_weights_2025.RecoveryTests) ... ok
+test_untrusted_headers_never_echo_in_event (test_recover_perception_weights_2025.RecoveryTests) ... ok
+test_wrong_total_and_range_rejected (test_recover_perception_weights_2025.RecoveryTests) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 2.124s
+
+OK

@@ -1,0 +1,32 @@
+[
+  {
+    "input": "mambafusion_native",
+    "split": "scene0061",
+    "frames": 39,
+    "tracking_sha256": "8d8cd1196607657666d0effebeee65e7fffbc7ee71047b65a574e14fc37c5419",
+    "metrics_sha256": "86abba1c74a28d8ef06f077b23c5d2521fd0e6cc2b2ee91aeb0e915dadad81e3",
+    "input_manifest_sha256": "05e44d64e586d7eba52ba9de9983ec114ff72b0b9d517efa5b2395475c8fda33",
+    "amota": 0.8739118773081327,
+    "amotp": 0.33850248736723276,
+    "ids": 3.0,
+    "fp": 67.0,
+    "fn": 94.0,
+    "recall": 0.9172947294540161,
+    "mota": 0.8751470890927955
+  },
+  {
+    "input": "mambafusion_native",
+    "split": "mini_val",
+    "frames": 81,
+    "tracking_sha256": "2df0cba926f07c41a1bcd4787e68b38f7247297ed47b242a2fd9b6e1b25badcd",
+    "metrics_sha256": "6dd0d787f61267ed690a2688848858df162ab7e883c181c7c818f43b63107e7d",
+    "input_manifest_sha256": "05e44d64e586d7eba52ba9de9983ec114ff72b0b9d517efa5b2395475c8fda33",
+    "amota": 0.8497284519734606,
+    "amotp": 0.38917468383995074,
+    "ids": 19.0,
+    "fp": 405.0,
+    "fn": 344.0,
+    "recall": 0.8495088988420676,
+    "mota": 0.8026799867470649
+  }
+]

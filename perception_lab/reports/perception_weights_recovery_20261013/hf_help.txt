@@ -1,0 +1,21 @@
+usage: hf <command> [<args>]
+
+positional arguments:
+  {auth,cache,download,jobs,repo,repo-files,upload,upload-large-folder,env,version,lfs-enable-largefiles,lfs-multipart-upload}
+                        hf command helpers
+    auth                Manage authentication (login, logout, etc.).
+    cache               Manage local cache directory.
+    download            Download files from the Hub
+    jobs                Run and manage Jobs on the Hub.
+    repo                Manage repos on the Hub.
+    repo-files          Manage files in a repo on the Hub.
+    upload              Upload a file or a folder to the Hub. Recommended for
+                        single-commit uploads.
+    upload-large-folder
+                        Upload a large folder to the Hub. Recommended for
+                        resumable uploads.
+    env                 Print information about the environment.
+    version             Print information about the hf version.
+
+optional arguments:
+  -h, --help            show this help message and exit

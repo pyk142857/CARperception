@@ -1,0 +1,221 @@
+{
+  "status": "partial",
+  "scope": "2025 candidates; only explicitly verified sample scopes below",
+  "models": {
+    "deimv2": {
+      "status": "partial",
+      "native_inference": "passed",
+      "coco_images": 5000,
+      "mini_camera_images": 234,
+      "official_eval": {
+        "AP": 0.5086100689592818,
+        "AP50": 0.6831533654838128,
+        "AP75": 0.5506000450744917,
+        "APs": 0.3137841100273837,
+        "APm": 0.5529168907219435,
+        "APl": 0.7031043329781212,
+        "AR1": 0.38317899169973346,
+        "AR10": 0.6413325329882974,
+        "AR100": 0.7032626776233042,
+        "ARs": 0.5281377472442819,
+        "ARm": 0.7548129305205904,
+        "ARl": 0.8635586008255811
+      },
+      "backend": "native/ONNX5000/TensorRT10.6_FP16_5000 measured",
+      "source": "new_measured",
+      "prediction_sha256": "640e5ef3f63bebf8cb808495ca452f0b82b2b71f5cac1d8d6d8e40abdd98fe1a",
+      "default_backend": "native",
+      "strict_candidate_equivalence": "not claimed; FP16 confidence outliers recorded",
+      "onnx_ap_budget_pass": true,
+      "tensorrt_ap_budget_pass": true
+    },
+    "harpnext": {
+      "method": "HARP-NeXt",
+      "status": "blocked_resource",
+      "phase": "run",
+      "reason": "Matching complete author nuScenes32x480 checkpoint not downloaded; see resource_manifest.json",
+      "inference_frames": 0,
+      "metrics": null,
+      "strict_load": null,
+      "gpu_ab": null,
+      "source_commit": "532df2659700ae870c0e0d4137a4d35bcc9903b9",
+      "checkpoint_path": "/home/minglei/Desktop/CAR/perception_lab/checkpoints/harpnext_2025/ckpt_best.pth",
+      "adoption": "pending strict checkpoint load and genuine model execution",
+      "implementation_scope": "Author network adapter implemented but untested without full checkpoint",
+      "preprocessing_audit": "partial; gpu_preprocessing_audit.json",
+      "original_point_audit": "passed;404frames/14026208points"
+    },
+    "mambafusion": {
+      "model": "MambaFusion",
+      "status": "blocked_resource",
+      "phase": "run",
+      "source": "new_measured",
+      "frames_inferred": 0,
+      "strict_load": null,
+      "official_metrics": null,
+      "blockers": [
+        "Complete author checkpoint unavailable: [Errno 2] No such file or directory: '/home/minglei/Desktop/CAR/perception_lab/checkpoints/mambafusion_2025/checkpoint_epoch_10.pth'",
+        "Drive streaming returned HTTP413: 391545251 bytes exceeds 268435456-byte connector limit; shell downloads incomplete."
+      ],
+      "gpu_inference_executed": false,
+      "gpu_operator_smoke": {
+        "torch": "2.1.2+cu118",
+        "runtime": "11.8",
+        "gpu": "NVIDIA GeForce RTX 4090",
+        "capability": [
+          8,
+          9
+        ],
+        "operators": {
+          "selective_scan_cuda_core": {
+            "passed": true,
+            "shape": [
+              1,
+              4,
+              16
+            ],
+            "max_abs_error_to_analytic_recurrence": 0.0
+          },
+          "selective_scan_cuda_oflex": {
+            "passed": true,
+            "shape": [
+              1,
+              4,
+              16
+            ],
+            "max_abs_error_to_analytic_recurrence": 0.0
+          },
+          "selective_scan_cuda_ndstate": {
+            "passed": true,
+            "shape": [
+              1,
+              4,
+              16
+            ],
+            "max_abs_error_to_analytic_recurrence": 0.0
+          },
+          "selective_scan_cuda": {
+            "passed": true,
+            "shape": [
+              1,
+              4,
+              16
+            ],
+            "max_abs_error_to_analytic_recurrence": 0.0
+          },
+          "iou3d_nms_cuda": {
+            "passed": true,
+            "iou": [
+              [
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          "roiaware_pool3d_cuda": {
+            "passed": true,
+            "indices": [
+              [
+                0,
+                1,
+                -1
+              ]
+            ]
+          },
+          "flattened_window_cuda": {
+            "passed": true,
+            "outputs": [
+              {
+                "shape": [
+                  3
+                ],
+                "dtype": "torch.int64"
+              },
+              {
+                "shape": [
+                  3
+                ],
+                "dtype": "torch.int64"
+              },
+              {
+                "shape": [
+                  3,
+                  3
+                ],
+                "dtype": "torch.int64"
+              }
+            ]
+          },
+          "torch_scatter_mean": {
+            "passed": true,
+            "output": [
+              2.0,
+              5.0
+            ]
+          },
+          "spconv_submconv3d": {
+            "passed": true,
+            "output": [
+              [
+                3.0
+              ],
+              [
+                3.0
+              ]
+            ],
+            "scope": "unit operator with explicit all-one kernel, not detector inference"
+          },
+          "spconv_point_to_voxel": {
+            "passed": true,
+            "coordinates_zyx": [
+              [
+                20,
+                180,
+                183
+              ],
+              [
+                20,
+                180,
+                180
+              ]
+            ],
+            "point_counts": [
+              1,
+              2
+            ]
+          }
+        },
+        "peak_gpu_bytes": 15872
+      },
+      "frames_preprocessed": 6,
+      "adoption": "not deployed; native model requires strict load and operator/frame validation"
+    },
+    "grae3dmot": {
+      "model": "GRAE-3DMOT",
+      "status": "partial",
+      "gpu_executed": true,
+      "input_family": "frozen_reference",
+      "inference": "passed",
+      "strict_load": "passed",
+      "official_evaluation": "passed",
+      "frames": 120,
+      "optimization": "30 paired rounds; outputs exact; native retained (order-dependent timing)",
+      "segmented_profile": "passed; corrected boundary, output exact equality",
+      "mambafusion_native": "pending detector native output",
+      "scope": "new tracker inference on frozen archived detections; no archived tracker result reuse",
+      "cpu_tests": "5 passed"
+    }
+  },
+  "visualization": "partial",
+  "source": "new_measured; frozen_reference detection inputs are reused_archive",
+  "blockers": [
+    "harpnext: blocked_resource; Matching complete author nuScenes32x480 checkpoint not downloaded; see resource_manifest.json",
+    "mambafusion: blocked_resource; [\"Complete author checkpoint unavailable: [Errno 2] No such file or directory: '/home/minglei/Desktop/CAR/perception_lab/checkpoints/mambafusion_2025/checkpoint_epoch_10.pth'\", 'Drive streaming returned HTTP413: 391545251 bytes exceeds 268435456-byte connector limit; shell downloads incomplete.']",
+    "GRAE MambaFusion input branch has no measured mini_val tracking output"
+  ],
+  "training": false
+}

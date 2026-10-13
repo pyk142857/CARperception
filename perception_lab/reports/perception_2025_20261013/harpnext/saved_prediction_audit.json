@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "frames": 404,
+  "original_points": 14026208,
+  "prediction_sha256_verified": 404,
+  "original_mapping_verified": 404,
+  "recomputed_confusions_match": [
+    "scene0061",
+    "mini_val",
+    "mini_all"
+  ]
+}

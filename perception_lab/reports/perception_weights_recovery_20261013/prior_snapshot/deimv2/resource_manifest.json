@@ -1,0 +1,635 @@
+{
+  "source_commit": "1d2ca42171570c713e78fc6a766ec5104b7f4724",
+  "source_method": "GitHub connector Git blobs, exact Git blob SHA verified; selected Python/config/license text files, not a git checkout",
+  "files": [
+    {
+      "path": "LICENSE.md",
+      "sha256": "b37be47a42584f1dd7d90654a7ee1de83225a0a6e398238871cb0155a41733e6"
+    },
+    {
+      "path": "README.md",
+      "sha256": "4830990ccad362d79aeb7bb2e782b4b1dcb9e21087f3b2bd79e58534c0adefdc"
+    },
+    {
+      "path": "configs/base/dataloader.yml",
+      "sha256": "e71f4b39251ea9feb60aa4eaf404de1b3ca8f57399af1bc7ca406a10e92647d3"
+    },
+    {
+      "path": "configs/base/deim.yml",
+      "sha256": "3cc39c60e1191c502e55009cf4cb7bb104aa7b75e2502bd080b7f81ace29294d"
+    },
+    {
+      "path": "configs/base/deimv2.yml",
+      "sha256": "718e07aea89d3f8dd6b741ed4ecf71f1f58012ef67975400fbee86bc944d3450"
+    },
+    {
+      "path": "configs/base/dfine_hgnetv2.yml",
+      "sha256": "8a5468d10da4ed0b2216b0de0f01d1700a61ed8fc2dabdf81629b4ccaf227a7c"
+    },
+    {
+      "path": "configs/base/optimizer.yml",
+      "sha256": "176d885542d44aaa8b92a273c9574bca63ecd6b95a39ea9522b48535bf38b94b"
+    },
+    {
+      "path": "configs/base/rt_deim.yml",
+      "sha256": "5bc88afada2dbd985c97c0e4f338cbbef9f22605bb289646bd72a4ff3f51655a"
+    },
+    {
+      "path": "configs/base/rt_optimizer.yml",
+      "sha256": "9ca04c4078afccda200f06df38708c074ed70c52814995bbdda179bcbeec9b26"
+    },
+    {
+      "path": "configs/base/rtdetrv2_r50vd.yml",
+      "sha256": "64fa4fac64c93aa910bea163702d119cb21cf28f1815953a6ed694cd1670c009"
+    },
+    {
+      "path": "configs/dataset/coco_detection.yml",
+      "sha256": "d5641faa4ae3b214fda299648bf34969d03c9aeb0062cafebd666b019d489fda"
+    },
+    {
+      "path": "configs/dataset/crowdhuman_detection.yml",
+      "sha256": "79cf8d43398939bfa468303c4942b7e628b58141454bc973227ef361babd67ea"
+    },
+    {
+      "path": "configs/dataset/custom_detection.yml",
+      "sha256": "3e70e5f4d45a4c5df3bb18d48de602007a203dd237bb69293bdde9443c23d06f"
+    },
+    {
+      "path": "configs/dataset/obj365_detection.yml",
+      "sha256": "b8fe119225695bdaff385fb8e0b327bc1db06b3d6d30f17176a2718c1e051fc5"
+    },
+    {
+      "path": "configs/dataset/voc_detection.yml",
+      "sha256": "92eb4e855896329bd08d2ff329ed2ae3e05c8f8a543eec090fd12964427673a0"
+    },
+    {
+      "path": "configs/deim_dfine/deim_hgnetv2_l_coco.yml",
+      "sha256": "b9be1442468732399f3945c1a3bff6a1a49b9793b04c42b0a6eb6c65590cc00f"
+    },
+    {
+      "path": "configs/deim_dfine/deim_hgnetv2_m_coco.yml",
+      "sha256": "ebf8af86ff09c9e341d23159c5db83cf7cc78b51c49e8239158e57ffe1cb5091"
+    },
+    {
+      "path": "configs/deim_dfine/deim_hgnetv2_n_coco.yml",
+      "sha256": "2bc40f2d3ff0e964bd5c0a52f787d6dacbbdfe656664def1aafbba85c4a46503"
+    },
+    {
+      "path": "configs/deim_dfine/deim_hgnetv2_s_coco.yml",
+      "sha256": "111e2fc29832d1f51ae35730e74b372a4d18943bc4cf97829e7d3f54c58ddc11"
+    },
+    {
+      "path": "configs/deim_dfine/deim_hgnetv2_x_coco.yml",
+      "sha256": "5d85fce4614c5bd699050faa4bbf385e57375dea70cb42321b95e14c8759866c"
+    },
+    {
+      "path": "configs/deim_dfine/dfine_hgnetv2_l_coco.yml",
+      "sha256": "9b4147af1326a775f085205bc2f7c56e05a1eb349b8a87cbfd8b946053675dee"
+    },
+    {
+      "path": "configs/deim_dfine/dfine_hgnetv2_m_coco.yml",
+      "sha256": "d226e2be4b7ea9d53d8a674e1f510ad293e4e0bdf3135318d38bb83f4acb3f95"
+    },
+    {
+      "path": "configs/deim_dfine/dfine_hgnetv2_n_coco.yml",
+      "sha256": "0a785b0b42a555153a6211512f6b5b12db23311c9d9996daca6f0d0ebd7d5691"
+    },
+    {
+      "path": "configs/deim_dfine/dfine_hgnetv2_s_coco.yml",
+      "sha256": "50c25bebb44539d755b6cf23771eebb54fe2495f14b2ec8550956cd1f179ac04"
+    },
+    {
+      "path": "configs/deim_dfine/dfine_hgnetv2_x_coco.yml",
+      "sha256": "37a005920aea6b35ff696c036ad9cf0053788e6699e2fdcef6bb636e0f1e279e"
+    },
+    {
+      "path": "configs/deim_dfine/object365/deim_hgnetv2_x_obj2coco_24e.yml",
+      "sha256": "7dea18db6ca0525ee0d4d0f450697c13cfc55f15694fa10666a7708126fc6643"
+    },
+    {
+      "path": "configs/deim_dfine/object365/dfine_hgnetv2_x_obj2coco.yml",
+      "sha256": "60a1c00d69baeedd95e35c1fb5d2f9866655a858b542e200fcc66068f7640f6d"
+    },
+    {
+      "path": "configs/deim_rtdetrv2/deim_r101vd_60e_coco.yml",
+      "sha256": "ee86df44601c2bd01eeeb6bdaf8cf711511639b7e2266ed5ad93e218ffb66f5c"
+    },
+    {
+      "path": "configs/deim_rtdetrv2/deim_r18vd_120e_coco.yml",
+      "sha256": "341a697c854a57b1601c1003dc4f3887e48d78738a42ec3c5369684e08f620b6"
+    },
+    {
+      "path": "configs/deim_rtdetrv2/deim_r34vd_120e_coco.yml",
+      "sha256": "1478700b9979083f41229d7bdefb68cb6528918ef25c426cc20c599b4a638f00"
+    },
+    {
+      "path": "configs/deim_rtdetrv2/deim_r50vd_60e_coco.yml",
+      "sha256": "dbfe3f87f4eb0a53a10c7d980e726ad52fb51d5b946cb52ccf5168ffa8fb1866"
+    },
+    {
+      "path": "configs/deim_rtdetrv2/deim_r50vd_m_60e_coco.yml",
+      "sha256": "c0010690a4169f38953cd87cc9c27a7b8042df43989ae5addce33ba83d6fd5a3"
+    },
+    {
+      "path": "configs/deim_rtdetrv2/rtdetrv2_r101vd_6x_coco.yml",
+      "sha256": "2735e214c842926f475cdabebc6d9915616bccfe454ffa24d8f1b29d87c781b6"
+    },
+    {
+      "path": "configs/deim_rtdetrv2/rtdetrv2_r18vd_120e_coco.yml",
+      "sha256": "a213cd305c82779edbc7b6231154f26b1e9e8c510b2bb359a9cbe58d3c96d82b"
+    },
+    {
+      "path": "configs/deim_rtdetrv2/rtdetrv2_r34vd_120e_coco.yml",
+      "sha256": "bb6f069f15be5f32d165f2a23d57bc0bbbf68e19e7ccc5bf55608d76736637d6"
+    },
+    {
+      "path": "configs/deim_rtdetrv2/rtdetrv2_r50vd_6x_coco.yml",
+      "sha256": "5353d0bcf7661148ac9c09de170f0cd626458a71ae3c7f4b08613a2245d93169"
+    },
+    {
+      "path": "configs/deim_rtdetrv2/rtdetrv2_r50vd_m_7x_coco.yml",
+      "sha256": "22477422c12b2963f14127666e43ba77c3add8e3bfe23d7d895c85c1032cea48"
+    },
+    {
+      "path": "configs/deimv2/deimv2_dinov3_l_coco.yml",
+      "sha256": "cf9309bf8fe37818bca82f1803e28e969285037266bbbc650a0be55ff6ba5d75"
+    },
+    {
+      "path": "configs/deimv2/deimv2_dinov3_m_coco.yml",
+      "sha256": "78ad63c93f9a3285a7aecb393064dbff6d7677feff487ea9c3886580d05fa00a"
+    },
+    {
+      "path": "configs/deimv2/deimv2_dinov3_s_coco.yml",
+      "sha256": "a12d0507156becb9dff718664eb4112222190a446bd0bd53d4da220803178661"
+    },
+    {
+      "path": "configs/deimv2/deimv2_dinov3_x_coco.yml",
+      "sha256": "182e65e1c7975cdb35ddbd720f686769d23c95d12dd881978c7df7fd9eecf5b3"
+    },
+    {
+      "path": "configs/deimv2/deimv2_hgnetv2_atto_coco.yml",
+      "sha256": "95415f8599c47ac052dd7af6ef79cc7e03236b6db0d588893f762daa60e880e6"
+    },
+    {
+      "path": "configs/deimv2/deimv2_hgnetv2_femto_coco.yml",
+      "sha256": "3ae279b68f8b79ba49fc6542d30f9e795b6811286a9374fa70bc17994613ee61"
+    },
+    {
+      "path": "configs/deimv2/deimv2_hgnetv2_l_coco.yml",
+      "sha256": "ee431c6169093f83cbb557866608892b68fb5a78ef255485f70f15f1c1f9328f"
+    },
+    {
+      "path": "configs/deimv2/deimv2_hgnetv2_m_coco.yml",
+      "sha256": "0e23d2d269620bd6f772d725124b2c72c7f57405cff951633faed375864a00a9"
+    },
+    {
+      "path": "configs/deimv2/deimv2_hgnetv2_n_coco.yml",
+      "sha256": "4bc525aa3e71f39947aedd1365c31b50daad4170dc20ad5e7451bd296e608010"
+    },
+    {
+      "path": "configs/deimv2/deimv2_hgnetv2_pico_coco.yml",
+      "sha256": "4da507bd562b6fb5fc9bd70ad7aaa88f82754a81bcea273443148a65fe8f108d"
+    },
+    {
+      "path": "configs/deimv2/deimv2_hgnetv2_s_coco.yml",
+      "sha256": "65dea79e7253cd2877aa76147b572a6251475bd943cb48b19c4c82d2959e6e80"
+    },
+    {
+      "path": "configs/deimv2/deimv2_hgnetv2_x_coco.yml",
+      "sha256": "42d1a257bf05f60b12e16abd1d6ed0c7c884837f5dc10ff6608aefe4121ad0e9"
+    },
+    {
+      "path": "configs/runtime.yml",
+      "sha256": "8339f6a77f21c1ae3f43740b9abecb5e9fb73befde3c4ad5d53e1e23f2610d97"
+    },
+    {
+      "path": "engine/__init__.py",
+      "sha256": "d2d2000c38d68cb2591db5366be7643cd6004be6b31d03234bfb680f77559dd3"
+    },
+    {
+      "path": "engine/backbone/__init__.py",
+      "sha256": "d51e9e35b5b4cf3c3487d1e0ace138923dc716eb4ed4ca944fb99befb4a4d1a9"
+    },
+    {
+      "path": "engine/backbone/common.py",
+      "sha256": "3c99326a2b84e3f7b1a08a56651dbb97d012e63513df06d4e173758f82e35002"
+    },
+    {
+      "path": "engine/backbone/csp_darknet.py",
+      "sha256": "15d680dbe082c76a867b4c6ead90d77a6e5a92a094b8630e7da3c9c99090b81b"
+    },
+    {
+      "path": "engine/backbone/csp_resnet.py",
+      "sha256": "399b1e3a7c9afd9c00f914c938f51c08ee1dcf09a5cd5ab52b38e311e7dfda07"
+    },
+    {
+      "path": "engine/backbone/dinov3/__init__.py",
+      "sha256": "21856837ca4fcc39a8a7cfb4fb3e6627d567354a1803e045240a1f8528ec3978"
+    },
+    {
+      "path": "engine/backbone/dinov3/layers/__init__.py",
+      "sha256": "0707ef3e9c20aff594c3817f64a2c8ff34a21bd3b55e7d03471969fd314dde20"
+    },
+    {
+      "path": "engine/backbone/dinov3/layers/attention.py",
+      "sha256": "d3223edeeaaef56965146e565d8fc700cef18a9e4141650906b899df8fd6c7ef"
+    },
+    {
+      "path": "engine/backbone/dinov3/layers/block.py",
+      "sha256": "d78d14eaeee1741986e1c5363b57fbdd9d385599ba34c9460c9657f1f1a8cc95"
+    },
+    {
+      "path": "engine/backbone/dinov3/layers/dino_head.py",
+      "sha256": "cd7a83f00ac449f962484bad0f2959be477781e57943508428d32ff88f41fe33"
+    },
+    {
+      "path": "engine/backbone/dinov3/layers/ffn_layers.py",
+      "sha256": "398b40e2f64e8630c47a41e63193a85a540a5fa986e4bb02fa28254759413893"
+    },
+    {
+      "path": "engine/backbone/dinov3/layers/fp8_linear.py",
+      "sha256": "c882484f121133e334432a83d3195c87e576cc680b9008ee57a47ba9daeb195a"
+    },
+    {
+      "path": "engine/backbone/dinov3/layers/layer_scale.py",
+      "sha256": "f9a10ee763a62136f9e814bfe2f2209c2cb501dfdc5573f858ab01ba9a69c23f"
+    },
+    {
+      "path": "engine/backbone/dinov3/layers/patch_embed.py",
+      "sha256": "c592c7262779c8e1789ed502aee81bdd55eba4607065f8d04ae95eea683d0ef1"
+    },
+    {
+      "path": "engine/backbone/dinov3/layers/rms_norm.py",
+      "sha256": "8509ffc53f0bbe9e353a8b9e57ca2396795640b4ecc85140c27b17127c971869"
+    },
+    {
+      "path": "engine/backbone/dinov3/layers/rope_position_encoding.py",
+      "sha256": "af8ea35acb76d18ad4d53b844d5057bf01472a848375c51d70583a87f044efd1"
+    },
+    {
+      "path": "engine/backbone/dinov3/layers/sparse_linear.py",
+      "sha256": "1b8fc35883372fa8387eb3c92707adaa3287816fee9b2b55a48af07fe4188eb0"
+    },
+    {
+      "path": "engine/backbone/dinov3/utils/__init__.py",
+      "sha256": "83e6ec1f0cea862f18ae111560e2eadf2fff1873e3fdd7d358dee8d32d0ade8d"
+    },
+    {
+      "path": "engine/backbone/dinov3/utils/cluster.py",
+      "sha256": "d1a003ad571ad0f69e1b1a495ada8d079068fbed27ec929cb6b12a4eb1afa82b"
+    },
+    {
+      "path": "engine/backbone/dinov3/utils/custom_callable.py",
+      "sha256": "4e3508a7e2fb419aae447e4a17049c5aef4603e42bce548ac3b317749c24d1c3"
+    },
+    {
+      "path": "engine/backbone/dinov3/utils/dtype.py",
+      "sha256": "0c53f5cc155ea7e9899bc611493193fef9b985f23cb7d990401e22c363ac4419"
+    },
+    {
+      "path": "engine/backbone/dinov3/utils/utils.py",
+      "sha256": "d6fe7fe621b2ae3db89e3af588fbee0c78afe2130f4548dff87c94cbd734fe40"
+    },
+    {
+      "path": "engine/backbone/dinov3/vision_transformer.py",
+      "sha256": "6b82b8519e2100c24f74ab8c6c8295c0772ac5ad39eb25f1aa8e17c463a1f3fc"
+    },
+    {
+      "path": "engine/backbone/dinov3_adapter.py",
+      "sha256": "2e5ba50db28182dc261c92bce2d2e72933496672f8962c3e0fee67dd3fca7e06"
+    },
+    {
+      "path": "engine/backbone/hgnetv2.py",
+      "sha256": "0b775cf44665039aa9a44fe05aedd0f55c161d86e83cb846ef3ba6eec269abdc"
+    },
+    {
+      "path": "engine/backbone/ms_deform_attn.py",
+      "sha256": "5adca2515c95cae3eb9d9270ae1df0c05250cafd90559338b8318c2b49d5d08a"
+    },
+    {
+      "path": "engine/backbone/presnet.py",
+      "sha256": "54fb81ab7bece7a63c2a46677036f7b1a44645e328ff673b3221063b70d84445"
+    },
+    {
+      "path": "engine/backbone/test_resnet.py",
+      "sha256": "f48a7fa9e7648495c838688eaba9656e555397b2897d776b34359b44cfd10481"
+    },
+    {
+      "path": "engine/backbone/timm_model.py",
+      "sha256": "37eb4adcd2f7246222fb68c31de3a1e6b4938e3f8e243305b8aa7d43ae990958"
+    },
+    {
+      "path": "engine/backbone/torchvision_model.py",
+      "sha256": "e29516288f858b4b160a4d726cdd22c060fba2412f1da493e1a7708fcf42a4ec"
+    },
+    {
+      "path": "engine/backbone/utils.py",
+      "sha256": "e2bcc909a479a7ce06f77a0093e656e2e3da531f745dc6791e8fc76037a69ad5"
+    },
+    {
+      "path": "engine/backbone/vit_tiny.py",
+      "sha256": "0db657dec901ede95ad832ed79aa59ed4a96051319e42c4b4c6d32602839b351"
+    },
+    {
+      "path": "engine/core/__init__.py",
+      "sha256": "b20b7267f86929d2ba3f59e494e5a5fe56e24ca2a1967cdebeaab905f3cd2475"
+    },
+    {
+      "path": "engine/core/_config.py",
+      "sha256": "175c2b2d9f8ad92e502b5dd6d65f264c990bcca59c8fe857cd25ca0c5ae6a792"
+    },
+    {
+      "path": "engine/core/workspace.py",
+      "sha256": "824733ee31831433152658326c88fd667eb7ecb089b295b8d8c22dbed396cd29"
+    },
+    {
+      "path": "engine/core/yaml_config.py",
+      "sha256": "cf66f3d74f0291831c383f1bf495431d9487e1eab00ea8935bb2f2224cccd31d"
+    },
+    {
+      "path": "engine/core/yaml_utils.py",
+      "sha256": "bbb88010c0e48beeea5be3a063d1ed3e058eee584f7a9923f077384f0e5dbcda"
+    },
+    {
+      "path": "engine/data/__init__.py",
+      "sha256": "053256faf34bdcbb274bcc069e1c4b440947c77899c3757d0cf541cf6966a45c"
+    },
+    {
+      "path": "engine/data/_misc.py",
+      "sha256": "85099a5b66d4496575d31a4e3a73dffea3ddfef34a60f43d3e4569b66809703a"
+    },
+    {
+      "path": "engine/data/dataloader.py",
+      "sha256": "09914602bde30464172bcd0fbbaa6c3173fa069e7df6e4a0e8e41e1c3874623d"
+    },
+    {
+      "path": "engine/data/dataset/__init__.py",
+      "sha256": "7bf23c137b73d2ec35ff00a4f36f567c5759cc86f2889f6963b6c2a589b02943"
+    },
+    {
+      "path": "engine/data/dataset/_dataset.py",
+      "sha256": "f37c4745f85fe6d2f12dd1759e742086c043b84c752d24b8be67ed4e489efd5a"
+    },
+    {
+      "path": "engine/data/dataset/coco_dataset.py",
+      "sha256": "8ff24c73a6fdaa453520aa6cd50148b06c359898d52e49a1a2d2cc1327509e17"
+    },
+    {
+      "path": "engine/data/dataset/coco_eval.py",
+      "sha256": "117b760f22984cfbb70ff166ce113add3f4d7c49462abefd591f85cedd8c1be8"
+    },
+    {
+      "path": "engine/data/dataset/coco_utils.py",
+      "sha256": "69e4d53e2244b38391fee6da8a2fe0ccfe211d66fa03cb616f1826025250f512"
+    },
+    {
+      "path": "engine/data/dataset/voc_detection.py",
+      "sha256": "0d3dd4be481d5931c203eec95217cd5d79a477f53da228c5917ba7044e5ccf8e"
+    },
+    {
+      "path": "engine/data/dataset/voc_eval.py",
+      "sha256": "71ce94eaa171228011f258384f67f5d69216579fbd60587e4c6cd191d2df3c1f"
+    },
+    {
+      "path": "engine/data/transforms/__init__.py",
+      "sha256": "8b219dd43fc034e903cd5b3cce8f2585208467a4d063d3c54e7b42323fe7b330"
+    },
+    {
+      "path": "engine/data/transforms/_transforms.py",
+      "sha256": "c58f6528f01e40b5827a6ed4df5a348c67ab0ef600cdbc4efa83a6d43fb207d2"
+    },
+    {
+      "path": "engine/data/transforms/container.py",
+      "sha256": "0df41d5d14f8c20cfaf0ff8441178d815bd748a0dcdd0417139b19f20fe25b44"
+    },
+    {
+      "path": "engine/data/transforms/functional.py",
+      "sha256": "ea708311a5a762878a724c82b7c28f9971a3a1c0e7aff8c263f50727e0afc180"
+    },
+    {
+      "path": "engine/data/transforms/mosaic.py",
+      "sha256": "954e216ea7e8d7afd875831b55935b7c55825461a9df12a7e10c3b1a5957aa7d"
+    },
+    {
+      "path": "engine/deim/__init__.py",
+      "sha256": "148cf9ecd7d22a88684549db2f61a89b289500c2a190ffa0e01610c552e16509"
+    },
+    {
+      "path": "engine/deim/box_ops.py",
+      "sha256": "ca374c756f45508f07fb8ba4850be327cefcd6eb199000dd9ccbd7d6545537ef"
+    },
+    {
+      "path": "engine/deim/deim.py",
+      "sha256": "636131aef151096d2b7da041be9d27ed8086d96e31ba9604841ca1a04bd84647"
+    },
+    {
+      "path": "engine/deim/deim_criterion.py",
+      "sha256": "23f21500fba49b5bf26c7d165a109270d0832ce10a6eea4083f4174569730141"
+    },
+    {
+      "path": "engine/deim/deim_decoder.py",
+      "sha256": "9cd76c73320d18fab50423fcf1bcf0f13ce7446fe5d01a096f806e74ca5cb66d"
+    },
+    {
+      "path": "engine/deim/deim_utils.py",
+      "sha256": "e540c579863bba6db3e6d46a3e0f7cd66ba2112a32db2c75c241882bd9aae083"
+    },
+    {
+      "path": "engine/deim/denoising.py",
+      "sha256": "d2ec72a09db7c63ec175f0ad1305a071c9a067bdb666425c4e72ddf2bc8693a6"
+    },
+    {
+      "path": "engine/deim/dfine_decoder.py",
+      "sha256": "bbdc40fd9f6b9acdb0587dffd8a64c85356cad48622428acc13d38e34d59aba0"
+    },
+    {
+      "path": "engine/deim/dfine_utils.py",
+      "sha256": "c546cd277eded116783a29a1a9abea6408a4a807e748bd2c1222b4bbfdb88510"
+    },
+    {
+      "path": "engine/deim/hybrid_encoder.py",
+      "sha256": "5b10541e32a265c88ec7c392c3ac7d61e306d6183333c9a7878d5177b52bad96"
+    },
+    {
+      "path": "engine/deim/lite_encoder.py",
+      "sha256": "7d89c67707b15870fb387606bcf9dddc04e897bea475a8fd1fa9a285a6143055"
+    },
+    {
+      "path": "engine/deim/matcher.py",
+      "sha256": "1e53f31e94b5d66934cb3b41602e72ab8ca854038cad48eec8bcb02f05581084"
+    },
+    {
+      "path": "engine/deim/postprocessor.py",
+      "sha256": "39a14f525eebac9f2a378b399ca24593b066648ad80ffebe21ede11ded64f18e"
+    },
+    {
+      "path": "engine/deim/rtdetrv2_decoder.py",
+      "sha256": "6fa3b3091de455bdb77abab485efed2f13a2cfa5cd46e9276d89ba7a2c8ba990"
+    },
+    {
+      "path": "engine/deim/utils.py",
+      "sha256": "b13a104ed743fb3edcdb7f11c11504e8c223ad50e391c4edfdc14d63fa2f9757"
+    },
+    {
+      "path": "engine/misc/__init__.py",
+      "sha256": "1409a522e890456a3e9047d36d23ec05f5a96e9ce60bf2aba8d569e20a279ecd"
+    },
+    {
+      "path": "engine/misc/box_ops.py",
+      "sha256": "507f491779819e8bbab76039d423a6f63f3498d3dde7ffcb0edaf798669fb3fa"
+    },
+    {
+      "path": "engine/misc/dist_utils.py",
+      "sha256": "683f0f5898d1ecc6c54974a8082cea2a74c0f18b2ff2df96539bfc5814a49b48"
+    },
+    {
+      "path": "engine/misc/lazy_loader.py",
+      "sha256": "6cd831c6aa1eb13866933a21d42fa0fac3d772319120786362877b523bdf7c7d"
+    },
+    {
+      "path": "engine/misc/logger.py",
+      "sha256": "c9d66368341d0006a0147817cc850e22146c16a2fd375a7954ae9781a8ffd4f8"
+    },
+    {
+      "path": "engine/misc/profiler_utils.py",
+      "sha256": "3e4c8355a7457f474f9f7e36af2c65ce9e878e7233d2becafe893fe29764ae7c"
+    },
+    {
+      "path": "engine/misc/visualizer.py",
+      "sha256": "db3e1c6b23a3a7d8186c7786354b161859a4d00db60991a1e405f6eb484572d0"
+    },
+    {
+      "path": "engine/optim/__init__.py",
+      "sha256": "873f91c02a22f14912420e03d53e90919cc8f9324f6d2166b6e919f80764ccef"
+    },
+    {
+      "path": "engine/optim/amp.py",
+      "sha256": "6e11a55bca958224d062d6a11518aee62787b1018727d94a152428752c3e91cf"
+    },
+    {
+      "path": "engine/optim/ema.py",
+      "sha256": "bdd8ab69529b086f4ff4f229328a79e2153cbf6bda1c09fd015d7cb447bf208a"
+    },
+    {
+      "path": "engine/optim/lr_scheduler.py",
+      "sha256": "e02199d51be78a434771ff51ce4d22f11f7c83756d62f3104263568206a15374"
+    },
+    {
+      "path": "engine/optim/optim.py",
+      "sha256": "4395e1fd941f13bec06b95732bb446df7d10256e74fd494a49511090bbc20cd0"
+    },
+    {
+      "path": "engine/optim/warmup.py",
+      "sha256": "ff80c9b762be57af4abd0a6a843d5d50bbc4887db19d85cb74887615d7ea7432"
+    },
+    {
+      "path": "engine/solver/__init__.py",
+      "sha256": "e232d6a1bf7fa38af95f8c938b3c80cc5068c93e98e8793b20e460008fe00f02"
+    },
+    {
+      "path": "engine/solver/_solver.py",
+      "sha256": "38fb872d1309f56fd8918f8226ebf26e30a162f157ba97da3d7c195ce4847b15"
+    },
+    {
+      "path": "engine/solver/clas_engine.py",
+      "sha256": "216be5a2d29d664265aea35c2c019742a29a6ff716f19fe14ec635c97c7d6396"
+    },
+    {
+      "path": "engine/solver/clas_solver.py",
+      "sha256": "41a5d8107889f39a0af86668cac4fed7c6ebf31171df7ac5e340d447b19ba029"
+    },
+    {
+      "path": "engine/solver/det_engine.py",
+      "sha256": "075ff7f5d07d3f159d590d249c612196ced95046779cc996c6aa4ee2050b9a8d"
+    },
+    {
+      "path": "engine/solver/det_solver.py",
+      "sha256": "3bd898169828fd00599927f52d9f402f5ebc9f10334739d9e573a504a3ccc484"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "c392c7130a0bc97364e93195c9dae2510dcf572db21b0b19d6c72bea4ae31a08"
+    },
+    {
+      "path": "tools/benchmark/dataset.py",
+      "sha256": "6d9bca91fda74fb8643b94343555f8573f098c7921cb9a6a44d240924288b415"
+    },
+    {
+      "path": "tools/benchmark/get_info.py",
+      "sha256": "ad717493104aa178da08bc9bb54b147e915b2ad14a330a7566c182d4480d15f3"
+    },
+    {
+      "path": "tools/benchmark/requirements.txt",
+      "sha256": "ebce53bc4dfe0c837a19eaae23c356617168d8bf189b0a97023065cb1f81973b"
+    },
+    {
+      "path": "tools/benchmark/trt_benchmark.py",
+      "sha256": "94518779af88d347014aa6e7eb995833ef763fe8f34c3096f65ebd9e86e069af"
+    },
+    {
+      "path": "tools/benchmark/utils.py",
+      "sha256": "0a61d50e0a20f9546fa08aa1df90dc229b923a35018aef1f5017a148f5772c4f"
+    },
+    {
+      "path": "tools/dataset/remap_obj365.py",
+      "sha256": "e574987bb8cef57e0b4ff2e26e6be35c99b4a2c38cbe381fa4fd0bbb67b3c062"
+    },
+    {
+      "path": "tools/dataset/resize_obj365.py",
+      "sha256": "6432c24fc9c3000e336449937cab8c30283f4cd6791f45eb923ae9997e571131"
+    },
+    {
+      "path": "tools/deployment/export_onnx.py",
+      "sha256": "5ac51351db92fb519f7bd9bb49fd1c0296dc8996a9154d7d03aad3911a47466e"
+    },
+    {
+      "path": "tools/deployment/export_yolo_w_nms.py",
+      "sha256": "5603f249e3d44f0d39f8074e447c318d87f516233d3ebb477e4e2665a128d2ae"
+    },
+    {
+      "path": "tools/inference/onnx_inf.py",
+      "sha256": "c9e8911c136599b98b7878436e3dedd58425639b07866c1263d920ed0dc27ad5"
+    },
+    {
+      "path": "tools/inference/openvino_inf.py",
+      "sha256": "f99bc21a14a5b95aae6710e21685e5bb6f823686c20069449788e7e11260cea6"
+    },
+    {
+      "path": "tools/inference/requirements.txt",
+      "sha256": "3c85ab4f21d79da32459ce61acb48973d5ae820aefbd60faa065e94cce046bd4"
+    },
+    {
+      "path": "tools/inference/torch_inf.py",
+      "sha256": "4d404811feb3c1328dd094fd984d80d0193682c9e0de2798c4e7359ce259434b"
+    },
+    {
+      "path": "tools/inference/torch_inf_vis.py",
+      "sha256": "2462e9f0e3127e232fd07e54ad6024ac784b2a979a85aeb8d4167ae05399e890"
+    },
+    {
+      "path": "tools/inference/trt_inf.py",
+      "sha256": "5ee3ad38af266fd1d339e1fb2b14feb1dc2cf1dd5d4b30087329d3b81a3665bd"
+    },
+    {
+      "path": "tools/reference/convert_weight.py",
+      "sha256": "8c9a303e7b6424ffb610776dfada3c47e53994fa93dbbbbedb6b922be8d4904e"
+    },
+    {
+      "path": "tools/visualization/fiftyone_vis.py",
+      "sha256": "62fb268b61703e5100ab095f03102e38ca17dd8a80c2c2ff202ff48e5b4fe9b9"
+    },
+    {
+      "path": "train.py",
+      "sha256": "3160f0540481096ae4152af5dfd14a6f8b8ec8b606cd77716a571b40e2010703"
+    }
+  ],
+  "checkpoint": {
+    "path": "checkpoints/perception_2025/deimv2/deimv2_s.pth",
+    "bytes": 39537357,
+    "sha256": "9491ab33b68ecfc0e34043abb3009599ab1e892fb953a1faad12ef4fca5a35c4",
+    "url": "https://drive.google.com/file/d/1MDOh8UXD39DNSew6rDzGFp1tAVpSGJdL/view",
+    "method": "Google Drive raw binary compatibility fetch; byte-decoded locally"
+  },
+  "path_selected": "native source + native checkpoint; not Hub wrapper",
+  "hub_config_difference": "Hub cf0540f3f319bb8ecbe132624358a35a7beb86d5 interaction_indexes [5,8,11], pinned native [3,7,11]. Not mixed."
+}

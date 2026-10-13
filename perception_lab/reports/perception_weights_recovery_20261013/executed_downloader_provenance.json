@@ -1,0 +1,22 @@
+{
+  "versions": [
+    {
+      "executed_source": "perception_lab/runs/weights_recovery_20261013/fetch_mamba_parallel.py",
+      "executed_sha256": "0c112c9b9957718a3dd7f04b593fd6f79a70fb98bb0bfa8092fd4f9bc72fa677",
+      "archived_source": "perception_lab/reports/perception_weights_recovery_20261013/executed_downloader_v1.py",
+      "archived_sha256": "0c112c9b9957718a3dd7f04b593fd6f79a70fb98bb0bfa8092fd4f9bc72fa677"
+    },
+    {
+      "executed_source": "perception_lab/runs/weights_recovery_20261013/fetch_mamba_parallel_v2.py",
+      "executed_sha256": "17bb94563b77566a68bf4fd47970798c684714521829e4f77ed2b6b11d26f79c",
+      "archived_source": "perception_lab/reports/perception_weights_recovery_20261013/executed_downloader.py",
+      "archived_sha256": "17bb94563b77566a68bf4fd47970798c684714521829e4f77ed2b6b11d26f79c"
+    }
+  ],
+  "sanitization": "none required; fixed public source, public SHA, localhost proxy only",
+  "v1_status": "stopped after two RemoteDisconnected failures; all completed canonical blocks preserved; five unindexed completed blocks recovered with hashes",
+  "v2_status": "completed: remaining nine ranges acquired through Singapore task proxy, full independent source SHA matched, CPU parsed and atomic installed",
+  "reproduction_command": "RECOVERY_PROXY=http://127.0.0.1:19099 python perception_lab/reports/perception_weights_recovery_20261013/executed_downloader.py",
+  "proxy_prerequisite": "Authorized task-scoped local proxy; private node config intentionally excluded",
+  "core_helper_sha256": "38c80e6ec5ab39ed83593c5c6518e4e061f685e6c777562edecc206e2b280a79"
+}

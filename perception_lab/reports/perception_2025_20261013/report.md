@@ -5,8 +5,8 @@
 | 模块 | 当前状态 |
 |---|---|
 | deimv2 | partial |
-| harpnext | blocked_resource |
-| mambafusion | blocked_resource |
+| harpnext | partial |
+| mambafusion | partial |
 | grae3dmot | partial |
 
 ## 当前实测证据
@@ -16,14 +16,14 @@
 - DEIMv2-S tensorrt_fp16: 5000 images; AP=0.5080690341495484
 - GRAE frozen_reference/scene0061: 39 frames; AMOTA=0.8625687017631094; IDS=5.0
 - GRAE frozen_reference/mini_val: 81 frames; AMOTA=0.8229635568204605; IDS=13.0
+- GRAE mambafusion_native/scene0061: 39 frames; AMOTA=0.8739118773081327; IDS=3.0
+- GRAE mambafusion_native/mini_val: 81 frames; AMOTA=0.8497284519734606; IDS=19.0
 
 [完整指标 CSV](metrics.csv) · [JSON](metrics.json) · [状态](status.json) · [资源](resource_manifest.json) · [环境](environment.md)
 
 ## 阻塞与未完成项
 
-- harpnext: blocked_resource; Matching complete author nuScenes32x480 checkpoint not downloaded; see resource_manifest.json
-- mambafusion: blocked_resource; ["Complete author checkpoint unavailable: [Errno 2] No such file or directory: '/home/minglei/Desktop/CAR/perception_lab/checkpoints/mambafusion_2025/checkpoint_epoch_10.pth'", 'Drive streaming returned HTTP413: 391545251 bytes exceeds 268435456-byte connector limit; shell downloads incomplete.']
-- GRAE MambaFusion input branch has no measured mini_val tracking output
+无摘要层面阻塞；仍以各模块完整验收为准。
 
 ## 方法、诊断与采用决定
 
@@ -33,7 +33,7 @@ DEIM失败案例采用IoU0.5/score0.25独立诊断，不是AP：[案例](deimv2/
 
 ## 回放、复现与局限
 
-回放当前状态：**partial**。[本地入口](http://127.0.0.1:9094/perception_2025/) · [验收记录](visualization/status.json)。缺少的预测应显式显示缺失，不能沿用前帧。
+回放当前状态：**passed**。[本地入口](http://127.0.0.1:9094/perception_2025/) · [验收记录](visualization/status.json)。缺少的预测应显式显示缺失，不能沿用前帧。
 
 nuScenes仅mini教学诊断，预训练可能覆盖样本，不能视为全量独立泛化评价。COCO实际样本数见上表及image_ids。未测结果不填论文数字。原始数据、权重、第三方源码、环境及大型中间产物留本地。
 

@@ -1,0 +1,47 @@
+model,scope,samples,metric,value,source
+DEIMv2-S native,COCO val2017,5000,AP,0.5086100689592818,new_measured
+DEIMv2-S native,COCO val2017,5000,AP50,0.6831533654838128,new_measured
+DEIMv2-S native,COCO val2017,5000,AP75,0.5506000450744917,new_measured
+DEIMv2-S native,COCO val2017,5000,APs,0.3137841100273837,new_measured
+DEIMv2-S native,COCO val2017,5000,APm,0.5529168907219435,new_measured
+DEIMv2-S native,COCO val2017,5000,APl,0.7031043329781212,new_measured
+DEIMv2-S native,COCO val2017,5000,AR1,0.38317899169973346,new_measured
+DEIMv2-S native,COCO val2017,5000,AR10,0.6413325329882974,new_measured
+DEIMv2-S native,COCO val2017,5000,AR100,0.7032626776233042,new_measured
+DEIMv2-S native,COCO val2017,5000,ARs,0.5281377472442819,new_measured
+DEIMv2-S native,COCO val2017,5000,ARm,0.7548129305205904,new_measured
+DEIMv2-S native,COCO val2017,5000,ARl,0.8635586008255811,new_measured
+DEIMv2-S onnx,COCO val2017,5000,AP,0.5086092492645437,new_measured
+DEIMv2-S onnx,COCO val2017,5000,AP50,0.6831529849749391,new_measured
+DEIMv2-S onnx,COCO val2017,5000,AP75,0.5506000079960116,new_measured
+DEIMv2-S onnx,COCO val2017,5000,APs,0.3137840120171939,new_measured
+DEIMv2-S onnx,COCO val2017,5000,APm,0.5529172225114306,new_measured
+DEIMv2-S onnx,COCO val2017,5000,APl,0.7031043343723733,new_measured
+DEIMv2-S onnx,COCO val2017,5000,AR1,0.38317899169973346,new_measured
+DEIMv2-S onnx,COCO val2017,5000,AR10,0.6413318271723744,new_measured
+DEIMv2-S onnx,COCO val2017,5000,AR100,0.7032626235279232,new_measured
+DEIMv2-S onnx,COCO val2017,5000,ARs,0.5281359486831309,new_measured
+DEIMv2-S onnx,COCO val2017,5000,ARm,0.7548152157125466,new_measured
+DEIMv2-S onnx,COCO val2017,5000,ARl,0.8635586008255811,new_measured
+DEIMv2-S tensorrt_fp16,COCO val2017,5000,AP,0.5080690341495484,new_measured
+DEIMv2-S tensorrt_fp16,COCO val2017,5000,AP50,0.6829625032628075,new_measured
+DEIMv2-S tensorrt_fp16,COCO val2017,5000,AP75,0.5502467716829403,new_measured
+DEIMv2-S tensorrt_fp16,COCO val2017,5000,APs,0.3128785148806246,new_measured
+DEIMv2-S tensorrt_fp16,COCO val2017,5000,APm,0.5527847656113538,new_measured
+DEIMv2-S tensorrt_fp16,COCO val2017,5000,APl,0.7033714049065499,new_measured
+DEIMv2-S tensorrt_fp16,COCO val2017,5000,AR1,0.38326464029514684,new_measured
+DEIMv2-S tensorrt_fp16,COCO val2017,5000,AR10,0.6402406711741897,new_measured
+DEIMv2-S tensorrt_fp16,COCO val2017,5000,AR100,0.7023562674698743,new_measured
+DEIMv2-S tensorrt_fp16,COCO val2017,5000,ARs,0.5265892963959078,new_measured
+DEIMv2-S tensorrt_fp16,COCO val2017,5000,ARm,0.7528693569621931,new_measured
+DEIMv2-S tensorrt_fp16,COCO val2017,5000,ARl,0.8641657669451813,new_measured
+GRAE-3DMOT,scene0061 frozen_reference,39,amota,0.8625687017631094,new_measured
+GRAE-3DMOT,scene0061 frozen_reference,39,amotp,0.4048811070336119,new_measured
+GRAE-3DMOT,scene0061 frozen_reference,39,ids,5.0,new_measured
+GRAE-3DMOT,scene0061 frozen_reference,39,fp,67.0,new_measured
+GRAE-3DMOT,scene0061 frozen_reference,39,fn,104.0,new_measured
+GRAE-3DMOT,mini_val frozen_reference,81,amota,0.8229635568204605,new_measured
+GRAE-3DMOT,mini_val frozen_reference,81,amotp,0.43518577589429613,new_measured
+GRAE-3DMOT,mini_val frozen_reference,81,ids,13.0,new_measured
+GRAE-3DMOT,mini_val frozen_reference,81,fp,299.0,new_measured
+GRAE-3DMOT,mini_val frozen_reference,81,fn,400.0,new_measured

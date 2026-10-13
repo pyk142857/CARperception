@@ -1,0 +1,13 @@
+{
+  "evaluator": "pycocotools.cocoeval",
+  "implementation_path": "/home/minglei/Desktop/CAR/perception_lab/envs/nuscenes_eval/lib/python3.10/site-packages/pycocotools/cocoeval.py",
+  "implementation_sha256": "988485f79624cd42ceed9335d284df4cdcdf7b3d583e052fcbed2dd6bccf0267",
+  "images": 3,
+  "prediction_sha256": "91a178fe7941253fe6a483425c8466dd3df5468bb829b80bce4e4eed2652b186",
+  "max_dets": [
+    1,
+    10,
+    100
+  ],
+  "source": "new_measured"
+}

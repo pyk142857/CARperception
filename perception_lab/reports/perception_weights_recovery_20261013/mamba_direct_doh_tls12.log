@@ -1,0 +1,30 @@
+{"start": 1048576, "attempt": 0, "code": 28, "bytes": 0, "seconds": 10.01, "range_match": false}
+{"start": 0, "attempt": 0, "code": 28, "bytes": 0, "seconds": 10.01, "range_match": false}
+{"start": 524288, "attempt": 0, "code": 28, "bytes": 0, "seconds": 10.01, "range_match": false}
+{"start": 1572864, "attempt": 0, "code": 28, "bytes": 0, "seconds": 10.02, "range_match": false}
+{"start": 3145728, "attempt": 0, "code": 28, "bytes": 0, "seconds": 10.02, "range_match": false}
+{"start": 2621440, "attempt": 0, "code": 28, "bytes": 0, "seconds": 10.02, "range_match": false}
+{"start": 2097152, "attempt": 0, "code": 28, "bytes": 0, "seconds": 10.02, "range_match": false}
+{"start": 3670016, "attempt": 0, "code": 28, "bytes": 0, "seconds": 10.02, "range_match": false}
+{"start": 1048576, "attempt": 1, "code": 28, "bytes": 0, "seconds": 10.02, "range_match": false}
+{"start": 0, "attempt": 1, "code": 28, "bytes": 0, "seconds": 10.02, "range_match": false}
+{"start": 524288, "attempt": 1, "code": 28, "bytes": 0, "seconds": 10.02, "range_match": false}
+{"start": 3145728, "attempt": 1, "code": 28, "bytes": 0, "seconds": 10.02, "range_match": false}
+{"start": 1572864, "attempt": 1, "code": 28, "bytes": 0, "seconds": 10.02, "range_match": false}
+{"start": 2097152, "attempt": 1, "code": 28, "bytes": 0, "seconds": 10.02, "range_match": false}
+{"start": 3670016, "attempt": 1, "code": 28, "bytes": 0, "seconds": 10.02, "range_match": false}
+{"start": 2621440, "attempt": 1, "code": 28, "bytes": 0, "seconds": 10.02, "range_match": false}
+Traceback (most recent call last):
+  File "perception_lab/runs/weights_recovery_20261013/fetch_mamba_direct.py", line 28, in <module>
+    for i,path in enumerate(pool.map(fetch,starts)):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 619, in result_iterator
+    yield fs.pop().result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 444, in result
+    return self.__get_result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "perception_lab/runs/weights_recovery_20261013/fetch_mamba_direct.py", line 25, in fetch
+    raise RuntimeError('two no-progress attempts for range '+str(start))
+RuntimeError: two no-progress attempts for range 0

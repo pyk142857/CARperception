@@ -1,0 +1,149 @@
+[
+  {
+    "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+    "comparisons": [
+      {
+        "labels_mode": "zero",
+        "predictions_equal": true,
+        "changed_original_predictions": 0,
+        "network_inputs_equal": true,
+        "logits_max_abs": 0.000293731689453125,
+        "logits_allclose": true
+      },
+      {
+        "labels_mode": "zero",
+        "predictions_equal": true,
+        "changed_original_predictions": 0,
+        "network_inputs_equal": true,
+        "logits_max_abs": 0.0003070831298828125,
+        "logits_allclose": true
+      },
+      {
+        "labels_mode": "actual",
+        "predictions_equal": true,
+        "changed_original_predictions": 0,
+        "network_inputs_equal": true,
+        "logits_max_abs": 0.0002994537353515625,
+        "logits_allclose": true
+      },
+      {
+        "labels_mode": "permuted",
+        "predictions_equal": true,
+        "changed_original_predictions": 0,
+        "network_inputs_equal": true,
+        "logits_max_abs": 0.0002994537353515625,
+        "logits_allclose": true
+      },
+      {
+        "labels_mode": "zero",
+        "predictions_equal": true,
+        "changed_original_predictions": 0,
+        "network_inputs_equal": true,
+        "logits_max_abs": 0.0003070831298828125,
+        "logits_allclose": true
+      }
+    ],
+    "repeated_zero_max_abs": 0.0003070831298828125,
+    "network_inputs_exactly_identical": true,
+    "status": "passed",
+    "interpretation": "Identical network inputs establish GT isolation; repeated zero controls quantify CUDA numerical variation."
+  },
+  {
+    "sample_token": "b26e791522294bec90f86fd72226e35c",
+    "comparisons": [
+      {
+        "labels_mode": "zero",
+        "predictions_equal": true,
+        "changed_original_predictions": 0,
+        "network_inputs_equal": true,
+        "logits_max_abs": 0.00023937225341796875,
+        "logits_allclose": true
+      },
+      {
+        "labels_mode": "zero",
+        "predictions_equal": true,
+        "changed_original_predictions": 0,
+        "network_inputs_equal": true,
+        "logits_max_abs": 0.0001659393310546875,
+        "logits_allclose": true
+      },
+      {
+        "labels_mode": "actual",
+        "predictions_equal": true,
+        "changed_original_predictions": 0,
+        "network_inputs_equal": true,
+        "logits_max_abs": 0.0001678466796875,
+        "logits_allclose": true
+      },
+      {
+        "labels_mode": "permuted",
+        "predictions_equal": true,
+        "changed_original_predictions": 0,
+        "network_inputs_equal": true,
+        "logits_max_abs": 0.00012302398681640625,
+        "logits_allclose": true
+      },
+      {
+        "labels_mode": "zero",
+        "predictions_equal": true,
+        "changed_original_predictions": 0,
+        "network_inputs_equal": true,
+        "logits_max_abs": 0.00017547607421875,
+        "logits_allclose": true
+      }
+    ],
+    "repeated_zero_max_abs": 0.00023937225341796875,
+    "network_inputs_exactly_identical": true,
+    "status": "passed",
+    "interpretation": "Identical network inputs establish GT isolation; repeated zero controls quantify CUDA numerical variation."
+  },
+  {
+    "sample_token": "ed5fc18c31904f96a8f0dbb99ff069c0",
+    "comparisons": [
+      {
+        "labels_mode": "zero",
+        "predictions_equal": true,
+        "changed_original_predictions": 0,
+        "network_inputs_equal": true,
+        "logits_max_abs": 0.00012969970703125,
+        "logits_allclose": true
+      },
+      {
+        "labels_mode": "zero",
+        "predictions_equal": true,
+        "changed_original_predictions": 0,
+        "network_inputs_equal": true,
+        "logits_max_abs": 0.00014495849609375,
+        "logits_allclose": true
+      },
+      {
+        "labels_mode": "actual",
+        "predictions_equal": true,
+        "changed_original_predictions": 0,
+        "network_inputs_equal": true,
+        "logits_max_abs": 0.00013256072998046875,
+        "logits_allclose": true
+      },
+      {
+        "labels_mode": "permuted",
+        "predictions_equal": true,
+        "changed_original_predictions": 0,
+        "network_inputs_equal": true,
+        "logits_max_abs": 0.00012969970703125,
+        "logits_allclose": true
+      },
+      {
+        "labels_mode": "zero",
+        "predictions_equal": true,
+        "changed_original_predictions": 0,
+        "network_inputs_equal": true,
+        "logits_max_abs": 0.00012111663818359375,
+        "logits_allclose": true
+      }
+    ],
+    "repeated_zero_max_abs": 0.00014495849609375,
+    "network_inputs_exactly_identical": true,
+    "status": "passed",
+    "interpretation": "Identical network inputs establish GT isolation; repeated zero controls quantify CUDA numerical variation."
+  }
+]

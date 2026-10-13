@@ -1,0 +1,76 @@
+{
+  "harpnext": {
+    "path": "perception_lab/checkpoints/harpnext_2025/ckpt_best.pth",
+    "bytes": 64865210,
+    "sha256": "6f7fc5a1c03e9123541458358b1c703babf37ffc0b8b4ea6beac6c9f8478a147",
+    "cpu_parse": {
+      "root_keys": [
+        "epoch",
+        "net",
+        "optim",
+        "scheduler",
+        "scaler",
+        "best_miou"
+      ],
+      "state_entries": 293,
+      "device": "cpu"
+    },
+    "atomic_install": true,
+    "installed_unix": 1791876399.4315033,
+    "source": {
+      "url": "https://huggingface.co/samir-abh/HARP-NeXt/resolve/c2cd3ce5940be23bfbc2d1cf22131fd2fd3dc149/harpnext-nuscenes-32x480/ckpt_best.pth?download=true",
+      "revision": "c2cd3ce5940be23bfbc2d1cf22131fd2fd3dc149",
+      "size": 64865210,
+      "sha256": "6f7fc5a1c03e9123541458358b1c703babf37ffc0b8b4ea6beac6c9f8478a147",
+      "filename": "ckpt_best.pth",
+      "key": "net"
+    },
+    "route": "author_direct_http_ranges_via_task_scoped_proxy",
+    "relay_sha256": null,
+    "author_hash_available": true,
+    "installer_reported_route": "proxy",
+    "task_proxy_routes": [
+      "Japan 127.0.0.1:19098"
+    ],
+    "relay_artifact_payload_used": false,
+    "independent_source_manifest": "relay_source_manifest.json",
+    "source_hash_comparison": "Hub LFS official hash and Actions source hash agree"
+  },
+  "mambafusion": {
+    "path": "perception_lab/checkpoints/mambafusion_2025/checkpoint_epoch_10.pth",
+    "bytes": 391545251,
+    "sha256": "d2454354b762a5a4b0b85af8b23c4b1f63da9357af7160aa313bc689a8d11ea6",
+    "cpu_parse": {
+      "root_keys": [
+        "epoch",
+        "it",
+        "model_state",
+        "optimizer_state",
+        "version"
+      ],
+      "state_entries": 1403,
+      "device": "cpu"
+    },
+    "atomic_install": true,
+    "installed_unix": 1791877242.2947268,
+    "source": {
+      "url": "https://drive.usercontent.google.com/download?id=10-FBWHbsCMJseKovJwGKncJ96Flp3umM&export=download&confirm=t",
+      "file_id": "10-FBWHbsCMJseKovJwGKncJ96Flp3umM",
+      "size": 391545251,
+      "sha256": null,
+      "filename": "checkpoint_epoch_10.pth",
+      "key": "model_state"
+    },
+    "route": "author_direct_http_ranges_via_task_scoped_proxy",
+    "relay_sha256": "d2454354b762a5a4b0b85af8b23c4b1f63da9357af7160aa313bc689a8d11ea6",
+    "author_hash_available": false,
+    "installer_reported_route": "relay",
+    "task_proxy_routes": [
+      "Japan 127.0.0.1:19098",
+      "Singapore 127.0.0.1:19099"
+    ],
+    "relay_artifact_payload_used": false,
+    "independent_source_manifest": "relay_source_manifest.json",
+    "source_hash_comparison": "Local entire file SHA256 equals independent GitHub Actions entire author-source file SHA256; no official author hash available"
+  }
+}

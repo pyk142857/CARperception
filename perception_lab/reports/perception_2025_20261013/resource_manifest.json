@@ -8,19 +8,19 @@
     },
     "harpnext": {
       "manifest": "harpnext/resource_manifest.json",
-      "sha256": "ac6fb8ec9ec27bcbadfab760f0244ce515980a6b4c5e496e5122e2919d483af8",
+      "sha256": "aed1b96ddf71da8352b8d30919ae28b9a5a9035c9cf920d09ecb90824ce25860",
       "source_commit": "532df2659700ae870c0e0d4137a4d35bcc9903b9",
       "checkpoint": "checkpoints/harpnext_2025/ckpt_best.pth"
     },
     "mambafusion": {
       "manifest": "mambafusion/resource_manifest.json",
-      "sha256": "b5b546e107239f54328917de69ffdfbc5ec718c210ae4ba6da63eeeae6b45600",
+      "sha256": "124aa18763bbcdcfb4286d8cb26e3b1ea03b1d7858492fc5cc4abcef7208bf11",
       "source_commit": "d85c2feeb19207b20e42d50421afb11c095f3efa",
       "checkpoint": "checkpoints/mambafusion_2025/checkpoint_epoch_10.pth"
     },
     "grae3dmot": {
       "manifest": "grae3dmot/resource_manifest.json",
-      "sha256": "869e13b452d9ca7bd3ab842d14e0996cf4ff7b49fb4c706acd89518b291a22cd",
+      "sha256": "8b2bae0b411926d763306b855b98cb1f752cceb02eea433b15645d6401efcdcc",
       "source_commit": "63def8bde5e199a4e77fdf4fab76a4b3511fe132",
       "checkpoint": "checkpoints/grae3dmot_2025/model.pth"
     }

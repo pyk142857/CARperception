@@ -1,0 +1,55 @@
+{
+  "inputs": [
+    {
+      "name": "images",
+      "type": "tensor(float)",
+      "shape": [
+        "N",
+        3,
+        640,
+        640
+      ]
+    },
+    {
+      "name": "orig_target_sizes",
+      "type": "tensor(int64)",
+      "shape": [
+        "N",
+        2
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "name": "labels",
+      "type": "tensor(int64)",
+      "shape": [
+        "Sublabels_dim_0",
+        "Sublabels_dim_1"
+      ]
+    },
+    {
+      "name": "boxes",
+      "type": "tensor(float)",
+      "shape": [
+        "GatherElementsboxes_dim_0",
+        "GatherElementsboxes_dim_1",
+        "Sublabels_dim_0"
+      ]
+    },
+    {
+      "name": "scores",
+      "type": "tensor(float)",
+      "shape": [
+        "GatherElementsboxes_dim_0",
+        "GatherElementsboxes_dim_1"
+      ]
+    }
+  ],
+  "runtime": "1.16.3",
+  "providers": [
+    "CUDAExecutionProvider",
+    "CPUExecutionProvider"
+  ],
+  "model_sha256": "0df8b3ec31c6e99a6ccdb1059b9c9dacb1d12623f48688787b6094beea74d8a9"
+}

@@ -1,149 +1,49 @@
 {
   "model": "MambaFusion",
-  "status": "blocked_resource",
+  "status": "partial",
   "phase": "run",
   "source": "new_measured",
-  "frames_inferred": 0,
-  "strict_load": null,
-  "official_metrics": null,
-  "blockers": [
-    "Complete author checkpoint unavailable: [Errno 2] No such file or directory: '/home/minglei/Desktop/CAR/perception_lab/checkpoints/mambafusion_2025/checkpoint_epoch_10.pth'",
-    "Drive streaming returned HTTP413: 391545251 bytes exceeds 268435456-byte connector limit; shell downloads incomplete."
-  ],
-  "gpu_inference_executed": false,
-  "gpu_operator_smoke": {
-    "torch": "2.1.2+cu118",
-    "runtime": "11.8",
-    "gpu": "NVIDIA GeForce RTX 4090",
-    "capability": [
-      8,
-      9
-    ],
-    "operators": {
-      "selective_scan_cuda_core": {
-        "passed": true,
-        "shape": [
-          1,
-          4,
-          16
-        ],
-        "max_abs_error_to_analytic_recurrence": 0.0
-      },
-      "selective_scan_cuda_oflex": {
-        "passed": true,
-        "shape": [
-          1,
-          4,
-          16
-        ],
-        "max_abs_error_to_analytic_recurrence": 0.0
-      },
-      "selective_scan_cuda_ndstate": {
-        "passed": true,
-        "shape": [
-          1,
-          4,
-          16
-        ],
-        "max_abs_error_to_analytic_recurrence": 0.0
-      },
-      "selective_scan_cuda": {
-        "passed": true,
-        "shape": [
-          1,
-          4,
-          16
-        ],
-        "max_abs_error_to_analytic_recurrence": 0.0
-      },
-      "iou3d_nms_cuda": {
-        "passed": true,
-        "iou": [
-          [
-            1.0,
-            0.0
-          ],
-          [
-            0.0,
-            1.0
-          ]
-        ]
-      },
-      "roiaware_pool3d_cuda": {
-        "passed": true,
-        "indices": [
-          [
-            0,
-            1,
-            -1
-          ]
-        ]
-      },
-      "flattened_window_cuda": {
-        "passed": true,
-        "outputs": [
-          {
-            "shape": [
-              3
-            ],
-            "dtype": "torch.int64"
-          },
-          {
-            "shape": [
-              3
-            ],
-            "dtype": "torch.int64"
-          },
-          {
-            "shape": [
-              3,
-              3
-            ],
-            "dtype": "torch.int64"
-          }
-        ]
-      },
-      "torch_scatter_mean": {
-        "passed": true,
-        "output": [
-          2.0,
-          5.0
-        ]
-      },
-      "spconv_submconv3d": {
-        "passed": true,
-        "output": [
-          [
-            3.0
-          ],
-          [
-            3.0
-          ]
-        ],
-        "scope": "unit operator with explicit all-one kernel, not detector inference"
-      },
-      "spconv_point_to_voxel": {
-        "passed": true,
-        "coordinates_zyx": [
-          [
-            20,
-            180,
-            183
-          ],
-          [
-            20,
-            180,
-            180
-          ]
-        ],
-        "point_counts": [
-          1,
-          2
-        ]
+  "frames_inferred": 120,
+  "strict_load": "passed",
+  "inference": "passed",
+  "official_metrics": {
+    "scene0061": {
+      "frames": 39,
+      "prediction_sha256": "985241700c321a409acba4c46e7800239b793998530ee11ae613ca40feddd5a1",
+      "metrics_sha256": "51a0f220cf9142b4dbf62b23c25d48d116bb7288b55bb4193703a3ce9b6a069d",
+      "mean_ap": 0.7279752319124936,
+      "nd_score": 0.6738776961599682,
+      "tp_errors": {
+        "trans_err": 0.2992746396588843,
+        "scale_err": 0.3229434525170288,
+        "orient_err": 0.3342022792129312,
+        "vel_err": 0.34461296327638985,
+        "attr_err": 0.6000658632975517
       }
     },
-    "peak_gpu_bytes": 15872
+    "mini_val": {
+      "frames": 81,
+      "prediction_sha256": "4211c573e54e09bdd8e4df3d81326513f4b4b9d2593c70471c16b08ac2b39a05",
+      "metrics_sha256": "473a4ca4cca8fe22823af036c9602d19e9e6c086ec1f3f4ce0763bae1014371b",
+      "mean_ap": 0.5889794050098823,
+      "nd_score": 0.5957750804833165,
+      "tp_errors": {
+        "trans_err": 0.3966954560190631,
+        "scale_err": 0.43013743983436237,
+        "orient_err": 0.44599896936902905,
+        "vel_err": 0.42439859684917647,
+        "attr_err": 0.28991575814461545
+      }
+    }
   },
-  "frames_preprocessed": 6,
-  "adoption": "not deployed; native model requires strict load and operator/frame validation"
+  "blockers": [],
+  "gpu_inference_executed": true,
+  "adoption": "native mini evaluation complete; repeat nondeterminism retained; no optimization adoption",
+  "official_evaluation": "passed",
+  "visualization": "passed",
+  "limitations": [
+    "Native repeat consistency budget failed; diagnostic continuation explicitly reviewed",
+    "Mini/pretraining overlap possible; not full validation",
+    "Instrumented timing and external GPU activity; not exclusive benchmark"
+  ]
 }

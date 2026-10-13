@@ -1,0 +1,53 @@
+{"completed_blocks": 15, "total_blocks": 24, "verified_bytes": 251658240, "seconds": 0.03}
+{"completed_blocks": 15, "total_blocks": 24, "verified_bytes": 251658240, "seconds": 0.04}
+{"completed_blocks": 15, "total_blocks": 24, "verified_bytes": 251658240, "seconds": 0.06}
+{"completed_blocks": 15, "total_blocks": 24, "verified_bytes": 251658240, "seconds": 0.07}
+{"completed_blocks": 15, "total_blocks": 24, "verified_bytes": 251658240, "seconds": 0.08}
+{"completed_blocks": 15, "total_blocks": 24, "verified_bytes": 251658240, "seconds": 0.09}
+{"completed_blocks": 15, "total_blocks": 24, "verified_bytes": 251658240, "seconds": 0.11}
+{"completed_blocks": 15, "total_blocks": 24, "verified_bytes": 251658240, "seconds": 0.12}
+{"completed_blocks": 15, "total_blocks": 24, "verified_bytes": 251658240, "seconds": 0.14}
+{"completed_blocks": 15, "total_blocks": 24, "verified_bytes": 251658240, "seconds": 0.15}
+{"completed_blocks": 15, "total_blocks": 24, "verified_bytes": 251658240, "seconds": 0.16}
+{"completed_blocks": 15, "total_blocks": 24, "verified_bytes": 251658240, "seconds": 0.17}
+{"completed_blocks": 15, "total_blocks": 24, "verified_bytes": 251658240, "seconds": 0.19}
+{"completed_blocks": 15, "total_blocks": 24, "verified_bytes": 251658240, "seconds": 0.2}
+{"completed_blocks": 15, "total_blocks": 24, "verified_bytes": 251658240, "seconds": 0.21}
+{"completed_blocks": 16, "total_blocks": 24, "verified_bytes": 268435456, "seconds": 18.12}
+{"completed_blocks": 17, "total_blocks": 24, "verified_bytes": 285212672, "seconds": 20.78}
+{"completed_blocks": 18, "total_blocks": 24, "verified_bytes": 301989888, "seconds": 20.79}
+{"completed_blocks": 19, "total_blocks": 24, "verified_bytes": 318767104, "seconds": 20.8}
+{"completed_blocks": 20, "total_blocks": 24, "verified_bytes": 335544320, "seconds": 21.1}
+{"completed_blocks": 21, "total_blocks": 24, "verified_bytes": 352321536, "seconds": 21.12}
+{"completed_blocks": 22, "total_blocks": 24, "verified_bytes": 369098752, "seconds": 21.13}
+{"completed_blocks": 23, "total_blocks": 24, "verified_bytes": 385875968, "seconds": 21.14}
+{"completed_blocks": 24, "total_blocks": 24, "verified_bytes": 391545251, "seconds": 22.95}
+{
+  "path": "perception_lab/checkpoints/mambafusion_2025/checkpoint_epoch_10.pth",
+  "bytes": 391545251,
+  "sha256": "d2454354b762a5a4b0b85af8b23c4b1f63da9357af7160aa313bc689a8d11ea6",
+  "cpu_parse": {
+    "root_keys": [
+      "epoch",
+      "it",
+      "model_state",
+      "optimizer_state",
+      "version"
+    ],
+    "state_entries": 1403,
+    "device": "cpu"
+  },
+  "atomic_install": true,
+  "installed_unix": 1791877242.2947268,
+  "source": {
+    "url": "https://drive.usercontent.google.com/download?id=10-FBWHbsCMJseKovJwGKncJ96Flp3umM&export=download&confirm=t",
+    "file_id": "10-FBWHbsCMJseKovJwGKncJ96Flp3umM",
+    "size": 391545251,
+    "sha256": null,
+    "filename": "checkpoint_epoch_10.pth",
+    "key": "model_state"
+  },
+  "route": "relay",
+  "relay_sha256": "d2454354b762a5a4b0b85af8b23c4b1f63da9357af7160aa313bc689a8d11ea6",
+  "author_hash_available": false
+}

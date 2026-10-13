@@ -1,0 +1,29 @@
+{
+  "status": "partial",
+  "images": 5000,
+  "metrics": {
+    "AP": 0.5080690341495484,
+    "AP50": 0.6829625032628075,
+    "AP75": 0.5502467716829403,
+    "APs": 0.3128785148806246,
+    "APm": 0.5527847656113538,
+    "APl": 0.7033714049065499,
+    "AR1": 0.38326464029514684,
+    "AR10": 0.6402406711741897,
+    "AR100": 0.7023562674698743,
+    "ARs": 0.5265892963959078,
+    "ARm": 0.7528693569621931,
+    "ARl": 0.8641657669451813
+  },
+  "ap_drop": 0.0005410348097334428,
+  "ap_budget_pass": true,
+  "ap_comparison_same_image_ids": true,
+  "geometry": "all_image_geometry.json.gz and geometry_summary.json; all images checked; low-score candidate ordering may differ",
+  "engine_sha256": "3c38751c077fcdc41042d9118e925899b3cb39614073ad1011559aebdc604088",
+  "prediction_sha256": "48d70865305d15fdd3d554042c5c65ff2fdf92a7c4d7dc758c4456c0cc965649",
+  "gpu_device_used_peak_bytes": 2489384960,
+  "gpu_memory_scope": "device total used including TensorRT and other resident processes; sampled at inference completion",
+  "ram_peak_kib": 4381196,
+  "timing_limit": "unpaired sequence; paired benchmarking separately",
+  "source": "new_measured"
+}

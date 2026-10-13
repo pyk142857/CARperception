@@ -1,0 +1,29 @@
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
+Collecting huggingface_hub
+  Downloading https://mirrors.aliyun.com/pypi/packages/a8/af/48ac8483240de756d2438c380746e7130d1c6f75802ef22f3c6d49982787/huggingface_hub-0.36.2-py3-none-any.whl (566 kB)
+Collecting hf-xet<2.0.0,>=1.1.3; platform_machine == "x86_64" or platform_machine == "amd64" or platform_machine == "arm64" or platform_machine == "aarch64"
+  Downloading https://mirrors.aliyun.com/pypi/packages/a3/4c/2bf3b66c215d409655f28de1622393dde04c9461280d48c7924bb3b2decd/hf_xet-1.7.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.2 MB)
+Collecting packaging>=20.9
+  Downloading https://mirrors.aliyun.com/pypi/packages/df/b2/87e62e8c3e2f4b32e5fe99e0b86d576da1312593b39f47d8ceef365e95ed/packaging-26.2-py3-none-any.whl (100 kB)
+Collecting typing-extensions>=3.7.4.3
+  Downloading https://mirrors.aliyun.com/pypi/packages/8b/54/b1ae86c0973cc6f0210b53d508ca3641fb6d0c56823f288d108bc7ab3cc8/typing_extensions-4.13.2-py3-none-any.whl (45 kB)
+Collecting fsspec>=2023.5.0
+  Downloading https://mirrors.aliyun.com/pypi/packages/56/53/eb690efa8513166adef3e0669afd31e95ffde69fb3c52ec2ac7223ed6018/fsspec-2025.3.0-py3-none-any.whl (193 kB)
+Collecting tqdm>=4.42.1
+  Downloading https://mirrors.aliyun.com/pypi/packages/a7/03/921a3d3c75785aca9ebfbfcabfbc3a1be12e2ab5265deb026d55a5a3f83e/tqdm-4.70.1-py3-none-any.whl (80 kB)
+Collecting filelock
+  Downloading https://mirrors.aliyun.com/pypi/packages/b9/f8/feced7779d755758a52d1f6635d990b8d98dc0a29fa568bbe0625f18fdf3/filelock-3.16.1-py3-none-any.whl (16 kB)
+Collecting pyyaml>=5.1
+  Downloading https://mirrors.aliyun.com/pypi/packages/25/a2/b725b61ac76a75583ae7104b3209f75ea44b13cfd026aa535ece22b7f22e/PyYAML-6.0.3-cp38-cp38-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (806 kB)
+Collecting requests
+  Downloading https://mirrors.aliyun.com/pypi/packages/7c/e4/56027c4a6b4ae70ca9de302488c5ca95ad4a39e190093d6c1a8ace08341b/requests-2.32.4-py3-none-any.whl (64 kB)
+Collecting urllib3<3,>=1.21.1
+  Downloading https://mirrors.aliyun.com/pypi/packages/ce/d9/5f4c13cecde62396b0d3fe530a50ccea91e7dfc1ccf0e09c228841bb5ba8/urllib3-2.2.3-py3-none-any.whl (126 kB)
+Collecting certifi>=2017.4.17
+  Downloading https://mirrors.aliyun.com/pypi/packages/0b/a7/71ac2cff56fec219ed242bb11b8efb69fcc4bec75db06fb7bfe35de520e6/certifi-2026.7.22-py3-none-any.whl (136 kB)
+Collecting charset_normalizer<4,>=2
+  Downloading https://mirrors.aliyun.com/pypi/packages/7e/84/371eac6b30bdbcbf2d632a1a01809103459216fcaae61b8b8d922c1bfb8a/charset_normalizer-3.5.2-cp37-abi3-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (253 kB)
+Collecting idna<4,>=2.5
+  Downloading https://mirrors.aliyun.com/pypi/packages/d2/23/408243171aa9aaba178d3e2559159c24c1171a641aa83b67bdd3394ead8e/idna-3.15-py3-none-any.whl (72 kB)
+Installing collected packages: hf-xet, packaging, typing-extensions, fsspec, tqdm, filelock, pyyaml, urllib3, certifi, charset-normalizer, idna, requests, huggingface-hub
+Successfully installed certifi-2026.7.22 charset-normalizer-3.5.2 filelock-3.16.1 fsspec-2025.3.0 hf-xet-1.7.0 huggingface-hub-0.36.2 idna-3.15 packaging-26.2 pyyaml-6.0.3 requests-2.32.4 tqdm-4.70.1 typing-extensions-4.13.2 urllib3-2.2.3

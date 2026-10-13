@@ -1,0 +1,18 @@
+[
+  {
+    "start": 385875968,
+    "end": 391545250,
+    "total": 391545251,
+    "attempt": 0,
+    "time_unix": 1791877234.8447442,
+    "route": "http://127.0.0.1:19099",
+    "status": 206,
+    "bytes_received": 5669283,
+    "content_range": {
+      "start": 385875968,
+      "end": 391545250,
+      "total": 391545251
+    },
+    "result": "verified_complete_block"
+  }
+]

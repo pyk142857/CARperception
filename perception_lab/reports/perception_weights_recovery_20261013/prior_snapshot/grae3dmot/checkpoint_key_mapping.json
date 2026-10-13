@@ -1,0 +1,161 @@
+{
+  "scope": "exact module attribute prefix only; no permutation, cast, dropped or invented tensor",
+  "pairs": [
+    {
+      "original": "spatial_mfl._layer.weight",
+      "target": "spatial_dffl._layer.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "sha256": "49be34c997fb4581873376353198df22672f03e6605a8f9550ea524c7b631ab9",
+      "loaded_bytes_equal": true
+    },
+    {
+      "original": "spatial_mfl._layer.bias",
+      "target": "spatial_dffl._layer.bias",
+      "shape": [
+        128
+      ],
+      "sha256": "db3fb89b8d2e7fcb1d1712ac3ec64c9f5f0aefd2abf0e1385171f01c4f82e351",
+      "loaded_bytes_equal": true
+    },
+    {
+      "original": "spatial_mfl.reduce.0.weight",
+      "target": "spatial_dffl.reduce.0.weight",
+      "shape": [
+        128,
+        1
+      ],
+      "sha256": "c02077abd88201b06ab197fb5be308299912ac2055dab7b762aeba7c289a75b2",
+      "loaded_bytes_equal": true
+    },
+    {
+      "original": "spatial_mfl.reduce.0.bias",
+      "target": "spatial_dffl.reduce.0.bias",
+      "shape": [
+        128
+      ],
+      "sha256": "0827cb65f88d3c410a210ecf8c42844f92416e3136b350765a538ab763067fcf",
+      "loaded_bytes_equal": true
+    },
+    {
+      "original": "spatial_mfl.gamma.weight",
+      "target": "spatial_dffl.gamma.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "sha256": "aea9e3271be6d9c0b7b25b96934ebe23d9879e2ffd20f4ea5ec1cef4f67886e0",
+      "loaded_bytes_equal": true
+    },
+    {
+      "original": "spatial_mfl.gamma.bias",
+      "target": "spatial_dffl.gamma.bias",
+      "shape": [
+        128
+      ],
+      "sha256": "f8a6cf96405d878afbe4906ea5769e3e32f4f4fadca90a93fb909e5453e8994a",
+      "loaded_bytes_equal": true
+    },
+    {
+      "original": "spatial_mfl.beta.weight",
+      "target": "spatial_dffl.beta.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "sha256": "e152ab7e6d3a184000e08c730090afef393fcabbeb2ff012e5034edebf8e4314",
+      "loaded_bytes_equal": true
+    },
+    {
+      "original": "spatial_mfl.beta.bias",
+      "target": "spatial_dffl.beta.bias",
+      "shape": [
+        128
+      ],
+      "sha256": "2f77d3e32218622f0c3fd5eeb9be3c11da140407f30e458a337fba46b4738cf8",
+      "loaded_bytes_equal": true
+    },
+    {
+      "original": "temporal_mfl._layer.weight",
+      "target": "temporal_dffl._layer.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "sha256": "e8114340ce1fd26f008bc048d0fccd97460b1b796e6ce34dc997cd23e31eba1e",
+      "loaded_bytes_equal": true
+    },
+    {
+      "original": "temporal_mfl._layer.bias",
+      "target": "temporal_dffl._layer.bias",
+      "shape": [
+        128
+      ],
+      "sha256": "163fe16868e62fef4cd299e8e62c1f014e8085651f79d0c6e846157066ccc918",
+      "loaded_bytes_equal": true
+    },
+    {
+      "original": "temporal_mfl.reduce.0.weight",
+      "target": "temporal_dffl.reduce.0.weight",
+      "shape": [
+        128,
+        1
+      ],
+      "sha256": "57ab2302074729eabe260195ee00024504107c8bfbd7d3aae1bb0e00e250f87b",
+      "loaded_bytes_equal": true
+    },
+    {
+      "original": "temporal_mfl.reduce.0.bias",
+      "target": "temporal_dffl.reduce.0.bias",
+      "shape": [
+        128
+      ],
+      "sha256": "d05c7a95521b3eece967c6205836852e7dd3822101491ef05014c7a2b82cd7fd",
+      "loaded_bytes_equal": true
+    },
+    {
+      "original": "temporal_mfl.gamma.weight",
+      "target": "temporal_dffl.gamma.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "sha256": "aace8b8fcf51d32ea472e861f494eefbe7f6a02143462a0140ad49d0cbd23a0d",
+      "loaded_bytes_equal": true
+    },
+    {
+      "original": "temporal_mfl.gamma.bias",
+      "target": "temporal_dffl.gamma.bias",
+      "shape": [
+        128
+      ],
+      "sha256": "99d8ca1f4078f02d8242e4b0a9fb6e79c58dd52816bfb6f6cd184c9c35510a01",
+      "loaded_bytes_equal": true
+    },
+    {
+      "original": "temporal_mfl.beta.weight",
+      "target": "temporal_dffl.beta.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "sha256": "9a2116f8c598f72f661464b0052baaac9ab33fb396d621efde159696f454bd9a",
+      "loaded_bytes_equal": true
+    },
+    {
+      "original": "temporal_mfl.beta.bias",
+      "target": "temporal_dffl.beta.bias",
+      "shape": [
+        128
+      ],
+      "sha256": "5e47812518093dfae5f98978cbadb42be0e23a002a282616f5c77071547397ff",
+      "loaded_bytes_equal": true
+    }
+  ],
+  "all_loaded_tensors_equal_source": true,
+  "tensor_count": 162,
+  "source_module_type": "Both target named spatial_dffl/temporal_dffl are DFFL(in_channels128,dist1,out128), each with _layer/reduce/gamma/beta",
+  "first_unadapted_strict_failure": "strict_load_initial_failure.log"
+}

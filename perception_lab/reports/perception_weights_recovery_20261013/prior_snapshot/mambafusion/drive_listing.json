@@ -1,0 +1,39 @@
+[
+  {
+    "listing": "checkpoint",
+    "ids": [
+      "1huzbUotusvePvsR-DyGJc6qfX0Cwubvd",
+      "10-FBWHbsCMJseKovJwGKncJ96Flp3umM",
+      "1g_5gvcQuwBLFsBD2yiMakENbH_v_R6bX",
+      "14B1iJO0tMIcO5hGfkXug3glN7DVh1iFN"
+    ],
+    "labels": [
+      "hilbert_template Shared folder",
+      "checkpoint_epoch_10.pth Binary Shared",
+      "Size: 373.4 MB\nStorage used: 373.4 MB",
+      "pretrained.pth Compressed archive Shared",
+      "Size: 456.9 MB\nStorage used: 456.9 MB",
+      "train_log_20241103.log Text Shared",
+      "Size: 795 KB\nStorage used: 795 KB"
+    ]
+  },
+  {
+    "listing": "hilbert",
+    "ids": [
+      "1L-wR7AQXeETadvLt2caTfjo14rQU1qPH",
+      "1dZzGjh49QIFIy_RZqu9RPKa-tMf4sKhL",
+      "1jAlTX9khmenWsYUxhoNG0WI2Xx9sMrSM",
+      "1G0pYcB4eHEoOL0EUCf2DTEWL-9nxEGjX"
+    ],
+    "labels": [
+      "curve_template_3d_rank_7.pth Compressed archive Shared",
+      "Size: 16 MB\nStorage used: 16 MB",
+      "curve_template_3d_rank_8.pth Compressed archive Shared",
+      "Size: 128 MB\nStorage used: 128 MB",
+      "curve_template_3d_rank_9.pth Compressed archive Shared",
+      "Size: 1 GB\nStorage used: 1 GB",
+      "curve_template_3d_rank_10.pth Compressed archive Shared",
+      "Size: 8 MB\nStorage used: 8 MB"
+    ]
+  }
+]

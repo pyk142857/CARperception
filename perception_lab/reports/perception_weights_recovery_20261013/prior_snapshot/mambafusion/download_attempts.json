@@ -1,0 +1,31 @@
+{
+  "checkpoint_expected_bytes": 391545251,
+  "checkpoint_id": "10-FBWHbsCMJseKovJwGKncJ96Flp3umM",
+  "attempts": [
+    {
+      "method": "gdown via configured HTTP proxy",
+      "result": "ProxyError RemoteDisconnected"
+    },
+    {
+      "method": "gdown direct",
+      "result": "timeout"
+    },
+    {
+      "method": "curl drive.usercontent download and resume",
+      "result": "timeout; incomplete bytes only"
+    },
+    {
+      "method": "curl proxy/direct HTTP Range",
+      "result": "TLS/connect timeouts; no complete range"
+    },
+    {
+      "method": "Drive connector inline compatibility",
+      "result": "failed to serialize JavaScript value: expected value at line 1 column 1; no payload materialized"
+    },
+    {
+      "method": "Drive connector streamed raw file",
+      "result": "HTTP413:391545251 bytes exceeds268435456-byte limit"
+    }
+  ],
+  "checkpoint_complete": false
+}

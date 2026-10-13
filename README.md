@@ -1,17 +1,21 @@
 # CARperception
 
-## 2026-10-13：2025 方法部署实测（部分完成）
+## 2026-10-13：2025 方法权重恢复与 mini 整网评价
 
-当前候选为 **DEIMv2-S、MambaFusion、GRAE-3DMOT、HARP-NeXt**，覆盖2D检测、相机–LiDAR融合3D检测、学习式3D跟踪、点云语义分割。沿用现有COCO、nuScenes mini及lidarseg标签。
+本轮使用作者真实权重完成 **MambaFusion → GRAE-3DMOT** 检测跟踪及 **HARP-NeXt** 点云语义分割。DEIMv2-S 既有 COCO5000/mini 六相机结果保留，本轮未重跑。
 
-- [当前补充指令：权重恢复与整网评价](perception_lab/instruction/20261013_02_weights_recovery_full_evaluation.md)：HARP使用已核验的固定Hub权重，Mamba使用实测Range端点/分段中转，补齐官方评价和新检测→GRAE。**指令已发布，完整下载与新GPU实验尚未执行。**
-- [来源与首尾传输探测记录](perception_lab/reports/perception_weights_recovery_20261013/source_probe.json)
-- [基础部署指令](perception_lab/instruction/20261013_01_2025_perception_deployment.md)
-- [选型、官方资源及部署检查](perception_lab/reports/perception_2025_20261013/plan.md)
-- [实测报告、指标与复现](perception_lab/reports/perception_2025_20261013/report.md)：DEIMv2-S 完成 COCO 5,000 张评价（AP 50.86）和 mini 六相机234张；GRAE 在封存检测上完成39/81帧跟踪，mini_val AMOTA 0.82296、IDS 13。
-- HARP/Mamba 缺完整作者权重，整网尚未部署；预处理/算子检查不能当作模型精度。TensorRT使用独立10.6环境；30轮配对中DEIM FP16耗时16.66→7.53ms（约2.21倍），AP下降0.0541个百分点；置信度异常另列，默认保留native。后端结果与采用决定见报告。
-- [2025本地同步回放](http://127.0.0.1:9094/perception_2025/)：完整原始点云、DEIM 2D框、GRAE轨迹和独立GT；缺失模型显式标记。
-- 20261012_02候选方案已被替代，停止其候选部署；旧结果保留为历史证据。
+| 模块 | scene-0061（39帧） | mini_val（81帧） | mini 全404帧 |
+|---|---|---|---|
+| MambaFusion 官方检测协议 | mAP 72.80%，NDS 67.39% | mAP 58.90%，NDS 59.58% | 未运行 |
+| 新检测→GRAE 官方跟踪协议 | AMOTA 87.39%，IDS 3 | AMOTA 84.97%，IDS 19 | 未运行 |
+| HARP 原始点语义 | mIoU 64.42% | mIoU 55.22% | mIoU 77.38% |
+
+- [恢复报告、来源校验与验收状态](perception_lab/reports/perception_weights_recovery_20261013/report.md) · [执行指令](perception_lab/instruction/20261013_02_weights_recovery_full_evaluation.md)
+- [逐模型指标与复现入口](perception_lab/reports/perception_2025_20261013/report.md)：保留 GRAE 两种检测输入的独立结果及失败案例。新输入的 AMOTA 提升但 mini_val IDS 从13增至19，不能称全面改善或全部归因于跟踪器。
+- [39帧同步回放](http://127.0.0.1:9094/perception_2025/) · [81帧同步回放](http://127.0.0.1:9094/perception_2025/mini_val/) · [回放验收](perception_lab/reports/perception_2025_20261013/visualization/status.json)。包含完整点云、六相机、DEIM、Mamba检测、两种GRAE轨迹、HARP与独立GT，具体完成状态以验收记录为准。
+- 所有 nuScenes 指标是 **mini 教学诊断**，可能与预训练样本重叠，不是官方全量泛化成绩。Mamba 原生重复推理存在候选噪声，严格重复一致性未通过，见[诊断](perception_lab/reports/perception_2025_20261013/mambafusion/repeat_noise_review.json)。GPU耗时含诊断开销并存在外部任务，不能用于独占性能比较。
+- HARP 沿用作者 CPU 预处理；GPU候选未采用。DEIM FP16保留为独立候选，默认native及既有优化限制不变；不为完成本指令强行采用优化。
+- [基础方案与资源](perception_lab/reports/perception_2025_20261013/plan.md)。20261012_02候选方案已被替代，旧实验保留历史证据。
 
 ## 2026-10-12：部署发布恢复与 FP16 补查
 

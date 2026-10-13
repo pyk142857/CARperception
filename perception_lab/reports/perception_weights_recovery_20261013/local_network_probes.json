@@ -1,0 +1,30 @@
+[
+  {
+    "model": "harpnext",
+    "network": "proxy",
+    "requested_range": "bytes=0-65535",
+    "error_type": "URLError",
+    "elapsed_seconds": 19.36
+  },
+  {
+    "model": "harpnext",
+    "network": "direct",
+    "requested_range": "bytes=0-65535",
+    "error_type": "URLError",
+    "elapsed_seconds": 19.03
+  },
+  {
+    "model": "mambafusion",
+    "network": "proxy",
+    "requested_range": "bytes=0-65535",
+    "error_type": "URLError",
+    "elapsed_seconds": 18.02
+  },
+  {
+    "model": "mambafusion",
+    "network": "direct",
+    "requested_range": "bytes=0-65535",
+    "error_type": "URLError",
+    "elapsed_seconds": 18.02
+  }
+]

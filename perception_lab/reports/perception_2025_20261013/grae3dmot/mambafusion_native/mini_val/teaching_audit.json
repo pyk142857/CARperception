@@ -1,0 +1,4209 @@
+{
+  "protocol": "Independent post-inference GT; score>=.25; same-class XY<2m; previous valid correspondence retained then Hungarian; GT range/point/rack filtering from official devkit; raw outputs without official track interpolation; these IDSW are not official IDS",
+  "totals": {
+    "tp": 3095,
+    "fp": 394,
+    "fn": 263,
+    "id_switch": 11,
+    "gap_id_change": 19,
+    "gap_recovery": 161
+  },
+  "frames": [
+    {
+      "frame": 0,
+      "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 16,
+      "fp": 15,
+      "fn": 1,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 0
+    },
+    {
+      "frame": 1,
+      "sample_token": "3950bd41f74548429c0f7700ff3d8269",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 22,
+      "fp": 9,
+      "fn": 0,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 0
+    },
+    {
+      "frame": 2,
+      "sample_token": "c5f58c19249d4137ae063b0e9ecd8b8e",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 22,
+      "fp": 11,
+      "fn": 2,
+      "id_switch": 2,
+      "gap_id_change": 1,
+      "gap_recovery": 0
+    },
+    {
+      "frame": 3,
+      "sample_token": "700c1a25559b4433be532de3475e58a9",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 24,
+      "fp": 13,
+      "fn": 1,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 2
+    },
+    {
+      "frame": 4,
+      "sample_token": "747aa46b9a4641fe90db05d97db2acea",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 24,
+      "fp": 11,
+      "fn": 1,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 0
+    },
+    {
+      "frame": 5,
+      "sample_token": "f4f86af4da3b49e79497deda5c5f223a",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 31,
+      "fp": 10,
+      "fn": 2,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 0
+    },
+    {
+      "frame": 6,
+      "sample_token": "6832e717621341568c759151b5974512",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 36,
+      "fp": 11,
+      "fn": 1,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 3
+    },
+    {
+      "frame": 7,
+      "sample_token": "c59e60042a8643e899008da2e446acca",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 37,
+      "fp": 11,
+      "fn": 3,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 1
+    },
+    {
+      "frame": 8,
+      "sample_token": "fa65a298c01f44e7a182bbf9e5fe3697",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 36,
+      "fp": 7,
+      "fn": 5,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 1
+    },
+    {
+      "frame": 9,
+      "sample_token": "a98fba72bde9433fb882032d18aedb2e",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 39,
+      "fp": 4,
+      "fn": 4,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 2
+    },
+    {
+      "frame": 10,
+      "sample_token": "b6b0d9f2f2e14a3aaa2c8aedeb1edb69",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 39,
+      "fp": 8,
+      "fn": 3,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 0
+    },
+    {
+      "frame": 11,
+      "sample_token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 37,
+      "fp": 4,
+      "fn": 1,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 1
+    },
+    {
+      "frame": 12,
+      "sample_token": "0d0700a2284e477db876c3ee1d864668",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 33,
+      "fp": 3,
+      "fn": 2,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 1
+    },
+    {
+      "frame": 13,
+      "sample_token": "de7593d76648450e947ba0c203dee1b0",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 32,
+      "fp": 3,
+      "fn": 2,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 0
+    },
+    {
+      "frame": 14,
+      "sample_token": "f753d3f87e5b40af87ff2cbf7c8e7082",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 34,
+      "fp": 6,
+      "fn": 2,
+      "id_switch": 0,
+      "gap_id_change": 1,
+      "gap_recovery": 1
+    },
+    {
+      "frame": 15,
+      "sample_token": "b22fa0b3c34f47b6a360b60f35d5d567",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 29,
+      "fp": 4,
+      "fn": 3,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 0
+    },
+    {
+      "frame": 16,
+      "sample_token": "0a0d6b8c2e884134a3b48df43d54c36a",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 31,
+      "fp": 3,
+      "fn": 3,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 4
+    },
+    {
+      "frame": 17,
+      "sample_token": "8e9c2cba0ee74056aa3746e8391d54a9",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 30,
+      "fp": 6,
+      "fn": 6,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 2
+    },
+    {
+      "frame": 18,
+      "sample_token": "fdc39b23ab4242eda6ec5e1e6574fe33",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 33,
+      "fp": 6,
+      "fn": 4,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 4
+    },
+    {
+      "frame": 19,
+      "sample_token": "9ee4020153674b9e9943d395ff8cfdf3",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 32,
+      "fp": 7,
+      "fn": 5,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 0
+    },
+    {
+      "frame": 20,
+      "sample_token": "5b03af7a953245b5a3b23191ed4da62a",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 31,
+      "fp": 4,
+      "fn": 7,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 1
+    },
+    {
+      "frame": 21,
+      "sample_token": "d0ecf474e0e64950aa265cd44b9c9d75",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 31,
+      "fp": 3,
+      "fn": 4,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 2
+    },
+    {
+      "frame": 22,
+      "sample_token": "456ec36cb4a44ca78f36fbd90c0c34fa",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 36,
+      "fp": 3,
+      "fn": 2,
+      "id_switch": 0,
+      "gap_id_change": 1,
+      "gap_recovery": 0
+    },
+    {
+      "frame": 23,
+      "sample_token": "6bfd42cf0aba4f1a94ec11fa43e2dd92",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 31,
+      "fp": 4,
+      "fn": 2,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 1
+    },
+    {
+      "frame": 24,
+      "sample_token": "0af0feb5b1394b928dd13d648de898f5",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 39,
+      "fp": 3,
+      "fn": 4,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 4
+    },
+    {
+      "frame": 25,
+      "sample_token": "61d9340c5ad8418dafe7a4af1b96e6b9",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 41,
+      "fp": 3,
+      "fn": 3,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 1
+    },
+    {
+      "frame": 26,
+      "sample_token": "9e7683e8586542a1b6032980c45f15ce",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 39,
+      "fp": 9,
+      "fn": 3,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 1
+    },
+    {
+      "frame": 27,
+      "sample_token": "cc57c1ea80fe46a7abddfdb15654c872",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 37,
+      "fp": 6,
+      "fn": 4,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 3
+    },
+    {
+      "frame": 28,
+      "sample_token": "4cf5d6c3f6ab42aab23f67b5a9782d1a",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 40,
+      "fp": 9,
+      "fn": 2,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 2
+    },
+    {
+      "frame": 29,
+      "sample_token": "6d9984d09d52479e837da2fd09e192cc",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 42,
+      "fp": 9,
+      "fn": 1,
+      "id_switch": 1,
+      "gap_id_change": 0,
+      "gap_recovery": 3
+    },
+    {
+      "frame": 30,
+      "sample_token": "38a28a3aaf2647f2a8c0e90e31267bf8",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 39,
+      "fp": 5,
+      "fn": 5,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 0
+    },
+    {
+      "frame": 31,
+      "sample_token": "6402fd1ffaf041d0b9162bd92a7ba0a2",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 45,
+      "fp": 6,
+      "fn": 1,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 4
+    },
+    {
+      "frame": 32,
+      "sample_token": "ce94ef7a0522468e81c0e2b3a2f1e12d",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 39,
+      "fp": 7,
+      "fn": 3,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 0
+    },
+    {
+      "frame": 33,
+      "sample_token": "9fcdc52b791045e99c623c5fc643331f",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 36,
+      "fp": 5,
+      "fn": 2,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 1
+    },
+    {
+      "frame": 34,
+      "sample_token": "1c9a906c40f6417bbe1cea06d6e55501",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 34,
+      "fp": 8,
+      "fn": 4,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 0
+    },
+    {
+      "frame": 35,
+      "sample_token": "a771effa2a2648d78096c3e92b95b129",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 31,
+      "fp": 12,
+      "fn": 5,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 2
+    },
+    {
+      "frame": 36,
+      "sample_token": "b9ea04a6121d4a8bb00199b885aa5ef0",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 32,
+      "fp": 9,
+      "fn": 2,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 3
+    },
+    {
+      "frame": 37,
+      "sample_token": "87e772078a494d42bd34cd16172808bc",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 34,
+      "fp": 3,
+      "fn": 3,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 2
+    },
+    {
+      "frame": 38,
+      "sample_token": "f40544fd4f5d42abbcfa948eeaf86850",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 33,
+      "fp": 1,
+      "fn": 2,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 5
+    },
+    {
+      "frame": 39,
+      "sample_token": "281b92269fd648d4b52d06ac06ca6d65",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "tp": 33,
+      "fp": 3,
+      "fn": 4,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 3
+    },
+    {
+      "frame": 40,
+      "sample_token": "b5989651183643369174912bc5641d3b",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 34,
+      "fp": 2,
+      "fn": 5,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 0
+    },
+    {
+      "frame": 41,
+      "sample_token": "0bb62a68055249e381b039bf54b0ccf8",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 34,
+      "fp": 3,
+      "fn": 7,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 0
+    },
+    {
+      "frame": 42,
+      "sample_token": "07fad91090c746ccaa1b2bdb55329e20",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 37,
+      "fp": 4,
+      "fn": 7,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 1
+    },
+    {
+      "frame": 43,
+      "sample_token": "ae5004bf4ebb4db0a84cb3c27bd398d1",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 38,
+      "fp": 4,
+      "fn": 8,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 2
+    },
+    {
+      "frame": 44,
+      "sample_token": "ac8b4d49731d43289579f014cb7c97ef",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 39,
+      "fp": 3,
+      "fn": 5,
+      "id_switch": 1,
+      "gap_id_change": 1,
+      "gap_recovery": 1
+    },
+    {
+      "frame": 45,
+      "sample_token": "c1eed31234b94e9f8e22fbf3428b0ac2",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 45,
+      "fp": 2,
+      "fn": 2,
+      "id_switch": 1,
+      "gap_id_change": 1,
+      "gap_recovery": 1
+    },
+    {
+      "frame": 46,
+      "sample_token": "edba7d0cf1c64d2a9c8a5ebddab507a9",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 46,
+      "fp": 3,
+      "fn": 6,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 1
+    },
+    {
+      "frame": 47,
+      "sample_token": "a5afebb0aa5e4d7c95665788ce51ec58",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 51,
+      "fp": 3,
+      "fn": 10,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 4
+    },
+    {
+      "frame": 48,
+      "sample_token": "5b7cb170eee6468aa1fdbd3abcf63c5a",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 59,
+      "fp": 4,
+      "fn": 3,
+      "id_switch": 1,
+      "gap_id_change": 1,
+      "gap_recovery": 3
+    },
+    {
+      "frame": 49,
+      "sample_token": "d8251bbc2105497ab8ec80827d4429aa",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 58,
+      "fp": 4,
+      "fn": 6,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 2
+    },
+    {
+      "frame": 50,
+      "sample_token": "048a45dd2cf54aa5808d8ccc85731d44",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 56,
+      "fp": 5,
+      "fn": 6,
+      "id_switch": 1,
+      "gap_id_change": 0,
+      "gap_recovery": 3
+    },
+    {
+      "frame": 51,
+      "sample_token": "858a1ece22cf45d9bc71e42336604b78",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 58,
+      "fp": 5,
+      "fn": 1,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 5
+    },
+    {
+      "frame": 52,
+      "sample_token": "372725a4b00e49c78d6d0b1c4a38b6e0",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 55,
+      "fp": 2,
+      "fn": 1,
+      "id_switch": 1,
+      "gap_id_change": 1,
+      "gap_recovery": 3
+    },
+    {
+      "frame": 53,
+      "sample_token": "61a7bd24f88a46c2963280d8b13ac675",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 54,
+      "fp": 2,
+      "fn": 3,
+      "id_switch": 1,
+      "gap_id_change": 1,
+      "gap_recovery": 2
+    },
+    {
+      "frame": 54,
+      "sample_token": "609d5177362340458a3bfd4949cd1e64",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 51,
+      "fp": 4,
+      "fn": 5,
+      "id_switch": 1,
+      "gap_id_change": 0,
+      "gap_recovery": 2
+    },
+    {
+      "frame": 55,
+      "sample_token": "b1303058fa624645b753d7283d70de45",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 52,
+      "fp": 4,
+      "fn": 3,
+      "id_switch": 0,
+      "gap_id_change": 2,
+      "gap_recovery": 6
+    },
+    {
+      "frame": 56,
+      "sample_token": "a19a80c905674faab7203a3a4e0f5246",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 52,
+      "fp": 2,
+      "fn": 3,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 2
+    },
+    {
+      "frame": 57,
+      "sample_token": "b6c420c3a5bd4a219b1cb82ee5ea0aa7",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 46,
+      "fp": 5,
+      "fn": 6,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 1
+    },
+    {
+      "frame": 58,
+      "sample_token": "8092909473464f80b9f791a4d31ddcb8",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 47,
+      "fp": 3,
+      "fn": 3,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 5
+    },
+    {
+      "frame": 59,
+      "sample_token": "e174cb43655f49dab7ffa27b973670e3",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 42,
+      "fp": 1,
+      "fn": 2,
+      "id_switch": 0,
+      "gap_id_change": 1,
+      "gap_recovery": 2
+    },
+    {
+      "frame": 60,
+      "sample_token": "6ff9723a60bf4e14b328b3b19f04dc32",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 42,
+      "fp": 2,
+      "fn": 3,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 5
+    },
+    {
+      "frame": 61,
+      "sample_token": "06be0e3b665c44fa8d17d9f4770bdf9c",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 38,
+      "fp": 2,
+      "fn": 4,
+      "id_switch": 1,
+      "gap_id_change": 0,
+      "gap_recovery": 1
+    },
+    {
+      "frame": 62,
+      "sample_token": "9150678870764c1b87a649a25939c61b",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 41,
+      "fp": 1,
+      "fn": 2,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 6
+    },
+    {
+      "frame": 63,
+      "sample_token": "8573a885a7cb41d185c05029eeb9a54e",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 37,
+      "fp": 4,
+      "fn": 7,
+      "id_switch": 0,
+      "gap_id_change": 1,
+      "gap_recovery": 0
+    },
+    {
+      "frame": 64,
+      "sample_token": "55c258972acb4300a3a6077a531ab050",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 41,
+      "fp": 1,
+      "fn": 4,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 6
+    },
+    {
+      "frame": 65,
+      "sample_token": "44237858a539457da65822bfcf58c414",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 40,
+      "fp": 3,
+      "fn": 3,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 4
+    },
+    {
+      "frame": 66,
+      "sample_token": "8cd36e9531fb4eba8e6ac1d666c4641c",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 41,
+      "fp": 5,
+      "fn": 6,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 4
+    },
+    {
+      "frame": 67,
+      "sample_token": "7bebe3c9be714f02837f8617c56df122",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 45,
+      "fp": 2,
+      "fn": 2,
+      "id_switch": 0,
+      "gap_id_change": 1,
+      "gap_recovery": 4
+    },
+    {
+      "frame": 68,
+      "sample_token": "4b894442c95141f9affd731d9da7b43c",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 44,
+      "fp": 7,
+      "fn": 5,
+      "id_switch": 0,
+      "gap_id_change": 1,
+      "gap_recovery": 1
+    },
+    {
+      "frame": 69,
+      "sample_token": "e00dc15130dc44e796687baadd076ae4",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 38,
+      "fp": 3,
+      "fn": 2,
+      "id_switch": 0,
+      "gap_id_change": 1,
+      "gap_recovery": 0
+    },
+    {
+      "frame": 70,
+      "sample_token": "e63b83b436a0479db7362338cdfab118",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 42,
+      "fp": 3,
+      "fn": 3,
+      "id_switch": 0,
+      "gap_id_change": 1,
+      "gap_recovery": 4
+    },
+    {
+      "frame": 71,
+      "sample_token": "c567f9b8e9f34817acdc9c49d791c557",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 38,
+      "fp": 4,
+      "fn": 1,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 0
+    },
+    {
+      "frame": 72,
+      "sample_token": "8e352d4a6c6f40c8ad4f10a3d2c3f158",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 36,
+      "fp": 1,
+      "fn": 2,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 2
+    },
+    {
+      "frame": 73,
+      "sample_token": "841dd6709e9b4d7c9d6bf888f1fe6d7e",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 39,
+      "fp": 2,
+      "fn": 1,
+      "id_switch": 0,
+      "gap_id_change": 1,
+      "gap_recovery": 4
+    },
+    {
+      "frame": 74,
+      "sample_token": "e54b784a608644a2804fcf800c7499f7",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 36,
+      "fp": 4,
+      "fn": 3,
+      "id_switch": 0,
+      "gap_id_change": 1,
+      "gap_recovery": 0
+    },
+    {
+      "frame": 75,
+      "sample_token": "a1289b27ca1d41deb6fc982be9a3d03c",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 38,
+      "fp": 4,
+      "fn": 2,
+      "id_switch": 0,
+      "gap_id_change": 1,
+      "gap_recovery": 5
+    },
+    {
+      "frame": 76,
+      "sample_token": "e6e877f31dd447199b56cae07f86daad",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 36,
+      "fp": 3,
+      "fn": 1,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 2
+    },
+    {
+      "frame": 77,
+      "sample_token": "cb4e6195faad467094fbd4d0a9e960e9",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 33,
+      "fp": 6,
+      "fn": 3,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 2
+    },
+    {
+      "frame": 78,
+      "sample_token": "7f594234e8034228b1a7d727f1981e09",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 31,
+      "fp": 3,
+      "fn": 1,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 1
+    },
+    {
+      "frame": 79,
+      "sample_token": "9cdbf5ff7f294549aea0a4307e5d104a",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 32,
+      "fp": 4,
+      "fn": 1,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 2
+    },
+    {
+      "frame": 80,
+      "sample_token": "b4ff30109dd14c89b24789dc5713cf8c",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "tp": 33,
+      "fp": 1,
+      "fn": 1,
+      "id_switch": 0,
+      "gap_id_change": 0,
+      "gap_recovery": 2
+    }
+  ],
+  "identity_events": [
+    {
+      "kind": "id_switch",
+      "instance_token": "fa107c6dd0dc4d15b94b86cbf5b990c0",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[6]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[65]",
+      "previous_frame": 1,
+      "missed_frames": 0,
+      "sample_token": "c5f58c19249d4137ae063b0e9ecd8b8e",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 2,
+      "class_name": "pedestrian",
+      "translation": [
+        620.967,
+        1625.056,
+        0.201
+      ]
+    },
+    {
+      "kind": "gap_id_change",
+      "instance_token": "6e71a9ceaf9a4974a1d07a2bd3544506",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[23]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[33]",
+      "previous_frame": 0,
+      "missed_frames": 1,
+      "sample_token": "c5f58c19249d4137ae063b0e9ecd8b8e",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 2,
+      "class_name": "pedestrian",
+      "translation": [
+        626.7,
+        1618.657,
+        -0.137
+      ]
+    },
+    {
+      "kind": "id_switch",
+      "instance_token": "c34cb46c7be6486a85ee49653850b174",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[65]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[6]",
+      "previous_frame": 1,
+      "missed_frames": 0,
+      "sample_token": "c5f58c19249d4137ae063b0e9ecd8b8e",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 2,
+      "class_name": "pedestrian",
+      "translation": [
+        622.306,
+        1622.44,
+        -0.014
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "58d65f4a470a40f887ab278ef660191c",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[66]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[66]",
+      "previous_frame": 1,
+      "missed_frames": 1,
+      "sample_token": "700c1a25559b4433be532de3475e58a9",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 3,
+      "class_name": "pedestrian",
+      "translation": [
+        602.462,
+        1628.138,
+        0.493
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "9c5151b34911482f8155ab55c3f5d32f",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[42]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[42]",
+      "previous_frame": 1,
+      "missed_frames": 1,
+      "sample_token": "700c1a25559b4433be532de3475e58a9",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 3,
+      "class_name": "car",
+      "translation": [
+        632.807,
+        1630.318,
+        0.08
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "5dd3f11916924b7cb93687c10c7c83b6",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[26]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[26]",
+      "previous_frame": 4,
+      "missed_frames": 1,
+      "sample_token": "6832e717621341568c759151b5974512",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 6,
+      "class_name": "pedestrian",
+      "translation": [
+        640.307,
+        1643.619,
+        0.667
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "f3995943006145ca8a7bc375527f0aba",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[92]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[92]",
+      "previous_frame": 3,
+      "missed_frames": 2,
+      "sample_token": "6832e717621341568c759151b5974512",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 6,
+      "class_name": "car",
+      "translation": [
+        641.7,
+        1621.144,
+        0.377
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "fef3f0c1f8f944e393315c5460263f17",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[15]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[15]",
+      "previous_frame": 4,
+      "missed_frames": 1,
+      "sample_token": "6832e717621341568c759151b5974512",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 6,
+      "class_name": "pedestrian",
+      "translation": [
+        632.029,
+        1644.732,
+        0.278
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "3620feb00d744241a94855f3a8913a78",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[93]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[93]",
+      "previous_frame": 5,
+      "missed_frames": 1,
+      "sample_token": "c59e60042a8643e899008da2e446acca",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 7,
+      "class_name": "car",
+      "translation": [
+        650.756,
+        1603.295,
+        0.485
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "91631b130dc54b14ade9b445e2a0e245",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[123]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[123]",
+      "previous_frame": 6,
+      "missed_frames": 1,
+      "sample_token": "fa65a298c01f44e7a182bbf9e5fe3697",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 8,
+      "class_name": "pedestrian",
+      "translation": [
+        636.141,
+        1651.279,
+        0.552
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "445d910b06944ea9acdc0d827452bcd0",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[106]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[106]",
+      "previous_frame": 7,
+      "missed_frames": 1,
+      "sample_token": "a98fba72bde9433fb882032d18aedb2e",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 9,
+      "class_name": "pedestrian",
+      "translation": [
+        633.451,
+        1650.219,
+        1.173
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "fef3f0c1f8f944e393315c5460263f17",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[15]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[15]",
+      "previous_frame": 6,
+      "missed_frames": 2,
+      "sample_token": "a98fba72bde9433fb882032d18aedb2e",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 9,
+      "class_name": "pedestrian",
+      "translation": [
+        631.982,
+        1644.584,
+        0.794
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "f1010738ac3a4f56b936fa3a077571b5",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[2]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[2]",
+      "previous_frame": 9,
+      "missed_frames": 1,
+      "sample_token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 11,
+      "class_name": "pedestrian",
+      "translation": [
+        603.926,
+        1638.339,
+        2.104
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "3c7331d16ac6439e9bd5a57d75976446",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[73]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[73]",
+      "previous_frame": 7,
+      "missed_frames": 4,
+      "sample_token": "0d0700a2284e477db876c3ee1d864668",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 12,
+      "class_name": "pedestrian",
+      "translation": [
+        656.172,
+        1620.277,
+        0.545
+      ]
+    },
+    {
+      "kind": "gap_id_change",
+      "instance_token": "9e5f09bc19cd473dae219194ada64f3d",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[182]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[198]",
+      "previous_frame": 11,
+      "missed_frames": 2,
+      "sample_token": "f753d3f87e5b40af87ff2cbf7c8e7082",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 14,
+      "class_name": "car",
+      "translation": [
+        670.811,
+        1619.896,
+        0.523
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "b3412553d70f40b3a1d19a0eb8529a08",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[67]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[67]",
+      "previous_frame": 12,
+      "missed_frames": 1,
+      "sample_token": "f753d3f87e5b40af87ff2cbf7c8e7082",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 14,
+      "class_name": "pedestrian",
+      "translation": [
+        657.243,
+        1619.733,
+        0.625
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "3c7331d16ac6439e9bd5a57d75976446",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[73]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[73]",
+      "previous_frame": 14,
+      "missed_frames": 1,
+      "sample_token": "0a0d6b8c2e884134a3b48df43d54c36a",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 16,
+      "class_name": "pedestrian",
+      "translation": [
+        657.245,
+        1618.681,
+        0.511
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "a6ca1e8c4eee458cb4981e02f58c954f",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[200]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[200]",
+      "previous_frame": 14,
+      "missed_frames": 1,
+      "sample_token": "0a0d6b8c2e884134a3b48df43d54c36a",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 16,
+      "class_name": "car",
+      "translation": [
+        673.525,
+        1624.872,
+        0.612
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "99fbf1b9bf474215a4e8ad562bb7e9b2",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[13]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[13]",
+      "previous_frame": 14,
+      "missed_frames": 1,
+      "sample_token": "0a0d6b8c2e884134a3b48df43d54c36a",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 16,
+      "class_name": "pedestrian",
+      "translation": [
+        629.189,
+        1617.092,
+        0.946
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "0809d64df9264121bead0772ee9b5984",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[129]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[129]",
+      "previous_frame": 14,
+      "missed_frames": 1,
+      "sample_token": "0a0d6b8c2e884134a3b48df43d54c36a",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 16,
+      "class_name": "pedestrian",
+      "translation": [
+        662.464,
+        1587.505,
+        0.95
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "eaaf60765ee8478f8e0bd4942571c6fb",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[163]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[163]",
+      "previous_frame": 15,
+      "missed_frames": 1,
+      "sample_token": "8e9c2cba0ee74056aa3746e8391d54a9",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 17,
+      "class_name": "car",
+      "translation": [
+        670.048,
+        1604.523,
+        0.537
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "0bfc7d407d09490cba7ac57897fcb100",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[189]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[189]",
+      "previous_frame": 13,
+      "missed_frames": 3,
+      "sample_token": "8e9c2cba0ee74056aa3746e8391d54a9",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 17,
+      "class_name": "car",
+      "translation": [
+        659.315,
+        1585.338,
+        1.136
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "a6ca1e8c4eee458cb4981e02f58c954f",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[200]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[200]",
+      "previous_frame": 16,
+      "missed_frames": 1,
+      "sample_token": "fdc39b23ab4242eda6ec5e1e6574fe33",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 18,
+      "class_name": "car",
+      "translation": [
+        673.525,
+        1624.872,
+        0.612
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "6e71a9ceaf9a4974a1d07a2bd3544506",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[33]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[33]",
+      "previous_frame": 16,
+      "missed_frames": 1,
+      "sample_token": "fdc39b23ab4242eda6ec5e1e6574fe33",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 18,
+      "class_name": "pedestrian",
+      "translation": [
+        622.49,
+        1622.952,
+        1.201
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "045cd82a77a1472499e8c15100cb5ff3",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[155]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[155]",
+      "previous_frame": 16,
+      "missed_frames": 1,
+      "sample_token": "fdc39b23ab4242eda6ec5e1e6574fe33",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 18,
+      "class_name": "car",
+      "translation": [
+        664.225,
+        1603.553,
+        0.713
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "2ef4b4d20b064d34b754f68e48f5a5c2",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[166]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[166]",
+      "previous_frame": 15,
+      "missed_frames": 2,
+      "sample_token": "fdc39b23ab4242eda6ec5e1e6574fe33",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 18,
+      "class_name": "car",
+      "translation": [
+        675.138,
+        1599.819,
+        0.97
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "b3412553d70f40b3a1d19a0eb8529a08",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[67]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[67]",
+      "previous_frame": 18,
+      "missed_frames": 1,
+      "sample_token": "5b03af7a953245b5a3b23191ed4da62a",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 20,
+      "class_name": "pedestrian",
+      "translation": [
+        658.722,
+        1616.843,
+        0.575
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "a6ca1e8c4eee458cb4981e02f58c954f",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[200]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[200]",
+      "previous_frame": 19,
+      "missed_frames": 1,
+      "sample_token": "d0ecf474e0e64950aa265cd44b9c9d75",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 21,
+      "class_name": "car",
+      "translation": [
+        673.525,
+        1624.872,
+        0.612
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "0bfc7d407d09490cba7ac57897fcb100",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[189]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[189]",
+      "previous_frame": 19,
+      "missed_frames": 1,
+      "sample_token": "d0ecf474e0e64950aa265cd44b9c9d75",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 21,
+      "class_name": "car",
+      "translation": [
+        659.142,
+        1585.445,
+        0.986
+      ]
+    },
+    {
+      "kind": "gap_id_change",
+      "instance_token": "143ecd5e93614768bdb3da695e76c409",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[12]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[251]",
+      "previous_frame": 17,
+      "missed_frames": 4,
+      "sample_token": "456ec36cb4a44ca78f36fbd90c0c34fa",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 22,
+      "class_name": "car",
+      "translation": [
+        677.557,
+        1578.46,
+        1.087
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "2ef4b4d20b064d34b754f68e48f5a5c2",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[166]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[166]",
+      "previous_frame": 18,
+      "missed_frames": 4,
+      "sample_token": "6bfd42cf0aba4f1a94ec11fa43e2dd92",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 23,
+      "class_name": "car",
+      "translation": [
+        675.018,
+        1599.932,
+        0.97
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "b3412553d70f40b3a1d19a0eb8529a08",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[67]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[67]",
+      "previous_frame": 22,
+      "missed_frames": 1,
+      "sample_token": "0af0feb5b1394b928dd13d648de898f5",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 24,
+      "class_name": "pedestrian",
+      "translation": [
+        660.521,
+        1614.898,
+        0.575
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "eaaf60765ee8478f8e0bd4942571c6fb",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[163]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[163]",
+      "previous_frame": 22,
+      "missed_frames": 1,
+      "sample_token": "0af0feb5b1394b928dd13d648de898f5",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 24,
+      "class_name": "car",
+      "translation": [
+        670.103,
+        1604.431,
+        0.537
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "6346de1c47584b34833d6df500d2ed6c",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[182]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[182]",
+      "previous_frame": 22,
+      "missed_frames": 1,
+      "sample_token": "0af0feb5b1394b928dd13d648de898f5",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 24,
+      "class_name": "car",
+      "translation": [
+        665.753,
+        1621.736,
+        0.647
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "143ecd5e93614768bdb3da695e76c409",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[251]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[251]",
+      "previous_frame": 22,
+      "missed_frames": 1,
+      "sample_token": "0af0feb5b1394b928dd13d648de898f5",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 24,
+      "class_name": "car",
+      "translation": [
+        677.557,
+        1578.46,
+        1.037
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "2a42fd0e123c455fbaeb1c5f03dba0b2",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[221]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[221]",
+      "previous_frame": 22,
+      "missed_frames": 2,
+      "sample_token": "61d9340c5ad8418dafe7a4af1b96e6b9",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 25,
+      "class_name": "car",
+      "translation": [
+        677.748,
+        1569.088,
+        1.148
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "b3412553d70f40b3a1d19a0eb8529a08",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[67]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[67]",
+      "previous_frame": 24,
+      "missed_frames": 1,
+      "sample_token": "9e7683e8586542a1b6032980c45f15ce",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 26,
+      "class_name": "pedestrian",
+      "translation": [
+        661.593,
+        1613.877,
+        0.675
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "f4af7fd215ee47aa8b64bac0443d7be8",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[231]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[231]",
+      "previous_frame": 24,
+      "missed_frames": 2,
+      "sample_token": "cc57c1ea80fe46a7abddfdb15654c872",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 27,
+      "class_name": "car",
+      "translation": [
+        669.62,
+        1630.16,
+        0.659
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "84755505e70547af890aff9db860f692",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[233]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[233]",
+      "previous_frame": 22,
+      "missed_frames": 4,
+      "sample_token": "cc57c1ea80fe46a7abddfdb15654c872",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 27,
+      "class_name": "car",
+      "translation": [
+        675.917,
+        1567.003,
+        1.436
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "802bbdc22d21477f8803a39a5e7e98bf",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[230]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[230]",
+      "previous_frame": 22,
+      "missed_frames": 4,
+      "sample_token": "cc57c1ea80fe46a7abddfdb15654c872",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 27,
+      "class_name": "car",
+      "translation": [
+        673.564,
+        1636.841,
+        0.619
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "96c353e8f14d4a63ba2b844d43cffc42",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[12]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[12]",
+      "previous_frame": 25,
+      "missed_frames": 2,
+      "sample_token": "4cf5d6c3f6ab42aab23f67b5a9782d1a",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 28,
+      "class_name": "car",
+      "translation": [
+        686.656,
+        1570.563,
+        1.05
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "6702a65bda8b4e2da8ac270c26e425bd",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[206]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[206]",
+      "previous_frame": 25,
+      "missed_frames": 2,
+      "sample_token": "4cf5d6c3f6ab42aab23f67b5a9782d1a",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 28,
+      "class_name": "motorcycle",
+      "translation": [
+        671.418,
+        1578.714,
+        0.895
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "84755505e70547af890aff9db860f692",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[233]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[233]",
+      "previous_frame": 27,
+      "missed_frames": 1,
+      "sample_token": "6d9984d09d52479e837da2fd09e192cc",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 29,
+      "class_name": "car",
+      "translation": [
+        675.915,
+        1566.987,
+        1.419
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "f7f666bf92c049bea8fabc42a8831005",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[236]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[236]",
+      "previous_frame": 27,
+      "missed_frames": 1,
+      "sample_token": "6d9984d09d52479e837da2fd09e192cc",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 29,
+      "class_name": "car",
+      "translation": [
+        667.945,
+        1566.95,
+        1.413
+      ]
+    },
+    {
+      "kind": "id_switch",
+      "instance_token": "b3412553d70f40b3a1d19a0eb8529a08",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[67]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[73]",
+      "previous_frame": 28,
+      "missed_frames": 0,
+      "sample_token": "6d9984d09d52479e837da2fd09e192cc",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 29,
+      "class_name": "pedestrian",
+      "translation": [
+        663.444,
+        1613.387,
+        0.675
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "802bbdc22d21477f8803a39a5e7e98bf",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[230]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[230]",
+      "previous_frame": 27,
+      "missed_frames": 1,
+      "sample_token": "6d9984d09d52479e837da2fd09e192cc",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 29,
+      "class_name": "car",
+      "translation": [
+        673.207,
+        1636.701,
+        0.607
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "2a8a8fc65dc54eeb9e2e161bfa3af0c1",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[245]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[245]",
+      "previous_frame": 28,
+      "missed_frames": 2,
+      "sample_token": "6402fd1ffaf041d0b9162bd92a7ba0a2",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 31,
+      "class_name": "pedestrian",
+      "translation": [
+        692.698,
+        1588.305,
+        0.692
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "6702a65bda8b4e2da8ac270c26e425bd",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[206]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[206]",
+      "previous_frame": 29,
+      "missed_frames": 1,
+      "sample_token": "6402fd1ffaf041d0b9162bd92a7ba0a2",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 31,
+      "class_name": "motorcycle",
+      "translation": [
+        671.376,
+        1578.688,
+        0.595
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "1e4a740fd22b44dda3eed861e6e3f170",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[269]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[269]",
+      "previous_frame": 28,
+      "missed_frames": 2,
+      "sample_token": "6402fd1ffaf041d0b9162bd92a7ba0a2",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 31,
+      "class_name": "car",
+      "translation": [
+        690.916,
+        1566.827,
+        0.944
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "4a8058d0441a46d381995e1af1086039",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[259]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[259]",
+      "previous_frame": 29,
+      "missed_frames": 1,
+      "sample_token": "6402fd1ffaf041d0b9162bd92a7ba0a2",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 31,
+      "class_name": "car",
+      "translation": [
+        652.693,
+        1575.956,
+        1.574
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "19f5d51759454803ae8bbc45bfb92737",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[314]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[314]",
+      "previous_frame": 31,
+      "missed_frames": 1,
+      "sample_token": "9fcdc52b791045e99c623c5fc643331f",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 33,
+      "class_name": "car",
+      "translation": [
+        652.406,
+        1570.747,
+        1.692
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "2a8a8fc65dc54eeb9e2e161bfa3af0c1",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[245]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[245]",
+      "previous_frame": 31,
+      "missed_frames": 3,
+      "sample_token": "a771effa2a2648d78096c3e92b95b129",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 35,
+      "class_name": "pedestrian",
+      "translation": [
+        694.641,
+        1586.225,
+        0.642
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "6702a65bda8b4e2da8ac270c26e425bd",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[206]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[206]",
+      "previous_frame": 33,
+      "missed_frames": 1,
+      "sample_token": "a771effa2a2648d78096c3e92b95b129",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 35,
+      "class_name": "motorcycle",
+      "translation": [
+        671.406,
+        1578.622,
+        0.742
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "f5c0c1968ef0486cb3183e521841352f",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[287]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[287]",
+      "previous_frame": 34,
+      "missed_frames": 1,
+      "sample_token": "b9ea04a6121d4a8bb00199b885aa5ef0",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 36,
+      "class_name": "car",
+      "translation": [
+        662.394,
+        1565.506,
+        1.756
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "2cc84e32d40647b185276f8d7baf5322",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[322]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[322]",
+      "previous_frame": 34,
+      "missed_frames": 1,
+      "sample_token": "b9ea04a6121d4a8bb00199b885aa5ef0",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 36,
+      "class_name": "car",
+      "translation": [
+        699.933,
+        1570.26,
+        0.845
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "3620feb00d744241a94855f3a8913a78",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[93]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[93]",
+      "previous_frame": 34,
+      "missed_frames": 1,
+      "sample_token": "b9ea04a6121d4a8bb00199b885aa5ef0",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 36,
+      "class_name": "car",
+      "translation": [
+        650.949,
+        1603.095,
+        0.668
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "19f5d51759454803ae8bbc45bfb92737",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[314]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[314]",
+      "previous_frame": 35,
+      "missed_frames": 1,
+      "sample_token": "87e772078a494d42bd34cd16172808bc",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 37,
+      "class_name": "car",
+      "translation": [
+        652.394,
+        1570.757,
+        1.692
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "dce1fda2d70945c792dcc27074ec6aa9",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[105]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[105]",
+      "previous_frame": 35,
+      "missed_frames": 1,
+      "sample_token": "87e772078a494d42bd34cd16172808bc",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 37,
+      "class_name": "car",
+      "translation": [
+        660.003,
+        1613.235,
+        0.704
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "713b6bedc51f4d1b9802a13aec39aaf3",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[250]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[250]",
+      "previous_frame": 36,
+      "missed_frames": 1,
+      "sample_token": "f40544fd4f5d42abbcfa948eeaf86850",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 38,
+      "class_name": "car",
+      "translation": [
+        655.273,
+        1580.345,
+        1.292
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "349232409f354033b215b5e37c3312ab",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[324]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[324]",
+      "previous_frame": 36,
+      "missed_frames": 1,
+      "sample_token": "f40544fd4f5d42abbcfa948eeaf86850",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 38,
+      "class_name": "car",
+      "translation": [
+        714.906,
+        1565.058,
+        1.122
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "9439a24131dc4e1faa3b5b73f518f1da",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[302]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[302]",
+      "previous_frame": 36,
+      "missed_frames": 1,
+      "sample_token": "f40544fd4f5d42abbcfa948eeaf86850",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 38,
+      "class_name": "truck",
+      "translation": [
+        695.26,
+        1581.749,
+        1.167
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "7581fd7e9c0f426cb0efb9ea1f3f2830",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[237]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[237]",
+      "previous_frame": 36,
+      "missed_frames": 1,
+      "sample_token": "f40544fd4f5d42abbcfa948eeaf86850",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 38,
+      "class_name": "car",
+      "translation": [
+        656.692,
+        1582.142,
+        1.108
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "723af3d23fb445e3ab97669e85846445",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[300]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[300]",
+      "previous_frame": 36,
+      "missed_frames": 1,
+      "sample_token": "f40544fd4f5d42abbcfa948eeaf86850",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 38,
+      "class_name": "bicycle",
+      "translation": [
+        678.328,
+        1571.943,
+        0.724
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "8ce4fe54af77467d90c840465f69677f",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[326]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[326]",
+      "previous_frame": 34,
+      "missed_frames": 4,
+      "sample_token": "281b92269fd648d4b52d06ac06ca6d65",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 39,
+      "class_name": "car",
+      "translation": [
+        674.858,
+        1564.012,
+        1.423
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "4bee849ae27b40a684321dbc6f780872",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[333]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[333]",
+      "previous_frame": 37,
+      "missed_frames": 1,
+      "sample_token": "281b92269fd648d4b52d06ac06ca6d65",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 39,
+      "class_name": "motorcycle",
+      "translation": [
+        681.995,
+        1565.065,
+        0.906
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "84755505e70547af890aff9db860f692",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[233]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[233]",
+      "previous_frame": 37,
+      "missed_frames": 1,
+      "sample_token": "281b92269fd648d4b52d06ac06ca6d65",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 39,
+      "class_name": "car",
+      "translation": [
+        676.604,
+        1566.394,
+        1.383
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "b825554384e042baba291f6f75c1ba49",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[21]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[21]",
+      "previous_frame": 40,
+      "missed_frames": 1,
+      "sample_token": "07fad91090c746ccaa1b2bdb55329e20",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 42,
+      "class_name": "pedestrian",
+      "translation": [
+        706.853,
+        1781.434,
+        1.128
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "c8fcea5cd6d344e69a92241622f58be7",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[36]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[36]",
+      "previous_frame": 40,
+      "missed_frames": 2,
+      "sample_token": "ae5004bf4ebb4db0a84cb3c27bd398d1",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 43,
+      "class_name": "pedestrian",
+      "translation": [
+        710.494,
+        1782.886,
+        0.905
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "eeabbd601fff49c08c086829bfe13287",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[26]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[26]",
+      "previous_frame": 41,
+      "missed_frames": 1,
+      "sample_token": "ae5004bf4ebb4db0a84cb3c27bd398d1",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 43,
+      "class_name": "pedestrian",
+      "translation": [
+        712.495,
+        1783.739,
+        1.106
+      ]
+    },
+    {
+      "kind": "gap_id_change",
+      "instance_token": "cb5fdffa966345cdb9c7c186143b7857",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[27]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[43]",
+      "previous_frame": 40,
+      "missed_frames": 3,
+      "sample_token": "ac8b4d49731d43289579f014cb7c97ef",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 44,
+      "class_name": "pedestrian",
+      "translation": [
+        712.545,
+        1784.764,
+        0.867
+      ]
+    },
+    {
+      "kind": "id_switch",
+      "instance_token": "9256b7cc27954e7bb5e3a3fb8c62474c",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[30]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[27]",
+      "previous_frame": 43,
+      "missed_frames": 0,
+      "sample_token": "ac8b4d49731d43289579f014cb7c97ef",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 44,
+      "class_name": "pedestrian",
+      "translation": [
+        713.041,
+        1785.085,
+        0.817
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "8fba9861aa6d4d14b78c90fbb5372fb2",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[25]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[25]",
+      "previous_frame": 42,
+      "missed_frames": 1,
+      "sample_token": "ac8b4d49731d43289579f014cb7c97ef",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 44,
+      "class_name": "car",
+      "translation": [
+        686.671,
+        1780.941,
+        -0.013
+      ]
+    },
+    {
+      "kind": "gap_id_change",
+      "instance_token": "ca5b3ca5aea745ee8fe12b0f74d77f8e",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[4]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[88]",
+      "previous_frame": 43,
+      "missed_frames": 1,
+      "sample_token": "c1eed31234b94e9f8e22fbf3428b0ac2",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 45,
+      "class_name": "car",
+      "translation": [
+        683.227,
+        1784.412,
+        -0.068
+      ]
+    },
+    {
+      "kind": "id_switch",
+      "instance_token": "54ca0158a30a4d8291684544ddbeff3f",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[31]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[30]",
+      "previous_frame": 44,
+      "missed_frames": 0,
+      "sample_token": "c1eed31234b94e9f8e22fbf3428b0ac2",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 45,
+      "class_name": "pedestrian",
+      "translation": [
+        711.467,
+        1784.325,
+        1.089
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "d71462c2ae74472bae3adbf7a41b2fc7",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[34]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[34]",
+      "previous_frame": 41,
+      "missed_frames": 3,
+      "sample_token": "c1eed31234b94e9f8e22fbf3428b0ac2",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 45,
+      "class_name": "car",
+      "translation": [
+        675.013,
+        1821.922,
+        1.773
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "6dafc154a9ef43ff8fd680620dc90433",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[3]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[3]",
+      "previous_frame": 43,
+      "missed_frames": 2,
+      "sample_token": "edba7d0cf1c64d2a9c8a5ebddab507a9",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 46,
+      "class_name": "car",
+      "translation": [
+        702.838,
+        1809.898,
+        0.949
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "e2878e5b8aa849a18e39baee3f3440bd",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[24]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[24]",
+      "previous_frame": 43,
+      "missed_frames": 3,
+      "sample_token": "a5afebb0aa5e4d7c95665788ce51ec58",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 47,
+      "class_name": "car",
+      "translation": [
+        695.915,
+        1817.062,
+        1.33
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "a9916751b03c494dafa2eddc4496e702",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[2]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[2]",
+      "previous_frame": 43,
+      "missed_frames": 3,
+      "sample_token": "a5afebb0aa5e4d7c95665788ce51ec58",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 47,
+      "class_name": "car",
+      "translation": [
+        700.809,
+        1811.906,
+        1.106
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "856aeb4fa2024f1284c6290a44e9dec5",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[79]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[79]",
+      "previous_frame": 45,
+      "missed_frames": 1,
+      "sample_token": "a5afebb0aa5e4d7c95665788ce51ec58",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 47,
+      "class_name": "car",
+      "translation": [
+        687.236,
+        1797.127,
+        0.626
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "ca3f0ced132845b4afce73a6f27a953e",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[42]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[42]",
+      "previous_frame": 43,
+      "missed_frames": 3,
+      "sample_token": "a5afebb0aa5e4d7c95665788ce51ec58",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 47,
+      "class_name": "car",
+      "translation": [
+        697.535,
+        1815.17,
+        1.135
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "f987ba5f8e6243889a731f8cffe1934b",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[38]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[38]",
+      "previous_frame": 43,
+      "missed_frames": 4,
+      "sample_token": "5b7cb170eee6468aa1fdbd3abcf63c5a",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 48,
+      "class_name": "car",
+      "translation": [
+        692.33,
+        1820.638,
+        1.419
+      ]
+    },
+    {
+      "kind": "id_switch",
+      "instance_token": "eeabbd601fff49c08c086829bfe13287",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[26]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[31]",
+      "previous_frame": 47,
+      "missed_frames": 0,
+      "sample_token": "5b7cb170eee6468aa1fdbd3abcf63c5a",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 48,
+      "class_name": "pedestrian",
+      "translation": [
+        712.495,
+        1783.739,
+        1.106
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "0633f89a039a4e05bf60e53b57d1129d",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[92]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[92]",
+      "previous_frame": 46,
+      "missed_frames": 1,
+      "sample_token": "5b7cb170eee6468aa1fdbd3abcf63c5a",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 48,
+      "class_name": "motorcycle",
+      "translation": [
+        699.629,
+        1775.906,
+        0.154
+      ]
+    },
+    {
+      "kind": "gap_id_change",
+      "instance_token": "c6d85e602dd342d99758b41e64e86e12",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[55]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[99]",
+      "previous_frame": 46,
+      "missed_frames": 1,
+      "sample_token": "5b7cb170eee6468aa1fdbd3abcf63c5a",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 48,
+      "class_name": "pedestrian",
+      "translation": [
+        708.567,
+        1781.061,
+        1.027
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "93d56d9b01754c99861f6bceb5874c9e",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[39]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[39]",
+      "previous_frame": 42,
+      "missed_frames": 5,
+      "sample_token": "5b7cb170eee6468aa1fdbd3abcf63c5a",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 48,
+      "class_name": "pedestrian",
+      "translation": [
+        711.405,
+        1827.838,
+        1.401
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "bbe3bc5ca1434a2ea802f5ed5062785e",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[9]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[9]",
+      "previous_frame": 43,
+      "missed_frames": 5,
+      "sample_token": "d8251bbc2105497ab8ec80827d4429aa",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 49,
+      "class_name": "car",
+      "translation": [
+        699.297,
+        1813.671,
+        1.131
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "ba34f167479c43c69be921c9658a488c",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[73]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[73]",
+      "previous_frame": 47,
+      "missed_frames": 1,
+      "sample_token": "d8251bbc2105497ab8ec80827d4429aa",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 49,
+      "class_name": "motorcycle",
+      "translation": [
+        697.903,
+        1773.24,
+        0.196
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "56c32476c6b1417e816ea238f30249f2",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[109]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[109]",
+      "previous_frame": 48,
+      "missed_frames": 1,
+      "sample_token": "048a45dd2cf54aa5808d8ccc85731d44",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 50,
+      "class_name": "motorcycle",
+      "translation": [
+        704.903,
+        1777.783,
+        0.251
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "f987ba5f8e6243889a731f8cffe1934b",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[38]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[38]",
+      "previous_frame": 48,
+      "missed_frames": 1,
+      "sample_token": "048a45dd2cf54aa5808d8ccc85731d44",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 50,
+      "class_name": "car",
+      "translation": [
+        692.33,
+        1820.638,
+        1.493
+      ]
+    },
+    {
+      "kind": "id_switch",
+      "instance_token": "eeabbd601fff49c08c086829bfe13287",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[31]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[26]",
+      "previous_frame": 49,
+      "missed_frames": 0,
+      "sample_token": "048a45dd2cf54aa5808d8ccc85731d44",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 50,
+      "class_name": "pedestrian",
+      "translation": [
+        712.495,
+        1783.739,
+        1.106
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "1a074d62265a4117964cb47c9a2e4842",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[108]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[108]",
+      "previous_frame": 48,
+      "missed_frames": 1,
+      "sample_token": "048a45dd2cf54aa5808d8ccc85731d44",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 50,
+      "class_name": "motorcycle",
+      "translation": [
+        704.022,
+        1778.878,
+        0.437
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "c5640d5eaa7d42cbbebe7c9bef889b88",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[46]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[46]",
+      "previous_frame": 49,
+      "missed_frames": 1,
+      "sample_token": "858a1ece22cf45d9bc71e42336604b78",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 51,
+      "class_name": "motorcycle",
+      "translation": [
+        698.697,
+        1776.378,
+        0.155
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "bbe3bc5ca1434a2ea802f5ed5062785e",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[9]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[9]",
+      "previous_frame": 49,
+      "missed_frames": 1,
+      "sample_token": "858a1ece22cf45d9bc71e42336604b78",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 51,
+      "class_name": "car",
+      "translation": [
+        699.297,
+        1813.671,
+        1.231
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "1e1053e5f4224fb38f631e3be8c503c6",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[91]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[91]",
+      "previous_frame": 49,
+      "missed_frames": 1,
+      "sample_token": "858a1ece22cf45d9bc71e42336604b78",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 51,
+      "class_name": "pedestrian",
+      "translation": [
+        733.725,
+        1792.627,
+        1.103
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "5999098cd1734cea8979dd41bc34b88f",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[59]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[59]",
+      "previous_frame": 49,
+      "missed_frames": 1,
+      "sample_token": "858a1ece22cf45d9bc71e42336604b78",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 51,
+      "class_name": "motorcycle",
+      "translation": [
+        703.626,
+        1779.737,
+        0.786
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "ec2a550c52b240d98c9c3bca3d06602f",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[66]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[66]",
+      "previous_frame": 49,
+      "missed_frames": 1,
+      "sample_token": "858a1ece22cf45d9bc71e42336604b78",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 51,
+      "class_name": "car",
+      "translation": [
+        690.419,
+        1822.183,
+        1.616
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "720ca55c654a4ac8bfe9babd1c1072be",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[65]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[65]",
+      "previous_frame": 50,
+      "missed_frames": 1,
+      "sample_token": "372725a4b00e49c78d6d0b1c4a38b6e0",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 52,
+      "class_name": "car",
+      "translation": [
+        693.292,
+        1802.143,
+        1.131
+      ]
+    },
+    {
+      "kind": "id_switch",
+      "instance_token": "cb5fdffa966345cdb9c7c186143b7857",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[43]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[31]",
+      "previous_frame": 51,
+      "missed_frames": 0,
+      "sample_token": "372725a4b00e49c78d6d0b1c4a38b6e0",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 52,
+      "class_name": "pedestrian",
+      "translation": [
+        712.545,
+        1784.764,
+        1.0
+      ]
+    },
+    {
+      "kind": "gap_id_change",
+      "instance_token": "9256b7cc27954e7bb5e3a3fb8c62474c",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[27]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[6]",
+      "previous_frame": 45,
+      "missed_frames": 6,
+      "sample_token": "372725a4b00e49c78d6d0b1c4a38b6e0",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 52,
+      "class_name": "pedestrian",
+      "translation": [
+        713.112,
+        1784.991,
+        0.867
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "2197057ff31949819b309f2c7ec9a113",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[78]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[78]",
+      "previous_frame": 50,
+      "missed_frames": 1,
+      "sample_token": "372725a4b00e49c78d6d0b1c4a38b6e0",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 52,
+      "class_name": "car",
+      "translation": [
+        688.393,
+        1807.473,
+        1.154
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "090067814c7e4bbea134dcd018d2083f",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[86]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[86]",
+      "previous_frame": 50,
+      "missed_frames": 1,
+      "sample_token": "372725a4b00e49c78d6d0b1c4a38b6e0",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 52,
+      "class_name": "car",
+      "translation": [
+        684.945,
+        1811.268,
+        1.559
+      ]
+    },
+    {
+      "kind": "gap_id_change",
+      "instance_token": "de7bc639112c40ec9ebe406673f1487d",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[6]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[43]",
+      "previous_frame": 51,
+      "missed_frames": 1,
+      "sample_token": "61a7bd24f88a46c2963280d8b13ac675",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 53,
+      "class_name": "pedestrian",
+      "translation": [
+        713.74,
+        1784.123,
+        1.432
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "0633f89a039a4e05bf60e53b57d1129d",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[92]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[92]",
+      "previous_frame": 51,
+      "missed_frames": 1,
+      "sample_token": "61a7bd24f88a46c2963280d8b13ac675",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 53,
+      "class_name": "motorcycle",
+      "translation": [
+        699.624,
+        1775.892,
+        0.522
+      ]
+    },
+    {
+      "kind": "id_switch",
+      "instance_token": "7db99b003c8d4a7db1afc75160f47387",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[12]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[47]",
+      "previous_frame": 52,
+      "missed_frames": 0,
+      "sample_token": "61a7bd24f88a46c2963280d8b13ac675",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 53,
+      "class_name": "pedestrian",
+      "translation": [
+        731.902,
+        1797.509,
+        1.422
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "fd4ce422e0db4ad3ab978a811ba04d3a",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[87]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[87]",
+      "previous_frame": 51,
+      "missed_frames": 1,
+      "sample_token": "61a7bd24f88a46c2963280d8b13ac675",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 53,
+      "class_name": "car",
+      "translation": [
+        677.653,
+        1807.451,
+        1.41
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "9ca01ff2a1b54d2eafaed768e58783ad",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[102]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[102]",
+      "previous_frame": 51,
+      "missed_frames": 2,
+      "sample_token": "609d5177362340458a3bfd4949cd1e64",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 54,
+      "class_name": "car",
+      "translation": [
+        672.571,
+        1812.164,
+        1.385
+      ]
+    },
+    {
+      "kind": "id_switch",
+      "instance_token": "54ca0158a30a4d8291684544ddbeff3f",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[30]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[26]",
+      "previous_frame": 53,
+      "missed_frames": 0,
+      "sample_token": "609d5177362340458a3bfd4949cd1e64",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 54,
+      "class_name": "pedestrian",
+      "translation": [
+        711.241,
+        1784.369,
+        1.473
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "d71462c2ae74472bae3adbf7a41b2fc7",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[34]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[34]",
+      "previous_frame": 49,
+      "missed_frames": 4,
+      "sample_token": "609d5177362340458a3bfd4949cd1e64",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 54,
+      "class_name": "car",
+      "translation": [
+        674.723,
+        1821.601,
+        1.821
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "c5640d5eaa7d42cbbebe7c9bef889b88",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[46]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[46]",
+      "previous_frame": 52,
+      "missed_frames": 2,
+      "sample_token": "b1303058fa624645b753d7283d70de45",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 55,
+      "class_name": "motorcycle",
+      "translation": [
+        698.54,
+        1776.324,
+        0.53
+      ]
+    },
+    {
+      "kind": "gap_id_change",
+      "instance_token": "cb5fdffa966345cdb9c7c186143b7857",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[31]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[30]",
+      "previous_frame": 53,
+      "missed_frames": 1,
+      "sample_token": "b1303058fa624645b753d7283d70de45",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 55,
+      "class_name": "pedestrian",
+      "translation": [
+        712.545,
+        1784.764,
+        1.4
+      ]
+    },
+    {
+      "kind": "gap_id_change",
+      "instance_token": "de7bc639112c40ec9ebe406673f1487d",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[43]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[6]",
+      "previous_frame": 53,
+      "missed_frames": 1,
+      "sample_token": "b1303058fa624645b753d7283d70de45",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 55,
+      "class_name": "pedestrian",
+      "translation": [
+        713.74,
+        1784.123,
+        1.756
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "a96d8f8c04204ea5b5af21cc0b8a7042",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[76]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[76]",
+      "previous_frame": 52,
+      "missed_frames": 2,
+      "sample_token": "b1303058fa624645b753d7283d70de45",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 55,
+      "class_name": "car",
+      "translation": [
+        694.185,
+        1818.897,
+        1.414
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "77268b95b44a4b89ad17df89479de81c",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[103]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[103]",
+      "previous_frame": 53,
+      "missed_frames": 1,
+      "sample_token": "b1303058fa624645b753d7283d70de45",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 55,
+      "class_name": "car",
+      "translation": [
+        685.264,
+        1826.949,
+        1.883
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "5999098cd1734cea8979dd41bc34b88f",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[59]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[59]",
+      "previous_frame": 53,
+      "missed_frames": 1,
+      "sample_token": "b1303058fa624645b753d7283d70de45",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 55,
+      "class_name": "motorcycle",
+      "translation": [
+        703.581,
+        1779.693,
+        0.866
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "fd4ce422e0db4ad3ab978a811ba04d3a",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[87]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[87]",
+      "previous_frame": 53,
+      "missed_frames": 1,
+      "sample_token": "b1303058fa624645b753d7283d70de45",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 55,
+      "class_name": "car",
+      "translation": [
+        677.518,
+        1807.347,
+        1.271
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "7a2612095f7840048f58d69a07e836a5",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[80]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[80]",
+      "previous_frame": 52,
+      "missed_frames": 2,
+      "sample_token": "b1303058fa624645b753d7283d70de45",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 55,
+      "class_name": "car",
+      "translation": [
+        688.767,
+        1795.229,
+        0.72
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "0cfdfb5bbe8a41268271e24f2edefb9c",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[50]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[50]",
+      "previous_frame": 51,
+      "missed_frames": 4,
+      "sample_token": "a19a80c905674faab7203a3a4e0f5246",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 56,
+      "class_name": "car",
+      "translation": [
+        667.655,
+        1817.819,
+        1.415
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "1a074d62265a4117964cb47c9a2e4842",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[108]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[108]",
+      "previous_frame": 54,
+      "missed_frames": 1,
+      "sample_token": "a19a80c905674faab7203a3a4e0f5246",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 56,
+      "class_name": "motorcycle",
+      "translation": [
+        704.164,
+        1779.125,
+        0.963
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "56c32476c6b1417e816ea238f30249f2",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[109]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[109]",
+      "previous_frame": 54,
+      "missed_frames": 2,
+      "sample_token": "b6c420c3a5bd4a219b1cb82ee5ea0aa7",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 57,
+      "class_name": "motorcycle",
+      "translation": [
+        705.194,
+        1778.069,
+        1.126
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "63510eb8f6ed4b3189002b1f2648ea1f",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[37]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[37]",
+      "previous_frame": 56,
+      "missed_frames": 1,
+      "sample_token": "8092909473464f80b9f791a4d31ddcb8",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 58,
+      "class_name": "car",
+      "translation": [
+        663.708,
+        1820.872,
+        1.884
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "c5640d5eaa7d42cbbebe7c9bef889b88",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[46]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[46]",
+      "previous_frame": 56,
+      "missed_frames": 1,
+      "sample_token": "8092909473464f80b9f791a4d31ddcb8",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 58,
+      "class_name": "motorcycle",
+      "translation": [
+        698.443,
+        1776.281,
+        0.8
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "bbe3bc5ca1434a2ea802f5ed5062785e",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[9]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[9]",
+      "previous_frame": 56,
+      "missed_frames": 1,
+      "sample_token": "8092909473464f80b9f791a4d31ddcb8",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 58,
+      "class_name": "car",
+      "translation": [
+        699.297,
+        1813.671,
+        0.726
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "a96d8f8c04204ea5b5af21cc0b8a7042",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[76]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[76]",
+      "previous_frame": 55,
+      "missed_frames": 2,
+      "sample_token": "8092909473464f80b9f791a4d31ddcb8",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 58,
+      "class_name": "car",
+      "translation": [
+        694.185,
+        1818.897,
+        1.118
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "1a074d62265a4117964cb47c9a2e4842",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[108]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[108]",
+      "previous_frame": 56,
+      "missed_frames": 1,
+      "sample_token": "8092909473464f80b9f791a4d31ddcb8",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 58,
+      "class_name": "motorcycle",
+      "translation": [
+        703.982,
+        1778.98,
+        1.163
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "56c32476c6b1417e816ea238f30249f2",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[109]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[109]",
+      "previous_frame": 57,
+      "missed_frames": 1,
+      "sample_token": "e174cb43655f49dab7ffa27b973670e3",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 59,
+      "class_name": "motorcycle",
+      "translation": [
+        705.24,
+        1778.114,
+        1.126
+      ]
+    },
+    {
+      "kind": "gap_id_change",
+      "instance_token": "c5a370e03491457485bfda760515e537",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[74]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[36]",
+      "previous_frame": 57,
+      "missed_frames": 1,
+      "sample_token": "e174cb43655f49dab7ffa27b973670e3",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 59,
+      "class_name": "pedestrian",
+      "translation": [
+        708.498,
+        1782.079,
+        1.704
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "5999098cd1734cea8979dd41bc34b88f",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[59]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[59]",
+      "previous_frame": 55,
+      "missed_frames": 3,
+      "sample_token": "e174cb43655f49dab7ffa27b973670e3",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 59,
+      "class_name": "motorcycle",
+      "translation": [
+        703.581,
+        1779.693,
+        0.866
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "6dafc154a9ef43ff8fd680620dc90433",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[3]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[3]",
+      "previous_frame": 58,
+      "missed_frames": 1,
+      "sample_token": "6ff9723a60bf4e14b328b3b19f04dc32",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 60,
+      "class_name": "car",
+      "translation": [
+        702.876,
+        1809.858,
+        0.656
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "e2878e5b8aa849a18e39baee3f3440bd",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[24]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[24]",
+      "previous_frame": 54,
+      "missed_frames": 5,
+      "sample_token": "6ff9723a60bf4e14b328b3b19f04dc32",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 60,
+      "class_name": "car",
+      "translation": [
+        695.915,
+        1817.062,
+        0.946
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "c5640d5eaa7d42cbbebe7c9bef889b88",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[46]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[46]",
+      "previous_frame": 58,
+      "missed_frames": 1,
+      "sample_token": "6ff9723a60bf4e14b328b3b19f04dc32",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 60,
+      "class_name": "motorcycle",
+      "translation": [
+        698.374,
+        1776.238,
+        0.821
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "bbe3bc5ca1434a2ea802f5ed5062785e",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[9]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[9]",
+      "previous_frame": 58,
+      "missed_frames": 1,
+      "sample_token": "6ff9723a60bf4e14b328b3b19f04dc32",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 60,
+      "class_name": "car",
+      "translation": [
+        699.297,
+        1813.671,
+        0.775
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "a96d8f8c04204ea5b5af21cc0b8a7042",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[76]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[76]",
+      "previous_frame": 58,
+      "missed_frames": 1,
+      "sample_token": "6ff9723a60bf4e14b328b3b19f04dc32",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 60,
+      "class_name": "car",
+      "translation": [
+        694.185,
+        1818.897,
+        0.922
+      ]
+    },
+    {
+      "kind": "id_switch",
+      "instance_token": "e2878e5b8aa849a18e39baee3f3440bd",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[24]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[76]",
+      "previous_frame": 60,
+      "missed_frames": 0,
+      "sample_token": "06be0e3b665c44fa8d17d9f4770bdf9c",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 61,
+      "class_name": "car",
+      "translation": [
+        695.915,
+        1817.062,
+        0.922
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "a9916751b03c494dafa2eddc4496e702",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[2]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[2]",
+      "previous_frame": 56,
+      "missed_frames": 4,
+      "sample_token": "06be0e3b665c44fa8d17d9f4770bdf9c",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 61,
+      "class_name": "car",
+      "translation": [
+        700.809,
+        1811.906,
+        0.711
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "6dafc154a9ef43ff8fd680620dc90433",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[3]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[3]",
+      "previous_frame": 60,
+      "missed_frames": 1,
+      "sample_token": "9150678870764c1b87a649a25939c61b",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 62,
+      "class_name": "car",
+      "translation": [
+        702.876,
+        1809.858,
+        0.756
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "f987ba5f8e6243889a731f8cffe1934b",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[38]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[38]",
+      "previous_frame": 54,
+      "missed_frames": 7,
+      "sample_token": "9150678870764c1b87a649a25939c61b",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 62,
+      "class_name": "car",
+      "translation": [
+        692.33,
+        1820.638,
+        0.937
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "bbe3bc5ca1434a2ea802f5ed5062785e",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[9]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[9]",
+      "previous_frame": 60,
+      "missed_frames": 1,
+      "sample_token": "9150678870764c1b87a649a25939c61b",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 62,
+      "class_name": "car",
+      "translation": [
+        699.297,
+        1813.671,
+        0.823
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "2197057ff31949819b309f2c7ec9a113",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[78]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[78]",
+      "previous_frame": 59,
+      "missed_frames": 2,
+      "sample_token": "9150678870764c1b87a649a25939c61b",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 62,
+      "class_name": "car",
+      "translation": [
+        688.391,
+        1807.472,
+        0.899
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "d71462c2ae74472bae3adbf7a41b2fc7",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[34]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[34]",
+      "previous_frame": 58,
+      "missed_frames": 3,
+      "sample_token": "9150678870764c1b87a649a25939c61b",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 62,
+      "class_name": "car",
+      "translation": [
+        674.723,
+        1821.601,
+        1.371
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "5999098cd1734cea8979dd41bc34b88f",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[59]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[59]",
+      "previous_frame": 59,
+      "missed_frames": 2,
+      "sample_token": "9150678870764c1b87a649a25939c61b",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 62,
+      "class_name": "motorcycle",
+      "translation": [
+        703.581,
+        1779.693,
+        0.786
+      ]
+    },
+    {
+      "kind": "gap_id_change",
+      "instance_token": "a96d8f8c04204ea5b5af21cc0b8a7042",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[76]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[38]",
+      "previous_frame": 60,
+      "missed_frames": 2,
+      "sample_token": "8573a885a7cb41d185c05029eeb9a54e",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 63,
+      "class_name": "car",
+      "translation": [
+        694.185,
+        1818.897,
+        0.776
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "720ca55c654a4ac8bfe9babd1c1072be",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[65]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[65]",
+      "previous_frame": 62,
+      "missed_frames": 1,
+      "sample_token": "55c258972acb4300a3a6077a531ab050",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 64,
+      "class_name": "car",
+      "translation": [
+        693.247,
+        1802.328,
+        0.781
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "6dafc154a9ef43ff8fd680620dc90433",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[3]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[3]",
+      "previous_frame": 62,
+      "missed_frames": 1,
+      "sample_token": "55c258972acb4300a3a6077a531ab050",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 64,
+      "class_name": "car",
+      "translation": [
+        702.876,
+        1809.858,
+        0.756
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "cdbf619c586f41af8004473d4ec9ec33",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[136]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[136]",
+      "previous_frame": 62,
+      "missed_frames": 1,
+      "sample_token": "55c258972acb4300a3a6077a531ab050",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 64,
+      "class_name": "car",
+      "translation": [
+        652.797,
+        1827.844,
+        2.0
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "64b22104a573415a8c860fc22214619c",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[58]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[58]",
+      "previous_frame": 56,
+      "missed_frames": 7,
+      "sample_token": "55c258972acb4300a3a6077a531ab050",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 64,
+      "class_name": "car",
+      "translation": [
+        672.786,
+        1823.099,
+        1.204
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "a9916751b03c494dafa2eddc4496e702",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[2]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[2]",
+      "previous_frame": 61,
+      "missed_frames": 2,
+      "sample_token": "55c258972acb4300a3a6077a531ab050",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 64,
+      "class_name": "car",
+      "translation": [
+        701.02,
+        1811.68,
+        0.853
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "1a074d62265a4117964cb47c9a2e4842",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[108]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[108]",
+      "previous_frame": 62,
+      "missed_frames": 1,
+      "sample_token": "55c258972acb4300a3a6077a531ab050",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 64,
+      "class_name": "motorcycle",
+      "translation": [
+        704.268,
+        1779.088,
+        1.239
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "34daad97663c4e8ea00f842adc581ab5",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[14]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[14]",
+      "previous_frame": 63,
+      "missed_frames": 1,
+      "sample_token": "44237858a539457da65822bfcf58c414",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 65,
+      "class_name": "car",
+      "translation": [
+        695.053,
+        1800.435,
+        0.733
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "e2878e5b8aa849a18e39baee3f3440bd",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[76]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[76]",
+      "previous_frame": 61,
+      "missed_frames": 3,
+      "sample_token": "44237858a539457da65822bfcf58c414",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 65,
+      "class_name": "car",
+      "translation": [
+        695.915,
+        1817.062,
+        0.995
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "0633f89a039a4e05bf60e53b57d1129d",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[92]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[92]",
+      "previous_frame": 61,
+      "missed_frames": 3,
+      "sample_token": "44237858a539457da65822bfcf58c414",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 65,
+      "class_name": "motorcycle",
+      "translation": [
+        699.26,
+        1775.755,
+        0.768
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "090067814c7e4bbea134dcd018d2083f",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[86]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[86]",
+      "previous_frame": 52,
+      "missed_frames": 12,
+      "sample_token": "44237858a539457da65822bfcf58c414",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 65,
+      "class_name": "car",
+      "translation": [
+        684.921,
+        1811.288,
+        0.809
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "a1cc58fdb3fa4a0097a315a77ce1be90",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[153]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[153]",
+      "previous_frame": 64,
+      "missed_frames": 1,
+      "sample_token": "8cd36e9531fb4eba8e6ac1d666c4641c",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 66,
+      "class_name": "car",
+      "translation": [
+        671.22,
+        1825.16,
+        1.486
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "77268b95b44a4b89ad17df89479de81c",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[103]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[103]",
+      "previous_frame": 56,
+      "missed_frames": 9,
+      "sample_token": "8cd36e9531fb4eba8e6ac1d666c4641c",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 66,
+      "class_name": "car",
+      "translation": [
+        685.295,
+        1826.885,
+        1.042
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "1a074d62265a4117964cb47c9a2e4842",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[108]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[108]",
+      "previous_frame": 64,
+      "missed_frames": 1,
+      "sample_token": "8cd36e9531fb4eba8e6ac1d666c4641c",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 66,
+      "class_name": "motorcycle",
+      "translation": [
+        704.296,
+        1779.104,
+        1.239
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "52770232202d4ad1a98ed07d5b4c20b9",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[5]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[5]",
+      "previous_frame": 64,
+      "missed_frames": 1,
+      "sample_token": "8cd36e9531fb4eba8e6ac1d666c4641c",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 66,
+      "class_name": "car",
+      "translation": [
+        696.782,
+        1798.798,
+        0.657
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "cdbf619c586f41af8004473d4ec9ec33",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[136]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[136]",
+      "previous_frame": 64,
+      "missed_frames": 2,
+      "sample_token": "7bebe3c9be714f02837f8617c56df122",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 67,
+      "class_name": "car",
+      "translation": [
+        652.779,
+        1827.751,
+        1.8
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "0fdb63ddcc3e4279a4f7a0bb745c4dcf",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[113]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[113]",
+      "previous_frame": 65,
+      "missed_frames": 1,
+      "sample_token": "7bebe3c9be714f02837f8617c56df122",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 67,
+      "class_name": "car",
+      "translation": [
+        682.046,
+        1830.411,
+        0.967
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "ec221beba32448e4a9865e920aeefed5",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[67]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[67]",
+      "previous_frame": 65,
+      "missed_frames": 1,
+      "sample_token": "7bebe3c9be714f02837f8617c56df122",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 67,
+      "class_name": "car",
+      "translation": [
+        678.64,
+        1834.436,
+        1.026
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "5999098cd1734cea8979dd41bc34b88f",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[59]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[59]",
+      "previous_frame": 65,
+      "missed_frames": 1,
+      "sample_token": "7bebe3c9be714f02837f8617c56df122",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 67,
+      "class_name": "motorcycle",
+      "translation": [
+        703.581,
+        1779.693,
+        0.786
+      ]
+    },
+    {
+      "kind": "gap_id_change",
+      "instance_token": "ec2a550c52b240d98c9c3bca3d06602f",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[66]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[103]",
+      "previous_frame": 54,
+      "missed_frames": 12,
+      "sample_token": "7bebe3c9be714f02837f8617c56df122",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 67,
+      "class_name": "car",
+      "translation": [
+        690.419,
+        1822.183,
+        0.736
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "a96d8f8c04204ea5b5af21cc0b8a7042",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[38]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[38]",
+      "previous_frame": 63,
+      "missed_frames": 4,
+      "sample_token": "4b894442c95141f9affd731d9da7b43c",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 68,
+      "class_name": "car",
+      "translation": [
+        694.185,
+        1818.897,
+        0.658
+      ]
+    },
+    {
+      "kind": "gap_id_change",
+      "instance_token": "77268b95b44a4b89ad17df89479de81c",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[103]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[164]",
+      "previous_frame": 66,
+      "missed_frames": 1,
+      "sample_token": "4b894442c95141f9affd731d9da7b43c",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 68,
+      "class_name": "car",
+      "translation": [
+        685.301,
+        1826.984,
+        0.967
+      ]
+    },
+    {
+      "kind": "gap_id_change",
+      "instance_token": "f987ba5f8e6243889a731f8cffe1934b",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[38]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[76]",
+      "previous_frame": 62,
+      "missed_frames": 6,
+      "sample_token": "e00dc15130dc44e796687baadd076ae4",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 69,
+      "class_name": "car",
+      "translation": [
+        692.33,
+        1820.638,
+        0.709
+      ]
+    },
+    {
+      "kind": "gap_id_change",
+      "instance_token": "e2878e5b8aa849a18e39baee3f3440bd",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[76]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[42]",
+      "previous_frame": 66,
+      "missed_frames": 3,
+      "sample_token": "e63b83b436a0479db7362338cdfab118",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 70,
+      "class_name": "car",
+      "translation": [
+        695.915,
+        1817.062,
+        0.635
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "3eff2b1ecf29497e9967dd21509431fe",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[177]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[177]",
+      "previous_frame": 67,
+      "missed_frames": 2,
+      "sample_token": "e63b83b436a0479db7362338cdfab118",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 70,
+      "class_name": "car",
+      "translation": [
+        659.874,
+        1847.147,
+        1.819
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "0fdb63ddcc3e4279a4f7a0bb745c4dcf",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[113]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[113]",
+      "previous_frame": 68,
+      "missed_frames": 1,
+      "sample_token": "e63b83b436a0479db7362338cdfab118",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 70,
+      "class_name": "car",
+      "translation": [
+        682.046,
+        1830.411,
+        0.917
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "307a3275c31f452eb9c7c66636c7bb27",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[174]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[174]",
+      "previous_frame": 68,
+      "missed_frames": 1,
+      "sample_token": "e63b83b436a0479db7362338cdfab118",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 70,
+      "class_name": "car",
+      "translation": [
+        643.786,
+        1837.18,
+        2.86
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "0b2ef8648d3c467989b67d5a3ce2a3df",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[176]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[176]",
+      "previous_frame": 68,
+      "missed_frames": 1,
+      "sample_token": "e63b83b436a0479db7362338cdfab118",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 70,
+      "class_name": "car",
+      "translation": [
+        640.235,
+        1834.498,
+        3.502
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "3da038082ac84defbcd46f1fdc3c6f03",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[180]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[180]",
+      "previous_frame": 70,
+      "missed_frames": 1,
+      "sample_token": "8e352d4a6c6f40c8ad4f10a3d2c3f158",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 72,
+      "class_name": "car",
+      "translation": [
+        633.741,
+        1821.736,
+        3.463
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "ec221beba32448e4a9865e920aeefed5",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[67]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[67]",
+      "previous_frame": 68,
+      "missed_frames": 3,
+      "sample_token": "8e352d4a6c6f40c8ad4f10a3d2c3f158",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 72,
+      "class_name": "car",
+      "translation": [
+        678.397,
+        1834.215,
+        0.74
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "41b3e689631a41e79d7c803f0765a693",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[193]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[193]",
+      "previous_frame": 71,
+      "missed_frames": 1,
+      "sample_token": "841dd6709e9b4d7c9d6bf888f1fe6d7e",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 73,
+      "class_name": "car",
+      "translation": [
+        664.893,
+        1845.944,
+        1.256
+      ]
+    },
+    {
+      "kind": "gap_id_change",
+      "instance_token": "48a9d21a865e4d10b3cc49cc91227fba",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[158]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[67]",
+      "previous_frame": 64,
+      "missed_frames": 8,
+      "sample_token": "841dd6709e9b4d7c9d6bf888f1fe6d7e",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 73,
+      "class_name": "car",
+      "translation": [
+        674.51,
+        1837.085,
+        0.778
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "3eff2b1ecf29497e9967dd21509431fe",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[177]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[177]",
+      "previous_frame": 71,
+      "missed_frames": 1,
+      "sample_token": "841dd6709e9b4d7c9d6bf888f1fe6d7e",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 73,
+      "class_name": "car",
+      "translation": [
+        659.905,
+        1847.139,
+        1.569
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "a1cc58fdb3fa4a0097a315a77ce1be90",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[153]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[153]",
+      "previous_frame": 71,
+      "missed_frames": 1,
+      "sample_token": "841dd6709e9b4d7c9d6bf888f1fe6d7e",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 73,
+      "class_name": "car",
+      "translation": [
+        671.053,
+        1824.999,
+        0.881
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "fe050ab6b19d41d8bc2641f9835e9d1b",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[163]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[163]",
+      "previous_frame": 70,
+      "missed_frames": 2,
+      "sample_token": "841dd6709e9b4d7c9d6bf888f1fe6d7e",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 73,
+      "class_name": "car",
+      "translation": [
+        635.455,
+        1826.44,
+        3.25
+      ]
+    },
+    {
+      "kind": "gap_id_change",
+      "instance_token": "ec221beba32448e4a9865e920aeefed5",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[67]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[113]",
+      "previous_frame": 72,
+      "missed_frames": 1,
+      "sample_token": "e54b784a608644a2804fcf800c7499f7",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 74,
+      "class_name": "car",
+      "translation": [
+        678.363,
+        1834.202,
+        0.677
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "e2878e5b8aa849a18e39baee3f3440bd",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[42]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[42]",
+      "previous_frame": 73,
+      "missed_frames": 1,
+      "sample_token": "a1289b27ca1d41deb6fc982be9a3d03c",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 75,
+      "class_name": "car",
+      "translation": [
+        695.915,
+        1817.062,
+        0.377
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "e5cabb9d6b474377a206feab4ec64d3f",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[196]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[196]",
+      "previous_frame": 73,
+      "missed_frames": 1,
+      "sample_token": "a1289b27ca1d41deb6fc982be9a3d03c",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 75,
+      "class_name": "car",
+      "translation": [
+        647.432,
+        1848.519,
+        1.893
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "2197057ff31949819b309f2c7ec9a113",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[78]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[78]",
+      "previous_frame": 70,
+      "missed_frames": 4,
+      "sample_token": "a1289b27ca1d41deb6fc982be9a3d03c",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 75,
+      "class_name": "car",
+      "translation": [
+        688.435,
+        1807.467,
+        0.211
+      ]
+    },
+    {
+      "kind": "gap_id_change",
+      "instance_token": "0fdb63ddcc3e4279a4f7a0bb745c4dcf",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[113]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[213]",
+      "previous_frame": 70,
+      "missed_frames": 4,
+      "sample_token": "a1289b27ca1d41deb6fc982be9a3d03c",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 75,
+      "class_name": "car",
+      "translation": [
+        682.046,
+        1830.411,
+        0.967
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "d71462c2ae74472bae3adbf7a41b2fc7",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[34]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[34]",
+      "previous_frame": 73,
+      "missed_frames": 1,
+      "sample_token": "a1289b27ca1d41deb6fc982be9a3d03c",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 75,
+      "class_name": "car",
+      "translation": [
+        674.735,
+        1821.756,
+        0.52
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "8fba9861aa6d4d14b78c90fbb5372fb2",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[25]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[25]",
+      "previous_frame": 71,
+      "missed_frames": 3,
+      "sample_token": "a1289b27ca1d41deb6fc982be9a3d03c",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 75,
+      "class_name": "car",
+      "translation": [
+        686.279,
+        1780.824,
+        -0.012
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "41b3e689631a41e79d7c803f0765a693",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[193]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[193]",
+      "previous_frame": 74,
+      "missed_frames": 1,
+      "sample_token": "e6e877f31dd447199b56cae07f86daad",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 76,
+      "class_name": "car",
+      "translation": [
+        664.761,
+        1845.525,
+        0.981
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "77268b95b44a4b89ad17df89479de81c",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[164]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[164]",
+      "previous_frame": 74,
+      "missed_frames": 1,
+      "sample_token": "e6e877f31dd447199b56cae07f86daad",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 76,
+      "class_name": "car",
+      "translation": [
+        685.206,
+        1826.957,
+        0.655
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "a661e4cd1f644266a8307b4948082ae7",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[107]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[107]",
+      "previous_frame": 73,
+      "missed_frames": 3,
+      "sample_token": "cb4e6195faad467094fbd4d0a9e960e9",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 77,
+      "class_name": "car",
+      "translation": [
+        683.919,
+        1800.683,
+        0.042
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "ec2a550c52b240d98c9c3bca3d06602f",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[103]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[103]",
+      "previous_frame": 74,
+      "missed_frames": 2,
+      "sample_token": "cb4e6195faad467094fbd4d0a9e960e9",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 77,
+      "class_name": "car",
+      "translation": [
+        690.419,
+        1822.183,
+        0.232
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "48a9d21a865e4d10b3cc49cc91227fba",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[67]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[67]",
+      "previous_frame": 73,
+      "missed_frames": 4,
+      "sample_token": "7f594234e8034228b1a7d727f1981e09",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 78,
+      "class_name": "car",
+      "translation": [
+        674.111,
+        1833.09,
+        0.903
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "e2878e5b8aa849a18e39baee3f3440bd",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[42]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[42]",
+      "previous_frame": 76,
+      "missed_frames": 2,
+      "sample_token": "9cdbf5ff7f294549aea0a4307e5d104a",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 79,
+      "class_name": "car",
+      "translation": [
+        695.915,
+        1817.062,
+        0.295
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "98eef3fdea464efd92fb6aaf0ebe8c9a",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[170]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[170]",
+      "previous_frame": 76,
+      "missed_frames": 2,
+      "sample_token": "9cdbf5ff7f294549aea0a4307e5d104a",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 79,
+      "class_name": "car",
+      "translation": [
+        639.104,
+        1832.763,
+        2.641
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "a96d8f8c04204ea5b5af21cc0b8a7042",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[38]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[38]",
+      "previous_frame": 75,
+      "missed_frames": 4,
+      "sample_token": "b4ff30109dd14c89b24789dc5713cf8c",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 80,
+      "class_name": "car",
+      "translation": [
+        694.185,
+        1818.897,
+        0.151
+      ]
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "a661e4cd1f644266a8307b4948082ae7",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[107]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[107]",
+      "previous_frame": 77,
+      "missed_frames": 2,
+      "sample_token": "b4ff30109dd14c89b24789dc5713cf8c",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 80,
+      "class_name": "car",
+      "translation": [
+        683.892,
+        1800.71,
+        -0.138
+      ]
+    }
+  ],
+  "representative_cases": [
+    {
+      "kind": "id_switch",
+      "instance_token": "fa107c6dd0dc4d15b94b86cbf5b990c0",
+      "previous_tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[6]",
+      "tracking_id": "fcbccedd61424f1b85dcbf8f897f9754:[65]",
+      "previous_frame": 1,
+      "missed_frames": 0,
+      "sample_token": "c5f58c19249d4137ae063b0e9ecd8b8e",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "frame": 2,
+      "class_name": "pedestrian",
+      "translation": [
+        620.967,
+        1625.056,
+        0.201
+      ],
+      "image": "teaching_case_00.png"
+    },
+    {
+      "kind": "gap_id_change",
+      "instance_token": "ec2a550c52b240d98c9c3bca3d06602f",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[66]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[103]",
+      "previous_frame": 54,
+      "missed_frames": 12,
+      "sample_token": "7bebe3c9be714f02837f8617c56df122",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 67,
+      "class_name": "car",
+      "translation": [
+        690.419,
+        1822.183,
+        0.736
+      ],
+      "image": "teaching_case_01.png"
+    },
+    {
+      "kind": "gap_recovery",
+      "instance_token": "090067814c7e4bbea134dcd018d2083f",
+      "previous_tracking_id": "325cef682f064c55a255f2625c533b75:[86]",
+      "tracking_id": "325cef682f064c55a255f2625c533b75:[86]",
+      "previous_frame": 52,
+      "missed_frames": 12,
+      "sample_token": "44237858a539457da65822bfcf58c414",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "frame": 65,
+      "class_name": "car",
+      "translation": [
+        684.921,
+        1811.288,
+        0.809
+      ],
+      "image": "teaching_case_02.png"
+    }
+  ]
+}

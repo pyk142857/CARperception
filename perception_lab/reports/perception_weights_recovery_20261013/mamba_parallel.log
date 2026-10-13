@@ -1,0 +1,14 @@
+{"completed_blocks": 2, "total_blocks": 24, "verified_bytes": 33554432, "seconds": 0.03}
+{"completed_blocks": 2, "total_blocks": 24, "verified_bytes": 33554432, "seconds": 0.04}
+{"completed_blocks": 3, "total_blocks": 24, "verified_bytes": 50331648, "seconds": 273.1}
+{"completed_blocks": 4, "total_blocks": 24, "verified_bytes": 67108864, "seconds": 275.08}
+{"completed_blocks": 5, "total_blocks": 24, "verified_bytes": 83886080, "seconds": 292.88}
+{"completed_blocks": 6, "total_blocks": 24, "verified_bytes": 100663296, "seconds": 306.94}
+{"completed_blocks": 7, "total_blocks": 24, "verified_bytes": 117440512, "seconds": 307.42}
+{"completed_blocks": 8, "total_blocks": 24, "verified_bytes": 134217728, "seconds": 307.44}
+{"completed_blocks": 9, "total_blocks": 24, "verified_bytes": 150994944, "seconds": 307.66}
+{"completed_blocks": 10, "total_blocks": 24, "verified_bytes": 167772160, "seconds": 307.77}
+Traceback (most recent call last):
+  File "perception_lab/runs/weights_recovery_20261013/fetch_mamba_parallel.py", line 40, in <module>
+    if entry is None:raise RuntimeError('two failures without verified block; stopped parallel transfer')
+RuntimeError: two failures without verified block; stopped parallel transfer

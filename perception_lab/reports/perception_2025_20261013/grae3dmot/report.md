@@ -1,4 +1,26 @@
-# GRAE-3DMOT：nuScenes mini 新推理结果
+# GRAE-3DMOT：两种检测输入的独立评价
+
+新 MambaFusion 原生检测已接入，真实运行39＋81帧并通过官方TrackingEval及教学审计。frozen_reference 保留历史完成结果，没有重新运行或覆盖；其原始输出与指标已逐字节核对 bddc28f 并绑定哈希。
+
+| 检测输入 | 范围 | 帧 | AMOTA | AMOTP | IDS | FP | FN |
+|---|---|---:|---:|---:|---:|---:|---:|
+| frozen_reference | scene0061 | 39 | 0.862569 | 0.404881 | 5 | 67 | 104 |
+| frozen_reference | mini_val | 81 | 0.822964 | 0.435186 | 13 | 299 | 400 |
+| mambafusion_native | scene0061 | 39 | 0.873912 | 0.338502 | 3 | 67 | 94 |
+| mambafusion_native | mini_val | 81 | 0.849728 | 0.389175 | 19 | 405 | 344 |
+
+mini_val 新输入的AMOTA高约2.68个百分点，但IDS由13增至19，FP由299增至405；不是全面改善。检测输入改变，不能把差异全部归因于跟踪算法。官方FP/FN/IDS使用官方选定阈值与插值策略，与固定score0.25教学审计不同。
+
+新family证据：[状态](mambafusion_native/status.json)、[输入清单](mambafusion_native/input_manifest.json)、[严格推理回执](mambafusion_native/native_receipt.json)、[状态检查](mambafusion_native/state_checks.json)、[指标](mambafusion_native/metrics.json)。模型与权重、严格前缀映射、7类/score0.1/作者NMS及GT sentinel规则沿用下列已验证实现；新输入是本轮Mamba global框，未重复坐标转换，跨scene重置。
+
+[39帧教学审计](mambafusion_native/scene0061/teaching_audit.json) · [81帧教学审计](mambafusion_native/mini_val/teaching_audit.json)，各范围附真实失败图片。新输入的性能文件属于带诊断Hook运行，且本机存在外部GPU任务，不用于独占基准或新优化采用决定。
+
+复现：依次执行 `grae3dmot_2025.py --phase run/evaluate/audit --input mambafusion_native --config perception_lab/configs/perception_2025.yaml`，run使用envs/grae3dmot_2025，evaluate/audit使用envs/sparse4d（仅评价环境，不运行Sparse4D）。完整命令见恢复报告。
+
+## 历史封存输入实验说明（保留原评价与优化证据）
+
+下文的旧时延、模块调用数、诊断表和“本次”均指先前 frozen_reference 实验；不作为本轮Mamba输入的新测量。
+
 
 真实官方权重已严格加载，已在冻结的历史检测输入上重新执行 39 + 81 帧 GRAE 推理和官方 TrackingEval。这里复用的是检测输入文件，跟踪输出与指标均为本次生成；不代表全量 nuScenes val，也不代表 MambaFusion 检测链路已经完成。
 
@@ -34,4 +56,4 @@ GT 只在推理完成后进入官方评价和教学审计。教学审计采用 s
 
 每个范围有 3 张真实输出/GT BEV 对照图及事件完整列表（对应 `frozen_reference/<split>/teaching_audit.json` 和 `teaching_case_*.png`）。这里的 gap 是阈值匹配中断，不能仅凭此证明物理遮挡、检测缺失或某个模块的因果改善。代表例覆盖即时 ID 切换、长 gap 后换 ID、长 gap 后同 ID 恢复。
 
-官方指标、每类详情、预测结果、state 检查、输入 SHA、参数映射证明、30 组原始计时和复现命令均保留。MambaFusion 输入链路尚待原生检测结果，因此整体状态为 partial；不会把 frozen_reference 成绩代称为 MambaFusion+GRAE 成绩。
+官方指标、每类详情、预测结果、state 检查、输入 SHA、参数映射证明、30 组原始计时和复现命令均保留。该历史快照当时尚无Mamba输入；本轮新输入完成情况见本报告开头，两family始终分开。

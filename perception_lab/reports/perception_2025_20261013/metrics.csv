@@ -45,3 +45,36 @@ GRAE-3DMOT,mini_val frozen_reference,81,amotp,0.43518577589429613,new_measured
 GRAE-3DMOT,mini_val frozen_reference,81,ids,13.0,new_measured
 GRAE-3DMOT,mini_val frozen_reference,81,fp,299.0,new_measured
 GRAE-3DMOT,mini_val frozen_reference,81,fn,400.0,new_measured
+GRAE-3DMOT,scene0061 mambafusion_native,39,amota,0.8739118773081327,new_measured
+GRAE-3DMOT,scene0061 mambafusion_native,39,amotp,0.33850248736723276,new_measured
+GRAE-3DMOT,scene0061 mambafusion_native,39,ids,3.0,new_measured
+GRAE-3DMOT,scene0061 mambafusion_native,39,fp,67.0,new_measured
+GRAE-3DMOT,scene0061 mambafusion_native,39,fn,94.0,new_measured
+GRAE-3DMOT,mini_val mambafusion_native,81,amota,0.8497284519734606,new_measured
+GRAE-3DMOT,mini_val mambafusion_native,81,amotp,0.38917468383995074,new_measured
+GRAE-3DMOT,mini_val mambafusion_native,81,ids,19.0,new_measured
+GRAE-3DMOT,mini_val mambafusion_native,81,fp,405.0,new_measured
+GRAE-3DMOT,mini_val mambafusion_native,81,fn,344.0,new_measured
+HARP-NeXt,scene0061 original-points-only,39,miou_union_gt_zero,0.644201422884852,new_measured
+HARP-NeXt,scene0061 original-points-only,39,accuracy,0.9442868839230536,new_measured
+HARP-NeXt,scene0061 original-points-only,39,valid_points,1016188,new_measured
+HARP-NeXt,mini_val original-points-only,81,miou_union_gt_zero,0.5521619164409703,new_measured
+HARP-NeXt,mini_val original-points-only,81,accuracy,0.9480768134554319,new_measured
+HARP-NeXt,mini_val original-points-only,81,valid_points,2087603,new_measured
+HARP-NeXt,mini_all original-points-only,404,miou_union_gt_zero,0.7738487784768644,new_measured
+HARP-NeXt,mini_all original-points-only,404,accuracy,0.947850850240354,new_measured
+HARP-NeXt,mini_all original-points-only,404,valid_points,10359306,new_measured
+MambaFusion,scene0061,39,mean_ap,0.7279752319124936,new_measured
+MambaFusion,scene0061,39,nd_score,0.6738776961599682,new_measured
+MambaFusion,scene0061,39,trans_err,0.2992746396588843,new_measured
+MambaFusion,scene0061,39,scale_err,0.3229434525170288,new_measured
+MambaFusion,scene0061,39,orient_err,0.3342022792129312,new_measured
+MambaFusion,scene0061,39,vel_err,0.34461296327638985,new_measured
+MambaFusion,scene0061,39,attr_err,0.6000658632975517,new_measured
+MambaFusion,mini_val,81,mean_ap,0.5889794050098823,new_measured
+MambaFusion,mini_val,81,nd_score,0.5957750804833165,new_measured
+MambaFusion,mini_val,81,trans_err,0.3966954560190631,new_measured
+MambaFusion,mini_val,81,scale_err,0.43013743983436237,new_measured
+MambaFusion,mini_val,81,orient_err,0.44599896936902905,new_measured
+MambaFusion,mini_val,81,vel_err,0.42439859684917647,new_measured
+MambaFusion,mini_val,81,attr_err,0.28991575814461545,new_measured

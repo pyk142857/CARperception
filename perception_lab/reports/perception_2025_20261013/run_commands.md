@@ -1,9 +1,12 @@
 # 复现与运行入口
 
-从仓库根目录运行。环境、数据、权重和上游源码均按 resource_manifest / 各模型环境文件准备；模型大文件未纳入Git。当前缺完整 HARP/Mamba 权重，这两个阶段会写 blocked_resource，退出码2；不能据此声称网络已经跑通。
+从仓库根目录运行。环境、数据、权重和上游源码均按 resource_manifest / 各模型环境文件准备；模型大文件未纳入Git。HARP/Mamba完整权重现已恢复，具体SHA与来源见恢复报告。
 
 ```bash
-# 本轮入口，dry-run只列命令，不执行模型。
+# 本轮恢复入口，只运行HARP/Mamba/GRAE/可视化/汇总，不重跑DEIM或旧模型。
+python3 perception_lab/tools/run_perception_2025.py --phase recovery --dry-run
+# 执行时去掉--dry-run；GPU任务串行。配置显式允许已测Mamba原生重复噪声，并强制核验保存的六帧证据。
+# 历史完整入口（不属于本轮重跑范围）：
 python3 perception_lab/tools/run_perception_2025.py --phase all --dry-run
 # 实际单阶段：支持 preflight/deimv2/harpnext/mambafusion/grae3dmot/optimize/visualize/summarize。
 python3 perception_lab/tools/run_perception_2025.py --phase deimv2
@@ -39,3 +42,5 @@ python3 perception_lab/tools/perception_2025_artifacts.py
 ```
 
 ONNX隔离环境的 `vision_overlay.pth` 指向已有vision site-packages以选中GPU ORT，自己site-packages的Pillow12.3优先；旧vision环境没有修改。原生/ORT配对完成后新增的权重/配置/ONNX身份防护仅在比较前检查文件，不改变推理或计时路径；实际文件通过[事后身份核对](deimv2/backend_identity_verification.json)。未来export记录明确输入和ONNX绑定。
+
+本轮逐模型实际命令见[权重恢复报告](../perception_weights_recovery_20261013/report.md)。Mamba先应用 `python3 perception_lab/tools/mambafusion_numpy_compat_2025.py`（精确hash防护、幂等），再执行原生推理；六帧重复证据保存在repeat_diagnostic_baseline，不宣称严格一致性通过。

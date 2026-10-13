@@ -1,0 +1,3680 @@
+[
+  {
+    "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+    "index": 0,
+    "finite": true,
+    "repeats": [
+      {
+        "candidate_order_and_shape_equal": false,
+        "box_max_abs": null,
+        "score_max_abs": null
+      },
+      {
+        "candidate_order_and_shape_equal": false,
+        "box_max_abs": null,
+        "score_max_abs": null
+      }
+    ],
+    "note": "same raw frame and seeded native eval preprocessing; candidate order may vary",
+    "module_hooks": {
+      "vfe": {
+        "calls": 3,
+        "type": "DynamicVoxelVFE",
+        "outputs": {
+          "output.points": {
+            "shape": [
+              266054,
+              6
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar2camera": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar2image": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera2ego": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera_intrinsics": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera2lidar": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera_imgs": {
+            "shape": [
+              1,
+              6,
+              3,
+              256,
+              704
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar_aug_matrix": {
+            "shape": [
+              1,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar2image_aug": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.use_lead_xyz": {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.img_aug_matrix": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.auged_img": {
+            "shape": [
+              1,
+              6,
+              256,
+              704,
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.ori_coords_height": {
+            "shape": [
+              7783
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.pillar_features": {
+            "shape": [
+              7783,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.voxel_features": {
+            "shape": [
+              7783,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.voxel_coords": {
+            "shape": [
+              7783,
+              4
+            ],
+            "dtype": "torch.int32"
+          }
+        }
+      },
+      "cuda.selective_scan_cuda": {
+        "calls": 168,
+        "type": "author CUDA selective scan",
+        "input_shapes": [
+          [
+            1,
+            256,
+            52619
+          ],
+          [
+            1,
+            256,
+            52619
+          ],
+          [
+            256,
+            16
+          ],
+          [
+            1,
+            1,
+            16,
+            52619
+          ],
+          [
+            1,
+            1,
+            16,
+            52619
+          ],
+          [
+            256
+          ],
+          [
+            1,
+            256,
+            52619
+          ],
+          [
+            256
+          ]
+        ]
+      },
+      "backbone_3d.linear_1.encoder.0.blocks.0.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              2,
+              4096,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "backbone_3d.linear_1.encoder.0.blocks.1.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              2,
+              4096,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "backbone_3d.linear_1.encoder.1.blocks.0.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              2,
+              4096,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "backbone_3d.linear_1.encoder.1.blocks.1.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              2,
+              4096,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "backbone_3d.linear_1.decoder.0.blocks.0.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              1,
+              4096,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "backbone_3d.linear_1.decoder.0.blocks.1.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              1,
+              4096,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "backbone_3d.linear_1.decoder.1.blocks.0.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              2,
+              4096,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "backbone_3d.linear_1.decoder.1.blocks.1.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              2,
+              4096,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "backbone_3d.linear_2.encoder.0.blocks.0.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              5,
+              2048,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "backbone_3d.linear_2.encoder.0.blocks.1.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              5,
+              2048,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "backbone_3d.linear_2.encoder.1.blocks.0.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              3,
+              2048,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "backbone_3d.linear_2.encoder.1.blocks.1.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              3,
+              2048,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "backbone_3d.linear_2.decoder.0.blocks.0.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              1,
+              2048,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "backbone_3d.linear_2.decoder.0.blocks.1.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              1,
+              2048,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "backbone_3d.linear_2.decoder.1.blocks.0.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              3,
+              2048,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "backbone_3d.linear_2.decoder.1.blocks.1.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              3,
+              2048,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "backbone_3d.linear_3.encoder.0.blocks.0.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              12,
+              1024,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "backbone_3d.linear_3.encoder.0.blocks.1.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              12,
+              1024,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "backbone_3d.linear_3.encoder.1.blocks.0.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              5,
+              1024,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "backbone_3d.linear_3.encoder.1.blocks.1.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              5,
+              1024,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "backbone_3d.linear_3.decoder.0.blocks.0.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              2,
+              1024,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "backbone_3d.linear_3.decoder.0.blocks.1.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              2,
+              1024,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "backbone_3d.linear_3.decoder.1.blocks.0.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              5,
+              1024,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "backbone_3d.linear_3.decoder.1.blocks.1.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              5,
+              1024,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "backbone_3d.linear_4.encoder.0.blocks.0.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              32,
+              512,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "backbone_3d.linear_4.encoder.0.blocks.1.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              32,
+              512,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "backbone_3d.linear_4.encoder.1.blocks.0.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              13,
+              512,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "backbone_3d.linear_4.encoder.1.blocks.1.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              13,
+              512,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "backbone_3d.linear_4.decoder.0.blocks.0.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              4,
+              512,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "backbone_3d.linear_4.decoder.0.blocks.1.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              4,
+              512,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "backbone_3d.linear_4.decoder.1.blocks.0.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              13,
+              512,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "backbone_3d.linear_4.decoder.1.blocks.1.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              13,
+              512,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "backbone_3d.linear_out.blocks.0.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              77,
+              256,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "backbone_3d.linear_out.blocks.1.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              77,
+              256,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "backbone_3d": {
+        "calls": 3,
+        "type": "LION3DBackboneOneStride",
+        "outputs": {
+          "output.points": {
+            "shape": [
+              266054,
+              6
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar2camera": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar2image": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera2ego": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera_intrinsics": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera2lidar": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera_imgs": {
+            "shape": [
+              1,
+              6,
+              3,
+              256,
+              704
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar_aug_matrix": {
+            "shape": [
+              1,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar2image_aug": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.use_lead_xyz": {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.img_aug_matrix": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.auged_img": {
+            "shape": [
+              1,
+              6,
+              256,
+              704,
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.ori_coords_height": {
+            "shape": [
+              20219
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.pillar_features": {
+            "shape": [
+              20219,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.voxel_features": {
+            "shape": [
+              20219,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.voxel_coords": {
+            "shape": [
+              20219,
+              4
+            ],
+            "dtype": "torch.int32"
+          },
+          "output.ori_coords_height_coords1": {
+            "shape": [
+              10040
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.ori_coords_height_coords2": {
+            "shape": [
+              12276
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.ori_coords_height_coords3": {
+            "shape": [
+              16004
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.ori_coords_height_coords4": {
+            "shape": [
+              19465
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.encoded_spconv_tensor.features": {
+            "shape": [
+              20219,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_features.x_conv1.features": {
+            "shape": [
+              10040,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_features.x_conv2.features": {
+            "shape": [
+              12276,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_features.x_conv3.features": {
+            "shape": [
+              16004,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_features.x_conv4.features": {
+            "shape": [
+              19465,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_strides.x_conv1": {
+            "shape": [
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_strides.x_conv2": {
+            "shape": [
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_strides.x_conv3": {
+            "shape": [
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_strides.x_conv4": {
+            "shape": [
+              3
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "cuda.selective_scan_cuda_oflex": {
+        "calls": 12,
+        "type": "author CUDA selective scan",
+        "input_shapes": [
+          [
+            6,
+            2048,
+            2816
+          ],
+          [
+            6,
+            2048,
+            2816
+          ],
+          [
+            2048,
+            1
+          ],
+          [
+            6,
+            4,
+            1,
+            2816
+          ],
+          [
+            6,
+            4,
+            1,
+            2816
+          ],
+          [
+            2048
+          ],
+          [
+            2048
+          ]
+        ]
+      },
+      "mm_backbone.backbone_vssm.layers.0.blocks.0.op": {
+        "calls": 3,
+        "type": "SS2D",
+        "outputs": {
+          "output": {
+            "shape": [
+              6,
+              128,
+              64,
+              176
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "mm_backbone.backbone_vssm.layers.0.blocks.1.op": {
+        "calls": 3,
+        "type": "SS2D",
+        "outputs": {
+          "output": {
+            "shape": [
+              6,
+              128,
+              64,
+              176
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "mm_backbone.backbone_vssm.layers.1.blocks.0.op": {
+        "calls": 3,
+        "type": "SS2D",
+        "outputs": {
+          "output": {
+            "shape": [
+              6,
+              256,
+              32,
+              88
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "mm_backbone.backbone_vssm.layers.1.blocks.1.op": {
+        "calls": 3,
+        "type": "SS2D",
+        "outputs": {
+          "output": {
+            "shape": [
+              6,
+              256,
+              32,
+              88
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "mm_backbone.backbone_vssm": {
+        "calls": 3,
+        "type": "Backbone_VSSM",
+        "outputs": {
+          "output.0": {
+            "shape": [
+              6,
+              256,
+              32,
+              88
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "mm_backbone.stage_0.0.0.encoder.0.blocks.0.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              145,
+              256,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "mm_backbone.stage_0.0.0.encoder.0.blocks.1.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              145,
+              256,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "mm_backbone.stage_0.0.0.encoder.0": {
+        "calls": 3,
+        "type": "LocalMambaLayer",
+        "outputs": {
+          "output.0.features": {
+            "shape": [
+              37115,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.1.flat2win": {
+            "shape": [
+              37120
+            ],
+            "dtype": "torch.int64"
+          },
+          "output.1.win2flat": {
+            "shape": [
+              37115
+            ],
+            "dtype": "torch.int64"
+          },
+          "output.1.x": {
+            "shape": [
+              37115
+            ],
+            "dtype": "torch.int64"
+          },
+          "output.1.y": {
+            "shape": [
+              37115
+            ],
+            "dtype": "torch.int64"
+          }
+        }
+      },
+      "mm_backbone.stage_0.0.0.encoder.1.blocks.0.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              48,
+              256,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "mm_backbone.stage_0.0.0.encoder.1.blocks.1.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              48,
+              256,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "mm_backbone.stage_0.0.0.encoder.1": {
+        "calls": 3,
+        "type": "LocalMambaLayer",
+        "outputs": {
+          "output.0.features": {
+            "shape": [
+              11686,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.1.flat2win": {
+            "shape": [
+              12288
+            ],
+            "dtype": "torch.int64"
+          },
+          "output.1.win2flat": {
+            "shape": [
+              11686
+            ],
+            "dtype": "torch.int64"
+          },
+          "output.1.x": {
+            "shape": [
+              11686
+            ],
+            "dtype": "torch.int64"
+          },
+          "output.1.y": {
+            "shape": [
+              11686
+            ],
+            "dtype": "torch.int64"
+          }
+        }
+      },
+      "mm_backbone.stage_0.0.0.decoder.0.blocks.0.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              16,
+              256,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "mm_backbone.stage_0.0.0.decoder.0.blocks.1.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              16,
+              256,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "mm_backbone.stage_0.0.0.decoder.0": {
+        "calls": 3,
+        "type": "LocalMambaLayer",
+        "outputs": {
+          "output.0.features": {
+            "shape": [
+              3455,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.1.flat2win": {
+            "shape": [
+              4096
+            ],
+            "dtype": "torch.int64"
+          },
+          "output.1.win2flat": {
+            "shape": [
+              3455
+            ],
+            "dtype": "torch.int64"
+          },
+          "output.1.x": {
+            "shape": [
+              3455
+            ],
+            "dtype": "torch.int64"
+          },
+          "output.1.y": {
+            "shape": [
+              3455
+            ],
+            "dtype": "torch.int64"
+          }
+        }
+      },
+      "mm_backbone.stage_0.0.0.decoder.1.blocks.0.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              48,
+              256,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "mm_backbone.stage_0.0.0.decoder.1.blocks.1.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              48,
+              256,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "mm_backbone.stage_0.0.0.decoder.1": {
+        "calls": 3,
+        "type": "LocalMambaLayer",
+        "outputs": {
+          "output.0.features": {
+            "shape": [
+              11686,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.1.flat2win": {
+            "shape": [
+              12288
+            ],
+            "dtype": "torch.int64"
+          },
+          "output.1.win2flat": {
+            "shape": [
+              11686
+            ],
+            "dtype": "torch.int64"
+          },
+          "output.1.x": {
+            "shape": [
+              11686
+            ],
+            "dtype": "torch.int64"
+          },
+          "output.1.y": {
+            "shape": [
+              11686
+            ],
+            "dtype": "torch.int64"
+          }
+        }
+      },
+      "mm_backbone.stage_0.0.0": {
+        "calls": 3,
+        "type": "LocalMamba",
+        "outputs": {
+          "output.features": {
+            "shape": [
+              37115,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "mm_backbone.stage_0.0.1.mamba_encoder_list.0.mixer": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              1,
+              8546,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "mm_backbone.stage_0.0.1.mamba_encoder_list.1.mixer": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              1,
+              20219,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "mm_backbone.stage_0.0.1": {
+        "calls": 3,
+        "type": "GlobalMamba",
+        "outputs": {
+          "output.0": {
+            "shape": [
+              37115,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.1": {
+            "shape": [
+              37115,
+              4
+            ],
+            "dtype": "torch.int32"
+          }
+        }
+      },
+      "mm_backbone.stage_0.1.0.encoder.0.blocks.0.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              414,
+              90,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "mm_backbone.stage_0.1.0.encoder.0.blocks.1.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              414,
+              90,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "mm_backbone.stage_0.1.0.encoder.0": {
+        "calls": 3,
+        "type": "LocalMambaLayer",
+        "outputs": {
+          "output.0.features": {
+            "shape": [
+              37115,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.1.flat2win": {
+            "shape": [
+              37260
+            ],
+            "dtype": "torch.int64"
+          },
+          "output.1.win2flat": {
+            "shape": [
+              37115
+            ],
+            "dtype": "torch.int64"
+          },
+          "output.1.x": {
+            "shape": [
+              37115
+            ],
+            "dtype": "torch.int64"
+          },
+          "output.1.y": {
+            "shape": [
+              37115
+            ],
+            "dtype": "torch.int64"
+          }
+        }
+      },
+      "mm_backbone.stage_0.1.0.encoder.1.blocks.0.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              53,
+              90,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "mm_backbone.stage_0.1.0.encoder.1.blocks.1.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              53,
+              90,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "mm_backbone.stage_0.1.0.encoder.1": {
+        "calls": 3,
+        "type": "LocalMambaLayer",
+        "outputs": {
+          "output.0.features": {
+            "shape": [
+              4543,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.1.flat2win": {
+            "shape": [
+              4770
+            ],
+            "dtype": "torch.int64"
+          },
+          "output.1.win2flat": {
+            "shape": [
+              4543
+            ],
+            "dtype": "torch.int64"
+          },
+          "output.1.x": {
+            "shape": [
+              4543
+            ],
+            "dtype": "torch.int64"
+          },
+          "output.1.y": {
+            "shape": [
+              4543
+            ],
+            "dtype": "torch.int64"
+          }
+        }
+      },
+      "mm_backbone.stage_0.1.0.decoder.0.blocks.0.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              16,
+              90,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "mm_backbone.stage_0.1.0.decoder.0.blocks.1.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              16,
+              90,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "mm_backbone.stage_0.1.0.decoder.0": {
+        "calls": 3,
+        "type": "LocalMambaLayer",
+        "outputs": {
+          "output.0.features": {
+            "shape": [
+              1294,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.1.flat2win": {
+            "shape": [
+              1440
+            ],
+            "dtype": "torch.int64"
+          },
+          "output.1.win2flat": {
+            "shape": [
+              1294
+            ],
+            "dtype": "torch.int64"
+          },
+          "output.1.x": {
+            "shape": [
+              1294
+            ],
+            "dtype": "torch.int64"
+          },
+          "output.1.y": {
+            "shape": [
+              1294
+            ],
+            "dtype": "torch.int64"
+          }
+        }
+      },
+      "mm_backbone.stage_0.1.0.decoder.1.blocks.0.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              53,
+              90,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "mm_backbone.stage_0.1.0.decoder.1.blocks.1.mamba": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              53,
+              90,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "mm_backbone.stage_0.1.0.decoder.1": {
+        "calls": 3,
+        "type": "LocalMambaLayer",
+        "outputs": {
+          "output.0.features": {
+            "shape": [
+              4543,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.1.flat2win": {
+            "shape": [
+              4770
+            ],
+            "dtype": "torch.int64"
+          },
+          "output.1.win2flat": {
+            "shape": [
+              4543
+            ],
+            "dtype": "torch.int64"
+          },
+          "output.1.x": {
+            "shape": [
+              4543
+            ],
+            "dtype": "torch.int64"
+          },
+          "output.1.y": {
+            "shape": [
+              4543
+            ],
+            "dtype": "torch.int64"
+          }
+        }
+      },
+      "mm_backbone.stage_0.1.0": {
+        "calls": 3,
+        "type": "LocalMamba",
+        "outputs": {
+          "output.features": {
+            "shape": [
+              37115,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "mm_backbone.stage_0.1.1.mamba_encoder_list.0.mixer": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              1,
+              1280,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "mm_backbone.stage_0.1.1.mamba_encoder_list.1.mixer": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              1,
+              7753,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "mm_backbone.stage_0.1.1": {
+        "calls": 3,
+        "type": "GlobalMamba",
+        "outputs": {
+          "output.0": {
+            "shape": [
+              37115,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.1": {
+            "shape": [
+              37115,
+              4
+            ],
+            "dtype": "torch.int32"
+          }
+        }
+      },
+      "mm_backbone": {
+        "calls": 3,
+        "type": "MambaFusion",
+        "outputs": {
+          "output.points": {
+            "shape": [
+              266054,
+              6
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar2camera": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar2image": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera2ego": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera_intrinsics": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera2lidar": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera_imgs": {
+            "shape": [
+              1,
+              6,
+              3,
+              256,
+              704
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar_aug_matrix": {
+            "shape": [
+              1,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar2image_aug": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.use_lead_xyz": {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.img_aug_matrix": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.auged_img": {
+            "shape": [
+              1,
+              6,
+              256,
+              704,
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.ori_coords_height": {
+            "shape": [
+              20219
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.pillar_features": {
+            "shape": [
+              20219,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.voxel_features": {
+            "shape": [
+              20219,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.voxel_coords": {
+            "shape": [
+              20219,
+              4
+            ],
+            "dtype": "torch.int32"
+          },
+          "output.ori_coords_height_coords1": {
+            "shape": [
+              10040
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.ori_coords_height_coords2": {
+            "shape": [
+              12276
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.ori_coords_height_coords3": {
+            "shape": [
+              16004
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.ori_coords_height_coords4": {
+            "shape": [
+              19465
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.encoded_spconv_tensor.features": {
+            "shape": [
+              20219,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_features.x_conv1.features": {
+            "shape": [
+              10040,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_features.x_conv2.features": {
+            "shape": [
+              12276,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_features.x_conv3.features": {
+            "shape": [
+              16004,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_features.x_conv4.features": {
+            "shape": [
+              19465,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_strides.x_conv1": {
+            "shape": [
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_strides.x_conv2": {
+            "shape": [
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_strides.x_conv3": {
+            "shape": [
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_strides.x_conv4": {
+            "shape": [
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.patch_features": {
+            "shape": [
+              16896,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.patch_coords": {
+            "shape": [
+              16896,
+              4
+            ],
+            "dtype": "torch.int64"
+          },
+          "output.image_features.0": {
+            "shape": [
+              6,
+              128,
+              32,
+              88
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.image_features.1": {
+            "shape": [
+              6,
+              128,
+              32,
+              88
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "neck": {
+        "calls": 3,
+        "type": "GeneralizedLSSFPN",
+        "outputs": {
+          "output.points": {
+            "shape": [
+              266054,
+              6
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar2camera": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar2image": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera2ego": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera_intrinsics": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera2lidar": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera_imgs": {
+            "shape": [
+              1,
+              6,
+              3,
+              256,
+              704
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar_aug_matrix": {
+            "shape": [
+              1,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar2image_aug": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.use_lead_xyz": {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.img_aug_matrix": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.auged_img": {
+            "shape": [
+              1,
+              6,
+              256,
+              704,
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.ori_coords_height": {
+            "shape": [
+              20219
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.pillar_features": {
+            "shape": [
+              20219,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.voxel_features": {
+            "shape": [
+              20219,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.voxel_coords": {
+            "shape": [
+              20219,
+              4
+            ],
+            "dtype": "torch.int32"
+          },
+          "output.ori_coords_height_coords1": {
+            "shape": [
+              10040
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.ori_coords_height_coords2": {
+            "shape": [
+              12276
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.ori_coords_height_coords3": {
+            "shape": [
+              16004
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.ori_coords_height_coords4": {
+            "shape": [
+              19465
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.encoded_spconv_tensor.features": {
+            "shape": [
+              20219,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_features.x_conv1.features": {
+            "shape": [
+              10040,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_features.x_conv2.features": {
+            "shape": [
+              12276,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_features.x_conv3.features": {
+            "shape": [
+              16004,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_features.x_conv4.features": {
+            "shape": [
+              19465,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_strides.x_conv1": {
+            "shape": [
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_strides.x_conv2": {
+            "shape": [
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_strides.x_conv3": {
+            "shape": [
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_strides.x_conv4": {
+            "shape": [
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.patch_features": {
+            "shape": [
+              16896,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.patch_coords": {
+            "shape": [
+              16896,
+              4
+            ],
+            "dtype": "torch.int64"
+          },
+          "output.image_features.0": {
+            "shape": [
+              6,
+              128,
+              32,
+              88
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.image_features.1": {
+            "shape": [
+              6,
+              128,
+              32,
+              88
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.image_fpn.0": {
+            "shape": [
+              6,
+              256,
+              32,
+              88
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "vtransform.mamba_blocks.0.mamba_encoder_list.0.mixer": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              1,
+              32400,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "vtransform.mamba_blocks.0.mamba_encoder_list.1.mixer": {
+        "calls": 3,
+        "type": "Mamba",
+        "outputs": {
+          "output": {
+            "shape": [
+              1,
+              52619,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "vtransform.mamba_blocks.0": {
+        "calls": 3,
+        "type": "GlobalMamba",
+        "outputs": {
+          "output.0": {
+            "shape": [
+              52619,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.1": {
+            "shape": [
+              52619,
+              4
+            ],
+            "dtype": "torch.int32"
+          }
+        }
+      },
+      "vtransform": {
+        "calls": 3,
+        "type": "LSSTransform_Lite",
+        "outputs": {
+          "output.points": {
+            "shape": [
+              266054,
+              6
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar2camera": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar2image": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera2ego": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera_intrinsics": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera2lidar": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera_imgs": {
+            "shape": [
+              1,
+              6,
+              3,
+              256,
+              704
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar_aug_matrix": {
+            "shape": [
+              1,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar2image_aug": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.use_lead_xyz": {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.img_aug_matrix": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.auged_img": {
+            "shape": [
+              1,
+              6,
+              256,
+              704,
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.ori_coords_height": {
+            "shape": [
+              20219
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.pillar_features": {
+            "shape": [
+              20219,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.voxel_features": {
+            "shape": [
+              20219,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.voxel_coords": {
+            "shape": [
+              20219,
+              4
+            ],
+            "dtype": "torch.int32"
+          },
+          "output.ori_coords_height_coords1": {
+            "shape": [
+              10040
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.ori_coords_height_coords2": {
+            "shape": [
+              12276
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.ori_coords_height_coords3": {
+            "shape": [
+              16004
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.ori_coords_height_coords4": {
+            "shape": [
+              19465
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.encoded_spconv_tensor.features": {
+            "shape": [
+              20219,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_features.x_conv1.features": {
+            "shape": [
+              10040,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_features.x_conv2.features": {
+            "shape": [
+              12276,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_features.x_conv3.features": {
+            "shape": [
+              16004,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_features.x_conv4.features": {
+            "shape": [
+              19465,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_strides.x_conv1": {
+            "shape": [
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_strides.x_conv2": {
+            "shape": [
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_strides.x_conv3": {
+            "shape": [
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_strides.x_conv4": {
+            "shape": [
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.patch_features": {
+            "shape": [
+              16896,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.patch_coords": {
+            "shape": [
+              16896,
+              4
+            ],
+            "dtype": "torch.int64"
+          },
+          "output.image_features.0": {
+            "shape": [
+              6,
+              128,
+              32,
+              88
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.image_features.1": {
+            "shape": [
+              6,
+              128,
+              32,
+              88
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.image_fpn.0": {
+            "shape": [
+              6,
+              256,
+              32,
+              88
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.spatial_features_img": {
+            "shape": [
+              1,
+              80,
+              360,
+              360
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "map_to_bev_module": {
+        "calls": 3,
+        "type": "PointPillarScatter3d",
+        "outputs": {
+          "output.points": {
+            "shape": [
+              266054,
+              6
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar2camera": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar2image": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera2ego": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera_intrinsics": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera2lidar": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera_imgs": {
+            "shape": [
+              1,
+              6,
+              3,
+              256,
+              704
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar_aug_matrix": {
+            "shape": [
+              1,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar2image_aug": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.use_lead_xyz": {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.img_aug_matrix": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.auged_img": {
+            "shape": [
+              1,
+              6,
+              256,
+              704,
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.ori_coords_height": {
+            "shape": [
+              20219
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.pillar_features": {
+            "shape": [
+              20219,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.voxel_features": {
+            "shape": [
+              20219,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.voxel_coords": {
+            "shape": [
+              20219,
+              4
+            ],
+            "dtype": "torch.int32"
+          },
+          "output.ori_coords_height_coords1": {
+            "shape": [
+              10040
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.ori_coords_height_coords2": {
+            "shape": [
+              12276
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.ori_coords_height_coords3": {
+            "shape": [
+              16004
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.ori_coords_height_coords4": {
+            "shape": [
+              19465
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.encoded_spconv_tensor.features": {
+            "shape": [
+              20219,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_features.x_conv1.features": {
+            "shape": [
+              10040,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_features.x_conv2.features": {
+            "shape": [
+              12276,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_features.x_conv3.features": {
+            "shape": [
+              16004,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_features.x_conv4.features": {
+            "shape": [
+              19465,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_strides.x_conv1": {
+            "shape": [
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_strides.x_conv2": {
+            "shape": [
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_strides.x_conv3": {
+            "shape": [
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_strides.x_conv4": {
+            "shape": [
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.patch_features": {
+            "shape": [
+              16896,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.patch_coords": {
+            "shape": [
+              16896,
+              4
+            ],
+            "dtype": "torch.int64"
+          },
+          "output.image_features.0": {
+            "shape": [
+              6,
+              128,
+              32,
+              88
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.image_features.1": {
+            "shape": [
+              6,
+              128,
+              32,
+              88
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.image_fpn.0": {
+            "shape": [
+              6,
+              256,
+              32,
+              88
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.spatial_features_img": {
+            "shape": [
+              1,
+              80,
+              360,
+              360
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.spatial_features": {
+            "shape": [
+              1,
+              128,
+              360,
+              360
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "fuser": {
+        "calls": 3,
+        "type": "ConvFuser",
+        "outputs": {
+          "output.points": {
+            "shape": [
+              266054,
+              6
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar2camera": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar2image": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera2ego": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera_intrinsics": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera2lidar": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera_imgs": {
+            "shape": [
+              1,
+              6,
+              3,
+              256,
+              704
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar_aug_matrix": {
+            "shape": [
+              1,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar2image_aug": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.use_lead_xyz": {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.img_aug_matrix": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.auged_img": {
+            "shape": [
+              1,
+              6,
+              256,
+              704,
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.ori_coords_height": {
+            "shape": [
+              20219
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.pillar_features": {
+            "shape": [
+              20219,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.voxel_features": {
+            "shape": [
+              20219,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.voxel_coords": {
+            "shape": [
+              20219,
+              4
+            ],
+            "dtype": "torch.int32"
+          },
+          "output.ori_coords_height_coords1": {
+            "shape": [
+              10040
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.ori_coords_height_coords2": {
+            "shape": [
+              12276
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.ori_coords_height_coords3": {
+            "shape": [
+              16004
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.ori_coords_height_coords4": {
+            "shape": [
+              19465
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.encoded_spconv_tensor.features": {
+            "shape": [
+              20219,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_features.x_conv1.features": {
+            "shape": [
+              10040,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_features.x_conv2.features": {
+            "shape": [
+              12276,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_features.x_conv3.features": {
+            "shape": [
+              16004,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_features.x_conv4.features": {
+            "shape": [
+              19465,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_strides.x_conv1": {
+            "shape": [
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_strides.x_conv2": {
+            "shape": [
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_strides.x_conv3": {
+            "shape": [
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_strides.x_conv4": {
+            "shape": [
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.patch_features": {
+            "shape": [
+              16896,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.patch_coords": {
+            "shape": [
+              16896,
+              4
+            ],
+            "dtype": "torch.int64"
+          },
+          "output.image_features.0": {
+            "shape": [
+              6,
+              128,
+              32,
+              88
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.image_features.1": {
+            "shape": [
+              6,
+              128,
+              32,
+              88
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.image_fpn.0": {
+            "shape": [
+              6,
+              256,
+              32,
+              88
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.spatial_features_img": {
+            "shape": [
+              1,
+              80,
+              360,
+              360
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.spatial_features": {
+            "shape": [
+              1,
+              128,
+              360,
+              360
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "backbone_2d": {
+        "calls": 3,
+        "type": "BaseBEVResBackbone",
+        "outputs": {
+          "output.points": {
+            "shape": [
+              266054,
+              6
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar2camera": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar2image": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera2ego": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera_intrinsics": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera2lidar": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera_imgs": {
+            "shape": [
+              1,
+              6,
+              3,
+              256,
+              704
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar_aug_matrix": {
+            "shape": [
+              1,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar2image_aug": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.use_lead_xyz": {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.img_aug_matrix": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.auged_img": {
+            "shape": [
+              1,
+              6,
+              256,
+              704,
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.ori_coords_height": {
+            "shape": [
+              20219
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.pillar_features": {
+            "shape": [
+              20219,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.voxel_features": {
+            "shape": [
+              20219,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.voxel_coords": {
+            "shape": [
+              20219,
+              4
+            ],
+            "dtype": "torch.int32"
+          },
+          "output.ori_coords_height_coords1": {
+            "shape": [
+              10040
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.ori_coords_height_coords2": {
+            "shape": [
+              12276
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.ori_coords_height_coords3": {
+            "shape": [
+              16004
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.ori_coords_height_coords4": {
+            "shape": [
+              19465
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.encoded_spconv_tensor.features": {
+            "shape": [
+              20219,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_features.x_conv1.features": {
+            "shape": [
+              10040,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_features.x_conv2.features": {
+            "shape": [
+              12276,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_features.x_conv3.features": {
+            "shape": [
+              16004,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_features.x_conv4.features": {
+            "shape": [
+              19465,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_strides.x_conv1": {
+            "shape": [
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_strides.x_conv2": {
+            "shape": [
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_strides.x_conv3": {
+            "shape": [
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_strides.x_conv4": {
+            "shape": [
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.patch_features": {
+            "shape": [
+              16896,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.patch_coords": {
+            "shape": [
+              16896,
+              4
+            ],
+            "dtype": "torch.int64"
+          },
+          "output.image_features.0": {
+            "shape": [
+              6,
+              128,
+              32,
+              88
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.image_features.1": {
+            "shape": [
+              6,
+              128,
+              32,
+              88
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.image_fpn.0": {
+            "shape": [
+              6,
+              256,
+              32,
+              88
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.spatial_features_img": {
+            "shape": [
+              1,
+              80,
+              360,
+              360
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.spatial_features": {
+            "shape": [
+              1,
+              128,
+              360,
+              360
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.spatial_features_2d": {
+            "shape": [
+              1,
+              512,
+              180,
+              180
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "dense_head": {
+        "calls": 3,
+        "type": "TransFusionHead",
+        "outputs": {
+          "output.points": {
+            "shape": [
+              266054,
+              6
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar2camera": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar2image": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera2ego": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera_intrinsics": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera2lidar": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.camera_imgs": {
+            "shape": [
+              1,
+              6,
+              3,
+              256,
+              704
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar_aug_matrix": {
+            "shape": [
+              1,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.lidar2image_aug": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.use_lead_xyz": {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.img_aug_matrix": {
+            "shape": [
+              1,
+              6,
+              4,
+              4
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.auged_img": {
+            "shape": [
+              1,
+              6,
+              256,
+              704,
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.ori_coords_height": {
+            "shape": [
+              20219
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.pillar_features": {
+            "shape": [
+              20219,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.voxel_features": {
+            "shape": [
+              20219,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.voxel_coords": {
+            "shape": [
+              20219,
+              4
+            ],
+            "dtype": "torch.int32"
+          },
+          "output.ori_coords_height_coords1": {
+            "shape": [
+              10040
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.ori_coords_height_coords2": {
+            "shape": [
+              12276
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.ori_coords_height_coords3": {
+            "shape": [
+              16004
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.ori_coords_height_coords4": {
+            "shape": [
+              19465
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.encoded_spconv_tensor.features": {
+            "shape": [
+              20219,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_features.x_conv1.features": {
+            "shape": [
+              10040,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_features.x_conv2.features": {
+            "shape": [
+              12276,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_features.x_conv3.features": {
+            "shape": [
+              16004,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_features.x_conv4.features": {
+            "shape": [
+              19465,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_strides.x_conv1": {
+            "shape": [
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_strides.x_conv2": {
+            "shape": [
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_strides.x_conv3": {
+            "shape": [
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.multi_scale_3d_strides.x_conv4": {
+            "shape": [
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.patch_features": {
+            "shape": [
+              16896,
+              128
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.patch_coords": {
+            "shape": [
+              16896,
+              4
+            ],
+            "dtype": "torch.int64"
+          },
+          "output.image_features.0": {
+            "shape": [
+              6,
+              128,
+              32,
+              88
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.image_features.1": {
+            "shape": [
+              6,
+              128,
+              32,
+              88
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.image_fpn.0": {
+            "shape": [
+              6,
+              256,
+              32,
+              88
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.spatial_features_img": {
+            "shape": [
+              1,
+              80,
+              360,
+              360
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.spatial_features": {
+            "shape": [
+              1,
+              128,
+              360,
+              360
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.spatial_features_2d": {
+            "shape": [
+              1,
+              512,
+              180,
+              180
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.final_box_dicts.0.pred_boxes": {
+            "shape": [
+              141,
+              9
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.final_box_dicts.0.pred_scores": {
+            "shape": [
+              141
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.final_box_dicts.0.pred_labels": {
+            "shape": [
+              141
+            ],
+            "dtype": "torch.int32"
+          },
+          "output.final_box_dicts.0.cmask": {
+            "shape": [
+              200
+            ],
+            "dtype": "torch.bool"
+          }
+        }
+      },
+      "": {
+        "calls": 3,
+        "type": "MambaFusion",
+        "outputs": {
+          "output.0.0.pred_boxes": {
+            "shape": [
+              141,
+              9
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.0.0.pred_scores": {
+            "shape": [
+              141
+            ],
+            "dtype": "torch.float32"
+          },
+          "output.0.0.pred_labels": {
+            "shape": [
+              141
+            ],
+            "dtype": "torch.int32"
+          },
+          "output.0.0.cmask": {
+            "shape": [
+              200
+            ],
+            "dtype": "torch.bool"
+          }
+        }
+      }
+    },
+    "repeat_budget": {
+      "box_component_max_abs": 0.1,
+      "score_max_abs": 0.01,
+      "aligned_classes_and_shape_required": true
+    },
+    "passed": false
+  }
+]

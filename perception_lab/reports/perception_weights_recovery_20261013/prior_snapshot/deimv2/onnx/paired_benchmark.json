@@ -1,0 +1,1101 @@
+{
+  "status": "passed",
+  "rounds": [
+    {
+      "round": 0,
+      "order": [
+        "native",
+        "onnx"
+      ],
+      "native": {
+        "image_id": 397133,
+        "e2e_ms": 18.00626900512725,
+        "read_preprocess_ms": 6.554472012794577,
+        "h2d_wall_ms": 0.4525689873844385,
+        "forward_post_gpu_ms": 10.909440040588379,
+        "forward_post_wall_ms": 10.935778002021834,
+        "decode_d2h_wall_ms": 0.0634500029264018,
+        "input_sha256": "87fd3a4fbfd2ad2f53187b7e77c0f803a3b5e815757ab2c8da4825ef29417f02",
+        "output_sha256": "7069ba37580e202f4daccace374209db529db575db654a159e8654b9e17a9d78",
+        "finite": true,
+        "device_used_bytes": 2510684160,
+        "ram_peak_kib": 1380568
+      },
+      "onnx": {
+        "image_id": 397133,
+        "e2e_ms": 33.0268780089682,
+        "read_preprocess_ms": 7.837681012460962,
+        "ort_h2d_forward_d2h_wall_ms": 25.189196996507235,
+        "cuda_interval_ms": 25.036800384521484,
+        "input_sha256": "87fd3a4fbfd2ad2f53187b7e77c0f803a3b5e815757ab2c8da4825ef29417f02",
+        "output_sha256": "2c54a4c5674294da24dad0db3299bc7079f2f652308bf70e97079a03b3e4782b",
+        "finite": true,
+        "device_used_bytes": 2510684160,
+        "ram_peak_kib": 926352
+      }
+    },
+    {
+      "round": 1,
+      "order": [
+        "onnx",
+        "native"
+      ],
+      "onnx": {
+        "image_id": 180878,
+        "e2e_ms": 29.126601002644747,
+        "read_preprocess_ms": 5.233816991676576,
+        "ort_h2d_forward_d2h_wall_ms": 23.89278401096817,
+        "cuda_interval_ms": 23.752704620361328,
+        "input_sha256": "514f3f7786902a6ef153ae5b00b19185e260562ec711a39ae232431b26029541",
+        "output_sha256": "8c11ebc77483313fe16348c4480ce7e1a94307afcb51cb33df2f3e988724e8c6",
+        "finite": true,
+        "device_used_bytes": 2510684160,
+        "ram_peak_kib": 926352
+      },
+      "native": {
+        "image_id": 180878,
+        "e2e_ms": 18.13210899126716,
+        "read_preprocess_ms": 6.10406999476254,
+        "h2d_wall_ms": 0.47569299931637943,
+        "forward_post_gpu_ms": 11.464703559875488,
+        "forward_post_wall_ms": 11.491915007354692,
+        "decode_d2h_wall_ms": 0.060430989833548665,
+        "input_sha256": "514f3f7786902a6ef153ae5b00b19185e260562ec711a39ae232431b26029541",
+        "output_sha256": "02d41deef396448532ee8ce35877b4cdc263fadace1e4a0967b5d38a14a63ea2",
+        "finite": true,
+        "device_used_bytes": 2510684160,
+        "ram_peak_kib": 1380568
+      }
+    },
+    {
+      "round": 2,
+      "order": [
+        "native",
+        "onnx"
+      ],
+      "native": {
+        "image_id": 15335,
+        "e2e_ms": 17.51694700215012,
+        "read_preprocess_ms": 6.396777011104859,
+        "h2d_wall_ms": 0.46076899161562324,
+        "forward_post_gpu_ms": 10.573823928833008,
+        "forward_post_wall_ms": 10.600973997497931,
+        "decode_d2h_wall_ms": 0.05842700193170458,
+        "input_sha256": "4a863e60f9564979d49e15d63c504d064748641fd5216bc403bbfb5c512844e6",
+        "output_sha256": "d4e6aab052169bcc4f9ba6d5c3defad3a73f8a883211ad45784dbbd7c31abf3f",
+        "finite": true,
+        "device_used_bytes": 2510684160,
+        "ram_peak_kib": 1380568
+      },
+      "onnx": {
+        "image_id": 15335,
+        "e2e_ms": 36.047565008630045,
+        "read_preprocess_ms": 9.116742003243417,
+        "ort_h2d_forward_d2h_wall_ms": 26.930823005386628,
+        "cuda_interval_ms": 26.73766326904297,
+        "input_sha256": "4a863e60f9564979d49e15d63c504d064748641fd5216bc403bbfb5c512844e6",
+        "output_sha256": "e1e83762d8ecd66616862bc1c7180f4ef92b63207fdc49c8919958016c904e09",
+        "finite": true,
+        "device_used_bytes": 2510684160,
+        "ram_peak_kib": 926352
+      }
+    },
+    {
+      "round": 3,
+      "order": [
+        "onnx",
+        "native"
+      ],
+      "onnx": {
+        "image_id": 397133,
+        "e2e_ms": 29.98865200788714,
+        "read_preprocess_ms": 6.165546001284383,
+        "ort_h2d_forward_d2h_wall_ms": 23.823106006602757,
+        "cuda_interval_ms": 23.66396713256836,
+        "input_sha256": "87fd3a4fbfd2ad2f53187b7e77c0f803a3b5e815757ab2c8da4825ef29417f02",
+        "output_sha256": "2c54a4c5674294da24dad0db3299bc7079f2f652308bf70e97079a03b3e4782b",
+        "finite": true,
+        "device_used_bytes": 2510684160,
+        "ram_peak_kib": 926352
+      },
+      "native": {
+        "image_id": 397133,
+        "e2e_ms": 18.35325099818874,
+        "read_preprocess_ms": 6.547195996972732,
+        "h2d_wall_ms": 0.49544399371370673,
+        "forward_post_gpu_ms": 11.121664047241211,
+        "forward_post_wall_ms": 11.247782007558271,
+        "decode_d2h_wall_ms": 0.06282899994403124,
+        "input_sha256": "87fd3a4fbfd2ad2f53187b7e77c0f803a3b5e815757ab2c8da4825ef29417f02",
+        "output_sha256": "7069ba37580e202f4daccace374209db529db575db654a159e8654b9e17a9d78",
+        "finite": true,
+        "device_used_bytes": 2510684160,
+        "ram_peak_kib": 1380568
+      }
+    },
+    {
+      "round": 4,
+      "order": [
+        "native",
+        "onnx"
+      ],
+      "native": {
+        "image_id": 180878,
+        "e2e_ms": 16.968463998637162,
+        "read_preprocess_ms": 5.720100001781248,
+        "h2d_wall_ms": 0.49831499927677214,
+        "forward_post_gpu_ms": 10.658592224121094,
+        "forward_post_wall_ms": 10.687561996746808,
+        "decode_d2h_wall_ms": 0.06248700083233416,
+        "input_sha256": "514f3f7786902a6ef153ae5b00b19185e260562ec711a39ae232431b26029541",
+        "output_sha256": "02d41deef396448532ee8ce35877b4cdc263fadace1e4a0967b5d38a14a63ea2",
+        "finite": true,
+        "device_used_bytes": 2510684160,
+        "ram_peak_kib": 1380580
+      },
+      "onnx": {
+        "image_id": 180878,
+        "e2e_ms": 32.79876499436796,
+        "read_preprocess_ms": 7.165157003328204,
+        "ort_h2d_forward_d2h_wall_ms": 25.633607991039753,
+        "cuda_interval_ms": 25.477279663085938,
+        "input_sha256": "514f3f7786902a6ef153ae5b00b19185e260562ec711a39ae232431b26029541",
+        "output_sha256": "8c11ebc77483313fe16348c4480ce7e1a94307afcb51cb33df2f3e988724e8c6",
+        "finite": true,
+        "device_used_bytes": 2510684160,
+        "ram_peak_kib": 926352
+      }
+    },
+    {
+      "round": 5,
+      "order": [
+        "onnx",
+        "native"
+      ],
+      "onnx": {
+        "image_id": 15335,
+        "e2e_ms": 31.64757599006407,
+        "read_preprocess_ms": 6.477916002040729,
+        "ort_h2d_forward_d2h_wall_ms": 25.16965998802334,
+        "cuda_interval_ms": 24.199487686157227,
+        "input_sha256": "4a863e60f9564979d49e15d63c504d064748641fd5216bc403bbfb5c512844e6",
+        "output_sha256": "e1e83762d8ecd66616862bc1c7180f4ef92b63207fdc49c8919958016c904e09",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 926352
+      },
+      "native": {
+        "image_id": 15335,
+        "e2e_ms": 18.13760300865397,
+        "read_preprocess_ms": 6.291248006164096,
+        "h2d_wall_ms": 0.7078530034050345,
+        "forward_post_gpu_ms": 11.041791915893555,
+        "forward_post_wall_ms": 11.071927001466975,
+        "decode_d2h_wall_ms": 0.06657499761786312,
+        "input_sha256": "4a863e60f9564979d49e15d63c504d064748641fd5216bc403bbfb5c512844e6",
+        "output_sha256": "d4e6aab052169bcc4f9ba6d5c3defad3a73f8a883211ad45784dbbd7c31abf3f",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 1380580
+      }
+    },
+    {
+      "round": 6,
+      "order": [
+        "native",
+        "onnx"
+      ],
+      "native": {
+        "image_id": 397133,
+        "e2e_ms": 17.592352000065148,
+        "read_preprocess_ms": 6.1956220015417784,
+        "h2d_wall_ms": 0.5283119971863925,
+        "forward_post_gpu_ms": 10.77353572845459,
+        "forward_post_wall_ms": 10.804539007949643,
+        "decode_d2h_wall_ms": 0.06387899338733405,
+        "input_sha256": "87fd3a4fbfd2ad2f53187b7e77c0f803a3b5e815757ab2c8da4825ef29417f02",
+        "output_sha256": "7069ba37580e202f4daccace374209db529db575db654a159e8654b9e17a9d78",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 1380580
+      },
+      "onnx": {
+        "image_id": 397133,
+        "e2e_ms": 31.6970800049603,
+        "read_preprocess_ms": 6.266458003665321,
+        "ort_h2d_forward_d2h_wall_ms": 25.430622001294978,
+        "cuda_interval_ms": 25.273727416992188,
+        "input_sha256": "87fd3a4fbfd2ad2f53187b7e77c0f803a3b5e815757ab2c8da4825ef29417f02",
+        "output_sha256": "2c54a4c5674294da24dad0db3299bc7079f2f652308bf70e97079a03b3e4782b",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 926352
+      }
+    },
+    {
+      "round": 7,
+      "order": [
+        "onnx",
+        "native"
+      ],
+      "onnx": {
+        "image_id": 180878,
+        "e2e_ms": 29.82364100171253,
+        "read_preprocess_ms": 5.300417004036717,
+        "ort_h2d_forward_d2h_wall_ms": 24.523223997675814,
+        "cuda_interval_ms": 24.427583694458008,
+        "input_sha256": "514f3f7786902a6ef153ae5b00b19185e260562ec711a39ae232431b26029541",
+        "output_sha256": "8c11ebc77483313fe16348c4480ce7e1a94307afcb51cb33df2f3e988724e8c6",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 926352
+      },
+      "native": {
+        "image_id": 180878,
+        "e2e_ms": 17.24548399215564,
+        "read_preprocess_ms": 5.4988899937598035,
+        "h2d_wall_ms": 0.47591399925295264,
+        "forward_post_gpu_ms": 11.181056022644043,
+        "forward_post_wall_ms": 11.209076998056844,
+        "decode_d2h_wall_ms": 0.06160300108604133,
+        "input_sha256": "514f3f7786902a6ef153ae5b00b19185e260562ec711a39ae232431b26029541",
+        "output_sha256": "02d41deef396448532ee8ce35877b4cdc263fadace1e4a0967b5d38a14a63ea2",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 1380580
+      }
+    },
+    {
+      "round": 8,
+      "order": [
+        "native",
+        "onnx"
+      ],
+      "native": {
+        "image_id": 15335,
+        "e2e_ms": 17.45352199941408,
+        "read_preprocess_ms": 6.226989004062489,
+        "h2d_wall_ms": 0.47943998652044684,
+        "forward_post_gpu_ms": 10.650272369384766,
+        "forward_post_wall_ms": 10.6794730090769,
+        "decode_d2h_wall_ms": 0.0676199997542426,
+        "input_sha256": "4a863e60f9564979d49e15d63c504d064748641fd5216bc403bbfb5c512844e6",
+        "output_sha256": "d4e6aab052169bcc4f9ba6d5c3defad3a73f8a883211ad45784dbbd7c31abf3f",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 1380580
+      },
+      "onnx": {
+        "image_id": 15335,
+        "e2e_ms": 30.80804798810277,
+        "read_preprocess_ms": 5.9492929867701605,
+        "ort_h2d_forward_d2h_wall_ms": 24.85875500133261,
+        "cuda_interval_ms": 24.7142391204834,
+        "input_sha256": "4a863e60f9564979d49e15d63c504d064748641fd5216bc403bbfb5c512844e6",
+        "output_sha256": "e1e83762d8ecd66616862bc1c7180f4ef92b63207fdc49c8919958016c904e09",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 926352
+      }
+    },
+    {
+      "round": 9,
+      "order": [
+        "onnx",
+        "native"
+      ],
+      "onnx": {
+        "image_id": 397133,
+        "e2e_ms": 28.41381001053378,
+        "read_preprocess_ms": 5.505266002728604,
+        "ort_h2d_forward_d2h_wall_ms": 22.908544007805176,
+        "cuda_interval_ms": 22.779903411865234,
+        "input_sha256": "87fd3a4fbfd2ad2f53187b7e77c0f803a3b5e815757ab2c8da4825ef29417f02",
+        "output_sha256": "2c54a4c5674294da24dad0db3299bc7079f2f652308bf70e97079a03b3e4782b",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 926352
+      },
+      "native": {
+        "image_id": 397133,
+        "e2e_ms": 17.09575999120716,
+        "read_preprocess_ms": 5.932248997851275,
+        "h2d_wall_ms": 0.4462789947865531,
+        "forward_post_gpu_ms": 10.636223793029785,
+        "forward_post_wall_ms": 10.66192300640978,
+        "decode_d2h_wall_ms": 0.05530899215955287,
+        "input_sha256": "87fd3a4fbfd2ad2f53187b7e77c0f803a3b5e815757ab2c8da4825ef29417f02",
+        "output_sha256": "7069ba37580e202f4daccace374209db529db575db654a159e8654b9e17a9d78",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 1380580
+      }
+    },
+    {
+      "round": 10,
+      "order": [
+        "native",
+        "onnx"
+      ],
+      "native": {
+        "image_id": 180878,
+        "e2e_ms": 16.17361599346623,
+        "read_preprocess_ms": 5.187086993828416,
+        "h2d_wall_ms": 0.412477005738765,
+        "forward_post_gpu_ms": 10.503199577331543,
+        "forward_post_wall_ms": 10.524297002120875,
+        "decode_d2h_wall_ms": 0.04975499177817255,
+        "input_sha256": "514f3f7786902a6ef153ae5b00b19185e260562ec711a39ae232431b26029541",
+        "output_sha256": "02d41deef396448532ee8ce35877b4cdc263fadace1e4a0967b5d38a14a63ea2",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 1380580
+      },
+      "onnx": {
+        "image_id": 180878,
+        "e2e_ms": 31.446906010387465,
+        "read_preprocess_ms": 5.724649003241211,
+        "ort_h2d_forward_d2h_wall_ms": 25.722257007146254,
+        "cuda_interval_ms": 25.581600189208984,
+        "input_sha256": "514f3f7786902a6ef153ae5b00b19185e260562ec711a39ae232431b26029541",
+        "output_sha256": "8c11ebc77483313fe16348c4480ce7e1a94307afcb51cb33df2f3e988724e8c6",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 926352
+      }
+    },
+    {
+      "round": 11,
+      "order": [
+        "onnx",
+        "native"
+      ],
+      "onnx": {
+        "image_id": 15335,
+        "e2e_ms": 30.886742009897716,
+        "read_preprocess_ms": 6.45920900569763,
+        "ort_h2d_forward_d2h_wall_ms": 24.427533004200086,
+        "cuda_interval_ms": 24.29849624633789,
+        "input_sha256": "4a863e60f9564979d49e15d63c504d064748641fd5216bc403bbfb5c512844e6",
+        "output_sha256": "e1e83762d8ecd66616862bc1c7180f4ef92b63207fdc49c8919958016c904e09",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 926352
+      },
+      "native": {
+        "image_id": 15335,
+        "e2e_ms": 17.46598500176333,
+        "read_preprocess_ms": 6.290422999882139,
+        "h2d_wall_ms": 0.44005799281876534,
+        "forward_post_gpu_ms": 10.548224449157715,
+        "forward_post_wall_ms": 10.67272899672389,
+        "decode_d2h_wall_ms": 0.062775012338534,
+        "input_sha256": "4a863e60f9564979d49e15d63c504d064748641fd5216bc403bbfb5c512844e6",
+        "output_sha256": "d4e6aab052169bcc4f9ba6d5c3defad3a73f8a883211ad45784dbbd7c31abf3f",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 1380580
+      }
+    },
+    {
+      "round": 12,
+      "order": [
+        "native",
+        "onnx"
+      ],
+      "native": {
+        "image_id": 397133,
+        "e2e_ms": 16.85423799790442,
+        "read_preprocess_ms": 5.885280988877639,
+        "h2d_wall_ms": 0.442743010353297,
+        "forward_post_gpu_ms": 10.449919700622559,
+        "forward_post_wall_ms": 10.473588001332246,
+        "decode_d2h_wall_ms": 0.05262599734123796,
+        "input_sha256": "87fd3a4fbfd2ad2f53187b7e77c0f803a3b5e815757ab2c8da4825ef29417f02",
+        "output_sha256": "7069ba37580e202f4daccace374209db529db575db654a159e8654b9e17a9d78",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 1380580
+      },
+      "onnx": {
+        "image_id": 397133,
+        "e2e_ms": 31.094236008357257,
+        "read_preprocess_ms": 5.9184279962209985,
+        "ort_h2d_forward_d2h_wall_ms": 25.175808012136258,
+        "cuda_interval_ms": 25.03206443786621,
+        "input_sha256": "87fd3a4fbfd2ad2f53187b7e77c0f803a3b5e815757ab2c8da4825ef29417f02",
+        "output_sha256": "2c54a4c5674294da24dad0db3299bc7079f2f652308bf70e97079a03b3e4782b",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 926352
+      }
+    },
+    {
+      "round": 13,
+      "order": [
+        "onnx",
+        "native"
+      ],
+      "onnx": {
+        "image_id": 180878,
+        "e2e_ms": 28.485511007602327,
+        "read_preprocess_ms": 5.141494999406859,
+        "ort_h2d_forward_d2h_wall_ms": 23.344016008195467,
+        "cuda_interval_ms": 23.214080810546875,
+        "input_sha256": "514f3f7786902a6ef153ae5b00b19185e260562ec711a39ae232431b26029541",
+        "output_sha256": "8c11ebc77483313fe16348c4480ce7e1a94307afcb51cb33df2f3e988724e8c6",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 926352
+      },
+      "native": {
+        "image_id": 180878,
+        "e2e_ms": 16.460437997011468,
+        "read_preprocess_ms": 5.394261999754235,
+        "h2d_wall_ms": 0.44396200974006206,
+        "forward_post_gpu_ms": 10.541055679321289,
+        "forward_post_wall_ms": 10.567163990344852,
+        "decode_d2h_wall_ms": 0.0550499971723184,
+        "input_sha256": "514f3f7786902a6ef153ae5b00b19185e260562ec711a39ae232431b26029541",
+        "output_sha256": "02d41deef396448532ee8ce35877b4cdc263fadace1e4a0967b5d38a14a63ea2",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 1380580
+      }
+    },
+    {
+      "round": 14,
+      "order": [
+        "native",
+        "onnx"
+      ],
+      "native": {
+        "image_id": 15335,
+        "e2e_ms": 17.201080001541413,
+        "read_preprocess_ms": 5.924313998548314,
+        "h2d_wall_ms": 0.3510819951770827,
+        "forward_post_gpu_ms": 10.855327606201172,
+        "forward_post_wall_ms": 10.875275998841971,
+        "decode_d2h_wall_ms": 0.050408008974045515,
+        "input_sha256": "4a863e60f9564979d49e15d63c504d064748641fd5216bc403bbfb5c512844e6",
+        "output_sha256": "d4e6aab052169bcc4f9ba6d5c3defad3a73f8a883211ad45784dbbd7c31abf3f",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 1380580
+      },
+      "onnx": {
+        "image_id": 15335,
+        "e2e_ms": 31.92147900699638,
+        "read_preprocess_ms": 6.808628997532651,
+        "ort_h2d_forward_d2h_wall_ms": 25.112850009463727,
+        "cuda_interval_ms": 24.95897674560547,
+        "input_sha256": "4a863e60f9564979d49e15d63c504d064748641fd5216bc403bbfb5c512844e6",
+        "output_sha256": "e1e83762d8ecd66616862bc1c7180f4ef92b63207fdc49c8919958016c904e09",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 926352
+      }
+    },
+    {
+      "round": 15,
+      "order": [
+        "onnx",
+        "native"
+      ],
+      "onnx": {
+        "image_id": 397133,
+        "e2e_ms": 28.78204199078027,
+        "read_preprocess_ms": 5.94068098871503,
+        "ort_h2d_forward_d2h_wall_ms": 22.84136100206524,
+        "cuda_interval_ms": 22.71027183532715,
+        "input_sha256": "87fd3a4fbfd2ad2f53187b7e77c0f803a3b5e815757ab2c8da4825ef29417f02",
+        "output_sha256": "2c54a4c5674294da24dad0db3299bc7079f2f652308bf70e97079a03b3e4782b",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 926352
+      },
+      "native": {
+        "image_id": 397133,
+        "e2e_ms": 17.376956006046385,
+        "read_preprocess_ms": 5.956480003078468,
+        "h2d_wall_ms": 0.48595799307804555,
+        "forward_post_gpu_ms": 10.846207618713379,
+        "forward_post_wall_ms": 10.874326006160118,
+        "decode_d2h_wall_ms": 0.060192003729753196,
+        "input_sha256": "87fd3a4fbfd2ad2f53187b7e77c0f803a3b5e815757ab2c8da4825ef29417f02",
+        "output_sha256": "7069ba37580e202f4daccace374209db529db575db654a159e8654b9e17a9d78",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 1380584
+      }
+    },
+    {
+      "round": 16,
+      "order": [
+        "native",
+        "onnx"
+      ],
+      "native": {
+        "image_id": 180878,
+        "e2e_ms": 16.022612995584495,
+        "read_preprocess_ms": 5.202235988690518,
+        "h2d_wall_ms": 0.425426012952812,
+        "forward_post_gpu_ms": 10.318400382995605,
+        "forward_post_wall_ms": 10.340245993575081,
+        "decode_d2h_wall_ms": 0.05470500036608428,
+        "input_sha256": "514f3f7786902a6ef153ae5b00b19185e260562ec711a39ae232431b26029541",
+        "output_sha256": "02d41deef396448532ee8ce35877b4cdc263fadace1e4a0967b5d38a14a63ea2",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 1380584
+      },
+      "onnx": {
+        "image_id": 180878,
+        "e2e_ms": 30.591354006901383,
+        "read_preprocess_ms": 5.584369006101042,
+        "ort_h2d_forward_d2h_wall_ms": 25.00698500080034,
+        "cuda_interval_ms": 24.862720489501953,
+        "input_sha256": "514f3f7786902a6ef153ae5b00b19185e260562ec711a39ae232431b26029541",
+        "output_sha256": "8c11ebc77483313fe16348c4480ce7e1a94307afcb51cb33df2f3e988724e8c6",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 926352
+      }
+    },
+    {
+      "round": 17,
+      "order": [
+        "onnx",
+        "native"
+      ],
+      "onnx": {
+        "image_id": 15335,
+        "e2e_ms": 31.22399999119807,
+        "read_preprocess_ms": 6.316333994618617,
+        "ort_h2d_forward_d2h_wall_ms": 24.907665996579453,
+        "cuda_interval_ms": 24.763391494750977,
+        "input_sha256": "4a863e60f9564979d49e15d63c504d064748641fd5216bc403bbfb5c512844e6",
+        "output_sha256": "e1e83762d8ecd66616862bc1c7180f4ef92b63207fdc49c8919958016c904e09",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 926352
+      },
+      "native": {
+        "image_id": 15335,
+        "e2e_ms": 18.073920989991166,
+        "read_preprocess_ms": 6.207400991115719,
+        "h2d_wall_ms": 0.45397100620903075,
+        "forward_post_gpu_ms": 11.329536437988281,
+        "forward_post_wall_ms": 11.355666996678337,
+        "decode_d2h_wall_ms": 0.056881995988078415,
+        "input_sha256": "4a863e60f9564979d49e15d63c504d064748641fd5216bc403bbfb5c512844e6",
+        "output_sha256": "d4e6aab052169bcc4f9ba6d5c3defad3a73f8a883211ad45784dbbd7c31abf3f",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 1380584
+      }
+    },
+    {
+      "round": 18,
+      "order": [
+        "native",
+        "onnx"
+      ],
+      "native": {
+        "image_id": 397133,
+        "e2e_ms": 17.05176399264019,
+        "read_preprocess_ms": 5.9290829958627,
+        "h2d_wall_ms": 0.4793719999724999,
+        "forward_post_gpu_ms": 10.56169605255127,
+        "forward_post_wall_ms": 10.586806005449034,
+        "decode_d2h_wall_ms": 0.0565029913559556,
+        "input_sha256": "87fd3a4fbfd2ad2f53187b7e77c0f803a3b5e815757ab2c8da4825ef29417f02",
+        "output_sha256": "7069ba37580e202f4daccace374209db529db575db654a159e8654b9e17a9d78",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 1380584
+      },
+      "onnx": {
+        "image_id": 397133,
+        "e2e_ms": 30.999650989542715,
+        "read_preprocess_ms": 6.4156149892369285,
+        "ort_h2d_forward_d2h_wall_ms": 24.584036000305787,
+        "cuda_interval_ms": 24.439807891845703,
+        "input_sha256": "87fd3a4fbfd2ad2f53187b7e77c0f803a3b5e815757ab2c8da4825ef29417f02",
+        "output_sha256": "2c54a4c5674294da24dad0db3299bc7079f2f652308bf70e97079a03b3e4782b",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 926352
+      }
+    },
+    {
+      "round": 19,
+      "order": [
+        "onnx",
+        "native"
+      ],
+      "onnx": {
+        "image_id": 180878,
+        "e2e_ms": 27.260895003564656,
+        "read_preprocess_ms": 4.65573399560526,
+        "ort_h2d_forward_d2h_wall_ms": 22.605161007959396,
+        "cuda_interval_ms": 22.4716796875,
+        "input_sha256": "514f3f7786902a6ef153ae5b00b19185e260562ec711a39ae232431b26029541",
+        "output_sha256": "8c11ebc77483313fe16348c4480ce7e1a94307afcb51cb33df2f3e988724e8c6",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 927408
+      },
+      "native": {
+        "image_id": 180878,
+        "e2e_ms": 16.384672999265604,
+        "read_preprocess_ms": 5.344179007806815,
+        "h2d_wall_ms": 0.45113298983778805,
+        "forward_post_gpu_ms": 10.507840156555176,
+        "forward_post_wall_ms": 10.533820008276962,
+        "decode_d2h_wall_ms": 0.055540993344038725,
+        "input_sha256": "514f3f7786902a6ef153ae5b00b19185e260562ec711a39ae232431b26029541",
+        "output_sha256": "02d41deef396448532ee8ce35877b4cdc263fadace1e4a0967b5d38a14a63ea2",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 1380584
+      }
+    },
+    {
+      "round": 20,
+      "order": [
+        "native",
+        "onnx"
+      ],
+      "native": {
+        "image_id": 15335,
+        "e2e_ms": 17.08457400673069,
+        "read_preprocess_ms": 6.009999007801525,
+        "h2d_wall_ms": 0.4201729898341,
+        "forward_post_gpu_ms": 10.57590389251709,
+        "forward_post_wall_ms": 10.597102009342052,
+        "decode_d2h_wall_ms": 0.05729999975301325,
+        "input_sha256": "4a863e60f9564979d49e15d63c504d064748641fd5216bc403bbfb5c512844e6",
+        "output_sha256": "d4e6aab052169bcc4f9ba6d5c3defad3a73f8a883211ad45784dbbd7c31abf3f",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 1380584
+      },
+      "onnx": {
+        "image_id": 15335,
+        "e2e_ms": 31.522581994067878,
+        "read_preprocess_ms": 6.306850002147257,
+        "ort_h2d_forward_d2h_wall_ms": 25.21573199192062,
+        "cuda_interval_ms": 25.073888778686523,
+        "input_sha256": "4a863e60f9564979d49e15d63c504d064748641fd5216bc403bbfb5c512844e6",
+        "output_sha256": "e1e83762d8ecd66616862bc1c7180f4ef92b63207fdc49c8919958016c904e09",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 927408
+      }
+    },
+    {
+      "round": 21,
+      "order": [
+        "onnx",
+        "native"
+      ],
+      "onnx": {
+        "image_id": 397133,
+        "e2e_ms": 29.22736099571921,
+        "read_preprocess_ms": 5.769891999079846,
+        "ort_h2d_forward_d2h_wall_ms": 23.457468996639363,
+        "cuda_interval_ms": 23.32467269897461,
+        "input_sha256": "87fd3a4fbfd2ad2f53187b7e77c0f803a3b5e815757ab2c8da4825ef29417f02",
+        "output_sha256": "2c54a4c5674294da24dad0db3299bc7079f2f652308bf70e97079a03b3e4782b",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 927408
+      },
+      "native": {
+        "image_id": 397133,
+        "e2e_ms": 17.042264007613994,
+        "read_preprocess_ms": 5.852417001733556,
+        "h2d_wall_ms": 0.4634100041585043,
+        "forward_post_gpu_ms": 10.304512023925781,
+        "forward_post_wall_ms": 10.66497499414254,
+        "decode_d2h_wall_ms": 0.061462007579393685,
+        "input_sha256": "87fd3a4fbfd2ad2f53187b7e77c0f803a3b5e815757ab2c8da4825ef29417f02",
+        "output_sha256": "7069ba37580e202f4daccace374209db529db575db654a159e8654b9e17a9d78",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 1380584
+      }
+    },
+    {
+      "round": 22,
+      "order": [
+        "native",
+        "onnx"
+      ],
+      "native": {
+        "image_id": 180878,
+        "e2e_ms": 16.57959001022391,
+        "read_preprocess_ms": 5.554381001275033,
+        "h2d_wall_ms": 0.45043400314170867,
+        "forward_post_gpu_ms": 10.497023582458496,
+        "forward_post_wall_ms": 10.52182300190907,
+        "decode_d2h_wall_ms": 0.052952003898099065,
+        "input_sha256": "514f3f7786902a6ef153ae5b00b19185e260562ec711a39ae232431b26029541",
+        "output_sha256": "02d41deef396448532ee8ce35877b4cdc263fadace1e4a0967b5d38a14a63ea2",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 1380584
+      },
+      "onnx": {
+        "image_id": 180878,
+        "e2e_ms": 29.400946004898287,
+        "read_preprocess_ms": 5.625826001050882,
+        "ort_h2d_forward_d2h_wall_ms": 23.775120003847405,
+        "cuda_interval_ms": 23.625728607177734,
+        "input_sha256": "514f3f7786902a6ef153ae5b00b19185e260562ec711a39ae232431b26029541",
+        "output_sha256": "8c11ebc77483313fe16348c4480ce7e1a94307afcb51cb33df2f3e988724e8c6",
+        "finite": true,
+        "device_used_bytes": 2510290944,
+        "ram_peak_kib": 927408
+      }
+    },
+    {
+      "round": 23,
+      "order": [
+        "onnx",
+        "native"
+      ],
+      "onnx": {
+        "image_id": 15335,
+        "e2e_ms": 29.59508099593222,
+        "read_preprocess_ms": 6.1276829947019,
+        "ort_h2d_forward_d2h_wall_ms": 23.467398001230322,
+        "cuda_interval_ms": 23.32159996032715,
+        "input_sha256": "4a863e60f9564979d49e15d63c504d064748641fd5216bc403bbfb5c512844e6",
+        "output_sha256": "e1e83762d8ecd66616862bc1c7180f4ef92b63207fdc49c8919958016c904e09",
+        "finite": true,
+        "device_used_bytes": 2510028800,
+        "ram_peak_kib": 927408
+      },
+      "native": {
+        "image_id": 15335,
+        "e2e_ms": 17.317552992608398,
+        "read_preprocess_ms": 6.294756996794604,
+        "h2d_wall_ms": 0.4434769944055006,
+        "forward_post_gpu_ms": 10.49731159210205,
+        "forward_post_wall_ms": 10.523128003114834,
+        "decode_d2h_wall_ms": 0.056190998293459415,
+        "input_sha256": "4a863e60f9564979d49e15d63c504d064748641fd5216bc403bbfb5c512844e6",
+        "output_sha256": "d4e6aab052169bcc4f9ba6d5c3defad3a73f8a883211ad45784dbbd7c31abf3f",
+        "finite": true,
+        "device_used_bytes": 2510028800,
+        "ram_peak_kib": 1380584
+      }
+    },
+    {
+      "round": 24,
+      "order": [
+        "native",
+        "onnx"
+      ],
+      "native": {
+        "image_id": 397133,
+        "e2e_ms": 16.9064539950341,
+        "read_preprocess_ms": 5.725359995267354,
+        "h2d_wall_ms": 0.35121499968227,
+        "forward_post_gpu_ms": 10.744671821594238,
+        "forward_post_wall_ms": 10.770300999865867,
+        "decode_d2h_wall_ms": 0.059578000218607485,
+        "input_sha256": "87fd3a4fbfd2ad2f53187b7e77c0f803a3b5e815757ab2c8da4825ef29417f02",
+        "output_sha256": "7069ba37580e202f4daccace374209db529db575db654a159e8654b9e17a9d78",
+        "finite": true,
+        "device_used_bytes": 2510028800,
+        "ram_peak_kib": 1380584
+      },
+      "onnx": {
+        "image_id": 397133,
+        "e2e_ms": 30.40454701113049,
+        "read_preprocess_ms": 5.977690001600422,
+        "ort_h2d_forward_d2h_wall_ms": 24.426857009530067,
+        "cuda_interval_ms": 24.274944305419922,
+        "input_sha256": "87fd3a4fbfd2ad2f53187b7e77c0f803a3b5e815757ab2c8da4825ef29417f02",
+        "output_sha256": "2c54a4c5674294da24dad0db3299bc7079f2f652308bf70e97079a03b3e4782b",
+        "finite": true,
+        "device_used_bytes": 2510028800,
+        "ram_peak_kib": 927408
+      }
+    },
+    {
+      "round": 25,
+      "order": [
+        "onnx",
+        "native"
+      ],
+      "onnx": {
+        "image_id": 180878,
+        "e2e_ms": 28.841043007560074,
+        "read_preprocess_ms": 5.689038996933959,
+        "ort_h2d_forward_d2h_wall_ms": 23.152004010626115,
+        "cuda_interval_ms": 22.906879425048828,
+        "input_sha256": "514f3f7786902a6ef153ae5b00b19185e260562ec711a39ae232431b26029541",
+        "output_sha256": "8c11ebc77483313fe16348c4480ce7e1a94307afcb51cb33df2f3e988724e8c6",
+        "finite": true,
+        "device_used_bytes": 2510028800,
+        "ram_peak_kib": 927408
+      },
+      "native": {
+        "image_id": 180878,
+        "e2e_ms": 17.287572991335765,
+        "read_preprocess_ms": 5.707699994673021,
+        "h2d_wall_ms": 0.47211900528054684,
+        "forward_post_gpu_ms": 10.80627155303955,
+        "forward_post_wall_ms": 11.04353899427224,
+        "decode_d2h_wall_ms": 0.06421499710995704,
+        "input_sha256": "514f3f7786902a6ef153ae5b00b19185e260562ec711a39ae232431b26029541",
+        "output_sha256": "02d41deef396448532ee8ce35877b4cdc263fadace1e4a0967b5d38a14a63ea2",
+        "finite": true,
+        "device_used_bytes": 2510028800,
+        "ram_peak_kib": 1380584
+      }
+    },
+    {
+      "round": 26,
+      "order": [
+        "native",
+        "onnx"
+      ],
+      "native": {
+        "image_id": 15335,
+        "e2e_ms": 17.932717004441656,
+        "read_preprocess_ms": 6.803606011089869,
+        "h2d_wall_ms": 0.4616309888660908,
+        "forward_post_gpu_ms": 10.582240104675293,
+        "forward_post_wall_ms": 10.60995900479611,
+        "decode_d2h_wall_ms": 0.05752099968958646,
+        "input_sha256": "4a863e60f9564979d49e15d63c504d064748641fd5216bc403bbfb5c512844e6",
+        "output_sha256": "d4e6aab052169bcc4f9ba6d5c3defad3a73f8a883211ad45784dbbd7c31abf3f",
+        "finite": true,
+        "device_used_bytes": 2510028800,
+        "ram_peak_kib": 1380584
+      },
+      "onnx": {
+        "image_id": 15335,
+        "e2e_ms": 31.822466000448912,
+        "read_preprocess_ms": 6.378849997418001,
+        "ort_h2d_forward_d2h_wall_ms": 25.44361600303091,
+        "cuda_interval_ms": 25.2938232421875,
+        "input_sha256": "4a863e60f9564979d49e15d63c504d064748641fd5216bc403bbfb5c512844e6",
+        "output_sha256": "e1e83762d8ecd66616862bc1c7180f4ef92b63207fdc49c8919958016c904e09",
+        "finite": true,
+        "device_used_bytes": 2510028800,
+        "ram_peak_kib": 927408
+      }
+    },
+    {
+      "round": 27,
+      "order": [
+        "onnx",
+        "native"
+      ],
+      "onnx": {
+        "image_id": 397133,
+        "e2e_ms": 30.801664004684426,
+        "read_preprocess_ms": 6.229937003809027,
+        "ort_h2d_forward_d2h_wall_ms": 24.5717270008754,
+        "cuda_interval_ms": 24.483680725097656,
+        "input_sha256": "87fd3a4fbfd2ad2f53187b7e77c0f803a3b5e815757ab2c8da4825ef29417f02",
+        "output_sha256": "2c54a4c5674294da24dad0db3299bc7079f2f652308bf70e97079a03b3e4782b",
+        "finite": true,
+        "device_used_bytes": 2510028800,
+        "ram_peak_kib": 927408
+      },
+      "native": {
+        "image_id": 397133,
+        "e2e_ms": 17.287611990468577,
+        "read_preprocess_ms": 5.9273020015098155,
+        "h2d_wall_ms": 0.46026699419599026,
+        "forward_post_gpu_ms": 10.801024436950684,
+        "forward_post_wall_ms": 10.831298000994138,
+        "decode_d2h_wall_ms": 0.06874499376863241,
+        "input_sha256": "87fd3a4fbfd2ad2f53187b7e77c0f803a3b5e815757ab2c8da4825ef29417f02",
+        "output_sha256": "7069ba37580e202f4daccace374209db529db575db654a159e8654b9e17a9d78",
+        "finite": true,
+        "device_used_bytes": 2510028800,
+        "ram_peak_kib": 1380584
+      }
+    },
+    {
+      "round": 28,
+      "order": [
+        "native",
+        "onnx"
+      ],
+      "native": {
+        "image_id": 180878,
+        "e2e_ms": 16.910324004129507,
+        "read_preprocess_ms": 5.658844995195977,
+        "h2d_wall_ms": 0.48529500782024115,
+        "forward_post_gpu_ms": 10.677120208740234,
+        "forward_post_wall_ms": 10.705729000619613,
+        "decode_d2h_wall_ms": 0.06045500049367547,
+        "input_sha256": "514f3f7786902a6ef153ae5b00b19185e260562ec711a39ae232431b26029541",
+        "output_sha256": "02d41deef396448532ee8ce35877b4cdc263fadace1e4a0967b5d38a14a63ea2",
+        "finite": true,
+        "device_used_bytes": 2510028800,
+        "ram_peak_kib": 1380584
+      },
+      "onnx": {
+        "image_id": 180878,
+        "e2e_ms": 29.337926011066884,
+        "read_preprocess_ms": 5.337369002518244,
+        "ort_h2d_forward_d2h_wall_ms": 24.00055700854864,
+        "cuda_interval_ms": 23.852031707763672,
+        "input_sha256": "514f3f7786902a6ef153ae5b00b19185e260562ec711a39ae232431b26029541",
+        "output_sha256": "8c11ebc77483313fe16348c4480ce7e1a94307afcb51cb33df2f3e988724e8c6",
+        "finite": true,
+        "device_used_bytes": 2510028800,
+        "ram_peak_kib": 927408
+      }
+    },
+    {
+      "round": 29,
+      "order": [
+        "onnx",
+        "native"
+      ],
+      "onnx": {
+        "image_id": 15335,
+        "e2e_ms": 30.44638899154961,
+        "read_preprocess_ms": 6.33741999627091,
+        "ort_h2d_forward_d2h_wall_ms": 24.1089689952787,
+        "cuda_interval_ms": 23.954496383666992,
+        "input_sha256": "4a863e60f9564979d49e15d63c504d064748641fd5216bc403bbfb5c512844e6",
+        "output_sha256": "e1e83762d8ecd66616862bc1c7180f4ef92b63207fdc49c8919958016c904e09",
+        "finite": true,
+        "device_used_bytes": 2510028800,
+        "ram_peak_kib": 927408
+      },
+      "native": {
+        "image_id": 15335,
+        "e2e_ms": 17.23884900275152,
+        "read_preprocess_ms": 6.239784997887909,
+        "h2d_wall_ms": 0.43868599459528923,
+        "forward_post_gpu_ms": 10.481887817382812,
+        "forward_post_wall_ms": 10.506241000257432,
+        "decode_d2h_wall_ms": 0.05413701001089066,
+        "input_sha256": "4a863e60f9564979d49e15d63c504d064748641fd5216bc403bbfb5c512844e6",
+        "output_sha256": "d4e6aab052169bcc4f9ba6d5c3defad3a73f8a883211ad45784dbbd7c31abf3f",
+        "finite": true,
+        "device_used_bytes": 2510028800,
+        "ram_peak_kib": 1380584
+      }
+    }
+  ],
+  "summary": {
+    "native": {
+      "e2e_ms": {
+        "mean": 17.23848516558064,
+        "p50": 17.24216649745358,
+        "p95": 18.135130700829905,
+        "std": 0.5741151015959135
+      },
+      "read_preprocess_ms": {
+        "mean": 5.952083699715634,
+        "p50": 5.9306659968569875,
+        "p95": 6.551197805674747,
+        "std": 0.398142044343685
+      },
+      "h2d_wall_ms": {
+        "mean": 0.4617825650105563,
+        "p50": 0.4571190002025105,
+        "p95": 0.5148133481270633,
+        "std": 0.058401507196581603
+      },
+      "forward_post_gpu_ms": {
+        "mean": 10.714682610829671,
+        "p50": 10.643248081207275,
+        "p95": 11.262720251083374,
+        "std": 0.27751285665610226
+      },
+      "forward_post_wall_ms": {
+        "mean": 10.765632134765232,
+        "p50": 10.676101002900396,
+        "p95": 11.307118751574308,
+        "std": 0.27664187472117396
+      },
+      "decode_d2h_wall_ms": {
+        "mean": 0.0589867660892196,
+        "p50": 0.05900250107515603,
+        "p95": 0.06714974879287183,
+        "std": 0.004834177851855814
+      }
+    },
+    "onnx": {
+      "e2e_ms": {
+        "mean": 30.58238123533859,
+        "p50": 30.696509005792905,
+        "p95": 32.92422715239809,
+        "std": 1.6772344797996173
+      },
+      "read_preprocess_ms": {
+        "mean": 6.125466399438058,
+        "p50": 6.052686498151161,
+        "p95": 7.535045208351219,
+        "std": 0.8310114859831497
+      },
+      "ort_h2d_forward_d2h_wall_ms": {
+        "mean": 24.456914835900534,
+        "p50": 24.547475499275606,
+        "p95": 25.68236494989833,
+        "std": 0.986025756274595
+      },
+      "cuda_interval_ms": {
+        "mean": 24.283606402079265,
+        "p50": 24.36303997039795,
+        "p95": 25.534655952453612,
+        "std": 0.9743657537494252
+      }
+    }
+  },
+  "e2e_saving_ms": {
+    "mean": -13.343896069757951,
+    "p50": -13.38764149841154,
+    "p95": -11.140093114954654,
+    "std": 1.611545881110101
+  },
+  "order_saving_ms": {
+    "0": {
+      "mean": -14.444393669449104,
+      "p50": -14.239998010452837,
+      "p95": -12.703229798353277,
+      "std": 1.395828070369352
+    },
+    "1": {
+      "mean": -12.243398470066799,
+      "p50": -12.185096988105215,
+      "p95": -10.959011009254027,
+      "std": 0.9075430116324293
+    }
+  },
+  "same_backend_bitwise_repeat": {
+    "native": true,
+    "onnx": true
+  },
+  "cold": {
+    "native": {
+      "ready": true,
+      "backend": "native",
+      "cold_load_and_warmup_ms": 3473.1908029934857
+    },
+    "onnx": {
+      "ready": true,
+      "backend": "onnx",
+      "cold_load_and_warmup_ms": 3308.8634640007513
+    }
+  },
+  "scope": "Both persistent models resident, serial GPU execution, 30 AB/BA pairs, same 3 raw images and identical input bytes. Warm OS file cache; reread/decode/normalize/H2D/forward/postprocess/D2H included. Hashing/IPC excluded.",
+  "cuda_interval_note": "ORT CUDA event interval encloses host scheduling plus H2D/inference/D2H; not a pure kernel-only timing.",
+  "memory_note": "Device total includes both workers and unrelated resident allocations; not isolated per-model allocation.",
+  "adoption": "Native retained unless full COCO and geometry acceptance independently support backend adoption"
+}

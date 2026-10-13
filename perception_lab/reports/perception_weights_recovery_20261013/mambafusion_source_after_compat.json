@@ -1,0 +1,30 @@
+{
+  "scope": "Current audit of all550 paths from preserved historical author archive manifest; generated extra build files are outside archive path set",
+  "upstream_commit": "d85c2feeb19207b20e42d50421afb11c095f3efa",
+  "original_archive_sha256": "47ba51695cfd030b4e78f745b11f309d41c82fc529a384eb4ceaa8a7557a8520",
+  "historical_manifest_sha256": "94aa47608a34256c71497e905ef0ba241ebc51e1c1f82e262c5f8681c16e1a0e",
+  "historical_archive_path_count": 550,
+  "currently_matching_upstream": 547,
+  "changed": [
+    {
+      "path": "pcdet/datasets/dataset.py",
+      "historical_upstream_sha256": "ae0c9902e34f667718845992d24c57934949f395465d1848306e092c9f4f9ece",
+      "current_sha256": "1a0ef5f6135a4bbc81ad85d6220e2a5384b2602eb734110057562d62bae55e8c",
+      "classification": "NumPy compatibility patch"
+    },
+    {
+      "path": "pcdet/models/backbones_2d/base_bev_backbone.py",
+      "historical_upstream_sha256": "49923055c5cec910fee86a559623b6aaf7d227e9a6b7bd21a23d086534ab2cc8",
+      "current_sha256": "45b84de996bf35ca611825d137585d97995dfae36deb553687d1083a02307a40",
+      "classification": "NumPy compatibility patch"
+    },
+    {
+      "path": "pcdet/version.py",
+      "historical_upstream_sha256": "68fa0db6dfe7fb77bff56b10b175eb693fa93ec420ae7da0f7f242b5bb5552fd",
+      "current_sha256": "57679a12c6a1c43597c810114fc3fc056840ca979a4a221d6283c49e18b36f4d",
+      "classification": "generated build version metadata"
+    }
+  ],
+  "patch_sha256": "731da29c5b2b405d078cb0a78b90c4005b67e8f8126b99a472797cdeb9050b2b",
+  "original550_match_claim": "Historical acquisition proof only; current tree has compatibility/build metadata changes"
+}

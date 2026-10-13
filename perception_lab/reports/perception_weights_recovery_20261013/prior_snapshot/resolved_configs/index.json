@@ -1,0 +1,30 @@
+{
+  "scope": "Index of actual per-module evidence; not additional measurements",
+  "artifacts": [
+    {
+      "path": "../deimv2/resolved_config.json",
+      "bytes": 7871,
+      "sha256": "4fd176d3ded63ec194f72e60667d68d1ec6e933ae2b6b3e18d6e98a3c02fbd72"
+    },
+    {
+      "path": "../harpnext/resolved_config.yaml",
+      "bytes": 1927,
+      "sha256": "431f7d91379dd9360494ced78258fe54277a292f1a6a513340f620fdb609a8b5"
+    },
+    {
+      "path": "../mambafusion/resolved_scene0061.json",
+      "bytes": 15797,
+      "sha256": "61aceceed30599394ab4034a91caabe98c2a4c6a1874359c1045e878ab0a35c2"
+    },
+    {
+      "path": "../mambafusion/resolved_mini_val.json",
+      "bytes": 15796,
+      "sha256": "77201cae1bdb5a94b6ba40407eee45008796c191edd0a8fbb8a0b0e285e281b5"
+    },
+    {
+      "path": "../grae3dmot/resolved_config.json",
+      "bytes": 970,
+      "sha256": "e4cb179628c17d52d9c38c7b1d41fa00e48923236754320a66c86ac0d13cfe56"
+    }
+  ]
+}

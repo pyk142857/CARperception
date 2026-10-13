@@ -1,44 +1,81 @@
-# HARP-NeXt：资源受阻，mini 预处理已实测
+# HARP-NeXt：官方完整权重恢复后的原生 mini 推理
 
-状态 **blocked_resource**。官方源码固定到 `532df2659700ae870c0e0d4137a4d35bcc9903b9`，原始点审计、mini 数据入口、CPU/GPU 预处理诊断完成；完整 nuScenes-32×480 checkpoint 未下载。严格加载、真实模型 forward、模块 Hook、39/81/404 帧模型推理、mIoU、预测回放均未完成。没有随机权重或替代网络结果。
+已使用作者完整 checkpoint 完成严格加载、首/中/末真实模块与 GT 独立验证，以及现有 nuScenes mini 全部404帧推理。状态 `completed_native_inference`。这是 mini 教学诊断，可能与预训练数据重叠，不是官方全量测试集评测。原始资源受阻报告与日志保留在恢复实验的 prior_snapshot；历史下载日志未删除。
 
-## 数据与 GT 隔离
+## 配置与来源
 
-本次逐文件重新核验 mini 404 帧、14,026,208 个原始点与同数量标签，保存点云/标签 SHA256 和样本 token。scene-0061 为39帧，mini_val 为81帧。生成三个与作者 `nuscenes_files.npz` 相同三列 schema 的 val 列表（点云路径、标签路径、sample_data token），使用真实长度，未读取 full-val6019列表。作者映射文件与本工具32→16类表逐项相等，网络ID0–15、显示ID1–16，ignore255。
+- 官方源码固定 `532df2659700ae870c0e0d4137a4d35bcc9903b9`；调用作者 `Network("harpnext", cfg).build_network()`。
+- 官方 nuScenes 32×480 配置、16类、batch1、FP32、关闭 TF32；无 TTA、无训练增强。作者 CPU 原始预处理，默认全零标签，真实 GT 在预测完成后才进入评价。
+- checkpoint `ckpt_best.pth`：64,865,210字节，SHA256 `6f7fc5a1c03e9123541458358b1c703babf37ffc0b8b4ea6beac6c9f8478a147`。仅读取 `checkpoint["net"]` 并 `strict=True`，293项 state tensor，5,381,392参数，缺失/多余键均0，本文件无需去除 module 前缀。
+- RTX4090、Torch2.1.2+cu118、CUDA11.8；没有升级现有环境。上游仅保留历史空 uint32 标签缓冲兼容改动，未改模型数学。`executed_source_changes.patch` 保存实际 diff，`strict_load.json` 保存全部 Python 源码、配置、适配器和差异 SHA256。
 
-首/中/末 CPU 预处理分别将34,688/34,688/34,720原始点扩展到53,638/53,291/54,923点。原始点始终是完全相等的前缀。实际GT、全零标签、人工替换标签三种输入产生完全相同的 CPU 网络特征和投影坐标，GT投影标签未作为网络输入。预测级 GT 独立性因缺权重尚未检验。作者 manager 消费处理后点标签，包含这些追加点；公共评价辅助函数明确恢复原始点顺序并排除追加点，缺类 IoU 留空。
+## 评价结果
 
-## GPU 候选结果与决定
+仅原始点参与混淆矩阵：404帧14,026,208原始点，10,359,306有效标签点；忽略255。作者插值追加点保留在 forward 中，但全部从评价删除。网络ID0–15，展示/nuScenes粗类ID1–16。mIoU 是 union>0 类的宏平均；union=0 为 NA 并从分母排除。预测为某个 GT 缺席类别仍产生非零 union，该类别按0 IoU计入。
 
-单张 RTX4090 串行测试，batch1、FP32；实际 CUDA torch-scatter smoke 得到预期 `[2,8]`。采用作者原始 CPU/GPU 算法，只对 Torch2.1 不支持的两个空 uint32 初始化缓冲做兼容补丁，详见 patch。没有更改投影算法。
+| 数据范围 | 帧数 | 有效点数 | mIoU | 点准确率 | mIoU分母 |
+|---|---:|---:|---:|---:|---:|
+| scene0061 | 39 | 1,016,188 | 0.644201 | 0.944287 | 16 |
+| mini_val | 81 | 2,087,603 | 0.552162 | 0.948077 | 16 |
+| mini_all | 404 | 10,359,306 | 0.773849 | 0.947851 | 16 |
 
-| 预处理路径 | 均值 ms | P50 ms | P95 ms | 标准差 ms |
+逐类 intersection、union、IoU 和16×16混淆矩阵见 `metrics.json`；便于比较的表格见 `class_metrics.csv`。`mini_val`为 scene-0103/scene-0916；scene0061为39帧；mini_all为现有10个场景404帧，三者分开统计，不将39帧当作81帧验证集。
+
+使用独立 `nuscenes_eval` 环境中未修改的 nuScenes devkit1.2.0 `nuscenes.eval.lidarseg.utils.ConfusionMatrix`，将同一16类混淆矩阵放入官方17类矩阵的1–16位置，ignore0置零，再调用官方 `get_per_class_iou`/`get_mean_iou`。三个范围逐类 IoU 差异最大值均0，mIoU仅浮点求和约1e-16差异。此为相同混淆矩阵的官方实现交叉核对，不冒充全套官方数据集评估。证据 `official_lidarseg_crosscheck.json`。
+
+## 真实 forward 与 GT 独立性
+
+首、中、末三帧分别记录 voxel encoder、range stem、point stem、fusion stem、所有4个ConvSENeXt、4层 point fusion 与 segmentation head 的输入/输出形状；每帧每模块6次真实调用，required zero-call为空。详见 `module_hooks.json`。
+
+每帧依次运行 zero、zero、zero、actual、permuted、zero；permuted为真实GT固定随机排列。全部网络输入字节哈希完全相同，15个比较的原始点 argmax 预测完全相同。重复 zero 的logit最大差异分别0.000307083、0.000239372、0.000144958；actual/permuted差异处于重复基线幅度内，均满足 rtol=1e-4/atol=1e-4。CUDA聚合的数值非确定性如实记录，不误报标签泄漏；不声称逐bit logits复现。详见 `gt_prediction_independence.json`。
+
+## 计时与内存
+
+18次真实门控 forward 后，404帧逐帧记录同步 GPU event 与墙钟计时。下表均为实测毫秒；端到端边界包含作者 CPU processor 构造、原始文件读入、CPU预处理、输入哈希审计、H2D、模型forward、logits/预测D2H与原始点映射，不含GT评价、压缩保存或画图。它是带审计的适配器延迟，不能替代论文FPS。
+
+| 阶段 | 均值 ms | P50 ms | P95 ms | 标准差 ms |
 |---|---:|---:|---:|---:|
-| CPU |65.782|63.531|74.328|8.589|
-| GPU |3.107|3.137|3.525|0.251|
+| preproc_ms | 141.994 | 131.854 | 181.053 | 20.356 |
+| h2d_ms | 0.281 | 0.275 | 0.350 | 0.036 |
+| gpu_forward_ms | 12.035 | 12.137 | 13.082 | 0.730 |
+| decode_d2h_ms | 0.881 | 0.841 | 1.076 | 0.105 |
+| end_to_end_ms | 155.415 | 144.945 | 194.022 | 20.412 |
 
-同一首帧预热3轮后30轮交错配对，计时为暖缓存原始文件读取→预处理→H2D→voxel/coor回传，前后同步；不含模型、GT读取或可视化。峰值 GPU allocated 为30,810,112字节。这些数字不是模型端到端 FPS。
+冷加载0.304s；峰值 PyTorch CUDA allocated 702,427,136字节（约669.9MiB），进程峰值 RSS 1,002,340KiB。GPU峰值不包括桌面或其他进程。
 
-**不采用 GPU 候选。** 三帧 GPU 均比 CPU 多15个合成点；原始点投影坐标差异分别为0/1/0点。重复GPU运行的特征不完全一致，GT替换比较也不完全一致，因此后者受到非确定性混杂，不能据此断言标签泄漏，也不能宣称隔离通过。源码的重复索引 scatter 写入可能影响碰撞点选择，尚需独立定位。CPU排除水平边界插值而GPU `torch.roll` 环绕；专门构造的三点边界样例实测CPU输出3点、向量化实现输出4点。两者插值 occupancy 都用 `proj_idx>0`，点索引0会被视作空像素；相同三点几何仅调换点顺序，CPU插值输出从3点变为4点，实测确认该影响。未静默修正这些模型输入语义。
+历史 GPU 预处理候选仍不采用：CPU/GPU边界与index0占用语义差异记录于 `gpu_preprocessing_audit.json` 和 prior_snapshot。GPU候选并非原生推理完成的前提，本次未重跑候选。
 
-## 资源与限制
+## 实际失败例与代表图
 
-[作者仓库](https://github.com/SamirAbouHaidar/HARP-NeXt)已下载；[作者权重分享](https://cloud.minesparis.psl.eu/index.php/s/eUOcaEXZRLNfV1e)可偶尔返回HTML页面，但多次WebDAV和AJAX目录请求超时。猜测目录名的下载探测返回8,198字节 `File not found` HTML，已拒绝作为checkpoint。权重文件名/大小/hash均未知，无模型指标。机器环境与作者Torch2.5.0不同，只确认了本次预处理与scatter操作，不能外推整个网络兼容。
+以下每张均是同一原始点云的GT、真实模型预测、错误位置三联BEV图。仅显示±50m窗口；指标使用全部原始点，不因视窗裁剪。选择规则与主要混淆保存在 `representative_examples.json`。
 
-该阶段是 nuScenes mini 教学诊断；与预训练数据可能重叠。作者论文精度和FPS未填作本机成绩。已实现原始点评价函数、mini预处理与真实模型适配：作者Network构造→checkpoint['net']严格加载（仅允许统一module前缀）→ConvSENeXt/融合/head Hook→首中末预测级GT独立门控→39/81/404点级评价与预测保存。该模型分支因缺权重尚未实跑，状态为untested；当前 `--phase run` 返回资源阻塞状态及退出码2。
+### scene0061_lowest_frame_miou
 
-## 复现
+样本 `88449a5cb1644a199c1c11f6ac034867`，单帧mIoU 0.5114，错误4396/25627有效点。主要混淆：other_flat→terrain 2284点；sidewalk→driveable_surface 708点；terrain→sidewalk 262点。
 
-从仓库根目录运行；原始数据和上游源码/环境留在本地，不发布二进制资产。
+![scene0061_lowest_frame_miou](scene0061_lowest_frame_miou.png)
+
+### mini_val_lowest_frame_miou
+
+样本 `281b92269fd648d4b52d06ac06ca6d65`，单帧mIoU 0.4836，错误1084/25509有效点。主要混淆：truck→car 731点；driveable_surface→car 45点；car→driveable_surface 37点。
+
+![mini_val_lowest_frame_miou](mini_val_lowest_frame_miou.png)
+
+### mini_all_median_frame_miou
+
+样本 `4b894442c95141f9affd731d9da7b43c`，单帧mIoU 0.6395，错误1011/25584有效点。主要混淆：manmade→vegetation 205点；terrain→manmade 114点；vegetation→manmade 94点。
+
+![mini_all_median_frame_miou](mini_all_median_frame_miou.png)
+
+## 产物、验证和复现
+
+`predictions/`保存404帧完整原始点预测，附`original_index`与`processed_to_original`（追加点=-1），没有发布原始点云。`inference_frames.json`绑定 sample/sample_data token、场景、文件SHA256、原始/追加点数与每帧计时。保存后重新读取404文件，验证全部SHA256、原始索引、点数，并独立重算三个范围混淆矩阵，完全一致；见`saved_prediction_audit.json`。六项CPU针对性测试通过，包含官方缺类分母交叉核对。
 
 ```bash
-# 克隆并固定源码后，Torch2.1环境需应用仅空标签缓冲兼容补丁。
-git -C perception_lab/third_party/HARP-NeXt_2025 apply ../../reports/perception_2025_20261013/harpnext/torch21_empty_label_compat.patch
-perception_lab/envs/harpnext_2025/bin/python perception_lab/tools/harpnext_2025.py --phase preflight
-# GPU必须单独运行，避免与其他模型同时计时。
-perception_lab/envs/harpnext_2025/bin/python perception_lab/tools/harpnext_2025.py --phase audit_gpu
 perception_lab/envs/harpnext_2025/bin/python perception_lab/tools/harpnext_2025.py --phase run --config perception_lab/configs/perception_2025.yaml
 perception_lab/envs/harpnext_2025/bin/python -m unittest discover -s perception_lab/tests -p test_harpnext_2025.py -v
 ```
 
-4项针对性测试通过：完整checkpoint结构及统一DDP前缀、类映射与ignore、含追加点/乱序点的恢复及重复/漏点拒绝、有效GT与缺类指标口径。详细数据见 `preflight.json`、`mini_frames.json`、`gpu_preprocessing_audit.json`、`resource_manifest.json`。
+运行需要本地 nuScenes mini、固定作者源码与完整权重。复现GPU运行须独占；模型权重、环境、第三方源代码、原始数据继续排除Git。统一回放由总实验单独集成，不改变这里404帧原生推理已经完成的状态。
+
+三张图在CPU上根据已保存预测调整标题间距后重新渲染，未重新执行模型；`plot_regeneration.json`记录绘图修订后的适配器哈希，`strict_load.json`保留实际执行推理版本的哈希。

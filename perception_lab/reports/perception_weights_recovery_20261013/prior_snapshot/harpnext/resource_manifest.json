@@ -1,0 +1,77 @@
+{
+  "method": "HARP-NeXt",
+  "repository": "https://github.com/SamirAbouHaidar/HARP-NeXt",
+  "commit": "532df2659700ae870c0e0d4137a4d35bcc9903b9",
+  "source_state": "downloaded_and_pinned",
+  "license": "/home/minglei/Desktop/CAR/perception_lab/third_party/HARP-NeXt_2025/LICENSE",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 10773,
+      "sha256": "53e47abe78f77e45b9ee13527e953608208109115df71e2ced3c161c9a1e4c5c"
+    },
+    {
+      "path": "configs/net/harpnext-nuscenes.yaml",
+      "bytes": 1927,
+      "sha256": "431f7d91379dd9360494ced78258fe54277a292f1a6a513340f620fdb609a8b5"
+    },
+    {
+      "path": "configs/main/main-config.yaml",
+      "bytes": 997,
+      "sha256": "3ccba862c8cb2d5fbc1a97ecfc636d67fc2383e70810db00ab8cb1ce29260967"
+    },
+    {
+      "path": "datasets/nuscenes/nuscenes_class_mapping.npy",
+      "bytes": 384,
+      "sha256": "bba7fd2e17ffed4c4bfd7e544aaa6c1ebf3de487de99bc7d50808493826f476e"
+    }
+  ],
+  "checkpoint": {
+    "url": "https://cloud.minesparis.psl.eu/index.php/s/eUOcaEXZRLNfV1e",
+    "state": "blocked_resource",
+    "filename": null,
+    "bytes": null,
+    "sha256": null,
+    "strict_load": null,
+    "attempts": [
+      {
+        "route": "HTTPS share page",
+        "result": "HTML listing shell downloaded14952bytes; no checkpoint bytes"
+      },
+      {
+        "route": "HTTP and direct HTTPS",
+        "result": "timeouts"
+      },
+      {
+        "route": "public.php/webdav PROPFIND authenticated share token",
+        "result": "multiple10/25/30sec timeouts0bytes"
+      },
+      {
+        "route": "files_sharing AJAX list",
+        "result": "multiple20/30sec timeouts0bytes"
+      },
+      {
+        "route": "download probe nuscenes-32x480",
+        "result": "8198byte HTML File not found; rejected as checkpoint"
+      },
+      {
+        "route": "Exact downloadURL extracted from official HTML (whole 140MBshare)",
+        "result": "Three TLS/connect timeouts15sec and final45secconnect timeout; zero bytes; no archive acquired"
+      }
+    ],
+    "official_share_advertised_bytes": 140113745
+  },
+  "environment": {
+    "python": "3.10.13",
+    "torch": "2.1.2+cu118",
+    "torch_scatter": "2.1.2+pt21cu118",
+    "numpy": "1.26.2",
+    "cuda_runtime": "11.8",
+    "isolation": "envs/harpnext_2025 --system-site-packages plus explicit lidarseg site-packages .pth; existing env unchanged",
+    "author_torch": "2.5.0+cu118",
+    "compatibility_patch": "torch21_empty_label_compat.patch; only zero-length initial sem/instance label buffers uint32->int64; overwritten before processing"
+  },
+  "gpu_model": "RTX4090",
+  "new_source_disk_bytes": 41943040,
+  "new_environment_disk_bytes": 23068672
+}

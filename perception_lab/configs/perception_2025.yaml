@@ -16,7 +16,9 @@
     "grae3dmot": "envs/grae3dmot_2025/bin/python",
     "visualize": "envs/rerun/bin/python",
     "onnx": "envs/deimv2_onnx_2025/bin/python",
-    "tensorrt": "envs/deimv2_trt_2025/bin/python"
+    "tensorrt": "envs/deimv2_trt_2025/bin/python",
+    "mambafusion_eval": "envs/nuscenes_eval/bin/python",
+    "grae3dmot_eval": "envs/sparse4d/bin/python"
   },
   "models": {
     "deimv2": {
@@ -55,5 +57,7 @@
     "batch_size": 1,
     "training": false,
     "gpu_serial": true
-  }
+  },
+  "mamba_allow_measured_repeat_noise": true,
+  "recovery_instruction_commit": "f43247f75c0c0431841316e64b01fcf69ff0606f"
 }

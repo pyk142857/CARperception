@@ -1,0 +1,44 @@
+{
+  "model": "MambaFusion",
+  "source_url": "https://github.com/AutoLab-SAI-SJTU/MambaFusion",
+  "source_commit": "d85c2feeb19207b20e42d50421afb11c095f3efa",
+  "checkpoint_url": "https://drive.google.com/file/d/10-FBWHbsCMJseKovJwGKncJ96Flp3umM/view",
+  "checkpoint": null,
+  "actual_commit": "d85c2feeb19207b20e42d50421afb11c095f3efa",
+  "author_config_sha256": "3c4e207e436d481857d0b8946416909df70dcf92a5726e3dc6bb112d6f5a1d0b",
+  "license": {
+    "path": "/home/minglei/Desktop/CAR/perception_lab/third_party/MambaFusion2025/LICENSE",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  },
+  "hilbert": [
+    {
+      "rank": 7,
+      "path": "/home/minglei/Desktop/CAR/perception_lab/checkpoints/mambafusion_2025/curve_template_3d_rank_7.pth",
+      "bytes": 16777963,
+      "sha256": "dcb00b6eafe3ec0414760196475db2d044ea4ea0ecde82ba426bc9c88e0e954f"
+    },
+    {
+      "rank": 8,
+      "path": "/home/minglei/Desktop/CAR/perception_lab/checkpoints/mambafusion_2025/curve_template_3d_rank_8.pth",
+      "bytes": 8914225,
+      "sha256": "cb7ee350f038281740c82a80f4dae8480b351f4eea09f99b63943972fd34392c"
+    },
+    {
+      "rank": 9,
+      "path": "/home/minglei/Desktop/CAR/perception_lab/checkpoints/mambafusion_2025/curve_template_3d_rank_9.pth",
+      "bytes": 85984561,
+      "sha256": "5992c92d0ed4ccd5441e49196f572fb0c13f34d8876d08ce6595f59b64eb9239"
+    },
+    {
+      "rank": 10,
+      "path": "/home/minglei/Desktop/CAR/perception_lab/checkpoints/mambafusion_2025/curve_template_3d_rank_10.pth",
+      "bytes": 8389942,
+      "sha256": "2032f33fd571d740785055f80ee49ef14db8c9e2f80e794ec17c599aa3ea7441"
+    }
+  ],
+  "incomplete_checkpoint": {
+    "bytes": 4541653,
+    "sha256": "784fa96f2e549ec3048db4aa3776a1022fc783e1c9e8f3167b9524f071c02e5b",
+    "usable": false
+  }
+}

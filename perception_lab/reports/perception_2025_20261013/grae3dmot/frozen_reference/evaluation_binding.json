@@ -1,0 +1,35 @@
+{
+  "source_commit": "bddc28f51a101fd118b6e09e9f13e0bfd4f0478d",
+  "checks": [
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/frozen_reference/scene0061/tracking.json",
+      "sha256": "ceaf64c45d71bf7fddf7e56f55946262e31614104f9c238bf863c05bd6facb89",
+      "matches_published_commit": true
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/frozen_reference/scene0061/official_eval/metrics_summary.json",
+      "sha256": "1a868bb1b417dd1b504b16d4064950ebb3563157d289904ae5c8e093eb7a8a9f",
+      "matches_published_commit": true
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/frozen_reference/input_manifest.json",
+      "sha256": "6410032394a0a8a5d05310b096452307d026afa8cad1fcf6dd1b359309d5892c",
+      "matches_published_commit": true
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/frozen_reference/mini_val/tracking.json",
+      "sha256": "dffd9176551b2dc866807fcaf2f9ab1a0289c48fc19c49d75d69c320f17fce99",
+      "matches_published_commit": true
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/frozen_reference/mini_val/official_eval/metrics_summary.json",
+      "sha256": "64623b60ee41d38a2ef44682317a1127b491ce2d7785e59683a5d84952211f48",
+      "matches_published_commit": true
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/grae3dmot/frozen_reference/input_manifest.json",
+      "sha256": "6410032394a0a8a5d05310b096452307d026afa8cad1fcf6dd1b359309d5892c",
+      "matches_published_commit": true
+    }
+  ]
+}

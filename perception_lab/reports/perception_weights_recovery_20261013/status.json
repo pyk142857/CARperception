@@ -1,0 +1,200 @@
+{
+  "scope": "20261013_02 weights recovery and native mini evaluation",
+  "status": "passed",
+  "updated_at_utc": "2026-10-13T08:12:53.289626+00:00",
+  "acceptance": {
+    "weights_downloaded": true,
+    "native_evaluation_complete": true,
+    "visualization_complete": true
+  },
+  "weights_downloaded": true,
+  "native_evaluation_complete": true,
+  "visualization_complete": true,
+  "weights": {
+    "harpnext": {
+      "bytes": 64865210,
+      "sha256": "6f7fc5a1c03e9123541458358b1c703babf37ffc0b8b4ea6beac6c9f8478a147",
+      "atomic_install": true,
+      "cpu_parse": {
+        "root_keys": [
+          "epoch",
+          "net",
+          "optim",
+          "scheduler",
+          "scaler",
+          "best_miou"
+        ],
+        "state_entries": 293,
+        "device": "cpu"
+      }
+    },
+    "mambafusion": {
+      "bytes": 391545251,
+      "sha256": "d2454354b762a5a4b0b85af8b23c4b1f63da9357af7160aa313bc689a8d11ea6",
+      "atomic_install": true,
+      "cpu_parse": {
+        "root_keys": [
+          "epoch",
+          "it",
+          "model_state",
+          "optimizer_state",
+          "version"
+        ],
+        "state_entries": 1403,
+        "device": "cpu"
+      }
+    }
+  },
+  "harpnext": {
+    "strict_load": "passed; 293 tensors",
+    "native_evaluation": "passed",
+    "frame_count": 404,
+    "preprocessing": "author CPU reference; GPU candidate not adopted",
+    "metrics": {
+      "scene0061": {
+        "frame_count": 39,
+        "valid_points": 1016188,
+        "accuracy": 0.9442868839230536,
+        "miou_union_gt_zero": 0.644201422884852,
+        "included_class_count": 16
+      },
+      "mini_val": {
+        "frame_count": 81,
+        "valid_points": 2087603,
+        "accuracy": 0.9480768134554319,
+        "miou_union_gt_zero": 0.5521619164409703,
+        "included_class_count": 16
+      },
+      "mini_all": {
+        "frame_count": 404,
+        "valid_points": 10359306,
+        "accuracy": 0.947850850240354,
+        "miou_union_gt_zero": 0.7738487784768644,
+        "included_class_count": 16
+      }
+    },
+    "official_lidarseg_scope": "same-confusion-matrix function crosscheck; not official full dataset evaluation"
+  },
+  "mambafusion": {
+    "strict_load": "passed; 1403 tensors",
+    "native_pipeline": "passed, 120 real frames",
+    "prediction_files": {
+      "scene0061": {
+        "sample_count": 39,
+        "path": "perception_lab/reports/perception_2025_20261013/mambafusion/scene0061_predictions.json",
+        "sha256": "985241700c321a409acba4c46e7800239b793998530ee11ae613ca40feddd5a1"
+      },
+      "mini_val": {
+        "sample_count": 81,
+        "path": "perception_lab/reports/perception_2025_20261013/mambafusion/mini_val_predictions.json",
+        "sha256": "4211c573e54e09bdd8e4df3d81326513f4b4b9d2593c70471c16b08ac2b39a05"
+      }
+    },
+    "repeat_review": {
+      "status": "reviewed_native_nondeterminism",
+      "original_aligned_repeat_budget_passed": false,
+      "optimization_equivalence_passed": false,
+      "scope": "6 frames, 2 repeats each, identical numeric input hashes; matching diagnostic only",
+      "matching": "class-aware Hungarian 3D center, accept distance<2m; high means either score>=0.25; unmatched candidates retained in counts",
+      "maximum_matched_high_center_m": 0.6241862773895264,
+      "maximum_matched_high_score_abs": 0.032042473554611206,
+      "source": "../perception_2025_20261013/mambafusion/repeat_noise_review.json",
+      "causal_localization": "not proven; source-supported candidates only"
+    },
+    "official_evaluation": "passed",
+    "official_metrics": {
+      "scene0061": {
+        "frames": 39,
+        "prediction_sha256": "985241700c321a409acba4c46e7800239b793998530ee11ae613ca40feddd5a1",
+        "metrics_sha256": "51a0f220cf9142b4dbf62b23c25d48d116bb7288b55bb4193703a3ce9b6a069d",
+        "mean_ap": 0.7279752319124936,
+        "nd_score": 0.6738776961599682,
+        "tp_errors": {
+          "trans_err": 0.2992746396588843,
+          "scale_err": 0.3229434525170288,
+          "orient_err": 0.3342022792129312,
+          "vel_err": 0.34461296327638985,
+          "attr_err": 0.6000658632975517
+        }
+      },
+      "mini_val": {
+        "frames": 81,
+        "prediction_sha256": "4211c573e54e09bdd8e4df3d81326513f4b4b9d2593c70471c16b08ac2b39a05",
+        "metrics_sha256": "473a4ca4cca8fe22823af036c9602d19e9e6c086ec1f3f4ce0763bae1014371b",
+        "mean_ap": 0.5889794050098823,
+        "nd_score": 0.5957750804833165,
+        "tp_errors": {
+          "trans_err": 0.3966954560190631,
+          "scale_err": 0.43013743983436237,
+          "orient_err": 0.44599896936902905,
+          "vel_err": 0.42439859684917647,
+          "attr_err": 0.28991575814461545
+        }
+      }
+    }
+  },
+  "grae_mambafusion_native": [
+    {
+      "input": "mambafusion_native",
+      "split": "scene0061",
+      "frames": 39,
+      "tracking_sha256": "8d8cd1196607657666d0effebeee65e7fffbc7ee71047b65a574e14fc37c5419",
+      "metrics_sha256": "86abba1c74a28d8ef06f077b23c5d2521fd0e6cc2b2ee91aeb0e915dadad81e3",
+      "input_manifest_sha256": "05e44d64e586d7eba52ba9de9983ec114ff72b0b9d517efa5b2395475c8fda33",
+      "amota": 0.8739118773081327,
+      "amotp": 0.33850248736723276,
+      "ids": 3.0,
+      "fp": 67.0,
+      "fn": 94.0,
+      "recall": 0.9172947294540161,
+      "mota": 0.8751470890927955
+    },
+    {
+      "input": "mambafusion_native",
+      "split": "mini_val",
+      "frames": 81,
+      "tracking_sha256": "2df0cba926f07c41a1bcd4787e68b38f7247297ed47b242a2fd9b6e1b25badcd",
+      "metrics_sha256": "6dd0d787f61267ed690a2688848858df162ab7e883c181c7c818f43b63107e7d",
+      "input_manifest_sha256": "05e44d64e586d7eba52ba9de9983ec114ff72b0b9d517efa5b2395475c8fda33",
+      "amota": 0.8497284519734606,
+      "amotp": 0.38917468383995074,
+      "ids": 19.0,
+      "fp": 405.0,
+      "fn": 344.0,
+      "recall": 0.8495088988420676,
+      "mota": 0.8026799867470649
+    }
+  ],
+  "new_all_model_replay": {
+    "scene0061": {
+      "status": "passed",
+      "frames": 39,
+      "status_sha256": "fa263563bac8f55c5797175eb6376592417308ea47befb18a5852be5847f2488",
+      "rrd_sha256": "97aad50c0b47529b47f0e72a28a6977af81f78a77a8a16b981c914e641e020e8"
+    },
+    "mini_val": {
+      "status": "passed",
+      "frames": 81,
+      "status_sha256": "991099d127ff544959d86c10dff5afe6efe20c638e9c220a67c638a1ee676df5",
+      "rrd_sha256": "a2884cc67c0b88535690ba5fc556aceb3fe47609e150e3649fbe2e8a518ccb37"
+    }
+  },
+  "artifact_cleanup": {
+    "all_deleted_or_absent": true,
+    "remaining_artifacts": 0,
+    "receipt": "artifact_cleanup_receipt.json"
+  },
+  "prior_snapshot": {
+    "source_commit": "bddc28f51a101fd118b6e09e9f13e0bfd4f0478d",
+    "file_count": 158,
+    "receipt": "prior_snapshot/snapshot_receipt.json"
+  },
+  "remaining": [],
+  "limitations": [
+    "nuScenes mini teaching diagnostic; possible pretraining overlap",
+    "Mamba repeatability noise retained; not deterministic or optimization-equivalence pass",
+    "existing DEIM FP16 and HARP GPU preprocessing limitations remain separately scoped"
+  ],
+  "publication": "pending commit/push; local acceptance complete",
+  "tests": "88 passed, 23 subtests passed"
+}

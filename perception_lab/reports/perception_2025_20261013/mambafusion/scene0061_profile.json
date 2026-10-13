@@ -1,0 +1,204 @@
+{
+  "frames": 39,
+  "profile": [
+    {
+      "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+      "end_to_end_ms": 7104.671034001512,
+      "gpu_forward_ms": 6775.080078125
+    },
+    {
+      "sample_token": "b26e791522294bec90f86fd72226e35c",
+      "end_to_end_ms": 999.183104999247,
+      "gpu_forward_ms": 729.5765991210938
+    },
+    {
+      "sample_token": "ed5fc18c31904f96a8f0dbb99ff069c0",
+      "end_to_end_ms": 793.1547850021161,
+      "gpu_forward_ms": 542.754638671875
+    },
+    {
+      "sample_token": "39586f9d59004284a7114a68825e8eec",
+      "end_to_end_ms": 923.5267699987162,
+      "gpu_forward_ms": 608.7910766601562
+    },
+    {
+      "sample_token": "356d81f38dd9473ba590f39e266f54e5",
+      "end_to_end_ms": 704.3538050056668,
+      "gpu_forward_ms": 419.61798095703125
+    },
+    {
+      "sample_token": "e0845f5322254dafadbbed75aaa07969",
+      "end_to_end_ms": 918.9228199975332,
+      "gpu_forward_ms": 640.2869262695312
+    },
+    {
+      "sample_token": "c923fe08b2ff4e27975d2bf30934383b",
+      "end_to_end_ms": 1085.7461989944568,
+      "gpu_forward_ms": 654.2195434570312
+    },
+    {
+      "sample_token": "f1e3d9d08f044c439ce86a2d6fcca57b",
+      "end_to_end_ms": 892.6312739931745,
+      "gpu_forward_ms": 608.9735107421875
+    },
+    {
+      "sample_token": "4f545737bf3347fbbc9af60b0be9a963",
+      "end_to_end_ms": 821.1969440017128,
+      "gpu_forward_ms": 554.664306640625
+    },
+    {
+      "sample_token": "7626dde27d604ac28a0240bdd54eba7a",
+      "end_to_end_ms": 772.3618559975876,
+      "gpu_forward_ms": 482.0960998535156
+    },
+    {
+      "sample_token": "be99ffc878b24aca8956bbb4e0f97d0c",
+      "end_to_end_ms": 838.6949510022532,
+      "gpu_forward_ms": 545.590576171875
+    },
+    {
+      "sample_token": "9813c23a5f1448b09bb7910fea9baf20",
+      "end_to_end_ms": 815.2116129931528,
+      "gpu_forward_ms": 528.0120849609375
+    },
+    {
+      "sample_token": "023c4df2d451409881d8e6ea82f14704",
+      "end_to_end_ms": 819.9912529962603,
+      "gpu_forward_ms": 557.593017578125
+    },
+    {
+      "sample_token": "c235638ed66145988d17f9d0601923f2",
+      "end_to_end_ms": 942.7478419966064,
+      "gpu_forward_ms": 671.5895385742188
+    },
+    {
+      "sample_token": "bc3c8a953f6b4dcdb77b521d89f3d9d5",
+      "end_to_end_ms": 1051.0732859984273,
+      "gpu_forward_ms": 765.0277099609375
+    },
+    {
+      "sample_token": "1e3d79dae62742a0ad64c91679863358",
+      "end_to_end_ms": 973.6380529939197,
+      "gpu_forward_ms": 636.1970825195312
+    },
+    {
+      "sample_token": "2afb9d32310e4546a71cbe432911eca2",
+      "end_to_end_ms": 1031.3047650124645,
+      "gpu_forward_ms": 722.8878784179688
+    },
+    {
+      "sample_token": "cd21dbfc3bd749c7b10a5c42562e0c42",
+      "end_to_end_ms": 808.6829730018508,
+      "gpu_forward_ms": 540.8180541992188
+    },
+    {
+      "sample_token": "88449a5cb1644a199c1c11f6ac034867",
+      "end_to_end_ms": 949.6160319977207,
+      "gpu_forward_ms": 666.9810791015625
+    },
+    {
+      "sample_token": "2ff86dc19c4644a1a88ce5ba848f56e5",
+      "end_to_end_ms": 912.9411250032717,
+      "gpu_forward_ms": 593.81298828125
+    },
+    {
+      "sample_token": "bf2938e43c6f487497cda76b51bfc406",
+      "end_to_end_ms": 811.1993909988087,
+      "gpu_forward_ms": 552.286865234375
+    },
+    {
+      "sample_token": "c844bf5a9f2243ff8f4bf2c85fe218ff",
+      "end_to_end_ms": 939.9676559987711,
+      "gpu_forward_ms": 590.7802734375
+    },
+    {
+      "sample_token": "fedfb3a6cb804635a0f47143f9ca8d6f",
+      "end_to_end_ms": 851.4527939987602,
+      "gpu_forward_ms": 530.8028564453125
+    },
+    {
+      "sample_token": "965f6af5a92449348409029a5f048a38",
+      "end_to_end_ms": 889.0736239991384,
+      "gpu_forward_ms": 545.4642333984375
+    },
+    {
+      "sample_token": "4711bcd34644420da8bc77163431888e",
+      "end_to_end_ms": 517.3285390046658,
+      "gpu_forward_ms": 186.27993774414062
+    },
+    {
+      "sample_token": "a34fabc7aa674713b71f98ec541eb2d4",
+      "end_to_end_ms": 531.5514700050699,
+      "gpu_forward_ms": 190.42930603027344
+    },
+    {
+      "sample_token": "c78067571d104caba7c568a847d56971",
+      "end_to_end_ms": 456.244880988379,
+      "gpu_forward_ms": 182.764892578125
+    },
+    {
+      "sample_token": "4246e57f018745c9b2bc68feb3d71b58",
+      "end_to_end_ms": 451.18368799739983,
+      "gpu_forward_ms": 177.93568420410156
+    },
+    {
+      "sample_token": "a7acb150914b40bdad9a2dc4e657cbf9",
+      "end_to_end_ms": 441.9809719984187,
+      "gpu_forward_ms": 180.2178955078125
+    },
+    {
+      "sample_token": "0cd661df01aa40c3bb3a773ba86f753a",
+      "end_to_end_ms": 826.4568529993994,
+      "gpu_forward_ms": 550.9692993164062
+    },
+    {
+      "sample_token": "378a3a3e9af346308ab9dff8ced46d9c",
+      "end_to_end_ms": 797.0237900008215,
+      "gpu_forward_ms": 509.4440612792969
+    },
+    {
+      "sample_token": "eef55c3b48f34d949959b45130ee293a",
+      "end_to_end_ms": 931.8367849919014,
+      "gpu_forward_ms": 647.0262451171875
+    },
+    {
+      "sample_token": "5fda58ee3ae44ab9b4bbac7a2de66c27",
+      "end_to_end_ms": 819.9888320086757,
+      "gpu_forward_ms": 548.4198608398438
+    },
+    {
+      "sample_token": "919e3c4cec934168a3152077a9adcbea",
+      "end_to_end_ms": 963.1511830084492,
+      "gpu_forward_ms": 678.6192626953125
+    },
+    {
+      "sample_token": "b73152cab88f49d9ba195da81fde1809",
+      "end_to_end_ms": 949.2184979899321,
+      "gpu_forward_ms": 643.1072998046875
+    },
+    {
+      "sample_token": "6aa6fa91e0d1492e812eb7e57c47df6e",
+      "end_to_end_ms": 792.3775530070998,
+      "gpu_forward_ms": 529.2650146484375
+    },
+    {
+      "sample_token": "aa581aac963a4fad848ac11fe66e8637",
+      "end_to_end_ms": 806.3234540022677,
+      "gpu_forward_ms": 524.06396484375
+    },
+    {
+      "sample_token": "67e5f88901214f3aa03d68e028185e22",
+      "end_to_end_ms": 804.3533900054172,
+      "gpu_forward_ms": 544.4462280273438
+    },
+    {
+      "sample_token": "29e056fc277543c9bc42310b122c640e",
+      "end_to_end_ms": 902.632523997454,
+      "gpu_forward_ms": 632.9224243164062
+    }
+  ],
+  "peak_gpu_bytes": 9638000640,
+  "dtype": "float32",
+  "tf32": false,
+  "warmup": "first/middle/last gate included; not benchmark"
+}

@@ -1,0 +1,253 @@
+{
+  "run_id": "38360862641",
+  "source_commit": "54acae3bcb4e326ceb9992d3043eaad4f7ab9229",
+  "created_unix": 1791875346.0805936,
+  "objects": [
+    {
+      "model": "harpnext",
+      "source_url": "https://huggingface.co/samir-abh/HARP-NeXt/resolve/c2cd3ce5940be23bfbc2d1cf22131fd2fd3dc149/harpnext-nuscenes-32x480/ckpt_best.pth?download=true",
+      "bytes": 64865210,
+      "sha256": "6f7fc5a1c03e9123541458358b1c703babf37ffc0b8b4ea6beac6c9f8478a147",
+      "author_expected_sha256": "6f7fc5a1c03e9123541458358b1c703babf37ffc0b8b4ea6beac6c9f8478a147",
+      "chunks": [
+        {
+          "index": 0,
+          "artifact": "harpnext-0",
+          "file": "chunk.bin",
+          "bytes": 64865210,
+          "sha256": "6f7fc5a1c03e9123541458358b1c703babf37ffc0b8b4ea6beac6c9f8478a147"
+        }
+      ]
+    },
+    {
+      "model": "mambafusion",
+      "source_url": "https://drive.usercontent.google.com/download?id=10-FBWHbsCMJseKovJwGKncJ96Flp3umM&export=download&confirm=t",
+      "bytes": 391545251,
+      "sha256": "d2454354b762a5a4b0b85af8b23c4b1f63da9357af7160aa313bc689a8d11ea6",
+      "author_expected_sha256": null,
+      "chunks": [
+        {
+          "index": 0,
+          "artifact": "mambafusion-0",
+          "file": "chunk.bin",
+          "bytes": 67108864,
+          "sha256": "121ed0e926d5c6b609bbfb0d3b2201a1375d0f50ee88ef318a324309a4509e82"
+        },
+        {
+          "index": 1,
+          "artifact": "mambafusion-1",
+          "file": "chunk.bin",
+          "bytes": 67108864,
+          "sha256": "78a7ff63268e48b6350906fd4fc76b2297436a53d31063944897edaa6edc897a"
+        },
+        {
+          "index": 2,
+          "artifact": "mambafusion-2",
+          "file": "chunk.bin",
+          "bytes": 67108864,
+          "sha256": "c3ed7cc7ff4b6da9b4db3d85057440319413c7c3232c084886f568b03d8b4f5e"
+        },
+        {
+          "index": 3,
+          "artifact": "mambafusion-3",
+          "file": "chunk.bin",
+          "bytes": 67108864,
+          "sha256": "7e12c9d5b8b43fb6fac14a2c9e3fab3cc17809ba8ae08f4ddd178c572dfcca96"
+        },
+        {
+          "index": 4,
+          "artifact": "mambafusion-4",
+          "file": "chunk.bin",
+          "bytes": 67108864,
+          "sha256": "61ebf3c701c093744cdab151c24d75365395e3c53ceb33ad0904d74addd9d508"
+        },
+        {
+          "index": 5,
+          "artifact": "mambafusion-5",
+          "file": "chunk.bin",
+          "bytes": 56000931,
+          "sha256": "8c24852fbbf874120e9d265e3d01233d2f81e5de82ed1a7e39df849e47ea678f"
+        }
+      ]
+    }
+  ]
+}
+
+Traceback (most recent call last):
+  File "perception_lab/runs/weights_recovery_20261013/fetch_artifacts.py", line 70, in <module>
+    print('ready '+str(extract(name)),flush=True)
+  File "perception_lab/runs/weights_recovery_20261013/fetch_artifacts.py", line 57, in extract
+    z=fetch(name)
+  File "perception_lab/runs/weights_recovery_20261013/fetch_artifacts.py", line 24, in fetch
+    if p.returncode or not locations:raise RuntimeError('artifact redirect failed '+name)
+RuntimeError: artifact redirect failed harpnext-0
+{
+  "run_id": "38360862641",
+  "source_commit": "54acae3bcb4e326ceb9992d3043eaad4f7ab9229",
+  "created_unix": 1791875346.0805936,
+  "objects": [
+    {
+      "model": "harpnext",
+      "source_url": "https://huggingface.co/samir-abh/HARP-NeXt/resolve/c2cd3ce5940be23bfbc2d1cf22131fd2fd3dc149/harpnext-nuscenes-32x480/ckpt_best.pth?download=true",
+      "bytes": 64865210,
+      "sha256": "6f7fc5a1c03e9123541458358b1c703babf37ffc0b8b4ea6beac6c9f8478a147",
+      "author_expected_sha256": "6f7fc5a1c03e9123541458358b1c703babf37ffc0b8b4ea6beac6c9f8478a147",
+      "chunks": [
+        {
+          "index": 0,
+          "artifact": "harpnext-0",
+          "file": "chunk.bin",
+          "bytes": 64865210,
+          "sha256": "6f7fc5a1c03e9123541458358b1c703babf37ffc0b8b4ea6beac6c9f8478a147"
+        }
+      ]
+    },
+    {
+      "model": "mambafusion",
+      "source_url": "https://drive.usercontent.google.com/download?id=10-FBWHbsCMJseKovJwGKncJ96Flp3umM&export=download&confirm=t",
+      "bytes": 391545251,
+      "sha256": "d2454354b762a5a4b0b85af8b23c4b1f63da9357af7160aa313bc689a8d11ea6",
+      "author_expected_sha256": null,
+      "chunks": [
+        {
+          "index": 0,
+          "artifact": "mambafusion-0",
+          "file": "chunk.bin",
+          "bytes": 67108864,
+          "sha256": "121ed0e926d5c6b609bbfb0d3b2201a1375d0f50ee88ef318a324309a4509e82"
+        },
+        {
+          "index": 1,
+          "artifact": "mambafusion-1",
+          "file": "chunk.bin",
+          "bytes": 67108864,
+          "sha256": "78a7ff63268e48b6350906fd4fc76b2297436a53d31063944897edaa6edc897a"
+        },
+        {
+          "index": 2,
+          "artifact": "mambafusion-2",
+          "file": "chunk.bin",
+          "bytes": 67108864,
+          "sha256": "c3ed7cc7ff4b6da9b4db3d85057440319413c7c3232c084886f568b03d8b4f5e"
+        },
+        {
+          "index": 3,
+          "artifact": "mambafusion-3",
+          "file": "chunk.bin",
+          "bytes": 67108864,
+          "sha256": "7e12c9d5b8b43fb6fac14a2c9e3fab3cc17809ba8ae08f4ddd178c572dfcca96"
+        },
+        {
+          "index": 4,
+          "artifact": "mambafusion-4",
+          "file": "chunk.bin",
+          "bytes": 67108864,
+          "sha256": "61ebf3c701c093744cdab151c24d75365395e3c53ceb33ad0904d74addd9d508"
+        },
+        {
+          "index": 5,
+          "artifact": "mambafusion-5",
+          "file": "chunk.bin",
+          "bytes": 56000931,
+          "sha256": "8c24852fbbf874120e9d265e3d01233d2f81e5de82ed1a7e39df849e47ea678f"
+        }
+      ]
+    }
+  ]
+}
+
+{"artifact": "harpnext-0", "redirect_retry": 0, "curlcode": 28, "http_status_lines": []}
+{"artifact": "harpnext-0", "redirect_retry": 1, "curlcode": 28, "http_status_lines": []}
+Traceback (most recent call last):
+  File "perception_lab/runs/weights_recovery_20261013/fetch_artifacts.py", line 73, in <module>
+    print('ready '+str(extract(name)),flush=True)
+  File "perception_lab/runs/weights_recovery_20261013/fetch_artifacts.py", line 60, in extract
+    z=fetch(name)
+  File "perception_lab/runs/weights_recovery_20261013/fetch_artifacts.py", line 27, in fetch
+    if p.returncode or not locations:raise RuntimeError('artifact redirect failed '+name)
+RuntimeError: artifact redirect failed harpnext-0
+{
+  "run_id": "38360862641",
+  "source_commit": "54acae3bcb4e326ceb9992d3043eaad4f7ab9229",
+  "created_unix": 1791875346.0805936,
+  "objects": [
+    {
+      "model": "harpnext",
+      "source_url": "https://huggingface.co/samir-abh/HARP-NeXt/resolve/c2cd3ce5940be23bfbc2d1cf22131fd2fd3dc149/harpnext-nuscenes-32x480/ckpt_best.pth?download=true",
+      "bytes": 64865210,
+      "sha256": "6f7fc5a1c03e9123541458358b1c703babf37ffc0b8b4ea6beac6c9f8478a147",
+      "author_expected_sha256": "6f7fc5a1c03e9123541458358b1c703babf37ffc0b8b4ea6beac6c9f8478a147",
+      "chunks": [
+        {
+          "index": 0,
+          "artifact": "harpnext-0",
+          "file": "chunk.bin",
+          "bytes": 64865210,
+          "sha256": "6f7fc5a1c03e9123541458358b1c703babf37ffc0b8b4ea6beac6c9f8478a147"
+        }
+      ]
+    },
+    {
+      "model": "mambafusion",
+      "source_url": "https://drive.usercontent.google.com/download?id=10-FBWHbsCMJseKovJwGKncJ96Flp3umM&export=download&confirm=t",
+      "bytes": 391545251,
+      "sha256": "d2454354b762a5a4b0b85af8b23c4b1f63da9357af7160aa313bc689a8d11ea6",
+      "author_expected_sha256": null,
+      "chunks": [
+        {
+          "index": 0,
+          "artifact": "mambafusion-0",
+          "file": "chunk.bin",
+          "bytes": 67108864,
+          "sha256": "121ed0e926d5c6b609bbfb0d3b2201a1375d0f50ee88ef318a324309a4509e82"
+        },
+        {
+          "index": 1,
+          "artifact": "mambafusion-1",
+          "file": "chunk.bin",
+          "bytes": 67108864,
+          "sha256": "78a7ff63268e48b6350906fd4fc76b2297436a53d31063944897edaa6edc897a"
+        },
+        {
+          "index": 2,
+          "artifact": "mambafusion-2",
+          "file": "chunk.bin",
+          "bytes": 67108864,
+          "sha256": "c3ed7cc7ff4b6da9b4db3d85057440319413c7c3232c084886f568b03d8b4f5e"
+        },
+        {
+          "index": 3,
+          "artifact": "mambafusion-3",
+          "file": "chunk.bin",
+          "bytes": 67108864,
+          "sha256": "7e12c9d5b8b43fb6fac14a2c9e3fab3cc17809ba8ae08f4ddd178c572dfcca96"
+        },
+        {
+          "index": 4,
+          "artifact": "mambafusion-4",
+          "file": "chunk.bin",
+          "bytes": 67108864,
+          "sha256": "61ebf3c701c093744cdab151c24d75365395e3c53ceb33ad0904d74addd9d508"
+        },
+        {
+          "index": 5,
+          "artifact": "mambafusion-5",
+          "file": "chunk.bin",
+          "bytes": 56000931,
+          "sha256": "8c24852fbbf874120e9d265e3d01233d2f81e5de82ed1a7e39df849e47ea678f"
+        }
+      ]
+    }
+  ]
+}
+
+{"artifact": "harpnext-0", "redirect_retry": 0, "curlcode": 28, "http_status_lines": []}
+{"artifact": "harpnext-0", "redirect_retry": 1, "curlcode": 28, "http_status_lines": []}
+Traceback (most recent call last):
+  File "perception_lab/runs/weights_recovery_20261013/fetch_artifacts.py", line 73, in <module>
+    print('ready '+str(extract(name)),flush=True)
+  File "perception_lab/runs/weights_recovery_20261013/fetch_artifacts.py", line 60, in extract
+    z=fetch(name)
+  File "perception_lab/runs/weights_recovery_20261013/fetch_artifacts.py", line 27, in fetch
+    if p.returncode or not locations:raise RuntimeError('artifact redirect failed '+name)
+RuntimeError: artifact redirect failed harpnext-0

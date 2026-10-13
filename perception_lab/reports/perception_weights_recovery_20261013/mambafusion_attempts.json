@@ -1,0 +1,30 @@
+[
+  {
+    "time_unix": 1791876436.8014555,
+    "model": "mambafusion",
+    "network": "proxy",
+    "request_range": "bytes=0-16777215",
+    "status": 206,
+    "bytes_received": 16777216,
+    "content_range": {
+      "start": 0,
+      "end": 16777215,
+      "total": 391545251
+    },
+    "result": "verified_complete_block"
+  },
+  {
+    "time_unix": 1791876555.4153783,
+    "model": "mambafusion",
+    "network": "proxy",
+    "request_range": "bytes=16777216-33554431",
+    "status": 206,
+    "bytes_received": 16777216,
+    "content_range": {
+      "start": 16777216,
+      "end": 33554431,
+      "total": 391545251
+    },
+    "result": "verified_complete_block"
+  }
+]

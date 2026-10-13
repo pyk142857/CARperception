@@ -1,0 +1,40 @@
+--- a/pcdet/models/backbones_2d/base_bev_backbone.py
++++ b/pcdet/models/backbones_2d/base_bev_backbone.py
+@@ -57,7 +57,7 @@
+                         nn.ReLU()
+                     ))
+                 else:
+-                    stride = np.round(1 / stride).astype(np.int)
++                    stride = np.round(1 / stride).astype(int)
+                     self.deblocks.append(nn.Sequential(
+                         nn.Conv2d(
+                             num_filters[idx], num_upsample_filters[idx],
+@@ -158,7 +158,7 @@
+                         nn.ReLU()
+                     ))
+                 else:
+-                    stride = np.round(1 / stride).astype(np.int)
++                    stride = np.round(1 / stride).astype(int)
+                     self.deblocks.append(nn.Sequential(
+                         nn.Conv2d(
+                             num_filters[idx], num_upsample_filters[idx],
+@@ -295,7 +295,7 @@
+                         nn.ReLU()
+                     ))
+                 else:
+-                    stride = np.round(1 / stride).astype(np.int)
++                    stride = np.round(1 / stride).astype(int)
+                     self.deblocks.append(nn.Sequential(
+                         nn.Conv2d(
+                             num_filters[idx], num_upsample_filters[idx],
+--- a/pcdet/datasets/dataset.py
++++ b/pcdet/datasets/dataset.py
+@@ -344,6 +344,8 @@
+ 
+                         images.append(image_pad)
+                     ret[key] = np.stack(images, axis=0)
++                elif key == 'img_process_infos':
++                    ret[key] = np.stack([np.asarray(item, dtype=object) for item in val], axis=0)
+                 elif key in ['calib']:
+                     ret[key] = val
+                 elif key in ["points_2d"]:

@@ -1,0 +1,230 @@
+[
+  {
+    "start": 134217728,
+    "end": 150994943,
+    "total": 391545251,
+    "attempt": 0,
+    "time_unix": 1791876651.2370281,
+    "route": "task_proxy_19098",
+    "result": "failed",
+    "error_type": "RemoteDisconnected"
+  },
+  {
+    "start": 134217728,
+    "end": 150994943,
+    "total": 391545251,
+    "attempt": 1,
+    "time_unix": 1791876664.3391318,
+    "route": "task_proxy_19098",
+    "status": 206,
+    "bytes_received": 16777216,
+    "content_range": {
+      "start": 134217728,
+      "end": 150994943,
+      "total": 391545251
+    },
+    "result": "verified_complete_block"
+  },
+  {
+    "start": 100663296,
+    "end": 117440511,
+    "total": 391545251,
+    "attempt": 0,
+    "time_unix": 1791876651.235523,
+    "route": "task_proxy_19098",
+    "result": "failed",
+    "error_type": "RemoteDisconnected"
+  },
+  {
+    "start": 100663296,
+    "end": 117440511,
+    "total": 391545251,
+    "attempt": 1,
+    "time_unix": 1791876664.3406246,
+    "route": "task_proxy_19098",
+    "status": 206,
+    "bytes_received": 16777216,
+    "content_range": {
+      "start": 100663296,
+      "end": 117440511,
+      "total": 391545251
+    },
+    "result": "verified_complete_block"
+  },
+  {
+    "start": 83886080,
+    "end": 100663295,
+    "total": 391545251,
+    "attempt": 0,
+    "time_unix": 1791876651.2348092,
+    "route": "task_proxy_19098",
+    "result": "failed",
+    "error_type": "RemoteDisconnected"
+  },
+  {
+    "start": 83886080,
+    "end": 100663295,
+    "total": 391545251,
+    "attempt": 1,
+    "time_unix": 1791876664.3377552,
+    "route": "task_proxy_19098",
+    "status": 206,
+    "bytes_received": 16777216,
+    "content_range": {
+      "start": 83886080,
+      "end": 100663295,
+      "total": 391545251
+    },
+    "result": "verified_complete_block"
+  },
+  {
+    "start": 50331648,
+    "end": 67108863,
+    "total": 391545251,
+    "attempt": 0,
+    "time_unix": 1791876651.231733,
+    "route": "task_proxy_19098",
+    "result": "failed",
+    "error_type": "RemoteDisconnected"
+  },
+  {
+    "start": 50331648,
+    "end": 67108863,
+    "total": 391545251,
+    "attempt": 1,
+    "time_unix": 1791876664.3371196,
+    "route": "task_proxy_19098",
+    "status": 206,
+    "bytes_received": 16777216,
+    "content_range": {
+      "start": 50331648,
+      "end": 67108863,
+      "total": 391545251
+    },
+    "result": "verified_complete_block"
+  },
+  {
+    "start": 117440512,
+    "end": 134217727,
+    "total": 391545251,
+    "attempt": 0,
+    "time_unix": 1791876651.236146,
+    "route": "task_proxy_19098",
+    "result": "failed",
+    "error_type": "RemoteDisconnected"
+  },
+  {
+    "start": 117440512,
+    "end": 134217727,
+    "total": 391545251,
+    "attempt": 1,
+    "time_unix": 1791876664.3420641,
+    "route": "task_proxy_19098",
+    "status": 206,
+    "bytes_received": 16777216,
+    "content_range": {
+      "start": 117440512,
+      "end": 134217727,
+      "total": 391545251
+    },
+    "result": "verified_complete_block"
+  },
+  {
+    "start": 150994944,
+    "end": 167772159,
+    "total": 391545251,
+    "attempt": 0,
+    "time_unix": 1791876651.237947,
+    "route": "task_proxy_19098",
+    "result": "failed",
+    "error_type": "RemoteDisconnected"
+  },
+  {
+    "start": 150994944,
+    "end": 167772159,
+    "total": 391545251,
+    "attempt": 1,
+    "time_unix": 1791876664.3415518,
+    "route": "task_proxy_19098",
+    "status": 206,
+    "bytes_received": 16777216,
+    "content_range": {
+      "start": 150994944,
+      "end": 167772159,
+      "total": 391545251
+    },
+    "result": "verified_complete_block"
+  },
+  {
+    "start": 33554432,
+    "end": 50331647,
+    "total": 391545251,
+    "attempt": 0,
+    "time_unix": 1791876651.230737,
+    "route": "task_proxy_19098",
+    "result": "failed",
+    "error_type": "RemoteDisconnected"
+  },
+  {
+    "start": 33554432,
+    "end": 50331647,
+    "total": 391545251,
+    "attempt": 1,
+    "time_unix": 1791876664.3382049,
+    "route": "task_proxy_19098",
+    "status": 206,
+    "bytes_received": 16777216,
+    "content_range": {
+      "start": 33554432,
+      "end": 50331647,
+      "total": 391545251
+    },
+    "result": "verified_complete_block"
+  },
+  {
+    "start": 67108864,
+    "end": 83886079,
+    "total": 391545251,
+    "attempt": 0,
+    "time_unix": 1791876651.2335033,
+    "route": "task_proxy_19098",
+    "result": "failed",
+    "error_type": "RemoteDisconnected"
+  },
+  {
+    "start": 67108864,
+    "end": 83886079,
+    "total": 391545251,
+    "attempt": 1,
+    "time_unix": 1791876664.3362706,
+    "route": "task_proxy_19098",
+    "status": 206,
+    "bytes_received": 16777216,
+    "content_range": {
+      "start": 67108864,
+      "end": 83886079,
+      "total": 391545251
+    },
+    "result": "verified_complete_block"
+  },
+  {
+    "start": 184549376,
+    "end": 201326591,
+    "total": 391545251,
+    "attempt": 0,
+    "time_unix": 1791876926.2921965,
+    "route": "task_proxy_19098",
+    "result": "failed",
+    "error_type": "RemoteDisconnected"
+  },
+  {
+    "start": 184549376,
+    "end": 201326591,
+    "total": 391545251,
+    "attempt": 1,
+    "time_unix": 1791876958.965389,
+    "route": "task_proxy_19098",
+    "result": "failed",
+    "error_type": "RemoteDisconnected"
+  }
+]

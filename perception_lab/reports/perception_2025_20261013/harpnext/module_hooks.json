@@ -1,0 +1,2038 @@
+{
+  "frames": [
+    {
+      "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+      "modules": {
+        "voxel_encoder": {
+          "class_name": "FeaturesEncoder",
+          "calls": 6,
+          "input": [
+            {
+              "voxels": {
+                "shape": [
+                  53638,
+                  4
+                ],
+                "dtype": "torch.float32"
+              },
+              "coors": {
+                "shape": [
+                  53638,
+                  3
+                ],
+                "dtype": "torch.int64"
+              },
+              "voxel_feats": {
+                "shape": [
+                  12513,
+                  16
+                ],
+                "dtype": "torch.float32"
+              },
+              "voxel_coors": {
+                "shape": [
+                  12513,
+                  3
+                ],
+                "dtype": "torch.int64"
+              },
+              "point_feats": [
+                {
+                  "shape": [
+                    53638,
+                    64
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    53638,
+                    128
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    53638,
+                    256
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    53638,
+                    256
+                  ],
+                  "dtype": "torch.float32"
+                }
+              ]
+            }
+          ],
+          "output": {
+            "voxels": {
+              "shape": [
+                53638,
+                4
+              ],
+              "dtype": "torch.float32"
+            },
+            "coors": {
+              "shape": [
+                53638,
+                3
+              ],
+              "dtype": "torch.int64"
+            },
+            "voxel_feats": {
+              "shape": [
+                12513,
+                16
+              ],
+              "dtype": "torch.float32"
+            },
+            "voxel_coors": {
+              "shape": [
+                12513,
+                3
+              ],
+              "dtype": "torch.int64"
+            },
+            "point_feats": [
+              {
+                "shape": [
+                  53638,
+                  64
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  53638,
+                  128
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  53638,
+                  256
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  53638,
+                  256
+                ],
+                "dtype": "torch.float32"
+              }
+            ]
+          }
+        },
+        "backbone.stem": {
+          "class_name": "Sequential",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                1,
+                16,
+                32,
+                480
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              1,
+              128,
+              32,
+              480
+            ],
+            "dtype": "torch.float32"
+          }
+        },
+        "backbone.point_stem": {
+          "class_name": "Sequential",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                53638,
+                384
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              53638,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        },
+        "backbone.fusion_stem": {
+          "class_name": "Sequential",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                1,
+                256,
+                32,
+                480
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              1,
+              128,
+              32,
+              480
+            ],
+            "dtype": "torch.float32"
+          }
+        },
+        "backbone.layer1.0": {
+          "class_name": "ConvSENeXt",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                1,
+                128,
+                32,
+                480
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              1,
+              128,
+              32,
+              480
+            ],
+            "dtype": "torch.float32"
+          }
+        },
+        "backbone.point_fusion_layers.0": {
+          "class_name": "Sequential",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                53638,
+                256
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              53638,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        },
+        "backbone.layer2.0": {
+          "class_name": "ConvSENeXt",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                1,
+                128,
+                32,
+                480
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              1,
+              128,
+              16,
+              240
+            ],
+            "dtype": "torch.float32"
+          }
+        },
+        "backbone.point_fusion_layers.1": {
+          "class_name": "Sequential",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                53638,
+                256
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              53638,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        },
+        "backbone.layer3.0": {
+          "class_name": "ConvSENeXt",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                1,
+                128,
+                16,
+                240
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              1,
+              128,
+              8,
+              120
+            ],
+            "dtype": "torch.float32"
+          }
+        },
+        "backbone.point_fusion_layers.2": {
+          "class_name": "Sequential",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                53638,
+                256
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              53638,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        },
+        "backbone.layer4.0": {
+          "class_name": "ConvSENeXt",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                1,
+                128,
+                8,
+                120
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              1,
+              128,
+              4,
+              60
+            ],
+            "dtype": "torch.float32"
+          }
+        },
+        "backbone.point_fusion_layers.3": {
+          "class_name": "Sequential",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                53638,
+                256
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              53638,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        },
+        "backbone": {
+          "class_name": "HARPNeXtBackbone",
+          "calls": 6,
+          "input": [
+            {
+              "voxels": {
+                "shape": [
+                  53638,
+                  4
+                ],
+                "dtype": "torch.float32"
+              },
+              "coors": {
+                "shape": [
+                  53638,
+                  3
+                ],
+                "dtype": "torch.int64"
+              },
+              "voxel_feats": [
+                {
+                  "shape": [
+                    1,
+                    128,
+                    32,
+                    480
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    1,
+                    128,
+                    32,
+                    480
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    1,
+                    128,
+                    32,
+                    480
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    1,
+                    128,
+                    32,
+                    480
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    1,
+                    128,
+                    32,
+                    480
+                  ],
+                  "dtype": "torch.float32"
+                }
+              ],
+              "voxel_coors": {
+                "shape": [
+                  12513,
+                  3
+                ],
+                "dtype": "torch.int64"
+              },
+              "point_feats": [
+                {
+                  "shape": [
+                    53638,
+                    64
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    53638,
+                    128
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    53638,
+                    256
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    53638,
+                    256
+                  ],
+                  "dtype": "torch.float32"
+                }
+              ],
+              "point_feats_backbone": [
+                {
+                  "shape": [
+                    53638,
+                    128
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    53638,
+                    128
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    53638,
+                    128
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    53638,
+                    128
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    53638,
+                    128
+                  ],
+                  "dtype": "torch.float32"
+                }
+              ]
+            }
+          ],
+          "output": {
+            "voxels": {
+              "shape": [
+                53638,
+                4
+              ],
+              "dtype": "torch.float32"
+            },
+            "coors": {
+              "shape": [
+                53638,
+                3
+              ],
+              "dtype": "torch.int64"
+            },
+            "voxel_feats": [
+              {
+                "shape": [
+                  1,
+                  128,
+                  32,
+                  480
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  1,
+                  128,
+                  32,
+                  480
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  1,
+                  128,
+                  32,
+                  480
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  1,
+                  128,
+                  32,
+                  480
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  1,
+                  128,
+                  32,
+                  480
+                ],
+                "dtype": "torch.float32"
+              }
+            ],
+            "voxel_coors": {
+              "shape": [
+                12513,
+                3
+              ],
+              "dtype": "torch.int64"
+            },
+            "point_feats": [
+              {
+                "shape": [
+                  53638,
+                  64
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  53638,
+                  128
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  53638,
+                  256
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  53638,
+                  256
+                ],
+                "dtype": "torch.float32"
+              }
+            ],
+            "point_feats_backbone": [
+              {
+                "shape": [
+                  53638,
+                  128
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  53638,
+                  128
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  53638,
+                  128
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  53638,
+                  128
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  53638,
+                  128
+                ],
+                "dtype": "torch.float32"
+              }
+            ]
+          }
+        },
+        "decode_head.conv_seg": {
+          "class_name": "Linear",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                53638,
+                64
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              53638,
+              16
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "zero_call_required": []
+    },
+    {
+      "sample_token": "b26e791522294bec90f86fd72226e35c",
+      "modules": {
+        "voxel_encoder": {
+          "class_name": "FeaturesEncoder",
+          "calls": 6,
+          "input": [
+            {
+              "voxels": {
+                "shape": [
+                  53291,
+                  4
+                ],
+                "dtype": "torch.float32"
+              },
+              "coors": {
+                "shape": [
+                  53291,
+                  3
+                ],
+                "dtype": "torch.int64"
+              },
+              "voxel_feats": {
+                "shape": [
+                  12667,
+                  16
+                ],
+                "dtype": "torch.float32"
+              },
+              "voxel_coors": {
+                "shape": [
+                  12667,
+                  3
+                ],
+                "dtype": "torch.int64"
+              },
+              "point_feats": [
+                {
+                  "shape": [
+                    53291,
+                    64
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    53291,
+                    128
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    53291,
+                    256
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    53291,
+                    256
+                  ],
+                  "dtype": "torch.float32"
+                }
+              ]
+            }
+          ],
+          "output": {
+            "voxels": {
+              "shape": [
+                53291,
+                4
+              ],
+              "dtype": "torch.float32"
+            },
+            "coors": {
+              "shape": [
+                53291,
+                3
+              ],
+              "dtype": "torch.int64"
+            },
+            "voxel_feats": {
+              "shape": [
+                12667,
+                16
+              ],
+              "dtype": "torch.float32"
+            },
+            "voxel_coors": {
+              "shape": [
+                12667,
+                3
+              ],
+              "dtype": "torch.int64"
+            },
+            "point_feats": [
+              {
+                "shape": [
+                  53291,
+                  64
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  53291,
+                  128
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  53291,
+                  256
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  53291,
+                  256
+                ],
+                "dtype": "torch.float32"
+              }
+            ]
+          }
+        },
+        "backbone.stem": {
+          "class_name": "Sequential",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                1,
+                16,
+                32,
+                480
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              1,
+              128,
+              32,
+              480
+            ],
+            "dtype": "torch.float32"
+          }
+        },
+        "backbone.point_stem": {
+          "class_name": "Sequential",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                53291,
+                384
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              53291,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        },
+        "backbone.fusion_stem": {
+          "class_name": "Sequential",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                1,
+                256,
+                32,
+                480
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              1,
+              128,
+              32,
+              480
+            ],
+            "dtype": "torch.float32"
+          }
+        },
+        "backbone.layer1.0": {
+          "class_name": "ConvSENeXt",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                1,
+                128,
+                32,
+                480
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              1,
+              128,
+              32,
+              480
+            ],
+            "dtype": "torch.float32"
+          }
+        },
+        "backbone.point_fusion_layers.0": {
+          "class_name": "Sequential",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                53291,
+                256
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              53291,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        },
+        "backbone.layer2.0": {
+          "class_name": "ConvSENeXt",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                1,
+                128,
+                32,
+                480
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              1,
+              128,
+              16,
+              240
+            ],
+            "dtype": "torch.float32"
+          }
+        },
+        "backbone.point_fusion_layers.1": {
+          "class_name": "Sequential",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                53291,
+                256
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              53291,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        },
+        "backbone.layer3.0": {
+          "class_name": "ConvSENeXt",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                1,
+                128,
+                16,
+                240
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              1,
+              128,
+              8,
+              120
+            ],
+            "dtype": "torch.float32"
+          }
+        },
+        "backbone.point_fusion_layers.2": {
+          "class_name": "Sequential",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                53291,
+                256
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              53291,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        },
+        "backbone.layer4.0": {
+          "class_name": "ConvSENeXt",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                1,
+                128,
+                8,
+                120
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              1,
+              128,
+              4,
+              60
+            ],
+            "dtype": "torch.float32"
+          }
+        },
+        "backbone.point_fusion_layers.3": {
+          "class_name": "Sequential",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                53291,
+                256
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              53291,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        },
+        "backbone": {
+          "class_name": "HARPNeXtBackbone",
+          "calls": 6,
+          "input": [
+            {
+              "voxels": {
+                "shape": [
+                  53291,
+                  4
+                ],
+                "dtype": "torch.float32"
+              },
+              "coors": {
+                "shape": [
+                  53291,
+                  3
+                ],
+                "dtype": "torch.int64"
+              },
+              "voxel_feats": [
+                {
+                  "shape": [
+                    1,
+                    128,
+                    32,
+                    480
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    1,
+                    128,
+                    32,
+                    480
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    1,
+                    128,
+                    32,
+                    480
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    1,
+                    128,
+                    32,
+                    480
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    1,
+                    128,
+                    32,
+                    480
+                  ],
+                  "dtype": "torch.float32"
+                }
+              ],
+              "voxel_coors": {
+                "shape": [
+                  12667,
+                  3
+                ],
+                "dtype": "torch.int64"
+              },
+              "point_feats": [
+                {
+                  "shape": [
+                    53291,
+                    64
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    53291,
+                    128
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    53291,
+                    256
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    53291,
+                    256
+                  ],
+                  "dtype": "torch.float32"
+                }
+              ],
+              "point_feats_backbone": [
+                {
+                  "shape": [
+                    53291,
+                    128
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    53291,
+                    128
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    53291,
+                    128
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    53291,
+                    128
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    53291,
+                    128
+                  ],
+                  "dtype": "torch.float32"
+                }
+              ]
+            }
+          ],
+          "output": {
+            "voxels": {
+              "shape": [
+                53291,
+                4
+              ],
+              "dtype": "torch.float32"
+            },
+            "coors": {
+              "shape": [
+                53291,
+                3
+              ],
+              "dtype": "torch.int64"
+            },
+            "voxel_feats": [
+              {
+                "shape": [
+                  1,
+                  128,
+                  32,
+                  480
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  1,
+                  128,
+                  32,
+                  480
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  1,
+                  128,
+                  32,
+                  480
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  1,
+                  128,
+                  32,
+                  480
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  1,
+                  128,
+                  32,
+                  480
+                ],
+                "dtype": "torch.float32"
+              }
+            ],
+            "voxel_coors": {
+              "shape": [
+                12667,
+                3
+              ],
+              "dtype": "torch.int64"
+            },
+            "point_feats": [
+              {
+                "shape": [
+                  53291,
+                  64
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  53291,
+                  128
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  53291,
+                  256
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  53291,
+                  256
+                ],
+                "dtype": "torch.float32"
+              }
+            ],
+            "point_feats_backbone": [
+              {
+                "shape": [
+                  53291,
+                  128
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  53291,
+                  128
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  53291,
+                  128
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  53291,
+                  128
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  53291,
+                  128
+                ],
+                "dtype": "torch.float32"
+              }
+            ]
+          }
+        },
+        "decode_head.conv_seg": {
+          "class_name": "Linear",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                53291,
+                64
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              53291,
+              16
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "zero_call_required": []
+    },
+    {
+      "sample_token": "ed5fc18c31904f96a8f0dbb99ff069c0",
+      "modules": {
+        "voxel_encoder": {
+          "class_name": "FeaturesEncoder",
+          "calls": 6,
+          "input": [
+            {
+              "voxels": {
+                "shape": [
+                  54923,
+                  4
+                ],
+                "dtype": "torch.float32"
+              },
+              "coors": {
+                "shape": [
+                  54923,
+                  3
+                ],
+                "dtype": "torch.int64"
+              },
+              "voxel_feats": {
+                "shape": [
+                  13375,
+                  16
+                ],
+                "dtype": "torch.float32"
+              },
+              "voxel_coors": {
+                "shape": [
+                  13375,
+                  3
+                ],
+                "dtype": "torch.int64"
+              },
+              "point_feats": [
+                {
+                  "shape": [
+                    54923,
+                    64
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    54923,
+                    128
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    54923,
+                    256
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    54923,
+                    256
+                  ],
+                  "dtype": "torch.float32"
+                }
+              ]
+            }
+          ],
+          "output": {
+            "voxels": {
+              "shape": [
+                54923,
+                4
+              ],
+              "dtype": "torch.float32"
+            },
+            "coors": {
+              "shape": [
+                54923,
+                3
+              ],
+              "dtype": "torch.int64"
+            },
+            "voxel_feats": {
+              "shape": [
+                13375,
+                16
+              ],
+              "dtype": "torch.float32"
+            },
+            "voxel_coors": {
+              "shape": [
+                13375,
+                3
+              ],
+              "dtype": "torch.int64"
+            },
+            "point_feats": [
+              {
+                "shape": [
+                  54923,
+                  64
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  54923,
+                  128
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  54923,
+                  256
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  54923,
+                  256
+                ],
+                "dtype": "torch.float32"
+              }
+            ]
+          }
+        },
+        "backbone.stem": {
+          "class_name": "Sequential",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                1,
+                16,
+                32,
+                480
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              1,
+              128,
+              32,
+              480
+            ],
+            "dtype": "torch.float32"
+          }
+        },
+        "backbone.point_stem": {
+          "class_name": "Sequential",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                54923,
+                384
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              54923,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        },
+        "backbone.fusion_stem": {
+          "class_name": "Sequential",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                1,
+                256,
+                32,
+                480
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              1,
+              128,
+              32,
+              480
+            ],
+            "dtype": "torch.float32"
+          }
+        },
+        "backbone.layer1.0": {
+          "class_name": "ConvSENeXt",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                1,
+                128,
+                32,
+                480
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              1,
+              128,
+              32,
+              480
+            ],
+            "dtype": "torch.float32"
+          }
+        },
+        "backbone.point_fusion_layers.0": {
+          "class_name": "Sequential",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                54923,
+                256
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              54923,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        },
+        "backbone.layer2.0": {
+          "class_name": "ConvSENeXt",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                1,
+                128,
+                32,
+                480
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              1,
+              128,
+              16,
+              240
+            ],
+            "dtype": "torch.float32"
+          }
+        },
+        "backbone.point_fusion_layers.1": {
+          "class_name": "Sequential",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                54923,
+                256
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              54923,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        },
+        "backbone.layer3.0": {
+          "class_name": "ConvSENeXt",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                1,
+                128,
+                16,
+                240
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              1,
+              128,
+              8,
+              120
+            ],
+            "dtype": "torch.float32"
+          }
+        },
+        "backbone.point_fusion_layers.2": {
+          "class_name": "Sequential",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                54923,
+                256
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              54923,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        },
+        "backbone.layer4.0": {
+          "class_name": "ConvSENeXt",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                1,
+                128,
+                8,
+                120
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              1,
+              128,
+              4,
+              60
+            ],
+            "dtype": "torch.float32"
+          }
+        },
+        "backbone.point_fusion_layers.3": {
+          "class_name": "Sequential",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                54923,
+                256
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              54923,
+              128
+            ],
+            "dtype": "torch.float32"
+          }
+        },
+        "backbone": {
+          "class_name": "HARPNeXtBackbone",
+          "calls": 6,
+          "input": [
+            {
+              "voxels": {
+                "shape": [
+                  54923,
+                  4
+                ],
+                "dtype": "torch.float32"
+              },
+              "coors": {
+                "shape": [
+                  54923,
+                  3
+                ],
+                "dtype": "torch.int64"
+              },
+              "voxel_feats": [
+                {
+                  "shape": [
+                    1,
+                    128,
+                    32,
+                    480
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    1,
+                    128,
+                    32,
+                    480
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    1,
+                    128,
+                    32,
+                    480
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    1,
+                    128,
+                    32,
+                    480
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    1,
+                    128,
+                    32,
+                    480
+                  ],
+                  "dtype": "torch.float32"
+                }
+              ],
+              "voxel_coors": {
+                "shape": [
+                  13375,
+                  3
+                ],
+                "dtype": "torch.int64"
+              },
+              "point_feats": [
+                {
+                  "shape": [
+                    54923,
+                    64
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    54923,
+                    128
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    54923,
+                    256
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    54923,
+                    256
+                  ],
+                  "dtype": "torch.float32"
+                }
+              ],
+              "point_feats_backbone": [
+                {
+                  "shape": [
+                    54923,
+                    128
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    54923,
+                    128
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    54923,
+                    128
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    54923,
+                    128
+                  ],
+                  "dtype": "torch.float32"
+                },
+                {
+                  "shape": [
+                    54923,
+                    128
+                  ],
+                  "dtype": "torch.float32"
+                }
+              ]
+            }
+          ],
+          "output": {
+            "voxels": {
+              "shape": [
+                54923,
+                4
+              ],
+              "dtype": "torch.float32"
+            },
+            "coors": {
+              "shape": [
+                54923,
+                3
+              ],
+              "dtype": "torch.int64"
+            },
+            "voxel_feats": [
+              {
+                "shape": [
+                  1,
+                  128,
+                  32,
+                  480
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  1,
+                  128,
+                  32,
+                  480
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  1,
+                  128,
+                  32,
+                  480
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  1,
+                  128,
+                  32,
+                  480
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  1,
+                  128,
+                  32,
+                  480
+                ],
+                "dtype": "torch.float32"
+              }
+            ],
+            "voxel_coors": {
+              "shape": [
+                13375,
+                3
+              ],
+              "dtype": "torch.int64"
+            },
+            "point_feats": [
+              {
+                "shape": [
+                  54923,
+                  64
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  54923,
+                  128
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  54923,
+                  256
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  54923,
+                  256
+                ],
+                "dtype": "torch.float32"
+              }
+            ],
+            "point_feats_backbone": [
+              {
+                "shape": [
+                  54923,
+                  128
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  54923,
+                  128
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  54923,
+                  128
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  54923,
+                  128
+                ],
+                "dtype": "torch.float32"
+              },
+              {
+                "shape": [
+                  54923,
+                  128
+                ],
+                "dtype": "torch.float32"
+              }
+            ]
+          }
+        },
+        "decode_head.conv_seg": {
+          "class_name": "Linear",
+          "calls": 6,
+          "input": [
+            {
+              "shape": [
+                54923,
+                64
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "output": {
+            "shape": [
+              54923,
+              16
+            ],
+            "dtype": "torch.float32"
+          }
+        }
+      },
+      "zero_call_required": []
+    }
+  ],
+  "expected_ConvSENeXt_modules": [
+    "backbone.layer1.0",
+    "backbone.layer2.0",
+    "backbone.layer3.0",
+    "backbone.layer4.0"
+  ]
+}

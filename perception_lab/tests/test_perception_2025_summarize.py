@@ -41,7 +41,15 @@ def test_grae_requires_official_evaluation_and_consistent_saved_outputs(tmp_path
     summary.write(folder/'status.json', dict(status='partial', inference='passed', official_evaluation='passed'))
     summary.write(folder/'frozen_reference/mini_val/tracking.json', {'results': {'frame': []}})
     summary.write(folder/'frozen_reference/mini_val/official_eval/metrics_summary.json', row)
+    summary.write(folder/'frozen_reference/input_manifest.json', {})
+    import hashlib
+    for key,path in [('tracking_sha256',folder/'frozen_reference/mini_val/tracking.json'),('metrics_sha256',folder/'frozen_reference/mini_val/official_eval/metrics_summary.json'),('input_manifest_sha256',folder/'frozen_reference/input_manifest.json')]:
+        row[key]=hashlib.sha256(path.read_bytes()).hexdigest()
+    summary.write(folder/'metrics.json',[row])
     assert len(summary.collect(tmp_path)[1]) == 5
+    summary.write(folder/'frozen_reference/mini_val/tracking.json', {'results': {'frame': [{'tampered':True}]}})
+    assert not summary.collect(tmp_path)[1]
+    summary.write(folder/'frozen_reference/mini_val/tracking.json', {'results': {'frame': []}})
     row['ids'] = 9
     summary.write(folder/'metrics.json', [row])
     assert not summary.collect(tmp_path)[1]

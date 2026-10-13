@@ -28,11 +28,11 @@
   ],
   "checkpoint": {
     "url": "https://cloud.minesparis.psl.eu/index.php/s/eUOcaEXZRLNfV1e",
-    "state": "blocked_resource",
-    "filename": null,
-    "bytes": null,
-    "sha256": null,
-    "strict_load": null,
+    "state": "downloaded_verified_strict_loaded",
+    "filename": "ckpt_best.pth",
+    "bytes": 64865210,
+    "sha256": "6f7fc5a1c03e9123541458358b1c703babf37ffc0b8b4ea6beac6c9f8478a147",
+    "strict_load": "passed; strict_load.json;293 state tensors; no missing/unexpected keys",
     "attempts": [
       {
         "route": "HTTPS share page",
@@ -59,7 +59,9 @@
         "result": "Three TLS/connect timeouts15sec and final45secconnect timeout; zero bytes; no archive acquired"
       }
     ],
-    "official_share_advertised_bytes": 140113745
+    "official_share_advertised_bytes": 140113745,
+    "recovery_evidence": "../../perception_weights_recovery_20261013/",
+    "historical_attempts_preserved": true
   },
   "environment": {
     "python": "3.10.13",

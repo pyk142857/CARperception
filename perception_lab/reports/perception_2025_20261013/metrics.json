@@ -366,5 +366,269 @@
     "metric": "fn",
     "value": 400.0,
     "source": "new_measured"
+  },
+  {
+    "model": "GRAE-3DMOT",
+    "scope": "scene0061 mambafusion_native",
+    "samples": 39,
+    "metric": "amota",
+    "value": 0.8739118773081327,
+    "source": "new_measured"
+  },
+  {
+    "model": "GRAE-3DMOT",
+    "scope": "scene0061 mambafusion_native",
+    "samples": 39,
+    "metric": "amotp",
+    "value": 0.33850248736723276,
+    "source": "new_measured"
+  },
+  {
+    "model": "GRAE-3DMOT",
+    "scope": "scene0061 mambafusion_native",
+    "samples": 39,
+    "metric": "ids",
+    "value": 3.0,
+    "source": "new_measured"
+  },
+  {
+    "model": "GRAE-3DMOT",
+    "scope": "scene0061 mambafusion_native",
+    "samples": 39,
+    "metric": "fp",
+    "value": 67.0,
+    "source": "new_measured"
+  },
+  {
+    "model": "GRAE-3DMOT",
+    "scope": "scene0061 mambafusion_native",
+    "samples": 39,
+    "metric": "fn",
+    "value": 94.0,
+    "source": "new_measured"
+  },
+  {
+    "model": "GRAE-3DMOT",
+    "scope": "mini_val mambafusion_native",
+    "samples": 81,
+    "metric": "amota",
+    "value": 0.8497284519734606,
+    "source": "new_measured"
+  },
+  {
+    "model": "GRAE-3DMOT",
+    "scope": "mini_val mambafusion_native",
+    "samples": 81,
+    "metric": "amotp",
+    "value": 0.38917468383995074,
+    "source": "new_measured"
+  },
+  {
+    "model": "GRAE-3DMOT",
+    "scope": "mini_val mambafusion_native",
+    "samples": 81,
+    "metric": "ids",
+    "value": 19.0,
+    "source": "new_measured"
+  },
+  {
+    "model": "GRAE-3DMOT",
+    "scope": "mini_val mambafusion_native",
+    "samples": 81,
+    "metric": "fp",
+    "value": 405.0,
+    "source": "new_measured"
+  },
+  {
+    "model": "GRAE-3DMOT",
+    "scope": "mini_val mambafusion_native",
+    "samples": 81,
+    "metric": "fn",
+    "value": 344.0,
+    "source": "new_measured"
+  },
+  {
+    "model": "HARP-NeXt",
+    "scope": "scene0061 original-points-only",
+    "samples": 39,
+    "metric": "miou_union_gt_zero",
+    "value": 0.644201422884852,
+    "source": "new_measured"
+  },
+  {
+    "model": "HARP-NeXt",
+    "scope": "scene0061 original-points-only",
+    "samples": 39,
+    "metric": "accuracy",
+    "value": 0.9442868839230536,
+    "source": "new_measured"
+  },
+  {
+    "model": "HARP-NeXt",
+    "scope": "scene0061 original-points-only",
+    "samples": 39,
+    "metric": "valid_points",
+    "value": 1016188,
+    "source": "new_measured"
+  },
+  {
+    "model": "HARP-NeXt",
+    "scope": "mini_val original-points-only",
+    "samples": 81,
+    "metric": "miou_union_gt_zero",
+    "value": 0.5521619164409703,
+    "source": "new_measured"
+  },
+  {
+    "model": "HARP-NeXt",
+    "scope": "mini_val original-points-only",
+    "samples": 81,
+    "metric": "accuracy",
+    "value": 0.9480768134554319,
+    "source": "new_measured"
+  },
+  {
+    "model": "HARP-NeXt",
+    "scope": "mini_val original-points-only",
+    "samples": 81,
+    "metric": "valid_points",
+    "value": 2087603,
+    "source": "new_measured"
+  },
+  {
+    "model": "HARP-NeXt",
+    "scope": "mini_all original-points-only",
+    "samples": 404,
+    "metric": "miou_union_gt_zero",
+    "value": 0.7738487784768644,
+    "source": "new_measured"
+  },
+  {
+    "model": "HARP-NeXt",
+    "scope": "mini_all original-points-only",
+    "samples": 404,
+    "metric": "accuracy",
+    "value": 0.947850850240354,
+    "source": "new_measured"
+  },
+  {
+    "model": "HARP-NeXt",
+    "scope": "mini_all original-points-only",
+    "samples": 404,
+    "metric": "valid_points",
+    "value": 10359306,
+    "source": "new_measured"
+  },
+  {
+    "model": "MambaFusion",
+    "scope": "scene0061",
+    "samples": 39,
+    "metric": "mean_ap",
+    "value": 0.7279752319124936,
+    "source": "new_measured"
+  },
+  {
+    "model": "MambaFusion",
+    "scope": "scene0061",
+    "samples": 39,
+    "metric": "nd_score",
+    "value": 0.6738776961599682,
+    "source": "new_measured"
+  },
+  {
+    "model": "MambaFusion",
+    "scope": "scene0061",
+    "samples": 39,
+    "metric": "trans_err",
+    "value": 0.2992746396588843,
+    "source": "new_measured"
+  },
+  {
+    "model": "MambaFusion",
+    "scope": "scene0061",
+    "samples": 39,
+    "metric": "scale_err",
+    "value": 0.3229434525170288,
+    "source": "new_measured"
+  },
+  {
+    "model": "MambaFusion",
+    "scope": "scene0061",
+    "samples": 39,
+    "metric": "orient_err",
+    "value": 0.3342022792129312,
+    "source": "new_measured"
+  },
+  {
+    "model": "MambaFusion",
+    "scope": "scene0061",
+    "samples": 39,
+    "metric": "vel_err",
+    "value": 0.34461296327638985,
+    "source": "new_measured"
+  },
+  {
+    "model": "MambaFusion",
+    "scope": "scene0061",
+    "samples": 39,
+    "metric": "attr_err",
+    "value": 0.6000658632975517,
+    "source": "new_measured"
+  },
+  {
+    "model": "MambaFusion",
+    "scope": "mini_val",
+    "samples": 81,
+    "metric": "mean_ap",
+    "value": 0.5889794050098823,
+    "source": "new_measured"
+  },
+  {
+    "model": "MambaFusion",
+    "scope": "mini_val",
+    "samples": 81,
+    "metric": "nd_score",
+    "value": 0.5957750804833165,
+    "source": "new_measured"
+  },
+  {
+    "model": "MambaFusion",
+    "scope": "mini_val",
+    "samples": 81,
+    "metric": "trans_err",
+    "value": 0.3966954560190631,
+    "source": "new_measured"
+  },
+  {
+    "model": "MambaFusion",
+    "scope": "mini_val",
+    "samples": 81,
+    "metric": "scale_err",
+    "value": 0.43013743983436237,
+    "source": "new_measured"
+  },
+  {
+    "model": "MambaFusion",
+    "scope": "mini_val",
+    "samples": 81,
+    "metric": "orient_err",
+    "value": 0.44599896936902905,
+    "source": "new_measured"
+  },
+  {
+    "model": "MambaFusion",
+    "scope": "mini_val",
+    "samples": 81,
+    "metric": "vel_err",
+    "value": 0.42439859684917647,
+    "source": "new_measured"
+  },
+  {
+    "model": "MambaFusion",
+    "scope": "mini_val",
+    "samples": 81,
+    "metric": "attr_err",
+    "value": 0.28991575814461545,
+    "source": "new_measured"
   }
 ]

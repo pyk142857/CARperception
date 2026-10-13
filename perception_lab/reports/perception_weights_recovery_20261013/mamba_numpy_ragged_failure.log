@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/home/minglei/Desktop/CAR/perception_lab/third_party/MambaFusion2025/pcdet/datasets/dataset.py", line 368, in collate_batch
+    ret[key] = np.stack(val, axis=0)
+  File "/home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages/numpy/core/shape_base.py", line 443, in stack
+    arrays = [asanyarray(arr) for arr in arrays]
+  File "/home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages/numpy/core/shape_base.py", line 443, in <listcomp>
+    arrays = [asanyarray(arr) for arr in arrays]
+ValueError: setting an array element with a sequence. The requested array has an inhomogeneous shape after 2 dimensions. The detected shape was (6, 4) + inhomogeneous part.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/minglei/Desktop/CAR/perception_lab/tools/mambafusion_2025.py", line 988, in main
+    status = native_run()
+  File "/home/minglei/Desktop/CAR/perception_lab/tools/mambafusion_2025.py", line 478, in native_run
+    batch = dataset.collate_batch([dataset[idx]])
+  File "/home/minglei/Desktop/CAR/perception_lab/third_party/MambaFusion2025/pcdet/datasets/dataset.py", line 371, in collate_batch
+    raise TypeError
+TypeError

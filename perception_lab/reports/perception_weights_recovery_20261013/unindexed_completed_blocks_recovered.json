@@ -1,0 +1,41 @@
+{
+  "reason": "v1 bounded failure stopped main completion consumer while other workers completed exact-206 validated blocks; only canonical .block files written after successful receive were recovered, never .part files",
+  "required_final_guard": "full assembled SHA256 must match Actions independently computed source SHA before CPU parse/atomic install",
+  "blocks": [
+    {
+      "start": 268435456,
+      "end": 285212671,
+      "size": 16777216,
+      "filename": "000268435456-000285212671.block",
+      "sha256": "9965cba21ff1663ab4188a7b8521457ea45e7b50d1f90155e6b6fa0ed27bbccf"
+    },
+    {
+      "start": 218103808,
+      "end": 234881023,
+      "size": 16777216,
+      "filename": "000218103808-000234881023.block",
+      "sha256": "4ffb659eca99d1aac9dd4366ceeb992bb2df51a89488985c23f1e41cb5bbdeb1"
+    },
+    {
+      "start": 285212672,
+      "end": 301989887,
+      "size": 16777216,
+      "filename": "000285212672-000301989887.block",
+      "sha256": "a209e79e20fc99809b81c81330318a74f5aa48976ce0c664160fa8cdd57ae005"
+    },
+    {
+      "start": 234881024,
+      "end": 251658239,
+      "size": 16777216,
+      "filename": "000234881024-000251658239.block",
+      "sha256": "8a22d5d5422e2164b97c2f8a98a43b64efb6f9d500dcc9773047b90b2d85821b"
+    },
+    {
+      "start": 251658240,
+      "end": 268435455,
+      "size": 16777216,
+      "filename": "000251658240-000268435455.block",
+      "sha256": "886756f035f2d80f712ca9c7f817172e17bcfe2ce3ad82bc8761f4e7d2cd044f"
+    }
+  ]
+}

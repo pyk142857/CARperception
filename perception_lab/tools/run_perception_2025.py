@@ -23,9 +23,13 @@ def commands(config, stage, config_path):
     if stage == 'preflight':
         return [[env['preflight'],'tools/deployment_preflight.py','--out',config['report']+'/inputs'], [env['preflight'],'tools/perception_2025_preflight.py']]
     if stage in MODELS:
+        if stage == 'mambafusion':
+            return [[env['mambafusion'] if phase == 'run' else env.get('mambafusion_eval','envs/nuscenes_eval/bin/python'),
+                     'tools/mambafusion_2025.py','--phase',phase,'--config',str(config_path)]+(['--allow-measured-repeat-noise'] if phase=='run' and config.get('mamba_allow_measured_repeat_noise',False) else [])
+                    for phase in ('run','evaluate')]
         if stage == 'grae3dmot':
             return [[env['grae3dmot'] if phase == 'run' else env.get('grae3dmot_eval','envs/sparse4d/bin/python'),
-                     'tools/grae3dmot_2025.py','--phase',phase,'--config',str(config_path)]
+                     'tools/grae3dmot_2025.py','--phase',phase,'--input',config.get('tracking_input','frozen_reference'),'--config',str(config_path)]
                     for phase in ('run','evaluate','audit')]
         return [[env[stage], f'tools/{stage}_2025.py','--phase','run','--config',str(config_path)]]
     if stage == 'optimize':
@@ -245,16 +249,25 @@ def aggregate(runs):
     return 'passed' if statuses and all(s == 'passed' for s in statuses) else 'failed'
 
 
+def recovery_dependency_ready(state):
+    """Require this runner's completed native/evaluate stage, not stale files."""
+    row=state.get('mambafusion',{})
+    return row.get('status') in ('passed','partial') and len(row.get('runs',[]))==2 and all(
+        r.get('status') in ('passed','partial') and r.get('returncode')==0 and r.get('fresh_result')
+        for r in row['runs'])
+
+
 def main():
     ap=argparse.ArgumentParser()
     ap.add_argument('--config',default='configs/perception_2025.yaml')
-    ap.add_argument('--phase',choices=(*STAGES,'all'),default='all')
+    ap.add_argument('--phase',choices=(*STAGES,'all','recovery'),default='all')
     ap.add_argument('--resume',action='store_true')
     ap.add_argument('--dry-run',action='store_true')
     a=ap.parse_args(); cp=Path(a.config)
     if not cp.is_absolute():cp=ROOT/cp
     config=json.loads(cp.read_text()); out=ROOT/config['report'];out.mkdir(parents=True,exist_ok=True)
-    phases=STAGES if a.phase=='all' else (a.phase,)
+    phases=STAGES if a.phase=='all' else ('harpnext','mambafusion','grae3dmot','visualize','summarize') if a.phase=='recovery' else (a.phase,)
+    if a.phase=='recovery':config['tracking_input']='mambafusion_native'
     state_path=out/'runner_state.json';state={}
     # Shared lock prevents overlapping invocations of this orchestrator.
     lock_path=ROOT/'runs/perception_2025_gpu.lock';lock_path.parent.mkdir(parents=True,exist_ok=True)
@@ -264,6 +277,12 @@ def main():
         for stage in phases:
             cmds=commands(config,stage,cp)
             if a.dry_run:print(json.dumps({'stage':stage,'commands':cmds}));continue
+            if a.phase=='recovery' and stage=='grae3dmot' and not recovery_dependency_ready(state):
+                blocked=dict(status='blocked_data',input_family='mambafusion_native',reason='Current runner Mamba inference/evaluation did not complete')
+                state[stage]=blocked
+                write(out/'grae3dmot/mambafusion_native/status.json',blocked)
+                write(state_path,state)
+                continue
             fp=fingerprint(config,stage,cmds)
             old = state.get(stage, {})
             directory = out/('visualization' if stage == 'visualize' else stage)
@@ -289,7 +308,7 @@ def main():
                 run = classify_run(rc, expected, before, require_result=True)
                 run['log'] = str(log.relative_to(out))
                 row['runs'].append(run)
-                if stage == 'grae3dmot' and run['status'] not in ('passed','partial'):
+                if stage in ('grae3dmot','mambafusion') and run['status'] not in ('passed','partial'):
                     # Dependent evaluation must never consume an older inference artifact.
                     break
             row['status'] = aggregate(row['runs'])

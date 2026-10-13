@@ -1,0 +1,801 @@
+{
+  "tool_sha256": "57f0e37a4a73d5c8dcf72197c4444600b52c466877cd4c158cebb9ffbadc67ac",
+  "provenance": {
+    "checkpoint_sha256": "9491ab33b68ecfc0e34043abb3009599ab1e892fb953a1faad12ef4fca5a35c4",
+    "model_config_sha256": "a12d0507156becb9dff718664eb4112222190a446bd0bd53d4da220803178661",
+    "checkpoint_branch": "model",
+    "source_commit": "1d2ca42171570c713e78fc6a766ec5104b7f4724",
+    "source_files_checked": 155,
+    "resource_manifest_sha256": "be0d4fbfdedcdb227f056b6f967463d9ca0b301708b13c7c4eeb722b8472fec8",
+    "strict_load_manifest_sha256": "5d4d6c1e9f504bcc708b0355d246e6aab673f9ab4c0c7732409480955887a475",
+    "export_identity_manifest_sha256": "651a8307dd41a32aa44370e6348334e4b0c1f464474c452a470bfc78352e7e53",
+    "export_author_sha256": "5ac51351db92fb519f7bd9bb49fd1c0296dc8996a9154d7d03aad3911a47466e",
+    "export_executed_sha256": "934e185a04718259c562768fb64151f01aa3a678ec463879dd8ea45cf6152a65",
+    "onnx_sha256": "0df8b3ec31c6e99a6ccdb1059b9c9dacb1d12623f48688787b6094beea74d8a9",
+    "scope": "Current post-run reconciliation: checkpoint/config match native strict_load recorded before export; pinned files match resource_manifest; exporter hashes match original export_identity; ONNX is separately checked against build. Original export receipt did not bind launch checkpoint or ONNX hash.",
+    "original_build_has_native_binding": false
+  },
+  "warmup": {
+    "image_ids": [
+      397133,
+      180878,
+      15335
+    ],
+    "rounds_per_image_per_backend": 10,
+    "complete_before_measured_pairs": true
+  },
+  "d2h_timing": "Direct wall-clock interval immediately before .cpu() calls through NumPy conversion, after GPU end event synchronization",
+  "load_ms": {
+    "native": 1390.9473639942007,
+    "tensorrt": 229.4933320081327
+  },
+  "load_scope": "sequential setup after initial imports; native loading after TensorRT warmup, not comparable complete process cold starts",
+  "rounds": [
+    {
+      "round": 0,
+      "image_id": 397133,
+      "order": [
+        "native",
+        "tensorrt"
+      ],
+      "native": {
+        "read_preprocess_ms": 5.4377979977289215,
+        "e2e_ms": 17.894157994305715,
+        "h2d_wall_ms": 0.4902079963358119,
+        "forward_post_gpu_ms": 11.846367835998535,
+        "decode_d2h_wall_ms": 0.07864298822823912
+      },
+      "tensorrt": {
+        "read_preprocess_ms": 5.591253997408785,
+        "e2e_ms": 8.129605004796758,
+        "h2d_wall_ms": 0.49308199959341437,
+        "forward_post_gpu_ms": 1.8616960048675537,
+        "decode_d2h_wall_ms": 0.09945500642061234
+      }
+    },
+    {
+      "round": 1,
+      "image_id": 180878,
+      "order": [
+        "tensorrt",
+        "native"
+      ],
+      "tensorrt": {
+        "read_preprocess_ms": 4.850109005928971,
+        "e2e_ms": 7.260871003381908,
+        "h2d_wall_ms": 0.4252759972587228,
+        "forward_post_gpu_ms": 1.807360053062439,
+        "decode_d2h_wall_ms": 0.09809400944504887
+      },
+      "native": {
+        "read_preprocess_ms": 4.968845008988865,
+        "e2e_ms": 16.687805007677525,
+        "h2d_wall_ms": 0.5084009899292141,
+        "forward_post_gpu_ms": 11.102208137512207,
+        "decode_d2h_wall_ms": 0.06777499220333993
+      }
+    },
+    {
+      "round": 2,
+      "image_id": 15335,
+      "order": [
+        "native",
+        "tensorrt"
+      ],
+      "native": {
+        "read_preprocess_ms": 5.569467000896111,
+        "e2e_ms": 16.867076003109105,
+        "h2d_wall_ms": 0.46648000716231763,
+        "forward_post_gpu_ms": 10.72332763671875,
+        "decode_d2h_wall_ms": 0.07131099118851125
+      },
+      "tensorrt": {
+        "read_preprocess_ms": 5.5840840068412945,
+        "e2e_ms": 8.13652500801254,
+        "h2d_wall_ms": 0.4886859969701618,
+        "forward_post_gpu_ms": 1.8739839792251587,
+        "decode_d2h_wall_ms": 0.10110800212714821
+      }
+    },
+    {
+      "round": 3,
+      "image_id": 397133,
+      "order": [
+        "tensorrt",
+        "native"
+      ],
+      "tensorrt": {
+        "read_preprocess_ms": 5.634041997836903,
+        "e2e_ms": 8.147803004248999,
+        "h2d_wall_ms": 0.4989930021110922,
+        "forward_post_gpu_ms": 1.8268159627914429,
+        "decode_d2h_wall_ms": 0.10252099309582263
+      },
+      "native": {
+        "read_preprocess_ms": 5.328632003511302,
+        "e2e_ms": 16.883431002497673,
+        "h2d_wall_ms": 0.5220719904173166,
+        "forward_post_gpu_ms": 10.915840148925781,
+        "decode_d2h_wall_ms": 0.07433899736497551
+      }
+    },
+    {
+      "round": 4,
+      "image_id": 180878,
+      "order": [
+        "native",
+        "tensorrt"
+      ],
+      "native": {
+        "read_preprocess_ms": 5.022525991080329,
+        "e2e_ms": 16.341081995051354,
+        "h2d_wall_ms": 0.5006019928259775,
+        "forward_post_gpu_ms": 10.697376251220703,
+        "decode_d2h_wall_ms": 0.0806419993750751
+      },
+      "tensorrt": {
+        "read_preprocess_ms": 4.656045988667756,
+        "e2e_ms": 7.098761998349801,
+        "h2d_wall_ms": 0.44633899233303964,
+        "forward_post_gpu_ms": 1.8459199666976929,
+        "decode_d2h_wall_ms": 0.0781519920565188
+      }
+    },
+    {
+      "round": 5,
+      "image_id": 15335,
+      "order": [
+        "tensorrt",
+        "native"
+      ],
+      "tensorrt": {
+        "read_preprocess_ms": 5.460336993564852,
+        "e2e_ms": 7.788347997120582,
+        "h2d_wall_ms": 0.3785130102187395,
+        "forward_post_gpu_ms": 1.798143982887268,
+        "decode_d2h_wall_ms": 0.08073200297076255
+      },
+      "native": {
+        "read_preprocess_ms": 5.378121000831015,
+        "e2e_ms": 17.035869997926056,
+        "h2d_wall_ms": 0.48918800894171,
+        "forward_post_gpu_ms": 11.055007934570312,
+        "decode_d2h_wall_ms": 0.07384100172203034
+      }
+    },
+    {
+      "round": 6,
+      "image_id": 397133,
+      "order": [
+        "native",
+        "tensorrt"
+      ],
+      "native": {
+        "read_preprocess_ms": 5.164397007320076,
+        "e2e_ms": 16.224763996433467,
+        "h2d_wall_ms": 0.4609379975590855,
+        "forward_post_gpu_ms": 10.488832473754883,
+        "decode_d2h_wall_ms": 0.07186298898886889
+      },
+      "tensorrt": {
+        "read_preprocess_ms": 5.19726901256945,
+        "e2e_ms": 7.701006004936062,
+        "h2d_wall_ms": 0.4774650005856529,
+        "forward_post_gpu_ms": 1.8541760444641113,
+        "decode_d2h_wall_ms": 0.09358998795505613
+      }
+    },
+    {
+      "round": 7,
+      "image_id": 180878,
+      "order": [
+        "tensorrt",
+        "native"
+      ],
+      "tensorrt": {
+        "read_preprocess_ms": 4.728639003587887,
+        "e2e_ms": 7.063828001264483,
+        "h2d_wall_ms": 0.37915800930932164,
+        "forward_post_gpu_ms": 1.792799949645996,
+        "decode_d2h_wall_ms": 0.0909389927983284
+      },
+      "native": {
+        "read_preprocess_ms": 4.733792011393234,
+        "e2e_ms": 16.311354003846645,
+        "h2d_wall_ms": 0.47899199125822634,
+        "forward_post_gpu_ms": 10.99392032623291,
+        "decode_d2h_wall_ms": 0.06750501052010804
+      }
+    },
+    {
+      "round": 8,
+      "image_id": 15335,
+      "order": [
+        "native",
+        "tensorrt"
+      ],
+      "native": {
+        "read_preprocess_ms": 5.543416991713457,
+        "e2e_ms": 16.95802299946081,
+        "h2d_wall_ms": 0.49061600293498486,
+        "forward_post_gpu_ms": 10.677248001098633,
+        "decode_d2h_wall_ms": 0.07585399725940078
+      },
+      "tensorrt": {
+        "read_preprocess_ms": 5.549242996494286,
+        "e2e_ms": 8.022747992072254,
+        "h2d_wall_ms": 0.46089899842627347,
+        "forward_post_gpu_ms": 1.854464054107666,
+        "decode_d2h_wall_ms": 0.08191399683710188
+      }
+    },
+    {
+      "round": 9,
+      "image_id": 397133,
+      "order": [
+        "tensorrt",
+        "native"
+      ],
+      "tensorrt": {
+        "read_preprocess_ms": 5.141761008417234,
+        "e2e_ms": 7.544293999671936,
+        "h2d_wall_ms": 0.4152349865762517,
+        "forward_post_gpu_ms": 1.8124799728393555,
+        "decode_d2h_wall_ms": 0.093246009782888
+      },
+      "native": {
+        "read_preprocess_ms": 5.329584993887693,
+        "e2e_ms": 16.674753002007492,
+        "h2d_wall_ms": 0.4903719964204356,
+        "forward_post_gpu_ms": 10.605759620666504,
+        "decode_d2h_wall_ms": 0.06839500565547496
+      }
+    },
+    {
+      "round": 10,
+      "image_id": 180878,
+      "order": [
+        "native",
+        "tensorrt"
+      ],
+      "native": {
+        "read_preprocess_ms": 4.748134990222752,
+        "e2e_ms": 15.95263899071142,
+        "h2d_wall_ms": 0.4730660002678633,
+        "forward_post_gpu_ms": 10.62604808807373,
+        "decode_d2h_wall_ms": 0.06703700637444854
+      },
+      "tensorrt": {
+        "read_preprocess_ms": 4.752209002617747,
+        "e2e_ms": 7.25733301078435,
+        "h2d_wall_ms": 0.4711780056823045,
+        "forward_post_gpu_ms": 1.8585599660873413,
+        "decode_d2h_wall_ms": 0.09110399696510285
+      }
+    },
+    {
+      "round": 11,
+      "image_id": 15335,
+      "order": [
+        "tensorrt",
+        "native"
+      ],
+      "tensorrt": {
+        "read_preprocess_ms": 5.734877995564602,
+        "e2e_ms": 8.207330000004731,
+        "h2d_wall_ms": 0.483750001876615,
+        "forward_post_gpu_ms": 1.815551996231079,
+        "decode_d2h_wall_ms": 0.0932380062295124
+      },
+      "native": {
+        "read_preprocess_ms": 5.583339006989263,
+        "e2e_ms": 16.997797007206827,
+        "h2d_wall_ms": 0.47753300168551505,
+        "forward_post_gpu_ms": 10.8253755569458,
+        "decode_d2h_wall_ms": 0.07318299321923405
+      }
+    },
+    {
+      "round": 12,
+      "image_id": 397133,
+      "order": [
+        "native",
+        "tensorrt"
+      ],
+      "native": {
+        "read_preprocess_ms": 5.353098997147754,
+        "e2e_ms": 16.585015997407027,
+        "h2d_wall_ms": 0.49651799781713635,
+        "forward_post_gpu_ms": 10.628928184509277,
+        "decode_d2h_wall_ms": 0.0664690014673397
+      },
+      "tensorrt": {
+        "read_preprocess_ms": 5.139977001817897,
+        "e2e_ms": 7.606309998664074,
+        "h2d_wall_ms": 0.4607949958881363,
+        "forward_post_gpu_ms": 1.8449920415878296,
+        "decode_d2h_wall_ms": 0.0867019989527762
+      }
+    },
+    {
+      "round": 13,
+      "image_id": 180878,
+      "order": [
+        "tensorrt",
+        "native"
+      ],
+      "tensorrt": {
+        "read_preprocess_ms": 4.800636001164094,
+        "e2e_ms": 7.2022279928205535,
+        "h2d_wall_ms": 0.3957310109399259,
+        "forward_post_gpu_ms": 1.8380800485610962,
+        "decode_d2h_wall_ms": 0.09216299804393202
+      },
+      "native": {
+        "read_preprocess_ms": 4.754210996907204,
+        "e2e_ms": 16.362887996365316,
+        "h2d_wall_ms": 0.4820929898414761,
+        "forward_post_gpu_ms": 11.019904136657715,
+        "decode_d2h_wall_ms": 0.06907001079525799
+      }
+    },
+    {
+      "round": 14,
+      "image_id": 15335,
+      "order": [
+        "native",
+        "tensorrt"
+      ],
+      "native": {
+        "read_preprocess_ms": 5.789786999230273,
+        "e2e_ms": 17.373603011947125,
+        "h2d_wall_ms": 0.5472310003824532,
+        "forward_post_gpu_ms": 10.91379165649414,
+        "decode_d2h_wall_ms": 0.07232800999190658
+      },
+      "tensorrt": {
+        "read_preprocess_ms": 5.4952850041445345,
+        "e2e_ms": 7.9569330118829384,
+        "h2d_wall_ms": 0.4549919976852834,
+        "forward_post_gpu_ms": 1.8524160385131836,
+        "decode_d2h_wall_ms": 0.08200999582186341
+      }
+    },
+    {
+      "round": 15,
+      "image_id": 397133,
+      "order": [
+        "tensorrt",
+        "native"
+      ],
+      "tensorrt": {
+        "read_preprocess_ms": 4.910054994979873,
+        "e2e_ms": 7.201226995675825,
+        "h2d_wall_ms": 0.3767220041481778,
+        "forward_post_gpu_ms": 1.7766400575637817,
+        "decode_d2h_wall_ms": 0.07687999459449202
+      },
+      "native": {
+        "read_preprocess_ms": 5.080980001366697,
+        "e2e_ms": 16.391480006859638,
+        "h2d_wall_ms": 0.45410699385683984,
+        "forward_post_gpu_ms": 10.768383979797363,
+        "decode_d2h_wall_ms": 0.05828900611959398
+      }
+    },
+    {
+      "round": 16,
+      "image_id": 180878,
+      "order": [
+        "native",
+        "tensorrt"
+      ],
+      "native": {
+        "read_preprocess_ms": 4.460338008357212,
+        "e2e_ms": 15.670389009756036,
+        "h2d_wall_ms": 0.4430940025486052,
+        "forward_post_gpu_ms": 10.679136276245117,
+        "decode_d2h_wall_ms": 0.059317986597307026
+      },
+      "tensorrt": {
+        "read_preprocess_ms": 4.483454991714098,
+        "e2e_ms": 6.912762997671962,
+        "h2d_wall_ms": 0.4448079998837784,
+        "forward_post_gpu_ms": 1.8432960510253906,
+        "decode_d2h_wall_ms": 0.07792399264872074
+      }
+    },
+    {
+      "round": 17,
+      "image_id": 15335,
+      "order": [
+        "tensorrt",
+        "native"
+      ],
+      "tensorrt": {
+        "read_preprocess_ms": 5.446917988592759,
+        "e2e_ms": 7.903808989794925,
+        "h2d_wall_ms": 0.48031700134743005,
+        "forward_post_gpu_ms": 1.8039679527282715,
+        "decode_d2h_wall_ms": 0.0873300014063716
+      },
+      "native": {
+        "read_preprocess_ms": 5.55874798737932,
+        "e2e_ms": 16.933580991462804,
+        "h2d_wall_ms": 0.459312999737449,
+        "forward_post_gpu_ms": 10.821855545043945,
+        "decode_d2h_wall_ms": 0.061269005527719855
+      }
+    },
+    {
+      "round": 18,
+      "image_id": 397133,
+      "order": [
+        "native",
+        "tensorrt"
+      ],
+      "native": {
+        "read_preprocess_ms": 4.934945987770334,
+        "e2e_ms": 15.852235999773256,
+        "h2d_wall_ms": 0.45082900032866746,
+        "forward_post_gpu_ms": 10.378239631652832,
+        "decode_d2h_wall_ms": 0.05785300163552165
+      },
+      "tensorrt": {
+        "read_preprocess_ms": 4.931836010655388,
+        "e2e_ms": 7.338456009165384,
+        "h2d_wall_ms": 0.4350019880803302,
+        "forward_post_gpu_ms": 1.8391040563583374,
+        "decode_d2h_wall_ms": 0.07207400631159544
+      }
+    },
+    {
+      "round": 19,
+      "image_id": 180878,
+      "order": [
+        "tensorrt",
+        "native"
+      ],
+      "tensorrt": {
+        "read_preprocess_ms": 4.402417995152064,
+        "e2e_ms": 6.718864999129437,
+        "h2d_wall_ms": 0.4206019948469475,
+        "forward_post_gpu_ms": 1.7693760395050049,
+        "decode_d2h_wall_ms": 0.07102999370545149
+      },
+      "native": {
+        "read_preprocess_ms": 4.482324002310634,
+        "e2e_ms": 15.92967301257886,
+        "h2d_wall_ms": 0.4445609956746921,
+        "forward_post_gpu_ms": 10.882047653198242,
+        "decode_d2h_wall_ms": 0.08336099563166499
+      }
+    },
+    {
+      "round": 20,
+      "image_id": 15335,
+      "order": [
+        "native",
+        "tensorrt"
+      ],
+      "native": {
+        "read_preprocess_ms": 6.011388992192224,
+        "e2e_ms": 19.739418989047408,
+        "h2d_wall_ms": 0.5854029877809808,
+        "forward_post_gpu_ms": 13.015040397644043,
+        "decode_d2h_wall_ms": 0.07782000466249883
+      },
+      "tensorrt": {
+        "read_preprocess_ms": 5.550936999497935,
+        "e2e_ms": 8.007398995687254,
+        "h2d_wall_ms": 0.4484999954001978,
+        "forward_post_gpu_ms": 1.8595839738845825,
+        "decode_d2h_wall_ms": 0.07912301225587726
+      }
+    },
+    {
+      "round": 21,
+      "image_id": 397133,
+      "order": [
+        "tensorrt",
+        "native"
+      ],
+      "tensorrt": {
+        "read_preprocess_ms": 5.047231010394171,
+        "e2e_ms": 7.393556006718427,
+        "h2d_wall_ms": 0.43758399260696024,
+        "forward_post_gpu_ms": 1.780735969543457,
+        "decode_d2h_wall_ms": 0.07139900117181242
+      },
+      "native": {
+        "read_preprocess_ms": 4.944685992086306,
+        "e2e_ms": 16.234344002441503,
+        "h2d_wall_ms": 0.4500070062931627,
+        "forward_post_gpu_ms": 10.749312400817871,
+        "decode_d2h_wall_ms": 0.05998100095894188
+      }
+    },
+    {
+      "round": 22,
+      "image_id": 180878,
+      "order": [
+        "native",
+        "tensorrt"
+      ],
+      "native": {
+        "read_preprocess_ms": 4.526870005065575,
+        "e2e_ms": 15.985268008080311,
+        "h2d_wall_ms": 0.4559459921438247,
+        "forward_post_gpu_ms": 10.901503562927246,
+        "decode_d2h_wall_ms": 0.06791501073166728
+      },
+      "tensorrt": {
+        "read_preprocess_ms": 4.69684400013648,
+        "e2e_ms": 7.15834999573417,
+        "h2d_wall_ms": 0.4623210115823895,
+        "forward_post_gpu_ms": 1.8483200073242188,
+        "decode_d2h_wall_ms": 0.08135099778883159
+      }
+    },
+    {
+      "round": 23,
+      "image_id": 15335,
+      "order": [
+        "tensorrt",
+        "native"
+      ],
+      "tensorrt": {
+        "read_preprocess_ms": 5.275288000120781,
+        "e2e_ms": 7.671466009924188,
+        "h2d_wall_ms": 0.45338198833633214,
+        "forward_post_gpu_ms": 1.7957439422607422,
+        "decode_d2h_wall_ms": 0.07825699867680669
+      },
+      "native": {
+        "read_preprocess_ms": 5.349765997380018,
+        "e2e_ms": 17.001959000481293,
+        "h2d_wall_ms": 0.48998599231708795,
+        "forward_post_gpu_ms": 11.061280250549316,
+        "decode_d2h_wall_ms": 0.0639019999653101
+      }
+    },
+    {
+      "round": 24,
+      "image_id": 397133,
+      "order": [
+        "native",
+        "tensorrt"
+      ],
+      "native": {
+        "read_preprocess_ms": 5.352873995434493,
+        "e2e_ms": 16.869118000613526,
+        "h2d_wall_ms": 0.49667801067698747,
+        "forward_post_gpu_ms": 10.916864395141602,
+        "decode_d2h_wall_ms": 0.063650993979536
+      },
+      "tensorrt": {
+        "read_preprocess_ms": 5.092254010378383,
+        "e2e_ms": 7.548088004114106,
+        "h2d_wall_ms": 0.4499439965002239,
+        "forward_post_gpu_ms": 1.8527679443359375,
+        "decode_d2h_wall_ms": 0.08639499719720334
+      }
+    },
+    {
+      "round": 25,
+      "image_id": 180878,
+      "order": [
+        "tensorrt",
+        "native"
+      ],
+      "tensorrt": {
+        "read_preprocess_ms": 4.850003999308683,
+        "e2e_ms": 7.310945991775952,
+        "h2d_wall_ms": 0.47969499428290874,
+        "forward_post_gpu_ms": 1.8114559650421143,
+        "decode_d2h_wall_ms": 0.08712000271771103
+      },
+      "native": {
+        "read_preprocess_ms": 4.6486100036418065,
+        "e2e_ms": 16.242080004303716,
+        "h2d_wall_ms": 0.46814199595246464,
+        "forward_post_gpu_ms": 11.029536247253418,
+        "decode_d2h_wall_ms": 0.06225099787116051
+      }
+    },
+    {
+      "round": 26,
+      "image_id": 15335,
+      "order": [
+        "native",
+        "tensorrt"
+      ],
+      "native": {
+        "read_preprocess_ms": 5.461958993691951,
+        "e2e_ms": 16.55050300178118,
+        "h2d_wall_ms": 0.47031999565660954,
+        "forward_post_gpu_ms": 10.52905559539795,
+        "decode_d2h_wall_ms": 0.058667006669566035
+      },
+      "tensorrt": {
+        "read_preprocess_ms": 5.37313699896913,
+        "e2e_ms": 7.804213993949816,
+        "h2d_wall_ms": 0.44723600149154663,
+        "forward_post_gpu_ms": 1.8452479839324951,
+        "decode_d2h_wall_ms": 0.07428000390063971
+      }
+    },
+    {
+      "round": 27,
+      "image_id": 397133,
+      "order": [
+        "tensorrt",
+        "native"
+      ],
+      "tensorrt": {
+        "read_preprocess_ms": 4.870646997005679,
+        "e2e_ms": 7.197724000434391,
+        "h2d_wall_ms": 0.42880300316028297,
+        "forward_post_gpu_ms": 1.7643519639968872,
+        "decode_d2h_wall_ms": 0.0745919969631359
+      },
+      "native": {
+        "read_preprocess_ms": 5.193165998207405,
+        "e2e_ms": 16.84663799824193,
+        "h2d_wall_ms": 0.47289300709962845,
+        "forward_post_gpu_ms": 11.073535919189453,
+        "decode_d2h_wall_ms": 0.06962100451346487
+      }
+    },
+    {
+      "round": 28,
+      "image_id": 180878,
+      "order": [
+        "native",
+        "tensorrt"
+      ],
+      "native": {
+        "read_preprocess_ms": 4.65336001070682,
+        "e2e_ms": 15.949958004057407,
+        "h2d_wall_ms": 0.4680079873651266,
+        "forward_post_gpu_ms": 10.728416442871094,
+        "decode_d2h_wall_ms": 0.06403899169526994
+      },
+      "tensorrt": {
+        "read_preprocess_ms": 4.4931699958397076,
+        "e2e_ms": 6.976985998335294,
+        "h2d_wall_ms": 0.4587980074575171,
+        "forward_post_gpu_ms": 1.878208041191101,
+        "decode_d2h_wall_ms": 0.08117400284390897
+      }
+    },
+    {
+      "round": 29,
+      "image_id": 15335,
+      "order": [
+        "tensorrt",
+        "native"
+      ],
+      "tensorrt": {
+        "read_preprocess_ms": 5.126744988956489,
+        "e2e_ms": 7.502699998440221,
+        "h2d_wall_ms": 0.4433010035427287,
+        "forward_post_gpu_ms": 1.7950719594955444,
+        "decode_d2h_wall_ms": 0.0747010053601116
+      },
+      "native": {
+        "read_preprocess_ms": 5.131728990818374,
+        "e2e_ms": 16.594724991591647,
+        "h2d_wall_ms": 0.449468003353104,
+        "forward_post_gpu_ms": 10.915583610534668,
+        "decode_d2h_wall_ms": 0.06445600592996925
+      }
+    }
+  ],
+  "summary": {
+    "native": {
+      "read_preprocess_ms": {
+        "mean": 5.149896532141914,
+        "p50": 5.178781502763741,
+        "p95": 5.696885402721818,
+        "std": 0.3957833479398834
+      },
+      "e2e_ms": {
+        "mean": 16.6647210009008,
+        "p50": 16.589870494499337,
+        "p95": 17.65990825224435,
+        "std": 0.7483009047065637
+      },
+      "h2d_wall_ms": {
+        "mean": 0.4811021644854918,
+        "p50": 0.47529950097668916,
+        "p95": 0.5359094458981416,
+        "std": 0.03036781847987217
+      },
+      "forward_post_gpu_ms": {
+        "mean": 10.918990929921469,
+        "p50": 10.853711605072021,
+        "p95": 11.511495971679686,
+        "std": 0.4685550278335418
+      },
+      "decode_d2h_wall_ms": {
+        "mean": 0.06835493356144677,
+        "p50": 0.06784500146750361,
+        "p95": 0.07974244435899891,
+        "std": 0.006789798893489436
+      }
+    },
+    "tensorrt": {
+      "read_preprocess_ms": {
+        "mean": 5.095556933277597,
+        "p50": 5.109499499667436,
+        "p95": 5.61478739764425,
+        "std": 0.37778564893384664
+      },
+      "e2e_ms": {
+        "mean": 7.525682433818777,
+        "p50": 7.5234969990560785,
+        "p95": 8.142727905942593,
+        "std": 0.4090826414057661
+      },
+      "h2d_wall_ms": {
+        "mean": 0.4465702329374229,
+        "p50": 0.44922199595021084,
+        "p95": 0.4911037984129507,
+        "std": 0.03270841402863308
+      },
+      "forward_post_gpu_ms": {
+        "mean": 1.8267103989919027,
+        "p50": 1.8385920524597168,
+        "p95": 1.8684543907642364,
+        "std": 0.03178878178109233
+      },
+      "decode_d2h_wall_ms": {
+        "mean": 0.08461993323483814,
+        "p50": 0.08196199632948264,
+        "p95": 0.10036415405920707,
+        "std": 0.009082689113978437
+      }
+    }
+  },
+  "paired_e2e_saving_ms": [
+    9.764552989508957,
+    9.426934004295617,
+    8.730550995096564,
+    8.735627998248674,
+    9.242319996701553,
+    9.247522000805475,
+    8.523757991497405,
+    9.247526002582163,
+    8.935275007388555,
+    9.130459002335556,
+    8.69530597992707,
+    8.790467007202096,
+    8.978705998742953,
+    9.160660003544763,
+    9.416670000064187,
+    9.190253011183813,
+    8.757626012084074,
+    9.02977200166788,
+    8.513779990607873,
+    9.210808013449423,
+    11.732019993360154,
+    8.840787995723076,
+    8.826918012346141,
+    9.330492990557104,
+    9.32102999649942,
+    8.931134012527764,
+    8.746289007831365,
+    9.64891399780754,
+    8.972972005722113,
+    9.092024993151426
+  ],
+  "gpu_peak_torch_allocated_bytes": 105269760,
+  "gpu_device_used_peak_bytes": 1880162304,
+  "gpu_memory_scope": "device total used including TensorRT and other resident processes; sampled at inference completion",
+  "cpu_torch_threads": 4,
+  "ram_peak_kib": 1678052,
+  "scope": "30 alternating paired rounds on first/middle/last COCO images; both reread, decode, normalize, H2D, inference with postprocess, D2H; JSON conversion excluded; OS cache warm; TensorRT internal allocations excluded from torch peak",
+  "tf32": false,
+  "batch": 1
+}

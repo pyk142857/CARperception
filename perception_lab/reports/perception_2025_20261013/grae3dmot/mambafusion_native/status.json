@@ -1,0 +1,10 @@
+{
+  "model": "GRAE-3DMOT",
+  "status": "partial",
+  "phase": "run",
+  "input_family": "mambafusion_native",
+  "gpu_executed": true,
+  "inference": "passed",
+  "official_evaluation": "passed",
+  "frames": 120
+}

@@ -10,10 +10,6 @@
   "page_errors": [],
   "console": [
     {
-      "type": "error",
-      "text": "Failed to load resource: net::ERR_TIMED_OUT"
-    },
-    {
       "type": "warning",
       "text": "using deprecated parameters for the initialization function; pass a single object instead"
     },
@@ -35,147 +31,14 @@
     },
     {
       "type": "error",
-      "text": "TypeError: Failed to fetch\n    at imports.wbg.__wbg_fetch_b7bf320f681242d2 (http://127.0.0.1:9095/re_viewer.js:1628:30)\n    at wasm://wasm/03d0526a:wasm-function[2845]:0x572d8a\n    at wasm://wasm/03d0526a:wasm-function[1850]:0x45168d\n    at wasm://wasm/03d0526a:wasm-function[4335]:0x69afa7\n    at wasm://wasm/03d0526a:wasm-function[23770]:0xafe983\n    at wasm://wasm/03d0526a:wasm-function[25891]:0xb1d22e\n    at __wbg_adapter_71 (http://127.0.0.1:9095/re_viewer.js:338:14)\n    at real (http://127.0.0.1:9095/re_viewer.js:175:24)"
-    },
-    {
-      "type": "error",
-      "text": "TypeError: Failed to fetch\n    at imports.wbg.__wbg_fetch_b7bf320f681242d2 (http://127.0.0.1:9095/re_viewer.js:1628:30)\n    at wasm://wasm/03d0526a:wasm-function[2845]:0x572d8a\n    at wasm://wasm/03d0526a:wasm-function[1850]:0x45168d\n    at wasm://wasm/03d0526a:wasm-function[4335]:0x69afa7\n    at wasm://wasm/03d0526a:wasm-function[23770]:0xafe983\n    at wasm://wasm/03d0526a:wasm-function[25891]:0xb1d22e\n    at __wbg_adapter_71 (http://127.0.0.1:9095/re_viewer.js:338:14)\n    at real (http://127.0.0.1:9095/re_viewer.js:175:24)"
-    },
-    {
-      "type": "error",
-      "text": "TypeError: Failed to fetch\n    at imports.wbg.__wbg_fetch_b7bf320f681242d2 (http://127.0.0.1:9095/re_viewer.js:1628:30)\n    at wasm://wasm/03d0526a:wasm-function[2845]:0x572d8a\n    at wasm://wasm/03d0526a:wasm-function[1850]:0x45168d\n    at wasm://wasm/03d0526a:wasm-function[4335]:0x69afa7\n    at wasm://wasm/03d0526a:wasm-function[23770]:0xafe983\n    at wasm://wasm/03d0526a:wasm-function[25891]:0xb1d22e\n    at __wbg_adapter_71 (http://127.0.0.1:9095/re_viewer.js:338:14)\n    at real (http://127.0.0.1:9095/re_viewer.js:175:24)"
-    },
-    {
-      "type": "error",
-      "text": "TypeError: Failed to fetch\n    at imports.wbg.__wbg_fetch_b7bf320f681242d2 (http://127.0.0.1:9095/re_viewer.js:1628:30)\n    at wasm://wasm/03d0526a:wasm-function[2845]:0x572d8a\n    at wasm://wasm/03d0526a:wasm-function[1850]:0x45168d\n    at wasm://wasm/03d0526a:wasm-function[4335]:0x69afa7\n    at wasm://wasm/03d0526a:wasm-function[23770]:0xafe983\n    at wasm://wasm/03d0526a:wasm-function[25891]:0xb1d22e\n    at __wbg_adapter_71 (http://127.0.0.1:9095/re_viewer.js:338:14)\n    at real (http://127.0.0.1:9095/re_viewer.js:175:24)"
-    },
-    {
-      "type": "error",
-      "text": "TypeError: Failed to fetch\n    at imports.wbg.__wbg_fetch_b7bf320f681242d2 (http://127.0.0.1:9095/re_viewer.js:1628:30)\n    at wasm://wasm/03d0526a:wasm-function[2845]:0x572d8a\n    at wasm://wasm/03d0526a:wasm-function[1850]:0x45168d\n    at wasm://wasm/03d0526a:wasm-function[4335]:0x69afa7\n    at wasm://wasm/03d0526a:wasm-function[23770]:0xafe983\n    at wasm://wasm/03d0526a:wasm-function[25891]:0xb1d22e\n    at __wbg_adapter_71 (http://127.0.0.1:9095/re_viewer.js:338:14)\n    at real (http://127.0.0.1:9095/re_viewer.js:175:24)"
-    },
-    {
-      "type": "error",
-      "text": "TypeError: Failed to fetch\n    at imports.wbg.__wbg_fetch_b7bf320f681242d2 (http://127.0.0.1:9095/re_viewer.js:1628:30)\n    at wasm://wasm/03d0526a:wasm-function[2845]:0x572d8a\n    at wasm://wasm/03d0526a:wasm-function[1850]:0x45168d\n    at wasm://wasm/03d0526a:wasm-function[4335]:0x69afa7\n    at wasm://wasm/03d0526a:wasm-function[23770]:0xafe983\n    at wasm://wasm/03d0526a:wasm-function[25891]:0xb1d22e\n    at __wbg_adapter_71 (http://127.0.0.1:9095/re_viewer.js:338:14)\n    at real (http://127.0.0.1:9095/re_viewer.js:175:24)"
-    },
-    {
-      "type": "error",
-      "text": "TypeError: Failed to fetch\n    at imports.wbg.__wbg_fetch_b7bf320f681242d2 (http://127.0.0.1:9095/re_viewer.js:1628:30)\n    at wasm://wasm/03d0526a:wasm-function[2845]:0x572d8a\n    at wasm://wasm/03d0526a:wasm-function[1850]:0x45168d\n    at wasm://wasm/03d0526a:wasm-function[4335]:0x69afa7\n    at wasm://wasm/03d0526a:wasm-function[23770]:0xafe983\n    at wasm://wasm/03d0526a:wasm-function[25891]:0xb1d22e\n    at __wbg_adapter_71 (http://127.0.0.1:9095/re_viewer.js:338:14)\n    at real (http://127.0.0.1:9095/re_viewer.js:175:24)"
-    },
-    {
-      "type": "error",
-      "text": "TypeError: Failed to fetch\n    at imports.wbg.__wbg_fetch_b7bf320f681242d2 (http://127.0.0.1:9095/re_viewer.js:1628:30)\n    at wasm://wasm/03d0526a:wasm-function[2845]:0x572d8a\n    at wasm://wasm/03d0526a:wasm-function[1850]:0x45168d\n    at wasm://wasm/03d0526a:wasm-function[4335]:0x69afa7\n    at wasm://wasm/03d0526a:wasm-function[23770]:0xafe983\n    at wasm://wasm/03d0526a:wasm-function[25891]:0xb1d22e\n    at __wbg_adapter_71 (http://127.0.0.1:9095/re_viewer.js:338:14)\n    at real (http://127.0.0.1:9095/re_viewer.js:175:24)"
-    },
-    {
-      "type": "error",
-      "text": "TypeError: Failed to fetch\n    at imports.wbg.__wbg_fetch_b7bf320f681242d2 (http://127.0.0.1:9095/re_viewer.js:1628:30)\n    at wasm://wasm/03d0526a:wasm-function[2845]:0x572d8a\n    at wasm://wasm/03d0526a:wasm-function[1850]:0x45168d\n    at wasm://wasm/03d0526a:wasm-function[4335]:0x69afa7\n    at wasm://wasm/03d0526a:wasm-function[23770]:0xafe983\n    at wasm://wasm/03d0526a:wasm-function[25891]:0xb1d22e\n    at __wbg_adapter_71 (http://127.0.0.1:9095/re_viewer.js:338:14)\n    at real (http://127.0.0.1:9095/re_viewer.js:175:24)"
-    },
-    {
-      "type": "error",
-      "text": "TypeError: Failed to fetch\n    at imports.wbg.__wbg_fetch_b7bf320f681242d2 (http://127.0.0.1:9095/re_viewer.js:1628:30)\n    at wasm://wasm/03d0526a:wasm-function[2845]:0x572d8a\n    at wasm://wasm/03d0526a:wasm-function[1850]:0x45168d\n    at wasm://wasm/03d0526a:wasm-function[4335]:0x69afa7\n    at wasm://wasm/03d0526a:wasm-function[23770]:0xafe983\n    at wasm://wasm/03d0526a:wasm-function[25891]:0xb1d22e\n    at __wbg_adapter_71 (http://127.0.0.1:9095/re_viewer.js:338:14)\n    at real (http://127.0.0.1:9095/re_viewer.js:175:24)"
-    },
-    {
-      "type": "error",
-      "text": "TypeError: Failed to fetch\n    at imports.wbg.__wbg_fetch_b7bf320f681242d2 (http://127.0.0.1:9095/re_viewer.js:1628:30)\n    at wasm://wasm/03d0526a:wasm-function[2845]:0x572d8a\n    at wasm://wasm/03d0526a:wasm-function[1850]:0x45168d\n    at wasm://wasm/03d0526a:wasm-function[4335]:0x69afa7\n    at wasm://wasm/03d0526a:wasm-function[23770]:0xafe983\n    at wasm://wasm/03d0526a:wasm-function[25891]:0xb1d22e\n    at __wbg_adapter_71 (http://127.0.0.1:9095/re_viewer.js:338:14)\n    at real (http://127.0.0.1:9095/re_viewer.js:175:24)"
-    },
-    {
-      "type": "error",
-      "text": "TypeError: Failed to fetch\n    at imports.wbg.__wbg_fetch_b7bf320f681242d2 (http://127.0.0.1:9095/re_viewer.js:1628:30)\n    at wasm://wasm/03d0526a:wasm-function[2845]:0x572d8a\n    at wasm://wasm/03d0526a:wasm-function[1850]:0x45168d\n    at wasm://wasm/03d0526a:wasm-function[4335]:0x69afa7\n    at wasm://wasm/03d0526a:wasm-function[23770]:0xafe983\n    at wasm://wasm/03d0526a:wasm-function[25891]:0xb1d22e\n    at __wbg_adapter_71 (http://127.0.0.1:9095/re_viewer.js:338:14)\n    at real (http://127.0.0.1:9095/re_viewer.js:175:24)"
-    },
-    {
-      "type": "error",
-      "text": "TypeError: Failed to fetch\n    at imports.wbg.__wbg_fetch_b7bf320f681242d2 (http://127.0.0.1:9095/re_viewer.js:1628:30)\n    at wasm://wasm/03d0526a:wasm-function[2845]:0x572d8a\n    at wasm://wasm/03d0526a:wasm-function[1850]:0x45168d\n    at wasm://wasm/03d0526a:wasm-function[4335]:0x69afa7\n    at wasm://wasm/03d0526a:wasm-function[23770]:0xafe983\n    at wasm://wasm/03d0526a:wasm-function[25891]:0xb1d22e\n    at __wbg_adapter_71 (http://127.0.0.1:9095/re_viewer.js:338:14)\n    at real (http://127.0.0.1:9095/re_viewer.js:175:24)"
-    },
-    {
-      "type": "error",
-      "text": "TypeError: Failed to fetch\n    at imports.wbg.__wbg_fetch_b7bf320f681242d2 (http://127.0.0.1:9095/re_viewer.js:1628:30)\n    at wasm://wasm/03d0526a:wasm-function[2845]:0x572d8a\n    at wasm://wasm/03d0526a:wasm-function[1850]:0x45168d\n    at wasm://wasm/03d0526a:wasm-function[4335]:0x69afa7\n    at wasm://wasm/03d0526a:wasm-function[23770]:0xafe983\n    at wasm://wasm/03d0526a:wasm-function[25891]:0xb1d22e\n    at __wbg_adapter_71 (http://127.0.0.1:9095/re_viewer.js:338:14)\n    at real (http://127.0.0.1:9095/re_viewer.js:175:24)"
-    },
-    {
-      "type": "error",
-      "text": "TypeError: Failed to fetch\n    at imports.wbg.__wbg_fetch_b7bf320f681242d2 (http://127.0.0.1:9095/re_viewer.js:1628:30)\n    at wasm://wasm/03d0526a:wasm-function[2845]:0x572d8a\n    at wasm://wasm/03d0526a:wasm-function[1850]:0x45168d\n    at wasm://wasm/03d0526a:wasm-function[4335]:0x69afa7\n    at wasm://wasm/03d0526a:wasm-function[23770]:0xafe983\n    at wasm://wasm/03d0526a:wasm-function[25891]:0xb1d22e\n    at __wbg_adapter_71 (http://127.0.0.1:9095/re_viewer.js:338:14)\n    at real (http://127.0.0.1:9095/re_viewer.js:175:24)"
-    },
-    {
-      "type": "error",
-      "text": "TypeError: Failed to fetch\n    at imports.wbg.__wbg_fetch_b7bf320f681242d2 (http://127.0.0.1:9095/re_viewer.js:1628:30)\n    at wasm://wasm/03d0526a:wasm-function[2845]:0x572d8a\n    at wasm://wasm/03d0526a:wasm-function[1850]:0x45168d\n    at wasm://wasm/03d0526a:wasm-function[4335]:0x69afa7\n    at wasm://wasm/03d0526a:wasm-function[23770]:0xafe983\n    at wasm://wasm/03d0526a:wasm-function[25891]:0xb1d22e\n    at __wbg_adapter_71 (http://127.0.0.1:9095/re_viewer.js:338:14)\n    at real (http://127.0.0.1:9095/re_viewer.js:175:24)"
-    },
-    {
-      "type": "error",
       "text": "Failed to load resource: the server responded with a status of 404 (File not found)"
     }
   ],
-  "failed_requests": [
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@100;500&display=swap",
-      "failure": "net::ERR_TIMED_OUT"
-    },
-    {
-      "url": "https://app.rerun.io/version/0.23.4/examples/segment_anything_model.rrd",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://app.rerun.io/version/0.23.4/examples/imu_signals.rrd",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://app.rerun.io/version/0.23.4/examples/open_photogrammetry_format.rrd",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://app.rerun.io/version/0.23.4/examples/detect_and_track_objects.rrd",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://app.rerun.io/version/0.23.4/examples/dicom_mri.rrd",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://app.rerun.io/version/0.23.4/examples/rrt_star.rrd",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://app.rerun.io/version/0.23.4/examples/dna.rrd",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://app.rerun.io/version/0.23.4/examples/plots.rrd",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://app.rerun.io/version/0.23.4/examples/structure_from_motion.rrd",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://app.rerun.io/version/0.23.4/examples/graphs.rrd",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://app.rerun.io/version/0.23.4/examples/arkit_scenes.rrd",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://app.rerun.io/version/0.23.4/examples/raw_mesh.rrd",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://app.rerun.io/version/0.23.4/examples/human_pose_tracking.rrd",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://app.rerun.io/version/0.23.4/examples/rgbd.rrd",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://app.rerun.io/version/0.23.4/examples/nuscenes_dataset.rrd",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://app.rerun.io/version/0.23.4/examples/openstreetmap_data.rrd",
-      "failure": "net::ERR_ABORTED"
-    }
-  ],
+  "failed_requests": [],
   "http_errors": [],
   "checks": [
     {
-      "recording": "e92d48318e04449aa5b4f262c219ae45",
+      "recording": "57089b58f1434e35b83c98a0dc75c753",
       "timeline": "frame",
       "frame": 0,
       "playing": false,
@@ -184,10 +47,16 @@
         "max": 38
       },
       "panic": false,
-      "sample_token": "ca9a282c9e77460f8360f564131a8af5"
+      "expected_sample_token": "ca9a282c9e77460f8360f564131a8af5",
+      "token_evidence": "Token ordering independently verified by decoded RRD audit; browser API reports frame only",
+      "model_counts": {
+        "mambafusion": 50,
+        "grae_frozen_reference": 19,
+        "grae_mambafusion_native": 25
+      }
     },
     {
-      "recording": "e92d48318e04449aa5b4f262c219ae45",
+      "recording": "57089b58f1434e35b83c98a0dc75c753",
       "timeline": "frame",
       "frame": 19,
       "playing": false,
@@ -196,10 +65,16 @@
         "max": 38
       },
       "panic": false,
-      "sample_token": "b26e791522294bec90f86fd72226e35c"
+      "expected_sample_token": "b26e791522294bec90f86fd72226e35c",
+      "token_evidence": "Token ordering independently verified by decoded RRD audit; browser API reports frame only",
+      "model_counts": {
+        "mambafusion": 101,
+        "grae_frozen_reference": 37,
+        "grae_mambafusion_native": 48
+      }
     },
     {
-      "recording": "e92d48318e04449aa5b4f262c219ae45",
+      "recording": "57089b58f1434e35b83c98a0dc75c753",
       "timeline": "frame",
       "frame": 38,
       "playing": false,
@@ -208,24 +83,112 @@
         "max": 38
       },
       "panic": false,
-      "sample_token": "ed5fc18c31904f96a8f0dbb99ff069c0"
+      "expected_sample_token": "ed5fc18c31904f96a8f0dbb99ff069c0",
+      "token_evidence": "Token ordering independently verified by decoded RRD audit; browser API reports frame only",
+      "model_counts": {
+        "mambafusion": 65,
+        "grae_frozen_reference": 22,
+        "grae_mambafusion_native": 26
+      }
     }
   ],
-  "generated_at": "2026-10-13T04:06:55.403358+00:00",
-  "export_rrd_sha256": "a2da6ec6f0d16c8383b6d1bd00d4d0ba4e2cdc1903cfdfea9bd4b76827be9508",
+  "generated_at": "2026-10-13T08:06:04.080742+00:00",
+  "export_rrd_sha256": "97aad50c0b47529b47f0e72a28a6977af81f78a77a8a16b981c914e641e020e8",
   "title": "Rerun Viewer",
   "actual_url": "http://127.0.0.1:9095/?url=http%3A%2F%2F127.0.0.1%3A9094%2Fperception_2025%2Fperception_2025.rrd&renderer=webgl&persist=0",
   "canvas_count": 1,
-  "gt_tab_interaction": "clicked Independent GT tab and returned to predictions; screenshot requires visual review",
+  "model_tab_checks": [
+    {
+      "family": "grae_frozen_reference",
+      "frame": 0,
+      "screenshot": "rerun_grae_frozen_reference_00.png",
+      "tab_evidence": "Inspected canvas tab coordinates; rendered screenshot must be reviewed",
+      "panic": false
+    },
+    {
+      "family": "grae_frozen_reference",
+      "frame": 19,
+      "screenshot": "rerun_grae_frozen_reference_19.png",
+      "tab_evidence": "Inspected canvas tab coordinates; rendered screenshot must be reviewed",
+      "panic": false
+    },
+    {
+      "family": "grae_frozen_reference",
+      "frame": 38,
+      "screenshot": "rerun_grae_frozen_reference_38.png",
+      "tab_evidence": "Inspected canvas tab coordinates; rendered screenshot must be reviewed",
+      "panic": false
+    },
+    {
+      "family": "grae_mambafusion_native",
+      "frame": 0,
+      "screenshot": "rerun_grae_mambafusion_native_00.png",
+      "tab_evidence": "Inspected canvas tab coordinates; rendered screenshot must be reviewed",
+      "panic": false
+    },
+    {
+      "family": "grae_mambafusion_native",
+      "frame": 19,
+      "screenshot": "rerun_grae_mambafusion_native_19.png",
+      "tab_evidence": "Inspected canvas tab coordinates; rendered screenshot must be reviewed",
+      "panic": false
+    },
+    {
+      "family": "grae_mambafusion_native",
+      "frame": 38,
+      "screenshot": "rerun_grae_mambafusion_native_38.png",
+      "tab_evidence": "Inspected canvas tab coordinates; rendered screenshot must be reviewed",
+      "panic": false
+    },
+    {
+      "family": "harpnext",
+      "frame": 0,
+      "screenshot": "rerun_harpnext_00.png",
+      "tab_evidence": "Inspected canvas tab coordinates; rendered screenshot must be reviewed",
+      "panic": false
+    },
+    {
+      "family": "harpnext",
+      "frame": 19,
+      "screenshot": "rerun_harpnext_19.png",
+      "tab_evidence": "Inspected canvas tab coordinates; rendered screenshot must be reviewed",
+      "panic": false
+    },
+    {
+      "family": "harpnext",
+      "frame": 38,
+      "screenshot": "rerun_harpnext_38.png",
+      "tab_evidence": "Inspected canvas tab coordinates; rendered screenshot must be reviewed",
+      "panic": false
+    },
+    {
+      "family": "ground_truth",
+      "frame": 0,
+      "screenshot": "rerun_ground_truth_00.png",
+      "tab_evidence": "Inspected canvas tab coordinates; rendered screenshot must be reviewed",
+      "panic": false
+    },
+    {
+      "family": "ground_truth",
+      "frame": 19,
+      "screenshot": "rerun_ground_truth_19.png",
+      "tab_evidence": "Inspected canvas tab coordinates; rendered screenshot must be reviewed",
+      "panic": false
+    },
+    {
+      "family": "ground_truth",
+      "frame": 38,
+      "screenshot": "rerun_ground_truth_38.png",
+      "tab_evidence": "Inspected canvas tab coordinates; rendered screenshot must be reviewed",
+      "panic": false
+    }
+  ],
+  "model_tabs": "Model/family tabs clicked; screenshot evidence captured.",
   "renderer": {
     "backend": "WebGL2",
     "renderer": "ANGLE (NVIDIA Corporation, NVIDIA GeForce RTX 4090/PCIe/SSE2, OpenGL 4.5.0)"
   },
   "rerun_console_before_navigation": [
-    {
-      "type": "error",
-      "text": "Failed to load resource: net::ERR_TIMED_OUT"
-    },
     {
       "type": "warning",
       "text": "using deprecated parameters for the initialization function; pass a single object instead"
@@ -253,41 +216,93 @@
       "sample_token": "ca9a282c9e77460f8360f564131a8af5",
       "timestamp_us": 1532402927647951,
       "original_lidar_points": 34688,
-      "grae_boxes": 19,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 50,
+        "grae_frozen_reference": 19,
+        "grae_mambafusion_native": 25
+      },
+      "harp_points": 34688,
+      "gt_semantic_points": 34688,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3704,
+        "CAM_FRONT": 3067,
+        "CAM_FRONT_RIGHT": 3079,
+        "CAM_BACK_LEFT": 4097,
+        "CAM_BACK": 4826,
+        "CAM_BACK_RIGHT": 3379
+      }
     },
     {
       "frame": 19,
       "sample_token": "b26e791522294bec90f86fd72226e35c",
       "timestamp_us": 1532402937198682,
       "original_lidar_points": 34688,
-      "grae_boxes": 37,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 101,
+        "grae_frozen_reference": 37,
+        "grae_mambafusion_native": 48
+      },
+      "harp_points": 34688,
+      "gt_semantic_points": 34688,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3306,
+        "CAM_FRONT": 3188,
+        "CAM_FRONT_RIGHT": 3127,
+        "CAM_BACK_LEFT": 3990,
+        "CAM_BACK": 4589,
+        "CAM_BACK_RIGHT": 3096
+      }
     },
     {
       "frame": 38,
       "sample_token": "ed5fc18c31904f96a8f0dbb99ff069c0",
       "timestamp_us": 1532402946797517,
       "original_lidar_points": 34720,
-      "grae_boxes": 22,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 65,
+        "grae_frozen_reference": 22,
+        "grae_mambafusion_native": 26
+      },
+      "harp_points": 34720,
+      "gt_semantic_points": 34720,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3185,
+        "CAM_FRONT": 3153,
+        "CAM_FRONT_RIGHT": 3551,
+        "CAM_BACK_LEFT": 3966,
+        "CAM_BACK": 4567,
+        "CAM_BACK_RIGHT": 3922
+      }
     }
   ],
   "mobile_note": "Overview smoke only; dense Rerun desktop workspace not evaluated on mobile.",
   "console_review": {
-    "external_optional_request_failures": true,
+    "external_optional_request_failures": false,
     "unexplained_app_errors": [],
     "note": "External font/examples/telemetry requests do not carry local recording data. SDK initialization and attention warnings are retained."
   },
   "visual_review": {
     "status": "passed",
-    "reviewed": [
-      "rerun_browser_00.png",
+    "reviewed_screenshots": [
       "rerun_browser_19.png",
-      "rerun_browser_38.png",
-      "rerun_independent_gt.png",
-      "overview_mobile.png"
+      "rerun_grae_mambafusion_native_19.png",
+      "rerun_harpnext_19.png"
     ],
-    "notes": "Default predictions tab, changing camera/BEV/3D content, independent green GT, wrapped mobile token, no framework overlay. Previous startup pinhole error eliminated by sending blueprint before frame data."
+    "findings": [
+      "Native Mamba and native GRAE boxes genuinely rendered in 3D/BEV and six camera images.",
+      "HARP full-point semantic colors visible in 3D/BEV and calibrated camera projections; no gray cloud overlap.",
+      "No blank app or framework error overlay; visible selected model tabs and distinct frame scenes."
+    ],
+    "limitations": [
+      "Full-range 3D auto-view can make central objects small; interactive zoom supported.",
+      "Camera views preserve aspect ratio with letterboxing; projection does not perform depth occlusion tests.",
+      "mini_val has no DEIM 2D predictions; camera images and native 3D/semantic projections remain present."
+    ]
   }
 }

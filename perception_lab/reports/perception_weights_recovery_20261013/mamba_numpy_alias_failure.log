@@ -1,0 +1,23 @@
+Traceback (most recent call last):
+  File "/home/minglei/Desktop/CAR/perception_lab/tools/mambafusion_2025.py", line 988, in main
+    status = native_run()
+  File "/home/minglei/Desktop/CAR/perception_lab/tools/mambafusion_2025.py", line 396, in native_run
+    model = build_network(
+  File "/home/minglei/Desktop/CAR/perception_lab/third_party/MambaFusion2025/pcdet/models/__init__.py", line 17, in build_network
+    model = build_detector(
+  File "/home/minglei/Desktop/CAR/perception_lab/third_party/MambaFusion2025/pcdet/models/detectors/__init__.py", line 47, in build_detector
+    model = __all__[model_cfg.NAME](
+  File "/home/minglei/Desktop/CAR/perception_lab/third_party/MambaFusion2025/pcdet/models/detectors/mambafusion.py", line 37, in __init__
+    self.module_list = self.build_networks()
+  File "/home/minglei/Desktop/CAR/perception_lab/third_party/MambaFusion2025/pcdet/models/detectors/detector3d_template.py", line 46, in build_networks
+    module, model_info_dict = getattr(self, 'build_%s' % module_name)(
+  File "/home/minglei/Desktop/CAR/perception_lab/third_party/MambaFusion2025/pcdet/models/detectors/detector3d_template.py", line 101, in build_backbone_2d
+    backbone_2d_module = backbones_2d.__all__[self.model_cfg.BACKBONE_2D.NAME](
+  File "/home/minglei/Desktop/CAR/perception_lab/third_party/MambaFusion2025/pcdet/models/backbones_2d/base_bev_backbone.py", line 298, in __init__
+    stride = np.round(1 / stride).astype(np.int)
+  File "/home/minglei/anaconda3/envs/autolabel/lib/python3.10/site-packages/numpy/__init__.py", line 324, in __getattr__
+    raise AttributeError(__former_attrs__[attr])
+AttributeError: module 'numpy' has no attribute 'int'.
+`np.int` was a deprecated alias for the builtin `int`. To avoid this error in existing code, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+The aliases was originally deprecated in NumPy 1.20; for more details and guidance see the original release note at:
+    https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations. Did you mean: 'inf'?

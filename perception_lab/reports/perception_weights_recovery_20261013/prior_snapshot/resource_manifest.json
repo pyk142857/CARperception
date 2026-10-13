@@ -1,0 +1,35 @@
+{
+  "models": {
+    "deimv2": {
+      "manifest": "deimv2/resource_manifest.json",
+      "sha256": "be0d4fbfdedcdb227f056b6f967463d9ca0b301708b13c7c4eeb722b8472fec8",
+      "source_commit": "1d2ca42171570c713e78fc6a766ec5104b7f4724",
+      "checkpoint": "checkpoints/perception_2025/deimv2/deimv2_s.pth"
+    },
+    "harpnext": {
+      "manifest": "harpnext/resource_manifest.json",
+      "sha256": "ac6fb8ec9ec27bcbadfab760f0244ce515980a6b4c5e496e5122e2919d483af8",
+      "source_commit": "532df2659700ae870c0e0d4137a4d35bcc9903b9",
+      "checkpoint": "checkpoints/harpnext_2025/ckpt_best.pth"
+    },
+    "mambafusion": {
+      "manifest": "mambafusion/resource_manifest.json",
+      "sha256": "b5b546e107239f54328917de69ffdfbc5ec718c210ae4ba6da63eeeae6b45600",
+      "source_commit": "d85c2feeb19207b20e42d50421afb11c095f3efa",
+      "checkpoint": "checkpoints/mambafusion_2025/checkpoint_epoch_10.pth"
+    },
+    "grae3dmot": {
+      "manifest": "grae3dmot/resource_manifest.json",
+      "sha256": "869e13b452d9ca7bd3ab842d14e0996cf4ff7b49fb4c706acd89518b291a22cd",
+      "source_commit": "63def8bde5e199a4e77fdf4fab76a4b3511fe132",
+      "checkpoint": "checkpoints/grae3dmot_2025/model.pth"
+    }
+  },
+  "input_manifests": [
+    "inputs/coco_files.json",
+    "inputs/lidarseg_files.json",
+    "inputs/scene0061_packets.json",
+    "inputs/mini_val_packets.json"
+  ],
+  "policy": "Raw data, weights, environments and third-party source remain local; linked manifests record provenance."
+}

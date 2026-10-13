@@ -1,0 +1,16 @@
+{
+  "checkpoint_sha256": "d2454354b762a5a4b0b85af8b23c4b1f63da9357af7160aa313bc689a8d11ea6",
+  "repeat_noise_review_sha256": "f1b1dbc5e86545fd0a458f57fe6a6751aef8ae7b247f16b137ff49466bc637df",
+  "source_commit": "d85c2feeb19207b20e42d50421afb11c095f3efa",
+  "script_sha256": "117152144a01f169a64df5d3a4708358ec8427207233dd6bb59e5d85917cf3ae",
+  "predictions": {
+    "scene0061": {
+      "sha256": "985241700c321a409acba4c46e7800239b793998530ee11ae613ca40feddd5a1",
+      "frames": 39
+    },
+    "mini_val": {
+      "sha256": "4211c573e54e09bdd8e4df3d81326513f4b4b9d2593c70471c16b08ac2b39a05",
+      "frames": 81
+    }
+  }
+}

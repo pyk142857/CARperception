@@ -350,16 +350,18 @@ def preflight():
     return status
 
 
-def native_run():
+def native_run(gate_only=False, allow_measured_repeat_noise=False):
     """Run the actual author detector; unreachable until complete resource gates pass.
 
     GPU scheduling belongs to the common orchestrator. This function does not
     translate or silently drop state keys, or replace unavailable native ops.
     """
-    import os, sys, time, logging
+    import os, sys, time, logging, random
     import numpy as np
     import torch
     from easydict import EasyDict
+    torch.set_num_threads(4)
+    torch.manual_seed(20261013)
 
     sys.path[:0] = [
         str(SOURCE),
@@ -371,6 +373,13 @@ def native_run():
     from pcdet.datasets.nuscenes import nuscenes_utils
     from nuscenes.nuscenes import NuScenes
 
+    if allow_measured_repeat_noise:
+        review=json.loads((REPORT/'repeat_noise_review.json').read_text())
+        if review.get('status')!='reviewed_native_nondeterminism' or len(review.get('rows',[]))!=12 or {(r['split'],r['index'],r['repeat']) for r in review.get('rows',[])}!={(split,index,repeat) for split,count in [('scene0061',39),('mini_val',81)] for index in [0,count//2,count-1] for repeat in range(2)}:
+            raise ValueError('Complete measured repeat review required')
+        for row in review['rows']:
+            if sha256(REPORT/row['artifact'])!=row['sha256']:
+                raise ValueError('Repeat diagnostic review hash mismatch')
     prepare_infos()
     template_dir = SOURCE / "ckpts/hilbert_template"
     template_dir.parent.mkdir(parents=True, exist_ok=True)
@@ -388,12 +397,12 @@ def native_run():
         root_path=LAB / "data/nuscenes",
         logger=logger,
     )
-    model = build_network(
-        model_cfg=cfg.MODEL, num_class=len(cfg.CLASS_NAMES), dataset=dataset
-    )
     checkpoint = torch.load(WEIGHT, map_location="cpu")
     if "model_state" not in checkpoint:
         raise ValueError("complete author detector model_state missing")
+    model = build_network(
+        model_cfg=cfg.MODEL, num_class=len(cfg.CLASS_NAMES), dataset=dataset
+    )
     loaded = model.load_state_dict(checkpoint["model_state"], strict=True)
     dump(
         "strict_load.json",
@@ -409,16 +418,33 @@ def native_run():
     torch.backends.cudnn.allow_tf32 = False
     hooks = {}
     handles = []
+    scan_originals = []
+    for module_name in ['selective_scan_cuda_core','selective_scan_cuda_oflex','selective_scan_cuda_ndstate','selective_scan_cuda']:
+        import importlib
+        extension = importlib.import_module(module_name)
+        original = extension.fwd
+        def observed_scan(*args, _original=original, _name=module_name, **kwargs):
+            row=hooks.setdefault('cuda.'+_name,{'calls':0,'type':'author CUDA selective scan'})
+            row['calls']+=1
+            row['input_shapes']=[list(x.shape) for x in args if isinstance(x,torch.Tensor)]
+            return _original(*args,**kwargs)
+        extension.fwd=observed_scan
+        scan_originals.append((extension,original))
 
     def hook_for(name):
         def hook(module, inputs, outputs):
             row = hooks.setdefault(name, {"calls": 0, "type": type(module).__name__})
             row["calls"] += 1
-            tensors = (
-                {k: v for k, v in outputs.items() if isinstance(v, torch.Tensor)}
-                if isinstance(outputs, dict)
-                else {}
-            )
+            tensors = {}
+            def visit(value,path='output'):
+                if isinstance(value,torch.Tensor):tensors[path]=value
+                elif isinstance(value,dict):
+                    for key,item in value.items():visit(item,path+'.'+str(key))
+                elif isinstance(value,(list,tuple)):
+                    for index,item in enumerate(value):visit(item,path+'.'+str(index))
+                elif isinstance(getattr(value,'features',None),torch.Tensor):
+                    tensors[path+'.features']=value.features
+            visit(outputs)
             row["outputs"] = {
                 k: {"shape": list(v.shape), "dtype": str(v.dtype)}
                 for k, v in tensors.items()
@@ -430,7 +456,7 @@ def native_run():
         return hook
 
     for name, module in model.named_modules():
-        if name in model.module_topology or "mamba" in type(module).__name__.lower():
+        if name in model.module_topology or "mamba" in type(module).__name__.lower() or type(module).__name__ in ('SS2D','Backbone_VSSM'):
             handles.append(module.register_forward_hook(hook_for(name)))
     nusc = NuScenes(
         version="v1.0-mini", dataroot=str(LAB / "data/nuscenes"), verbose=False
@@ -449,14 +475,19 @@ def native_run():
             raise ValueError("native Dataset frame count mismatch")
         predictions = []
         profile = []
+        gate = []
         torch.cuda.reset_peak_memory_stats()
         order = list(dict.fromkeys([0, count // 2, count - 1] + list(range(count))))
-        for idx in order:
+        for idx in (order[:3] if gate_only else order):
+            hook_before={k:v['calls'] for k,v in hooks.items()}
             np.random.seed(2025 + idx)
+            random.seed(2025 + idx)
+            torch.manual_seed(2025 + idx)
             start = time.perf_counter()
             batch = dataset.collate_batch([dataset[idx]])
             if "gt_boxes" in batch:
                 raise ValueError("annotations entered inference batch")
+            input_hash={k: hashlib.sha256((v.numpy() if isinstance(v,torch.Tensor) else v).tobytes()).hexdigest() for k,v in batch.items() if isinstance(v,torch.Tensor) or (isinstance(v,np.ndarray) and v.dtype!=object)}
             load_data_to_gpu(batch)
             event1 = torch.cuda.Event(enable_timing=True)
             event2 = torch.cuda.Event(enable_timing=True)
@@ -480,9 +511,53 @@ def native_run():
                     "gpu_forward_ms": event1.elapsed_time(event2),
                 }
             )
+            if idx in [0,count//2,count-1]:
+                # Rebuild the same seeded native batch: author forward mutates its dictionary.
+                repeats=[]
+                for repeat in range(2):
+                    np.random.seed(2025+idx)
+                    random.seed(2025+idx)
+                    torch.manual_seed(2025+idx)
+                    repeated=dataset.collate_batch([dataset[idx]])
+                    repeat_input_hash={k: hashlib.sha256((v.numpy() if isinstance(v,torch.Tensor) else v).tobytes()).hexdigest() for k,v in repeated.items() if isinstance(v,torch.Tensor) or (isinstance(v,np.ndarray) and v.dtype!=object)}
+                    if repeat_input_hash!=input_hash:raise ValueError("Native repeated input differs before GPU")
+                    load_data_to_gpu(repeated)
+                    with torch.inference_mode():
+                        other,_=model(repeated)
+                    other_ann=dataset.generate_prediction_dicts(repeated,other,cfg.CLASS_NAMES)[0]
+                    a,b=annos[0],other_ann
+                    np.savez_compressed(REPORT / (split+'_gate_'+str(idx)+'_repeat_'+str(repeat)+'.npz'), base_boxes=a['boxes_lidar'],base_scores=a['score'],base_names=a['name'], repeat_boxes=b['boxes_lidar'],repeat_scores=b['score'],repeat_names=b['name'])
+                    aligned=a['boxes_lidar'].shape==b['boxes_lidar'].shape and np.array_equal(a['name'],b['name'])
+                    repeats.append({'candidate_order_and_shape_equal':bool(aligned),
+                        'box_max_abs':float(np.max(np.abs(a['boxes_lidar']-b['boxes_lidar']))) if aligned and len(a['name']) else None,
+                        'score_max_abs':float(np.max(np.abs(a['score']-b['score']))) if aligned and len(a['name']) else None})
+                gate.append({'sample_token':dataset.infos[idx]['token'],'index':idx,'finite':True,'repeats':repeats,
+                             'input_sha256':input_hash,'repeat_input_identical':True,'note':'same raw frame and seeded native eval preprocessing; candidate order may vary'})
+                frame_hooks={name:dict(evidence,calls=evidence['calls']-hook_before.get(name,0)) for name,evidence in hooks.items() if evidence['calls']>hook_before.get(name,0)}
+                gate[-1]['module_hooks']=frame_hooks
+                gate[-1]['repeat_budget']={'box_component_max_abs':.1,'score_max_abs':.01,'aligned_classes_and_shape_required':True}
+                gate[-1]['passed']=all(r['candidate_order_and_shape_equal'] and (r['box_max_abs'] is None or r['box_max_abs']<=.1) and (r['score_max_abs'] is None or r['score_max_abs']<=.01) for r in repeats)
+                dump(split+'_first_middle_last.json',gate)
+                if any(frame_hooks.get(name,{}).get('calls',0)==0 for name in model.module_topology):
+                    raise ValueError('Frame-local enabled module gate failed before expansion')
+                if not any(name.startswith('cuda.') for name in frame_hooks):
+                    raise ValueError('Frame-local CUDA scan gate failed before expansion')
+                if not any(v['type']=='SS2D' for v in frame_hooks.values()):
+                    raise ValueError('Frame-local camera scan/fusion gate failed before expansion')
+                gate[-1]['native_diagnostic_continuation']=bool(allow_measured_repeat_noise and not gate[-1]['passed'])
+                dump(split+'_first_middle_last.json',gate)
+                if not gate[-1]['passed'] and not gate_only and not allow_measured_repeat_noise:
+                    raise ValueError('Native repeat noise exceeds declared gate; inspect three-frame evidence before expansion')
+        if gate_only:
+            continue
         required = [name for name in model.module_topology]
         if any(hooks.get(name, {}).get("calls", 0) == 0 for name in required):
             raise ValueError("enabled topology module had zero calls")
+        if not any(v['calls']>0 for k,v in hooks.items() if k.startswith('cuda.')):
+            raise ValueError('No real selective scan CUDA calls observed')
+        dump(split+'_first_middle_last.json',gate)
+        by_token = {p['metadata']['token']: p for p in predictions}
+        predictions = [by_token[info['token']] for info in dataset.infos]
         results = nuscenes_utils.transform_det_annos_to_nusc_annos(predictions, nusc)
         results["meta"] = {
             "use_camera": True,
@@ -504,9 +579,23 @@ def native_run():
             },
         )
         total += count
+    if gate_only:
+        result={'status':'partial','phase':'gate','inference':'diagnostic_only','inference_frames':0,'blockers':['Repeat diagnostic only; full expansion not yet accepted']}
+        dump('status.json',result)
+        return result
     dump("hooks.json", hooks)
+    dump("native_receipt.json", {
+        "checkpoint_sha256": sha256(WEIGHT),
+        "repeat_noise_review_sha256": sha256(REPORT/"repeat_noise_review.json") if allow_measured_repeat_noise else None,
+        "source_commit": PIN,
+        "script_sha256": sha256(Path(__file__)),
+        "predictions": {split: {"sha256":sha256(REPORT/(split+"_predictions.json")), "frames":count}
+                        for split,count in [("scene0061",39),("mini_val",81)]},
+    })
     for handle in handles:
         handle.remove()
+    for extension,original in scan_originals:
+        extension.fwd=original
     status = {
         "model": "MambaFusion",
         "status": "partial",
@@ -514,6 +603,7 @@ def native_run():
         "source": "new_measured",
         "frames_inferred": total,
         "strict_load": "passed",
+        "inference": "passed",
         "official_metrics": None,
         "blockers": ["Official DetectionEval and replay acceptance pending"],
         "gpu_inference_executed": True,
@@ -828,11 +918,15 @@ def cpu_pipeline_check():
         assert len(ds) == count
         for idx in [0, count // 2, count - 1]:
             np.random.seed(2025 + idx)
+            random.seed(2025 + idx)
+            torch.manual_seed(2025 + idx)
             start = time.perf_counter()
             x = ds[idx]
             assert "gt_boxes" not in x and "gt_names" not in x
             assert np.isfinite(x["points"]).all() and x["points"].shape[1] == 5
             np.random.seed(2025 + idx)
+            random.seed(2025 + idx)
+            torch.manual_seed(2025 + idx)
             y = ds[idx]
             assert np.array_equal(x["points"], y["points"])
             images = np.stack(x["camera_imgs"])
@@ -892,14 +986,21 @@ def main():
             "geometry-check",
             "cpu-pipeline",
             "run",
+            "gate",
+            "evaluate",
             "optimize",
         ],
         default="preflight",
     )
+    parser.add_argument("--allow-measured-repeat-noise", action="store_true", help="Continue native diagnostic evaluation after hash-bound six-frame noise review; does not pass equivalence gate")
     parser.add_argument("--config", type=Path)
     args = parser.parse_args()
     if args.config:
         validate_runtime_config(json.loads(args.config.read_text()))
+    if args.phase == "evaluate":
+        from mambafusion_evaluate_2025 import evaluate
+        print(json.dumps(evaluate(LAB, REPORT), indent=2))
+        return 0
     if args.phase == "prepare":
         print(json.dumps(prepare_infos(), indent=2))
         return 0
@@ -912,9 +1013,9 @@ def main():
     status = preflight()
     status["phase"] = args.phase
     dump("status.json", status)
-    if args.phase == "run" and not status["blockers"]:
+    if args.phase in ("run", "gate") and not status["blockers"]:
         try:
-            status = native_run()
+            status = native_run(gate_only=args.phase == "gate", allow_measured_repeat_noise=args.allow_measured_repeat_noise)
         except Exception as exc:
             import traceback
 

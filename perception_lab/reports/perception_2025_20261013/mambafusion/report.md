@@ -1,46 +1,44 @@
-# MambaFusion：资源受阻，原生算子和 mini 输入已验证
+# MambaFusion：原生 39/81 帧与官方检测评价
 
-状态 **blocked_resource**。实际检测推理 **0 帧**；没有 mAP、NDS、跟踪输入或模型加速成绩。完整作者检测权重为 **391,545,251 字节**，尚未获得。已有部分下载不能用于加载，入口按准确文件长度拒绝它。未运行随机权重检测、旧模型替代或非严格加载。
+作者完整权重已恢复，严格加载全部 **1,403 个状态条目**，missing/unexpected 均为0。真实六相机＋10 sweeps 完成120帧；使用原始 global results/meta 直接运行官方 DetectionEval，没有重复坐标转换、显示阈值裁剪或GT属性填充。
 
-## 已实测完成
+| 范围 | 帧 | mAP | NDS | mATE | mASE | mAOE | mAVE | mAAE |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| scene0061 | 39 | 0.727975 | 0.673878 | 0.299275 | 0.322943 | 0.334202 | 0.344613 | 0.600066 |
+| mini_val | 81 | 0.588979 | 0.595775 | 0.396695 | 0.430137 | 0.445999 | 0.424399 | 0.289916 |
 
-- 作者源码固定 `AutoLab-SAI-SJTU/MambaFusion@d85c2feeb19207b20e42d50421afb11c095f3efa`。完整源码包 SHA256 `47ba51695cfd030b4e78f745b11f309d41c82fc529a384eb4ceaa8a7557a8520`；550 个上游文件逐一核验，仅 `pcdet/version.py` 被作者构建脚本生成。详见 [source_manifest.json](source_manifest.json)，Apache-2.0 LICENSE 在本地作者源码根目录。
-- 隔离环境 `envs/mambafusion_2025` 复用现有 Torch **2.1.2+cu118**，未改基础环境或旧 SpConv1/TensorRT。作者要求 Torch2.1/cu118，补丁版本并非其原始2.1.0；使用 CUDA11.8/GCC 构建作者原生扩展，完整版本见 [environment_freeze.txt](environment_freeze.txt)。
-- 作者 OpenPCDet、窗口 CUDA、selective_scan core/ndstate/oflex、`mamba_diffv/mamba` 均实际编译成功。RTX4090 上 **10 项算子检查通过**：四种 scan 与解析递推一致、相同/相离框 IoU、点到框归属、自定义窗口执行与shape/dtype smoke、torch-scatter均值、SpConv稀疏卷积单元核和PointToVoxel体素内点数检查。窗口未进行独立参考数值对照，voxel未核验逐点身份映射；不能把这些smoke解释为完整几何等价验证。详见 [operator_smoke.json](operator_smoke.json)。完整模型 Python import 也已通过，未构造模型。算子测试不等于完整模型严格加载和模块 Hook 通过。
-- 四份 Hilbert 模板就绪。rank7、rank10 下载原始作者文件；其完整可见张量与作者生成函数逐元素一致。rank8、rank9 使用**未修改的作者 `convert_to_index`** 按所需坐标分块生成，保留 rank8 的17层和 rank9 的41层、3D扫描次序；rank10为作者2D曲线。未分配、保存切片背后未使用的完整立方体存储。rank9 生成文件约86MB，不是直接把1GB作者文件改成2D模板。详见 [hilbert_manifest.json](hilbert_manifest.json)。rank8/9没有下载版逐元素对照，其依据是同一作者函数、保存范围以及rank7/10全张量对照。
-- 从本轮新采集的原始路径/标定/位姿包生成 inference-only `infos_withimg`：scene-0061 **39 帧**、mini_val **81 帧**，无 GT 字段，不生成训练数据库。720个相机变换与作者 `obtain_sensor2top` 对比、1053个历史扫变换与共同采集包对比，最大误差约1e-12；详见 [geometry_check.json](geometry_check.json)。
-- 在未修改的作者 `NuScenesDataset(training=False)` 上实际预处理两个范围各首/中/末帧，共 **6 帧**，六相机张量为6×3×256×704，点为N×5，全部有限，固定随机种子后的重复点张量相等，输入不含GT。详见 [cpu_pipeline.json](cpu_pipeline.json)。这6帧只有CPU数据预处理，没有检测推理。
+这是 nuScenes mini 教学诊断，使用 detection_cvpr_2019 官方评价协议，不是官方全量验证成绩；预训练可能覆盖样本。39帧采用自定义scene-0061 split，81帧采用官方 mini_val。各类AP、config、预测/指标/GT/split哈希见各split/official_eval/。原始预测完整保存在 scene0061_predictions.json 和 mini_val_predictions.json。
 
-## 原生输入口径
+## 来源与实际兼容改动
 
-保留六相机顺序 CAM_FRONT、CAM_FRONT_RIGHT、CAM_FRONT_LEFT、CAM_BACK、CAM_BACK_LEFT、CAM_BACK_RIGHT；作者图像读取包含 RGB→BGR 转换，再执行原生 resize/crop/normalize。点特征为XYZ/intensity/**timestamp**，不把ring当timestamp。范围[-54,-54,-5,54,54,3]、体素[0.3,0.3,0.25]、10 sweeps、200 proposals；完整展开配置见 [resolved_scene0061.json](resolved_scene0061.json)、[resolved_mini_val.json](resolved_mini_val.json)。
+源码 `AutoLab-SAI-SJTU/MambaFusion@d85c2feeb19207b20e42d50421afb11c095f3efa`；作者权重391,545,251字节，SHA256 `d2454354b762a5a4b0b85af8b23c4b1f63da9357af7160aa313bc689a8d11ea6`。该hash来自源端完整下载与本机复核，不称作者预公布校验值。
 
-历史不足时沿作者规则补到9条历史输入：有历史则重复最早条目，无历史则重复当前扫且时间差为0；历史扫读入仍执行作者近车体点移除。记录的真实历史数与填充后长度分别保留在 [mini_infos.json](mini_infos.json)。作者test shuffle和历史随机排列未静默关闭；验证固定种子保证复现，不声称不同种子严格不变。
+沿用Torch2.1.2/cu118隔离环境、原生CUDA扩展和Hilbert模板。作者config固定六BGR相机256×704、点特征XYZ/intensity/time、范围[-54,-54,-5,54,54,3]、voxel[.3,.3,.25]、200proposals；无训练、TTA或模型替换。两个NumPy兼容改动只涉及废弃np.int别名与异构图像处理元数据的显式object数组；[补丁与复现](../../perception_weights_recovery_20261013/mambafusion_numpy_compat.md)。历史550文件来源证明保留，当前差异另列。网络严格加载未删键、reshape或随机补参。
 
-## 完整权重阻塞
+## 重复噪声与验收边界
 
-[作者公开资源目录](https://drive.google.com/drive/folders/1TqvpIHA7plzoFdnGWvFgVYr45bgz-nQ3) 列出 `checkpoint_epoch_10.pth`，ID `10-FBWHbsCMJseKovJwGKncJ96Flp3umM`。已实际尝试 gdown、HTTP代理/直连、usercontent下载/续传、Range请求及Google Drive连接器：
+六个首/中/末帧各重复两次，数值输入哈希一致，实际相机/点云/高度编码/融合/scan调用与有限值检查通过。原生候选数、顺序和部分预测会变化；临时设置的按顺序0.1/0.01一致性门**未通过**，未改写为通过。
 
-- 本地网络下载只获得不足完整大小的部分二进制，其文件名保留为`checkpoint.download`，没有冒充完成权重。
-- Drive连接器内联方式在返回大文件时序列化失败，没有成功物化文件。
-- 流式方式明确返回 **HTTP413：391545251 bytes exceeds the 268435456-byte limit**。
+[保存的重复诊断](repeat_noise_review.json) · [源码可能来源与限制](repeat_noise_source_review.md)。本轮显式允许保留已测噪声的原生mini诊断评价，所有原始预测继续参与官方评价；不证明确定性，不批准优化数值等价。正式输出对应一次完整推理，绑定[执行回执](native_receipt.json)。执行时适配器另存 executed_native_adapter.py；之后只增强了复现校验，不冒充重新推理。
 
-详见 [download_attempts.json](download_attempts.json)、[resource_manifest.json](resource_manifest.json)。本轮数据可用，主要阻塞是完整权重传输；strict load、关键模块Hook、39/81帧预测、官方DetectionEval、A/B优化和新模型回放均未完成。后续网络恢复或提供可读完整同一作者文件后，需从严格加载继续，不能把预处理和算子通过当部署通过。
+## 耗时与失败案例
 
-## 复现
+- scene0061：带诊断 forward 均值 697.17 ms，端到端 990.85 ms，Torch 峰值分配 8.976 GiB。
+- mini_val：带诊断 forward 均值 518.49 ms，端到端 807.96 ms，Torch 峰值分配 4.193 GiB。
 
-在项目根目录执行：
+以上包含有限值Hook同步、首次加载和诊断开销；另观察到其他项目GPU任务，未采集逐帧外部占用。因此不是独占性能基准，不能据此计算优化加速比。详见 timing_limitations.json。
+
+独立失败诊断采用官方GT/距离/有效点过滤、score≥0.25、同类XY中心距离<2m贪心匹配：scene0061 TP2155/FP103/FN155，mini_val TP3135/FP414/FN258。FN无预测置信度。案例、距离/类别/分数和前三张图见 [39帧](scene0061/badcases/cases.json)、[81帧](mini_val/badcases/cases.json)；这不是AP本身。
+
+## 复现（项目根目录）
 
 ```bash
-python3 perception_lab/tools/mambafusion_2025.py --phase prepare
-perception_lab/envs/mambafusion_2025/bin/python perception_lab/tools/mambafusion_2025.py --phase hilbert
-perception_lab/envs/mambafusion_2025/bin/python perception_lab/tools/mambafusion_2025.py --phase geometry-check
-perception_lab/envs/mambafusion_2025/bin/python perception_lab/tools/mambafusion_2025.py --phase cpu-pipeline
-# 独占GPU时执行算子检查：
-perception_lab/envs/mambafusion_2025/bin/python perception_lab/tools/mambafusion_2025.py --phase operator-smoke
-python3 -m pytest -q perception_lab/tests/test_mambafusion_2025.py
-# 当前应返回非零 blocked_resource：
-perception_lab/envs/mambafusion_2025/bin/python perception_lab/tools/mambafusion_2025.py --phase run
+python3 perception_lab/tools/mambafusion_numpy_compat_2025.py
+perception_lab/envs/mambafusion_2025/bin/python perception_lab/tools/mambafusion_2025.py --phase gate --config perception_lab/configs/perception_2025.yaml
+# 保留并检查真实六帧重复证据；当前发布的review绑定repeat_diagnostic_baseline。
+perception_lab/envs/mambafusion_2025/bin/python perception_lab/tools/mambafusion_2025.py --phase run --allow-measured-repeat-noise --config perception_lab/configs/perception_2025.yaml
+perception_lab/envs/nuscenes_eval/bin/python perception_lab/tools/mambafusion_2025.py --phase evaluate --config perception_lab/configs/perception_2025.yaml
+perception_lab/envs/nuscenes_eval/bin/python perception_lab/tools/mambafusion_badcases_2025.py
 ```
 
-`--phase run` 的原生模型路径已编写，但因完整权重缺失未验证；即使将来生成预测，也会先标partial，要求独立官方评价及回放验收。`--phase optimize` 在原生正确性和评价通过前拒绝优化。本报告不包含官方全量评测结果。
+旧下载失败记录和原报告保存在恢复报告的prior_snapshot，未删除历史失败。新Mamba→GRAE与同步回放验收独立记录，见上级报告。

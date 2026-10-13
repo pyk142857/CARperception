@@ -85,5 +85,5 @@
     },
     "environment_scope": "isolated envs/grae3dmot_2025 read-only overlay of existing bevfusion/maptr torch; old environments unchanged"
   },
-  "adapter_sha256": "81153d212c8364b6668e66d8d24a9274e6cbfe7355a215dd90ad6db344e34ddf"
+  "adapter_sha256": "062c012a1d14739d558b7e191dce7963148e18a6842859e42124c2189f05b509"
 }

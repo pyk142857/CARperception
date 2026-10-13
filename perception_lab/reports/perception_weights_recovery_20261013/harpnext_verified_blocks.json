@@ -1,0 +1,36 @@
+{
+  "model": "harpnext",
+  "block_hash_role": "locally computed completed exact-206 range hashes; not author-published checksums",
+  "final_whole_sha256": "6f7fc5a1c03e9123541458358b1c703babf37ffc0b8b4ea6beac6c9f8478a147",
+  "total_bytes": 64865210,
+  "blocks": [
+    {
+      "start": 0,
+      "end": 16777215,
+      "size": 16777216,
+      "filename": "000000000000-000016777215.block",
+      "sha256": "8817b9c2bc4d50473077833ae877e4513f680efc38e225ee7a9f4e392c8af3e0"
+    },
+    {
+      "start": 16777216,
+      "end": 33554431,
+      "size": 16777216,
+      "filename": "000016777216-000033554431.block",
+      "sha256": "963e7749ffd77dfa16715ce480d3571d3525a74e35796f80ce28c6ad01a22600"
+    },
+    {
+      "start": 33554432,
+      "end": 50331647,
+      "size": 16777216,
+      "filename": "000033554432-000050331647.block",
+      "sha256": "0e2b5f81de752abbb66bf371a4f706aaa0994ae443cf53e89d90844902889736"
+    },
+    {
+      "start": 50331648,
+      "end": 64865209,
+      "size": 14533562,
+      "filename": "000050331648-000064865209.block",
+      "sha256": "0ead0a9e218114ad6c9ca0d049bdb2649ab4d42f5e6b849e73bc25b6f29876d7"
+    }
+  ]
+}

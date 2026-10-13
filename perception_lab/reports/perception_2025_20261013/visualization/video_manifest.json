@@ -1,0 +1,19 @@
+{
+  "programs": [],
+  "streams": [
+    {
+      "codec_name": "h264",
+      "width": 1920,
+      "height": 1080,
+      "r_frame_rate": "2/1",
+      "nb_frames": "39"
+    }
+  ],
+  "format": {
+    "duration": "19.500000",
+    "size": "7124206"
+  },
+  "sha256": "d4eda9ed7604b5c34f2bf792861d03d5869536e35ab86baf1ea53583dd66479b",
+  "source": "39 consecutive measured native MambaFusion snapshots plus DEIMv2 camera overlays",
+  "scope": "Fixed 2 fps visual playback; exact sample timestamps remain in Rerun and status.json; not inference throughput"
+}

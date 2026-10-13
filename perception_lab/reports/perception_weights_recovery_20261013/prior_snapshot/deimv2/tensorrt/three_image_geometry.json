@@ -1,0 +1,1166 @@
+[
+  {
+    "image_id": 397133,
+    "predictions": 300,
+    "timings": {
+      "read_preprocess_ms": 6.762607998098247,
+      "e2e_ms": 9.395330998813733,
+      "h2d_wall_ms": 0.5080680130049586,
+      "forward_post_gpu_ms": 1.9152640104293823,
+      "decode_d2h_ms": 0.1975329853594303
+    },
+    "all_predictions": [
+      {
+        "category_id": 1,
+        "matched": 4,
+        "unmatched": 0,
+        "max_box_component_px": 0.336761474609375,
+        "mean_box_component_px": 0.10256808996200562,
+        "max_score_difference": 0.03563085198402405
+      },
+      {
+        "category_id": 27,
+        "matched": 2,
+        "unmatched": 0,
+        "max_box_component_px": 0.363006591796875,
+        "mean_box_component_px": 0.12892532348632812,
+        "max_score_difference": 0.001433245837688446
+      },
+      {
+        "category_id": 31,
+        "matched": 4,
+        "unmatched": 0,
+        "max_box_component_px": 6.25567626953125,
+        "mean_box_component_px": 1.311406135559082,
+        "max_score_difference": 0.019165679812431335
+      },
+      {
+        "category_id": 32,
+        "matched": 2,
+        "unmatched": 0,
+        "max_box_component_px": 0.363006591796875,
+        "mean_box_component_px": 0.12892532348632812,
+        "max_score_difference": 0.0027650445699691772
+      },
+      {
+        "category_id": 44,
+        "matched": 15,
+        "unmatched": 1,
+        "max_box_component_px": 0.397979736328125,
+        "mean_box_component_px": 0.11251004536946614,
+        "max_score_difference": 0.003070533275604248
+      },
+      {
+        "category_id": 47,
+        "matched": 14,
+        "unmatched": 1,
+        "max_box_component_px": 0.405487060546875,
+        "mean_box_component_px": 0.11733488525663104,
+        "max_score_difference": 0.0056492239236831665
+      },
+      {
+        "category_id": 48,
+        "matched": 17,
+        "unmatched": 0,
+        "max_box_component_px": 0.7698974609375,
+        "mean_box_component_px": 0.15947588752297795,
+        "max_score_difference": 0.0075991153717041016
+      },
+      {
+        "category_id": 49,
+        "matched": 39,
+        "unmatched": 0,
+        "max_box_component_px": 0.91619873046875,
+        "mean_box_component_px": 0.17306948930789262,
+        "max_score_difference": 0.02337709069252014
+      },
+      {
+        "category_id": 50,
+        "matched": 94,
+        "unmatched": 3,
+        "max_box_component_px": 27.45770263671875,
+        "mean_box_component_px": 0.3079376255578183,
+        "max_score_difference": 0.05427302420139313
+      },
+      {
+        "category_id": 51,
+        "matched": 37,
+        "unmatched": 0,
+        "max_box_component_px": 6.25567626953125,
+        "mean_box_component_px": 0.19411912157728867,
+        "max_score_difference": 0.016480058431625366
+      },
+      {
+        "category_id": 52,
+        "matched": 1,
+        "unmatched": 0,
+        "max_box_component_px": 0.34881591796875,
+        "mean_box_component_px": 0.14780807495117188,
+        "max_score_difference": 0.0006661862134933472
+      },
+      {
+        "category_id": 54,
+        "matched": 1,
+        "unmatched": 0,
+        "max_box_component_px": 0.346466064453125,
+        "mean_box_component_px": 0.102264404296875,
+        "max_score_difference": 0.0014396458864212036
+      },
+      {
+        "category_id": 55,
+        "matched": 1,
+        "unmatched": 0,
+        "max_box_component_px": 0.34881591796875,
+        "mean_box_component_px": 0.14780807495117188,
+        "max_score_difference": 0.00033690035343170166
+      },
+      {
+        "category_id": 57,
+        "matched": 1,
+        "unmatched": 0,
+        "max_box_component_px": 0.34881591796875,
+        "mean_box_component_px": 0.14780807495117188,
+        "max_score_difference": 0.002535499632358551
+      },
+      {
+        "category_id": 59,
+        "matched": 2,
+        "unmatched": 0,
+        "max_box_component_px": 0.346466064453125,
+        "mean_box_component_px": 0.12574005126953125,
+        "max_score_difference": 0.005590319633483887
+      },
+      {
+        "category_id": 61,
+        "matched": 5,
+        "unmatched": 0,
+        "max_box_component_px": 0.405487060546875,
+        "mean_box_component_px": 0.13116941452026368,
+        "max_score_difference": 0.0007642582058906555
+      },
+      {
+        "category_id": 62,
+        "matched": 1,
+        "unmatched": 0,
+        "max_box_component_px": 0.309539794921875,
+        "mean_box_component_px": 0.2376251220703125,
+        "max_score_difference": 0.0011007636785507202
+      },
+      {
+        "category_id": 64,
+        "matched": 5,
+        "unmatched": 0,
+        "max_box_component_px": 0.5927009582519531,
+        "mean_box_component_px": 0.12587811648845673,
+        "max_score_difference": 0.0004931166768074036
+      },
+      {
+        "category_id": 67,
+        "matched": 1,
+        "unmatched": 0,
+        "max_box_component_px": 0.249267578125,
+        "mean_box_component_px": 0.16219520568847656,
+        "max_score_difference": 0.0001640915870666504
+      },
+      {
+        "category_id": 78,
+        "matched": 6,
+        "unmatched": 0,
+        "max_box_component_px": 0.5544891357421875,
+        "mean_box_component_px": 0.21238263448079428,
+        "max_score_difference": 0.007515713572502136
+      },
+      {
+        "category_id": 79,
+        "matched": 22,
+        "unmatched": 0,
+        "max_box_component_px": 6.166191101074219,
+        "mean_box_component_px": 0.3080004264007915,
+        "max_score_difference": 0.010978534817695618
+      },
+      {
+        "category_id": 80,
+        "matched": 3,
+        "unmatched": 0,
+        "max_box_component_px": 0.461273193359375,
+        "mean_box_component_px": 0.17439778645833334,
+        "max_score_difference": 0.015802890062332153
+      },
+      {
+        "category_id": 81,
+        "matched": 5,
+        "unmatched": 0,
+        "max_box_component_px": 1.419189453125,
+        "mean_box_component_px": 0.20114822387695314,
+        "max_score_difference": 0.006755799055099487
+      },
+      {
+        "category_id": 82,
+        "matched": 4,
+        "unmatched": 0,
+        "max_box_component_px": 0.4521484375,
+        "mean_box_component_px": 0.1403953582048416,
+        "max_score_difference": 0.0036956220865249634
+      },
+      {
+        "category_id": 85,
+        "matched": 1,
+        "unmatched": 0,
+        "max_box_component_px": 0.23602294921875,
+        "mean_box_component_px": 0.09272003173828125,
+        "max_score_difference": 6.280839443206787e-05
+      },
+      {
+        "category_id": 86,
+        "matched": 7,
+        "unmatched": 1,
+        "max_box_component_px": 0.62054443359375,
+        "mean_box_component_px": 0.12442636702741895,
+        "max_score_difference": 0.0027969926595687866
+      },
+      {
+        "category_id": 87,
+        "matched": 3,
+        "unmatched": 0,
+        "max_box_component_px": 0.5423583984375,
+        "mean_box_component_px": 0.1798435846964518,
+        "max_score_difference": 0.0024070218205451965
+      }
+    ],
+    "score_ge_025": [
+      {
+        "category_id": 1,
+        "matched": 2,
+        "unmatched": 0,
+        "max_box_component_px": 0.336761474609375,
+        "mean_box_component_px": 0.10720670223236084,
+        "max_score_difference": 0.005777418613433838
+      },
+      {
+        "category_id": 44,
+        "matched": 2,
+        "unmatched": 0,
+        "max_box_component_px": 0.28436279296875,
+        "mean_box_component_px": 0.13013076782226562,
+        "max_score_difference": 0.003070533275604248
+      },
+      {
+        "category_id": 47,
+        "matched": 3,
+        "unmatched": 0,
+        "max_box_component_px": 0.26251220703125,
+        "mean_box_component_px": 0.10357920328776042,
+        "max_score_difference": 0.004894763231277466
+      },
+      {
+        "category_id": 48,
+        "matched": 1,
+        "unmatched": 0,
+        "max_box_component_px": 0.1021728515625,
+        "mean_box_component_px": 0.07158279418945312,
+        "max_score_difference": 0.0006119310855865479
+      },
+      {
+        "category_id": 49,
+        "matched": 4,
+        "unmatched": 0,
+        "max_box_component_px": 0.342010498046875,
+        "mean_box_component_px": 0.14763641357421875,
+        "max_score_difference": 0.0025117099285125732
+      },
+      {
+        "category_id": 50,
+        "matched": 12,
+        "unmatched": 0,
+        "max_box_component_px": 0.5423583984375,
+        "mean_box_component_px": 0.10676805178324382,
+        "max_score_difference": 0.016828536987304688
+      },
+      {
+        "category_id": 51,
+        "matched": 7,
+        "unmatched": 0,
+        "max_box_component_px": 0.346466064453125,
+        "mean_box_component_px": 0.06691319601876396,
+        "max_score_difference": 0.0055582523345947266
+      },
+      {
+        "category_id": 59,
+        "matched": 1,
+        "unmatched": 0,
+        "max_box_component_px": 0.2438507080078125,
+        "mean_box_component_px": 0.1492156982421875,
+        "max_score_difference": 0.005590319633483887
+      },
+      {
+        "category_id": 64,
+        "matched": 1,
+        "unmatched": 0,
+        "max_box_component_px": 0.0596160888671875,
+        "mean_box_component_px": 0.027364596724510193,
+        "max_score_difference": 0.00025582313537597656
+      },
+      {
+        "category_id": 67,
+        "matched": 1,
+        "unmatched": 0,
+        "max_box_component_px": 0.249267578125,
+        "mean_box_component_px": 0.16219520568847656,
+        "max_score_difference": 0.0001640915870666504
+      },
+      {
+        "category_id": 79,
+        "matched": 8,
+        "unmatched": 0,
+        "max_box_component_px": 2.3240814208984375,
+        "mean_box_component_px": 0.2620401978492737,
+        "max_score_difference": 0.005918592214584351
+      },
+      {
+        "category_id": 81,
+        "matched": 2,
+        "unmatched": 0,
+        "max_box_component_px": 0.18524169921875,
+        "mean_box_component_px": 0.09260368347167969,
+        "max_score_difference": 0.0036771297454833984
+      },
+      {
+        "category_id": 82,
+        "matched": 2,
+        "unmatched": 0,
+        "max_box_component_px": 0.4521484375,
+        "mean_box_component_px": 0.18332138657569885,
+        "max_score_difference": 0.0012481510639190674
+      }
+    ]
+  },
+  {
+    "image_id": 180878,
+    "predictions": 300,
+    "timings": {
+      "read_preprocess_ms": 4.83655599236954,
+      "e2e_ms": 7.303475998924114,
+      "h2d_wall_ms": 0.43191500299144536,
+      "forward_post_gpu_ms": 1.8718719482421875,
+      "decode_d2h_ms": 0.15365505823865533
+    },
+    "all_predictions": [
+      {
+        "category_id": 1,
+        "matched": 12,
+        "unmatched": 1,
+        "max_box_component_px": 0.699310302734375,
+        "mean_box_component_px": 0.1513369083404541,
+        "max_score_difference": 0.0004682401195168495
+      },
+      {
+        "category_id": 2,
+        "matched": 1,
+        "unmatched": 0,
+        "max_box_component_px": 0.4136962890625,
+        "mean_box_component_px": 0.22649002075195312,
+        "max_score_difference": 0.0004813512787222862
+      },
+      {
+        "category_id": 3,
+        "matched": 13,
+        "unmatched": 0,
+        "max_box_component_px": 22.19512939453125,
+        "mean_box_component_px": 1.2451073022989125,
+        "max_score_difference": 0.015350520610809326
+      },
+      {
+        "category_id": 4,
+        "matched": 3,
+        "unmatched": 0,
+        "max_box_component_px": 0.4136962890625,
+        "mean_box_component_px": 0.13366063435872397,
+        "max_score_difference": 0.00016856566071510315
+      },
+      {
+        "category_id": 5,
+        "matched": 1,
+        "unmatched": 0,
+        "max_box_component_px": 0.283599853515625,
+        "mean_box_component_px": 0.113739013671875,
+        "max_score_difference": 0.00010646693408489227
+      },
+      {
+        "category_id": 6,
+        "matched": 3,
+        "unmatched": 0,
+        "max_box_component_px": 0.26678466796875,
+        "mean_box_component_px": 0.10630544026692708,
+        "max_score_difference": 0.001439318060874939
+      },
+      {
+        "category_id": 7,
+        "matched": 6,
+        "unmatched": 2,
+        "max_box_component_px": 0.822509765625,
+        "mean_box_component_px": 0.21688715616861978,
+        "max_score_difference": 0.001895703375339508
+      },
+      {
+        "category_id": 8,
+        "matched": 6,
+        "unmatched": 1,
+        "max_box_component_px": 0.4136962890625,
+        "mean_box_component_px": 0.1268026034037272,
+        "max_score_difference": 0.0015839189291000366
+      },
+      {
+        "category_id": 9,
+        "matched": 1,
+        "unmatched": 0,
+        "max_box_component_px": 0.2147216796875,
+        "mean_box_component_px": 0.1262359619140625,
+        "max_score_difference": 0.0004307106137275696
+      },
+      {
+        "category_id": 14,
+        "matched": 1,
+        "unmatched": 0,
+        "max_box_component_px": 0.2147216796875,
+        "mean_box_component_px": 0.1262359619140625,
+        "max_score_difference": 0.00010859500616788864
+      },
+      {
+        "category_id": 15,
+        "matched": 9,
+        "unmatched": 0,
+        "max_box_component_px": 235.46331787109375,
+        "mean_box_component_px": 12.08207392692566,
+        "max_score_difference": 0.032915472984313965
+      },
+      {
+        "category_id": 16,
+        "matched": 11,
+        "unmatched": 0,
+        "max_box_component_px": 2.414257049560547,
+        "mean_box_component_px": 0.20761195096102628,
+        "max_score_difference": 0.0021617673337459564
+      },
+      {
+        "category_id": 17,
+        "matched": 5,
+        "unmatched": 1,
+        "max_box_component_px": 4.68670654296875,
+        "mean_box_component_px": 0.7500633239746094,
+        "max_score_difference": 0.00047264061868190765
+      },
+      {
+        "category_id": 18,
+        "matched": 1,
+        "unmatched": 0,
+        "max_box_component_px": 0.099273681640625,
+        "mean_box_component_px": 0.058315277099609375,
+        "max_score_difference": 5.221739411354065e-05
+      },
+      {
+        "category_id": 19,
+        "matched": 1,
+        "unmatched": 0,
+        "max_box_component_px": 0.4136962890625,
+        "mean_box_component_px": 0.22649002075195312,
+        "max_score_difference": 0.0002495488151907921
+      },
+      {
+        "category_id": 20,
+        "matched": 1,
+        "unmatched": 0,
+        "max_box_component_px": 0.099273681640625,
+        "mean_box_component_px": 0.058315277099609375,
+        "max_score_difference": 0.00028328876942396164
+      },
+      {
+        "category_id": 21,
+        "matched": 4,
+        "unmatched": 0,
+        "max_box_component_px": 0.4136962890625,
+        "mean_box_component_px": 0.1408982276916504,
+        "max_score_difference": 0.0005118595436215401
+      },
+      {
+        "category_id": 23,
+        "matched": 1,
+        "unmatched": 0,
+        "max_box_component_px": 0.099273681640625,
+        "mean_box_component_px": 0.058315277099609375,
+        "max_score_difference": 1.019798219203949e-05
+      },
+      {
+        "category_id": 27,
+        "matched": 6,
+        "unmatched": 0,
+        "max_box_component_px": 0.75921630859375,
+        "mean_box_component_px": 0.2159132957458496,
+        "max_score_difference": 0.0051470547914505005
+      },
+      {
+        "category_id": 28,
+        "matched": 3,
+        "unmatched": 0,
+        "max_box_component_px": 0.23736572265625,
+        "mean_box_component_px": 0.09872055053710938,
+        "max_score_difference": 0.00028643757104873657
+      },
+      {
+        "category_id": 31,
+        "matched": 10,
+        "unmatched": 0,
+        "max_box_component_px": 1.5229034423828125,
+        "mean_box_component_px": 0.20945920944213867,
+        "max_score_difference": 0.0011131633073091507
+      },
+      {
+        "category_id": 32,
+        "matched": 12,
+        "unmatched": 0,
+        "max_box_component_px": 408.7599182128906,
+        "mean_box_component_px": 18.465509573618572,
+        "max_score_difference": 0.0034309616312384605
+      },
+      {
+        "category_id": 33,
+        "matched": 7,
+        "unmatched": 1,
+        "max_box_component_px": 22.19512939453125,
+        "mean_box_component_px": 1.7840924944196428,
+        "max_score_difference": 0.02140804659575224
+      },
+      {
+        "category_id": 35,
+        "matched": 2,
+        "unmatched": 0,
+        "max_box_component_px": 164.13491821289062,
+        "mean_box_component_px": 25.941572189331055,
+        "max_score_difference": 0.0018510939553380013
+      },
+      {
+        "category_id": 36,
+        "matched": 1,
+        "unmatched": 0,
+        "max_box_component_px": 0.2298583984375,
+        "mean_box_component_px": 0.13748741149902344,
+        "max_score_difference": 0.0005527287721633911
+      },
+      {
+        "category_id": 37,
+        "matched": 4,
+        "unmatched": 0,
+        "max_box_component_px": 0.26678466796875,
+        "mean_box_component_px": 0.1419057846069336,
+        "max_score_difference": 0.0006130784749984741
+      },
+      {
+        "category_id": 40,
+        "matched": 2,
+        "unmatched": 2,
+        "max_box_component_px": 0.16571044921875,
+        "mean_box_component_px": 0.052951812744140625,
+        "max_score_difference": 0.0008550640195608139
+      },
+      {
+        "category_id": 41,
+        "matched": 3,
+        "unmatched": 0,
+        "max_box_component_px": 0.569183349609375,
+        "mean_box_component_px": 0.10927581787109375,
+        "max_score_difference": 0.0002714628353714943
+      },
+      {
+        "category_id": 43,
+        "matched": 1,
+        "unmatched": 0,
+        "max_box_component_px": 0.098388671875,
+        "mean_box_component_px": 0.04825592041015625,
+        "max_score_difference": 0.00011794082820415497
+      },
+      {
+        "category_id": 44,
+        "matched": 11,
+        "unmatched": 1,
+        "max_box_component_px": 0.822509765625,
+        "mean_box_component_px": 0.15670793706720526,
+        "max_score_difference": 0.0006486661732196808
+      },
+      {
+        "category_id": 47,
+        "matched": 3,
+        "unmatched": 1,
+        "max_box_component_px": 0.23736572265625,
+        "mean_box_component_px": 0.0887896219889323,
+        "max_score_difference": 0.00031366758048534393
+      },
+      {
+        "category_id": 48,
+        "matched": 3,
+        "unmatched": 0,
+        "max_box_component_px": 0.26678466796875,
+        "mean_box_component_px": 0.09024302164713542,
+        "max_score_difference": 0.00026497989892959595
+      },
+      {
+        "category_id": 49,
+        "matched": 11,
+        "unmatched": 0,
+        "max_box_component_px": 1.571197509765625,
+        "mean_box_component_px": 0.23698217218572443,
+        "max_score_difference": 0.0022417232394218445
+      },
+      {
+        "category_id": 50,
+        "matched": 5,
+        "unmatched": 0,
+        "max_box_component_px": 0.23736572265625,
+        "mean_box_component_px": 0.11191253662109375,
+        "max_score_difference": 0.0008272398263216019
+      },
+      {
+        "category_id": 51,
+        "matched": 3,
+        "unmatched": 0,
+        "max_box_component_px": 0.2147216796875,
+        "mean_box_component_px": 0.07760238647460938,
+        "max_score_difference": 0.0005606897175312042
+      },
+      {
+        "category_id": 53,
+        "matched": 4,
+        "unmatched": 1,
+        "max_box_component_px": 0.23736572265625,
+        "mean_box_component_px": 0.10543012619018555,
+        "max_score_difference": 0.0006414540112018585
+      },
+      {
+        "category_id": 56,
+        "matched": 1,
+        "unmatched": 0,
+        "max_box_component_px": 0.14654541015625,
+        "mean_box_component_px": 0.06644248962402344,
+        "max_score_difference": 2.2671185433864594e-05
+      },
+      {
+        "category_id": 58,
+        "matched": 4,
+        "unmatched": 0,
+        "max_box_component_px": 0.569183349609375,
+        "mean_box_component_px": 0.1435999870300293,
+        "max_score_difference": 0.0007019713521003723
+      },
+      {
+        "category_id": 60,
+        "matched": 5,
+        "unmatched": 0,
+        "max_box_component_px": 0.23736572265625,
+        "mean_box_component_px": 0.10783233642578124,
+        "max_score_difference": 0.0007345378398895264
+      },
+      {
+        "category_id": 61,
+        "matched": 3,
+        "unmatched": 1,
+        "max_box_component_px": 0.2464599609375,
+        "mean_box_component_px": 0.08788839975992839,
+        "max_score_difference": 0.00587230920791626
+      },
+      {
+        "category_id": 62,
+        "matched": 9,
+        "unmatched": 2,
+        "max_box_component_px": 2.02850341796875,
+        "mean_box_component_px": 0.30950676070319283,
+        "max_score_difference": 0.019914142787456512
+      },
+      {
+        "category_id": 63,
+        "matched": 7,
+        "unmatched": 0,
+        "max_box_component_px": 139.4310302734375,
+        "mean_box_component_px": 13.754501740847315,
+        "max_score_difference": 0.047016529366374016
+      },
+      {
+        "category_id": 65,
+        "matched": 4,
+        "unmatched": 1,
+        "max_box_component_px": 4.84649658203125,
+        "mean_box_component_px": 0.9844546914100647,
+        "max_score_difference": 0.0008750855922698975
+      },
+      {
+        "category_id": 67,
+        "matched": 13,
+        "unmatched": 1,
+        "max_box_component_px": 224.610595703125,
+        "mean_box_component_px": 9.422601424730741,
+        "max_score_difference": 0.03211226686835289
+      },
+      {
+        "category_id": 72,
+        "matched": 3,
+        "unmatched": 1,
+        "max_box_component_px": 4.84649658203125,
+        "mean_box_component_px": 1.005751371383667,
+        "max_score_difference": 0.0034214695915579796
+      },
+      {
+        "category_id": 73,
+        "matched": 6,
+        "unmatched": 0,
+        "max_box_component_px": 1.5229034423828125,
+        "mean_box_component_px": 0.22842772801717123,
+        "max_score_difference": 0.0004283888265490532
+      },
+      {
+        "category_id": 74,
+        "matched": 4,
+        "unmatched": 0,
+        "max_box_component_px": 0.23736572265625,
+        "mean_box_component_px": 0.12037849426269531,
+        "max_score_difference": 0.0028404444456100464
+      },
+      {
+        "category_id": 75,
+        "matched": 9,
+        "unmatched": 0,
+        "max_box_component_px": 0.569183349609375,
+        "mean_box_component_px": 0.10800234476725261,
+        "max_score_difference": 0.006024986505508423
+      },
+      {
+        "category_id": 76,
+        "matched": 3,
+        "unmatched": 0,
+        "max_box_component_px": 0.569183349609375,
+        "mean_box_component_px": 0.1382013956705729,
+        "max_score_difference": 0.0009272489696741104
+      },
+      {
+        "category_id": 77,
+        "matched": 18,
+        "unmatched": 5,
+        "max_box_component_px": 22.19512939453125,
+        "mean_box_component_px": 0.773884826236301,
+        "max_score_difference": 0.005073197185993195
+      },
+      {
+        "category_id": 79,
+        "matched": 1,
+        "unmatched": 0,
+        "max_box_component_px": 0.098388671875,
+        "mean_box_component_px": 0.04825592041015625,
+        "max_score_difference": 0.00014318805187940598
+      },
+      {
+        "category_id": 80,
+        "matched": 2,
+        "unmatched": 0,
+        "max_box_component_px": 0.2464599609375,
+        "mean_box_component_px": 0.1419987678527832,
+        "max_score_difference": 0.0006693676114082336
+      },
+      {
+        "category_id": 81,
+        "matched": 2,
+        "unmatched": 0,
+        "max_box_component_px": 1.5229034423828125,
+        "mean_box_component_px": 0.48123836517333984,
+        "max_score_difference": 0.0002167634665966034
+      },
+      {
+        "category_id": 82,
+        "matched": 1,
+        "unmatched": 0,
+        "max_box_component_px": 0.2298583984375,
+        "mean_box_component_px": 0.13748741149902344,
+        "max_score_difference": 0.0003362949937582016
+      },
+      {
+        "category_id": 84,
+        "matched": 8,
+        "unmatched": 0,
+        "max_box_component_px": 22.19512939453125,
+        "mean_box_component_px": 1.9484604597091675,
+        "max_score_difference": 0.0040971506386995316
+      },
+      {
+        "category_id": 85,
+        "matched": 3,
+        "unmatched": 0,
+        "max_box_component_px": 0.23736572265625,
+        "mean_box_component_px": 0.11507288614908855,
+        "max_score_difference": 0.0005259206518530846
+      },
+      {
+        "category_id": 86,
+        "matched": 2,
+        "unmatched": 0,
+        "max_box_component_px": 0.2464599609375,
+        "mean_box_component_px": 0.10770463943481445,
+        "max_score_difference": 0.0006055086851119995
+      },
+      {
+        "category_id": 87,
+        "matched": 4,
+        "unmatched": 0,
+        "max_box_component_px": 0.4136962890625,
+        "mean_box_component_px": 0.1395854949951172,
+        "max_score_difference": 0.0005950145423412323
+      },
+      {
+        "category_id": 88,
+        "matched": 4,
+        "unmatched": 0,
+        "max_box_component_px": 0.2464599609375,
+        "mean_box_component_px": 0.11057925224304199,
+        "max_score_difference": 0.0010839961469173431
+      },
+      {
+        "category_id": 89,
+        "unmatched": 1,
+        "matched": 0
+      },
+      {
+        "category_id": 90,
+        "matched": 1,
+        "unmatched": 1,
+        "max_box_component_px": 0.26678466796875,
+        "mean_box_component_px": 0.1444244384765625,
+        "max_score_difference": 0.000353899784386158
+      }
+    ],
+    "score_ge_025": [
+      {
+        "category_id": 3,
+        "matched": 1,
+        "unmatched": 0,
+        "max_box_component_px": 0.2147216796875,
+        "mean_box_component_px": 0.1262359619140625,
+        "max_score_difference": 0.015350520610809326
+      },
+      {
+        "category_id": 31,
+        "matched": 1,
+        "unmatched": 0,
+        "max_box_component_px": 0.2464599609375,
+        "mean_box_component_px": 0.1577615737915039,
+        "max_score_difference": 0.00043773651123046875
+      },
+      {
+        "category_id": 33,
+        "unmatched": 1,
+        "matched": 0
+      },
+      {
+        "category_id": 61,
+        "matched": 1,
+        "unmatched": 0,
+        "max_box_component_px": 0.2464599609375,
+        "mean_box_component_px": 0.1577615737915039,
+        "max_score_difference": 0.003955245018005371
+      },
+      {
+        "category_id": 77,
+        "matched": 1,
+        "unmatched": 0,
+        "max_box_component_px": 0.569183349609375,
+        "mean_box_component_px": 0.221923828125,
+        "max_score_difference": 0.0022726058959960938
+      }
+    ]
+  },
+  {
+    "image_id": 15335,
+    "predictions": 300,
+    "timings": {
+      "read_preprocess_ms": 5.926920988713391,
+      "e2e_ms": 8.403084997553378,
+      "h2d_wall_ms": 0.45944999146740884,
+      "forward_post_gpu_ms": 1.8449599742889404,
+      "decode_d2h_ms": 0.16016003745608032
+    },
+    "all_predictions": [
+      {
+        "category_id": 1,
+        "matched": 53,
+        "unmatched": 2,
+        "max_box_component_px": 190.38653564453125,
+        "mean_box_component_px": 3.71307684340567,
+        "max_score_difference": 0.02440524846315384
+      },
+      {
+        "category_id": 2,
+        "unmatched": 1,
+        "matched": 0
+      },
+      {
+        "category_id": 15,
+        "matched": 3,
+        "unmatched": 0,
+        "max_box_component_px": 0.9561767578125,
+        "mean_box_component_px": 0.28156280517578125,
+        "max_score_difference": 0.0017478466033935547
+      },
+      {
+        "category_id": 17,
+        "matched": 2,
+        "unmatched": 0,
+        "max_box_component_px": 0.1700286865234375,
+        "mean_box_component_px": 0.09430408477783203,
+        "max_score_difference": 0.0008556358516216278
+      },
+      {
+        "category_id": 18,
+        "matched": 2,
+        "unmatched": 0,
+        "max_box_component_px": 0.1700286865234375,
+        "mean_box_component_px": 0.09430408477783203,
+        "max_score_difference": 0.00042607635259628296
+      },
+      {
+        "category_id": 19,
+        "matched": 3,
+        "unmatched": 0,
+        "max_box_component_px": 0.649322509765625,
+        "mean_box_component_px": 0.19373035430908203,
+        "max_score_difference": 0.003315642476081848
+      },
+      {
+        "category_id": 31,
+        "matched": 6,
+        "unmatched": 1,
+        "max_box_component_px": 0.5908355712890625,
+        "mean_box_component_px": 0.16215944290161133,
+        "max_score_difference": 0.0032985061407089233
+      },
+      {
+        "category_id": 33,
+        "matched": 3,
+        "unmatched": 0,
+        "max_box_component_px": 0.5908355712890625,
+        "mean_box_component_px": 0.19582239786783853,
+        "max_score_difference": 0.0013144388794898987
+      },
+      {
+        "category_id": 44,
+        "matched": 6,
+        "unmatched": 0,
+        "max_box_component_px": 0.2906494140625,
+        "mean_box_component_px": 0.09262351195017497,
+        "max_score_difference": 0.004731185734272003
+      },
+      {
+        "category_id": 46,
+        "matched": 6,
+        "unmatched": 0,
+        "max_box_component_px": 0.2906494140625,
+        "mean_box_component_px": 0.09262351195017497,
+        "max_score_difference": 0.012685388326644897
+      },
+      {
+        "category_id": 47,
+        "matched": 22,
+        "unmatched": 0,
+        "max_box_component_px": 22.490066528320312,
+        "mean_box_component_px": 1.130266780203039,
+        "max_score_difference": 0.04124540090560913
+      },
+      {
+        "category_id": 48,
+        "matched": 6,
+        "unmatched": 1,
+        "max_box_component_px": 0.504364013671875,
+        "mean_box_component_px": 0.14121882120768228,
+        "max_score_difference": 0.0019210577011108398
+      },
+      {
+        "category_id": 49,
+        "matched": 3,
+        "unmatched": 0,
+        "max_box_component_px": 0.504364013671875,
+        "mean_box_component_px": 0.11786142985026042,
+        "max_score_difference": 0.00020878762006759644
+      },
+      {
+        "category_id": 50,
+        "matched": 13,
+        "unmatched": 1,
+        "max_box_component_px": 0.504364013671875,
+        "mean_box_component_px": 0.12257799735436073,
+        "max_score_difference": 0.009321965277194977
+      },
+      {
+        "category_id": 51,
+        "matched": 15,
+        "unmatched": 0,
+        "max_box_component_px": 472.1565704345703,
+        "mean_box_component_px": 8.347536532084147,
+        "max_score_difference": 0.016249746084213257
+      },
+      {
+        "category_id": 54,
+        "matched": 14,
+        "unmatched": 1,
+        "max_box_component_px": 0.6618118286132812,
+        "mean_box_component_px": 0.12076136044093541,
+        "max_score_difference": 0.00456855446100235
+      },
+      {
+        "category_id": 58,
+        "matched": 4,
+        "unmatched": 1,
+        "max_box_component_px": 0.504364013671875,
+        "mean_box_component_px": 0.10606002807617188,
+        "max_score_difference": 0.002618834376335144
+      },
+      {
+        "category_id": 59,
+        "matched": 4,
+        "unmatched": 1,
+        "max_box_component_px": 0.2906494140625,
+        "mean_box_component_px": 0.09338968992233276,
+        "max_score_difference": 0.0006364509463310242
+      },
+      {
+        "category_id": 60,
+        "matched": 10,
+        "unmatched": 0,
+        "max_box_component_px": 0.6618118286132812,
+        "mean_box_component_px": 0.163874614238739,
+        "max_score_difference": 0.01959633082151413
+      },
+      {
+        "category_id": 61,
+        "matched": 21,
+        "unmatched": 1,
+        "max_box_component_px": 210.06944274902344,
+        "mean_box_component_px": 5.077871299925304,
+        "max_score_difference": 0.010521333664655685
+      },
+      {
+        "category_id": 62,
+        "matched": 14,
+        "unmatched": 1,
+        "max_box_component_px": 3.37603759765625,
+        "mean_box_component_px": 0.3576733725411551,
+        "max_score_difference": 0.010398589074611664
+      },
+      {
+        "category_id": 63,
+        "matched": 8,
+        "unmatched": 1,
+        "max_box_component_px": 74.62396240234375,
+        "mean_box_component_px": 4.608253717422485,
+        "max_score_difference": 0.006052613258361816
+      },
+      {
+        "category_id": 64,
+        "matched": 9,
+        "unmatched": 0,
+        "max_box_component_px": 8.46405029296875,
+        "mean_box_component_px": 0.9659819867875841,
+        "max_score_difference": 0.008837983012199402
+      },
+      {
+        "category_id": 65,
+        "matched": 1,
+        "unmatched": 1,
+        "max_box_component_px": 0.5908355712890625,
+        "mean_box_component_px": 0.2966156005859375,
+        "max_score_difference": 0.0007549859583377838
+      },
+      {
+        "category_id": 67,
+        "matched": 38,
+        "unmatched": 0,
+        "max_box_component_px": 276.7030944824219,
+        "mean_box_component_px": 5.2824975816827076,
+        "max_score_difference": 0.03703860193490982
+      },
+      {
+        "category_id": 77,
+        "matched": 14,
+        "unmatched": 2,
+        "max_box_component_px": 0.618743896484375,
+        "mean_box_component_px": 0.16539097683770315,
+        "max_score_difference": 0.01667005568742752
+      },
+      {
+        "category_id": 81,
+        "matched": 1,
+        "unmatched": 0,
+        "max_box_component_px": 0.1211090087890625,
+        "mean_box_component_px": 0.07718276977539062,
+        "max_score_difference": 0.00012779980897903442
+      },
+      {
+        "category_id": 84,
+        "matched": 1,
+        "unmatched": 0,
+        "max_box_component_px": 0.283477783203125,
+        "mean_box_component_px": 0.1825408935546875,
+        "max_score_difference": 0.0009989291429519653
+      },
+      {
+        "category_id": 85,
+        "matched": 3,
+        "unmatched": 0,
+        "max_box_component_px": 0.31024169921875,
+        "mean_box_component_px": 0.1261927286783854,
+        "max_score_difference": 0.0010580942034721375
+      },
+      {
+        "category_id": 86,
+        "matched": 1,
+        "unmatched": 0,
+        "max_box_component_px": 0.1361541748046875,
+        "mean_box_component_px": 0.09205150604248047,
+        "max_score_difference": 5.199015140533447e-05
+      },
+      {
+        "category_id": 88,
+        "matched": 1,
+        "unmatched": 0,
+        "max_box_component_px": 0.1700286865234375,
+        "mean_box_component_px": 0.10641670227050781,
+        "max_score_difference": 0.001589164137840271
+      },
+      {
+        "category_id": 90,
+        "matched": 5,
+        "unmatched": 1,
+        "max_box_component_px": 0.502716064453125,
+        "mean_box_component_px": 0.18660097122192382,
+        "max_score_difference": 0.008872181177139282
+      }
+    ],
+    "score_ge_025": [
+      {
+        "category_id": 1,
+        "matched": 8,
+        "unmatched": 0,
+        "max_box_component_px": 1.232177734375,
+        "mean_box_component_px": 0.20773905515670776,
+        "max_score_difference": 0.00529828667640686
+      },
+      {
+        "category_id": 47,
+        "matched": 2,
+        "unmatched": 0,
+        "max_box_component_px": 0.24365234375,
+        "mean_box_component_px": 0.07398128509521484,
+        "max_score_difference": 0.002484142780303955
+      },
+      {
+        "category_id": 67,
+        "matched": 2,
+        "unmatched": 0,
+        "max_box_component_px": 0.411834716796875,
+        "mean_box_component_px": 0.22441864013671875,
+        "max_score_difference": 0.0032155215740203857
+      }
+    ]
+  }
+]

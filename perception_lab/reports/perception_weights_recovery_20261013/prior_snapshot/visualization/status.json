@@ -1,0 +1,350 @@
+{
+  "decoded_rrd_audit": {
+    "status": "passed",
+    "decoded_frames": 39,
+    "decoded_points": 1354112,
+    "float32_position_max_abs_m": 3.8144487888303047e-06,
+    "decoded_recursive_clears": 351,
+    "token_order_exact": true,
+    "box_counts_exact": true
+  },
+  "status": "partial",
+  "export": "passed",
+  "browser_validation": "passed",
+  "frames": 39,
+  "counts": [
+    {
+      "frame": 0,
+      "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+      "timestamp_us": 1532402927647951,
+      "original_lidar_points": 34688,
+      "grae_boxes": 19,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 1,
+      "sample_token": "39586f9d59004284a7114a68825e8eec",
+      "timestamp_us": 1532402928147847,
+      "original_lidar_points": 34720,
+      "grae_boxes": 23,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 2,
+      "sample_token": "356d81f38dd9473ba590f39e266f54e5",
+      "timestamp_us": 1532402928698048,
+      "original_lidar_points": 34720,
+      "grae_boxes": 28,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 3,
+      "sample_token": "e0845f5322254dafadbbed75aaa07969",
+      "timestamp_us": 1532402929197353,
+      "original_lidar_points": 34688,
+      "grae_boxes": 29,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 4,
+      "sample_token": "c923fe08b2ff4e27975d2bf30934383b",
+      "timestamp_us": 1532402929697797,
+      "original_lidar_points": 34752,
+      "grae_boxes": 31,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 5,
+      "sample_token": "f1e3d9d08f044c439ce86a2d6fcca57b",
+      "timestamp_us": 1532402930152601,
+      "original_lidar_points": 34784,
+      "grae_boxes": 29,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 6,
+      "sample_token": "4f545737bf3347fbbc9af60b0be9a963",
+      "timestamp_us": 1532402930648325,
+      "original_lidar_points": 34720,
+      "grae_boxes": 29,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 7,
+      "sample_token": "7626dde27d604ac28a0240bdd54eba7a",
+      "timestamp_us": 1532402931198511,
+      "original_lidar_points": 34720,
+      "grae_boxes": 36,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 8,
+      "sample_token": "be99ffc878b24aca8956bbb4e0f97d0c",
+      "timestamp_us": 1532402931697833,
+      "original_lidar_points": 34688,
+      "grae_boxes": 39,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 9,
+      "sample_token": "9813c23a5f1448b09bb7910fea9baf20",
+      "timestamp_us": 1532402932197715,
+      "original_lidar_points": 34688,
+      "grae_boxes": 37,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 10,
+      "sample_token": "023c4df2d451409881d8e6ea82f14704",
+      "timestamp_us": 1532402932647284,
+      "original_lidar_points": 34688,
+      "grae_boxes": 33,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 11,
+      "sample_token": "c235638ed66145988d17f9d0601923f2",
+      "timestamp_us": 1532402933146604,
+      "original_lidar_points": 34720,
+      "grae_boxes": 37,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 12,
+      "sample_token": "bc3c8a953f6b4dcdb77b521d89f3d9d5",
+      "timestamp_us": 1532402933646462,
+      "original_lidar_points": 34688,
+      "grae_boxes": 34,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 13,
+      "sample_token": "1e3d79dae62742a0ad64c91679863358",
+      "timestamp_us": 1532402934146351,
+      "original_lidar_points": 34752,
+      "grae_boxes": 37,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 14,
+      "sample_token": "2afb9d32310e4546a71cbe432911eca2",
+      "timestamp_us": 1532402934696555,
+      "original_lidar_points": 34752,
+      "grae_boxes": 47,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 15,
+      "sample_token": "cd21dbfc3bd749c7b10a5c42562e0c42",
+      "timestamp_us": 1532402935197541,
+      "original_lidar_points": 34784,
+      "grae_boxes": 46,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 16,
+      "sample_token": "88449a5cb1644a199c1c11f6ac034867",
+      "timestamp_us": 1532402935697945,
+      "original_lidar_points": 34784,
+      "grae_boxes": 44,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 17,
+      "sample_token": "2ff86dc19c4644a1a88ce5ba848f56e5",
+      "timestamp_us": 1532402936198962,
+      "original_lidar_points": 34752,
+      "grae_boxes": 40,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 18,
+      "sample_token": "bf2938e43c6f487497cda76b51bfc406",
+      "timestamp_us": 1532402936699359,
+      "original_lidar_points": 34688,
+      "grae_boxes": 37,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 19,
+      "sample_token": "b26e791522294bec90f86fd72226e35c",
+      "timestamp_us": 1532402937198682,
+      "original_lidar_points": 34688,
+      "grae_boxes": 37,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 20,
+      "sample_token": "c844bf5a9f2243ff8f4bf2c85fe218ff",
+      "timestamp_us": 1532402937698000,
+      "original_lidar_points": 34688,
+      "grae_boxes": 35,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 21,
+      "sample_token": "fedfb3a6cb804635a0f47143f9ca8d6f",
+      "timestamp_us": 1532402938197897,
+      "original_lidar_points": 34720,
+      "grae_boxes": 37,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 22,
+      "sample_token": "965f6af5a92449348409029a5f048a38",
+      "timestamp_us": 1532402938647444,
+      "original_lidar_points": 34688,
+      "grae_boxes": 36,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 23,
+      "sample_token": "4711bcd34644420da8bc77163431888e",
+      "timestamp_us": 1532402939147334,
+      "original_lidar_points": 34720,
+      "grae_boxes": 29,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 24,
+      "sample_token": "a34fabc7aa674713b71f98ec541eb2d4",
+      "timestamp_us": 1532402939697511,
+      "original_lidar_points": 34752,
+      "grae_boxes": 28,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 25,
+      "sample_token": "c78067571d104caba7c568a847d56971",
+      "timestamp_us": 1532402940197958,
+      "original_lidar_points": 34720,
+      "grae_boxes": 30,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 26,
+      "sample_token": "4246e57f018745c9b2bc68feb3d71b58",
+      "timestamp_us": 1532402940797343,
+      "original_lidar_points": 34720,
+      "grae_boxes": 25,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 27,
+      "sample_token": "a7acb150914b40bdad9a2dc4e657cbf9",
+      "timestamp_us": 1532402941297218,
+      "original_lidar_points": 34720,
+      "grae_boxes": 32,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 28,
+      "sample_token": "0cd661df01aa40c3bb3a773ba86f753a",
+      "timestamp_us": 1532402941797653,
+      "original_lidar_points": 34752,
+      "grae_boxes": 26,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 29,
+      "sample_token": "378a3a3e9af346308ab9dff8ced46d9c",
+      "timestamp_us": 1532402942197463,
+      "original_lidar_points": 34720,
+      "grae_boxes": 20,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 30,
+      "sample_token": "eef55c3b48f34d949959b45130ee293a",
+      "timestamp_us": 1532402942697870,
+      "original_lidar_points": 34720,
+      "grae_boxes": 22,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 31,
+      "sample_token": "5fda58ee3ae44ab9b4bbac7a2de66c27",
+      "timestamp_us": 1532402943197769,
+      "original_lidar_points": 34720,
+      "grae_boxes": 21,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 32,
+      "sample_token": "919e3c4cec934168a3152077a9adcbea",
+      "timestamp_us": 1532402943697655,
+      "original_lidar_points": 34720,
+      "grae_boxes": 24,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 33,
+      "sample_token": "b73152cab88f49d9ba195da81fde1809",
+      "timestamp_us": 1532402944198088,
+      "original_lidar_points": 34752,
+      "grae_boxes": 22,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 34,
+      "sample_token": "6aa6fa91e0d1492e812eb7e57c47df6e",
+      "timestamp_us": 1532402944697931,
+      "original_lidar_points": 34720,
+      "grae_boxes": 21,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 35,
+      "sample_token": "aa581aac963a4fad848ac11fe66e8637",
+      "timestamp_us": 1532402945197276,
+      "original_lidar_points": 34688,
+      "grae_boxes": 19,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 36,
+      "sample_token": "67e5f88901214f3aa03d68e028185e22",
+      "timestamp_us": 1532402945697148,
+      "original_lidar_points": 34688,
+      "grae_boxes": 22,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 37,
+      "sample_token": "29e056fc277543c9bc42310b122c640e",
+      "timestamp_us": 1532402946297085,
+      "original_lidar_points": 34720,
+      "grae_boxes": 26,
+      "deim_cameras": 6
+    },
+    {
+      "frame": 38,
+      "sample_token": "ed5fc18c31904f96a8f0dbb99ff069c0",
+      "timestamp_us": 1532402946797517,
+      "original_lidar_points": 34720,
+      "grae_boxes": 22,
+      "deim_cameras": 6
+    }
+  ],
+  "tracking_sha256": "ceaf64c45d71bf7fddf7e56f55946262e31614104f9c238bf863c05bd6facb89",
+  "deim_sha256": "626e7ba54e9aad9b28c4c8d69c4d6264f33e934296d979003ecbc9e7740bf681",
+  "rrd_sha256": "a2da6ec6f0d16c8383b6d1bd00d4d0ba4e2cdc1903cfdfea9bd4b76827be9508",
+  "rrd": "/home/minglei/Desktop/CAR/perception_lab/outputs/rerun/deployment_4090/perception_2025/perception_2025.rrd",
+  "url": "http://127.0.0.1:9094/perception_2025/",
+  "missing_models": [
+    "mambafusion",
+    "harpnext"
+  ],
+  "trajectory_gap_clear": true,
+  "validation": {
+    "original_points_total": 1354112,
+    "coordinate_roundtrip_max_abs_m": 6.199485369506874e-13,
+    "recursive_clears": 351,
+    "expected_recursive_clears": 351,
+    "trajectory_gap_resets": 123,
+    "gt_separate_entity": true,
+    "deim_camera_pairs": 234,
+    "finite_points": true
+  },
+  "generated_at": "2026-10-13T04:04:48.615470+00:00"
+}

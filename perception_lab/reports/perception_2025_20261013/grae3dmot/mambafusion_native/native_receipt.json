@@ -1,0 +1,9 @@
+{
+  "input_family": "mambafusion_native",
+  "checkpoint_sha256": "9da45f9cfce1b4949bcd92d61193b88e09fea59c37f7b0a963249aad83728395",
+  "input_manifest_sha256": "05e44d64e586d7eba52ba9de9983ec114ff72b0b9d517efa5b2395475c8fda33",
+  "tracking_sha256": {
+    "scene0061": "8d8cd1196607657666d0effebeee65e7fffbc7ee71047b65a574e14fc37c5419",
+    "mini_val": "2df0cba926f07c41a1bcd4787e68b38f7247297ed47b242a2fd9b6e1b25badcd"
+  }
+}

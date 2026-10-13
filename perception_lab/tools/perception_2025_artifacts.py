@@ -10,6 +10,7 @@ def sha(path):
 def main():
  report=ROOT/'reports/perception_2025_20261013';items=[]
  paths=[('runs/perception_2025/deimv2/coco_predictions.json','envs/deimv2_compat_2025/bin/python tools/deimv2_2025.py --phase run'),('runs/perception_2025/deimv2/onnx_predictions.json','envs/deimv2_onnx_2025/bin/python tools/deimv2_onnx_2025.py'),('runs/perception_2025/deimv2/trt_predictions.json','envs/deimv2_trt_2025/bin/python tools/deimv2_trt_2025.py --phase validate'),('outputs/rerun/deployment_4090/perception_2025/perception_2025.rrd','envs/rerun/bin/python tools/perception_2025_visualize.py')]
+ paths.append(('outputs/rerun/deployment_4090/perception_2025/mini_val/perception_2025.rrd','envs/rerun/bin/python tools/perception_2025_visualize.py --split mini_val'))
  for path,command in paths:
   p=ROOT/path
   if p.exists():items.append(dict(path=path,bytes=p.stat().st_size,sha256=sha(p),reproduce_from_perception_lab=command,publication='local large intermediate; metrics/cases/representative images committed'))

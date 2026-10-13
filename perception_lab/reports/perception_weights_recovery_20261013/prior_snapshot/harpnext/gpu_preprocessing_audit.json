@@ -1,0 +1,151 @@
+{
+  "status": "partial",
+  "inference_frames": 0,
+  "checkpoint_loaded": false,
+  "torch": "2.1.2+cu118",
+  "torch_scatter": "2.1.2+pt21cu118",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "scatter_smoke": [
+    2.0,
+    8.0
+  ],
+  "frames": [
+    {
+      "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+      "original_points": 34688,
+      "cpu_processed_points": 53638,
+      "gpu_processed_points": 53653,
+      "original_prefix_equal": true,
+      "all_features_equal": false,
+      "original_projection_disagreements": 0,
+      "gpu_repeated_exact": [
+        false,
+        false,
+        false
+      ],
+      "gpu_gt_feature_independence": [
+        false,
+        false
+      ]
+    },
+    {
+      "sample_token": "b26e791522294bec90f86fd72226e35c",
+      "original_points": 34688,
+      "cpu_processed_points": 53291,
+      "gpu_processed_points": 53306,
+      "original_prefix_equal": true,
+      "all_features_equal": false,
+      "original_projection_disagreements": 1,
+      "gpu_repeated_exact": [
+        false,
+        false,
+        false
+      ],
+      "gpu_gt_feature_independence": [
+        false,
+        false
+      ]
+    },
+    {
+      "sample_token": "ed5fc18c31904f96a8f0dbb99ff069c0",
+      "original_points": 34720,
+      "cpu_processed_points": 54923,
+      "gpu_processed_points": 54938,
+      "original_prefix_equal": true,
+      "all_features_equal": false,
+      "original_projection_disagreements": 0,
+      "gpu_repeated_exact": [
+        false,
+        false,
+        false
+      ],
+      "gpu_gt_feature_independence": [
+        false,
+        false
+      ]
+    }
+  ],
+  "paired_preprocessing": {
+    "cpu": {
+      "rounds": 30,
+      "p50_ms": 63.53091649361886,
+      "p95_ms": 74.32784259362957,
+      "mean_ms": 65.78209983126726,
+      "std_ms": 8.589343843387754,
+      "raw_ms": [
+        63.38597599824425,
+        63.504600009764545,
+        63.627926996559836,
+        63.74453099851962,
+        63.4824780136114,
+        64.64565999340266,
+        64.56190599419642,
+        63.76593999448232,
+        63.80845898820553,
+        63.460115998168476,
+        63.40676000399981,
+        63.54199998895638,
+        63.249326005461626,
+        63.35712500731461,
+        63.216409005690366,
+        63.3977679972304,
+        63.093282995396294,
+        63.33502700726967,
+        63.08683600218501,
+        63.908475000062026,
+        63.38853600027505,
+        63.519832998281345,
+        63.57058299181517,
+        63.411421986529604,
+        63.63802899431903,
+        108.53246499027591,
+        81.76038999226876,
+        64.5332169951871,
+        64.2842999950517,
+        65.24361799529288
+      ]
+    },
+    "gpu": {
+      "rounds": 30,
+      "p50_ms": 3.137116495054215,
+      "p95_ms": 3.525092456402489,
+      "mean_ms": 3.107333400112111,
+      "std_ms": 0.25123936112458023,
+      "raw_ms": [
+        3.1768400076543912,
+        3.018707997398451,
+        3.177753009367734,
+        2.8118560003349558,
+        3.1699459941592067,
+        2.8723809955408797,
+        3.198577993316576,
+        2.910487004555762,
+        3.2608850015094504,
+        2.919634003774263,
+        3.156216989737004,
+        2.99419199291151,
+        3.25051300751511,
+        3.0695750028826296,
+        3.1980149942683056,
+        2.8575400065165013,
+        3.1180160003714263,
+        2.848125994205475,
+        3.197867001290433,
+        2.835229999618605,
+        3.222639992600307,
+        2.840411994839087,
+        3.344088006997481,
+        2.8218299994478,
+        3.2658080017426983,
+        2.9306840006029233,
+        3.944841999327764,
+        3.244733001338318,
+        3.673187005915679,
+        2.8894190036226064
+      ]
+    }
+  },
+  "timing_boundary": "raw file read + preprocessing + H2D + voxel/coor D2H, synchronized; no model/GT read/visualization; warm cache",
+  "peak_gpu_allocated_bytes": 30810112,
+  "adoption": "not adopted: numerical/semantic equivalence and model mIoU not validated"
+}

@@ -1,0 +1,19 @@
+{
+  "torch": "2.6.0+cu124",
+  "torchvision": "0.21.0+cu124",
+  "pillow": "12.3.0",
+  "images": [
+    {
+      "id": 397133,
+      "sha256": "fd651c2679315b138b702bc87dede27686f1bd5f173aa02ba062aa137d3df53a"
+    },
+    {
+      "id": 37777,
+      "sha256": "90c005538f6bb8249faf9c8947a391c2f123717bfeb89e971f83ebd6b493a565"
+    },
+    {
+      "id": 252219,
+      "sha256": "d7c24f9d140d5307ff328c645c166f8ea36baef36673ad231c80588710cb8191"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "selected_route": "existing Japan node then Singapore node through task-scoped localhost HTTP proxies 19098/19099",
+  "scope": "per-process environment only; global proxy/DNS untouched",
+  "tls_verification": true,
+  "credentials_published": false,
+  "source_files": "fixed author URLs in download_manifest/source_probe",
+  "actions_source_manifest": "relay_source_manifest.json",
+  "actions_run_id": "38360862641",
+  "mamba_hash_role": "independent full author-object SHA256 computed on GitHub Actions runner; not author-published checksum",
+  "failed_routes": [
+    "original configured proxy",
+    "system-DNS direct",
+    "real-DNS direct transient small-range success but repeated bulk TLS timeouts",
+    "GitHub artifact Azure Blob partial received then stalled",
+    "OAI mirror TLS timeout"
+  ],
+  "browser_environment_correction": "Playwright browser is local, not an independent remote download node. GitHub Actions runner is the independent remote source node.",
+  "updated_unix": 1791876395.2336018,
+  "weights_downloaded": true,
+  "artifact_payload_transfer_complete": false,
+  "source_hash_transfer_complete": true,
+  "source_hash_evidence": "relay_source_manifest.json",
+  "final_verification": "both local final files exact size; HARP official LFS hash matched; Mamba entire-file hash matched independent Actions source; CPU parsed then atomic install"
+}

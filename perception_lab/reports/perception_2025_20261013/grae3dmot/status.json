@@ -1,15 +1,10 @@
 {
   "model": "GRAE-3DMOT",
   "status": "partial",
+  "phase": "run",
+  "input_family": "mambafusion_native",
   "gpu_executed": true,
-  "input_family": "frozen_reference",
   "inference": "passed",
-  "strict_load": "passed",
   "official_evaluation": "passed",
-  "frames": 120,
-  "optimization": "30 paired rounds; outputs exact; native retained (order-dependent timing)",
-  "segmented_profile": "passed; corrected boundary, output exact equality",
-  "mambafusion_native": "pending detector native output",
-  "scope": "new tracker inference on frozen archived detections; no archived tracker result reuse",
-  "cpu_tests": "5 passed"
+  "frames": 120
 }

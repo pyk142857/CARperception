@@ -1,0 +1,18 @@
+diff --git a/core/harpnext_core/preprocessing/laserscan_cuda.py b/core/harpnext_core/preprocessing/laserscan_cuda.py
+index 34a8b05..14e53dd 100644
+--- a/core/harpnext_core/preprocessing/laserscan_cuda.py
++++ b/core/harpnext_core/preprocessing/laserscan_cuda.py
+@@ -264,11 +264,11 @@ class SemLaserScanCUDA(LaserScanCUDA):
+     super(SemLaserScanCUDA, self).reset()
+ 
+     # Semantic labels
+-    self.sem_label = torch.zeros((0, 1), dtype=torch.uint32, device=self.device)         # [m, 1]: label
++    self.sem_label = torch.zeros((0, 1), dtype=torch.int64, device=self.device)         # [m, 1]: label
+     self.sem_label_color = torch.zeros((0, 3), dtype=torch.float32, device=self.device)  # [m, 3]: color
+ 
+     # Instance labels
+-    self.inst_label = torch.zeros((0, 1), dtype=torch.uint32)         # [m, 1]: label
++    self.inst_label = torch.zeros((0, 1), dtype=torch.int64)         # [m, 1]: label
+     self.inst_label_color = torch.zeros((0, 3), dtype=torch.float32, device=self.device)  # [m, 3]: color
+ 
+     # Range projection color with semantic labels

@@ -1,0 +1,32 @@
+{
+  "status": "partial",
+  "images": 5000,
+  "gpu_device_used_peak_bytes": 1946157056,
+  "gpu_memory_scope": "device total incl other resident processes; sampled after inference, not isolated allocator peak",
+  "ram_peak_kib": 3962648,
+  "metrics": {
+    "AP": 0.5086092492645437,
+    "AP50": 0.6831529849749391,
+    "AP75": 0.5506000079960116,
+    "APs": 0.3137840120171939,
+    "APm": 0.5529172225114306,
+    "APl": 0.7031043343723733,
+    "AR1": 0.38317899169973346,
+    "AR10": 0.6413318271723744,
+    "AR100": 0.7032626235279232,
+    "ARs": 0.5281359486831309,
+    "ARm": 0.7548152157125466,
+    "ARl": 0.8635586008255811
+  },
+  "ap_drop": 8.196947381966524e-07,
+  "ap_budget_pass": true,
+  "ap_comparison_same_image_ids": true,
+  "geometry": "see complete diagnostics; candidate identities not assumed by row",
+  "provider_kernel_counts": {
+    "CUDAExecutionProvider": 7970,
+    "CPUExecutionProvider": 3045
+  },
+  "profiling_enabled": "warmup only; ended before measured sequence",
+  "timing_limit": "unpaired sequence, not optimization benchmark",
+  "predictions_sha256": "4fac7cb12652c5e4a52740e7b27267f7260bf614bbd7ecf03f6034e5145b330d"
+}

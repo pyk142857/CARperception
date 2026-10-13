@@ -1,0 +1,43 @@
+{
+  "peak_gpu_allocated_bytes": 702427136,
+  "peak_process_rss_kib": 1002340,
+  "dtype": "float32",
+  "tf32": false,
+  "batch_size": 1,
+  "warmup_forwards": 18,
+  "measured_frames": 404,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "timing_ms": {
+    "preproc_ms": {
+      "mean": 141.9943748241536,
+      "p50": 131.85377550689736,
+      "p95": 181.05270540763738,
+      "std": 20.35637482561526
+    },
+    "h2d_ms": {
+      "mean": 0.2811493641004718,
+      "p50": 0.27549600054044276,
+      "p95": 0.3500151440675836,
+      "std": 0.03594360452051883
+    },
+    "gpu_forward_ms": {
+      "mean": 12.035395584484139,
+      "p50": 12.136608123779297,
+      "p95": 13.082491445541383,
+      "std": 0.7298699243168565
+    },
+    "decode_d2h_ms": {
+      "mean": 0.8811333392070154,
+      "p50": 0.841022003442049,
+      "p95": 1.0762988975329788,
+      "std": 0.10510708518627458
+    },
+    "end_to_end_ms": {
+      "mean": 155.41534377913231,
+      "p50": 144.94530850060983,
+      "p95": 194.02236340320087,
+      "std": 20.412250780926843
+    }
+  },
+  "boundary": "CPU processor construction/raw read/preprocess/input fingerprint hashing + H2D + CUDA forward + point logits/prediction D2H; no evaluation or saving"
+}

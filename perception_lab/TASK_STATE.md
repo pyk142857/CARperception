@@ -1,18 +1,15 @@
 # TASK_STATE — mini 教学闭环已验证
 
-## 当前补充任务：恢复权重与完整评价（2026-10-13，指令已发布）
+## 当前补充任务：权重恢复与完整评价（2026-10-13）
 
-BOSS授权恢复HARP-NeXt、MambaFusion完整权重并完成整网评价。执行 [20261013_02](instruction/20261013_02_weights_recovery_full_evaluation.md)，基础候选仍遵循20261013_01。
-已核验HARP Hub nuScenes32×480文件/revision/大小/SHA256，以及Mamba作者usercontent首尾64KiB Range响应；[来源探测](reports/perception_weights_recovery_20261013/source_probe.json)。**尚未完成完整权重下载、严格加载或新GPU评价。**
-执行需包含Mamba官方DetectionEval、HARP原始点语义评价、新Mamba→GRAE和真实回放；保留既有partial及未采用优化结论，不把发布指令写成实验完成。
+执行 [20261013_02](instruction/20261013_02_weights_recovery_full_evaluation.md)。两份作者完整权重已下载、全文件哈希核对并严格加载；旧partial与158份恢复前小文件快照保留。
 
+- HARP：作者CPU预处理，404帧14,026,208原始点真实预测；39/81/404 mIoU=0.644201/0.552162/0.773849，官方16类混淆矩阵函数交叉核对一致。
+- Mamba：严格1403状态条目，真实39＋81帧；官方DetectionEval mAP/NDS分别0.727975/0.673878、0.588979/0.595775。原生重复候选噪声保留，严格一致性未通过；明确允许mini诊断评价，不声称确定性或优化等价。
+- 新Mamba→GRAE：39/81官方AMOTA=0.873912/0.849728、IDS=3/19；封存参考结果独立保留。状态/输入/预测/指标哈希绑定，失败不会复用旧成功。
+- 新39/81帧回放解码与浏览器验收通过，完整状态见[恢复验收](reports/perception_weights_recovery_20261013/status.json)与[回放记录](reports/perception_2025_20261013/visualization/status.json)。
 
-## 当前候选：2025方法限定（2026-10-13，partial）
-
-BOSS要求“找点2025的，旧的不考虑”。当前候选更新为DEIMv2-S、MambaFusion、GRAE-3DMOT、HARP-NeXt；20261012_02方案已被替代，不继续执行其候选部署。
-[当前指令](instruction/20261013_01_2025_perception_deployment.md) · [方案与资源](reports/perception_2025_20261013/plan.md)。
-本轮实测：DEIMv2-S COCO val5000 AP0.50861及mini六相机234张；GRAE封存检测输入39/81帧官方跟踪评价（mini_val AMOTA0.82296、IDS13）。HARP/Mamba完整权重缺失，整网与相应预测回放受阻。HARP预处理、Mamba CUDA算子实测不计为完整模型部署。后端、优化采用决定、真实失败案例与回放验收见[执行报告](reports/perception_2025_20261013/report.md)。既有旧模型仅保留历史状态。
-
+[恢复报告](reports/perception_weights_recovery_20261013/report.md) · [模型总报告](reports/perception_2025_20261013/report.md)。本轮不训练、不扩全量数据、不重跑旧模型/DEIM5000。既有DEIM native/ONNX/TRT结果保留；HARP GPU预处理未采用、DEIM FP16非默认的结论不因本轮改变。模型时延含诊断Hook且GPU存在其他项目任务，不能解释为独占基准。
 
 2026-09-23，BOSS 明确改为理解流程：仅用 nuScenes mini，现有模型优先，其余模型作为扩展。
 

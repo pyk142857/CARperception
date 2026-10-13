@@ -1,0 +1,176 @@
+{
+  "model": "mambafusion",
+  "block_hash_role": "locally computed completed exact-206 range hashes; not author-published checksums",
+  "final_whole_sha256": "d2454354b762a5a4b0b85af8b23c4b1f63da9357af7160aa313bc689a8d11ea6",
+  "total_bytes": 391545251,
+  "blocks": [
+    {
+      "start": 0,
+      "end": 16777215,
+      "size": 16777216,
+      "filename": "000000000000-000016777215.block",
+      "sha256": "82cbfa7a03eaf546f45354fd83ae7d9b8d06cd8c99b53b4b1060da92323a8854"
+    },
+    {
+      "start": 16777216,
+      "end": 33554431,
+      "size": 16777216,
+      "filename": "000016777216-000033554431.block",
+      "sha256": "88ff5426c2e094afc20bc3d10487d63de2d9462e1c072c3aedd5cd9d3bb7ae17"
+    },
+    {
+      "start": 33554432,
+      "end": 50331647,
+      "size": 16777216,
+      "filename": "000033554432-000050331647.block",
+      "sha256": "0361bd77bd37bbf0a4dc0544d63e649888482f33a23335c98f620d36d4e3f521"
+    },
+    {
+      "start": 50331648,
+      "end": 67108863,
+      "size": 16777216,
+      "filename": "000050331648-000067108863.block",
+      "sha256": "40e7cd442801b8b5a3f0d5fa0fc267476e45915fdd8b7885f43369a12b1b76af"
+    },
+    {
+      "start": 67108864,
+      "end": 83886079,
+      "size": 16777216,
+      "filename": "000067108864-000083886079.block",
+      "sha256": "215da3e7977b508417c2c83ee3a7b86f325b2a3153a84e1cef93c0fedc245b5a"
+    },
+    {
+      "start": 83886080,
+      "end": 100663295,
+      "size": 16777216,
+      "filename": "000083886080-000100663295.block",
+      "sha256": "75e525c96df82d2ef21bcbc7d95cacc92f7c46106dcb63138ccd9e6dd30b0737"
+    },
+    {
+      "start": 100663296,
+      "end": 117440511,
+      "size": 16777216,
+      "filename": "000100663296-000117440511.block",
+      "sha256": "340e4fe7353504108b46ace921eabecd55d4681456ad042aca0efc3a10aff10a"
+    },
+    {
+      "start": 117440512,
+      "end": 134217727,
+      "size": 16777216,
+      "filename": "000117440512-000134217727.block",
+      "sha256": "1964fb1ca01b2a32be40f3924bf48c0265651e37b3518fe705858f52cc94cc69"
+    },
+    {
+      "start": 134217728,
+      "end": 150994943,
+      "size": 16777216,
+      "filename": "000134217728-000150994943.block",
+      "sha256": "847e515dd305555ba52ad06574b3c6a4975ea0da76dbfd08c20e0824297f8039"
+    },
+    {
+      "start": 150994944,
+      "end": 167772159,
+      "size": 16777216,
+      "filename": "000150994944-000167772159.block",
+      "sha256": "6d21ebe1bdaf1c7804ebc26ce7bfc1861ff367adcaf8ee1e8148cf014b56b470"
+    },
+    {
+      "start": 167772160,
+      "end": 184549375,
+      "size": 16777216,
+      "filename": "000167772160-000184549375.block",
+      "sha256": "38d2fd4bc34dc059eeb80f3ef7096a4540f08c9d3b42182ccd8e527341cf9591"
+    },
+    {
+      "start": 184549376,
+      "end": 201326591,
+      "size": 16777216,
+      "filename": "000184549376-000201326591.block",
+      "sha256": "7ec0449739c58e607f033cc10ab70ff857faa568f17278a3df34955c9dfbf34c"
+    },
+    {
+      "start": 201326592,
+      "end": 218103807,
+      "size": 16777216,
+      "filename": "000201326592-000218103807.block",
+      "sha256": "195e8a4d6e229b96e72b922bab88fce5e3095205ad2de65bc1e1db9789d82c67"
+    },
+    {
+      "start": 218103808,
+      "end": 234881023,
+      "size": 16777216,
+      "filename": "000218103808-000234881023.block",
+      "sha256": "4ffb659eca99d1aac9dd4366ceeb992bb2df51a89488985c23f1e41cb5bbdeb1"
+    },
+    {
+      "start": 234881024,
+      "end": 251658239,
+      "size": 16777216,
+      "filename": "000234881024-000251658239.block",
+      "sha256": "8a22d5d5422e2164b97c2f8a98a43b64efb6f9d500dcc9773047b90b2d85821b"
+    },
+    {
+      "start": 251658240,
+      "end": 268435455,
+      "size": 16777216,
+      "filename": "000251658240-000268435455.block",
+      "sha256": "886756f035f2d80f712ca9c7f817172e17bcfe2ce3ad82bc8761f4e7d2cd044f"
+    },
+    {
+      "start": 268435456,
+      "end": 285212671,
+      "size": 16777216,
+      "filename": "000268435456-000285212671.block",
+      "sha256": "9965cba21ff1663ab4188a7b8521457ea45e7b50d1f90155e6b6fa0ed27bbccf"
+    },
+    {
+      "start": 285212672,
+      "end": 301989887,
+      "size": 16777216,
+      "filename": "000285212672-000301989887.block",
+      "sha256": "a209e79e20fc99809b81c81330318a74f5aa48976ce0c664160fa8cdd57ae005"
+    },
+    {
+      "start": 301989888,
+      "end": 318767103,
+      "size": 16777216,
+      "filename": "000301989888-000318767103.block",
+      "sha256": "7d122b4d4ec0fcae10b344bc31e99a8a5336843c85450747992814a80721076d"
+    },
+    {
+      "start": 318767104,
+      "end": 335544319,
+      "size": 16777216,
+      "filename": "000318767104-000335544319.block",
+      "sha256": "9d902d78ba39b7dd30a1b9764b7e0fce2661925bcff6a4038cc031ae0d84b080"
+    },
+    {
+      "start": 335544320,
+      "end": 352321535,
+      "size": 16777216,
+      "filename": "000335544320-000352321535.block",
+      "sha256": "90838354eee12d17fbf6e102eaa0ba7ed386c1de1ebdca3995ab314d6a3a42a1"
+    },
+    {
+      "start": 352321536,
+      "end": 369098751,
+      "size": 16777216,
+      "filename": "000352321536-000369098751.block",
+      "sha256": "7820b80fd6d2fad94f3e8e1e3ce621f1d661f26c1d95c0832ed17722f1aeaa59"
+    },
+    {
+      "start": 369098752,
+      "end": 385875967,
+      "size": 16777216,
+      "filename": "000369098752-000385875967.block",
+      "sha256": "3088bd3f71df5ef7865328a28ed3b87be9208fdfe5435fdb2826f24c555828ab"
+    },
+    {
+      "start": 385875968,
+      "end": 391545250,
+      "size": 5669283,
+      "filename": "000385875968-000391545250.block",
+      "sha256": "b27c902195f43d15a6805035ce1e89a3c87c7ce2a0254a16f3e96a5874a3e892"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "path": "perception_lab/checkpoints/harpnext_2025/ckpt_best.pth",
+  "bytes": 64865210,
+  "sha256": "6f7fc5a1c03e9123541458358b1c703babf37ffc0b8b4ea6beac6c9f8478a147",
+  "cpu_parse": {
+    "root_keys": [
+      "epoch",
+      "net",
+      "optim",
+      "scheduler",
+      "scaler",
+      "best_miou"
+    ],
+    "state_entries": 293,
+    "device": "cpu"
+  },
+  "atomic_install": true,
+  "installed_unix": 1791876399.4315033,
+  "source": {
+    "url": "https://huggingface.co/samir-abh/HARP-NeXt/resolve/c2cd3ce5940be23bfbc2d1cf22131fd2fd3dc149/harpnext-nuscenes-32x480/ckpt_best.pth?download=true",
+    "revision": "c2cd3ce5940be23bfbc2d1cf22131fd2fd3dc149",
+    "size": 64865210,
+    "sha256": "6f7fc5a1c03e9123541458358b1c703babf37ffc0b8b4ea6beac6c9f8478a147",
+    "filename": "ckpt_best.pth",
+    "key": "net"
+  },
+  "route": "author_direct_http_ranges_via_task_scoped_proxy",
+  "relay_sha256": null,
+  "author_hash_available": true,
+  "installer_reported_route": "proxy",
+  "task_proxy_routes": [
+    "Japan 127.0.0.1:19098"
+  ],
+  "relay_artifact_payload_used": false,
+  "independent_source_manifest": "relay_source_manifest.json",
+  "source_hash_comparison": "Hub LFS official hash and Actions source hash agree"
+}

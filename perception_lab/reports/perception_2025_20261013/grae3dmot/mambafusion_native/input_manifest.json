@@ -1,0 +1,634 @@
+{
+  "input_family": "mambafusion_native",
+  "origin": "new_measured",
+  "reader_fields": "predicted global translation/wlh/quaternion/xy_velocity/score/class and scene/sample/timestamp only",
+  "gt_tracking_id": "sentinel -1; future/GT fields excluded",
+  "nms": "author SimpleTrack IoU=.1, seven tracking classes; author val score>=.1",
+  "splits": [
+    {
+      "split": "scene0061",
+      "detection_path": "/home/minglei/Desktop/CAR/perception_lab/reports/perception_2025_20261013/mambafusion/scene0061_predictions.json",
+      "sha256": "985241700c321a409acba4c46e7800239b793998530ee11ae613ca40feddd5a1",
+      "frames": 39,
+      "detections_before_class_nms_score_filter": 5639,
+      "inference_detections": 1785,
+      "scene_count": 1,
+      "timestamp_deltas_seconds": [
+        0.4998960494995117,
+        0.5502011775970459,
+        0.49930477142333984,
+        0.5004441738128662,
+        0.4548039436340332,
+        0.4957239627838135,
+        0.5501859188079834,
+        0.49932217597961426,
+        0.4998819828033447,
+        0.4495689868927002,
+        0.49932003021240234,
+        0.49985790252685547,
+        0.4998891353607178,
+        0.550203800201416,
+        0.5009860992431641,
+        0.5004041194915771,
+        0.5010168552398682,
+        0.5003969669342041,
+        0.49932312965393066,
+        0.49931788444519043,
+        0.4998970031738281,
+        0.44954705238342285,
+        0.4998900890350342,
+        0.5501768589019775,
+        0.5004470348358154,
+        0.5993850231170654,
+        0.4998750686645508,
+        0.5004348754882812,
+        0.3998100757598877,
+        0.5004069805145264,
+        0.49989891052246094,
+        0.49988603591918945,
+        0.5004329681396484,
+        0.49984312057495117,
+        0.499345064163208,
+        0.49987196922302246,
+        0.5999369621276855,
+        0.500432014465332
+      ],
+      "packets_sha256": "9680b0d03e49cc78be200a9abe3b99602312123adbf8e12667b9fbbbe7d5c549",
+      "cpu_reader_nms_timings": [
+        {
+          "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+          "nms_reader_ms": 327.6373910048278
+        },
+        {
+          "sample_token": "39586f9d59004284a7114a68825e8eec",
+          "nms_reader_ms": 57.64920300862286
+        },
+        {
+          "sample_token": "356d81f38dd9473ba590f39e266f54e5",
+          "nms_reader_ms": 73.13421700382605
+        },
+        {
+          "sample_token": "e0845f5322254dafadbbed75aaa07969",
+          "nms_reader_ms": 89.00591799465474
+        },
+        {
+          "sample_token": "c923fe08b2ff4e27975d2bf30934383b",
+          "nms_reader_ms": 62.70189699716866
+        },
+        {
+          "sample_token": "f1e3d9d08f044c439ce86a2d6fcca57b",
+          "nms_reader_ms": 68.47956200363114
+        },
+        {
+          "sample_token": "4f545737bf3347fbbc9af60b0be9a963",
+          "nms_reader_ms": 77.26109698705841
+        },
+        {
+          "sample_token": "7626dde27d604ac28a0240bdd54eba7a",
+          "nms_reader_ms": 106.3317929947516
+        },
+        {
+          "sample_token": "be99ffc878b24aca8956bbb4e0f97d0c",
+          "nms_reader_ms": 97.64557200833224
+        },
+        {
+          "sample_token": "9813c23a5f1448b09bb7910fea9baf20",
+          "nms_reader_ms": 65.20087200624403
+        },
+        {
+          "sample_token": "023c4df2d451409881d8e6ea82f14704",
+          "nms_reader_ms": 68.11126800312195
+        },
+        {
+          "sample_token": "c235638ed66145988d17f9d0601923f2",
+          "nms_reader_ms": 77.61574200412724
+        },
+        {
+          "sample_token": "bc3c8a953f6b4dcdb77b521d89f3d9d5",
+          "nms_reader_ms": 76.7592359916307
+        },
+        {
+          "sample_token": "1e3d79dae62742a0ad64c91679863358",
+          "nms_reader_ms": 102.81646699877456
+        },
+        {
+          "sample_token": "2afb9d32310e4546a71cbe432911eca2",
+          "nms_reader_ms": 86.26017799542751
+        },
+        {
+          "sample_token": "cd21dbfc3bd749c7b10a5c42562e0c42",
+          "nms_reader_ms": 75.0945880135987
+        },
+        {
+          "sample_token": "88449a5cb1644a199c1c11f6ac034867",
+          "nms_reader_ms": 90.61895099875983
+        },
+        {
+          "sample_token": "2ff86dc19c4644a1a88ce5ba848f56e5",
+          "nms_reader_ms": 97.35007199924439
+        },
+        {
+          "sample_token": "bf2938e43c6f487497cda76b51bfc406",
+          "nms_reader_ms": 108.38562500430271
+        },
+        {
+          "sample_token": "b26e791522294bec90f86fd72226e35c",
+          "nms_reader_ms": 76.75359000859316
+        },
+        {
+          "sample_token": "c844bf5a9f2243ff8f4bf2c85fe218ff",
+          "nms_reader_ms": 89.98870699724648
+        },
+        {
+          "sample_token": "fedfb3a6cb804635a0f47143f9ca8d6f",
+          "nms_reader_ms": 59.58463900606148
+        },
+        {
+          "sample_token": "965f6af5a92449348409029a5f048a38",
+          "nms_reader_ms": 56.71876900305506
+        },
+        {
+          "sample_token": "4711bcd34644420da8bc77163431888e",
+          "nms_reader_ms": 58.30627999966964
+        },
+        {
+          "sample_token": "a34fabc7aa674713b71f98ec541eb2d4",
+          "nms_reader_ms": 39.9945949902758
+        },
+        {
+          "sample_token": "c78067571d104caba7c568a847d56971",
+          "nms_reader_ms": 59.140384997590445
+        },
+        {
+          "sample_token": "4246e57f018745c9b2bc68feb3d71b58",
+          "nms_reader_ms": 53.80086900549941
+        },
+        {
+          "sample_token": "a7acb150914b40bdad9a2dc4e657cbf9",
+          "nms_reader_ms": 44.14893400098663
+        },
+        {
+          "sample_token": "0cd661df01aa40c3bb3a773ba86f753a",
+          "nms_reader_ms": 49.76912100391928
+        },
+        {
+          "sample_token": "378a3a3e9af346308ab9dff8ced46d9c",
+          "nms_reader_ms": 64.50774898985401
+        },
+        {
+          "sample_token": "eef55c3b48f34d949959b45130ee293a",
+          "nms_reader_ms": 70.81345900951419
+        },
+        {
+          "sample_token": "5fda58ee3ae44ab9b4bbac7a2de66c27",
+          "nms_reader_ms": 41.433755002799444
+        },
+        {
+          "sample_token": "919e3c4cec934168a3152077a9adcbea",
+          "nms_reader_ms": 39.31199701037258
+        },
+        {
+          "sample_token": "b73152cab88f49d9ba195da81fde1809",
+          "nms_reader_ms": 40.81123998912517
+        },
+        {
+          "sample_token": "6aa6fa91e0d1492e812eb7e57c47df6e",
+          "nms_reader_ms": 46.60541799967177
+        },
+        {
+          "sample_token": "aa581aac963a4fad848ac11fe66e8637",
+          "nms_reader_ms": 35.416359998635016
+        },
+        {
+          "sample_token": "67e5f88901214f3aa03d68e028185e22",
+          "nms_reader_ms": 44.11230700497981
+        },
+        {
+          "sample_token": "29e056fc277543c9bc42310b122c640e",
+          "nms_reader_ms": 71.63867399503943
+        },
+        {
+          "sample_token": "ed5fc18c31904f96a8f0dbb99ff069c0",
+          "nms_reader_ms": 61.86482100747526
+        }
+      ]
+    },
+    {
+      "split": "mini_val",
+      "detection_path": "/home/minglei/Desktop/CAR/perception_lab/reports/perception_2025_20261013/mambafusion/mini_val_predictions.json",
+      "sha256": "4211c573e54e09bdd8e4df3d81326513f4b4b9d2593c70471c16b08ac2b39a05",
+      "frames": 81,
+      "detections_before_class_nms_score_filter": 11219,
+      "inference_detections": 4795,
+      "scene_count": 2,
+      "timestamp_deltas_seconds": [
+        0.5004348754882812,
+        0.49986815452575684,
+        0.4998760223388672,
+        0.5004229545593262,
+        0.5004379749298096,
+        0.5004360675811768,
+        0.49986696243286133,
+        0.4998910427093506,
+        0.4993269443511963,
+        0.49986886978149414,
+        0.49987006187438965,
+        0.4998760223388672,
+        0.399259090423584,
+        0.4998738765716553,
+        0.49988603591918945,
+        0.4998509883880615,
+        0.45009803771972656,
+        0.5004448890686035,
+        0.5004091262817383,
+        0.500432014465332,
+        0.5502018928527832,
+        0.5019421577453613,
+        0.49837183952331543,
+        0.4998610019683838,
+        0.49933600425720215,
+        0.49987316131591797,
+        0.49988389015197754,
+        0.44955992698669434,
+        0.5501871109008789,
+        0.4998970031738281,
+        0.499859094619751,
+        0.49987292289733887,
+        0.5004470348358154,
+        0.500432014465332,
+        0.5999608039855957,
+        0.4003431797027588,
+        0.4998788833618164,
+        0.5009880065917969,
+        0.4993109703063965,
+        0.4998748302459717,
+        0.5004169940948486,
+        0.40035319328308105,
+        0.4999208450317383,
+        0.4992561340332031,
+        0.49988889694213867,
+        0.49931907653808594,
+        0.5004479885101318,
+        0.500417947769165,
+        0.5004160404205322,
+        0.5004410743713379,
+        0.5004229545593262,
+        0.4998810291290283,
+        0.4998748302459717,
+        0.4993271827697754,
+        0.5004408359527588,
+        0.49985313415527344,
+        0.49991798400878906,
+        0.49929285049438477,
+        0.49930906295776367,
+        0.49988698959350586,
+        0.5004210472106934,
+        0.49987292289733887,
+        0.5006210803985596,
+        0.5002570152282715,
+        0.5004239082336426,
+        0.500432014465332,
+        0.5010011196136475,
+        0.4998328685760498,
+        0.49988508224487305,
+        0.49932098388671875,
+        0.4998810291290283,
+        0.49987101554870605,
+        0.4993250370025635,
+        0.49987196922302246,
+        0.49992990493774414,
+        0.4998440742492676,
+        0.4998800754547119,
+        0.5004220008850098,
+        0.500452995300293
+      ],
+      "packets_sha256": "85fba9112c777485268e116fb22d4dcee3a6533de60b70e2421d0abc547b6291",
+      "cpu_reader_nms_timings": [
+        {
+          "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+          "nms_reader_ms": 187.21370300045237
+        },
+        {
+          "sample_token": "3950bd41f74548429c0f7700ff3d8269",
+          "nms_reader_ms": 151.36727399658412
+        },
+        {
+          "sample_token": "c5f58c19249d4137ae063b0e9ecd8b8e",
+          "nms_reader_ms": 153.71590400172863
+        },
+        {
+          "sample_token": "700c1a25559b4433be532de3475e58a9",
+          "nms_reader_ms": 170.83747900323942
+        },
+        {
+          "sample_token": "747aa46b9a4641fe90db05d97db2acea",
+          "nms_reader_ms": 202.77338899904862
+        },
+        {
+          "sample_token": "f4f86af4da3b49e79497deda5c5f223a",
+          "nms_reader_ms": 208.1351319939131
+        },
+        {
+          "sample_token": "6832e717621341568c759151b5974512",
+          "nms_reader_ms": 195.97557099768892
+        },
+        {
+          "sample_token": "c59e60042a8643e899008da2e446acca",
+          "nms_reader_ms": 208.21672599413432
+        },
+        {
+          "sample_token": "fa65a298c01f44e7a182bbf9e5fe3697",
+          "nms_reader_ms": 253.5870510037057
+        },
+        {
+          "sample_token": "a98fba72bde9433fb882032d18aedb2e",
+          "nms_reader_ms": 193.14127499819733
+        },
+        {
+          "sample_token": "b6b0d9f2f2e14a3aaa2c8aedeb1edb69",
+          "nms_reader_ms": 239.575469007832
+        },
+        {
+          "sample_token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+          "nms_reader_ms": 184.34972199611366
+        },
+        {
+          "sample_token": "0d0700a2284e477db876c3ee1d864668",
+          "nms_reader_ms": 168.15530801250134
+        },
+        {
+          "sample_token": "de7593d76648450e947ba0c203dee1b0",
+          "nms_reader_ms": 147.52778699039482
+        },
+        {
+          "sample_token": "f753d3f87e5b40af87ff2cbf7c8e7082",
+          "nms_reader_ms": 163.10334199806675
+        },
+        {
+          "sample_token": "b22fa0b3c34f47b6a360b60f35d5d567",
+          "nms_reader_ms": 160.98017900367267
+        },
+        {
+          "sample_token": "0a0d6b8c2e884134a3b48df43d54c36a",
+          "nms_reader_ms": 150.67047299817204
+        },
+        {
+          "sample_token": "8e9c2cba0ee74056aa3746e8391d54a9",
+          "nms_reader_ms": 191.01113700889982
+        },
+        {
+          "sample_token": "fdc39b23ab4242eda6ec5e1e6574fe33",
+          "nms_reader_ms": 162.9968769993866
+        },
+        {
+          "sample_token": "9ee4020153674b9e9943d395ff8cfdf3",
+          "nms_reader_ms": 144.3294450000394
+        },
+        {
+          "sample_token": "5b03af7a953245b5a3b23191ed4da62a",
+          "nms_reader_ms": 167.67193100531586
+        },
+        {
+          "sample_token": "d0ecf474e0e64950aa265cd44b9c9d75",
+          "nms_reader_ms": 142.72101699316408
+        },
+        {
+          "sample_token": "456ec36cb4a44ca78f36fbd90c0c34fa",
+          "nms_reader_ms": 140.29293099883944
+        },
+        {
+          "sample_token": "6bfd42cf0aba4f1a94ec11fa43e2dd92",
+          "nms_reader_ms": 125.38015301106498
+        },
+        {
+          "sample_token": "0af0feb5b1394b928dd13d648de898f5",
+          "nms_reader_ms": 108.6836069880519
+        },
+        {
+          "sample_token": "61d9340c5ad8418dafe7a4af1b96e6b9",
+          "nms_reader_ms": 134.93442299659364
+        },
+        {
+          "sample_token": "9e7683e8586542a1b6032980c45f15ce",
+          "nms_reader_ms": 113.60055199475028
+        },
+        {
+          "sample_token": "cc57c1ea80fe46a7abddfdb15654c872",
+          "nms_reader_ms": 114.30295699392445
+        },
+        {
+          "sample_token": "4cf5d6c3f6ab42aab23f67b5a9782d1a",
+          "nms_reader_ms": 138.25431899749674
+        },
+        {
+          "sample_token": "6d9984d09d52479e837da2fd09e192cc",
+          "nms_reader_ms": 116.45674900501035
+        },
+        {
+          "sample_token": "38a28a3aaf2647f2a8c0e90e31267bf8",
+          "nms_reader_ms": 90.4179730132455
+        },
+        {
+          "sample_token": "6402fd1ffaf041d0b9162bd92a7ba0a2",
+          "nms_reader_ms": 82.6408349967096
+        },
+        {
+          "sample_token": "ce94ef7a0522468e81c0e2b3a2f1e12d",
+          "nms_reader_ms": 106.72987799625844
+        },
+        {
+          "sample_token": "9fcdc52b791045e99c623c5fc643331f",
+          "nms_reader_ms": 80.14751000155229
+        },
+        {
+          "sample_token": "1c9a906c40f6417bbe1cea06d6e55501",
+          "nms_reader_ms": 88.58698500262108
+        },
+        {
+          "sample_token": "a771effa2a2648d78096c3e92b95b129",
+          "nms_reader_ms": 99.09864800283685
+        },
+        {
+          "sample_token": "b9ea04a6121d4a8bb00199b885aa5ef0",
+          "nms_reader_ms": 90.364616989973
+        },
+        {
+          "sample_token": "87e772078a494d42bd34cd16172808bc",
+          "nms_reader_ms": 72.14954499795567
+        },
+        {
+          "sample_token": "f40544fd4f5d42abbcfa948eeaf86850",
+          "nms_reader_ms": 90.45748399512377
+        },
+        {
+          "sample_token": "281b92269fd648d4b52d06ac06ca6d65",
+          "nms_reader_ms": 70.54039200011175
+        },
+        {
+          "sample_token": "b5989651183643369174912bc5641d3b",
+          "nms_reader_ms": 116.37246700411197
+        },
+        {
+          "sample_token": "0bb62a68055249e381b039bf54b0ccf8",
+          "nms_reader_ms": 137.94864399824291
+        },
+        {
+          "sample_token": "07fad91090c746ccaa1b2bdb55329e20",
+          "nms_reader_ms": 121.35506600316148
+        },
+        {
+          "sample_token": "ae5004bf4ebb4db0a84cb3c27bd398d1",
+          "nms_reader_ms": 123.85938000807073
+        },
+        {
+          "sample_token": "ac8b4d49731d43289579f014cb7c97ef",
+          "nms_reader_ms": 109.19856101099867
+        },
+        {
+          "sample_token": "c1eed31234b94e9f8e22fbf3428b0ac2",
+          "nms_reader_ms": 119.60179099696688
+        },
+        {
+          "sample_token": "edba7d0cf1c64d2a9c8a5ebddab507a9",
+          "nms_reader_ms": 105.91213899897411
+        },
+        {
+          "sample_token": "a5afebb0aa5e4d7c95665788ce51ec58",
+          "nms_reader_ms": 102.05452299851459
+        },
+        {
+          "sample_token": "5b7cb170eee6468aa1fdbd3abcf63c5a",
+          "nms_reader_ms": 102.92339099396486
+        },
+        {
+          "sample_token": "d8251bbc2105497ab8ec80827d4429aa",
+          "nms_reader_ms": 125.31359599961434
+        },
+        {
+          "sample_token": "048a45dd2cf54aa5808d8ccc85731d44",
+          "nms_reader_ms": 133.46068499959074
+        },
+        {
+          "sample_token": "858a1ece22cf45d9bc71e42336604b78",
+          "nms_reader_ms": 140.03392300219275
+        },
+        {
+          "sample_token": "372725a4b00e49c78d6d0b1c4a38b6e0",
+          "nms_reader_ms": 177.2585869912291
+        },
+        {
+          "sample_token": "61a7bd24f88a46c2963280d8b13ac675",
+          "nms_reader_ms": 142.73859500826802
+        },
+        {
+          "sample_token": "609d5177362340458a3bfd4949cd1e64",
+          "nms_reader_ms": 125.29158098914195
+        },
+        {
+          "sample_token": "b1303058fa624645b753d7283d70de45",
+          "nms_reader_ms": 168.42745599569753
+        },
+        {
+          "sample_token": "a19a80c905674faab7203a3a4e0f5246",
+          "nms_reader_ms": 116.95974599570036
+        },
+        {
+          "sample_token": "b6c420c3a5bd4a219b1cb82ee5ea0aa7",
+          "nms_reader_ms": 126.47579199983738
+        },
+        {
+          "sample_token": "8092909473464f80b9f791a4d31ddcb8",
+          "nms_reader_ms": 119.77114800538402
+        },
+        {
+          "sample_token": "e174cb43655f49dab7ffa27b973670e3",
+          "nms_reader_ms": 83.38956801162567
+        },
+        {
+          "sample_token": "6ff9723a60bf4e14b328b3b19f04dc32",
+          "nms_reader_ms": 83.13259200076573
+        },
+        {
+          "sample_token": "06be0e3b665c44fa8d17d9f4770bdf9c",
+          "nms_reader_ms": 90.25040699634701
+        },
+        {
+          "sample_token": "9150678870764c1b87a649a25939c61b",
+          "nms_reader_ms": 98.30835100729018
+        },
+        {
+          "sample_token": "8573a885a7cb41d185c05029eeb9a54e",
+          "nms_reader_ms": 132.6148339867359
+        },
+        {
+          "sample_token": "55c258972acb4300a3a6077a531ab050",
+          "nms_reader_ms": 93.54032100236509
+        },
+        {
+          "sample_token": "44237858a539457da65822bfcf58c414",
+          "nms_reader_ms": 94.20689300168306
+        },
+        {
+          "sample_token": "8cd36e9531fb4eba8e6ac1d666c4641c",
+          "nms_reader_ms": 102.44046499428805
+        },
+        {
+          "sample_token": "7bebe3c9be714f02837f8617c56df122",
+          "nms_reader_ms": 138.08171500568278
+        },
+        {
+          "sample_token": "4b894442c95141f9affd731d9da7b43c",
+          "nms_reader_ms": 118.73573499906342
+        },
+        {
+          "sample_token": "e00dc15130dc44e796687baadd076ae4",
+          "nms_reader_ms": 102.30700600368436
+        },
+        {
+          "sample_token": "e63b83b436a0479db7362338cdfab118",
+          "nms_reader_ms": 138.82649000152014
+        },
+        {
+          "sample_token": "c567f9b8e9f34817acdc9c49d791c557",
+          "nms_reader_ms": 133.98950900591444
+        },
+        {
+          "sample_token": "8e352d4a6c6f40c8ad4f10a3d2c3f158",
+          "nms_reader_ms": 123.34605900105089
+        },
+        {
+          "sample_token": "841dd6709e9b4d7c9d6bf888f1fe6d7e",
+          "nms_reader_ms": 135.50345100520644
+        },
+        {
+          "sample_token": "e54b784a608644a2804fcf800c7499f7",
+          "nms_reader_ms": 145.06457500101533
+        },
+        {
+          "sample_token": "a1289b27ca1d41deb6fc982be9a3d03c",
+          "nms_reader_ms": 148.0730459879851
+        },
+        {
+          "sample_token": "e6e877f31dd447199b56cae07f86daad",
+          "nms_reader_ms": 184.68787900928874
+        },
+        {
+          "sample_token": "cb4e6195faad467094fbd4d0a9e960e9",
+          "nms_reader_ms": 123.6383879877394
+        },
+        {
+          "sample_token": "7f594234e8034228b1a7d727f1981e09",
+          "nms_reader_ms": 126.6019589966163
+        },
+        {
+          "sample_token": "9cdbf5ff7f294549aea0a4307e5d104a",
+          "nms_reader_ms": 147.766986003262
+        },
+        {
+          "sample_token": "b4ff30109dd14c89b24789dc5713cf8c",
+          "nms_reader_ms": 177.1569830016233
+        }
+      ]
+    }
+  ]
+}

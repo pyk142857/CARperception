@@ -1,0 +1,58 @@
+[
+  {
+    "time_unix": 1791876220.0066051,
+    "model": "harpnext",
+    "network": "proxy",
+    "request_range": "bytes=0-16777215",
+    "status": 206,
+    "bytes_received": 16777216,
+    "content_range": {
+      "start": 0,
+      "end": 16777215,
+      "total": 64865210
+    },
+    "result": "verified_complete_block"
+  },
+  {
+    "time_unix": 1791876245.9642396,
+    "model": "harpnext",
+    "network": "proxy",
+    "request_range": "bytes=16777216-33554431",
+    "status": 206,
+    "bytes_received": 16777216,
+    "content_range": {
+      "start": 16777216,
+      "end": 33554431,
+      "total": 64865210
+    },
+    "result": "verified_complete_block"
+  },
+  {
+    "time_unix": 1791876300.6737251,
+    "model": "harpnext",
+    "network": "proxy",
+    "request_range": "bytes=33554432-50331647",
+    "status": 206,
+    "bytes_received": 16777216,
+    "content_range": {
+      "start": 33554432,
+      "end": 50331647,
+      "total": 64865210
+    },
+    "result": "verified_complete_block"
+  },
+  {
+    "time_unix": 1791876343.2782981,
+    "model": "harpnext",
+    "network": "proxy",
+    "request_range": "bytes=50331648-64865209",
+    "status": 206,
+    "bytes_received": 14533562,
+    "content_range": {
+      "start": 50331648,
+      "end": 64865209,
+      "total": 64865210
+    },
+    "result": "verified_complete_block"
+  }
+]

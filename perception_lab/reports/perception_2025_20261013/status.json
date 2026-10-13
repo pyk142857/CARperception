@@ -31,191 +31,119 @@
     },
     "harpnext": {
       "method": "HARP-NeXt",
-      "status": "blocked_resource",
-      "phase": "run",
-      "reason": "Matching complete author nuScenes32x480 checkpoint not downloaded; see resource_manifest.json",
-      "inference_frames": 0,
-      "metrics": null,
-      "strict_load": null,
-      "gpu_ab": null,
-      "source_commit": "532df2659700ae870c0e0d4137a4d35bcc9903b9",
-      "checkpoint_path": "/home/minglei/Desktop/CAR/perception_lab/checkpoints/harpnext_2025/ckpt_best.pth",
-      "adoption": "pending strict checkpoint load and genuine model execution",
-      "implementation_scope": "Author network adapter implemented but untested without full checkpoint",
-      "preprocessing_audit": "partial; gpu_preprocessing_audit.json",
-      "original_point_audit": "passed;404frames/14026208points"
+      "status": "partial",
+      "inference_frames": 404,
+      "strict_load": {
+        "status": "passed",
+        "strict": true,
+        "missing_keys": [],
+        "unexpected_keys": [],
+        "uniform_module_prefix_removed": false,
+        "state_tensors": 293,
+        "checkpoint_sha256": "6f7fc5a1c03e9123541458358b1c703babf37ffc0b8b4ea6beac6c9f8478a147",
+        "parameter_count": 5381392,
+        "cold_start_load_seconds": 0.3035983349982416,
+        "source_commit": "532df2659700ae870c0e0d4137a4d35bcc9903b9",
+        "config_sha256": "431f7d91379dd9360494ced78258fe54277a292f1a6a513340f620fdb609a8b5",
+        "adapter_sha256": "cd1bca1d5c4f58bd25e54b385a6a020870ff92b4c98de07e3b28c1138dedf653",
+        "torch": "2.1.2+cu118",
+        "cuda": "11.8",
+        "gpu": "NVIDIA GeForce RTX 4090",
+        "source_files_sha256": {
+          "core/harpnext_core/backbone/harpnext_backbone.py": "2f2998e398aac6cf354bab61766f37b356076ea80155f61c446d42feb9a49d14",
+          "core/harpnext_core/decode_heads/aux_head.py": "fa5dd895db790e9e80684065f0701d9b09f01f66afbe979bdefc6cd2e110ce24",
+          "core/harpnext_core/decode_heads/harpnext_head.py": "063d1d2178238f3fd3ffb0791e135c6cb9def479654cde0e0a45aff31f6788bb",
+          "core/harpnext_core/encoder/features_encoder.py": "63358d7cae235ba8a21d55eae09bfc581cc23ebdae0505af3c6506e11578163c",
+          "core/harpnext_core/preprocessing/laserscan.py": "c6f9edd055e4b3095ae6f14cafce63eceb7735b37cf5d1907cb226da98da6955",
+          "core/harpnext_core/preprocessing/laserscan_cuda.py": "c5bcd10f0e820295b028b39a5d95ee9fb12a8502510f70ba22a2aaefcbcc8dbf",
+          "core/harpnext_core/segmentor/harpnext.py": "f28cdce6a31663e36b91d785bfa936ceebdd0a20196e4fb69280255dba323dc7",
+          "core/network.py": "3ccea07c746d7d4bc9ed84da8a1ab5026da4f5641c3c97075211e93ec5776116",
+          "datasets/__init__.py": "d383180ffee0e98042f290b167c5fee70fd039cef8b1faaf9053cff741be1026",
+          "datasets/nuscenes/processor.py": "f5db218dddbd932a49b116a231f4060e92fb9bb5c9670d714fb55731d3e8855d",
+          "datasets/pc_processors/harpnext_pcprocessor.py": "4b341aa335f03de7fc7874e007746c864335c22ca9d7a05c7964059d961ffbfa",
+          "datasets/semantickitti/instancecutmix.py": "719c499d7f984aba80789ae80da5c0014cfe4a8e96993bb163dd5b13efb9475b",
+          "datasets/semantickitti/processor.py": "95a62388339114a83328cdb8452b4a203d57d1b96c65f37fec2870e3e330fb2d",
+          "main.py": "dfc7a3bd146b1c492799d6d54aa2c031cf8f4d2d6127f0f9e34297484e41e5bf",
+          "trainer/manager.py": "6cd2a198c6959bc263eb82eea03294a5c029690e96345b52122e01b5487c8d16",
+          "trainer/scheduler.py": "4bec4400c678295e5f72610eac05aa19679a6367ddfef1fe826bd1597264839c",
+          "utils/loss/boundary_loss.py": "bc7c3fdbb4df3b6a0acd442516638b6d622869683ef4f68bfc2c17230925978a",
+          "utils/loss/lovasz.py": "5ccad8ab225cdec53850e1e05e71a44691dfa125cdc80b17262058f932cb680a",
+          "utils/metrics/semanticsegmentation.py": "711a18cd3293cbde6058c2185390f45f602008a70b10f46e0777e110a4e39990",
+          "utils/transformations/transforms.py": "0b51935b817bd0661b1435a0ea936d0084998696c31f666455164f93af7120ab"
+        },
+        "source_diff_sha256": "b4e36bc67aa5372a4d6b6e7d7e9354544bec36fbe5d5aa03e4f369c2d3d55395"
+      },
+      "metrics": "metrics.json",
+      "preprocessing": "native CPU; GPU candidate not adopted",
+      "remaining": [
+        "synchronized replay integration"
+      ],
+      "gpu_candidate": "not adopted; not required for native CPU-preprocessed inference",
+      "native_evaluation": "passed",
+      "status_normalization": "Runner-compatible partial: native evaluation passed, synchronized all-model replay pending; no model rerun"
     },
     "mambafusion": {
       "model": "MambaFusion",
-      "status": "blocked_resource",
+      "status": "partial",
       "phase": "run",
       "source": "new_measured",
-      "frames_inferred": 0,
-      "strict_load": null,
-      "official_metrics": null,
-      "blockers": [
-        "Complete author checkpoint unavailable: [Errno 2] No such file or directory: '/home/minglei/Desktop/CAR/perception_lab/checkpoints/mambafusion_2025/checkpoint_epoch_10.pth'",
-        "Drive streaming returned HTTP413: 391545251 bytes exceeds 268435456-byte connector limit; shell downloads incomplete."
-      ],
-      "gpu_inference_executed": false,
-      "gpu_operator_smoke": {
-        "torch": "2.1.2+cu118",
-        "runtime": "11.8",
-        "gpu": "NVIDIA GeForce RTX 4090",
-        "capability": [
-          8,
-          9
-        ],
-        "operators": {
-          "selective_scan_cuda_core": {
-            "passed": true,
-            "shape": [
-              1,
-              4,
-              16
-            ],
-            "max_abs_error_to_analytic_recurrence": 0.0
-          },
-          "selective_scan_cuda_oflex": {
-            "passed": true,
-            "shape": [
-              1,
-              4,
-              16
-            ],
-            "max_abs_error_to_analytic_recurrence": 0.0
-          },
-          "selective_scan_cuda_ndstate": {
-            "passed": true,
-            "shape": [
-              1,
-              4,
-              16
-            ],
-            "max_abs_error_to_analytic_recurrence": 0.0
-          },
-          "selective_scan_cuda": {
-            "passed": true,
-            "shape": [
-              1,
-              4,
-              16
-            ],
-            "max_abs_error_to_analytic_recurrence": 0.0
-          },
-          "iou3d_nms_cuda": {
-            "passed": true,
-            "iou": [
-              [
-                1.0,
-                0.0
-              ],
-              [
-                0.0,
-                1.0
-              ]
-            ]
-          },
-          "roiaware_pool3d_cuda": {
-            "passed": true,
-            "indices": [
-              [
-                0,
-                1,
-                -1
-              ]
-            ]
-          },
-          "flattened_window_cuda": {
-            "passed": true,
-            "outputs": [
-              {
-                "shape": [
-                  3
-                ],
-                "dtype": "torch.int64"
-              },
-              {
-                "shape": [
-                  3
-                ],
-                "dtype": "torch.int64"
-              },
-              {
-                "shape": [
-                  3,
-                  3
-                ],
-                "dtype": "torch.int64"
-              }
-            ]
-          },
-          "torch_scatter_mean": {
-            "passed": true,
-            "output": [
-              2.0,
-              5.0
-            ]
-          },
-          "spconv_submconv3d": {
-            "passed": true,
-            "output": [
-              [
-                3.0
-              ],
-              [
-                3.0
-              ]
-            ],
-            "scope": "unit operator with explicit all-one kernel, not detector inference"
-          },
-          "spconv_point_to_voxel": {
-            "passed": true,
-            "coordinates_zyx": [
-              [
-                20,
-                180,
-                183
-              ],
-              [
-                20,
-                180,
-                180
-              ]
-            ],
-            "point_counts": [
-              1,
-              2
-            ]
+      "frames_inferred": 120,
+      "strict_load": "passed",
+      "inference": "passed",
+      "official_metrics": {
+        "scene0061": {
+          "frames": 39,
+          "prediction_sha256": "985241700c321a409acba4c46e7800239b793998530ee11ae613ca40feddd5a1",
+          "metrics_sha256": "51a0f220cf9142b4dbf62b23c25d48d116bb7288b55bb4193703a3ce9b6a069d",
+          "mean_ap": 0.7279752319124936,
+          "nd_score": 0.6738776961599682,
+          "tp_errors": {
+            "trans_err": 0.2992746396588843,
+            "scale_err": 0.3229434525170288,
+            "orient_err": 0.3342022792129312,
+            "vel_err": 0.34461296327638985,
+            "attr_err": 0.6000658632975517
           }
         },
-        "peak_gpu_bytes": 15872
+        "mini_val": {
+          "frames": 81,
+          "prediction_sha256": "4211c573e54e09bdd8e4df3d81326513f4b4b9d2593c70471c16b08ac2b39a05",
+          "metrics_sha256": "473a4ca4cca8fe22823af036c9602d19e9e6c086ec1f3f4ce0763bae1014371b",
+          "mean_ap": 0.5889794050098823,
+          "nd_score": 0.5957750804833165,
+          "tp_errors": {
+            "trans_err": 0.3966954560190631,
+            "scale_err": 0.43013743983436237,
+            "orient_err": 0.44599896936902905,
+            "vel_err": 0.42439859684917647,
+            "attr_err": 0.28991575814461545
+          }
+        }
       },
-      "frames_preprocessed": 6,
-      "adoption": "not deployed; native model requires strict load and operator/frame validation"
+      "blockers": [],
+      "gpu_inference_executed": true,
+      "adoption": "native mini evaluation complete; repeat nondeterminism retained; no optimization adoption",
+      "official_evaluation": "passed",
+      "visualization": "passed",
+      "limitations": [
+        "Native repeat consistency budget failed; diagnostic continuation explicitly reviewed",
+        "Mini/pretraining overlap possible; not full validation",
+        "Instrumented timing and external GPU activity; not exclusive benchmark"
+      ]
     },
     "grae3dmot": {
       "model": "GRAE-3DMOT",
       "status": "partial",
+      "phase": "run",
+      "input_family": "mambafusion_native",
       "gpu_executed": true,
-      "input_family": "frozen_reference",
       "inference": "passed",
-      "strict_load": "passed",
       "official_evaluation": "passed",
-      "frames": 120,
-      "optimization": "30 paired rounds; outputs exact; native retained (order-dependent timing)",
-      "segmented_profile": "passed; corrected boundary, output exact equality",
-      "mambafusion_native": "pending detector native output",
-      "scope": "new tracker inference on frozen archived detections; no archived tracker result reuse",
-      "cpu_tests": "5 passed"
+      "frames": 120
     }
   },
-  "visualization": "partial",
+  "visualization": "passed",
   "source": "new_measured; frozen_reference detection inputs are reused_archive",
-  "blockers": [
-    "harpnext: blocked_resource; Matching complete author nuScenes32x480 checkpoint not downloaded; see resource_manifest.json",
-    "mambafusion: blocked_resource; [\"Complete author checkpoint unavailable: [Errno 2] No such file or directory: '/home/minglei/Desktop/CAR/perception_lab/checkpoints/mambafusion_2025/checkpoint_epoch_10.pth'\", 'Drive streaming returned HTTP413: 391545251 bytes exceeds 268435456-byte connector limit; shell downloads incomplete.']",
-    "GRAE MambaFusion input branch has no measured mini_val tracking output"
-  ],
+  "blockers": [],
   "training": false
 }

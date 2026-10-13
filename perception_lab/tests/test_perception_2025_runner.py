@@ -10,6 +10,17 @@ import run_perception_2025 as runner
 
 
 class RunnerRecovery(unittest.TestCase):
+    def test_recovery_dependency_cannot_use_old_files_after_launch_failure(self):
+        self.assertFalse(runner.recovery_dependency_ready({'mambafusion':{'status':'failed','runs':[{'returncode':127}]}}))
+        good={'returncode':0,'status':'partial','fresh_result':True}
+        self.assertTrue(runner.recovery_dependency_ready({'mambafusion':{'status':'partial','runs':[good,good]}}))
+        self.assertFalse(runner.recovery_dependency_ready({'mambafusion':{'status':'partial','runs':[good,dict(good,fresh_result=False)]}}))
+    def test_mamba_native_then_evaluate_and_new_tracking_family(self):
+        config={'environments':{'mambafusion':'env/native','grae3dmot':'env/track'},'tracking_input':'mambafusion_native'}
+        cmds=runner.commands(config,'mambafusion',Path('config'))
+        self.assertEqual([c[3] for c in cmds],['run','evaluate'])
+        self.assertEqual(cmds[1][0],'envs/nuscenes_eval/bin/python')
+        self.assertTrue(all('mambafusion_native' in c for c in runner.commands(config,'grae3dmot',Path('config'))))
     def test_ignored_archive_inside_parent_git_still_hashes_source(self):
         import subprocess
         subprocess.run(['git','init','-q',str(self.root)],check=True)

@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "upstream_commit": "d85c2feeb19207b20e42d50421afb11c095f3efa",
+  "files": [
+    {
+      "path": "pcdet/models/backbones_2d/base_bev_backbone.py",
+      "action": "already_applied",
+      "upstream_sha256": "49923055c5cec910fee86a559623b6aaf7d227e9a6b7bd21a23d086534ab2cc8",
+      "patched_sha256": "45b84de996bf35ca611825d137585d97995dfae36deb553687d1083a02307a40"
+    },
+    {
+      "path": "pcdet/datasets/dataset.py",
+      "action": "already_applied",
+      "upstream_sha256": "ae0c9902e34f667718845992d24c57934949f395465d1848306e092c9f4f9ece",
+      "patched_sha256": "1a0ef5f6135a4bbc81ad85d6220e2a5384b2602eb734110057562d62bae55e8c"
+    }
+  ]
+}

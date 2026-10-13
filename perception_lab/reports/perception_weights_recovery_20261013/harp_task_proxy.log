@@ -1,0 +1,30 @@
+{
+  "path": "perception_lab/checkpoints/harpnext_2025/ckpt_best.pth",
+  "bytes": 64865210,
+  "sha256": "6f7fc5a1c03e9123541458358b1c703babf37ffc0b8b4ea6beac6c9f8478a147",
+  "cpu_parse": {
+    "root_keys": [
+      "epoch",
+      "net",
+      "optim",
+      "scheduler",
+      "scaler",
+      "best_miou"
+    ],
+    "state_entries": 293,
+    "device": "cpu"
+  },
+  "atomic_install": true,
+  "installed_unix": 1791876399.4315033,
+  "source": {
+    "url": "https://huggingface.co/samir-abh/HARP-NeXt/resolve/c2cd3ce5940be23bfbc2d1cf22131fd2fd3dc149/harpnext-nuscenes-32x480/ckpt_best.pth?download=true",
+    "revision": "c2cd3ce5940be23bfbc2d1cf22131fd2fd3dc149",
+    "size": 64865210,
+    "sha256": "6f7fc5a1c03e9123541458358b1c703babf37ffc0b8b4ea6beac6c9f8478a147",
+    "filename": "ckpt_best.pth",
+    "key": "net"
+  },
+  "route": "proxy",
+  "relay_sha256": null,
+  "author_hash_available": true
+}

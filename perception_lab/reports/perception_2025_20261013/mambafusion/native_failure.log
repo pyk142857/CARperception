@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/minglei/Desktop/CAR/perception_lab/tools/mambafusion_2025.py", line 1000, in main
+    status = native_run()
+  File "/home/minglei/Desktop/CAR/perception_lab/tools/mambafusion_2025.py", line 541, in native_run
+    raise ValueError('Native repeat noise exceeds declared gate; inspect three-frame evidence before expansion')
+ValueError: Native repeat noise exceeds declared gate; inspect three-frame evidence before expansion

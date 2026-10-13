@@ -1,0 +1,370 @@
+[
+  {
+    "model": "DEIMv2-S native",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "AP",
+    "value": 0.5086100689592818,
+    "source": "new_measured"
+  },
+  {
+    "model": "DEIMv2-S native",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "AP50",
+    "value": 0.6831533654838128,
+    "source": "new_measured"
+  },
+  {
+    "model": "DEIMv2-S native",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "AP75",
+    "value": 0.5506000450744917,
+    "source": "new_measured"
+  },
+  {
+    "model": "DEIMv2-S native",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "APs",
+    "value": 0.3137841100273837,
+    "source": "new_measured"
+  },
+  {
+    "model": "DEIMv2-S native",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "APm",
+    "value": 0.5529168907219435,
+    "source": "new_measured"
+  },
+  {
+    "model": "DEIMv2-S native",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "APl",
+    "value": 0.7031043329781212,
+    "source": "new_measured"
+  },
+  {
+    "model": "DEIMv2-S native",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "AR1",
+    "value": 0.38317899169973346,
+    "source": "new_measured"
+  },
+  {
+    "model": "DEIMv2-S native",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "AR10",
+    "value": 0.6413325329882974,
+    "source": "new_measured"
+  },
+  {
+    "model": "DEIMv2-S native",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "AR100",
+    "value": 0.7032626776233042,
+    "source": "new_measured"
+  },
+  {
+    "model": "DEIMv2-S native",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "ARs",
+    "value": 0.5281377472442819,
+    "source": "new_measured"
+  },
+  {
+    "model": "DEIMv2-S native",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "ARm",
+    "value": 0.7548129305205904,
+    "source": "new_measured"
+  },
+  {
+    "model": "DEIMv2-S native",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "ARl",
+    "value": 0.8635586008255811,
+    "source": "new_measured"
+  },
+  {
+    "model": "DEIMv2-S onnx",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "AP",
+    "value": 0.5086092492645437,
+    "source": "new_measured"
+  },
+  {
+    "model": "DEIMv2-S onnx",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "AP50",
+    "value": 0.6831529849749391,
+    "source": "new_measured"
+  },
+  {
+    "model": "DEIMv2-S onnx",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "AP75",
+    "value": 0.5506000079960116,
+    "source": "new_measured"
+  },
+  {
+    "model": "DEIMv2-S onnx",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "APs",
+    "value": 0.3137840120171939,
+    "source": "new_measured"
+  },
+  {
+    "model": "DEIMv2-S onnx",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "APm",
+    "value": 0.5529172225114306,
+    "source": "new_measured"
+  },
+  {
+    "model": "DEIMv2-S onnx",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "APl",
+    "value": 0.7031043343723733,
+    "source": "new_measured"
+  },
+  {
+    "model": "DEIMv2-S onnx",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "AR1",
+    "value": 0.38317899169973346,
+    "source": "new_measured"
+  },
+  {
+    "model": "DEIMv2-S onnx",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "AR10",
+    "value": 0.6413318271723744,
+    "source": "new_measured"
+  },
+  {
+    "model": "DEIMv2-S onnx",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "AR100",
+    "value": 0.7032626235279232,
+    "source": "new_measured"
+  },
+  {
+    "model": "DEIMv2-S onnx",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "ARs",
+    "value": 0.5281359486831309,
+    "source": "new_measured"
+  },
+  {
+    "model": "DEIMv2-S onnx",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "ARm",
+    "value": 0.7548152157125466,
+    "source": "new_measured"
+  },
+  {
+    "model": "DEIMv2-S onnx",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "ARl",
+    "value": 0.8635586008255811,
+    "source": "new_measured"
+  },
+  {
+    "model": "DEIMv2-S tensorrt_fp16",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "AP",
+    "value": 0.5080690341495484,
+    "source": "new_measured"
+  },
+  {
+    "model": "DEIMv2-S tensorrt_fp16",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "AP50",
+    "value": 0.6829625032628075,
+    "source": "new_measured"
+  },
+  {
+    "model": "DEIMv2-S tensorrt_fp16",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "AP75",
+    "value": 0.5502467716829403,
+    "source": "new_measured"
+  },
+  {
+    "model": "DEIMv2-S tensorrt_fp16",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "APs",
+    "value": 0.3128785148806246,
+    "source": "new_measured"
+  },
+  {
+    "model": "DEIMv2-S tensorrt_fp16",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "APm",
+    "value": 0.5527847656113538,
+    "source": "new_measured"
+  },
+  {
+    "model": "DEIMv2-S tensorrt_fp16",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "APl",
+    "value": 0.7033714049065499,
+    "source": "new_measured"
+  },
+  {
+    "model": "DEIMv2-S tensorrt_fp16",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "AR1",
+    "value": 0.38326464029514684,
+    "source": "new_measured"
+  },
+  {
+    "model": "DEIMv2-S tensorrt_fp16",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "AR10",
+    "value": 0.6402406711741897,
+    "source": "new_measured"
+  },
+  {
+    "model": "DEIMv2-S tensorrt_fp16",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "AR100",
+    "value": 0.7023562674698743,
+    "source": "new_measured"
+  },
+  {
+    "model": "DEIMv2-S tensorrt_fp16",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "ARs",
+    "value": 0.5265892963959078,
+    "source": "new_measured"
+  },
+  {
+    "model": "DEIMv2-S tensorrt_fp16",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "ARm",
+    "value": 0.7528693569621931,
+    "source": "new_measured"
+  },
+  {
+    "model": "DEIMv2-S tensorrt_fp16",
+    "scope": "COCO val2017",
+    "samples": 5000,
+    "metric": "ARl",
+    "value": 0.8641657669451813,
+    "source": "new_measured"
+  },
+  {
+    "model": "GRAE-3DMOT",
+    "scope": "scene0061 frozen_reference",
+    "samples": 39,
+    "metric": "amota",
+    "value": 0.8625687017631094,
+    "source": "new_measured"
+  },
+  {
+    "model": "GRAE-3DMOT",
+    "scope": "scene0061 frozen_reference",
+    "samples": 39,
+    "metric": "amotp",
+    "value": 0.4048811070336119,
+    "source": "new_measured"
+  },
+  {
+    "model": "GRAE-3DMOT",
+    "scope": "scene0061 frozen_reference",
+    "samples": 39,
+    "metric": "ids",
+    "value": 5.0,
+    "source": "new_measured"
+  },
+  {
+    "model": "GRAE-3DMOT",
+    "scope": "scene0061 frozen_reference",
+    "samples": 39,
+    "metric": "fp",
+    "value": 67.0,
+    "source": "new_measured"
+  },
+  {
+    "model": "GRAE-3DMOT",
+    "scope": "scene0061 frozen_reference",
+    "samples": 39,
+    "metric": "fn",
+    "value": 104.0,
+    "source": "new_measured"
+  },
+  {
+    "model": "GRAE-3DMOT",
+    "scope": "mini_val frozen_reference",
+    "samples": 81,
+    "metric": "amota",
+    "value": 0.8229635568204605,
+    "source": "new_measured"
+  },
+  {
+    "model": "GRAE-3DMOT",
+    "scope": "mini_val frozen_reference",
+    "samples": 81,
+    "metric": "amotp",
+    "value": 0.43518577589429613,
+    "source": "new_measured"
+  },
+  {
+    "model": "GRAE-3DMOT",
+    "scope": "mini_val frozen_reference",
+    "samples": 81,
+    "metric": "ids",
+    "value": 13.0,
+    "source": "new_measured"
+  },
+  {
+    "model": "GRAE-3DMOT",
+    "scope": "mini_val frozen_reference",
+    "samples": 81,
+    "metric": "fp",
+    "value": 299.0,
+    "source": "new_measured"
+  },
+  {
+    "model": "GRAE-3DMOT",
+    "scope": "mini_val frozen_reference",
+    "samples": 81,
+    "metric": "fn",
+    "value": 400.0,
+    "source": "new_measured"
+  }
+]

@@ -1,0 +1,146 @@
+[
+  {
+    "start": 167772160,
+    "end": 184549375,
+    "total": 391545251,
+    "attempt": 0,
+    "time_unix": 1791877216.737953,
+    "route": "http://127.0.0.1:19099",
+    "status": 206,
+    "bytes_received": 16777216,
+    "content_range": {
+      "start": 167772160,
+      "end": 184549375,
+      "total": 391545251
+    },
+    "result": "verified_complete_block"
+  },
+  {
+    "start": 369098752,
+    "end": 385875967,
+    "total": 391545251,
+    "attempt": 0,
+    "time_unix": 1791877216.7426841,
+    "route": "http://127.0.0.1:19099",
+    "status": 206,
+    "bytes_received": 16777216,
+    "content_range": {
+      "start": 369098752,
+      "end": 385875967,
+      "total": 391545251
+    },
+    "result": "verified_complete_block"
+  },
+  {
+    "start": 352321536,
+    "end": 369098751,
+    "total": 391545251,
+    "attempt": 0,
+    "time_unix": 1791877216.7422538,
+    "route": "http://127.0.0.1:19099",
+    "status": 206,
+    "bytes_received": 16777216,
+    "content_range": {
+      "start": 352321536,
+      "end": 369098751,
+      "total": 391545251
+    },
+    "result": "verified_complete_block"
+  },
+  {
+    "start": 184549376,
+    "end": 201326591,
+    "total": 391545251,
+    "attempt": 0,
+    "time_unix": 1791877216.7388191,
+    "route": "http://127.0.0.1:19099",
+    "status": 206,
+    "bytes_received": 16777216,
+    "content_range": {
+      "start": 184549376,
+      "end": 201326591,
+      "total": 391545251
+    },
+    "result": "verified_complete_block"
+  },
+  {
+    "start": 335544320,
+    "end": 352321535,
+    "total": 391545251,
+    "attempt": 0,
+    "time_unix": 1791877216.741799,
+    "route": "http://127.0.0.1:19099",
+    "status": 206,
+    "bytes_received": 16777216,
+    "content_range": {
+      "start": 335544320,
+      "end": 352321535,
+      "total": 391545251
+    },
+    "result": "verified_complete_block"
+  },
+  {
+    "start": 301989888,
+    "end": 318767103,
+    "total": 391545251,
+    "attempt": 0,
+    "time_unix": 1791877216.7404988,
+    "route": "http://127.0.0.1:19099",
+    "status": 206,
+    "bytes_received": 16777216,
+    "content_range": {
+      "start": 301989888,
+      "end": 318767103,
+      "total": 391545251
+    },
+    "result": "verified_complete_block"
+  },
+  {
+    "start": 318767104,
+    "end": 335544319,
+    "total": 391545251,
+    "attempt": 0,
+    "time_unix": 1791877216.7409582,
+    "route": "http://127.0.0.1:19099",
+    "status": 206,
+    "bytes_received": 16777216,
+    "content_range": {
+      "start": 318767104,
+      "end": 335544319,
+      "total": 391545251
+    },
+    "result": "verified_complete_block"
+  },
+  {
+    "start": 201326592,
+    "end": 218103807,
+    "total": 391545251,
+    "attempt": 0,
+    "time_unix": 1791877216.739374,
+    "route": "http://127.0.0.1:19099",
+    "status": 206,
+    "bytes_received": 16777216,
+    "content_range": {
+      "start": 201326592,
+      "end": 218103807,
+      "total": 391545251
+    },
+    "result": "verified_complete_block"
+  },
+  {
+    "start": 385875968,
+    "end": 391545250,
+    "total": 391545251,
+    "attempt": 0,
+    "time_unix": 1791877234.8447442,
+    "route": "http://127.0.0.1:19099",
+    "status": 206,
+    "bytes_received": 5669283,
+    "content_range": {
+      "start": 385875968,
+      "end": 391545250,
+      "total": 391545251
+    },
+    "result": "verified_complete_block"
+  }
+]

@@ -46,6 +46,18 @@ class OriginalPointEvaluation(unittest.TestCase):
             with self.assertRaises(ValueError):
                 original_predictions(np.array([1, 2, 3]), np.array(indices), 3)
 
+    def test_official_devkit_same_confusion_with_absent_class(self):
+        import tempfile
+        from harpnext_2025 import official_crosscheck, save
+        hist = confusion(np.array([0, 0, 1, 255]), np.array([0, 1, 1, 3]))
+        with tempfile.TemporaryDirectory() as directory:
+            folder = Path(directory)
+            save(folder/'metrics.json', {'fixture': summarize(hist)})
+            result = official_crosscheck(folder)
+            self.assertTrue(result['splits']['fixture']['passed'])
+            self.assertEqual(result['splits']['fixture']['included_class_count'], 2)
+            self.assertEqual(result['splits']['fixture']['official_mean_iou'], .5)
+
     def test_metrics_do_not_reward_ignore_or_missing_classes(self):
         hist = confusion(np.array([0, 0, 1, 255]), np.array([0, 1, 1, 3]))
         result = summarize(hist)

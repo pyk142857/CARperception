@@ -1,0 +1,30 @@
+{
+  "status": "partial",
+  "images": 3,
+  "metrics": {
+    "AP": 0.508184570426948,
+    "AP50": 0.6485795801886967,
+    "AP75": 0.5970755703240295,
+    "APs": 0.3274567153143885,
+    "APm": 0.8392372570590392,
+    "APl": 0.7333333333333333,
+    "AR1": 0.3785964912280702,
+    "AR10": 0.5817543859649122,
+    "AR100": 0.6570175438596492,
+    "ARs": 0.5447222222222223,
+    "ARm": 0.8462962962962962,
+    "ARl": 0.7333333333333333
+  },
+  "ap_drop": null,
+  "ap_budget_pass": null,
+  "geometry": "see complete diagnostics; candidate identities not assumed by row",
+  "provider_kernel_counts": {
+    "CUDAExecutionProvider": 7970,
+    "CPUExecutionProvider": 3045
+  },
+  "profiling_enabled": "warmup only; ended before measured sequence",
+  "timing_limit": "unpaired sequence, not optimization benchmark",
+  "predictions_sha256": "91a178fe7941253fe6a483425c8466dd3df5468bb829b80bce4e4eed2652b186",
+  "ap_comparison_same_image_ids": false,
+  "correction": "Three-image smoke cannot compare AP with native 5000 images; superseded by full evaluation."
+}

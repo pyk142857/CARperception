@@ -1,0 +1,6 @@
+{
+  "device": "CPU",
+  "source": "saved original-point predictions; no model rerun",
+  "adapter_sha256": "dd9e25ff8478cd5172016b717d0cab60b178278db14acc683d20bd730a605815",
+  "change": "Reserve top margin for title and columns; inference implementation unchanged"
+}

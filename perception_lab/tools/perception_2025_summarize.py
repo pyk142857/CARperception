@@ -43,12 +43,21 @@ def collect(out):
             blockers.append('DEIMv2-S '+backend+': saved metrics excluded because current status/scope evidence is incomplete')
 
     grae = states['grae3dmot']
-    if grae.get('status') in READY and grae.get('inference') == 'passed' and grae.get('official_evaluation') == 'passed':
+    if (out/'grae3dmot/metrics.json').exists():
         for row in read(out/'grae3dmot/metrics.json', []):
             family = row.get('input', 'frozen_reference')
+            family_state=read(out/'grae3dmot'/family/'status.json',grae if grae.get('input_family',family)==family else {})
+            if not (family_state.get('status') in READY and family_state.get('inference')=='passed' and family_state.get('official_evaluation')=='passed'):
+                blockers.append('GRAE '+family+': current family evaluation not complete')
+                continue
             folder = out/'grae3dmot'/family/row['split']
             official = read(folder/'official_eval/metrics_summary.json', {})
             tracking = read(folder/'tracking.json', {}).get('results', {})
+            bindings=[('tracking_sha256',folder/'tracking.json'),('metrics_sha256',folder/'official_eval/metrics_summary.json'),
+                      ('input_manifest_sha256',out/'grae3dmot'/family/'input_manifest.json')]
+            if any(not path.is_file() or row.get(key)!=hashlib.sha256(path.read_bytes()).hexdigest() for key,path in bindings):
+                blockers.append('GRAE '+family+'/'+row['split']+': evaluation artifact hash binding missing or changed')
+                continue
             keys = ['amota', 'amotp', 'ids', 'fp', 'fn']
             if len(tracking) != row['frames'] or not all(row.get(k) == official.get(k) and k in official for k in keys):
                 blockers.append('GRAE '+family+'/'+row['split']+': inconsistent official metrics or frame coverage')
@@ -70,10 +79,18 @@ def collect(out):
         for split in ['scene0061', 'mini_val']:
             folder = out/'mambafusion'/split/'official_eval'
             result = read(folder/'metrics_summary.json', {})
-            if mamba.get('official_metrics') and result:
+            receipt=mamba.get('official_metrics') or {}
+            bound=receipt.get(split,{}) if isinstance(receipt,dict) else {}
+            predpath=out/'mambafusion'/(split+'_predictions.json')
+            valid=(mamba.get('official_evaluation')=='passed' and bound and predpath.exists()
+                   and bound.get('prediction_sha256')==hashlib.sha256(predpath.read_bytes()).hexdigest()
+                   and bound.get('metrics_sha256')==hashlib.sha256((folder/'metrics_summary.json').read_bytes()).hexdigest()) if result else False
+            if valid:
                 for key in ['mean_ap', 'nd_score']:
                     if key in result:
                         metric('MambaFusion', split, 39 if split == 'scene0061' else 81, key, result[key])
+                for key,value in result.get('tp_errors',{}).items():
+                    metric('MambaFusion',split,39 if split=='scene0061' else 81,key,value)
     for model, status in states.items():
         if status.get('status') not in READY:
             blockers.append(model+': '+status.get('status', 'planned')+'; '+str(status.get('reason', status.get('blockers', status.get('error', 'no current completed result')))))

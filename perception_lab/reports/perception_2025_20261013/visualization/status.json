@@ -1,16 +1,8 @@
 {
-  "decoded_rrd_audit": {
-    "status": "passed",
-    "decoded_frames": 39,
-    "decoded_points": 1354112,
-    "float32_position_max_abs_m": 3.8144487888303047e-06,
-    "decoded_recursive_clears": 351,
-    "token_order_exact": true,
-    "box_counts_exact": true
-  },
-  "status": "partial",
+  "status": "passed",
   "export": "passed",
   "browser_validation": "passed",
+  "split": "scene0061",
   "frames": 39,
   "counts": [
     {
@@ -18,333 +10,946 @@
       "sample_token": "ca9a282c9e77460f8360f564131a8af5",
       "timestamp_us": 1532402927647951,
       "original_lidar_points": 34688,
-      "grae_boxes": 19,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 50,
+        "grae_frozen_reference": 19,
+        "grae_mambafusion_native": 25
+      },
+      "harp_points": 34688,
+      "gt_semantic_points": 34688,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3704,
+        "CAM_FRONT": 3067,
+        "CAM_FRONT_RIGHT": 3079,
+        "CAM_BACK_LEFT": 4097,
+        "CAM_BACK": 4826,
+        "CAM_BACK_RIGHT": 3379
+      }
     },
     {
       "frame": 1,
       "sample_token": "39586f9d59004284a7114a68825e8eec",
       "timestamp_us": 1532402928147847,
       "original_lidar_points": 34720,
-      "grae_boxes": 23,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 50,
+        "grae_frozen_reference": 23,
+        "grae_mambafusion_native": 25
+      },
+      "harp_points": 34720,
+      "gt_semantic_points": 34720,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3729,
+        "CAM_FRONT": 2977,
+        "CAM_FRONT_RIGHT": 3208,
+        "CAM_BACK_LEFT": 4284,
+        "CAM_BACK": 4884,
+        "CAM_BACK_RIGHT": 3429
+      }
     },
     {
       "frame": 2,
       "sample_token": "356d81f38dd9473ba590f39e266f54e5",
       "timestamp_us": 1532402928698048,
       "original_lidar_points": 34720,
-      "grae_boxes": 28,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 54,
+        "grae_frozen_reference": 28,
+        "grae_mambafusion_native": 30
+      },
+      "harp_points": 34720,
+      "gt_semantic_points": 34720,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3652,
+        "CAM_FRONT": 2918,
+        "CAM_FRONT_RIGHT": 3235,
+        "CAM_BACK_LEFT": 4327,
+        "CAM_BACK": 4938,
+        "CAM_BACK_RIGHT": 3316
+      }
     },
     {
       "frame": 3,
       "sample_token": "e0845f5322254dafadbbed75aaa07969",
       "timestamp_us": 1532402929197353,
       "original_lidar_points": 34688,
-      "grae_boxes": 29,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 56,
+        "grae_frozen_reference": 29,
+        "grae_mambafusion_native": 30
+      },
+      "harp_points": 34688,
+      "gt_semantic_points": 34688,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3437,
+        "CAM_FRONT": 2843,
+        "CAM_FRONT_RIGHT": 3289,
+        "CAM_BACK_LEFT": 4531,
+        "CAM_BACK": 4865,
+        "CAM_BACK_RIGHT": 3284
+      }
     },
     {
       "frame": 4,
       "sample_token": "c923fe08b2ff4e27975d2bf30934383b",
       "timestamp_us": 1532402929697797,
       "original_lidar_points": 34752,
-      "grae_boxes": 31,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 61,
+        "grae_frozen_reference": 31,
+        "grae_mambafusion_native": 35
+      },
+      "harp_points": 34752,
+      "gt_semantic_points": 34752,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3334,
+        "CAM_FRONT": 2929,
+        "CAM_FRONT_RIGHT": 3396,
+        "CAM_BACK_LEFT": 4473,
+        "CAM_BACK": 4588,
+        "CAM_BACK_RIGHT": 3207
+      }
     },
     {
       "frame": 5,
       "sample_token": "f1e3d9d08f044c439ce86a2d6fcca57b",
       "timestamp_us": 1532402930152601,
       "original_lidar_points": 34784,
-      "grae_boxes": 29,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 64,
+        "grae_frozen_reference": 29,
+        "grae_mambafusion_native": 32
+      },
+      "harp_points": 34784,
+      "gt_semantic_points": 34784,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3672,
+        "CAM_FRONT": 2889,
+        "CAM_FRONT_RIGHT": 3408,
+        "CAM_BACK_LEFT": 3963,
+        "CAM_BACK": 4497,
+        "CAM_BACK_RIGHT": 3283
+      }
     },
     {
       "frame": 6,
       "sample_token": "4f545737bf3347fbbc9af60b0be9a963",
       "timestamp_us": 1532402930648325,
       "original_lidar_points": 34720,
-      "grae_boxes": 29,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 68,
+        "grae_frozen_reference": 29,
+        "grae_mambafusion_native": 33
+      },
+      "harp_points": 34720,
+      "gt_semantic_points": 34720,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3610,
+        "CAM_FRONT": 2831,
+        "CAM_FRONT_RIGHT": 3284,
+        "CAM_BACK_LEFT": 4135,
+        "CAM_BACK": 4460,
+        "CAM_BACK_RIGHT": 3303
+      }
     },
     {
       "frame": 7,
       "sample_token": "7626dde27d604ac28a0240bdd54eba7a",
       "timestamp_us": 1532402931198511,
       "original_lidar_points": 34720,
-      "grae_boxes": 36,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 70,
+        "grae_frozen_reference": 36,
+        "grae_mambafusion_native": 38
+      },
+      "harp_points": 34720,
+      "gt_semantic_points": 34720,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3619,
+        "CAM_FRONT": 2812,
+        "CAM_FRONT_RIGHT": 3163,
+        "CAM_BACK_LEFT": 4287,
+        "CAM_BACK": 4584,
+        "CAM_BACK_RIGHT": 3444
+      }
     },
     {
       "frame": 8,
       "sample_token": "be99ffc878b24aca8956bbb4e0f97d0c",
       "timestamp_us": 1532402931697833,
       "original_lidar_points": 34688,
-      "grae_boxes": 39,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 72,
+        "grae_frozen_reference": 39,
+        "grae_mambafusion_native": 39
+      },
+      "harp_points": 34688,
+      "gt_semantic_points": 34688,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3572,
+        "CAM_FRONT": 2815,
+        "CAM_FRONT_RIGHT": 3100,
+        "CAM_BACK_LEFT": 4310,
+        "CAM_BACK": 4640,
+        "CAM_BACK_RIGHT": 3593
+      }
     },
     {
       "frame": 9,
       "sample_token": "9813c23a5f1448b09bb7910fea9baf20",
       "timestamp_us": 1532402932197715,
       "original_lidar_points": 34688,
-      "grae_boxes": 37,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 85,
+        "grae_frozen_reference": 37,
+        "grae_mambafusion_native": 41
+      },
+      "harp_points": 34688,
+      "gt_semantic_points": 34688,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3504,
+        "CAM_FRONT": 2860,
+        "CAM_FRONT_RIGHT": 3019,
+        "CAM_BACK_LEFT": 4268,
+        "CAM_BACK": 4633,
+        "CAM_BACK_RIGHT": 3624
+      }
     },
     {
       "frame": 10,
       "sample_token": "023c4df2d451409881d8e6ea82f14704",
       "timestamp_us": 1532402932647284,
       "original_lidar_points": 34688,
-      "grae_boxes": 33,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 83,
+        "grae_frozen_reference": 33,
+        "grae_mambafusion_native": 43
+      },
+      "harp_points": 34688,
+      "gt_semantic_points": 34688,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3450,
+        "CAM_FRONT": 2927,
+        "CAM_FRONT_RIGHT": 2949,
+        "CAM_BACK_LEFT": 4236,
+        "CAM_BACK": 4605,
+        "CAM_BACK_RIGHT": 3549
+      }
     },
     {
       "frame": 11,
       "sample_token": "c235638ed66145988d17f9d0601923f2",
       "timestamp_us": 1532402933146604,
       "original_lidar_points": 34720,
-      "grae_boxes": 37,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 82,
+        "grae_frozen_reference": 37,
+        "grae_mambafusion_native": 42
+      },
+      "harp_points": 34720,
+      "gt_semantic_points": 34720,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3430,
+        "CAM_FRONT": 2881,
+        "CAM_FRONT_RIGHT": 3003,
+        "CAM_BACK_LEFT": 4210,
+        "CAM_BACK": 4462,
+        "CAM_BACK_RIGHT": 3427
+      }
     },
     {
       "frame": 12,
       "sample_token": "bc3c8a953f6b4dcdb77b521d89f3d9d5",
       "timestamp_us": 1532402933646462,
       "original_lidar_points": 34688,
-      "grae_boxes": 34,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 80,
+        "grae_frozen_reference": 34,
+        "grae_mambafusion_native": 42
+      },
+      "harp_points": 34688,
+      "gt_semantic_points": 34688,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3267,
+        "CAM_FRONT": 2965,
+        "CAM_FRONT_RIGHT": 2965,
+        "CAM_BACK_LEFT": 4189,
+        "CAM_BACK": 4477,
+        "CAM_BACK_RIGHT": 3474
+      }
     },
     {
       "frame": 13,
       "sample_token": "1e3d79dae62742a0ad64c91679863358",
       "timestamp_us": 1532402934146351,
       "original_lidar_points": 34752,
-      "grae_boxes": 37,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 92,
+        "grae_frozen_reference": 37,
+        "grae_mambafusion_native": 45
+      },
+      "harp_points": 34752,
+      "gt_semantic_points": 34752,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3286,
+        "CAM_FRONT": 3024,
+        "CAM_FRONT_RIGHT": 2850,
+        "CAM_BACK_LEFT": 4118,
+        "CAM_BACK": 4438,
+        "CAM_BACK_RIGHT": 3466
+      }
     },
     {
       "frame": 14,
       "sample_token": "2afb9d32310e4546a71cbe432911eca2",
       "timestamp_us": 1532402934696555,
       "original_lidar_points": 34752,
-      "grae_boxes": 47,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 98,
+        "grae_frozen_reference": 47,
+        "grae_mambafusion_native": 49
+      },
+      "harp_points": 34752,
+      "gt_semantic_points": 34752,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3286,
+        "CAM_FRONT": 3165,
+        "CAM_FRONT_RIGHT": 2807,
+        "CAM_BACK_LEFT": 3942,
+        "CAM_BACK": 4434,
+        "CAM_BACK_RIGHT": 3420
+      }
     },
     {
       "frame": 15,
       "sample_token": "cd21dbfc3bd749c7b10a5c42562e0c42",
       "timestamp_us": 1532402935197541,
       "original_lidar_points": 34784,
-      "grae_boxes": 46,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 98,
+        "grae_frozen_reference": 46,
+        "grae_mambafusion_native": 48
+      },
+      "harp_points": 34784,
+      "gt_semantic_points": 34784,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3275,
+        "CAM_FRONT": 3326,
+        "CAM_FRONT_RIGHT": 2858,
+        "CAM_BACK_LEFT": 3969,
+        "CAM_BACK": 4579,
+        "CAM_BACK_RIGHT": 3289
+      }
     },
     {
       "frame": 16,
       "sample_token": "88449a5cb1644a199c1c11f6ac034867",
       "timestamp_us": 1532402935697945,
       "original_lidar_points": 34784,
-      "grae_boxes": 44,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 103,
+        "grae_frozen_reference": 44,
+        "grae_mambafusion_native": 52
+      },
+      "harp_points": 34784,
+      "gt_semantic_points": 34784,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3304,
+        "CAM_FRONT": 3396,
+        "CAM_FRONT_RIGHT": 2909,
+        "CAM_BACK_LEFT": 3949,
+        "CAM_BACK": 4503,
+        "CAM_BACK_RIGHT": 3224
+      }
     },
     {
       "frame": 17,
       "sample_token": "2ff86dc19c4644a1a88ce5ba848f56e5",
       "timestamp_us": 1532402936198962,
       "original_lidar_points": 34752,
-      "grae_boxes": 40,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 100,
+        "grae_frozen_reference": 40,
+        "grae_mambafusion_native": 49
+      },
+      "harp_points": 34752,
+      "gt_semantic_points": 34752,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3279,
+        "CAM_FRONT": 3328,
+        "CAM_FRONT_RIGHT": 3075,
+        "CAM_BACK_LEFT": 3899,
+        "CAM_BACK": 4594,
+        "CAM_BACK_RIGHT": 3291
+      }
     },
     {
       "frame": 18,
       "sample_token": "bf2938e43c6f487497cda76b51bfc406",
       "timestamp_us": 1532402936699359,
       "original_lidar_points": 34688,
-      "grae_boxes": 37,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 99,
+        "grae_frozen_reference": 37,
+        "grae_mambafusion_native": 45
+      },
+      "harp_points": 34688,
+      "gt_semantic_points": 34688,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3291,
+        "CAM_FRONT": 3271,
+        "CAM_FRONT_RIGHT": 3225,
+        "CAM_BACK_LEFT": 3998,
+        "CAM_BACK": 4552,
+        "CAM_BACK_RIGHT": 3168
+      }
     },
     {
       "frame": 19,
       "sample_token": "b26e791522294bec90f86fd72226e35c",
       "timestamp_us": 1532402937198682,
       "original_lidar_points": 34688,
-      "grae_boxes": 37,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 101,
+        "grae_frozen_reference": 37,
+        "grae_mambafusion_native": 48
+      },
+      "harp_points": 34688,
+      "gt_semantic_points": 34688,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3306,
+        "CAM_FRONT": 3188,
+        "CAM_FRONT_RIGHT": 3127,
+        "CAM_BACK_LEFT": 3990,
+        "CAM_BACK": 4589,
+        "CAM_BACK_RIGHT": 3096
+      }
     },
     {
       "frame": 20,
       "sample_token": "c844bf5a9f2243ff8f4bf2c85fe218ff",
       "timestamp_us": 1532402937698000,
       "original_lidar_points": 34688,
-      "grae_boxes": 35,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 95,
+        "grae_frozen_reference": 35,
+        "grae_mambafusion_native": 45
+      },
+      "harp_points": 34688,
+      "gt_semantic_points": 34688,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3278,
+        "CAM_FRONT": 3072,
+        "CAM_FRONT_RIGHT": 3148,
+        "CAM_BACK_LEFT": 4017,
+        "CAM_BACK": 4568,
+        "CAM_BACK_RIGHT": 3071
+      }
     },
     {
       "frame": 21,
       "sample_token": "fedfb3a6cb804635a0f47143f9ca8d6f",
       "timestamp_us": 1532402938197897,
       "original_lidar_points": 34720,
-      "grae_boxes": 37,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 93,
+        "grae_frozen_reference": 37,
+        "grae_mambafusion_native": 42
+      },
+      "harp_points": 34720,
+      "gt_semantic_points": 34720,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3343,
+        "CAM_FRONT": 3101,
+        "CAM_FRONT_RIGHT": 3259,
+        "CAM_BACK_LEFT": 4083,
+        "CAM_BACK": 4395,
+        "CAM_BACK_RIGHT": 2915
+      }
     },
     {
       "frame": 22,
       "sample_token": "965f6af5a92449348409029a5f048a38",
       "timestamp_us": 1532402938647444,
       "original_lidar_points": 34688,
-      "grae_boxes": 36,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 80,
+        "grae_frozen_reference": 36,
+        "grae_mambafusion_native": 38
+      },
+      "harp_points": 34688,
+      "gt_semantic_points": 34688,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3345,
+        "CAM_FRONT": 3145,
+        "CAM_FRONT_RIGHT": 3367,
+        "CAM_BACK_LEFT": 4093,
+        "CAM_BACK": 4246,
+        "CAM_BACK_RIGHT": 3103
+      }
     },
     {
       "frame": 23,
       "sample_token": "4711bcd34644420da8bc77163431888e",
       "timestamp_us": 1532402939147334,
       "original_lidar_points": 34720,
-      "grae_boxes": 29,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 85,
+        "grae_frozen_reference": 29,
+        "grae_mambafusion_native": 37
+      },
+      "harp_points": 34720,
+      "gt_semantic_points": 34720,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3325,
+        "CAM_FRONT": 3148,
+        "CAM_FRONT_RIGHT": 3394,
+        "CAM_BACK_LEFT": 4015,
+        "CAM_BACK": 4238,
+        "CAM_BACK_RIGHT": 3516
+      }
     },
     {
       "frame": 24,
       "sample_token": "a34fabc7aa674713b71f98ec541eb2d4",
       "timestamp_us": 1532402939697511,
       "original_lidar_points": 34752,
-      "grae_boxes": 28,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 72,
+        "grae_frozen_reference": 28,
+        "grae_mambafusion_native": 35
+      },
+      "harp_points": 34752,
+      "gt_semantic_points": 34752,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3370,
+        "CAM_FRONT": 3167,
+        "CAM_FRONT_RIGHT": 3531,
+        "CAM_BACK_LEFT": 3902,
+        "CAM_BACK": 4135,
+        "CAM_BACK_RIGHT": 3625
+      }
     },
     {
       "frame": 25,
       "sample_token": "c78067571d104caba7c568a847d56971",
       "timestamp_us": 1532402940197958,
       "original_lidar_points": 34720,
-      "grae_boxes": 30,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 73,
+        "grae_frozen_reference": 30,
+        "grae_mambafusion_native": 32
+      },
+      "harp_points": 34720,
+      "gt_semantic_points": 34720,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3366,
+        "CAM_FRONT": 3115,
+        "CAM_FRONT_RIGHT": 3569,
+        "CAM_BACK_LEFT": 3851,
+        "CAM_BACK": 4068,
+        "CAM_BACK_RIGHT": 3428
+      }
     },
     {
       "frame": 26,
       "sample_token": "4246e57f018745c9b2bc68feb3d71b58",
       "timestamp_us": 1532402940797343,
       "original_lidar_points": 34720,
-      "grae_boxes": 25,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 73,
+        "grae_frozen_reference": 25,
+        "grae_mambafusion_native": 36
+      },
+      "harp_points": 34720,
+      "gt_semantic_points": 34720,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3521,
+        "CAM_FRONT": 3058,
+        "CAM_FRONT_RIGHT": 3605,
+        "CAM_BACK_LEFT": 3807,
+        "CAM_BACK": 4167,
+        "CAM_BACK_RIGHT": 3548
+      }
     },
     {
       "frame": 27,
       "sample_token": "a7acb150914b40bdad9a2dc4e657cbf9",
       "timestamp_us": 1532402941297218,
       "original_lidar_points": 34720,
-      "grae_boxes": 32,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 74,
+        "grae_frozen_reference": 32,
+        "grae_mambafusion_native": 33
+      },
+      "harp_points": 34720,
+      "gt_semantic_points": 34720,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3545,
+        "CAM_FRONT": 3095,
+        "CAM_FRONT_RIGHT": 3573,
+        "CAM_BACK_LEFT": 3937,
+        "CAM_BACK": 4199,
+        "CAM_BACK_RIGHT": 3637
+      }
     },
     {
       "frame": 28,
       "sample_token": "0cd661df01aa40c3bb3a773ba86f753a",
       "timestamp_us": 1532402941797653,
       "original_lidar_points": 34752,
-      "grae_boxes": 26,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 72,
+        "grae_frozen_reference": 26,
+        "grae_mambafusion_native": 34
+      },
+      "harp_points": 34752,
+      "gt_semantic_points": 34752,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3519,
+        "CAM_FRONT": 3083,
+        "CAM_FRONT_RIGHT": 3493,
+        "CAM_BACK_LEFT": 3958,
+        "CAM_BACK": 4213,
+        "CAM_BACK_RIGHT": 3755
+      }
     },
     {
       "frame": 29,
       "sample_token": "378a3a3e9af346308ab9dff8ced46d9c",
       "timestamp_us": 1532402942197463,
       "original_lidar_points": 34720,
-      "grae_boxes": 20,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 73,
+        "grae_frozen_reference": 20,
+        "grae_mambafusion_native": 29
+      },
+      "harp_points": 34720,
+      "gt_semantic_points": 34720,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3529,
+        "CAM_FRONT": 3095,
+        "CAM_FRONT_RIGHT": 3542,
+        "CAM_BACK_LEFT": 3963,
+        "CAM_BACK": 4208,
+        "CAM_BACK_RIGHT": 3780
+      }
     },
     {
       "frame": 30,
       "sample_token": "eef55c3b48f34d949959b45130ee293a",
       "timestamp_us": 1532402942697870,
       "original_lidar_points": 34720,
-      "grae_boxes": 22,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 72,
+        "grae_frozen_reference": 22,
+        "grae_mambafusion_native": 26
+      },
+      "harp_points": 34720,
+      "gt_semantic_points": 34720,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3590,
+        "CAM_FRONT": 3118,
+        "CAM_FRONT_RIGHT": 3528,
+        "CAM_BACK_LEFT": 4106,
+        "CAM_BACK": 4281,
+        "CAM_BACK_RIGHT": 3807
+      }
     },
     {
       "frame": 31,
       "sample_token": "5fda58ee3ae44ab9b4bbac7a2de66c27",
       "timestamp_us": 1532402943197769,
       "original_lidar_points": 34720,
-      "grae_boxes": 21,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 70,
+        "grae_frozen_reference": 21,
+        "grae_mambafusion_native": 25
+      },
+      "harp_points": 34720,
+      "gt_semantic_points": 34720,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3565,
+        "CAM_FRONT": 3184,
+        "CAM_FRONT_RIGHT": 3549,
+        "CAM_BACK_LEFT": 4119,
+        "CAM_BACK": 4306,
+        "CAM_BACK_RIGHT": 3833
+      }
     },
     {
       "frame": 32,
       "sample_token": "919e3c4cec934168a3152077a9adcbea",
       "timestamp_us": 1532402943697655,
       "original_lidar_points": 34720,
-      "grae_boxes": 24,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 71,
+        "grae_frozen_reference": 24,
+        "grae_mambafusion_native": 31
+      },
+      "harp_points": 34720,
+      "gt_semantic_points": 34720,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3439,
+        "CAM_FRONT": 3103,
+        "CAM_FRONT_RIGHT": 3552,
+        "CAM_BACK_LEFT": 4076,
+        "CAM_BACK": 4257,
+        "CAM_BACK_RIGHT": 3870
+      }
     },
     {
       "frame": 33,
       "sample_token": "b73152cab88f49d9ba195da81fde1809",
       "timestamp_us": 1532402944198088,
       "original_lidar_points": 34752,
-      "grae_boxes": 22,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 70,
+        "grae_frozen_reference": 22,
+        "grae_mambafusion_native": 29
+      },
+      "harp_points": 34752,
+      "gt_semantic_points": 34752,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3607,
+        "CAM_FRONT": 3120,
+        "CAM_FRONT_RIGHT": 3607,
+        "CAM_BACK_LEFT": 4134,
+        "CAM_BACK": 4283,
+        "CAM_BACK_RIGHT": 3861
+      }
     },
     {
       "frame": 34,
       "sample_token": "6aa6fa91e0d1492e812eb7e57c47df6e",
       "timestamp_us": 1532402944697931,
       "original_lidar_points": 34720,
-      "grae_boxes": 21,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 71,
+        "grae_frozen_reference": 21,
+        "grae_mambafusion_native": 32
+      },
+      "harp_points": 34720,
+      "gt_semantic_points": 34720,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3387,
+        "CAM_FRONT": 3105,
+        "CAM_FRONT_RIGHT": 3579,
+        "CAM_BACK_LEFT": 4184,
+        "CAM_BACK": 4306,
+        "CAM_BACK_RIGHT": 3916
+      }
     },
     {
       "frame": 35,
       "sample_token": "aa581aac963a4fad848ac11fe66e8637",
       "timestamp_us": 1532402945197276,
       "original_lidar_points": 34688,
-      "grae_boxes": 19,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 65,
+        "grae_frozen_reference": 19,
+        "grae_mambafusion_native": 27
+      },
+      "harp_points": 34688,
+      "gt_semantic_points": 34688,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3455,
+        "CAM_FRONT": 3073,
+        "CAM_FRONT_RIGHT": 3573,
+        "CAM_BACK_LEFT": 4031,
+        "CAM_BACK": 4324,
+        "CAM_BACK_RIGHT": 3923
+      }
     },
     {
       "frame": 36,
       "sample_token": "67e5f88901214f3aa03d68e028185e22",
       "timestamp_us": 1532402945697148,
       "original_lidar_points": 34688,
-      "grae_boxes": 22,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 70,
+        "grae_frozen_reference": 22,
+        "grae_mambafusion_native": 28
+      },
+      "harp_points": 34688,
+      "gt_semantic_points": 34688,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3506,
+        "CAM_FRONT": 3147,
+        "CAM_FRONT_RIGHT": 3590,
+        "CAM_BACK_LEFT": 4040,
+        "CAM_BACK": 4261,
+        "CAM_BACK_RIGHT": 3937
+      }
     },
     {
       "frame": 37,
       "sample_token": "29e056fc277543c9bc42310b122c640e",
       "timestamp_us": 1532402946297085,
       "original_lidar_points": 34720,
-      "grae_boxes": 26,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 66,
+        "grae_frozen_reference": 26,
+        "grae_mambafusion_native": 27
+      },
+      "harp_points": 34720,
+      "gt_semantic_points": 34720,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3155,
+        "CAM_FRONT": 3135,
+        "CAM_FRONT_RIGHT": 3545,
+        "CAM_BACK_LEFT": 4068,
+        "CAM_BACK": 4475,
+        "CAM_BACK_RIGHT": 3914
+      }
     },
     {
       "frame": 38,
       "sample_token": "ed5fc18c31904f96a8f0dbb99ff069c0",
       "timestamp_us": 1532402946797517,
       "original_lidar_points": 34720,
-      "grae_boxes": 22,
-      "deim_cameras": 6
+      "model_boxes": {
+        "mambafusion": 65,
+        "grae_frozen_reference": 22,
+        "grae_mambafusion_native": 26
+      },
+      "harp_points": 34720,
+      "gt_semantic_points": 34720,
+      "missing_models": [],
+      "deim_cameras": 6,
+      "projected_original_points": {
+        "CAM_FRONT_LEFT": 3185,
+        "CAM_FRONT": 3153,
+        "CAM_FRONT_RIGHT": 3551,
+        "CAM_BACK_LEFT": 3966,
+        "CAM_BACK": 4567,
+        "CAM_BACK_RIGHT": 3922
+      }
     }
   ],
-  "tracking_sha256": "ceaf64c45d71bf7fddf7e56f55946262e31614104f9c238bf863c05bd6facb89",
-  "deim_sha256": "626e7ba54e9aad9b28c4c8d69c4d6264f33e934296d979003ecbc9e7740bf681",
-  "rrd_sha256": "a2da6ec6f0d16c8383b6d1bd00d4d0ba4e2cdc1903cfdfea9bd4b76827be9508",
-  "rrd": "/home/minglei/Desktop/CAR/perception_lab/outputs/rerun/deployment_4090/perception_2025/perception_2025.rrd",
-  "url": "http://127.0.0.1:9094/perception_2025/",
-  "missing_models": [
-    "mambafusion",
-    "harpnext"
-  ],
-  "trajectory_gap_clear": true,
-  "validation": {
-    "original_points_total": 1354112,
-    "coordinate_roundtrip_max_abs_m": 6.199485369506874e-13,
-    "recursive_clears": 351,
-    "expected_recursive_clears": 351,
-    "trajectory_gap_resets": 123,
-    "gt_separate_entity": true,
-    "deim_camera_pairs": 234,
-    "finite_points": true
+  "artifact_sha256": {
+    "mambafusion": "985241700c321a409acba4c46e7800239b793998530ee11ae613ca40feddd5a1",
+    "grae_frozen_reference": "ceaf64c45d71bf7fddf7e56f55946262e31614104f9c238bf863c05bd6facb89",
+    "grae_mambafusion_native": "8d8cd1196607657666d0effebeee65e7fffbc7ee71047b65a574e14fc37c5419",
+    "harpnext_manifest": "1d16f906793cb38dee1d2de66cae2e32f3352ad29358221eecac7897df305196"
   },
-  "generated_at": "2026-10-13T04:04:48.615470+00:00"
+  "rrd": "/home/minglei/Desktop/CAR/perception_lab/outputs/rerun/deployment_4090/perception_2025/perception_2025.rrd",
+  "rrd_sha256": "97aad50c0b47529b47f0e72a28a6977af81f78a77a8a16b981c914e641e020e8",
+  "url": "http://127.0.0.1:9094/perception_2025/",
+  "rerun_url": "http://127.0.0.1:9095/?url=http%3A%2F%2F127.0.0.1%3A9094%2Fperception_2025%2Fperception_2025.rrd&renderer=webgl&persist=0",
+  "decoded_rrd_audit": {
+    "status": "passed",
+    "decoded_frames": 39,
+    "decoded_points": 1354112,
+    "float32_position_max_abs_m": 3.8144487888303047e-06,
+    "decoded_layer_counts": {
+      "mambafusion": 2976,
+      "grae_frozen_reference": 1189,
+      "grae_mambafusion_native": 1403,
+      "models/harpnext": 1354112,
+      "ground_truth/semantics": 1354112
+    },
+    "decoded_camera_semantic_points": {
+      "harpnext/CAM_FRONT_LEFT": 134037,
+      "harpnext/CAM_FRONT": 119629,
+      "harpnext/CAM_FRONT_RIGHT": 128504,
+      "harpnext/CAM_BACK_LEFT": 159525,
+      "harpnext/CAM_BACK": 173645,
+      "harpnext/CAM_BACK_RIGHT": 136627,
+      "ground_truth/CAM_FRONT_LEFT": 134037,
+      "ground_truth/CAM_FRONT": 119629,
+      "ground_truth/CAM_FRONT_RIGHT": 128504,
+      "ground_truth/CAM_BACK_LEFT": 159525,
+      "ground_truth/CAM_BACK": 173645,
+      "ground_truth/CAM_BACK_RIGHT": 136627
+    },
+    "token_order_exact": true,
+    "box_counts_exact": true,
+    "representative_frames": [
+      0,
+      19,
+      38
+    ],
+    "recursive_clear_frames": 39
+  },
+  "trajectory_gap_resets": 254,
+  "gt_separate_entity": true,
+  "missing_models": [],
+  "generated_at": "2026-10-13T08:05:06.930777+00:00"
 }

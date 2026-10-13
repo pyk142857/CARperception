@@ -1,0 +1,56 @@
+{
+  "time_unix": 1791874296.3807921,
+  "local_probes": [
+    {
+      "model": "harpnext",
+      "network": "proxy",
+      "requested_range": "bytes=0-65535",
+      "error_type": "URLError",
+      "elapsed_seconds": 19.36
+    },
+    {
+      "model": "harpnext",
+      "network": "direct",
+      "requested_range": "bytes=0-65535",
+      "error_type": "URLError",
+      "elapsed_seconds": 19.03
+    },
+    {
+      "model": "mambafusion",
+      "network": "proxy",
+      "requested_range": "bytes=0-65535",
+      "error_type": "URLError",
+      "elapsed_seconds": 18.02
+    },
+    {
+      "model": "mambafusion",
+      "network": "direct",
+      "requested_range": "bytes=0-65535",
+      "error_type": "URLError",
+      "elapsed_seconds": 18.02
+    }
+  ],
+  "decision": "both exact author files installed; HARP via Japan task proxy, Mamba verified ranges via Japan then Singapore after bounded disconnect failures",
+  "hf_cli": {
+    "isolated_environment": "perception_lab/runs/weights_recovery_20261013/download_env",
+    "version": "0.36.2",
+    "anonymous_http": "fixed revision resolve URL probed without authentication",
+    "download_attempted": false,
+    "reason": "local direct/proxy connectivity failed; switched network node"
+  },
+  "historical_partial": {
+    "path": "perception_lab/checkpoints/mambafusion_2025/checkpoint.download",
+    "bytes": 4541653,
+    "sha256": "784fa96f2e549ec3048db4aa3776a1022fc783e1c9e8f3167b9524f071c02e5b",
+    "policy": "preserved unchanged; not reused or accepted as complete",
+    "unchanged_after_download": true
+  },
+  "transport_route": "transport_route.json",
+  "actions_manifest": "relay_source_manifest.json",
+  "harpnext_atomic_receipt": "harpnext_atomic_receipt.json",
+  "last_update_unix": 1791877343.059667,
+  "weights_downloaded": true,
+  "download_manifest": "download_manifest.json",
+  "mambafusion_atomic_receipt": "mambafusion_atomic_receipt.json",
+  "completion_scope": "download and CPU structure parse only; native strict load and evaluation are tracked separately"
+}

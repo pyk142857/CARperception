@@ -24,9 +24,16 @@
     },
     {
       "path": "outputs/rerun/deployment_4090/perception_2025/perception_2025.rrd",
-      "bytes": 70704968,
-      "sha256": "a2da6ec6f0d16c8383b6d1bd00d4d0ba4e2cdc1903cfdfea9bd4b76827be9508",
+      "bytes": 158347928,
+      "sha256": "97aad50c0b47529b47f0e72a28a6977af81f78a77a8a16b981c914e641e020e8",
       "reproduce_from_perception_lab": "envs/rerun/bin/python tools/perception_2025_visualize.py",
+      "publication": "local large intermediate; metrics/cases/representative images committed"
+    },
+    {
+      "path": "outputs/rerun/deployment_4090/perception_2025/mini_val/perception_2025.rrd",
+      "bytes": 330022922,
+      "sha256": "a2884cc67c0b88535690ba5fc556aceb3fe47609e150e3649fbe2e8a518ccb37",
+      "reproduce_from_perception_lab": "envs/rerun/bin/python tools/perception_2025_visualize.py --split mini_val",
       "publication": "local large intermediate; metrics/cases/representative images committed"
     },
     {
