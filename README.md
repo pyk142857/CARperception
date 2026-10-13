@@ -109,6 +109,8 @@ envs/rerun/bin/python tools/deployment_visualize.py --serve
 
 [GPU 算子优化与模型原理讲解（2026-10-10）](perception_lab/reports/gpu_operator_and_models_20261010/report.md)：对照论文与官方源码，解释 BEVFusion、Sparse4D v3、GaussianWorld 及经典感知模型的实现；给出 profiling、Roofline、Amdahl 判断方法和 CUDA 优化候选。属于原理分析，未新增 GPU 性能实验。
 
+[跟踪算法与GPU算子优化候选调研（2026-10-13）](perception_lab/reports/tracking_gpu_candidates_20261013/report.md)：筛选OptiPMB、IMM-MOT、TrackTrack，以及TileLang、KernelBench和2026硬件优化资料，给出固定检测对照、几何/NMS热点与BEV pooling建议。属于调研与适配判断，未执行新实验，也不替代已验证的保留方案。
+
 [4090 部署审阅（2026-10-12）](perception_lab/reports/deployment_review_20261012/report.md)：读取临时分支的参考模型、FP16 几何与 pooling 证据，复算90轮kernel和30轮完整路径计时；保持 partial，记录尚未上传的核心文件。[恢复发布与 FP16 补全指令](perception_lab/instruction/20261012_01_deployment_publish_and_fp16_followup.md)已发布，待本地执行。
 
 ## 各模块可视化入口
