@@ -1,0 +1,26 @@
+{
+  "artifact_commit": "b1b887aa04ba9b8c84e913e187217d3bb07bb671",
+  "remote_branch": "main",
+  "verified_at_utc": "2026-10-13T08:15:19.089998+00:00",
+  "remote_readback": [
+    {
+      "path": "README.md",
+      "bytes": 36894,
+      "sha256": "419bf7e2d9ef1b7ba4bde2acbcf890f7c67f35ef5edd29ddbf9fafe197bbe42c",
+      "remote_matches_local": true
+    },
+    {
+      "path": "perception_lab/reports/perception_weights_recovery_20261013/report.md",
+      "bytes": 12175,
+      "sha256": "ce35496ef47f85c6bb387fb33a4134924b81f0605acab882b113ea744f433e78",
+      "remote_matches_local": true
+    },
+    {
+      "path": "perception_lab/reports/perception_2025_20261013/mambafusion/status.json",
+      "bytes": 1764,
+      "sha256": "a563ffd94f940047716eb9cc866d1b64216819334214b90ed2b6d5d5ba7dde43",
+      "remote_matches_local": true
+    }
+  ],
+  "scope": "Main artifact commit verified; receipt itself published in a subsequent commit"
+}

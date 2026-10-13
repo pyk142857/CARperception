@@ -195,6 +195,10 @@
     "Mamba repeatability noise retained; not deterministic or optimization-equivalence pass",
     "existing DEIM FP16 and HARP GPU preprocessing limitations remain separately scoped"
   ],
-  "publication": "pending commit/push; local acceptance complete",
+  "publication": {
+    "status": "published",
+    "artifact_commit": "b1b887aa04ba9b8c84e913e187217d3bb07bb671",
+    "receipt": "publication_receipt.json"
+  },
   "tests": "88 passed, 23 subtests passed"
 }
