@@ -1,5 +1,9 @@
 # CARperception
 
+## 下一轮执行：固定BEVFusion跟踪对照与GPU优化
+
+[20261013_03指令](perception_lab/instruction/20261013_03_frozen_bevfusion_tracking_gpu_optimization.md)已派发，待本地执行：固定39/81帧检测→OptiPMB/GRAE原生官方评价→CPU几何/NMS语义与热点→TileLang＋KernelBench验证→含搬运的完整GRAE计时/评价→BEV pooling研究。OptiPMB复用真实点云统计；GPU版保持原高度、粗筛、排序与阈值行为。计划报告目录为 `perception_lab/reports/tracking_gpu_20261013/`，尚未产生本轮新指标。
+
 ## 已验证的保留方案与简历成果（2026-10-13）
 
 优先保留 **DEIMv2-S原生检测、置信度两阶段贪心跟踪与FastCandidateTracker CPU算子优化**；融合检测保留BEVFusion原生FP32，学习型跟踪保留其固定检测→GRAE原生链路，点云分割保留Cylinder3D。

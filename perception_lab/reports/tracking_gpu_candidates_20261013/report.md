@@ -5,6 +5,8 @@
 
 ## 推荐选择
 
+执行指令已发布：[20261013_03](../../instruction/20261013_03_frozen_bevfusion_tracking_gpu_optimization.md)，待本地执行。派发前进一步核查作者源码：OptiPMB原生需要真实LiDAR框内点数；GRAE原NMS先粗筛及三维IoU，再按分数过滤，且高度包含公式与物理标准公式存在差异。上述行为已进入执行指令，不能以空点云或二维NMS静默替代。
+
 针对当前CARperception，优先开展两项独立工作：固定已有BEVFusion检测输出比较OptiPMB与原生GRAE；剖析GRAE的CPU几何计算/NMS，选择实际热点开发同语义GPU算子。IMM-MOT适合做运动模型模块对照。TileLang用于实现候选kernel，KernelBench用于正确性与性能评估，KernelAgent作为后续自动化优化框架。
 
 下列适配优先级是结合论文、公开源码说明和本项目报告作出的工程判断，尚无本机新实测。主要候选为2025论文/项目；2026补充明确列年，不把较早预印本只因2025录用而改称2025首次提出。

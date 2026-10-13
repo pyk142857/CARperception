@@ -1,5 +1,11 @@
 # TASK_STATE — mini 教学闭环已验证
 
+## 当前派发任务：固定检测跟踪对照与GPU几何优化（2026-10-13）
+
+[20261013_03执行指令](instruction/20261013_03_frozen_bevfusion_tracking_gpu_optimization.md)已发布，状态为**待本地执行**。固定39/81帧BEVFusion官方格式预测和哈希，先完成OptiPMB与原生GRAE的官方跟踪对照，再按原SimpleTrack三维IoU、粗筛、同分排序及“先NMS后score过滤”语义开发TileLang GPU几何/NMS，用KernelBench任务适配验证，含搬运的完整GRAE计时与官方评价后再研究BEV pooling。
+
+OptiPMB原生还需要对应帧真实LiDAR点数，不能用空点云替代；两跟踪器的辅助信息差异将在报告注明。本轮结果写入 `reports/tracking_gpu_20261013/`，当前尚无新实验指标。候选失败独立记录，原生对照与GPU优化可分别完成；已有保留方案和历史结果继续保留。
+
 ## 保留方案与简历说明更新（2026-10-13）
 
 已整理[保留方案](RETAINED_ALGORITHMS.md)及[简历项目经历](reports/resume_project_experience_20261008.md)，README新增入口。优先保留DEIMv2原生检测（COCO AP提高5.91个百分点）、S4_greedy_low两阶段关联（固定39帧连续ID切换46→38）及FastCandidateTracker CPU优化（配对2.910→0.772ms/帧，3.77倍，输出一致）。
