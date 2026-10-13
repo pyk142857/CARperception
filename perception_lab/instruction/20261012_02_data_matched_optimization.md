@@ -1,5 +1,8 @@
 # 2026-10-12：用现有数据替换优化主线
 
+> **已被替代，停止执行。** BOSS于2026-10-13要求仅采用2025方法，本文件候选不再执行。当前指令为 [20261013_01_2025_perception_deployment.md](20261013_01_2025_perception_deployment.md)。下文保留历史计划，不代表已完成实验。
+
+
 ## 任务与当前状态
 
 执行对象：pyk142857/CARperception，本地工作目录 /home/minglei/Desktop/CAR，单张 RTX 4090 24 GB。

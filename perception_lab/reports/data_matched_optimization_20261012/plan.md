@@ -1,8 +1,11 @@
 # 现有数据可评估的替代优化方案
 
+> **已被2025方法限定方案替代，停止候选部署。** 当前方案见 [perception_2025_20261013/plan.md](../perception_2025_20261013/plan.md)，当前指令见 [20261013_01](../../instruction/20261013_01_2025_perception_deployment.md)。本页为未执行的历史计划。
+
+
 日期：2026-10-12  
 项目：pyk142857/CARperception  
-状态：planned，指令已发布；新模型尚未在本轮下载、编译、推理或评估。  
+状态：superseded（未执行，已被替代）；新模型尚未在本轮下载、编译、推理或评估。  
 代码基线：1b702f69601e3c2c46c3a94e52d073e826c6a09b。  
 执行指令：[20261012_02_data_matched_optimization.md](../../instruction/20261012_02_data_matched_optimization.md)。
 

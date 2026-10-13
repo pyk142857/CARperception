@@ -1,12 +1,13 @@
 # CARperception
 
-## 2026-10-12：现有数据匹配的替代优化路线（计划）
+## 2026-10-13：2025 方法限定的优化路线（计划）
 
-新候选为 D-FINE-S（COCO 2D 检测）、IS-Fusion（六相机–LiDAR 3D 检测）、SimpleTrack（2 Hz 3D 跟踪）和 SphereFormer（点云语义分割）。复用既有 COCO/nuScenes/lidarseg 真值，先跑原生参考，再做预取、坐标转换与图像后端优化。旧基线和 GaussianWorld 的占用真值阻塞状态保留。
+当前候选为 **DEIMv2-S、MambaFusion、GRAE-3DMOT、HARP-NeXt**，覆盖2D检测、相机–LiDAR融合3D检测、学习式3D跟踪、点云语义分割。沿用现有COCO、nuScenes mini及lidarseg标签。
 
-- [执行指令](perception_lab/instruction/20261012_02_data_matched_optimization.md)
-- [方案、数据匹配与官方资源](perception_lab/reports/data_matched_optimization_20261012/plan.md)
-- **当前仅发布计划，尚未执行本轮新模型实验。** 权重下载、SM89 编译、单帧显存和真实精度/速度须由本地执行核验。
+- [当前执行指令](perception_lab/instruction/20261013_01_2025_perception_deployment.md)
+- [选型、官方资源及部署检查](perception_lab/reports/perception_2025_20261013/plan.md)
+- **当前仅发布方案和指令，本轮新模型尚未执行。** 本机需先核验checkpoint、CUDA/显存及mini接口。DEIMv2 FP16使用独立TensorRT>=10.6环境。
+- 20261012_02候选方案已被替代，停止其候选部署；旧结果保留为历史证据。
 
 ## 2026-10-12：部署发布恢复与 FP16 补查
 

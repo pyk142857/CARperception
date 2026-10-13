@@ -1,5 +1,12 @@
 # TASK_STATE — mini 教学闭环已验证
 
+## 当前候选：2025方法限定（2026-10-13，planned）
+
+BOSS要求“找点2025的，旧的不考虑”。当前候选更新为DEIMv2-S、MambaFusion、GRAE-3DMOT、HARP-NeXt；20261012_02方案已被替代，不继续执行其候选部署。
+[当前指令](instruction/20261013_01_2025_perception_deployment.md) · [方案与资源](reports/perception_2025_20261013/plan.md)。
+本轮仅完成选型、资源核查和文档发布，尚未下载/编译/运行新模型。既有部署及指标保留历史状态；不得把planned写为executed。
+
+
 2026-09-23，BOSS 明确改为理解流程：仅用 nuScenes mini，现有模型优先，其余模型作为扩展。
 
 ## 4090 扩展部署（2026-10-12）
