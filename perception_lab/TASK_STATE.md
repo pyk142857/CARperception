@@ -7,7 +7,7 @@
 - 固定39／81帧原始BEVFusion预测及对应真实LiDAR；GRAE、OptiPMB原生推理和官方TrackingEval已完成。Opti81帧AMOTA下降、FN增加，不替代GRAE。
 - TileLang FP64批量原式3D IoU／GPU贪心NMS实测，120帧NMS与模型输入字节一致，39／81轨迹逐字节一致、全部官方整体／每类指标一致。KernelBench为保持FP64／整数dtype的项目任务扩展。
 - 完整GRAE各30轮AB／BA已完成：142.81→24.77及263.80→31.00ms/帧，均30/30胜、P95不升，合并节省87.09%；排除BEVFusion前向。
-- 代表帧微基准末段出现外部waterwaydetection训练，整组已拒绝并留证；完整30轮此前完成、未受该进程影响。待GPU空闲后重测micro，再完成最后BEV pooling实测。浏览器验证正用明确标注的软件WebGL推进。
+- 代表帧微基准末段出现外部waterwaydetection训练，整组已拒绝并留证；完整30轮此前完成、未受该进程影响。待GPU空闲后重测micro，再完成最后BEV pooling实测。39／81帧NVIDIA WebGL浏览器与解码验收通过；新headless模式和显式GPU启用修复了Chrome兼容问题。
 
 独立代码入口 `tools/run_tracking_gpu_20261013.py`，原生预测、旧模型入口与历史回放不覆盖。完整序列原始配对、实际GPU调用和官方指标均已保存；剩余阶段不能被CPU测试替代。
 

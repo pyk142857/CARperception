@@ -1,6 +1,6 @@
 # 冻结 BEVFusion / GRAE / OptiPMB 同步回放
 
-独立入口为 `http://127.0.0.1:9094/tracking_gpu_20261013/`，mini_val 为其 `mini_val/` 子目录。原有 2025 感知与部署 RRD 未修改。两套新 RRD 的全部帧已完成实际解码核验；浏览器验收尚未通过，当前不能声称交互回放验收完成。
+独立入口为 `http://127.0.0.1:9094/tracking_gpu_20261013/`，mini_val 为其 `mini_val/` 子目录。原有 2025 感知与部署 RRD 未修改。两套新 RRD 的全部帧已完成实际解码核验，兼容配置下的真实浏览器首/中/末与跨场景功能验收均通过。
 
 ## 实际导出
 
@@ -17,7 +17,7 @@
 
 ## 固定教学案例
 
-[teaching_cases.json](teaching_cases.json)使用冻结预测后的独立 GT 匹配：score ≥ 0.25、同类 XY 距离 < 2 m、先保留上帧有效对应再 Hungarian；官方 devkit 的类别距离/点数/rack 过滤；不做官方轨迹插值。**教学 IDSW 与官方 IDS 不同**，以下数字不替代 AMOTA/AMOTP。
+[案例图片索引](teaching_cases.md)保留逐例 token 与两方法对照图；BEV 红圈为真实后验 FP，橙叉为 FN。[teaching_cases.json](teaching_cases.json)使用冻结预测后的独立 GT 匹配：score ≥ 0.25、同类 XY 距离 < 2 m、先保留上帧有效对应再 Hungarian；官方 devkit 的类别距离/点数/rack 过滤；不做官方轨迹插值。**教学 IDSW 与官方 IDS 不同**，以下数字不替代 AMOTA/AMOTP。
 
 | 分割 / 方法 | TP | FP | FN | 教学 IDSW |
 |---|---:|---:|---:|---:|
@@ -30,11 +30,17 @@
 
 实际所选 scene0061：FP 改善 8、FP 退化 9、FN 退化 0、IDSW 改善 17、IDSW 退化 3。mini_val：FP 改善 29、FP 退化 48、FN 改善 52、FN 退化 40、IDSW 改善 2、IDSW 退化 1。每例有 GRAE / OptiPMB 同帧六相机 + BEV 对照图片。
 
-官方本轮结果另见模型的 bound evaluation：scene0061 AMOTA GRAE 0.862569 / Opti 0.888718，mini_val 0.822964 / 0.797533。Opti 在 scene0061 改善而 mini_val 退化；教学阈值下 FP 较少同时 FN 较多，不描述为全面改善。GPU 版若最终输出等价，沿用相同回放并链接其等价证据，不重复绘制相同内容。
+官方本轮结果另见模型的 bound evaluation：scene0061 AMOTA GRAE 0.862569 / Opti 0.888718，mini_val 0.822964 / 0.797533。Opti 在 scene0061 改善而 mini_val 退化；教学阈值下 FP 较少同时 FN 较多，不描述为全面改善。GPU 版在两个分割的 tracking.json 字节完全相同，见[输出等价证据](../grae_gpu/equivalence.json)；[官方指标等价](../grae_gpu/official_equivalence.json)也通过，因此沿用当前 GRAE 回放，不重复绘制相同内容。
 
 ## 浏览器状态与复现
 
-当前有两次 headful Chrome 尝试失败：首次已到 frame API 后截图超时，重试在帧范围等待超时，含 WebGL readback/pipeline stall 警告。没有将失败称为成功。保留[失败收据](browser_attempt_20261014_headful_failed.json)。Chrome 已退出；在正式计时结束后才能再执行浏览器或批量 CPU 导出。准备使用 headless Chrome、显式可见性/renderer 记录和非 RAF 轮询区分桌面合成与应用问题。
+最终使用 `--headless=new --enable-gpu`，实际 renderer 为 ANGLE / NVIDIA RTX 4090 / OpenGL 4.5。39 帧检查 0/19/38 × 4 页，共 12 个模型页/帧状态；81 帧检查 0/39/40/80 × 4 页，共 16 个状态，包含 39→40 的跨场景转换。两次均无 page error、未解释应用错误或 panic，Chrome 均已关闭。存在外部训练时仅验证功能，没有进行图形/模型/算子性能测量，未改动其他进程。
+
+[39 帧浏览器收据](rerun_browser_qa.json)、[81 帧浏览器收据](mini_val/rerun_browser_qa.json)保存页面身份、frame API、截图和 renderer。代表性截图：[GRAE 19](rerun_grae_19.png)、[Opti 19](rerun_optipmb_19.png)、[Opti 跨场景前 39](mini_val/rerun_optipmb_39.png)、[跨场景后 40](mini_val/rerun_optipmb_40.png)、[GT 80](mini_val/rerun_ground_truth_80.png)。两次 overview 滑块检查与 390×844 截图也完成；密集 Rerun 工作区仍以桌面为验收范围。
+
+**截图底栏的 30 FPS 是 Rerun 播放设置，不是模型推理吞吐率；nuScenes keyframe 约为 2 Hz。** 可切换 `elapsed` 时间线或调整播放速率；记录保留每帧真实 timestamp_us 与 elapsed 秒值。
+
+初始化故障的分层证据与修复见[根因说明](browser_root_cause.md)：旧 Playwright 注入已移除的 old-headless 参数；默认/显式 SwiftShader 仅支持 6 个颜色附件，而该 viewer 要求 8。失败页、handle 空状态、完整 RRD 浏览器 fetch hash 与失败 receipts 均保留。SwiftShader 路径没有被宣称通过；早期 headful 超时也没有被倒推为已确证的同一原因。
 
 仓库根目录命令：
 
@@ -47,4 +53,4 @@ python perception_lab/tools/tracking_gpu_rerun_qa_20261013.py --headless
 python perception_lab/tools/tracking_gpu_rerun_qa_20261013.py --split mini_val --headless
 ```
 
-三项 CPU 门禁测试已通过。浏览器命令为下一次验证方案，尚未通过。大 RRD 保存在 ignored 输出目录，报告保留可重建来源与 hashes；原始数据、模型权重不提交。
+三项 CPU 门禁测试已通过，上述导出、案例与最终浏览器命令均已实际执行。大 RRD 保存在 ignored 输出目录，报告保留可重建来源与 hashes；原始数据、模型权重不提交。

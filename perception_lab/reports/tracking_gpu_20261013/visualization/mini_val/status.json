@@ -1,7 +1,7 @@
 {
-  "status": "partial",
+  "status": "passed",
   "export": "passed",
-  "browser_validation": "pending",
+  "browser_validation": "passed",
   "split": "mini_val",
   "frames": 81,
   "counts": [

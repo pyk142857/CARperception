@@ -1,0 +1,60 @@
+--- a/tooling/bevfusion_preindex_run.py
++++ b/tooling/bevfusion_preindex_run.py
+@@ -11,9 +11,10 @@
+ import sys
+ import time
+ import numpy as np
++sys.path.insert(0, '/home/minglei/Desktop/CAR/perception_lab/tools')
+ from bevfusion_4090 import digest, write_json, packet_input, make_pipeline, standardize
+ 
+-ROOT = Path(__file__).resolve().parents[1]
++ROOT = Path('/home/minglei/Desktop/CAR/perception_lab')
+ 
+ 
+ def main():
+@@ -31,8 +32,13 @@
+     bcfg, tcfg = cfg_deploy['bevfusion'], cfg_deploy['tensorrt']
+     source = ROOT / bcfg['source']
+     model_dir = ROOT / tcfg['model_dir']
+-    build_dir = ROOT / tcfg['source'] / 'CUDA-BEVFusion/build'
++    build_dir = Path('/home/minglei/Desktop/CAR/perception_lab/runs/tracking_gpu_20261013/bev_pooling/isolated/CUDA-BEVFusion/build')
+     sys.path[:0] = [str(source), str(build_dir)]
++    permitted = ROOT/'reports/tracking_gpu_20261013/bev_pooling/full_model'
++    if not a.out.resolve().is_relative_to(permitted.resolve()):
++        raise ValueError('Isolated pooling output must stay below '+str(permitted))
++    if os.environ.get('CAR_BEV_POOLING','upstream') not in ('upstream','preindex'):
++        raise ValueError('This experiment only permits upstream or preindex')
+     a.out.mkdir(parents=True, exist_ok=True)
+     packets = json.loads(a.packets.read_text())
+     if a.limit is not None:
+@@ -53,6 +59,12 @@
+     from mmdet3d.utils import recursive_eval
+     from mmdet3d.core.bbox import LiDARInstance3DBoxes, Box3DMode
+     import libpybev
++    if Path(libpybev.__file__).resolve().parent != build_dir.resolve():
++        raise RuntimeError('Wrong Python extension loaded: '+libpybev.__file__)
++    mapped = Path('/proc/self/maps').read_text()
++    core_paths = {line.split()[-1] for line in mapped.splitlines() if 'libbevfusion_core.so' in line}
++    if core_paths != {str((build_dir/'libbevfusion_core.so').resolve())}:
++        raise RuntimeError('Wrong core library mapping: '+repr(core_paths))
+     configs.load(str(ROOT/bcfg['config']), recursive=True)
+     cfg = Config(recursive_eval(configs))
+     pipeline, steps = make_pipeline(cfg)
+@@ -139,8 +151,15 @@
+         process_peak_mib=max(r['process_gpu_mib'] for r in timings),
+         precision='fp16', boundaries='forward includes image/points H2D, CUDA/TRT, box D2H; geometry update separate; process memory sampled after each frame; rendering excluded'))
+     if a.paired_pooling_rounds:
+-        from bev_pooling_full_model import paired_forwards
+-        paired_forwards(core, *first, a.paired_pooling_rounds, cfg_deploy['pooling']['warmup'], a.out)
++        from bev_pooling_preindex_full_model import paired_forwards
++        # Stateless detector: each scene's first/middle/last actual frame.
++        for scene in dict.fromkeys(p['scene_token'] for p in packets):
++            seq = [p for p in packets if p['scene_token']==scene]
++            for idx in [0,len(seq)//2,len(seq)-1]:
++                pair_out = a.out/'paired'/seq[idx]['sample_token']
++                pair_out.mkdir(parents=True,exist_ok=True)
++                prepared = prepare(seq[idx])
++                paired_forwards(core,*prepared,a.paired_pooling_rounds,cfg_deploy['pooling']['warmup'],pair_out)
+     files=['predictions.json','native_predictions.json','coordinate_audit.json','actual_inputs.json','timings.csv','performance.json']
+     write_json(a.out/'manifest.json',dict(status='passed',source='measured',identity=identity,frames=len(packets),
+         outputs_sha256={name:digest(a.out/name) for name in files},accuracy_status='not_evaluated'))

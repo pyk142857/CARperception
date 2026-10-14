@@ -60,4 +60,4 @@ BEV pooling尚未完成实测；在B–E发布后，按既有真实capture研究
 
 [阶段状态](status.json) · [真实命令／轻量runner](run_commands.md) · [隔离环境](environment/README.md) · [运行时兼容说明](environment/runtime_initialization.md) · [编译时源码及库hash](kernelbench/compile_manifest.json)。原始源码／权重／数据／环境／RRD留本地，报告保留来源与hash。
 
-两份冻结检测SHA：`dd6df55652026f2b04c7b18f9adde44123b664e8cb3706e53d6d30faca344d2f`（39），`a6fb424ccbe629f3af27172202960c4533cd48ddd887cd201f0d464ee22c56a7`（81）。原生对照首批已发布main@fda66d0；后续发布状态按status与Git远端核验记录。
+两份冻结检测SHA：`dd6df55652026f2b04c7b18f9adde44123b664e8cb3706e53d6d30faca344d2f`（39），`a6fb424ccbe629f3af27172202960c4533cd48ddd887cd201f0d464ee22c56a7`（81）。原生对照首批main@fda66d0，GPU等价／完整链路30轮已发布main@70420b8；后续发布状态按status与Git远端核验记录。

@@ -1,0 +1,20 @@
+--- a/tooling/bev_pooling_preindex_full_model.py
++++ b/tooling/bev_pooling_preindex_full_model.py
+@@ -24,7 +24,7 @@
+     core.update(*matrices)
+     try:
+         for mode in ['upstream', 'candidate']:
+-            os.environ['CAR_BEV_POOLING'] = mode
++            os.environ['CAR_BEV_POOLING'] = 'preindex' if mode == 'candidate' else 'upstream'
+             for _ in range(warmup):
+                 core.forward(images, points, False, False)
+             torch.cuda.synchronize()
+@@ -33,7 +33,7 @@
+             row = dict(round=round_id, order='-then-'.join(order))
+             outputs = {}
+             for mode in order:
+-                os.environ['CAR_BEV_POOLING'] = mode
++                os.environ['CAR_BEV_POOLING'] = 'preindex' if mode == 'candidate' else 'upstream'
+                 torch.cuda.synchronize()
+                 start = time.perf_counter()
+                 raw = np.asarray(core.forward(images, points, False, False)).copy()

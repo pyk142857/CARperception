@@ -1,0 +1,17 @@
+{
+  "status": "patches_prepared_not_materialized",
+  "isolated_source": "/home/minglei/Desktop/CAR/perception_lab/runs/tracking_gpu_20261013/bev_pooling/isolated/CUDA-BEVFusion",
+  "isolated_build": "/home/minglei/Desktop/CAR/perception_lab/runs/tracking_gpu_20261013/bev_pooling/isolated/CUDA-BEVFusion/build",
+  "old_source_untouched": true,
+  "old_library_sha256": "4d9121b0bec7cc09e24a1302750d91c700d6ec0b8510e1d3525dff2735b1fa6b",
+  "old_python_library_sha256": "47cae74f4c696f7ba2493c0630c2445296fb0a67e78428adb2a10bd22c687502",
+  "old_camera_source_sha256": "6f57c7375dc0dd046f8568750934ef532b00674e1a3f5bd2fff7bd2b099b1fac",
+  "patches": {
+    "camera-bevpool.cu": "16261839aa834317adfcf9a89768c616fba0034e20843ab36b37061d4915a8c8",
+    "bevfusion_preindex_run.py": "9a18ed714c9aca5bc4148b969b3a5b9463d4ac596f061fe066e62fb511c90f41",
+    "bev_pooling_preindex_full_model.py": "c98110814430554e539df60d8db79cf1b36e564f6973212a45cf1b618c40eecb"
+  },
+  "configuration": "Exact existing deployment_4090.yaml; no config/checkpoint/engine rebuild or alteration",
+  "full_model_measurement": "30 alternating upstream/preindex pairs for first/middle/last of all3scenes, resident identical core; CPU prepare outside, H2D/forward/D2H included",
+  "actual_execution": "No build, no CUDA calls, no model/eval execution performed by this script"
+}

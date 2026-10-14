@@ -1,7 +1,7 @@
 {
-  "status": "partial",
+  "status": "passed",
   "export": "passed",
-  "browser_validation": "failed",
+  "browser_validation": "passed",
   "split": "scene0061",
   "frames": 39,
   "counts": [

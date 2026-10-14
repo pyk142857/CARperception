@@ -53,6 +53,8 @@ def main():
         assert result['export_rrd_sha256'] == export['rrd_sha256']
         with sync_playwright() as p:
             chrome_args=['--no-sandbox','--ignore-gpu-blocklist']
+            if args.headless and not args.software_rendering:
+                chrome_args+=['--enable-gpu']
             if args.software_rendering:
                 chrome_args+=['--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']
             if args.headless or args.software_rendering:
@@ -75,6 +77,8 @@ def main():
             result['document_visibility']=page.evaluate('({visibility:document.visibilityState,focused:document.hasFocus()})')
             page.bring_to_front()
             result['renderer']=page.evaluate('()=>{let g=document.createElement("canvas").getContext("webgl2"),e=g.getExtension("WEBGL_debug_renderer_info");return {backend:"WebGL2",renderer:g.getParameter(e.UNMASKED_RENDERER_WEBGL)}}')
+            if args.headless and not args.software_rendering:
+                assert 'SwiftShader' not in result['renderer']['renderer'], result['renderer']
             if args.software_rendering:
                 assert 'SwiftShader' in result['renderer']['renderer'], result['renderer']
             destination.write_text(json.dumps(result,indent=2)+'\n')
@@ -133,7 +137,7 @@ def main():
     except BaseException as exc:
         result.update(status='failed',error=str(exc),traceback=traceback.format_exc())
         if (OUT/'status.json').exists():
-            export=json.loads((OUT/'status.json').read_text());export['browser_validation']='failed'
+            export=json.loads((OUT/'status.json').read_text());export['browser_validation']='failed';export['status']='partial'
             (OUT/'status.json').write_text(json.dumps(export,indent=2)+'\n')
         raise
     finally:

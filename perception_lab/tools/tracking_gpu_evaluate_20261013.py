@@ -8,7 +8,9 @@ def sync_model_status(model,folder,state):
  if state=='passed':
   receipt=json.loads((folder/'evaluation_status.json').read_text())
   if receipt.get('status')!='passed':raise ValueError('Evaluation receipt not passed')
+  if len(receipt['rows'])!=len(SPECS) or {row['split'] for row in receipt['rows']}!=set(SPECS):raise ValueError('Evaluation receipt split coverage mismatch')
   for row in receipt['rows']:
+   if row['frames']!=SPECS[row['split']][0]:raise ValueError('Evaluation frame count mismatch')
    base=folder/row['split']
    if sha(base/'tracking.json')!=row['tracking_sha256'] or sha(base/'official_eval/metrics_summary.json')!=row['metrics_sha256']:raise ValueError('Evaluation receipt hash mismatch')
  for path in [folder/'status.json',folder.parent/'status.json']:

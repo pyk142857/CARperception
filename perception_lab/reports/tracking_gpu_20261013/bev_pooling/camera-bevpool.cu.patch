@@ -1,0 +1,59 @@
+--- a/src/bevfusion/camera-bevpool.cu
++++ b/src/bevfusion/camera-bevpool.cu
+@@ -33,6 +33,11 @@
+ #include "common/check.hpp"
+ #include "common/launch.cuh"
+ #include "common/tensorrt.hpp"
++
++extern "C" int car_bev_pool_preindex_forward(
++    const void*, const void*, const void*, const void*, unsigned int,
++    unsigned int, unsigned int, unsigned int, unsigned int, unsigned int,
++    unsigned int, unsigned int, void*, void*, void*);
+ 
+ namespace bevfusion {
+ namespace camera {
+@@ -178,6 +183,7 @@
+  public:
+   virtual ~BEVPoolImplement() {
+     if (output_feature_) checkRuntime(cudaFree(output_feature_));
++    if (preindex_offsets_) checkRuntime(cudaFree(preindex_offsets_));
+   }
+ 
+   bool init(const std::vector<int>& camera_shape, unsigned int bev_width, unsigned int bev_height) {
+@@ -189,6 +195,8 @@
+     volumn_output_ = C * bev_width * bev_height;
+     output_dims_ = {1, (int)C, (int)bev_height, (int)bev_width};
+     checkRuntime(cudaMalloc(&output_feature_, volumn_output_ * sizeof(nvtype::half)));
++    preindex_count_ = camera_shape[0] * camera_shape[2] * camera_shape[3] * camera_shape[4];
++    checkRuntime(cudaMalloc(&preindex_offsets_, preindex_count_ * sizeof(unsigned int)));
+     return true;
+   }
+ 
+@@ -207,9 +215,15 @@
+ 
+     const char* mode = std::getenv("CAR_BEV_POOLING");
+     const int candidate = mode && std::string(mode) == "candidate";
+-    checkRuntime(static_cast<cudaError_t>(car_bev_pool_forward(
+-        camera_feature, depth_weights, indices, intervals, num_intervals, C, D, H, W,
+-        bev_height_, bev_width_, output_feature_, candidate, stream)));
++    if (mode && std::string(mode) == "preindex") {
++      checkRuntime(static_cast<cudaError_t>(car_bev_pool_preindex_forward(
++          camera_feature, depth_weights, indices, intervals, num_intervals, C, D, H, W,
++          bev_height_, bev_width_, preindex_count_, preindex_offsets_, output_feature_, stream)));
++    } else {
++      checkRuntime(static_cast<cudaError_t>(car_bev_pool_forward(
++          camera_feature, depth_weights, indices, intervals, num_intervals, C, D, H, W,
++          bev_height_, bev_width_, output_feature_, candidate, stream)));
++    }
+     car_capture_pool(std::getenv("CAR_BEV_POOL_CAPTURE"), camera_shape_, camera_feature,
+         depth_weights, indices, intervals, num_intervals, bev_height_, bev_width_, output_feature_, _stream);
+ 
+@@ -221,6 +235,8 @@
+   unsigned int bev_height_ = 0;
+   std::vector<int> camera_shape_;  // N(num camera), C(feature), D(depth), H(height), W(width)  (6, 80, 118, 32, 88)
+   half* output_feature_ = nullptr;
++  unsigned int* preindex_offsets_ = nullptr;
++  unsigned int preindex_count_ = 0;
+   std::vector<int> output_dims_;
+   unsigned int volumn_output_ = 0;
+ };

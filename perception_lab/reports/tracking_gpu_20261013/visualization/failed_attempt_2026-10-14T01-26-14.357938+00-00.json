@@ -1,0 +1,55 @@
+{
+  "status": "failed",
+  "browser": "Playwright Chromium",
+  "fallback_reason": "Browser plugin not available",
+  "headless": true,
+  "requested_renderer": "Chrome default hardware",
+  "url": "http://127.0.0.1:9095/?url=http%3A%2F%2F127.0.0.1%3A9094%2Ftracking_gpu_20261013%2Ftracking_gpu.rrd&renderer=webgl&persist=0",
+  "viewport": {
+    "width": 1800,
+    "height": 1100
+  },
+  "page_errors": [],
+  "console": [
+    {
+      "type": "warning",
+      "text": "using deprecated parameters for the initialization function; pass a single object instead"
+    },
+    {
+      "type": "warning",
+      "text": "[GroupMarkerNotSet(crbug.com/242999)!:A0600D002C3D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content."
+    },
+    {
+      "type": "warning",
+      "text": "found 0 values for \"notebook\" query. Expected one or none. Defaulting to \"false\"."
+    },
+    {
+      "type": "error",
+      "text": "Failed to start: Limit 'max_color_attachments' value 8 is better than allowed 6"
+    },
+    {
+      "type": "warning",
+      "text": "[GroupMarkerNotSet(crbug.com/242999)!:A0900D002C3D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content."
+    }
+  ],
+  "failed_requests": [],
+  "http_errors": [],
+  "checks": [],
+  "generated_at": "2026-10-14T01:26:14.357938+00:00",
+  "export_rrd_sha256": "2da4caecb87ea4aca9f7e7e6d473a08f5fdac7f6eda2f92bd61803fde5bdacc1",
+  "chrome_args": [
+    "--no-sandbox",
+    "--ignore-gpu-blocklist",
+    "--headless=new"
+  ],
+  "document_visibility": {
+    "visibility": "visible",
+    "focused": true
+  },
+  "renderer": {
+    "backend": "WebGL2",
+    "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+  },
+  "error": "",
+  "traceback": "Traceback (most recent call last):\n  File \"perception_lab/tools/tracking_gpu_rerun_qa_20261013.py\", line 81, in main\n    page.wait_for_function('window._qa_handle && window._qa_handle.get_active_recording_id()',timeout=120000,polling=100)\n  File \"/home/minglei/.local/lib/python3.8/site-packages/playwright/sync_api/_generated.py\", line 11537, in wait_for_function\n    self._sync(\n  File \"/home/minglei/.local/lib/python3.8/site-packages/playwright/_impl/_sync_base.py\", line 113, in _sync\n    self._dispatcher_fiber.switch()\n  File \"/home/minglei/.local/lib/python3.8/site-packages/playwright/sync_api/_context_manager.py\", line 56, in greenlet_main\n    self._loop.run_until_complete(self._connection.run_as_sync())\n  File \"/usr/lib/python3.8/asyncio/base_events.py\", line 603, in run_until_complete\n    self.run_forever()\n  File \"/usr/lib/python3.8/asyncio/base_events.py\", line 570, in run_forever\n    self._run_once()\n  File \"/usr/lib/python3.8/asyncio/base_events.py\", line 1823, in _run_once\n    event_list = self._selector.select(timeout)\n  File \"/usr/lib/python3.8/selectors.py\", line 468, in select\n    fd_event_list = self._selector.poll(timeout, max_ev)\nKeyboardInterrupt\n"
+}

@@ -1,5 +1,5 @@
 {
-  "status": "running",
+  "status": "waiting_for_exclusive_gpu",
   "stages": {
     "inputs_frozen": "passed",
     "native_comparison_complete": "passed",
@@ -10,9 +10,12 @@
     "grae_full_evaluation": "passed",
     "paired_performance": "pending",
     "bev_pooling_research": "pending",
-    "visualization": "pending",
-    "publication": "pending"
+    "visualization": "passed",
+    "publication": "passed"
   },
   "tracking_benefit": "not_adopted: OptiPMB mini_val AMOTA lower and FN higher",
-  "gpu_speedup_adopted": false
+  "gpu_speedup_adopted": false,
+  "last_verified_remote_commit": "70420b87b75f2ceb3733f9630f35458ccab2f3ab",
+  "publication_scope": "Native comparison, GPU correctness/full evaluation/full30-pair timing published; pending micro/pooling not claimed complete",
+  "blocking_condition": "Foreign waterwaydetection training PID 718139 occupies the single RTX 4090; clean micro remeasurement and BEV pooling GPU experiments remain pending."
 }

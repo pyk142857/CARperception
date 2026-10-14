@@ -1,5 +1,5 @@
 {
-  "status": "running",
+  "status": "passed",
   "browser": "Playwright Chromium",
   "fallback_reason": "Browser plugin not available",
   "headless": true,
@@ -10,15 +10,96 @@
     "height": 1100
   },
   "page_errors": [],
-  "console": [],
+  "console": [
+    {
+      "type": "warning",
+      "text": "using deprecated parameters for the initialization function; pass a single object instead"
+    },
+    {
+      "type": "warning",
+      "text": "found 0 values for \"notebook\" query. Expected one or none. Defaulting to \"false\"."
+    },
+    {
+      "type": "warning",
+      "text": "[eframe::web::app_runner] eframe-0.31.1/src/web/app_runner.rs:256: Unhandled egui viewport command: RequestUserAttention(Informational) - not implemented in web backend"
+    },
+    {
+      "type": "warning",
+      "text": "[eframe::web::app_runner] eframe-0.31.1/src/web/app_runner.rs:256: Unhandled egui viewport command: RequestUserAttention(Informational) - not implemented in web backend"
+    },
+    {
+      "type": "warning",
+      "text": "[eframe::web::app_runner] eframe-0.31.1/src/web/app_runner.rs:256: Unhandled egui viewport command: RequestUserAttention(Informational) - not implemented in web backend"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (File not found)"
+    }
+  ],
   "failed_requests": [],
   "http_errors": [],
-  "checks": [],
-  "generated_at": "2026-10-14T01:26:14.357938+00:00",
+  "checks": [
+    {
+      "recording": "36cf1c86312746178507ffa416c49041",
+      "timeline": "frame",
+      "frame": 0,
+      "playing": false,
+      "range": {
+        "min": 0,
+        "max": 38
+      },
+      "panic": false,
+      "expected_sample_token": "ca9a282c9e77460f8360f564131a8af5",
+      "token_evidence": "Token ordering independently verified by decoded RRD audit; browser API reports frame only",
+      "model_counts": {
+        "bev_detection": 38,
+        "grae": 19,
+        "optipmb": 12
+      }
+    },
+    {
+      "recording": "36cf1c86312746178507ffa416c49041",
+      "timeline": "frame",
+      "frame": 19,
+      "playing": false,
+      "range": {
+        "min": 0,
+        "max": 38
+      },
+      "panic": false,
+      "expected_sample_token": "b26e791522294bec90f86fd72226e35c",
+      "token_evidence": "Token ordering independently verified by decoded RRD audit; browser API reports frame only",
+      "model_counts": {
+        "bev_detection": 78,
+        "grae": 37,
+        "optipmb": 37
+      }
+    },
+    {
+      "recording": "36cf1c86312746178507ffa416c49041",
+      "timeline": "frame",
+      "frame": 38,
+      "playing": false,
+      "range": {
+        "min": 0,
+        "max": 38
+      },
+      "panic": false,
+      "expected_sample_token": "ed5fc18c31904f96a8f0dbb99ff069c0",
+      "token_evidence": "Token ordering independently verified by decoded RRD audit; browser API reports frame only",
+      "model_counts": {
+        "bev_detection": 58,
+        "grae": 22,
+        "optipmb": 22
+      }
+    }
+  ],
+  "generated_at": "2026-10-14T01:27:39.472176+00:00",
   "export_rrd_sha256": "2da4caecb87ea4aca9f7e7e6d473a08f5fdac7f6eda2f92bd61803fde5bdacc1",
   "chrome_args": [
     "--no-sandbox",
     "--ignore-gpu-blocklist",
+    "--enable-gpu",
     "--headless=new"
   ],
   "document_visibility": {
@@ -27,6 +108,272 @@
   },
   "renderer": {
     "backend": "WebGL2",
-    "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    "renderer": "ANGLE (NVIDIA Corporation, NVIDIA GeForce RTX 4090/PCIe/SSE2, OpenGL 4.5.0)"
+  },
+  "title": "Rerun Viewer",
+  "actual_url": "http://127.0.0.1:9095/?url=http%3A%2F%2F127.0.0.1%3A9094%2Ftracking_gpu_20261013%2Ftracking_gpu.rrd&renderer=webgl&persist=0",
+  "canvas_count": 1,
+  "model_tab_checks": [
+    {
+      "family": "grae",
+      "frame": 0,
+      "screenshot": "rerun_grae_00.png",
+      "tab_evidence": "Inspected canvas tab coordinates; rendered screenshot must be reviewed",
+      "panic": false
+    },
+    {
+      "family": "grae",
+      "frame": 19,
+      "screenshot": "rerun_grae_19.png",
+      "tab_evidence": "Inspected canvas tab coordinates; rendered screenshot must be reviewed",
+      "panic": false
+    },
+    {
+      "family": "grae",
+      "frame": 38,
+      "screenshot": "rerun_grae_38.png",
+      "tab_evidence": "Inspected canvas tab coordinates; rendered screenshot must be reviewed",
+      "panic": false
+    },
+    {
+      "family": "optipmb",
+      "frame": 0,
+      "screenshot": "rerun_optipmb_00.png",
+      "tab_evidence": "Inspected canvas tab coordinates; rendered screenshot must be reviewed",
+      "panic": false
+    },
+    {
+      "family": "optipmb",
+      "frame": 19,
+      "screenshot": "rerun_optipmb_19.png",
+      "tab_evidence": "Inspected canvas tab coordinates; rendered screenshot must be reviewed",
+      "panic": false
+    },
+    {
+      "family": "optipmb",
+      "frame": 38,
+      "screenshot": "rerun_optipmb_38.png",
+      "tab_evidence": "Inspected canvas tab coordinates; rendered screenshot must be reviewed",
+      "panic": false
+    },
+    {
+      "family": "ground_truth",
+      "frame": 0,
+      "screenshot": "rerun_ground_truth_00.png",
+      "tab_evidence": "Inspected canvas tab coordinates; rendered screenshot must be reviewed",
+      "panic": false
+    },
+    {
+      "family": "ground_truth",
+      "frame": 19,
+      "screenshot": "rerun_ground_truth_19.png",
+      "tab_evidence": "Inspected canvas tab coordinates; rendered screenshot must be reviewed",
+      "panic": false
+    },
+    {
+      "family": "ground_truth",
+      "frame": 38,
+      "screenshot": "rerun_ground_truth_38.png",
+      "tab_evidence": "Inspected canvas tab coordinates; rendered screenshot must be reviewed",
+      "panic": false
+    }
+  ],
+  "model_tabs": "Model/family tabs clicked; screenshot evidence captured.",
+  "rerun_console_before_navigation": [
+    {
+      "type": "warning",
+      "text": "using deprecated parameters for the initialization function; pass a single object instead"
+    },
+    {
+      "type": "warning",
+      "text": "found 0 values for \"notebook\" query. Expected one or none. Defaulting to \"false\"."
+    },
+    {
+      "type": "warning",
+      "text": "[eframe::web::app_runner] eframe-0.31.1/src/web/app_runner.rs:256: Unhandled egui viewport command: RequestUserAttention(Informational) - not implemented in web backend"
+    },
+    {
+      "type": "warning",
+      "text": "[eframe::web::app_runner] eframe-0.31.1/src/web/app_runner.rs:256: Unhandled egui viewport command: RequestUserAttention(Informational) - not implemented in web backend"
+    },
+    {
+      "type": "warning",
+      "text": "[eframe::web::app_runner] eframe-0.31.1/src/web/app_runner.rs:256: Unhandled egui viewport command: RequestUserAttention(Informational) - not implemented in web backend"
+    }
+  ],
+  "overview_checks": [
+    {
+      "frame": 0,
+      "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+      "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+      "timestamp_us": 1532402927647951,
+      "original_lidar_points": 34688,
+      "model_boxes": {
+        "bev_detection": 38,
+        "grae": 19,
+        "optipmb": 12
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 17,
+          "grae": 17,
+          "optipmb": 17,
+          "ground_truth": 17
+        },
+        "CAM_FRONT": {
+          "bev_detection": 292,
+          "grae": 108,
+          "optipmb": 48,
+          "ground_truth": 571
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 115,
+          "grae": 48,
+          "optipmb": 12,
+          "ground_truth": 197
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 12,
+          "grae": 12,
+          "optipmb": 0,
+          "ground_truth": 24
+        },
+        "CAM_BACK": {
+          "bev_detection": 72,
+          "grae": 60,
+          "optipmb": 60,
+          "ground_truth": 120
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 36,
+          "grae": 36,
+          "optipmb": 24,
+          "ground_truth": 53
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 19,
+      "sample_token": "b26e791522294bec90f86fd72226e35c",
+      "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+      "timestamp_us": 1532402937198682,
+      "original_lidar_points": 34688,
+      "model_boxes": {
+        "bev_detection": 78,
+        "grae": 37,
+        "optipmb": 37
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 24,
+          "grae": 24,
+          "optipmb": 24,
+          "ground_truth": 206
+        },
+        "CAM_FRONT": {
+          "bev_detection": 133,
+          "grae": 59,
+          "optipmb": 59,
+          "ground_truth": 366
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 311,
+          "grae": 168,
+          "optipmb": 171,
+          "ground_truth": 455
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 22,
+          "grae": 22,
+          "optipmb": 22,
+          "ground_truth": 33
+        },
+        "CAM_BACK": {
+          "bev_detection": 336,
+          "grae": 96,
+          "optipmb": 96,
+          "ground_truth": 540
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 225,
+          "grae": 141,
+          "optipmb": 138,
+          "ground_truth": 588
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 38,
+      "sample_token": "ed5fc18c31904f96a8f0dbb99ff069c0",
+      "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+      "timestamp_us": 1532402946797517,
+      "original_lidar_points": 34720,
+      "model_boxes": {
+        "bev_detection": 58,
+        "grae": 22,
+        "optipmb": 22
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 69,
+          "grae": 69,
+          "optipmb": 69,
+          "ground_truth": 106
+        },
+        "CAM_FRONT": {
+          "bev_detection": 78,
+          "grae": 19,
+          "optipmb": 19,
+          "ground_truth": 137
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 113,
+          "grae": 0,
+          "optipmb": 0,
+          "ground_truth": 145
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 35,
+          "grae": 35,
+          "optipmb": 35,
+          "ground_truth": 34
+        },
+        "CAM_BACK": {
+          "bev_detection": 395,
+          "grae": 167,
+          "optipmb": 167,
+          "ground_truth": 491
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 64,
+          "grae": 20,
+          "optipmb": 20,
+          "ground_truth": 56
+        }
+      },
+      "missing_models": []
+    }
+  ],
+  "mobile_note": "Overview smoke only; dense Rerun desktop workspace not evaluated on mobile.",
+  "console_review": {
+    "external_optional_request_failures": false,
+    "unexplained_app_errors": [],
+    "note": "External font/examples/telemetry requests do not carry local recording data. SDK initialization and attention warnings are retained."
+  },
+  "validation_scope": "Browser functional acceptance only; concurrent external training; not model/operator/GPU performance evidence",
+  "visual_review": {
+    "status": "passed",
+    "reviewed_screenshots": [
+      "rerun_grae_19.png",
+      "rerun_optipmb_19.png"
+    ],
+    "findings": [
+      "Correct selected tabs, six camera photos with projected boxes, raw full point cloud, 3D/BEV tracks and independent GT visible.",
+      "Cross-scene reset verified in decoded clears and mini_val frame39\u219240 screenshots.",
+      "No blank viewer, error overlay or panic."
+    ],
+    "playback_note": "Bottom30FPS is viewer playback; nuScenes keyframes\u22482Hz, not inference throughput. Exact timestamps retained."
   }
 }
