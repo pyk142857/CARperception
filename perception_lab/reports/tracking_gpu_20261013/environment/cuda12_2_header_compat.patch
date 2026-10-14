@@ -1,0 +1,11 @@
+--- tilelang/src/tl_templates/cuda/common.h
++++ tilelang/src/tl_templates/cuda/common.h
+@@ -1196,7 +1196,7 @@
+                "l"(bytes)
+                : "memory");
+ #else
+-  static_assert(false, "tl::st_bulk_shared requires CUDA >= 12.8");
++  static_assert(bytes == 0 && bytes != 0, "tl::st_bulk_shared requires CUDA >= 12.8");
+ #endif
+ }
+ 

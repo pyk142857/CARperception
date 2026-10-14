@@ -1,0 +1,20 @@
+{
+  "overlap": {
+    "library": "/home/minglei/Desktop/CAR/perception_lab/runs/tracking_gpu_20261013/tilelang_geometry/overlap.so",
+    "sha256": "524d69c7f2e1f0687be9815b951bbe31e9d0bd512f4a360c0f34db43542c894b",
+    "generated_cuda_sha256": "3b3f09d441d8d2125f16f1b1e589d81b2b58f4b7e1faa08c687ede4937642041"
+  },
+  "suppress": {
+    "library": "/home/minglei/Desktop/CAR/perception_lab/runs/tracking_gpu_20261013/tilelang_geometry/suppress.so",
+    "sha256": "c845372000dab4077acccedcb5b7907df84ee5eb216b1a6fa9fd0151a51cd464",
+    "generated_cuda_sha256": "156e433e082ec5c2e7e2f133549f68491538354e59339a6dc9a702510e4657ef"
+  },
+  "capacity": 256,
+  "geometry_dtype": "float64",
+  "compiler_flags": [
+    "-std=c++17",
+    "--fmad=false"
+  ],
+  "source_sha256": "7117fe87d2d0d0ea733871431cc5c67414d523a2e5da1e983ff4b062e367198b",
+  "tilelang": "0.1.15"
+}

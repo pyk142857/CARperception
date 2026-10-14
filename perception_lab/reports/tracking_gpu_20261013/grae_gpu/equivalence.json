@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "tracks": [
+    {
+      "split": "scene0061",
+      "bytes_exact": true,
+      "cpu_sha256": "ceaf64c45d71bf7fddf7e56f55946262e31614104f9c238bf863c05bd6facb89",
+      "gpu_sha256": "ceaf64c45d71bf7fddf7e56f55946262e31614104f9c238bf863c05bd6facb89"
+    },
+    {
+      "split": "mini_val",
+      "bytes_exact": true,
+      "cpu_sha256": "dffd9176551b2dc866807fcaf2f9ab1a0289c48fc19c49d75d69c320f17fce99",
+      "gpu_sha256": "dffd9176551b2dc866807fcaf2f9ab1a0289c48fc19c49d75d69c320f17fce99"
+    }
+  ],
+  "kernel_calls": {
+    "overlap": 120,
+    "suppress": 120
+  },
+  "cpu_boundary_pairs": 0,
+  "nms_frames": 120,
+  "adapter_sha256": "7e266e4cfe2c2616e63e209cfc393176d1a2f91c6d09095488310a62aa25ff32",
+  "scope": "same original GRAE environment/model/association; GPU replaces NMS geometry and greedy index selection only"
+}

@@ -1,0 +1,128 @@
+[
+  {
+    "time": 1791939995.876052,
+    "compute_apps": "632579, perception_lab/envs/grae3dmot_2025/bin/python, 600",
+    "external_compute": [],
+    "gpu": "36, 1750, 38, 2520, 76.88",
+    "rss_peak_kib": 1975692,
+    "allocated": 2393088,
+    "reserved": 83886080
+  },
+  {
+    "time": 1791939996.0052269,
+    "compute_apps": "632579, perception_lab/envs/grae3dmot_2025/bin/python, 600",
+    "external_compute": [],
+    "gpu": "17, 1749, 38, 2520, 75.51",
+    "rss_peak_kib": 1975692,
+    "allocated": 2393088,
+    "reserved": 83886080
+  },
+  {
+    "time": 1791939998.0592465,
+    "compute_apps": "632579, perception_lab/envs/grae3dmot_2025/bin/python, 600",
+    "external_compute": [],
+    "gpu": "7, 1774, 38, 2520, 70.56",
+    "rss_peak_kib": 1975692,
+    "allocated": 2393088,
+    "reserved": 83886080
+  },
+  {
+    "time": 1791940000.1271024,
+    "compute_apps": "632579, perception_lab/envs/grae3dmot_2025/bin/python, 600",
+    "external_compute": [],
+    "gpu": "8, 1771, 38, 2520, 70.18",
+    "rss_peak_kib": 1975692,
+    "allocated": 2393088,
+    "reserved": 83886080
+  },
+  {
+    "time": 1791940002.1950264,
+    "compute_apps": "632579, perception_lab/envs/grae3dmot_2025/bin/python, 600",
+    "external_compute": [],
+    "gpu": "7, 1774, 38, 2520, 70.03",
+    "rss_peak_kib": 1975692,
+    "allocated": 2393088,
+    "reserved": 83886080
+  },
+  {
+    "time": 1791940004.3069985,
+    "compute_apps": "632579, perception_lab/envs/grae3dmot_2025/bin/python, 600",
+    "external_compute": [],
+    "gpu": "6, 1797, 38, 2520, 70.77",
+    "rss_peak_kib": 1975692,
+    "allocated": 2393088,
+    "reserved": 83886080
+  },
+  {
+    "time": 1791940006.399279,
+    "compute_apps": "632579, perception_lab/envs/grae3dmot_2025/bin/python, 600",
+    "external_compute": [],
+    "gpu": "10, 1761, 38, 2520, 70.36",
+    "rss_peak_kib": 1975692,
+    "allocated": 2393088,
+    "reserved": 83886080
+  },
+  {
+    "time": 1791940008.5086863,
+    "compute_apps": "632579, perception_lab/envs/grae3dmot_2025/bin/python, 600",
+    "external_compute": [],
+    "gpu": "7, 1737, 38, 2520, 70.29",
+    "rss_peak_kib": 1975692,
+    "allocated": 2393088,
+    "reserved": 83886080
+  },
+  {
+    "time": 1791940010.5775464,
+    "compute_apps": "632579, perception_lab/envs/grae3dmot_2025/bin/python, 600",
+    "external_compute": [],
+    "gpu": "7, 1735, 38, 2520, 70.17",
+    "rss_peak_kib": 1975692,
+    "allocated": 2393088,
+    "reserved": 83886080
+  },
+  {
+    "time": 1791940012.6430495,
+    "compute_apps": "632579, perception_lab/envs/grae3dmot_2025/bin/python, 600",
+    "external_compute": [],
+    "gpu": "6, 1739, 38, 2520, 70.17",
+    "rss_peak_kib": 1975692,
+    "allocated": 2393088,
+    "reserved": 83886080
+  },
+  {
+    "time": 1791940014.7076144,
+    "compute_apps": "632579, perception_lab/envs/grae3dmot_2025/bin/python, 600",
+    "external_compute": [],
+    "gpu": "22, 1739, 37, 615, 36.57",
+    "rss_peak_kib": 1975692,
+    "allocated": 2393088,
+    "reserved": 83886080
+  },
+  {
+    "time": 1791940016.8191864,
+    "compute_apps": "632579, perception_lab/envs/grae3dmot_2025/bin/python, 600",
+    "external_compute": [],
+    "gpu": "27, 1738, 38, 2520, 72.72",
+    "rss_peak_kib": 1975692,
+    "allocated": 9289728,
+    "reserved": 83886080
+  },
+  {
+    "time": 1791940018.9265022,
+    "compute_apps": "632579, perception_lab/envs/grae3dmot_2025/bin/python, 600",
+    "external_compute": [],
+    "gpu": "38, 1738, 38, 2520, 75.44",
+    "rss_peak_kib": 1975692,
+    "allocated": 7245312,
+    "reserved": 83886080
+  },
+  {
+    "time": 1791940019.5959024,
+    "compute_apps": "632579, perception_lab/envs/grae3dmot_2025/bin/python, 600",
+    "external_compute": [],
+    "gpu": "38, 1737, 38, 2520, 80.67",
+    "rss_peak_kib": 1975692,
+    "allocated": 2393088,
+    "reserved": 83886080
+  }
+]

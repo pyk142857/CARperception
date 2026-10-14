@@ -1,0 +1,27 @@
+{
+  "tilelang_commit": "a35f8ddf45eba16c21211ec8822d56ce5363036f",
+  "tilelang_version": "0.1.15",
+  "tilelang_wheel": {
+    "filename": "tilelang-0.1.15-cp39-abi3-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+    "url": "https://files.pythonhosted.org/packages/87/7c/eeda90666b629bc92e8a775ea219f91b8696d8592d7a5c7dff7067dd2642/tilelang-0.1.15-cp39-abi3-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+    "sha256": "ca021a3450ad84b8fe7deb1b659c8d3d2e4b0855fdb59e2992a5349acf019881"
+  },
+  "kernelbench_commit": "423217d9fda91e0c2d67e4a43bf62f96f6d104f1",
+  "environment": "perception_lab/envs/tilelang_20261013",
+  "base_environment_read_only": "/home/minglei/anaconda3/envs/autolabel",
+  "torch": "2.1.2+cu118",
+  "cuda_compiler": "/usr/local/cuda-12.2/bin/nvcc",
+  "cuda_compiler_version": "12.2.91",
+  "host_compiler": "GCC 9.4.0",
+  "compile_flags": [
+    "-std=c++17"
+  ],
+  "compat_patch": "cuda12_2_header_compat.patch",
+  "hashes": {
+    "perception_lab/envs/tilelang_20261013/lib/python3.10/site-packages/tilelang/lib/libtilelang.so": "6b1d4267e5f46af4c21a97c5fd7dc3153423eafaad0bbc888c85a904752480ad",
+    "perception_lab/envs/tilelang_20261013/lib/python3.10/site-packages/tilelang/src/tl_templates/cuda/common.h": "4ffff1fcd139821a8c3671c6409afef15d382c67399beb711b5722decc3dddc4",
+    "perception_lab/third_party/KernelBench_20261013/src/kernelbench/timing.py": "eaabdad5dd042cfaac7159713b5f0c17a9244e65622b504eb3ca909d780854c5",
+    "perception_lab/third_party/KernelBench_20261013/src/kernelbench/eval.py": "b42ce1268ec64ee7274db307ab98945c1e868792b54689554014b28c41787ee6"
+  },
+  "smoke_script_sha256": "d5301789f064e5efea95d5894d87b935358ed52b12e91dcc791f345e8f9180b8"
+}

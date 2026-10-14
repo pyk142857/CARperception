@@ -9,7 +9,7 @@ The author CenterPoint default configuration is applied **unchanged** to fixed B
 | scene0061, 39 frames | 7,789 | 4,580 | 1,434 | 1,408 | 1,437 | 3.346898 s / 85.82 ms per frame |
 | mini_val, 81 frames | 16,199 | 15,007 | 4,390 | 4,288 | 4,034 | 10.741198 s / 132.61 ms per frame |
 
-Timing uses four CPU threads, no CUDA, and includes frozen JSON/packet reads, actual LiDAR file reads, sensor-to-global transforms, measurement formatting, native prediction/update/pruning/extraction and online box construction. Import/config initialization, diagnostic evidence hashes, disk export and evaluation are excluded. These are single-pass descriptive timings, not a paired speedup claim. [timing.json](scene0061/timing.json) and [mini timing](mini_val/timing.json) preserve individual frames. Instrumented replays are separate and are never substituted for production timings.
+Timing uses four CPU threads, no CUDA, and includes frozen JSON/packet reads, actual LiDAR file reads, sensor-to-global transforms, measurement formatting, native prediction/update/pruning/extraction and online box construction. Import/config initialization, diagnostic evidence hashes, disk export and evaluation are excluded. The full-loop time conservatively also includes per-frame metadata/count recording and periodic progress printing; individual frame times stop before that bookkeeping. These are single-pass descriptive timings, not a paired speedup claim. [timing.json](scene0061/timing.json) and [mini timing](mini_val/timing.json) preserve individual frames. Instrumented replays are separate and are never substituted for production timings.
 
 ## Input and execution contracts
 

@@ -1,0 +1,12 @@
+# gpu         pid  type    sm    mem    enc    dec     fb   ccpm    command
+# Idx           #   C/G     %      %      %      %     MB     MB    name
+    0       1560     G      -      -      -      -    501      0    Xorg           
+    0      12294     G      4      0      -      -     77      0    gnome-shell    
+    0      12534     G      -      -      -      -     18      0    sunloginclient 
+    0      12664     G      -      -      -      -      6      0    15.2.0.63062 (L
+    0      12689     G      -      -      -      -     10      0    15.2.0.63062 (L
+    0      52252     G      -      -      -      -    110      0    chrome --type=g
+    0      55073     G      -      -      -      -     49      0    WebKitWebProces
+    0      58890     G      1      0      -      -    174      0    Code -         
+    0     632579     C      -      -      -      -    600      0    python         
+    0    1481076     G      -      -      -      -     62      0    baidunetdisk --

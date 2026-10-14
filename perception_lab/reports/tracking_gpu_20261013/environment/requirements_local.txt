@@ -1,0 +1,7 @@
+apache-tvm-ffi==0.1.12
+cloudpickle==3.1.2
+ml_dtypes==0.6.0
+tilelang==0.1.15
+torch_c_dlpack_ext==0.1.5
+typing_extensions==4.16.0
+z3-solver==4.15.4.0

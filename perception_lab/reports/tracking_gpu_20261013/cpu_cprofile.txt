@@ -1,0 +1,68 @@
+         61084519 function calls (60966145 primitive calls) in 38.803 seconds
+
+   Ordered by: cumulative time
+   List reduced from 157 to 60 due to restriction <60>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+      120    0.009    0.000   38.803    0.323 grae3dmot_2025.py:58(frame_arrays)
+      120    0.595    0.005   38.564    0.321 nms.py:14(nms)
+   452829    0.894    0.000   35.335    0.000 tracking_gpu_geometry_20261013.py:44(timed_iou)
+   452829    2.075    0.000   32.232    0.000 geometry.py:161(iou3d)
+   905658    0.756    0.000   10.582    0.000 polygon.py:238(__init__)
+   905658    1.591    0.000    7.316    0.000 polygon.py:530(geos_polygon_from_py)
+   452829    0.375    0.000    7.256    0.000 base.py:693(intersection)
+   940398    5.839    0.000    7.180    0.000 bbox.py:69(box2corners2d)
+   905658    2.915    0.000    5.507    0.000 {shapely.speedups._speedups.geos_linearring_from_py}
+   452829    1.253    0.000    4.079    0.000 base.py:70(geom_factory)
+ 12226383    3.995    0.000    3.995    0.000 base.py:245(__setattr__)
+  2716974    1.892    0.000    3.714    0.000 base.py:191(_empty)
+  1358487    0.808    0.000    3.250    0.000 base.py:240(_set_geom)
+  1358487    0.579    0.000    3.123    0.000 base.py:208(__del__)
+  1358487    0.630    0.000    3.066    0.000 base.py:433(area)
+   452829    2.212    0.000    2.732    0.000 topology.py:66(__call__)
+   905658    1.432    0.000    2.592    0.000 _asarray.py:22(require)
+  4632510    2.376    0.000    2.376    0.000 {built-in method numpy.array}
+  1358487    1.549    0.000    2.267    0.000 topology.py:57(__call__)
+268533/150159    0.198    0.000    1.410    0.000 {built-in method numpy.core._multiarray_umath.implement_array_function}
+    34740    0.273    0.000    1.140    0.000 bbox_coarse_hash.py:24(compute_bbox_key)
+    30306    0.020    0.000    1.075    0.000 <__array_function__ internals>:177(isin)
+    30306    0.036    0.000    1.037    0.000 arraysetops.py:644(isin)
+    30306    0.019    0.000    0.981    0.000 <__array_function__ internals>:177(in1d)
+    30306    0.219    0.000    0.935    0.000 arraysetops.py:523(in1d)
+  2264145    0.641    0.000    0.904    0.000 topology.py:18(_validate)
+    15153    0.069    0.000    0.795    0.000 bbox_coarse_hash.py:38(related_bboxes)
+   905658    0.551    0.000    0.720    0.000 _asarray.py:109(<setcomp>)
+   452829    0.257    0.000    0.616    0.000 {built-in method builtins.__import__}
+      120    0.035    0.000    0.529    0.004 bbox_coarse_hash.py:14(bboxes2dict)
+    28926    0.016    0.000    0.486    0.000 <__array_function__ internals>:177(unique)
+    28926    0.033    0.000    0.448    0.000 arraysetops.py:138(unique)
+    28926    0.190    0.000    0.398    0.000 arraysetops.py:323(_unique1d)
+  4528290    0.386    0.000    0.386    0.000 base.py:228(_geom)
+  3761592    0.377    0.000    0.377    0.000 {method 'tolist' of 'numpy.ndarray' objects}
+   453189    0.268    0.000    0.359    0.000 <frozen importlib._bootstrap>:1053(_handle_fromlist)
+   452829    0.309    0.000    0.309    0.000 base.py:64(geometry_type_name)
+  1811316    0.238    0.000    0.238    0.000 impl.py:56(__getitem__)
+    69840    0.069    0.000    0.230    0.000 fromnumeric.py:69(_wrapreduction)
+    34740    0.019    0.000    0.202    0.000 <__array_function__ internals>:177(amin)
+      120    0.022    0.000    0.189    0.002 grae3dmot_2025.py:78(<listcomp>)
+  1811316    0.170    0.000    0.170    0.000 {method 'upper' of 'str' objects}
+    69480    0.053    0.000    0.167    0.000 __init__.py:274(__getattr__)
+    34740    0.029    0.000    0.165    0.000 fromnumeric.py:2802(amin)
+  1358487    0.156    0.000    0.156    0.000 {built-in method _ctypes.byref}
+  1378554    0.155    0.000    0.155    0.000 {built-in method builtins.isinstance}
+   161478    0.150    0.000    0.150    0.000 {built-in method numpy.asarray}
+    34740    0.017    0.000    0.148    0.000 <__array_function__ internals>:177(amax)
+    15153    0.136    0.000    0.136    0.000 nms.py:36(<listcomp>)
+    70680    0.129    0.000    0.129    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+    34740    0.023    0.000    0.115    0.000 fromnumeric.py:2677(amax)
+    69480    0.115    0.000    0.115    0.000 {built-in method _warnings.warn}
+    19587    0.073    0.000    0.111    0.000 quaternion.py:1009(yaw_pitch_roll)
+   905658    0.110    0.000    0.110    0.000 {built-in method _ctypes.POINTER}
+    14463    0.008    0.000    0.107    0.000 <__array_function__ internals>:177(cumsum)
+   905658    0.105    0.000    0.105    0.000 {built-in method time.perf_counter}
+   452829    0.102    0.000    0.102    0.000 {built-in method builtins.locals}
+   906018    0.101    0.000    0.101    0.000 {built-in method builtins.hasattr}
+   452829    0.097    0.000    0.097    0.000 {built-in method builtins.min}
+   905658    0.092    0.000    0.092    0.000 {method 'get' of 'dict' objects}
+
+

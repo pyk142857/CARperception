@@ -1,0 +1,14 @@
+{
+  "scope": "CPU prepared detections through H2D + author association + CPU export; hook-instrumented validation, not final benchmark",
+  "scenes": [
+    {
+      "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+      "frames": 39,
+      "association_e2e_ms": 570.206453994615,
+      "ms_per_frame": 14.62067830755423,
+      "scene_reset": true
+    }
+  ],
+  "peak_allocated_bytes": 53246976,
+  "frames": 39
+}

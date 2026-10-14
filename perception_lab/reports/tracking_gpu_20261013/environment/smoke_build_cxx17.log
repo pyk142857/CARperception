@@ -1,0 +1,102 @@
+/home/minglei/Desktop/CAR/perception_lab/envs/tilelang_20261013/lib/python3.10/site-packages/tvm_ffi/_optional_torch_c_dlpack.py:181: UserWarning: Failed to JIT torch c dlpack extension, EnvTensorAllocator will not be enabled.
+We recommend installing via `pip install torch-c-dlpack-ext`
+  warnings.warn(
+nvcc warning : incompatible redefinition for option 'std', the last value of this option was used
+/home/minglei/Desktop/CAR/perception_lab/envs/tilelang_20261013/lib/python3.10/site-packages/tilelang/3rdparty/../src/tl_templates/cuda/common.h(1199): error: static assertion failed with "tl::st_bulk_shared requires CUDA >= 12.8"
+    static_assert(false, "tl::st_bulk_shared requires CUDA >= 12.8");
+    ^
+
+1 error detected in the compilation of "/tmp/tmp67fwd1yq.cu".
+2026-10-14 08:45:11  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:137): TileLang begins to compile kernel `add` with `out_idx=None`
+Traceback (most recent call last):
+  File "/home/minglei/Desktop/CAR/perception_lab/reports/tracking_gpu_20261013/environment/tilelang_smoke.py", line 39, in <module>
+    if __name__=='__main__':main()
+  File "/home/minglei/Desktop/CAR/perception_lab/reports/tracking_gpu_20261013/environment/tilelang_smoke.py", line 20, in main
+    kernel=tilelang.compile(add, target={'kind':'cuda','arch':'sm_89'},execution_backend='cython',compile_flags=['-std=c++17'])
+  File "/home/minglei/Desktop/CAR/perception_lab/envs/tilelang_20261013/lib/python3.10/site-packages/tilelang/jit/__init__.py", line 164, in compile
+    return cached(
+  File "/home/minglei/Desktop/CAR/perception_lab/envs/tilelang_20261013/lib/python3.10/site-packages/tilelang/cache/__init__.py", line 90, in cached
+    return cache.cached(
+  File "/home/minglei/Desktop/CAR/perception_lab/envs/tilelang_20261013/lib/python3.10/site-packages/tilelang/cache/kernel_cache.py", line 427, in cached
+    kernel = JITKernel(
+  File "/home/minglei/Desktop/CAR/perception_lab/envs/tilelang_20261013/lib/python3.10/site-packages/tilelang/jit/kernel.py", line 140, in __init__
+    adapter = self._compile_and_create_adapter(func, out_idx)
+  File "/home/minglei/Desktop/CAR/perception_lab/envs/tilelang_20261013/lib/python3.10/site-packages/tilelang/jit/kernel.py", line 275, in _compile_and_create_adapter
+    adapter = self._create_adapter_from_artifact(
+  File "/home/minglei/Desktop/CAR/perception_lab/envs/tilelang_20261013/lib/python3.10/site-packages/tilelang/jit/kernel.py", line 361, in _create_adapter_from_artifact
+    adapter = create_adapter(
+  File "/home/minglei/Desktop/CAR/perception_lab/envs/tilelang_20261013/lib/python3.10/site-packages/tilelang/jit/kernel.py", line 336, in create_adapter
+    return adapter_cls(**kwargs)
+  File "/home/minglei/Desktop/CAR/perception_lab/envs/tilelang_20261013/lib/python3.10/site-packages/tilelang/jit/adapter/cython/adapter.py", line 157, in __init__
+    self.lib_generator.compile_lib()
+  File "/home/minglei/Desktop/CAR/perception_lab/envs/tilelang_20261013/lib/python3.10/site-packages/tilelang/jit/adapter/libgen.py", line 223, in compile_lib
+    raise RuntimeError(f"Compilation Failed! {command}\n{captured}\n{self.lib_code}")
+RuntimeError: Compilation Failed! ['/usr/local/cuda-12.2/bin/nvcc', '-std=c++20', '-w', '-Xcudafe', '--diag_suppress=177', '-lineinfo', '--shared', '/tmp/tmp67fwd1yq.cu', '-L/usr/local/cuda-12.2/targets/x86_64-linux/lib', '-L/usr/local/cuda-12.2/targets/x86_64-linux/lib/stubs', '-L/usr/local/cuda-12.2/lib64', '-L/usr/local/cuda-12.2/lib64/stubs', '-lcuda', '-gencode', 'arch=compute_89,code=sm_89', '--compiler-options', '-fPIC', '-I/home/minglei/Desktop/CAR/perception_lab/envs/tilelang_20261013/lib/python3.10/site-packages/tilelang/3rdparty/cutlass/include', '-I/home/minglei/Desktop/CAR/perception_lab/envs/tilelang_20261013/lib/python3.10/site-packages/tilelang/3rdparty/../src', '-std=c++17', '-o', '/tmp/tmp67fwd1yq.so']
+
+#if defined(_MSC_VER) && !defined(__clang__) && _MSC_VER < 1940
+#define _tl_orig_alignas alignas
+#define alignas(N) _tl_orig_alignas((N) <= 64 ? (N) : 64)
+#include <cuda.h>
+#undef alignas
+#define alignas _tl_orig_alignas
+#endif
+#include <tl_templates/cuda/reduce.h>
+#include <tl_templates/cuda/scan.h>
+#include <tl_templates/cuda/ldsm.h>
+#include <tl_templates/cuda/threadblock_swizzle.h>
+#include <tl_templates/cuda/debug.h>
+#ifdef ENABLE_BF16
+#include <tl_templates/cuda/cuda_bf16_fallbacks.cuh>
+#endif
+
+extern "C" __global__ void add_kernel(const float* __restrict__ A, const float* __restrict__ B, float* __restrict__ C);
+extern "C" __global__ void __launch_bounds__(128, 1) add_kernel(const float* __restrict__ A, const float* __restrict__ B, float* __restrict__ C) {
+  float2 __1;
+    float2 v_ = *(float2*)(A + (((int)threadIdx.x) * 2));
+    float2 v__1 = *(float2*)(B + (((int)threadIdx.x) * 2));
+    __1.x = (v_.x+v__1.x);
+    __1.y = (v_.y+v__1.y);
+  *(float2*)(C + (((int)threadIdx.x) * 2)) = __1;
+}
+
+#include <cutlass/cuda_host_adapter.hpp>
+
+#ifdef _WIN32
+#define TL_EXPORT __declspec(dllexport)
+#else
+#define TL_EXPORT
+#endif
+
+#define ERROR_BUF_SIZE 1024
+static char error_buf[ERROR_BUF_SIZE];
+
+extern "C" TL_EXPORT const char* get_last_error() {
+    return error_buf;
+}
+
+extern "C" TL_EXPORT int init() {
+    error_buf[0] = '\0';
+    
+    return 0;
+}
+
+extern "C" TL_EXPORT int call(float* __restrict__ A, float* __restrict__ B, float* __restrict__ C, cudaStream_t stream=cudaStreamDefault) {
+
+	{
+		cudaLaunchConfig_t config;
+		cudaLaunchAttribute attribute[1];
+		attribute[0].id = cudaLaunchAttributeProgrammaticStreamSerialization;
+		attribute[0].val.programmaticStreamSerializationAllowed = 1;
+		config.attrs = attribute;
+		config.numAttrs = 1;
+		config.stream = stream;
+		config.gridDim = dim3(1, 1, 1);
+		config.blockDim = dim3(128, 1, 1);
+		config.dynamicSmemBytes = 0;
+		cudaLaunchKernelEx(&config, add_kernel, A, B, C);
+	}
+	TILELANG_CHECK_LAST_ERROR("add_kernel");
+
+	return 0;
+}
+

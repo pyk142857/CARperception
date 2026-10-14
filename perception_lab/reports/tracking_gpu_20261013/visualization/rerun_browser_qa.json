@@ -1,0 +1,32 @@
+{
+  "status": "running",
+  "browser": "Playwright Chromium",
+  "fallback_reason": "Browser plugin not available",
+  "headless": true,
+  "requested_renderer": "Chrome default hardware",
+  "url": "http://127.0.0.1:9095/?url=http%3A%2F%2F127.0.0.1%3A9094%2Ftracking_gpu_20261013%2Ftracking_gpu.rrd&renderer=webgl&persist=0",
+  "viewport": {
+    "width": 1800,
+    "height": 1100
+  },
+  "page_errors": [],
+  "console": [],
+  "failed_requests": [],
+  "http_errors": [],
+  "checks": [],
+  "generated_at": "2026-10-14T01:26:14.357938+00:00",
+  "export_rrd_sha256": "2da4caecb87ea4aca9f7e7e6d473a08f5fdac7f6eda2f92bd61803fde5bdacc1",
+  "chrome_args": [
+    "--no-sandbox",
+    "--ignore-gpu-blocklist",
+    "--headless=new"
+  ],
+  "document_visibility": {
+    "visibility": "visible",
+    "focused": true
+  },
+  "renderer": {
+    "backend": "WebGL2",
+    "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+  }
+}

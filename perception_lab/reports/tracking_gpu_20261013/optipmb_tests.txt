@@ -1,0 +1,52 @@
+....                                                                     [100%]
+=============================== warnings summary ===============================
+perception_lab/envs/maptr/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:66
+  /home/minglei/Desktop/CAR/perception_lab/envs/maptr/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:66: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    ).setParseAction(self._family)
+
+perception_lab/envs/maptr/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:70
+  /home/minglei/Desktop/CAR/perception_lab/envs/maptr/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:70: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    ).setParseAction(self._size)
+
+perception_lab/envs/maptr/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:74
+  /home/minglei/Desktop/CAR/perception_lab/envs/maptr/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:74: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    ).setParseAction(self._name)
+
+perception_lab/envs/maptr/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:78
+  /home/minglei/Desktop/CAR/perception_lab/envs/maptr/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:78: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    ).setParseAction(self._value)
+
+perception_lab/envs/maptr/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:85
+  /home/minglei/Desktop/CAR/perception_lab/envs/maptr/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    ).setParseAction(self._families)
+
+perception_lab/envs/maptr/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:92
+  /home/minglei/Desktop/CAR/perception_lab/envs/maptr/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:92: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    ).setParseAction(self._point_sizes)
+
+perception_lab/envs/maptr/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:102
+  /home/minglei/Desktop/CAR/perception_lab/envs/maptr/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:102: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    ).setParseAction(self._property)
+
+perception_lab/envs/maptr/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:127
+perception_lab/envs/maptr/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:127
+perception_lab/envs/maptr/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:127
+perception_lab/envs/maptr/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:127
+perception_lab/envs/maptr/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:127
+  /home/minglei/Desktop/CAR/perception_lab/envs/maptr/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:127: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+    self._parser.parseString(pattern)
+
+perception_lab/envs/maptr/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:134
+perception_lab/envs/maptr/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:134
+perception_lab/envs/maptr/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:134
+perception_lab/envs/maptr/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:134
+perception_lab/envs/maptr/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:134
+  /home/minglei/Desktop/CAR/perception_lab/envs/maptr/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:134: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+    self._parser.resetCache()
+
+perception_lab/envs/maptr/lib/python3.10/site-packages/matplotlib/_mathtext.py:30
+  /home/minglei/Desktop/CAR/perception_lab/envs/maptr/lib/python3.10/site-packages/matplotlib/_mathtext.py:30: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+    ParserElement.enablePackrat()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+4 passed, 18 warnings in 1.23s

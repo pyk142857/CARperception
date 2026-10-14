@@ -3,6 +3,22 @@ import argparse,json,hashlib,sys
 from pathlib import Path
 from tracking_gpu_inputs_20261013 import ROOT,REPORT,SPECS,paths,sha
 
+def sync_model_status(model,folder,state):
+ if model not in ('grae','grae_gpu'):return
+ if state=='passed':
+  receipt=json.loads((folder/'evaluation_status.json').read_text())
+  if receipt.get('status')!='passed':raise ValueError('Evaluation receipt not passed')
+  for row in receipt['rows']:
+   base=folder/row['split']
+   if sha(base/'tracking.json')!=row['tracking_sha256'] or sha(base/'official_eval/metrics_summary.json')!=row['metrics_sha256']:raise ValueError('Evaluation receipt hash mismatch')
+ for path in [folder/'status.json',folder.parent/'status.json']:
+  if path.exists():
+   data=json.loads(path.read_text());data['official_evaluation']=state
+   data['status']='passed' if state=='passed' and data.get('inference')=='passed' else ('failed' if state=='failed' else 'partial')
+   if state=='passed':data['evaluation_receipt_sha256']=sha(folder/'evaluation_status.json')
+   else:data.pop('evaluation_receipt_sha256',None)
+   path.write_text(json.dumps(data,indent=2)+'\n')
+
 def evaluate(model):
  from nuscenes.eval.tracking.evaluate import TrackingEval
  from nuscenes.eval.common.config import config_factory
@@ -15,7 +31,7 @@ def evaluate(model):
  custom=json.loads(splitfile.read_text())
  if custom.get('mini_scene_0061')!=['scene-0061']:raise ValueError('Custom scene split mismatch')
  state_path=folder/'evaluation_status.json';state_path.parent.mkdir(parents=True,exist_ok=True)
- state_path.write_text(json.dumps({'status':'running'})+'\n')
+ state_path.write_text(json.dumps({'status':'running'})+'\n');sync_model_status(model,folder,'running')
  try:
   for split,(count,_,digest,pdigest) in SPECS.items():
    det,packet=paths(split)
@@ -27,8 +43,8 @@ def evaluate(model):
    (out/'protocol.json').write_text(json.dumps(protocol,indent=2)+'\n')
    TrackingEval(cfg,str(pred),'mini_scene_0061' if split=='scene0061' else 'mini_val',str(out),'v1.0-mini',str(ROOT/'data/nuscenes'),verbose=True).main(render_curves=False)
    metrics=out/'metrics_summary.json';values=json.loads(metrics.read_text());rows.append(dict(model=model,split=split,frames=count,tracking_sha256=sha(pred),metrics_sha256=sha(metrics),**{k:values[k] for k in ['amota','amotp','ids','fp','fn','recall','mota']}))
-  (folder/'metrics.json').write_text(json.dumps(rows,indent=2)+'\n');state_path.write_text(json.dumps({'status':'passed','rows':rows},indent=2)+'\n');print(json.dumps(rows,indent=2));return rows
+  (folder/'metrics.json').write_text(json.dumps(rows,indent=2)+'\n');state_path.write_text(json.dumps({'status':'passed','rows':rows},indent=2)+'\n');sync_model_status(model,folder,'passed');print(json.dumps(rows,indent=2));return rows
  except Exception as exc:
-  state_path.write_text(json.dumps({'status':'failed','error':str(exc)},indent=2)+'\n');raise
+  state_path.write_text(json.dumps({'status':'failed','error':str(exc)},indent=2)+'\n');sync_model_status(model,folder,'failed');raise
 if __name__=='__main__':
  p=argparse.ArgumentParser();p.add_argument('--model',choices=['grae','optipmb','grae_gpu'],required=True);evaluate(p.parse_args().model)

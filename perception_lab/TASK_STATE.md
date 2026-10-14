@@ -1,10 +1,15 @@
 # TASK_STATE — mini 教学闭环已验证
 
-## 当前派发任务：固定检测跟踪对照与GPU几何优化（2026-10-13）
+## 当前派发任务：固定检测跟踪对照与GPU几何优化（2026-10-14）
 
-[20261013_03执行指令](instruction/20261013_03_frozen_bevfusion_tracking_gpu_optimization.md)已发布，状态为**执行中**。固定39/81帧BEVFusion官方格式预测和哈希，先完成OptiPMB与原生GRAE的官方跟踪对照，再按原SimpleTrack三维IoU、粗筛、同分排序及“先NMS后score过滤”语义开发TileLang GPU几何/NMS，用KernelBench任务适配验证，含搬运的完整GRAE计时与官方评价后再研究BEV pooling。
+执行[20261013_03](instruction/20261013_03_frozen_bevfusion_tracking_gpu_optimization.md)，状态**执行中**。本轮结果：[报告](reports/tracking_gpu_20261013/report.md)。
 
-OptiPMB原生还需要对应帧真实LiDAR点数，不能用空点云替代；两跟踪器的辅助信息差异将在报告注明。本轮结果写入 `reports/tracking_gpu_20261013/`，原生39/81帧跟踪对照已实测，见[报告](reports/tracking_gpu_20261013/report.md)；GPU优化尚未验收。候选失败独立记录，原生对照与GPU优化可分别完成；已有保留方案和历史结果继续保留。
+- 固定39／81帧原始BEVFusion预测及对应真实LiDAR；GRAE、OptiPMB原生推理和官方TrackingEval已完成。Opti81帧AMOTA下降、FN增加，不替代GRAE。
+- TileLang FP64批量原式3D IoU／GPU贪心NMS实测，120帧NMS与模型输入字节一致，39／81轨迹逐字节一致、全部官方整体／每类指标一致。KernelBench为保持FP64／整数dtype的项目任务扩展。
+- 完整GRAE各30轮AB／BA已完成：142.81→24.77及263.80→31.00ms/帧，均30/30胜、P95不升，合并节省87.09%；排除BEVFusion前向。
+- 代表帧微基准末段出现外部waterwaydetection训练，整组已拒绝并留证；完整30轮此前完成、未受该进程影响。待GPU空闲后重测micro，再完成最后BEV pooling实测。浏览器验证正用明确标注的软件WebGL推进。
+
+独立代码入口 `tools/run_tracking_gpu_20261013.py`，原生预测、旧模型入口与历史回放不覆盖。完整序列原始配对、实际GPU调用和官方指标均已保存；剩余阶段不能被CPU测试替代。
 
 ## 保留方案与简历说明更新（2026-10-13）
 

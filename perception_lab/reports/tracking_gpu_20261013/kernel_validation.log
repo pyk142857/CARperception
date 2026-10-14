@@ -1,0 +1,8 @@
+scene0061 0
+scene0061 20
+mini_val 0
+mini_val 20
+mini_val 40
+mini_val 60
+mini_val 80
+PASS 120 20 {'overlap': 287, 'suppress': 259}

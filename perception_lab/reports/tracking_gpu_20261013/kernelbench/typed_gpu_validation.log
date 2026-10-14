@@ -1,0 +1,759 @@
+[Profiling] Using device: 0 NVIDIA GeForce RTX 4090, warm up 2, trials 3
+[Profiling] Using device: 0 NVIDIA GeForce RTX 4090, warm up 2, trials 3
+[Profiling] Using device: 0 NVIDIA GeForce RTX 4090, warm up 2, trials 3
+[Profiling] Using device: 0 NVIDIA GeForce RTX 4090, warm up 2, trials 3
+[Profiling] Using device: 0 NVIDIA GeForce RTX 4090, warm up 2, trials 3
+[Profiling] Using device: 0 NVIDIA GeForce RTX 4090, warm up 2, trials 3
+[Profiling] Using device: 0 NVIDIA GeForce RTX 4090, warm up 2, trials 3
+[Profiling] Using device: 0 NVIDIA GeForce RTX 4090, warm up 2, trials 3
+[Profiling] Using device: 0 NVIDIA GeForce RTX 4090, warm up 2, trials 3
+{
+  "scope": "project task extension, not standard KernelBench score",
+  "adapter_source_sha256": "c801b7cf630b72a0ec318018ebb326d95d69c71e8537535b3a4e1662635bd54c",
+  "kernelbench_commit": "423217d9fda91e0c2d67e4a43bf62f96f6d104f1",
+  "kernelbench_eval_sha256": "b42ce1268ec64ee7274db307ab98945c1e868792b54689554014b28c41787ee6",
+  "cpu_adapter_tests": {
+    "status": "passed",
+    "preserved_dtypes": [
+      "torch.float64",
+      "torch.int32",
+      "torch.int64"
+    ],
+    "invalid_output_rejections": [
+      "integer_off_by_one",
+      "integer_order",
+      "dtype_cast",
+      "fp64_outside_budget",
+      "nonfinite"
+    ],
+    "preserves_non_tensor": true,
+    "blanket_fp32_cast_loses_values": [
+      true,
+      true,
+      true
+    ]
+  },
+  "gpu": {
+    "status": "passed",
+    "representative_frames": 9,
+    "rows": [
+      {
+        "split": "scene0061",
+        "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+        "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+        "n": 150,
+        "inputs": [
+          {
+            "shape": [
+              256,
+              12
+            ],
+            "dtype": "torch.float64",
+            "sha256": "36fa98f7fffd5dff2ba43f57b0df623381e09fb7ff84cbf9833a052dbbf3e069"
+          },
+          {
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.int32",
+            "sha256": "bf6623efa3d6d4a90f1a2f134f258200d531460808bf37f14eb2e099d693faae"
+          },
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int32",
+            "sha256": "5a667734987b65ef5c4d07bf176148504bcf8378a5a1a0e23a7fa2c1121cc143"
+          },
+          {
+            "shape": [
+              256
+            ],
+            "dtype": "torch.int64",
+            "sha256": "ec45f7b0c66b0cf685185bdcb6f4c77ccedfdae4ac7bf6e5f2c97b6788f43fac"
+          }
+        ],
+        "geometry_check": {
+          "comparison": "elementwise_atol_plus_rtol",
+          "dtype": "torch.float64",
+          "atol": 1e-08,
+          "rtol": 1e-07,
+          "max_abs": 1.6786572132332367e-13,
+          "max_relative": 4.4047196702421335e-12
+        },
+        "indices_check": {
+          "comparison": "exact",
+          "dtype": "torch.int64"
+        },
+        "types_check": {
+          "comparison": "exact",
+          "dtype": "torch.int64"
+        },
+        "integrated_nms_exact": true,
+        "output_indices": {
+          "shape": [
+            91
+          ],
+          "dtype": "torch.int64",
+          "sha256": "d2a933a9593e9e8e59bede1effa0a81b408dc3cf28829822b868b2c7738b3b33"
+        },
+        "output_geometry": {
+          "shape": [
+            150,
+            150
+          ],
+          "dtype": "torch.float64",
+          "sha256": "44ba25bdff575d95839ba0a433a1d632c3c6eeb08a1483cad08027ff7badd8d2"
+        },
+        "cold_l2_resident_ms": [
+          0.36556801199913025,
+          0.3614720106124878,
+          0.36243200302124023
+        ],
+        "timed_launches": {
+          "overlap": 5,
+          "suppress": 5
+        }
+      },
+      {
+        "split": "scene0061",
+        "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+        "sample_token": "b26e791522294bec90f86fd72226e35c",
+        "n": 111,
+        "inputs": [
+          {
+            "shape": [
+              256,
+              12
+            ],
+            "dtype": "torch.float64",
+            "sha256": "0574215ead01f0909d434a8575b32d79da4e8370a53a55f2effa1a53cdc194ee"
+          },
+          {
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.int32",
+            "sha256": "b775390e7f8f9e879a5d798d95cca5d28d54f2184d76a257edccf76d27ade030"
+          },
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int32",
+            "sha256": "cb4b9dbbeb77704337f1b45fd423801e5df7d62212f235c0529a39f766586a7f"
+          },
+          {
+            "shape": [
+              256
+            ],
+            "dtype": "torch.int64",
+            "sha256": "869a2e6569ee5a674764a0d17eb7d3d292cd6e6567244350fefbaecb92af4c23"
+          }
+        ],
+        "geometry_check": {
+          "comparison": "elementwise_atol_plus_rtol",
+          "dtype": "torch.float64",
+          "atol": 1e-08,
+          "rtol": 1e-07,
+          "max_abs": 1.2062573162552326e-13,
+          "max_relative": 2.6188704709715e-12
+        },
+        "indices_check": {
+          "comparison": "exact",
+          "dtype": "torch.int64"
+        },
+        "types_check": {
+          "comparison": "exact",
+          "dtype": "torch.int64"
+        },
+        "integrated_nms_exact": true,
+        "output_indices": {
+          "shape": [
+            101
+          ],
+          "dtype": "torch.int64",
+          "sha256": "b16f23f5b10274e5c3b509a19502897e8d187038f3e487490eda8b1b3bedbcf6"
+        },
+        "output_geometry": {
+          "shape": [
+            111,
+            111
+          ],
+          "dtype": "torch.float64",
+          "sha256": "f8229f38d63365f7e19332209184932fac6fef46ddcb3ac099afdb510513e2bf"
+        },
+        "cold_l2_resident_ms": [
+          0.30931198596954346,
+          0.31014400720596313,
+          0.30825600028038025
+        ],
+        "timed_launches": {
+          "overlap": 5,
+          "suppress": 5
+        }
+      },
+      {
+        "split": "scene0061",
+        "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+        "sample_token": "ed5fc18c31904f96a8f0dbb99ff069c0",
+        "n": 94,
+        "inputs": [
+          {
+            "shape": [
+              256,
+              12
+            ],
+            "dtype": "torch.float64",
+            "sha256": "ef5ab2c8f992c053e97c50706a9ef6972933852d8e8948575c37a0f35c890059"
+          },
+          {
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.int32",
+            "sha256": "353be2f8b57164760ed7e14b4669b89d01c1bf6e4d4abd72873865f4a8bdeeb4"
+          },
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int32",
+            "sha256": "3c3351dc1dedcd627419e02de4fc8202e2d507d786c26f142b767fd9859d0cb4"
+          },
+          {
+            "shape": [
+              256
+            ],
+            "dtype": "torch.int64",
+            "sha256": "4f3ea426a2e5a737c21718f73ae28437b813ab4b7b8d53bbdcb9e61ab0b4b64b"
+          }
+        ],
+        "geometry_check": {
+          "comparison": "elementwise_atol_plus_rtol",
+          "dtype": "torch.float64",
+          "atol": 1e-08,
+          "rtol": 1e-07,
+          "max_abs": 1.779687508474126e-13,
+          "max_relative": 1.1624754948237134e-11
+        },
+        "indices_check": {
+          "comparison": "exact",
+          "dtype": "torch.int64"
+        },
+        "types_check": {
+          "comparison": "exact",
+          "dtype": "torch.int64"
+        },
+        "integrated_nms_exact": true,
+        "output_indices": {
+          "shape": [
+            76
+          ],
+          "dtype": "torch.int64",
+          "sha256": "6b007d352c8838e440426396fb09300e15e9f042bf6a7e65fa90da4814d7f150"
+        },
+        "output_geometry": {
+          "shape": [
+            94,
+            94
+          ],
+          "dtype": "torch.float64",
+          "sha256": "46a5e8c4a8ebd64a16374250b907c65abe1c09eaeb52076ae67721d93c859ba2"
+        },
+        "cold_l2_resident_ms": [
+          0.2088959962129593,
+          0.2088319957256317,
+          0.20787200331687927
+        ],
+        "timed_launches": {
+          "overlap": 5,
+          "suppress": 5
+        }
+      },
+      {
+        "split": "mini_val",
+        "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+        "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+        "n": 194,
+        "inputs": [
+          {
+            "shape": [
+              256,
+              12
+            ],
+            "dtype": "torch.float64",
+            "sha256": "3efbb1bd9b4dd2f35e1a7d17e07bd0940aba337f7540fe0afe1997da3e735bcd"
+          },
+          {
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.int32",
+            "sha256": "d9d103cf910b7aaa8b7bd193fe217a137ecba43efe9b7a559be4199f57c6796b"
+          },
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int32",
+            "sha256": "54e87b8f45ddeaf2a52cf68eec4a7a57f429adc1f00b78ace130ad6005ccda97"
+          },
+          {
+            "shape": [
+              256
+            ],
+            "dtype": "torch.int64",
+            "sha256": "bf66dac891f7b328e10419544ea1cbb7cc6acf22836363c25a01538affb8e637"
+          }
+        ],
+        "geometry_check": {
+          "comparison": "elementwise_atol_plus_rtol",
+          "dtype": "torch.float64",
+          "atol": 1e-08,
+          "rtol": 1e-07,
+          "max_abs": 1.667554982986985e-13,
+          "max_relative": 2.658454972027994e-09
+        },
+        "indices_check": {
+          "comparison": "exact",
+          "dtype": "torch.int64"
+        },
+        "types_check": {
+          "comparison": "exact",
+          "dtype": "torch.int64"
+        },
+        "integrated_nms_exact": true,
+        "output_indices": {
+          "shape": [
+            120
+          ],
+          "dtype": "torch.int64",
+          "sha256": "0242bd5bbb22ba73ddab2d0c82d9ce26362332dec60ef5587ed5944c5a90733a"
+        },
+        "output_geometry": {
+          "shape": [
+            194,
+            194
+          ],
+          "dtype": "torch.float64",
+          "sha256": "b1f79ee978d868bf5b3e72e0fd0fbe4453329393358654c7dd02b890582f3fa9"
+        },
+        "cold_l2_resident_ms": [
+          0.5703679919242859,
+          0.567296028137207,
+          0.5683199763298035
+        ],
+        "timed_launches": {
+          "overlap": 5,
+          "suppress": 5
+        }
+      },
+      {
+        "split": "mini_val",
+        "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+        "sample_token": "5b03af7a953245b5a3b23191ed4da62a",
+        "n": 184,
+        "inputs": [
+          {
+            "shape": [
+              256,
+              12
+            ],
+            "dtype": "torch.float64",
+            "sha256": "7a9f10a26a8e342a0ba0714ef90f8393b874ce71987ffa03d60aca6598c59999"
+          },
+          {
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.int32",
+            "sha256": "43922f37233864297bb8b67a79142070b5d68b296ff8330839e888dbc6bf56e5"
+          },
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int32",
+            "sha256": "7a6ce49cbcff8a74e6d85ef9ebb7fe3d0dd5f94a26fd3ab6128d748831dd24ce"
+          },
+          {
+            "shape": [
+              256
+            ],
+            "dtype": "torch.int64",
+            "sha256": "a50cb5d21d92905519a0d2d36153aab160f8e82f6f72c571589034f33b048518"
+          }
+        ],
+        "geometry_check": {
+          "comparison": "elementwise_atol_plus_rtol",
+          "dtype": "torch.float64",
+          "atol": 1e-08,
+          "rtol": 1e-07,
+          "max_abs": 2.1116441928370477e-13,
+          "max_relative": 5.3268234212392275e-12
+        },
+        "indices_check": {
+          "comparison": "exact",
+          "dtype": "torch.int64"
+        },
+        "types_check": {
+          "comparison": "exact",
+          "dtype": "torch.int64"
+        },
+        "integrated_nms_exact": true,
+        "output_indices": {
+          "shape": [
+            132
+          ],
+          "dtype": "torch.int64",
+          "sha256": "5dcd7a0b9774c520bfb8c5f8bf396dc22fc95518039e0175724dbc299dd76575"
+        },
+        "output_geometry": {
+          "shape": [
+            184,
+            184
+          ],
+          "dtype": "torch.float64",
+          "sha256": "37b756716aacd69872e4780d07540ec9270fac1e03eecf58218aabd2bf7a5ad3"
+        },
+        "cold_l2_resident_ms": [
+          0.567296028137207,
+          0.5683199763298035,
+          0.5683199763298035
+        ],
+        "timed_launches": {
+          "overlap": 5,
+          "suppress": 5
+        }
+      },
+      {
+        "split": "mini_val",
+        "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+        "sample_token": "281b92269fd648d4b52d06ac06ca6d65",
+        "n": 150,
+        "inputs": [
+          {
+            "shape": [
+              256,
+              12
+            ],
+            "dtype": "torch.float64",
+            "sha256": "3807e162eddaf55b1a590db0cb1039b2d7476c9e1289d76ec7e89d983572c1f8"
+          },
+          {
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.int32",
+            "sha256": "cac1a412bf722663af52023711b0bba0c7e76fc12d357f6d5a2e4f930c94a69a"
+          },
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int32",
+            "sha256": "5a667734987b65ef5c4d07bf176148504bcf8378a5a1a0e23a7fa2c1121cc143"
+          },
+          {
+            "shape": [
+              256
+            ],
+            "dtype": "torch.int64",
+            "sha256": "0d36cb0f130fa731b3e4212ea6ff8a4e996deb26cdd78fca06d7300b1352c0fc"
+          }
+        ],
+        "geometry_check": {
+          "comparison": "elementwise_atol_plus_rtol",
+          "dtype": "torch.float64",
+          "atol": 1e-08,
+          "rtol": 1e-07,
+          "max_abs": 9.248157795127554e-14,
+          "max_relative": 6.481065217752144e-12
+        },
+        "indices_check": {
+          "comparison": "exact",
+          "dtype": "torch.int64"
+        },
+        "types_check": {
+          "comparison": "exact",
+          "dtype": "torch.int64"
+        },
+        "integrated_nms_exact": true,
+        "output_indices": {
+          "shape": [
+            129
+          ],
+          "dtype": "torch.int64",
+          "sha256": "d290b85b8e34ceb6d018e688f550fdf7b235711bfa7b852ee735cec632ce4af0"
+        },
+        "output_geometry": {
+          "shape": [
+            150,
+            150
+          ],
+          "dtype": "torch.float64",
+          "sha256": "1ec511168594bde3a631eea84a54743e04438174fb1fede786db191dfb85739f"
+        },
+        "cold_l2_resident_ms": [
+          0.47513601183891296,
+          0.47513601183891296,
+          0.4782080054283142
+        ],
+        "timed_launches": {
+          "overlap": 5,
+          "suppress": 5
+        }
+      },
+      {
+        "split": "mini_val",
+        "scene_token": "325cef682f064c55a255f2625c533b75",
+        "sample_token": "b5989651183643369174912bc5641d3b",
+        "n": 183,
+        "inputs": [
+          {
+            "shape": [
+              256,
+              12
+            ],
+            "dtype": "torch.float64",
+            "sha256": "5f8e04d16897c65fea085cbc877907a0418a992b123dde52181bb93ca480992b"
+          },
+          {
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.int32",
+            "sha256": "f5ed9b853fc5183cf537517f9820a6842a7a2e84b747fd8c1a56fe82d3e01454"
+          },
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int32",
+            "sha256": "a9a1cc202b98585943ebee277da518d17ec75dad8a60f833dde1b9076affd550"
+          },
+          {
+            "shape": [
+              256
+            ],
+            "dtype": "torch.int64",
+            "sha256": "4b9e13dadf2819917c0ceda2d3ba9fce81911873f3c40f19210ff911af1fc3cd"
+          }
+        ],
+        "geometry_check": {
+          "comparison": "elementwise_atol_plus_rtol",
+          "dtype": "torch.float64",
+          "atol": 1e-08,
+          "rtol": 1e-07,
+          "max_abs": 1.6342482922482304e-13,
+          "max_relative": 1.3818635398101265e-11
+        },
+        "indices_check": {
+          "comparison": "exact",
+          "dtype": "torch.int64"
+        },
+        "types_check": {
+          "comparison": "exact",
+          "dtype": "torch.int64"
+        },
+        "integrated_nms_exact": true,
+        "output_indices": {
+          "shape": [
+            128
+          ],
+          "dtype": "torch.int64",
+          "sha256": "4ab650917b4e028a9b4a34979ca5045ab060b93e405f040b216a0ed9c39a2360"
+        },
+        "output_geometry": {
+          "shape": [
+            183,
+            183
+          ],
+          "dtype": "torch.float64",
+          "sha256": "0e71dad2bb1e0b8f9df3ef461a80e05ef000cae2194909df61c2f72b3597d420"
+        },
+        "cold_l2_resident_ms": [
+          0.5816320180892944,
+          0.5786240100860596,
+          0.5785599946975708
+        ],
+        "timed_launches": {
+          "overlap": 5,
+          "suppress": 5
+        }
+      },
+      {
+        "split": "mini_val",
+        "scene_token": "325cef682f064c55a255f2625c533b75",
+        "sample_token": "6ff9723a60bf4e14b328b3b19f04dc32",
+        "n": 190,
+        "inputs": [
+          {
+            "shape": [
+              256,
+              12
+            ],
+            "dtype": "torch.float64",
+            "sha256": "c7bbaa948044a520bdaf8471da547eb0aa1f939907d1578620c3b77af9e5a9f1"
+          },
+          {
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.int32",
+            "sha256": "68d2c091af442afb2134a156b2846895c3c64bc11127e9b2be10403da1acc524"
+          },
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int32",
+            "sha256": "7b3473f9b6be59775a964bb1409ff4d2ac8a8a823779dcf3ba9490d0bc879da7"
+          },
+          {
+            "shape": [
+              256
+            ],
+            "dtype": "torch.int64",
+            "sha256": "36644c59af80945fd76ad801b625d3ad9c39be8665939442e981e0a6b49cd1d8"
+          }
+        ],
+        "geometry_check": {
+          "comparison": "elementwise_atol_plus_rtol",
+          "dtype": "torch.float64",
+          "atol": 1e-08,
+          "rtol": 1e-07,
+          "max_abs": 9.509060205914466e-14,
+          "max_relative": 8.103963682522777e-10
+        },
+        "indices_check": {
+          "comparison": "exact",
+          "dtype": "torch.int64"
+        },
+        "types_check": {
+          "comparison": "exact",
+          "dtype": "torch.int64"
+        },
+        "integrated_nms_exact": true,
+        "output_indices": {
+          "shape": [
+            140
+          ],
+          "dtype": "torch.int64",
+          "sha256": "955ed84207121c61d24d56121a38b2f1ea2b247de2d563c5d129904964b2ec04"
+        },
+        "output_geometry": {
+          "shape": [
+            190,
+            190
+          ],
+          "dtype": "torch.float64",
+          "sha256": "d3b361ce9a74a9de002a480c0a3b05f9a2bccc751af7ae009c0abb72da3eed0d"
+        },
+        "cold_l2_resident_ms": [
+          0.6461439728736877,
+          0.6451200246810913,
+          0.6458879709243774
+        ],
+        "timed_launches": {
+          "overlap": 5,
+          "suppress": 5
+        }
+      },
+      {
+        "split": "mini_val",
+        "scene_token": "325cef682f064c55a255f2625c533b75",
+        "sample_token": "b4ff30109dd14c89b24789dc5713cf8c",
+        "n": 190,
+        "inputs": [
+          {
+            "shape": [
+              256,
+              12
+            ],
+            "dtype": "torch.float64",
+            "sha256": "dacc9390134a43d3bca020e487edd33765d55c374fe97b7bdb54718a188b6944"
+          },
+          {
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.int32",
+            "sha256": "c2f4f113a4e1703a9b21d116664e3f45b1c644ba226cc9208c986fdebea507d9"
+          },
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int32",
+            "sha256": "7b3473f9b6be59775a964bb1409ff4d2ac8a8a823779dcf3ba9490d0bc879da7"
+          },
+          {
+            "shape": [
+              256
+            ],
+            "dtype": "torch.int64",
+            "sha256": "b69ec20c5eb22c6b01d0f6b24d2c61c4de93bd96ef17d9bf926847c53730420f"
+          }
+        ],
+        "geometry_check": {
+          "comparison": "elementwise_atol_plus_rtol",
+          "dtype": "torch.float64",
+          "atol": 1e-08,
+          "rtol": 1e-07,
+          "max_abs": 5.728750807065808e-14,
+          "max_relative": 3.821537320910049e-12
+        },
+        "indices_check": {
+          "comparison": "exact",
+          "dtype": "torch.int64"
+        },
+        "types_check": {
+          "comparison": "exact",
+          "dtype": "torch.int64"
+        },
+        "integrated_nms_exact": true,
+        "output_indices": {
+          "shape": [
+            162
+          ],
+          "dtype": "torch.int64",
+          "sha256": "a4b8aa614376f25609fd5693c78d48ba2b3c6c63cc20cb95f0c6f894c8a62e32"
+        },
+        "output_geometry": {
+          "shape": [
+            190,
+            190
+          ],
+          "dtype": "torch.float64",
+          "sha256": "31d2668def6f470f052a22a1e133a6a03c9f2c90fad5bae4bebb4c7a496088fc"
+        },
+        "cold_l2_resident_ms": [
+          0.7365440130233765,
+          0.7352319955825806,
+          0.7352319955825806
+        ],
+        "timed_launches": {
+          "overlap": 5,
+          "suppress": 5
+        }
+      }
+    ],
+    "actual_kernel_calls": {
+      "overlap": 63,
+      "suppress": 63
+    },
+    "timing_scope": "KernelBench cold-L2 device-resident overlap+suppress diagnostic; excludes transfers, CPU packing/boundary checks; not warm AB/BA acceptance",
+    "kernelbench_timing_sha256": "eaabdad5dd042cfaac7159713b5f0c17a9244e65622b504eb3ca909d780854c5"
+  }
+}

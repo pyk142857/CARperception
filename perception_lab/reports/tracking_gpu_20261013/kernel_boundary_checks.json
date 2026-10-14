@@ -1,0 +1,88 @@
+{
+  "status": "passed",
+  "invalid_reader_cases": [
+    {
+      "name": "zero_size",
+      "status": "rejected_at_unchanged_reader",
+      "exception": "Nonpositive box size"
+    },
+    {
+      "name": "negative_size",
+      "status": "rejected_at_unchanged_reader",
+      "exception": "Nonpositive box size"
+    },
+    {
+      "name": "nan_translation",
+      "status": "rejected_at_unchanged_reader",
+      "exception": "Nonfinite predicted translation"
+    },
+    {
+      "name": "inf_velocity",
+      "status": "rejected_at_unchanged_reader",
+      "exception": "Nonfinite predicted velocity"
+    },
+    {
+      "name": "nan_score",
+      "status": "rejected_at_unchanged_reader",
+      "exception": "Nonfinite score"
+    },
+    {
+      "name": "nonunit_quaternion",
+      "status": "rejected_at_unchanged_reader",
+      "exception": "Nonunit quaternion"
+    }
+  ],
+  "reference_failures": [
+    {
+      "name": "tiny_positive_self_iou",
+      "status": "reference_failure",
+      "kind": "timeout_after_actual_nms_entry",
+      "timeout_seconds": 8,
+      "self_iou": 9.999999000000099e-08,
+      "stdout": "REFERENCE_ENTERED\n",
+      "stderr": "",
+      "candidate": "explicit_rejection: Original NMS may not terminate: self IoU <= threshold"
+    }
+  ],
+  "default_high_yaw_cases": [
+    {
+      "yaw": 0.29999999,
+      "indices": [
+        2
+      ],
+      "types": [
+        0
+      ],
+      "unchanged_input_boxes": true,
+      "max_pair_iou": 0.9999998750000156
+    },
+    {
+      "yaw": 0.3,
+      "indices": [
+        2
+      ],
+      "types": [
+        0
+      ],
+      "unchanged_input_boxes": true,
+      "max_pair_iou": 0.9999998750000156
+    },
+    {
+      "yaw": 0.30000001,
+      "indices": [
+        2
+      ],
+      "types": [
+        0
+      ],
+      "unchanged_input_boxes": true,
+      "max_pair_iou": 0.9999998750000156
+    }
+  ],
+  "high_branch_analysis": "For positive finite rectangles and exact arithmetic, overlap_area<=min(area_a,area_b) and overlap_height<=(ha+hb)/2. Hence 2*intersection_volume<=volume_a+volume_b and IoU<1 with +1e-5. Default high=1 voting is unreachable on ordinary valid inputs; near yaw=.3 is explicitly tested. Original voting constructs a new local averaged BBox, never mutates inputs/returned index selection. Floating pathologies remain outside guaranteed valid domain.",
+  "actual_gpu_calls": {
+    "overlap": 4,
+    "suppress": 3
+  },
+  "source_sha256": "7110200d8ad08c0381c5acee219fe59c728ead8feb88883ec90f4603ae369c53"
+}

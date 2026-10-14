@@ -1,6 +1,6 @@
 # 已验证的保留方案与优化成果
 
-更新日期：2026-10-13。证据快照：[ca6458c](https://github.com/pyk142857/CARperception/blob/ca6458cdb3d5784f9e9bc30cb86272fafe9ebd9a/README.md)。
+更新日期：2026-10-14。证据快照：[ca6458c](https://github.com/pyk142857/CARperception/blob/ca6458cdb3d5784f9e9bc30cb86272fafe9ebd9a/README.md)。
 
 本项目保留已验证的模型部署方案、跟踪策略和算子实现，并区分“功能已完成”“精度改善”“稳定提速”与“完整验收通过”。本次整理说明文档和简历口径；运行配置、默认后端和历史回放的切换状态仍以对应实验记录为准。原始对照、退化结果和候选代码保留，便于复核。
 
@@ -8,6 +8,7 @@
 
 | 方案 | 采用理由 | 已验证范围 | 实现与证据 |
 |---|---|---|---|
+| TileLang FP64三维IoU／NMS预处理 | 固定BEVFusion→GRAE完整链路平均节省87.09%，约7.75倍；120帧轨迹逐字节一致、全部官方指标一致 | RTX4090；39/81完整序列各30轮AB/BA，均30/30更快且P95不升；包括JSON/预处理/搬运/原生GRAE，排除BEVFusion前向 | [实测报告](reports/tracking_gpu_20261013/report.md)、[每轮原始数据](reports/tracking_gpu_20261013/benchmark/full.json)、[实现](tools/tracking_gpu_kernel_20261013.py) |
 | DEIMv2-S 原生 FP32 二维检测 | COCO AP 44.95%→50.86%，提高5.91个百分点；替代 YOLOv8s 作为优先二维检测方案 | 同一 COCO val2017 5,000图、官方 pycocotools COCOeval；mini 39帧六相机234图只作展示 | [DEIM报告](reports/perception_2025_20261013/deimv2/report.md)、[历史YOLO指标](results/metrics.csv)、[实现](tools/deimv2_2025.py) |
 | S4_greedy_low 两阶段贪心关联 | 固定 CenterPoint 检测，全类连续 ID 切换46→38、行人42→36，FP579/FN39不变；连续及中断后身份错误合计84→75 | scene-0061，39帧，score≥0.25、同类XY距离<2m的教学诊断；13组配置对照并复跑 | [实验报告](reports/tracking_optimization/report.md)、[配置](reports/tracking_optimization/configs.json)、[参考实现](tools/experimental_tracker.py) |
 | FastCandidateTracker CPU关联算子优化 | 相对同一 S4_greedy_low 参考实现，2.910→0.772 ms/帧，3.77倍；全部输出字段、顺序、ID、诊断精确一致 | i9-14900KF；39帧、4,547个输入框；预热后30轮交替顺序配对，每实现1,170个计时样本；72项测试 | [性能报告](reports/tracking_operator_optimization/report.md)、[原始摘要](reports/tracking_operator_optimization/summary.json)、[实现](tools/fast_candidate_tracker.py) |
@@ -51,4 +52,8 @@ Sparse4D的相机时序检测与GaussianWorld的占用推理保留为已部署�
 - BEVFusion：[部署命令](reports/deployment_4090_20261008/run_commands.md)；GRAE指定 `frozen_reference` 输入，按[模块报告](reports/perception_2025_20261013/grae3dmot/report.md)复现。
 - [更新后的简历项目经历](reports/resume_project_experience_20261008.md)保留招聘平台字段，主稿采用已验证的模型精度、跟踪策略及CPU算子收益，附TensorRT可选表述和逐项证据。
 
-nuScenes数字均为mini教学诊断，可能与预训练数据重叠；完整官方val、车端实测和统一实时吞吐尚未完成。权重恢复任务的三个交付项通过，不会自动将整个优化项目的partial状态改为通过。本次没有产生新的GPU实验或性能测量。
+nuScenes数字均为mini教学诊断，可能与预训练数据重叠；完整官方val、车端实测和统一实时吞吐尚未完成。权重恢复任务的三个交付项通过，不会自动将整个优化项目的partial状态改为通过。2026-10-14新增了上表TileLang GPU几何／NMS及完整GRAE配对实测；其余历史范围与限制保持不变。
+
+## 2026-10-14 跟踪GPU适用范围
+
+TileLang候选仅替换原CPU几何／贪心抑制，保留CPU排序、粗筛、float64角点和作者特殊高度公式。当前capacity256、真实最大199框、默认阈值0.1/1.0/0.3；更大输入需独立扩容与验证。本轮GPU入口为`tools/tracking_gpu_grae_20261013.py`或阶段runner的`full_eval`，历史GRAE入口和回放不被改写。OptiPMB在81帧AMOTA下降、FN增加，不替代GRAE；这与同GRAE GPU提速是两个独立结论。

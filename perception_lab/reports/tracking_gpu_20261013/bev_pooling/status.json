@@ -1,0 +1,13 @@
+{
+  "research_status": "prepared_gpu_pending",
+  "candidate": "feature_offset_precompute_each_forward",
+  "CPU_input_analysis": "passed",
+  "CUDA_compile": "passed",
+  "GPU_execution": "pending",
+  "GPU_correctness": "pending",
+  "paired_30_round_performance": "pending",
+  "full_model_evaluation": "conditional_on_stable_local_benefit",
+  "optimization_adopted": false,
+  "selected_default": "upstream",
+  "wait_reason": "Tracking B–E publication and exclusive GPU scheduling required before pooling runtime experiment"
+}

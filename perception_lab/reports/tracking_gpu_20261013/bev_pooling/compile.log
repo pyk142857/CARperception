@@ -1,0 +1,9 @@
+ptxas info    : 0 bytes gmem
+ptxas info    : Compiling entry function '_Z22preindexed_pool_kernelPK6__halfS1_PKjS3_PK4int3jjPS_' for 'sm_89'
+ptxas info    : Function properties for _Z22preindexed_pool_kernelPK6__halfS1_PKjS3_PK4int3jjPS_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 40 registers, 408 bytes cmem[0], 8 bytes cmem[2]
+ptxas info    : Compiling entry function '_Z15preindex_kernelPKjPjjjjj' for 'sm_89'
+ptxas info    : Function properties for _Z15preindex_kernelPKjPjjjjj
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 16 registers, 384 bytes cmem[0]

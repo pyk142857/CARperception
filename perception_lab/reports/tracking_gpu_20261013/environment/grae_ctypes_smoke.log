@@ -1,0 +1,28 @@
+[Profiling] Using device: 0 NVIDIA GeForce RTX 4090, warm up 2, trials 3
+{
+  "mode": "grae_ctypes",
+  "torch": "1.13.1+cu117",
+  "torch_cuda": "11.7",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "sm": [
+    8,
+    9
+  ],
+  "shape": [
+    256
+  ],
+  "dtype": "float32",
+  "a_sha256": "04441b72253f49384e853fb46a81657e5e28187f02187a47713eb9cd482f9a17",
+  "b_sha256": "53171b466741fbe0c7c110ad68556ea114c6f0e02496bcc2e6aaf8803daf3b0b",
+  "output_sha256": "f0d9da14f296a23254736041df1d9f21deef02c3ae7d3f79cb6361c99236a37b",
+  "exact_equal": true,
+  "actual_call_count": 6,
+  "compiled_library": "/home/minglei/Desktop/CAR/perception_lab/runs/tracking_gpu_20261013/tilelang_smoke/fp32_add.so",
+  "compiled_library_sha256": "6a07eef8b0f692cbddfc0df63a676c0bf68d28c4126a40e3ddc26f19dc70727a",
+  "kernel_source_sha256": "37677f966fb35587b27057171073d14003e1e8a28519a12fe060823a0cd6f1ec",
+  "kernelbench_cold_l2_ms": [
+    0.01945599913597107,
+    0.0028800000436604023,
+    0.002047999994829297
+  ]
+}

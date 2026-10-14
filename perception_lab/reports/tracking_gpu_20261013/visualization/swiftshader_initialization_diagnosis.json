@@ -1,0 +1,166 @@
+{
+  "purpose": "Reproduce WebGL initialization limit failure; software only",
+  "console": [
+    {
+      "type": "debug",
+      "text": "loading wasm\u2026"
+    },
+    {
+      "type": "warning",
+      "text": "using deprecated parameters for the initialization function; pass a single object instead"
+    },
+    {
+      "type": "debug",
+      "text": "Wasm loaded. Starting app\u2026"
+    },
+    {
+      "type": "warning",
+      "text": "found 0 values for \"notebook\" query. Expected one or none. Defaulting to \"false\"."
+    },
+    {
+      "type": "info",
+      "text": "[re_renderer::device_caps] re_renderer/src/device_caps.rs:346: Forcing graphics backend to Gl."
+    },
+    {
+      "type": "debug",
+      "text": "[eframe::web::web_painter_wgpu] eframe-0.31.1/src/web/web_painter_wgpu.rs:64: Creating wgpu painter"
+    },
+    {
+      "type": "debug",
+      "text": "[egui_wgpu::setup] egui-wgpu-0.31.1/src/setup.rs:67: Creating wgpu instance with backends Backends(GL)"
+    },
+    {
+      "type": "debug",
+      "text": "[egui_wgpu] egui-wgpu-0.31.1/src/lib.rs:128: Picked wgpu adapter: backend: Gl, device_type: Cpu, name: \"ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)\", driver_info: \"WebGL 2.0 (OpenGL ES 3.0 Chromium)\""
+    },
+    {
+      "type": "error",
+      "text": "Failed to start: Limit 'max_color_attachments' value 8 is better than allowed 6"
+    }
+  ],
+  "network": [
+    {
+      "event": "request",
+      "url": "http://127.0.0.1:9095/?url=http%3A%2F%2F127.0.0.1%3A9094%2Ftracking_gpu_20261013%2Ftracking_gpu.rrd&renderer=webgl&persist=0"
+    },
+    {
+      "event": "response",
+      "url": "http://127.0.0.1:9095/?url=http%3A%2F%2F127.0.0.1%3A9094%2Ftracking_gpu_20261013%2Ftracking_gpu.rrd&renderer=webgl&persist=0",
+      "status": 200,
+      "content_length": "14505"
+    },
+    {
+      "event": "request",
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@100;500&display=swap"
+    },
+    {
+      "event": "request",
+      "url": "http://127.0.0.1:9095/re_viewer.js"
+    },
+    {
+      "event": "finished",
+      "url": "http://127.0.0.1:9095/?url=http%3A%2F%2F127.0.0.1%3A9094%2Ftracking_gpu_20261013%2Ftracking_gpu.rrd&renderer=webgl&persist=0"
+    },
+    {
+      "event": "response",
+      "url": "http://127.0.0.1:9095/re_viewer.js",
+      "status": 200,
+      "content_length": null
+    },
+    {
+      "event": "finished",
+      "url": "http://127.0.0.1:9095/re_viewer.js"
+    },
+    {
+      "event": "response",
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@100;500&display=swap",
+      "status": 200,
+      "content_length": null
+    },
+    {
+      "event": "finished",
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@100;500&display=swap"
+    },
+    {
+      "event": "request",
+      "url": "http://127.0.0.1:9095/re_viewer_bg.wasm"
+    },
+    {
+      "event": "request",
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2"
+    },
+    {
+      "event": "response",
+      "url": "http://127.0.0.1:9095/re_viewer_bg.wasm",
+      "status": 200,
+      "content_length": null
+    },
+    {
+      "event": "finished",
+      "url": "http://127.0.0.1:9095/re_viewer_bg.wasm"
+    },
+    {
+      "event": "response",
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "status": 200,
+      "content_length": "48256"
+    },
+    {
+      "event": "finished",
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2"
+    },
+    {
+      "event": "request",
+      "url": "http://127.0.0.1:9095/favicon.svg"
+    },
+    {
+      "event": "response",
+      "url": "http://127.0.0.1:9095/favicon.svg",
+      "status": 200,
+      "content_length": "1006"
+    },
+    {
+      "event": "finished",
+      "url": "http://127.0.0.1:9095/favicon.svg"
+    },
+    {
+      "event": "request",
+      "url": "http://127.0.0.1:9094/tracking_gpu_20261013/tracking_gpu.rrd"
+    },
+    {
+      "event": "response",
+      "url": "http://127.0.0.1:9094/tracking_gpu_20261013/tracking_gpu.rrd",
+      "status": 200,
+      "content_length": "84137275"
+    },
+    {
+      "event": "finished",
+      "url": "http://127.0.0.1:9094/tracking_gpu_20261013/tracking_gpu.rrd"
+    }
+  ],
+  "body": "An error occurred during loading:\n\nLimit 'max_color_attachments' value 8 is better than allowed 6\n\nReload the page to try again.\nPlease consider filing a bug report. Thank you!\n\nFor graphics related issues, try forcing to render with WebGL\nhttp://127.0.0.1:9095/?url=http%3A%2F%2F127.0.0.1%3A9094%2Ftracking_gpu_20261013%2Ftracking_gpu.rrd&renderer=webgl&persist=0\nor with WebGPU\nhttp://127.0.0.1:9095/?url=http%3A%2F%2F127.0.0.1%3A9094%2Ftracking_gpu_20261013%2Ftracking_gpu.rrd&renderer=webgpu&persist=0",
+  "state": {
+    "handle": true,
+    "id": null,
+    "timeline": null,
+    "range": null,
+    "panic": false,
+    "visibility": "visible",
+    "memory": {
+      "used": 40933566,
+      "total": 42998690,
+      "limit": 4294705152
+    }
+  },
+  "webgl": {
+    "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "max_color_attachments": 6,
+    "max_draw_buffers": 6
+  },
+  "viewer_requested_rrd": false,
+  "independent_browser_fetch": {
+    "status": 200,
+    "bytes": 84137275,
+    "sha256": "2da4caecb87ea4aca9f7e7e6d473a08f5fdac7f6eda2f92bd61803fde5bdacc1"
+  }
+}

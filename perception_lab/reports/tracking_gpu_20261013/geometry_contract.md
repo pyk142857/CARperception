@@ -13,3 +13,13 @@
 - typed输入：float64 geometry，int64 order/classes，int32 eligible；整数NMS indices/order/types精确比较，不允许KernelBench统一precision转换破坏类型。FP64误差预算atol1e-8/rtol1e-7，真实IoU接近阈值时可显式CPU复核，比例与耗时必须记录。
 
 目前文档描述源码检查，尚不代表GPU候选已实现或等价通过。
+
+## 本次实际验证补充
+
+FP64 TileLang裁剪采用相对首角点平移，保持原CPU计算的角点、排序和粗筛；`--fmad=false`降低浮点重排差异。GPU抑制是单线程按原order贪心遍历，当前未使用64位bitmask；仍实测63/64/65及最大199、capacity256边界。
+
+120帧全量NMS与模型输入字节精确；9个真实代表帧比较所有eligible pair几何。另有20组合成常规fixture及独立原reader无效输入／上游不终止边界记录。实际120帧阈值CPU复核为0，合成阈值附近复核6对；所有复核和D2H成本都包含在完整NMS计时。
+
+默认high=1的投票分支在正常有效几何中不可达：交集面积≤min(Aa,Ab)，原式交叠高度≤(ha+hb)/2，因此2V交≤Va+Vb，带+1e-5分母后IoU<1。近yaw=.3的高度包含用例已实测，原输入BBox不变。该论证不替代有限精度实际比较，也不隐瞒原始高度公式不是标准物理交叠。
+
+运行入口直接处理不支持的容量／阈值时显式报错，未自动改为近似NMS。具体证据见kernel_correctness.json、kernel_boundary_checks.json及grae_gpu/official_equivalence.json。

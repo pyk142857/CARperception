@@ -1,0 +1,11 @@
+{
+  "model": "GRAE-3DMOT",
+  "status": "passed",
+  "phase": "run",
+  "input_family": "frozen_reference",
+  "gpu_executed": true,
+  "inference": "passed",
+  "official_evaluation": "passed",
+  "frames": 120,
+  "evaluation_receipt_sha256": "72d86623b4c3e0dcc5ef41b596a834eec7dc1ceb433603cd3ea2dddf7dfcc72d"
+}

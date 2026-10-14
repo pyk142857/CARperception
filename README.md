@@ -1,10 +1,12 @@
 # CARperception
 
-本轮已生成[冻结BEVFusion跟踪对照实测](perception_lab/reports/tracking_gpu_20261013/report.md)：GRAE与OptiPMB的39/81帧官方评价完成。OptiPMB mini_val AMOTA79.75%低于GRAE82.30%、FN400→456，继续保留GRAE；GPU优化仍在执行，暂无采用结论。
+本轮[冻结BEVFusion跟踪／GPU优化实测](perception_lab/reports/tracking_gpu_20261013/report.md)：TileLang替换原CPU三维IoU／NMS，39／81帧完整GRAE分别 **142.81→24.77、263.80→31.00 ms/帧**，各30轮AB／BA全部更快、P95不升，120帧轨迹及全部官方指标精确一致。计时包含检测JSON读取、预处理、搬运和原生GRAE，不包含BEVFusion前向。
 
-## 下一轮执行：固定BEVFusion跟踪对照与GPU优化
+## 正在执行：固定BEVFusion跟踪对照与GPU优化
 
-[20261013_03指令](perception_lab/instruction/20261013_03_frozen_bevfusion_tracking_gpu_optimization.md)已派发，待本地执行：固定39/81帧检测→OptiPMB/GRAE原生官方评价→CPU几何/NMS语义与热点→TileLang＋KernelBench验证→含搬运的完整GRAE计时/评价→BEV pooling研究。OptiPMB复用真实点云统计；GPU版保持原高度、粗筛、排序与阈值行为。计划报告目录为 `perception_lab/reports/tracking_gpu_20261013/`，尚未产生本轮新指标。
+[20261013_03指令](perception_lab/instruction/20261013_03_frozen_bevfusion_tracking_gpu_optimization.md)的原生对照、GPU几何／模型输入／轨迹等价和官方评价、完整序列30轮计时已完成。OptiPMB mini_val AMOTA79.75%低于GRAE82.30%、FN400→456，保留GRAE。
+
+代表帧微基准末段出现外部GPU训练，已保留并作废整组微基准，等待空闲重测；BEV pooling候选尚待实际GPU运行，浏览器回放验收仍在推进。阶段状态与原始记录见[报告](perception_lab/reports/tracking_gpu_20261013/report.md)，不把这些待办标为通过。
 
 ## 已验证的保留方案与简历成果（2026-10-13）
 

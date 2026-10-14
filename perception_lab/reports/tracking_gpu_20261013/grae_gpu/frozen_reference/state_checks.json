@@ -1,0 +1,8 @@
+{
+  "single_frame": true,
+  "first_middle_last": 3,
+  "sentinel_gt_id_invariance": true,
+  "empty_detection_frames_execute": true,
+  "prefix_replay_resume_equal": true,
+  "resume_protocol": "replay fixed prefix from scene reset; no hidden state format change"
+}

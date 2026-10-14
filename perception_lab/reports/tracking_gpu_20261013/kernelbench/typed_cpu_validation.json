@@ -1,0 +1,27 @@
+{
+  "scope": "project task extension, not standard KernelBench score",
+  "adapter_source_sha256": "c801b7cf630b72a0ec318018ebb326d95d69c71e8537535b3a4e1662635bd54c",
+  "kernelbench_commit": "423217d9fda91e0c2d67e4a43bf62f96f6d104f1",
+  "kernelbench_eval_sha256": "b42ce1268ec64ee7274db307ab98945c1e868792b54689554014b28c41787ee6",
+  "cpu_adapter_tests": {
+    "status": "passed",
+    "preserved_dtypes": [
+      "torch.float64",
+      "torch.int32",
+      "torch.int64"
+    ],
+    "invalid_output_rejections": [
+      "integer_off_by_one",
+      "integer_order",
+      "dtype_cast",
+      "fp64_outside_budget",
+      "nonfinite"
+    ],
+    "preserves_non_tensor": true,
+    "blanket_fp32_cast_loses_values": [
+      true,
+      true,
+      true
+    ]
+  }
+}

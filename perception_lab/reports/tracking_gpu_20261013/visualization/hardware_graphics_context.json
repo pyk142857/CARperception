@@ -1,0 +1,5 @@
+{
+  "purpose": "Functional browser acceptance only; not a GPU/model/operator benchmark",
+  "concurrent_external_training": "Root reported active waterwaydetection/flywheelv13 training; no process touched",
+  "mode": "One authorized headless=new hardware WebGL attempt after explicit SwiftShader capability diagnosis"
+}

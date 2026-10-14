@@ -1,0 +1,29 @@
+--- upstream/eval.py::_process_input_tensor
++++ project/tracking_gpu_kernelbench_20261013.py::process_input_tensor
+@@ -1,23 +1,4 @@
+-def _process_input_tensor(input, device, backend="cuda", precision=torch.float32):
+-    """
+-    Helper function to move tensors to the correct device and apply backend-specific dtype casting.
+-    
+-    Args:
+-        input: Input tensor or non-tensor value
+-        device: Target CUDA device
+-        backend: Backend type (e.g., 'cuda', 'triton', 'cute')
+-        precision: torch.dtype 
+-    Returns:
+-        Processed tensor on correct device with correct dtype, or original value if not a tensor
+-    """
++def process_input_tensor(value, device):
++    """Preserve every declared dtype; move only the device."""
++    return value.to(device=device) if isinstance(value, torch.Tensor) else value
+ 
+-    # sometimes things like init inputs are floats (like in the case of labels / targets, classification losses, etc.) 
+-    if not isinstance(input, torch.Tensor):
+-        return input
+-    
+-    # cast to the desired percision dtype for activations
+-    input_tensor = input.to(dtype=precision)
+-    
+-    # Default for all other backends and float types
+-    return input_tensor.to(device=device)
+-

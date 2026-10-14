@@ -1,6 +1,6 @@
 # CARperception 简历项目经历与成果依据
 
-更新日期：2026-10-13。面向自动驾驶感知算法、三维感知与算法工程实习。证据快照：[ca6458c](https://github.com/pyk142857/CARperception/blob/ca6458cdb3d5784f9e9bc30cb86272fafe9ebd9a/README.md)；早期成稿保存在[2026-10-08简历版本](https://github.com/pyk142857/CARperception/blob/ca6458cdb3d5784f9e9bc30cb86272fafe9ebd9a/perception_lab/reports/resume_project_experience_20261008.md)，对应实验和本次修订由Git历史追溯。
+更新日期：2026-10-14。面向自动驾驶感知算法、三维感知与算法工程实习。证据快照：[ca6458c](https://github.com/pyk142857/CARperception/blob/ca6458cdb3d5784f9e9bc30cb86272fafe9ebd9a/README.md)；早期成稿保存在[2026-10-08简历版本](https://github.com/pyk142857/CARperception/blob/ca6458cdb3d5784f9e9bc30cb86272fafe9ebd9a/perception_lab/reports/resume_project_experience_20261008.md)，对应实验和本次修订由Git历史追溯。
 
 ## 按招聘平台模板填写
 
@@ -24,6 +24,7 @@
 
 ### 项目业绩
 
+- 使用TileLang实现FP64旋转框三维IoU与GPU贪心NMS，保持原排序、粗筛、阈值和高度公式；在RTX4090上对固定BEVFusion检测→GRAE的39/81帧完整序列各做30轮AB/BA，合并耗时降低87.09%（约7.75倍），120帧轨迹逐字节一致、官方跟踪指标完全一致。计时从检测JSON读取到tracks，包含搬运，排除BEVFusion前向。
 - 完成DEIMv2-S原生部署及COCO val2017全5,000图评价，AP由历史YOLOv8s的44.95%提高至50.86%，提升5.91个百分点；完成nuScenes 39帧六相机234图预测展示。
 - 固定CenterPoint检测完成13组跟踪策略对照，在nuScenes mini单场景39帧中将连续帧ID切换46→38，减少17.4%；行人42→36，FP579/FN39保持不变。
 - 开发并优化CPU跟踪关联算子，通过复制快路径、NumPy批量计算、类别广播及代价矩阵复用，将同一候选跟踪函数平均耗时2.91→0.77 ms/帧，加速3.77倍；30轮配对计时，39帧全部输出字段、ID、顺序及诊断精确一致，阶段72项测试通过。
@@ -91,3 +92,9 @@ MambaFusion已完成39/81帧原生检测及接入GRAE：mini_val检测mAP58.90%�
 完整nuScenes val、模型训练/微调、车端部署、规划控制闭环及统一实时吞吐尚未完成。2fps是回放速率。各阶段测试数只代表相应阶段，不相加为总项目测试量。
 
 [项目保留方案说明](../RETAINED_ALGORITHMS.md) · [最新权重恢复与评价报告](perception_weights_recovery_20261013/report.md) · [2025模型总报告](perception_2025_20261013/report.md)
+
+## 2026-10-14 GPU几何补充证据
+
+[完整实验](tracking_gpu_20261013/report.md) · [30轮全链路原始数据](tracking_gpu_20261013/benchmark/full.json) · [120帧NMS与输入等价](tracking_gpu_20261013/kernel_correctness.json) · [官方整体／每类指标等价](tracking_gpu_20261013/grae_gpu/official_equivalence.json)。
+
+该收益来自CPU多边形几何与抑制的GPU替换，不是BEVFusion网络加速，也不改变GRAE网络／关联数学；不表述为完整感知系统端到端FPS、全量数据泛化或车端量产结果。KernelBench仅用于本项目typed任务适配，不宣称标准250题成绩。

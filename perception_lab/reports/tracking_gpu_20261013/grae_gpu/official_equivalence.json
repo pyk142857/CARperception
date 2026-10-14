@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "split": "scene0061",
+      "all_official_metrics_and_per_class_exact": true,
+      "excluded": "eval_time only",
+      "files_sha256": [
+        "081c3bc1519a154a194e93b463edc135337e886cfb3a649a08d62c774803e085",
+        "eb0d0ed75e1b5e6aa11555d285868c8ebaf58b88974dde29c4ff89daf7b06398"
+      ]
+    },
+    {
+      "split": "mini_val",
+      "all_official_metrics_and_per_class_exact": true,
+      "excluded": "eval_time only",
+      "files_sha256": [
+        "fbc4e314e82854301bc6ad5580d985f2f2ef75d71b252b5f2e3be04f3965b7df",
+        "8574c3d1d6a49990f4f299c72e6aaa16507bddb2c91ae485f8a820723419d2b6"
+      ]
+    }
+  ]
+}

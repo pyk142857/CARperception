@@ -1,0 +1,30 @@
+[
+  {
+    "model": "grae_gpu",
+    "split": "scene0061",
+    "frames": 39,
+    "tracking_sha256": "ceaf64c45d71bf7fddf7e56f55946262e31614104f9c238bf863c05bd6facb89",
+    "metrics_sha256": "eb0d0ed75e1b5e6aa11555d285868c8ebaf58b88974dde29c4ff89daf7b06398",
+    "amota": 0.8625687017631094,
+    "amotp": 0.4048811070336119,
+    "ids": 5.0,
+    "fp": 67.0,
+    "fn": 104.0,
+    "recall": 0.9114723803082004,
+    "mota": 0.8702829477579679
+  },
+  {
+    "model": "grae_gpu",
+    "split": "mini_val",
+    "frames": 81,
+    "tracking_sha256": "dffd9176551b2dc866807fcaf2f9ab1a0289c48fc19c49d75d69c320f17fce99",
+    "metrics_sha256": "8574c3d1d6a49990f4f299c72e6aaa16507bddb2c91ae485f8a820723419d2b6",
+    "amota": 0.8229635568204605,
+    "amotp": 0.43518577589429613,
+    "ids": 13.0,
+    "fp": 299.0,
+    "fn": 400.0,
+    "recall": 0.8213113451807188,
+    "mota": 0.7879691863336332
+  }
+]
