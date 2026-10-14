@@ -1,13 +1,9 @@
-micro scene0061 ca9a282c9e77460f8360f564131a8af5 0.9011598678443425
-micro scene0061 b26e791522294bec90f86fd72226e35c 0.9446984919181745
-micro scene0061 ed5fc18c31904f96a8f0dbb99ff069c0 0.9301928134013964
-micro mini_val 3e8750f331d7499e9b5123e9eb70f2e2 0.9645625746998925
-micro mini_val 5b03af7a953245b5a3b23191ed4da62a 0.9637782266757837
-micro mini_val 281b92269fd648d4b52d06ac06ca6d65 0.9056873605709026
-micro mini_val b5989651183643369174912bc5641d3b 0.9391534093923337
-micro mini_val 6ff9723a60bf4e14b328b3b19f04dc32 0.911033443390604
-micro mini_val b4ff30109dd14c89b24789dc5713cf8c 0.9375090786779136
-Traceback (most recent call last):
-  File "/home/minglei/Desktop/CAR/perception_lab/tools/tracking_gpu_benchmark_20261013.py", line 158, in <module>
-    target=OUT/'micro.json';report=json.loads(target.read_text());report['status']='rejected_external_competition';write(OUT/('micro_rejected_'+str(int(time.time()))+'.json'),report);target.unlink();raise RuntimeError('Micro trial set rejected; full set must be rerun after contention clears')
-RuntimeError: Micro trial set rejected; full set must be rerun after contention clears
+micro scene0061 ca9a282c9e77460f8360f564131a8af5 0.8943356630791532
+micro scene0061 b26e791522294bec90f86fd72226e35c 0.9454001392709481
+micro scene0061 ed5fc18c31904f96a8f0dbb99ff069c0 0.9310679235157573
+micro mini_val 3e8750f331d7499e9b5123e9eb70f2e2 0.9637566295538516
+micro mini_val 5b03af7a953245b5a3b23191ed4da62a 0.9632805707676662
+micro mini_val 281b92269fd648d4b52d06ac06ca6d65 0.9064057162632709
+micro mini_val b5989651183643369174912bc5641d3b 0.9397978840742054
+micro mini_val 6ff9723a60bf4e14b328b3b19f04dc32 0.9088015640633241
+micro mini_val b4ff30109dd14c89b24789dc5713cf8c 0.9390142053405997
