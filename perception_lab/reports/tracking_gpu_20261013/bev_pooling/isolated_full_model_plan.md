@@ -1,3 +1,5 @@
+> Execution update: this previously prepared plan has now been executed. Build, 39/81-frame evaluation and 270 paired forwards are complete; candidate not adopted. See [measured report](report.md). The text below preserves the original conditional plan.
+
 # Conditional isolated full-model integration
 
 **Prepared only. No isolated tree materialized, no model build, no model run and no detection evaluation executed by this preparation.** Use this plan only if the local preindex experiment first demonstrates stable benefit. Old source, old binaries, weights, TensorRT engines and frozen tracking predictions remain untouched.

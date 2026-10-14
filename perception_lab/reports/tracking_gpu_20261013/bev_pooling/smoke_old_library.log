@@ -1,0 +1,41 @@
+/home/minglei/Desktop/CAR/perception_lab/envs/maptr/lib/python3.10/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+/home/minglei/Desktop/CAR/perception_lab/third_party/bevfusion_4090/mmdet3d/core/bbox/box_np_ops.py:781: NumbaDeprecationWarning: The 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.
+  def points_in_convex_polygon_jit(points, polygon, clockwise=True):
+{"frame": 0, "sample_token": "ca9a282c9e77460f8360f564131a8af5", "points": 248834, "preprocess_ms": 108.98184901452623, "geometry_update_ms": 0.8851739985402673, "forward_h2d_model_d2h_ms": 9.724704985274002, "standardize_ms": 17.881146020954475, "end_to_end_ms": 137.47287401929498, "process_gpu_mib": 1944}
+------------------------------------------------------
+Camerea Backbone 🌱 is Static Shape model
+Inputs: 2
+	0.img : {1 x 6 x 3 x 256 x 704} [float16]
+	1.depth : {1 x 6 x 1 x 256 x 704} [float16]
+Outputs: 2
+	0.camera_depth_weights : {6 x 118 x 32 x 88} [float16]
+	1.camera_feature : {6 x 32 x 88 x 80} [float16]
+------------------------------------------------------
+------------------------------------------------------
+Camerea VTransform 🌱 is Static Shape model
+Inputs: 1
+	0.feat_in : {1 x 80 x 360 x 360} [float16]
+Outputs: 1
+	0.feat_out : {1 x 80 x 180 x 180} [float16]
+------------------------------------------------------
+------------------------------------------------------
+Transfusion 🌱 is Static Shape model
+Inputs: 2
+	0.camera : {1 x 80 x 180 x 180} [float16]
+	1.lidar : {1 x 256 x 180 x 180} [float16]
+Outputs: 1
+	0.middle : {1 x 512 x 180 x 180} [float16]
+------------------------------------------------------
+------------------------------------------------------
+BBox 🌱 is Static Shape model
+Inputs: 1
+	0.middle : {1 x 512 x 180 x 180} [float16]
+Outputs: 6
+	0.reg : {1 x 2 x 200} [float16]
+	1.height : {1 x 1 x 200} [float16]
+	2.dim : {1 x 3 x 200} [float16]
+	3.rot : {1 x 2 x 200} [float16]
+	4.vel : {1 x 2 x 200} [float16]
+	5.score : {1 x 10 x 200} [float16]
+------------------------------------------------------

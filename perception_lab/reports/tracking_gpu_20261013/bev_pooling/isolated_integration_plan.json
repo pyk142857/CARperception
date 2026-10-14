@@ -1,5 +1,5 @@
 {
-  "status": "patches_prepared_not_materialized",
+  "status": "materialized_not_built",
   "isolated_source": "/home/minglei/Desktop/CAR/perception_lab/runs/tracking_gpu_20261013/bev_pooling/isolated/CUDA-BEVFusion",
   "isolated_build": "/home/minglei/Desktop/CAR/perception_lab/runs/tracking_gpu_20261013/bev_pooling/isolated/CUDA-BEVFusion/build",
   "old_source_untouched": true,

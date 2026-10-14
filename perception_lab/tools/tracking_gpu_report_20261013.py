@@ -14,7 +14,7 @@ def main():
   doc=read(path);stages[stage]='passed' if doc and (doc.get('status')=='passed' or stage=='kernelbench_validation' and doc.get('gpu',{}).get('status')=='passed') else 'pending'
  stages['cpu_semantics_profile_complete']='passed' if read('cpu_segments.json') and read('kernel_boundary_checks.json') else 'pending'
  stages['paired_performance']='passed' if full and micro and full['status']=='passed' and micro['status']=='passed' else 'pending'
- stages['bev_pooling_research']='passed' if pool and pool.get('status') in ['measured','correctness_failed'] and not pool.get('full_model_required',False) else 'pending'
+ stages['bev_pooling_research']='passed' if pool and pool.get('status') in ['measured','correctness_failed'] and (not pool.get('full_model_required',False) or pool.get('full_model_status')=='passed') else 'pending'
  # Visualization owns its separate per-split/browser receipts; preserve explicit root validation status.
  status['gpu_speedup_adopted']=bool(full and full.get('candidate_adopted') and stages['kernel_equivalence']=='passed' and stages['grae_full_evaluation']=='passed' and stages['paired_performance']=='passed')
  status['status']='completed' if all(v in ['passed','not_adopted'] for v in stages.values()) else 'running'

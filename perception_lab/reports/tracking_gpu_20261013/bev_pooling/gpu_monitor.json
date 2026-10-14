@@ -1,0 +1,42 @@
+[
+  {
+    "time": 1791943116.9139237,
+    "processes": "",
+    "external_compute": []
+  },
+  {
+    "time": 1791943116.9484477,
+    "processes": "",
+    "external_compute": []
+  },
+  {
+    "time": 1791943117.4626572,
+    "processes": "",
+    "external_compute": []
+  },
+  {
+    "time": 1791943117.9764078,
+    "processes": "911992, perception_lab/envs/optipmb_20261013/bin/python, 504 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943118.5260854,
+    "processes": "911992, perception_lab/envs/optipmb_20261013/bin/python, 512 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943119.0584157,
+    "processes": "911992, perception_lab/envs/optipmb_20261013/bin/python, 1114 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943119.5904958,
+    "processes": "911992, perception_lab/envs/optipmb_20261013/bin/python, 1114 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943120.1233635,
+    "processes": "",
+    "external_compute": []
+  }
+]

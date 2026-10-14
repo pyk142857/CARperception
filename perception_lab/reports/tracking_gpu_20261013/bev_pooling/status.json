@@ -1,13 +1,6 @@
 {
-  "research_status": "prepared_gpu_pending",
-  "candidate": "feature_offset_precompute_each_forward",
-  "CPU_input_analysis": "passed",
-  "CUDA_compile": "passed",
-  "GPU_execution": "pending",
-  "GPU_correctness": "pending",
-  "paired_30_round_performance": "pending",
-  "full_model_evaluation": "conditional_on_stable_local_benefit",
+  "status": "completed",
+  "research_executed": true,
   "optimization_adopted": false,
-  "selected_default": "upstream",
-  "wait_reason": "Tracking B–E publication and exclusive GPU scheduling required before pooling runtime experiment"
+  "decision": "Retain upstream: none of the nine full-model representatives meets 24/30 faster pairs; rebuild/geometry and repeatability differences remain explicitly reported. Local pooling gains alone do not justify adoption."
 }

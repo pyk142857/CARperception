@@ -1,0 +1,40 @@
+{
+  "frames": 81,
+  "cold_start_seconds": 2.906557874986902,
+  "warmup": 3,
+  "timings": {
+    "preprocess_ms": {
+      "mean": 171.37917888963042,
+      "p50": 139.7993539867457,
+      "p95": 331.52386601432227,
+      "first": 101.59400798147544
+    },
+    "geometry_update_ms": {
+      "mean": 0.9416935427896218,
+      "p50": 0.8865819836501032,
+      "p95": 1.2302809918764979,
+      "first": 1.2416120152920485
+    },
+    "forward_h2d_model_d2h_ms": {
+      "mean": 9.576379825263341,
+      "p50": 9.578244003932923,
+      "p95": 10.571941995294765,
+      "first": 8.058832987444475
+    },
+    "standardize_ms": {
+      "mean": 19.557394817784818,
+      "p50": 18.007375998422503,
+      "p95": 24.898378003854305,
+      "first": 18.26206801342778
+    },
+    "end_to_end_ms": {
+      "mean": 201.45464707546822,
+      "p50": 168.78227901179343,
+      "p95": 363.7938169995323,
+      "first": 129.15652099763975
+    }
+  },
+  "process_peak_mib": 1952,
+  "precision": "fp16",
+  "boundaries": "forward includes image/points H2D, CUDA/TRT, box D2H; geometry update separate; process memory sampled after each frame; rendering excluded"
+}

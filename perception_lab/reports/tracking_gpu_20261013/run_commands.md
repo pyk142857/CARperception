@@ -39,3 +39,13 @@ perception_lab/envs/grae3dmot_2025/bin/python perception_lab/tools/tracking_gpu_
 ```
 
 基准不导入GT，30轮每轮分别完整读取39/81帧冻结JSON，按真实scene重置原生predictor。GT仅用于随后官方评估与可视化。
+
+## Completed pooling follow-up
+
+Conditional full-model build and actual shell/Python wrappers are archived under `bev_pooling/execution/`. See `bev_pooling/isolated_full_model_plan.md` for environment/build/evaluation commands. Local benchmark uses `envs/optipmb_20261013`, full model uses `envs/bevfusion`, official evaluation and summarization use `envs/sparse4d`.
+
+```bash
+perception_lab/envs/sparse4d/bin/python perception_lab/tools/bev_pooling_preindex_summary_20261013.py
+python perception_lab/tools/tracking_gpu_report_20261013.py
+python perception_lab/tools/tracking_gpu_acceptance_20261013.py --scope all
+```

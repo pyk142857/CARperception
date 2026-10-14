@@ -2,14 +2,14 @@
 
 ## 当前派发任务：固定检测跟踪对照与GPU几何优化（2026-10-14）
 
-执行[20261013_03](instruction/20261013_03_frozen_bevfusion_tracking_gpu_optimization.md)，状态**执行中**。本轮结果：[报告](reports/tracking_gpu_20261013/report.md)。
+执行[20261013_03](instruction/20261013_03_frozen_bevfusion_tracking_gpu_optimization.md)，状态**实测与验收完成**。本轮结果：[报告](reports/tracking_gpu_20261013/report.md)。
 
 - 固定39／81帧原始BEVFusion预测及对应真实LiDAR；GRAE、OptiPMB原生推理和官方TrackingEval已完成。Opti81帧AMOTA下降、FN增加，不替代GRAE。
 - TileLang FP64批量原式3D IoU／GPU贪心NMS实测，120帧NMS与模型输入字节一致，39／81轨迹逐字节一致、全部官方整体／每类指标一致。KernelBench为保持FP64／整数dtype的项目任务扩展。
 - 完整GRAE各30轮AB／BA已完成：142.81→24.77及263.80→31.00ms/帧，均30/30胜、P95不升，合并节省87.09%；排除BEVFusion前向。
-- 代表帧微基准末段出现外部waterwaydetection训练，整组已拒绝并留证；完整30轮此前完成、未受该进程影响。待GPU空闲后重测micro，再完成最后BEV pooling实测。39／81帧NVIDIA WebGL浏览器与解码验收通过；新headless模式和显式GPU启用修复了Chrome兼容问题。
+- GPU空闲后完成270组micro重测及跟踪验收。BEV pooling实际完成局部实验、39／81帧整网官方检测评价、270组整网配对及重复诊断；整网稳定收益门槛未通过，保持上游实现。39／81帧浏览器与解码验收通过。
 
-独立代码入口 `tools/run_tracking_gpu_20261013.py`，原生预测、旧模型入口与历史回放不覆盖。完整序列原始配对、实际GPU调用和官方指标均已保存；剩余阶段不能被CPU测试替代。
+独立代码入口 `tools/run_tracking_gpu_20261013.py`，原生预测、旧模型入口与历史回放不覆盖。完整序列原始配对、实际GPU调用和官方指标均已保存；全部要求的实验已执行；pooling未采用的失败证据单独保存。
 
 ## 保留方案与简历说明更新（2026-10-13）
 

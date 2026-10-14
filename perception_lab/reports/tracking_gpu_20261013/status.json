@@ -1,5 +1,5 @@
 {
-  "status": "running",
+  "status": "completed",
   "stages": {
     "inputs_frozen": "passed",
     "native_comparison_complete": "passed",
@@ -9,12 +9,12 @@
     "kernelbench_validation": "passed",
     "grae_full_evaluation": "passed",
     "paired_performance": "passed",
-    "bev_pooling_research": "pending",
+    "bev_pooling_research": "passed",
     "visualization": "passed",
     "publication": "passed"
   },
   "tracking_benefit": "not_adopted: OptiPMB mini_val AMOTA lower and FN higher",
   "gpu_speedup_adopted": true,
-  "last_verified_remote_commit": "77e0345034a79888f99f7e4faddc96da6893a94b",
-  "publication_scope": "Native comparison, GPU correctness/full evaluation/full30-pair timing published; pending micro/pooling not claimed complete"
+  "last_verified_remote_commit": "bd45e92af421a49c225835a14f51f3d50f55cc52",
+  "publication_scope": "Final checkpoint includes all measured tracking/pooling evidence, official evaluation, visualization and non-adoption decision; last_verified_remote_commit records the prior verified checkpoint."
 }

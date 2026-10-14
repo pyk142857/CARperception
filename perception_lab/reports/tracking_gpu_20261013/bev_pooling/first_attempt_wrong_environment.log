@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/minglei/Desktop/CAR/perception_lab/tools/bev_pooling_preindex_20261013.py", line 10, in <module>
+    from bev_pooling_4090 import load_capture, validate_case, edge_cases, Pool, compare, sha256
+  File "/home/minglei/Desktop/CAR/perception_lab/tools/bev_pooling_4090.py", line 15, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'

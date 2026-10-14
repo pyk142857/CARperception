@@ -50,7 +50,7 @@ OptiPMB原生耗时包含必要LiDAR读取／变换和点数统计，39／81序�
 
 ## BEV pooling与可视化
 
-BEV pooling尚未完成实测；在B–E发布后，按既有真实capture研究一个索引预计算候选，结果另存，绝不覆盖冻结检测。
+独立研究方向为每次forward预计算feature offset，保持上游FP16布局、原FP32 FMA累加顺序和pack10线程分配。候选计时包含新预计算kernel，不跨帧摊销。实际状态：`measured`；稳定局部收益：`True`；最终采用：`False`。详见[pooling报告](bev_pooling/report.md)；冻结跟踪输入未改变。
 
 [39帧对照入口](http://127.0.0.1:9094/tracking_gpu_20261013/) · [81帧入口](http://127.0.0.1:9094/tracking_gpu_20261013/mini_val/) · [可视化验收与固定案例规则](visualization/report.md)。完整原始点云、六相机、BEV检测、GRAE／Opti轨迹及独立GT分层显示；GPU输出相同，不重复画同样框。浏览器和解码验证分别记录，以验收状态为准。
 

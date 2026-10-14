@@ -6,7 +6,7 @@
 
 [20261013_03指令](perception_lab/instruction/20261013_03_frozen_bevfusion_tracking_gpu_optimization.md)的原生对照、GPU几何／模型输入／轨迹等价和官方评价、完整序列30轮计时已完成。OptiPMB mini_val AMOTA79.75%低于GRAE82.30%、FN400→456，保留GRAE。
 
-代表帧微基准末段出现外部GPU训练，已保留并作废整组微基准，等待空闲重测；BEV pooling候选尚待实际GPU运行，39／81帧浏览器回放与解码验收已通过。阶段状态与原始记录见[报告](perception_lab/reports/tracking_gpu_20261013/report.md)，不把这些待办标为通过。
+空闲GPU重测的270组微基准已通过，跟踪优化验收完成；BEV pooling虽有局部收益，但39／81帧整网评价及270组配对未证明稳定提速，保留原实现。39／81帧浏览器回放与解码验收通过。原始记录及不采用原因见[报告](perception_lab/reports/tracking_gpu_20261013/report.md)。
 
 ## 已验证的保留方案与简历成果（2026-10-13）
 

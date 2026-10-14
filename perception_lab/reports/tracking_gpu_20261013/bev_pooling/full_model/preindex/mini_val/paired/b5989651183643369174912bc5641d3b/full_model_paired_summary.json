@@ -1,0 +1,29 @@
+{
+  "status": "measured",
+  "rounds": 30,
+  "independent_warmup": 10,
+  "timing": "synchronized resident-core forward, including H2D and native box D2H; same preprocessed CPU FP16 image/point arrays; geometry updated once; no capture I/O, model reload, preprocessing or rendering",
+  "statistics": {
+    "upstream_ms": {
+      "mean": 8.158515764322752,
+      "p50": 8.063545988989063,
+      "p95": 8.750735595822334
+    },
+    "candidate_ms": {
+      "mean": 7.98623946417744,
+      "p50": 7.841097496566363,
+      "p95": 8.737892642966472
+    },
+    "speedup": {
+      "mean": 1.0250144858613472,
+      "p50": 1.0320085011456506,
+      "p95": 1.1372939887231492
+    }
+  },
+  "all_native_outputs_bitwise_equal": false,
+  "input_sha256": {
+    "images": "06d00fa5770f076921286ab77f1ebe7cf3f4a320cebb46a89beb9ce4285755b2",
+    "points": "f677f768a370209eb73513b77caaf24eef4176c4b9c9b47cd0230a302f582e23"
+  },
+  "gpu": "NVIDIA GeForce RTX 4090"
+}

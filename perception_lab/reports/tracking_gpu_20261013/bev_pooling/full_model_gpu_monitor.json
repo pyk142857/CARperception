@@ -1,0 +1,686 @@
+[
+  {
+    "time": 1791943222.783312,
+    "allowed_pid": null,
+    "processes": "",
+    "external_compute": []
+  },
+  {
+    "time": 1791943222.8408601,
+    "allowed_pid": 920965,
+    "processes": "",
+    "external_compute": []
+  },
+  {
+    "time": 1791943223.8765378,
+    "allowed_pid": 920965,
+    "processes": "",
+    "external_compute": []
+  },
+  {
+    "time": 1791943224.9073794,
+    "allowed_pid": 920965,
+    "processes": "",
+    "external_compute": []
+  },
+  {
+    "time": 1791943225.9213214,
+    "allowed_pid": 920965,
+    "processes": "920965, 1094 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943226.9583282,
+    "allowed_pid": 920965,
+    "processes": "920965, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943227.9918497,
+    "allowed_pid": 920965,
+    "processes": "920965, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943229.0082667,
+    "allowed_pid": 920965,
+    "processes": "920965, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943230.0615115,
+    "allowed_pid": 920965,
+    "processes": "920965, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943231.1197808,
+    "allowed_pid": 920965,
+    "processes": "920965, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943232.1351893,
+    "allowed_pid": 920965,
+    "processes": "920965, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943233.1587677,
+    "allowed_pid": 920965,
+    "processes": "920965, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943234.1719134,
+    "allowed_pid": 920965,
+    "processes": "920965, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943235.1860795,
+    "allowed_pid": 920965,
+    "processes": "920965, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943236.2006059,
+    "allowed_pid": 920965,
+    "processes": "920965, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943237.2411733,
+    "allowed_pid": 920965,
+    "processes": "920965, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943238.2793608,
+    "allowed_pid": 920965,
+    "processes": "920965, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943239.3112824,
+    "allowed_pid": 920965,
+    "processes": "",
+    "external_compute": []
+  },
+  {
+    "time": 1791943239.3666096,
+    "allowed_pid": null,
+    "processes": "",
+    "external_compute": []
+  },
+  {
+    "time": 1791943239.4207819,
+    "allowed_pid": 922343,
+    "processes": "",
+    "external_compute": []
+  },
+  {
+    "time": 1791943240.4749465,
+    "allowed_pid": 922343,
+    "processes": "",
+    "external_compute": []
+  },
+  {
+    "time": 1791943241.526605,
+    "allowed_pid": 922343,
+    "processes": "",
+    "external_compute": []
+  },
+  {
+    "time": 1791943242.5791607,
+    "allowed_pid": 922343,
+    "processes": "922343, 1140 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943243.6105354,
+    "allowed_pid": 922343,
+    "processes": "922343, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943244.6235337,
+    "allowed_pid": 922343,
+    "processes": "922343, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943245.6579835,
+    "allowed_pid": 922343,
+    "processes": "922343, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943246.6718578,
+    "allowed_pid": 922343,
+    "processes": "922343, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943247.7027466,
+    "allowed_pid": 922343,
+    "processes": "922343, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943248.7414746,
+    "allowed_pid": 922343,
+    "processes": "922343, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943249.7990923,
+    "allowed_pid": 922343,
+    "processes": "922343, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943250.8322473,
+    "allowed_pid": 922343,
+    "processes": "922343, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943251.8773308,
+    "allowed_pid": 922343,
+    "processes": "922343, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943252.93245,
+    "allowed_pid": 922343,
+    "processes": "922343, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943253.9917634,
+    "allowed_pid": 922343,
+    "processes": "922343, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943255.0224977,
+    "allowed_pid": 922343,
+    "processes": "922343, 1960 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943256.074846,
+    "allowed_pid": 922343,
+    "processes": "922343, 1960 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943257.127209,
+    "allowed_pid": 922343,
+    "processes": "922343, 516 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943258.1786833,
+    "allowed_pid": 922343,
+    "processes": "",
+    "external_compute": []
+  },
+  {
+    "time": 1791943258.2344964,
+    "allowed_pid": null,
+    "processes": "",
+    "external_compute": []
+  },
+  {
+    "time": 1791943258.2876794,
+    "allowed_pid": 923688,
+    "processes": "",
+    "external_compute": []
+  },
+  {
+    "time": 1791943259.3392637,
+    "allowed_pid": 923688,
+    "processes": "",
+    "external_compute": []
+  },
+  {
+    "time": 1791943260.394417,
+    "allowed_pid": 923688,
+    "processes": "",
+    "external_compute": []
+  },
+  {
+    "time": 1791943261.4081695,
+    "allowed_pid": 923688,
+    "processes": "923688, 1084 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943262.4624033,
+    "allowed_pid": 923688,
+    "processes": "923688, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943263.5190127,
+    "allowed_pid": 923688,
+    "processes": "923688, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943264.541366,
+    "allowed_pid": 923688,
+    "processes": "923688, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943265.6007721,
+    "allowed_pid": 923688,
+    "processes": "923688, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943266.6585917,
+    "allowed_pid": 923688,
+    "processes": "923688, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943267.671969,
+    "allowed_pid": 923688,
+    "processes": "923688, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943268.7063348,
+    "allowed_pid": 923688,
+    "processes": "923688, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943269.7220876,
+    "allowed_pid": 923688,
+    "processes": "923688, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943270.7797182,
+    "allowed_pid": 923688,
+    "processes": "923688, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943271.8310995,
+    "allowed_pid": 923688,
+    "processes": "923688, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943272.88354,
+    "allowed_pid": 923688,
+    "processes": "923688, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943273.9160168,
+    "allowed_pid": 923688,
+    "processes": "923688, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943274.9524915,
+    "allowed_pid": 923688,
+    "processes": "923688, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943275.9671812,
+    "allowed_pid": 923688,
+    "processes": "923688, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943277.0189528,
+    "allowed_pid": 923688,
+    "processes": "923688, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943278.0527894,
+    "allowed_pid": 923688,
+    "processes": "923688, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943279.067078,
+    "allowed_pid": 923688,
+    "processes": "923688, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943280.0796592,
+    "allowed_pid": 923688,
+    "processes": "923688, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943281.0976858,
+    "allowed_pid": 923688,
+    "processes": "923688, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943282.1365087,
+    "allowed_pid": 923688,
+    "processes": "923688, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943283.1859925,
+    "allowed_pid": 923688,
+    "processes": "923688, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943284.2282908,
+    "allowed_pid": 923688,
+    "processes": "923688, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943285.2827177,
+    "allowed_pid": 923688,
+    "processes": "923688, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943286.2969632,
+    "allowed_pid": 923688,
+    "processes": "923688, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943287.359059,
+    "allowed_pid": 923688,
+    "processes": "923688, 1960 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943288.3911722,
+    "allowed_pid": 923688,
+    "processes": "923688, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943289.4055552,
+    "allowed_pid": 923688,
+    "processes": "923688, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943290.4647698,
+    "allowed_pid": 923688,
+    "processes": "923688, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943291.504785,
+    "allowed_pid": 923688,
+    "processes": "923688, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943292.5543833,
+    "allowed_pid": 923688,
+    "processes": "923688, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943293.6066258,
+    "allowed_pid": 923688,
+    "processes": "",
+    "external_compute": []
+  },
+  {
+    "time": 1791943293.6382766,
+    "allowed_pid": null,
+    "processes": "",
+    "external_compute": []
+  },
+  {
+    "time": 1791943293.6713219,
+    "allowed_pid": 926834,
+    "processes": "",
+    "external_compute": []
+  },
+  {
+    "time": 1791943294.6852171,
+    "allowed_pid": 926834,
+    "processes": "",
+    "external_compute": []
+  },
+  {
+    "time": 1791943295.6992652,
+    "allowed_pid": 926834,
+    "processes": "",
+    "external_compute": []
+  },
+  {
+    "time": 1791943296.7712936,
+    "allowed_pid": 926834,
+    "processes": "926834, 962 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943297.7854939,
+    "allowed_pid": 926834,
+    "processes": "926834, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943298.8183382,
+    "allowed_pid": 926834,
+    "processes": "926834, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943299.8323605,
+    "allowed_pid": 926834,
+    "processes": "926834, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943300.846705,
+    "allowed_pid": 926834,
+    "processes": "926834, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943301.881581,
+    "allowed_pid": 926834,
+    "processes": "926834, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943302.9180975,
+    "allowed_pid": 926834,
+    "processes": "926834, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943303.931648,
+    "allowed_pid": 926834,
+    "processes": "926834, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943304.9452813,
+    "allowed_pid": 926834,
+    "processes": "926834, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943305.999141,
+    "allowed_pid": 926834,
+    "processes": "926834, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943307.0315523,
+    "allowed_pid": 926834,
+    "processes": "926834, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943308.0456018,
+    "allowed_pid": 926834,
+    "processes": "926834, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943309.0599656,
+    "allowed_pid": 926834,
+    "processes": "926834, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943310.073867,
+    "allowed_pid": 926834,
+    "processes": "926834, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943311.089255,
+    "allowed_pid": 926834,
+    "processes": "926834, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943312.1392224,
+    "allowed_pid": 926834,
+    "processes": "926834, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943313.1709378,
+    "allowed_pid": 926834,
+    "processes": "926834, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943314.2224498,
+    "allowed_pid": 926834,
+    "processes": "926834, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943315.2837832,
+    "allowed_pid": 926834,
+    "processes": "926834, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943316.3415785,
+    "allowed_pid": 926834,
+    "processes": "926834, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943317.3555765,
+    "allowed_pid": 926834,
+    "processes": "926834, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943318.417075,
+    "allowed_pid": 926834,
+    "processes": "926834, 1960 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943319.4709256,
+    "allowed_pid": 926834,
+    "processes": "926834, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943320.5229976,
+    "allowed_pid": 926834,
+    "processes": "926834, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943321.5664613,
+    "allowed_pid": 926834,
+    "processes": "926834, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943322.5812948,
+    "allowed_pid": 926834,
+    "processes": "926834, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943323.5948884,
+    "allowed_pid": 926834,
+    "processes": "926834, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943324.6540232,
+    "allowed_pid": 926834,
+    "processes": "926834, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943325.6679604,
+    "allowed_pid": 926834,
+    "processes": "926834, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943326.7194645,
+    "allowed_pid": 926834,
+    "processes": "926834, 1960 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943327.7521932,
+    "allowed_pid": 926834,
+    "processes": "926834, 1968 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943328.8047588,
+    "allowed_pid": 926834,
+    "processes": "926834, 1960 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943329.8181684,
+    "allowed_pid": 926834,
+    "processes": "926834, 1960 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943330.8630936,
+    "allowed_pid": 926834,
+    "processes": "926834, 1952 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943331.8777328,
+    "allowed_pid": 926834,
+    "processes": "926834, 516 MiB\n",
+    "external_compute": []
+  },
+  {
+    "time": 1791943332.93668,
+    "allowed_pid": 926834,
+    "processes": "",
+    "external_compute": []
+  }
+]

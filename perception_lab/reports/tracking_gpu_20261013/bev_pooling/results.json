@@ -1,0 +1,343 @@
+{
+  "status": "measured",
+  "cases": [
+    {
+      "case": "empty",
+      "real_capture": false,
+      "candidate_vs_upstream": {
+        "finite": true,
+        "elements": 480,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "upstream_vs_capture_or_cpu": {
+        "finite": true,
+        "elements": 480,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "hashes": null,
+      "candidate_output_sha256": "3dc463a76fc170607c07b104c3cb531362ce7d6e10c1a34e0c0f370aeae08ce8"
+    },
+    {
+      "case": "single",
+      "real_capture": false,
+      "candidate_vs_upstream": {
+        "finite": true,
+        "elements": 480,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "upstream_vs_capture_or_cpu": {
+        "finite": true,
+        "elements": 480,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "hashes": null,
+      "candidate_output_sha256": "ec65edbe3aa02dd70e2e70cfd017b25cb030353bb077af71d20fb3cc0037b08f"
+    },
+    {
+      "case": "collision",
+      "real_capture": false,
+      "candidate_vs_upstream": {
+        "finite": true,
+        "elements": 480,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "upstream_vs_capture_or_cpu": {
+        "finite": true,
+        "elements": 480,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "hashes": null,
+      "candidate_output_sha256": "135a4d7204fa9f22d756a4966e3b5ede14f131782c594e39703fde593f0d6575"
+    },
+    {
+      "case": "boundary",
+      "real_capture": false,
+      "candidate_vs_upstream": {
+        "finite": true,
+        "elements": 480,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "upstream_vs_capture_or_cpu": {
+        "finite": true,
+        "elements": 480,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "hashes": null,
+      "candidate_output_sha256": "bb23d47d4dae6a4eee29fe1717411eb1a37757231410f04a66ac33b3aec54c54"
+    },
+    {
+      "case": "frame_0",
+      "real_capture": true,
+      "candidate_vs_upstream": {
+        "finite": true,
+        "elements": 10368000,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "upstream_vs_capture_or_cpu": {
+        "finite": true,
+        "elements": 10368000,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "hashes": {
+        "features": "d15353ebde08c6e333d279fd1d3bb388e870ce715ed652dd7a78c6a660826dd4",
+        "depth": "9673b057ca2e9d340c9ca96b0e05989fb15e0301863ae06bc46ecd1df60ab09d",
+        "indices": "2042667c9975c88d40cf09bd38ef325cd64fed7f878fef895521ad2f6a13948c",
+        "intervals": "8f9a362f7eccbf1f73083fd18f81c23bdc05e18bdd90960d5c6defbbb3139f13",
+        "output": "5c50c76ff4cb5be0e9890937f4490481f6b6b0201d330cc472b88df839075565"
+      },
+      "candidate_output_sha256": "5c50c76ff4cb5be0e9890937f4490481f6b6b0201d330cc472b88df839075565",
+      "timing": {
+        "upstream_ms": {
+          "mean": 0.22581013143062592,
+          "p50": 0.2252800017595291,
+          "p95": 0.2351616010069847
+        },
+        "candidate_ms": {
+          "mean": 0.20255466600259145,
+          "p50": 0.20377600193023682,
+          "p95": 0.2077983945608139
+        },
+        "upstream_host_wall_ms": {
+          "mean": 0.25047856421830755,
+          "p50": 0.23394798336084932,
+          "p95": 0.3885564088704996
+        },
+        "candidate_host_wall_ms": {
+          "mean": 0.23348296235781163,
+          "p50": 0.21250449935905635,
+          "p95": 0.3768063397728837
+        }
+      },
+      "faster_pairs": 30,
+      "mean_saved_ms_by_order": {
+        "AB": 0.022472534577051798,
+        "BA": 0.02403839627901713
+      },
+      "stable_local_benefit": true
+    },
+    {
+      "case": "frame_19",
+      "real_capture": true,
+      "candidate_vs_upstream": {
+        "finite": true,
+        "elements": 10368000,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "upstream_vs_capture_or_cpu": {
+        "finite": true,
+        "elements": 10368000,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "hashes": {
+        "features": "223b2f8d8cf4fb19f58d2064ce9a858f0858dacb2cd431d0ecbb7e17c9b7b842",
+        "depth": "460f6a150740d82e22024e8a25f99cc54297ed1533c4ad43ca4721eabfcd2d71",
+        "indices": "659f20ff84b1cfb34e592a0649cc068d13beed41fe569e58995e7837fdcb6c1f",
+        "intervals": "66de59e72c8068b3d3fd239bc708f0e3c0b773af18bbe5e22e63ca5a29885a12",
+        "output": "3b2f72a4f47b307083b550eea83c1a328a1745436c098deeb5b879a3292c45e5"
+      },
+      "candidate_output_sha256": "3b2f72a4f47b307083b550eea83c1a328a1745436c098deeb5b879a3292c45e5",
+      "timing": {
+        "upstream_ms": {
+          "mean": 0.21596053342024485,
+          "p50": 0.2128800004720688,
+          "p95": 0.22492479905486107
+        },
+        "candidate_ms": {
+          "mean": 0.19951466719309488,
+          "p50": 0.19968000054359436,
+          "p95": 0.20433919802308081
+        },
+        "upstream_host_wall_ms": {
+          "mean": 0.2339574033006405,
+          "p50": 0.22151748999021947,
+          "p95": 0.31297935493057555
+        },
+        "candidate_host_wall_ms": {
+          "mean": 0.24146083160303533,
+          "p50": 0.20869949366897345,
+          "p95": 0.44368101080181055
+        }
+      },
+      "faster_pairs": 30,
+      "mean_saved_ms_by_order": {
+        "AB": 0.016620797912279765,
+        "BA": 0.016270934542020162
+      },
+      "stable_local_benefit": true
+    },
+    {
+      "case": "frame_38",
+      "real_capture": true,
+      "candidate_vs_upstream": {
+        "finite": true,
+        "elements": 10368000,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "upstream_vs_capture_or_cpu": {
+        "finite": true,
+        "elements": 10368000,
+        "violations": 0,
+        "max_absolute": 0.0,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_relative": 0.0,
+        "bitwise_equal": true,
+        "passed": true
+      },
+      "hashes": {
+        "features": "c05c1b163ac29ecd0afa776afccd0c0d99177945360052d6b75af7ef71acf68a",
+        "depth": "cc6a8aa77b94da889f67c24d465f7bc8e067b422ef8b784f899bf3a48c0b3f45",
+        "indices": "42aac7cadd016ec4b386c305cfd7f9b8a596611228a886ffa18f09cb1462f411",
+        "intervals": "b1e58e40a8fa61711609d34b7d9990d82e516be1008ff9f9a4add04daa0400da",
+        "output": "a5e55fb3bd423118d338ca35ac62590369ab8b1f74a8cbbce5ced341f3185533"
+      },
+      "candidate_output_sha256": "a5e55fb3bd423118d338ca35ac62590369ab8b1f74a8cbbce5ced341f3185533",
+      "timing": {
+        "upstream_ms": {
+          "mean": 0.21556266744931538,
+          "p50": 0.21593600511550903,
+          "p95": 0.22379519715905188
+        },
+        "candidate_ms": {
+          "mean": 0.20417706618706385,
+          "p50": 0.2027519941329956,
+          "p95": 0.20871040150523185
+        },
+        "upstream_host_wall_ms": {
+          "mean": 0.2796348970150575,
+          "p50": 0.22651049948763102,
+          "p95": 0.4889224626822395
+        },
+        "candidate_host_wall_ms": {
+          "mean": 0.2437936986098066,
+          "p50": 0.21225000091362745,
+          "p95": 0.411257953965105
+        }
+      },
+      "faster_pairs": 28,
+      "mean_saved_ms_by_order": {
+        "AB": 0.009194669127464295,
+        "BA": 0.013576533397038777
+      },
+      "stable_local_benefit": true
+    }
+  ],
+  "rounds": 30,
+  "warmup": 10,
+  "call_counts": {
+    "0": 127,
+    "1": 127
+  },
+  "candidate_kernels_per_nonempty_forward": 2,
+  "candidate_launches_derive_from": "Every nonempty candidate call dispatches preindex_kernel then preindexed_pool_kernel; source and binary hashes attached",
+  "timing_boundary": "Device-resident existing input and persistent output/workspace; original includes output memset + pool; candidate includes output memset + fresh preindex + pool. H2D/D2H, allocation and capture I/O excluded equally; no index-precompute amortization.",
+  "stable_local_benefit": true,
+  "optimization_adopted": false,
+  "full_model_required": true,
+  "full_model_status": "passed",
+  "candidate_source_sha256": "cd7d547e57d87cbd927a3806185966a18096758ebee7b7ae944563a01fd9f9cc",
+  "candidate_library_sha256": "5104abb17a4e97e09d33da65e64a9fdc5a01d70996b9d29fdcaa7cfac79de1be",
+  "upstream_library_sha256": "4d9121b0bec7cc09e24a1302750d91c700d6ec0b8510e1d3525dff2735b1fa6b",
+  "tool_sha256": "a7255efb1c3a221dae2a1a4e8704358f094b58caef9ccd24ffc6321986999432",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "torch": "1.13.1+cu117",
+  "cuda": "11.7",
+  "processes_before": "pid, process_name, used_gpu_memory [MiB]\n",
+  "processes_after": "pid, process_name, used_gpu_memory [MiB]\n911992, perception_lab/envs/optipmb_20261013/bin/python, 1114 MiB\n",
+  "peak_torch_allocated_bytes": 561346048,
+  "peak_torch_reserved_bytes": 633339904,
+  "full_model_status_meaning": "Required inference/evaluation/paired experiments executed and evidence audited; NOT optimization acceptance",
+  "full_model_summary": "full_model_summary.json"
+}

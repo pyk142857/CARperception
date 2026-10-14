@@ -32,5 +32,5 @@ def main():
   library=LAB/'runs/tracking_gpu_20261013/bev_pooling/libpreindex.so';library.parent.mkdir(parents=True,exist_ok=True)
   subprocess.run(['/usr/local/cuda-11.8/bin/nvcc','-O3','-std=c++14','-arch=sm_89','-Xcompiler','-fPIC','--shared',str(LAB/'tools/bev_pooling_preindex_20261013.cu'),'-o',str(library),'-Xptxas=-v'],check=True)
   for stage in ['analyze','benchmark']:
-   subprocess.run(['bash','-c','source "$1"; exec "$2" "$3" "$4"','pooling',str(LAB/'tools/bevfusion_trt_env.sh'),str(LAB/'envs/tensorrt/bin/python'),str(LAB/'tools/bev_pooling_preindex_20261013.py'),stage],cwd=ROOT,check=True)
+   subprocess.run(['bash','-c','source "$1"; exec "$2" "$3" "$4"','pooling',str(LAB/'tools/bevfusion_trt_env.sh'),str(LAB/'envs/optipmb_20261013/bin/python'),str(LAB/'tools/bev_pooling_preindex_20261013.py'),stage],cwd=ROOT,check=True)
 if __name__=='__main__':main()

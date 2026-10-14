@@ -57,3 +57,6 @@ perception_lab/outputs/bevfusion_tensorrt_candidate/
 perception_lab/reports/perception_2025_20261013/deimv2/coco_predictions.json.gz
 perception_lab/reports/perception_2025_20261013/deimv2/onnx/predictions.json.gz
 perception_lab/reports/perception_2025_20261013/deimv2/tensorrt/predictions.json.gz
+
+# In-progress snapshots duplicate sealed final pooling predictions.
+/perception_lab/reports/tracking_gpu_20261013/bev_pooling/full_model/**/predictions.partial.json

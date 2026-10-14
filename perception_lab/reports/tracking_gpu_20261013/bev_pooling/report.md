@@ -1,59 +1,54 @@
-# BEV pooling: feature-offset precomputation candidate
+# BEV pooling 索引预计算：实测完成，保留原实现
 
-Status: **CPU preparation complete; GPU correctness and timing pending**. This preparation does not establish a speedup or justify adoption. Current upstream pooling remains the default. GPU work is deferred until tracking stages B–E have been published and the shared RTX4090 is available.
+完成局部及隔离整网实验，**不采用候选**。局部输出逐位一致，耗时下降约5%–10%；9个整网代表帧均未达到24/30更快的门槛，局部收益不足以支持替换。
 
-One candidate is implemented in `perception_lab/tools/bev_pooling_preindex_20261013.cu`: precompute each sorted projection's feature offset once per forward, then use the original pack10 mapping and sequential FP32 FMA accumulation. It does not alter the upstream source, current shared library, frozen detector output, interval order, interval end boundary, camera layout, tensor precision or reduction ordering. No older tile4 variant is combined with it.
+## 局部30轮AB／BA
 
-## Actual inputs and hotspot hypothesis
+| Capture | 原实现 ms | 候选 ms | 更快轮次 |
+|---|---:|---:|---:|
+| frame_0 | 0.225810 | 0.202555 | 30/30 |
+| frame_19 | 0.215961 | 0.199515 | 30/30 |
+| frame_38 | 0.215563 | 0.204177 | 28/30 |
 
-Existing corrected first/middle/last captures are at `perception_lab/runs/deployment_4090_20261008/trt_pooling_captures/frame_{0,19,38}`. The `trt_pooling_captures_before_geometry_fix` directory is explicitly excluded. All five binary hashes per capture match the historical corrected `input_statistics.json`. Their native layout is features NHWC FP16, depth NDHW FP16, sorted indices uint32, intervals int32 triples, output NCHW FP16. These are actual FP16 model captures; this candidate does not invent a corresponding FP32 capture or convert the inputs to a different precision.
+四组边界用例与三份真实capture均通过；保留FP16布局和原FP32 FMA顺序。候选计时包含每次forward重新计算索引、清零和pooling，不跨帧摊销。每次新增7,974,912字节索引workspace。输入来源、哈希、布局和逻辑访问估计见[input_analysis.json](input_analysis.json)；访问量估计不是硬件带宽测量。
 
-Each capture has shape `[N,C,D,H,W]=[6,80,118,32,88]`, output `[80,360,360]`, 1,993,728 allocated sorted-index entries and 16,896 unique feature pixels. Input feature/depth/index buffers occupy 2,703,360 / 3,987,456 / 7,974,912 bytes; output is 20,736,000 bytes. The real interval tables occupy approximately 1.16 MB.
+## 整网官方检测评价
 
-| Capture | Intervals | Valid projections | Length P50 / P95 / P99 / maximum | Top 1% intervals' projection share |
-|---|---:|---:|---|---:|
-| frame_0 | 97,326 | 1,835,478 | 14 / 49 / 107 / 886 | 10.01% |
-| frame_19 | 96,046 | 1,834,584 | 14 / 50 / 107 / 859 | 9.92% |
-| frame_38 | 96,306 | 1,834,277 | 14 / 49 / 106 / 889 | 9.79% |
+范围为nuScenes mini：scene-0061 39帧与mini_val 81帧。使用原DetectionEval/detection_cvpr_2019，配置、权重、ONNX和TensorRT plans保持相同，双方使用同一个隔离重建库；全部实际预处理输入哈希相同。新预测独立保存，冻结跟踪输入未改动。
 
-The original pack10 kernel launches eight channel threads per interval, each repeating the same camera/pixel division and remainder for every contributing projection. The candidate changes only address preparation: its new kernel generates `(rank / (D*H*W) * H*W + rank % (H*W)) * C`. Original projection order and depth rank remain intact. The main pooling kernel reads that offset and performs the same ten sequential accumulations per thread, with identical 8×128 threads per block.
+| 范围 | mAP 原实现→候选 | NDS 原实现→候选 |
+|---|---:|---:|
+| scene0061 | 0.710627 → 0.710133 | 0.621758 → 0.621536 |
+| mini_val | 0.576824 → 0.576630 | 0.513460 → 0.513240 |
 
-At source level, the candidate reduces repeated division/remainder pairs from approximately 14.68 million to 1.99 million per frame. The tradeoff is a 7,974,912-byte persistent workspace, an extra kernel launch, approximately 15.95 MB of logical index-read/offset-write traffic, plus about 58.7 MB of logical offset reads by the channel threads. These are logical counts; cache behavior and actual DRAM traffic have not been measured. Long intervals and scattered output writes remain unchanged, so the candidate may lose despite reducing integer arithmetic.
+两组mAP/NDS下降均小于0.005，整体P95几何预算均通过；逐类AP、逐框匹配及绑定评价哈希见[整网摘要](full_model_summary.json)及full_model下的comparison文件。这是mini教学诊断，不是全量验证。
 
-## Correctness and measurement boundary
+## 整网30轮AB／BA
 
-CPU analysis validated metadata, finite input values, interval range/order/disjointness, unique output cells and all active feature-offset bounds. It also verified complete binary hashes against the corrected historical captures. [input_analysis.json](input_analysis.json) records each result, data volume, configuration/source/library hash and compiler identity.
+| split / token前8位 | 原实现 ms | 候选 ms | 节省 | 更快轮次 |
+|---|---:|---:|---:|---:|
+| scene0061 / ca9a282c | 8.1601 | 7.9504 | 2.57% | 17/30 |
+| scene0061 / ed5fc18c | 8.7298 | 8.7072 | 0.26% | 16/30 |
+| scene0061 / b26e7915 | 9.2694 | 9.2501 | 0.21% | 16/30 |
+| mini_val / b4ff3010 | 9.0584 | 9.0961 | -0.42% | 14/30 |
+| mini_val / b5989651 | 8.1585 | 7.9862 | 2.11% | 18/30 |
+| mini_val / 3e8750f3 | 8.3414 | 8.1423 | 2.39% | 16/30 |
+| mini_val / 5b03af7a | 8.8852 | 8.5246 | 4.06% | 18/30 |
+| mini_val / 281b9226 | 9.1796 | 8.7562 | 4.61% | 18/30 |
+| mini_val / 6ff9723a | 9.3864 | 9.3325 | 0.57% | 17/30 |
 
-The independent `.so` was compiled for SM89 using CUDA 11.8 without running GPU work. [compile.log](compile.log) records 16 registers for offset preparation and 40 for pooling, with zero local spills. A compiler result is not a runtime correctness result.
+时间范围为预处理后的固定CPU输入→H2D→模型→检测框D2H；几何更新、预处理、加载和capture导出不在配对计时内。各序列timings.csv另外记录预处理、几何更新和端到端时间；performance.json记录显存（新增workspace包含在进程显存中）。同一输入双方分别预热10次。原始270组整网配对CSV、P50/P95和AB/BA分别均值均保留，不能把均值微小改善当成稳定提速。GPU竞争监控0.5秒（局部）／1秒（整网）及边界采样均无其他compute进程，见gpu_monitor.json和full_model_gpu_monitor.json；短于采样间隔的竞争不能完全排除。
 
-The prepared benchmark will:
+## 一致性限制与失败证据
 
-- Compare the current actual upstream C ABI (mode 0) against the independent candidate, and verify the upstream output against captured output.
-- Require candidate/upstream bitwise equality because FMA order is unchanged. The original fixed FP16 budget (`atol=0.02`, `rtol=0.002`) remains the captured-output acceptance budget; FP32 budget is not applied to these FP16 tensors.
-- Check empty/single/collision/boundary fixtures and all three real captures, including their full interval coverage.
-- Warm both sides separately, then collect 30 alternating AB/BA pairs per real capture, preserving raw CSV, device-event and synchronized host-wall timings, output hashes and process/memory evidence.
-- Include output memset **and fresh index preparation on every candidate forward**, with no caching across frames or amortization outside timing. Both variants receive resident inputs and preallocated outputs; candidate workspace is persistent. H2D/D2H, capture I/O and allocation are excluded equally from this local experiment and recorded as that boundary.
-- Classify local benefit only if both order groups improve, at least 24/30 pairs are faster and candidate P95 does not increase, for all three real captures.
+隔离重建库与旧库首帧输入一致，但输出不是逐字节一致，匹配后的yaw P95约0.134rad，超过0.1rad诊断预算，见full_model/smoke/rebuild_geometry.json。没有把此失败改写为通过。固定同一输入分别重复原实现和候选各5次，两种模式均观察到检测输出变化，见full_model/repeat/repeat_outputs.json和摘要；该观察证明存在重复运行波动，但未完成算子级因果定位。
 
-If stable local benefit exists, adoption still requires an independent full-model integration, separate 39/81-frame BEVFusion predictions and official detection evaluation, fixed weights/configuration, the existing geometry/intermediate/repeatability checks, and mAP/NDS drops each no greater than 0.005. New predictions must never replace the frozen tracking inputs. If local benefit fails, keep upstream and publish the measured failure; full-model reruns are then unnecessary under this bounded research stage.
+两次独立整网运行中，6份capture的indices及intervals全相同；其中5份camera features/depth及pool输出不逐位相同。这些capture不能直接当作“同输入pooling误差”；严格同输入证据来自前述独立局部实验。尚未证明整网张量逐位等价，因此准确率通过也不支持采用。
 
-No BEVPoolV3 implementation is claimed. This is a single project CUDA candidate grounded in the existing upstream implementation.
+最终决策：研究阶段已完成，**保持上游默认实现**，候选仅保留为可复现实验。GPU跟踪优化的精确等价与87.09%收益是独立结论。
 
-## Reproduction
+## 复现与来源
 
-From repository root, CPU preparation only:
+隔离构建与命令见[isolated_full_model_plan.md](isolated_full_model_plan.md)。该方案本次已执行；构建日志isolated_build.log，实际脚本归档execution/，每次运行日志full_<mode>_<split>.log。首次误用tensorrt环境缺少torch，在启动模型前失败，日志保留；正式局部运行改用optipmb_20261013环境，整网使用bevfusion环境。轻量runner已修正。
 
-```bash
-mkdir -p perception_lab/runs/tracking_gpu_20261013/bev_pooling
-/usr/local/cuda-11.8/bin/nvcc -O3 -std=c++14 -arch=sm_89 -Xcompiler -fPIC --shared perception_lab/tools/bev_pooling_preindex_20261013.cu -o perception_lab/runs/tracking_gpu_20261013/bev_pooling/libpreindex.so -Xptxas=-v
-perception_lab/envs/optipmb_20261013/bin/python perception_lab/tools/bev_pooling_preindex_20261013.py analyze
-```
-
-After B–E publication and GPU scheduling, the prepared GPU command is:
-
-```bash
-source perception_lab/tools/bevfusion_trt_env.sh
-perception_lab/envs/optipmb_20261013/bin/python perception_lab/tools/bev_pooling_preindex_20261013.py benchmark --rounds 30 --warmup 10
-```
-
-The benchmark command has **not yet been run** in this preparation report. The `.so`, raw captures and environments remain local; source, hashes, compile command and evidence are shareable.
+汇总命令：`perception_lab/envs/sparse4d/bin/python perception_lab/tools/bev_pooling_preindex_summary_20261013.py`。原始capture、隔离库、环境仍在本地，未上传原始数据或权重。

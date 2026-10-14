@@ -1,0 +1,1 @@
+Exact executed scripts. Copy car_*.py/sh to /tmp before repeating archived commands, or adjust those explicit paths. Runner copies bind to the documented local isolated build. Summarize using committed tools/bev_pooling_preindex_summary_20261013.py.

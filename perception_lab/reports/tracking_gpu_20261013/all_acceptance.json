@@ -1,0 +1,1 @@
+{"audit": "passed", "scope": "all", "real_frames": 120, "full_pairs": 60, "micro_pairs": 270, "gpu_speedup_adopted": true}
