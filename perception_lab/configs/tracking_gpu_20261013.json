@@ -1,0 +1,42 @@
+{
+  "experiment": "tracking_gpu_20261013",
+  "instruction_commit": "9c7d78a",
+  "report": "reports/tracking_gpu_20261013",
+  "data": "data/nuscenes",
+  "coco": "data/coco",
+  "splits": {
+    "scene0061": "reports/deployment_4090_20261008/inputs/scene0061_packets.json",
+    "mini_val": "reports/deployment_4090_20261008/inputs/mini_val_packets.json"
+  },
+  "environments": {
+    "preflight": "envs/nuscenes_eval/bin/python",
+    "deimv2": "envs/deimv2_compat_2025/bin/python",
+    "harpnext": "envs/harpnext_2025/bin/python",
+    "mambafusion": "envs/mambafusion_2025/bin/python",
+    "grae3dmot": "envs/grae3dmot_2025/bin/python",
+    "visualize": "envs/rerun/bin/python",
+    "onnx": "envs/deimv2_onnx_2025/bin/python",
+    "tensorrt": "envs/deimv2_trt_2025/bin/python",
+    "mambafusion_eval": "envs/nuscenes_eval/bin/python",
+    "grae3dmot_eval": "envs/sparse4d/bin/python"
+  },
+  "models": {
+    "grae3dmot": {
+      "commit": "63def8bde5e199a4e77fdf4fab76a4b3511fe132",
+      "source": "third_party/GRAE-3DMOT",
+      "checkpoint": "checkpoints/grae3dmot_2025/model.pth",
+      "config": "config/val.json",
+      "mamba_inputs": {
+        "scene0061": "reports/perception_2025_20261013/mambafusion/scene0061_predictions.json",
+        "mini_val": "reports/perception_2025_20261013/mambafusion/mini_val_predictions.json"
+      }
+    }
+  },
+  "acceptance": {
+    "metric_drop_max": 0.005,
+    "paired_rounds": 30,
+    "batch_size": 1,
+    "training": false,
+    "gpu_serial": true
+  }
+}

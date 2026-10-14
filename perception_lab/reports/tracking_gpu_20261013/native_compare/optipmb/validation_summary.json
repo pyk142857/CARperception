@@ -1,0 +1,60 @@
+{
+  "scene0061": {
+    "frames": 39,
+    "tracks": 1437,
+    "raw_boxes": 7789,
+    "allowlist_boxes": 4580,
+    "after_score": 1434,
+    "after_nms": 1408,
+    "end_to_end_seconds": 3.3468976620060857,
+    "mean_ms_including_json": 85.81788876938681,
+    "median_frame_ms": 86.86736901290715,
+    "p95_frame_ms": 103.86294798809104,
+    "diagnostic_matches_uninstrumented": true,
+    "native_calls": {
+      "predict": 39,
+      "preprocess_measurments": 39,
+      "update": 39,
+      "prune": 39,
+      "extract_states": 39,
+      "mhtda": 38
+    },
+    "point_count_loop_executions": 1408,
+    "Pd_track_scaling_executions": 2805,
+    "Pd_PPP_scaling_executions": 74,
+    "lidar_total_points": 1354112,
+    "after_3m_points": 1014970,
+    "max_roundtrip_error_m": 4.547473508864641e-13,
+    "online_checks_scene_count": 1,
+    "tracking_file_sha256": "1abeef4a4794a48959d692f00ac9ac0da522174800c30330b2787a66e5a77dc0"
+  },
+  "mini_val": {
+    "frames": 81,
+    "tracks": 4034,
+    "raw_boxes": 16199,
+    "allowlist_boxes": 15007,
+    "after_score": 4390,
+    "after_nms": 4288,
+    "end_to_end_seconds": 10.74119792599231,
+    "mean_ms_including_json": 132.6073818023742,
+    "median_frame_ms": 134.72398300655186,
+    "p95_frame_ms": 205.28224000008777,
+    "diagnostic_matches_uninstrumented": true,
+    "native_calls": {
+      "predict": 81,
+      "preprocess_measurments": 81,
+      "update": 81,
+      "prune": 81,
+      "extract_states": 81,
+      "mhtda": 79
+    },
+    "point_count_loop_executions": 4288,
+    "Pd_track_scaling_executions": 7963,
+    "Pd_PPP_scaling_executions": 980,
+    "lidar_total_points": 2812480,
+    "after_3m_points": 2092978,
+    "max_roundtrip_error_m": 9.094947017729282e-13,
+    "online_checks_scene_count": 2,
+    "tracking_file_sha256": "30362b2a9db5694e9fee4fa20ad3105b1b33c5ee0e34ff3985063adb50bfd6cb"
+  }
+}

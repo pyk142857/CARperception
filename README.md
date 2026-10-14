@@ -1,5 +1,7 @@
 # CARperception
 
+本轮已生成[冻结BEVFusion跟踪对照实测](perception_lab/reports/tracking_gpu_20261013/report.md)：GRAE与OptiPMB的39/81帧官方评价完成。OptiPMB mini_val AMOTA79.75%低于GRAE82.30%、FN400→456，继续保留GRAE；GPU优化仍在执行，暂无采用结论。
+
 ## 下一轮执行：固定BEVFusion跟踪对照与GPU优化
 
 [20261013_03指令](perception_lab/instruction/20261013_03_frozen_bevfusion_tracking_gpu_optimization.md)已派发，待本地执行：固定39/81帧检测→OptiPMB/GRAE原生官方评价→CPU几何/NMS语义与热点→TileLang＋KernelBench验证→含搬运的完整GRAE计时/评价→BEV pooling研究。OptiPMB复用真实点云统计；GPU版保持原高度、粗筛、排序与阈值行为。计划报告目录为 `perception_lab/reports/tracking_gpu_20261013/`，尚未产生本轮新指标。

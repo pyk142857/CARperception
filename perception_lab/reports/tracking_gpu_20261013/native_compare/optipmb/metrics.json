@@ -1,0 +1,30 @@
+[
+  {
+    "model": "optipmb",
+    "split": "scene0061",
+    "frames": 39,
+    "tracking_sha256": "1abeef4a4794a48959d692f00ac9ac0da522174800c30330b2787a66e5a77dc0",
+    "metrics_sha256": "dd15a7dba10d53d6ee85aca2f5aa7a46924b3cf721213df8b74d78faf169fd27",
+    "amota": 0.8887183547945507,
+    "amotp": 0.4048870938104214,
+    "ids": 1.0,
+    "fp": 39.0,
+    "fn": 110.0,
+    "recall": 0.9166915820234471,
+    "mota": 0.8966794961810013
+  },
+  {
+    "model": "optipmb",
+    "split": "mini_val",
+    "frames": 81,
+    "tracking_sha256": "30362b2a9db5694e9fee4fa20ad3105b1b33c5ee0e34ff3985063adb50bfd6cb",
+    "metrics_sha256": "b4f64ad0ca134dd24ea74ba09fd26c676aa57189dd5c969847067191def90a62",
+    "amota": 0.7975328692226152,
+    "amotp": 0.5294844714595455,
+    "ids": 10.0,
+    "fp": 285.0,
+    "fn": 456.0,
+    "recall": 0.8031995586470925,
+    "mota": 0.7714099060858852
+  }
+]

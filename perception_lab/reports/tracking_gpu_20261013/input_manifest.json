@@ -1,0 +1,4711 @@
+{
+  "status": "passed",
+  "source": "frozen BEVFusion native global results; no detector rerun",
+  "gt_loaded": false,
+  "splits": [
+    {
+      "split": "scene0061",
+      "frames": 39,
+      "detection_count": 7789,
+      "detection_path": "reports/deployment_4090_20261008/bevfusion_reference/scene0061/evaluation/official_predictions.json",
+      "detection_sha256": "dd6df55652026f2b04c7b18f9adde44123b664e8cb3706e53d6d30faca344d2f",
+      "packets_path": "reports/deployment_4090_20261008/inputs/scene0061_packets.json",
+      "packets_sha256": "9680b0d03e49cc78be200a9abe3b99602312123adbf8e12667b9fbbbe7d5c549",
+      "point_count": 1354112,
+      "samples": [
+        {
+          "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402927.647951,
+          "delta_seconds": null,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402927647951.pcd.bin",
+          "raw_lidar_sha256": "5f8f9b1b199ceff7d41cd319021a7a7b02dcd44d41f622a9e65a6a4a6be3cbdb",
+          "raw_points": 34688,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.9390383855449156,
+              -0.3438038500585578,
+              0.0024131220677042226,
+              411.0077957176368
+            ],
+            [
+              0.343468397932541,
+              -0.9383898018555559,
+              -0.03813186849797687,
+              1179.9728193202584
+            ],
+            [
+              0.015374332338497287,
+              -0.034978457061541145,
+              0.9992698021289056,
+              1.829597265846275
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "dac19af56370dbfd8c50e22a16c2e0f2c285951680be62adb602669b3e9eb2f9",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "39586f9d59004284a7114a68825e8eec",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402928.147847,
+          "delta_seconds": 0.4998960494995117,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402928147847.pcd.bin",
+          "raw_lidar_sha256": "3fa7f1aa99ad01392e072ae121dcddd8d879ed6463fbf53dc2deda825ee7d8e0",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.941001902483819,
+              -0.33837246963319584,
+              0.004414897073096273,
+              409.4556407353122
+            ],
+            [
+              0.3379016835532574,
+              -0.9402413720846305,
+              -0.04205489831502464,
+              1175.7504922196915
+            ],
+            [
+              0.018381288684648257,
+              -0.03808193816948814,
+              0.9991055470827634,
+              1.826474907278254
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "461632b345d5a8e81597c092dde25580d97165e7527a0acdd747ab7e5fad38d4",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "356d81f38dd9473ba590f39e266f54e5",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402928.698048,
+          "delta_seconds": 0.5502011775970459,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402928698048.pcd.bin",
+          "raw_lidar_sha256": "49fcca7a835b812bd013fc4742ba1c48cdf1f79f93801af0b2ebd5a7efad0c67",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.9430888466897502,
+              -0.3325058941686684,
+              0.004822612620829531,
+              407.8204190191641
+            ],
+            [
+              0.3321201618907446,
+              -0.9425259307482411,
+              -0.03662059438113121,
+              1171.2332164196896
+            ],
+            [
+              0.016722000928771713,
+              -0.03293478723562794,
+              0.9993176044054671,
+              1.8315111986489898
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "462844a0d0489d3d5bde82006e5f4cb69cfe1c37770d247da6a77d46228cb38d",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 199
+        },
+        {
+          "sample_token": "e0845f5322254dafadbbed75aaa07969",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402929.197353,
+          "delta_seconds": 0.49930477142333984,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402929197353.pcd.bin",
+          "raw_lidar_sha256": "cc872185c04348817a0876efa9b90f67b5819249a382a7667b7ddd943e154975",
+          "raw_points": 34688,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.9469272177332801,
+              -0.3214480333172725,
+              7.869158262928735e-05,
+              406.44568337271755
+            ],
+            [
+              0.3211543849211924,
+              -0.9460725880923072,
+              -0.04250316583753655,
+              1167.2788788247697
+            ],
+            [
+              0.013737007017473182,
+              -0.04022213242457694,
+              0.9990963290401083,
+              1.824575543108054
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "a388ea1bd1cc79e290c6670cf61184a09c801014670f598a9593b0cfb9841dee",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 199
+        },
+        {
+          "sample_token": "c923fe08b2ff4e27975d2bf30934383b",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402929.697797,
+          "delta_seconds": 0.5004441738128662,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402929697797.pcd.bin",
+          "raw_lidar_sha256": "12150413249491f3ad628a0718d90346ac69aca14916e0ef53945a6f6e3a016d",
+          "raw_points": 34752,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.9484265044822531,
+              -0.31699697327768933,
+              0.00029073761041506323,
+              405.1334931185085
+            ],
+            [
+              0.31674837162984,
+              -0.9477182393867798,
+              -0.03873767937638082,
+              1163.4273927357347
+            ],
+            [
+              0.012555264450380368,
+              -0.036647751178024615,
+              0.9992493721129749,
+              1.8280839721927689
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "1b8fe893585169ccefde85bf2b6f8118bed63107cfb6671e8700f043321a45fa",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "f1e3d9d08f044c439ce86a2d6fcca57b",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402930.152601,
+          "delta_seconds": 0.4548039436340332,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402930152601.pcd.bin",
+          "raw_lidar_sha256": "910de92599514ca183e1339ccfe2755d4d6d47c1668a1ee391d1c006c5e6cb19",
+          "raw_points": 34784,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.95043060733386,
+              -0.31093482235646824,
+              0.001094024288127448,
+              404.00871607625373
+            ],
+            [
+              0.31061883683153835,
+              -0.9496120493861937,
+              -0.04186757535345538,
+              1160.1157952520841
+            ],
+            [
+              0.014056985751349668,
+              -0.03945240051893712,
+              0.9991225696804578,
+              1.8253134278239822
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "4678ec616ab8caff72a1229636d9f0fc30b714470428651e350d2b65fb5e85ca",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "4f545737bf3347fbbc9af60b0be9a963",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402930.648325,
+          "delta_seconds": 0.4957239627838135,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402930648325.pcd.bin",
+          "raw_lidar_sha256": "6d1c3512de1260c439e739b304d143745755b7eb22c99f2a4093915ce38e2f7a",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.9527178511217759,
+              -0.30379141296018775,
+              0.006282799181778875,
+              402.8619422893014
+            ],
+            [
+              0.3033468522124898,
+              -0.9521138650145474,
+              -0.038208314538,
+              1156.5883197839246
+            ],
+            [
+              0.01758929807240002,
+              -0.03449587596675244,
+              0.9992500443505654,
+              1.8299744353253597
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "041e6b9bc35013834166c2956c954279448fbe473a5c2f12ef963fbe90136434",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 199
+        },
+        {
+          "sample_token": "7626dde27d604ac28a0240bdd54eba7a",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402931.198511,
+          "delta_seconds": 0.5501859188079834,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402931198511.pcd.bin",
+          "raw_lidar_sha256": "6ae60139ad53ae2d406a160808c703c71c2dce05b5cdbf1c7cd98726a2207dc2",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.9540787924712412,
+              -0.29943906171270857,
+              0.008360985422253999,
+              401.6369862924515
+            ],
+            [
+              0.2988161607499355,
+              -0.9533125182972476,
+              -0.04363650458536841,
+              1152.78228883898
+            ],
+            [
+              0.02103710605780055,
+              -0.03913426603850995,
+              0.9990124871043105,
+              1.8253319615919772
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "6d7f5a8ac11745a8e71214e75e7162a1bfc0139c4a6098e32630032e42f3575a",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "be99ffc878b24aca8956bbb4e0f97d0c",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402931.697833,
+          "delta_seconds": 0.49932217597961426,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402931697833.pcd.bin",
+          "raw_lidar_sha256": "2ada62857e2de18178796e3d89315c42e4ba7d850fc624d815d84ee5bb069471",
+          "raw_points": 34688,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.9569919909376962,
+              -0.29006086064121583,
+              0.005570135113431449,
+              400.5996031140218
+            ],
+            [
+              0.2896620739134864,
+              -0.9563956410414254,
+              -0.03746012190449198,
+              1149.4721531622245
+            ],
+            [
+              0.01619296814183942,
+              -0.034235579753213695,
+              0.9992825990988332,
+              1.8302815161645956
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "d5c2db15924b5f0586a69a1df9b368843035b04b10faa19388110314e0524a92",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "9813c23a5f1448b09bb7910fea9baf20",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402932.197715,
+          "delta_seconds": 0.4998819828033447,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402932197715.pcd.bin",
+          "raw_lidar_sha256": "02ee1a79714df5066fc598ef3a84d4735d23c68bb37c6c8f8111e440dd8471ab",
+          "raw_points": 34688,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.9594261447576958,
+              -0.2819555889004304,
+              0.001587023375425033,
+              399.6016280579688
+            ],
+            [
+              0.2817012857766625,
+              -0.9587715325650479,
+              -0.037437066319920505,
+              1146.2394990755467
+            ],
+            [
+              0.012077182914810487,
+              -0.035471033684944704,
+              0.99929772711748,
+              1.8292359960758124
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "414b29d0d803ae2e04c63d90e8b34e9ee3f488bfd1519aba4d7936382d90183a",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "023c4df2d451409881d8e6ea82f14704",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402932.647284,
+          "delta_seconds": 0.4495689868927002,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402932647284.pcd.bin",
+          "raw_lidar_sha256": "cbcbb2de9a2315e8ad6b02412dc3434582a520fb4e83740ebc8b7adf05dbb5a5",
+          "raw_points": 34688,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.9623162589274279,
+              -0.2719326609351713,
+              0.0002138238473894643,
+              398.7844110109109
+            ],
+            [
+              0.2717448555559863,
+              -0.9616802830490226,
+              -0.03641107899539302,
+              1143.4638973900437
+            ],
+            [
+              0.010106991776818071,
+              -0.03498086779183437,
+              0.9993368739347881,
+              1.8297671014516326
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "2d8a6b3566e24b7001b64122988c135d3d4a59dd72fe5324650e8b62fd458478",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 199
+        },
+        {
+          "sample_token": "c235638ed66145988d17f9d0601923f2",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402933.146604,
+          "delta_seconds": 0.49932003021240234,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402933146604.pcd.bin",
+          "raw_lidar_sha256": "d04f20002b17044065d230f43b211d002a7aca1afbeceb5a5814b715c2ffe4bd",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.9682737507061161,
+              -0.24987634725392935,
+              0.002784739941998045,
+              397.9563696241573
+            ],
+            [
+              0.2495177758336106,
+              -0.967373741970972,
+              -0.04391950464347889,
+              1140.4169442809043
+            ],
+            [
+              0.013668329691621158,
+              -0.041831261373693605,
+              0.9990311918730707,
+              1.8230084773686817
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "54d18b005311146888459c12e75df92ba73147b0c09b1cd01dd6eba373d2bcbc",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "bc3c8a953f6b4dcdb77b521d89f3d9d5",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402933.646462,
+          "delta_seconds": 0.49985790252685547,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402933646462.pcd.bin",
+          "raw_lidar_sha256": "a259b54d56efac6f28b0832ec93c16961af4fbb03b00e363f8d96de023f21338",
+          "raw_points": 34688,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.976789875560621,
+              -0.2136465254855418,
+              0.015385095067014475,
+              397.2930245615966
+            ],
+            [
+              0.2128570925193786,
+              -0.9761895204291234,
+              -0.04178370936805715,
+              1137.513321595431
+            ],
+            [
+              0.023945712903608432,
+              -0.037539077669986785,
+              0.9990082184252659,
+              1.8267318431093913
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "4f2dd9eea3ce0030cd0c43d9ae847bb77f5049927b7842cb558c254751449d24",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "1e3d79dae62742a0ad64c91679863358",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402934.146351,
+          "delta_seconds": 0.4998891353607178,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402934146351.pcd.bin",
+          "raw_lidar_sha256": "d439f185dc95c530365ab195fbb49470cc698f95f58bbf36c3fd4d858b35dc36",
+          "raw_points": 34752,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.9852943287413509,
+              -0.16836865812845214,
+              0.029104651005585888,
+              396.79518091624595
+            ],
+            [
+              0.16676670119949655,
+              -0.9846901350804914,
+              -0.0507366262792798,
+              1134.6753531837821
+            ],
+            [
+              0.03720152041476798,
+              -0.04513682349467957,
+              0.9982878913638299,
+              1.8184425254753849
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "3a97b1ff45c514425af37b2d5cbf7491889a2cad756c58b5d5a03dcceb0289e4",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "2afb9d32310e4546a71cbe432911eca2",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402934.696555,
+          "delta_seconds": 0.550203800201416,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402934696555.pcd.bin",
+          "raw_lidar_sha256": "7d1846a017244cd6691e25167fd8d687db4cdee77a4fe193c23784748db0f157",
+          "raw_points": 34752,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.9948049607379232,
+              -0.09637913864244631,
+              0.03277425400769182,
+              396.4276598601288
+            ],
+            [
+              0.09539484002307622,
+              -0.9949758440940549,
+              -0.030379173232607776,
+              1131.675365426615
+            ],
+            [
+              0.03553750959468448,
+              -0.027094857516975504,
+              0.9990009780315255,
+              1.8360024982523633
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "75256e4f7e91afb586e058457c5aa5cd4415ddcceea8f381902686414a92ca54",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "cd21dbfc3bd749c7b10a5c42562e0c42",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402935.197541,
+          "delta_seconds": 0.5009860992431641,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402935197541.pcd.bin",
+          "raw_lidar_sha256": "96362c48d1551b91a3487227be3b48fe8cad45f71a4c2437c22bd087320b79b6",
+          "raw_points": 34784,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.9995121066989734,
+              -0.007269385428410533,
+              0.030376053029836612,
+              396.3460717226086
+            ],
+            [
+              0.006397922568235904,
+              -0.9995679248895003,
+              -0.02868850151031886,
+              1129.102675235473
+            ],
+            [
+              0.030571476068209272,
+              -0.028480160947401995,
+              0.9991267513601163,
+              1.8350359667030218
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "d424592121aba88ced234b7393e599460e6e6cd2a98963fc13cb9bcc1e712a90",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "88449a5cb1644a199c1c11f6ac034867",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402935.697945,
+          "delta_seconds": 0.5004041194915771,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402935697945.pcd.bin",
+          "raw_lidar_sha256": "c2d526bc1592ccfaf31c1380ae541523873a2c145ac0c29a16f275807f73d55b",
+          "raw_points": 34784,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.9955771926689129,
+              0.0875905878711165,
+              0.03396972702092563,
+              396.52303205336693
+            ],
+            [
+              -0.08836089022507129,
+              -0.9958482584772782,
+              -0.0218769094344624,
+              1126.6412172051491
+            ],
+            [
+              0.0319124821365696,
+              -0.02478174739930581,
+              0.9991833958186647,
+              1.8384537879090506
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "271e50a7cd5b0299c78f877c4298c5d473751a66af5db72622406f7606e879e3",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "2ff86dc19c4644a1a88ce5ba848f56e5",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402936.198962,
+          "delta_seconds": 0.5010168552398682,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402936198962.pcd.bin",
+          "raw_lidar_sha256": "6181f0cccf86a6bbb2fd05369b9f2ce347ae2835524b281a7bf125817ecc9813",
+          "raw_points": 34752,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.9825947002094025,
+              0.18276787019693552,
+              0.03321988476907895,
+              396.9166259883539
+            ],
+            [
+              -0.18344106913544356,
+              -0.9828572176736865,
+              -0.018467913287257706,
+              1124.340174243485
+            ],
+            [
+              0.029275062337083622,
+              -0.024240364898582306,
+              0.9992774266612571,
+              1.8391391161642268
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "73a6790f52a0b333b6611e1013d47bc19a980c0610bfa938cd6e9b6a99c08c73",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "bf2938e43c6f487497cda76b51bfc406",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402936.699359,
+          "delta_seconds": 0.5003969669342041,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402936699359.pcd.bin",
+          "raw_lidar_sha256": "82cb2ce81aabf44c960db321497d283651153a6284bafdfefaa707a3d1fede09",
+          "raw_points": 34688,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.960708381574741,
+              0.27539950177337225,
+              0.03456182858325178,
+              397.50580975531875
+            ],
+            [
+              -0.27606186214830586,
+              -0.9610060210788849,
+              -0.016039816624203715,
+              1122.1686434402354
+            ],
+            [
+              0.028796767861159322,
+              -0.024950789027737428,
+              0.9992738384885507,
+              1.8384981460343348
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "989d0a596bb6ac3d6f393addcad3a5ba56afa8ac4833513318e4ca9f00f12494",
+          "roundtrip_max_abs_m": 3.410605131648481e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "b26e791522294bec90f86fd72226e35c",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402937.198682,
+          "delta_seconds": 0.49932312965393066,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402937198682.pcd.bin",
+          "raw_lidar_sha256": "bf025c18dc201b3e2a3e413699c38ca1b618995d9a9fad41a7a493be8721f176",
+          "raw_points": 34688,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.9280989641521673,
+              0.3698423758511939,
+              0.04299918329941726,
+              398.28147567277614
+            ],
+            [
+              -0.3705778647144616,
+              -0.9287439913201736,
+              -0.010326895484230053,
+              1120.2266684602512
+            ],
+            [
+              0.036115909559953946,
+              -0.025518926533385416,
+              0.9990217342306621,
+              1.8374525071815735
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "0d31cd4115c4a622971abbe42d75f3867535a4937625523a3de1d869a425d162",
+          "roundtrip_max_abs_m": 3.410605131648481e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "c844bf5a9f2243ff8f4bf2c85fe218ff",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402937.698,
+          "delta_seconds": 0.49931788444519043,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402937698000.pcd.bin",
+          "raw_lidar_sha256": "e8f32e4c9f981d7bbc943473f3fe8a971f16aa0264593a80fc2ef2cef94742b9",
+          "raw_points": 34688,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.8819960012153778,
+              0.4692702013184766,
+              0.0432265195753558,
+              399.26989993852993
+            ],
+            [
+              -0.4698808371671753,
+              -0.8827177443059037,
+              -0.0046241486319820065,
+              1118.3306232058458
+            ],
+            [
+              0.035986840694296314,
+              -0.024389793808325178,
+              0.9990545957328005,
+              1.8385297830546117
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "0d630d41ed830ddcc8ea79204c0f8ec22ca3596eafcbb10e72add217cd95017b",
+          "roundtrip_max_abs_m": 2.2737367544323206e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "fedfb3a6cb804635a0f47143f9ca8d6f",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402938.197897,
+          "delta_seconds": 0.4998970031738281,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402938197897.pcd.bin",
+          "raw_lidar_sha256": "e377051a3f134fae3ddecc0b82fdb8fb8ae952eacabfe6a6b2b1e4af1b92926f",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.822693132674935,
+              0.5658932473330958,
+              0.05422953136718196,
+              400.5246669762217
+            ],
+            [
+              -0.5665709410632876,
+              -0.8240058786734646,
+              0.003417697211701643,
+              1116.479669107335
+            ],
+            [
+              0.04661950441779612,
+              -0.02791316059449617,
+              0.9985226473513077,
+              1.8342770124681755
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "d85cf4a812e4a4669cf229b7397f7fcc55cb48daab9b278d2a9760073083db4d",
+          "roundtrip_max_abs_m": 3.410605131648481e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "965f6af5a92449348409029a5f048a38",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402938.647444,
+          "delta_seconds": 0.44954705238342285,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402938647444.pcd.bin",
+          "raw_lidar_sha256": "06e461d1916a8d10e9cf606094cd07c884272fcf4a6e22f51e9925934ef0ad9f",
+          "raw_points": 34688,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.763335564200044,
+              0.6440434750314054,
+              0.05026747155836922,
+              401.7447366523167
+            ],
+            [
+              -0.6444330720727892,
+              -0.7645927949189839,
+              0.010191838735151323,
+              1115.015910436623
+            ],
+            [
+              0.0449981338082706,
+              -0.024614228150558845,
+              0.9986837876556949,
+              1.8375568661869748
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "59ddd8e3e8e61fb3f93cbc21a1d2c3e09aa87e70ab749574a9e71a34c26105d4",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "4711bcd34644420da8bc77163431888e",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402939.147334,
+          "delta_seconds": 0.4998900890350342,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402939147334.pcd.bin",
+          "raw_lidar_sha256": "a4d1bff57dfe6693b668187a3fe28065d1e48a3add4679fb8f61dcc27c1720a0",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.695723892783537,
+              0.7163882992055565,
+              0.05249828350995252,
+              403.2222796494325
+            ],
+            [
+              -0.7166036018012183,
+              -0.6972493240858356,
+              0.017962682076060152,
+              1113.5622219435897
+            ],
+            [
+              0.04947264795461982,
+              -0.02512339195282386,
+              0.9984594494926384,
+              1.836641375902552
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "f82fb83b485a9efda929a6d75ebba72c44afb1ab84579aaa656b9f05273b6b18",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "a34fabc7aa674713b71f98ec541eb2d4",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402939.697511,
+          "delta_seconds": 0.5501768589019775,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402939697511.pcd.bin",
+          "raw_lidar_sha256": "872fafa5c79607c6c6148d7029e4025bd03201669b29ed05abc51abac8c6f159",
+          "raw_points": 34752,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.6226479364174135,
+              0.7806320409322577,
+              0.05406629213358851,
+              404.92162952899025
+            ],
+            [
+              -0.7808312038154017,
+              -0.6243464281431449,
+              0.022229908076440576,
+              1112.1634483259452
+            ],
+            [
+              0.05110947488799808,
+              -0.028375241581960593,
+              0.9982898713509208,
+              1.8333879884755462
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "c90e8a10f56db7956e59c65e68de923d9699be21ebdf7432e3b0b399046d9f29",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "c78067571d104caba7c568a847d56971",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402940.197958,
+          "delta_seconds": 0.5004470348358154,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402940197958.pcd.bin",
+          "raw_lidar_sha256": "296ee2bed8a2986b97c1c0b16188f891aac62dab23d8ae7525c60ffef04a2689",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.5639696538826007,
+              0.8240200950652765,
+              0.0541212751896228,
+              406.4403002621523
+            ],
+            [
+              -0.8236970511348329,
+              -0.5659963704223524,
+              0.034223918836132,
+              1111.121157182095
+            ],
+            [
+              0.05883364217281164,
+              -0.025278283116829534,
+              0.997947699507016,
+              1.8354653328314812
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "1478535af521ab8cdf18f2fdea8e41309eecc5a5ec2840d2ddca68dca7d1b519",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "4246e57f018745c9b2bc68feb3d71b58",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402940.797343,
+          "delta_seconds": 0.5993850231170654,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402940797343.pcd.bin",
+          "raw_lidar_sha256": "a9e9776e83e8d1d21cbaa11f3a60cb14275fa9684bf3465615a98e87ec9f2598",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.5097586815141584,
+              0.8588516737749007,
+              0.05019849674040558,
+              408.1052928402183
+            ],
+            [
+              -0.8584359131778253,
+              -0.5116341028683336,
+              0.03630878335426243,
+              1110.1104746116403
+            ],
+            [
+              0.05686712220165496,
+              -0.024583474859452132,
+              0.9980790465571026,
+              1.8363520735467258
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "eacf07a30f1f8c5eda90f4427676c0ed5c2822fd1197dbf5e5275bbb69f015df",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "a7acb150914b40bdad9a2dc4e657cbf9",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402941.297218,
+          "delta_seconds": 0.4998750686645508,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402941297218.pcd.bin",
+          "raw_lidar_sha256": "8a98f8914270672d56e8a4b71ae41d88e9c1063f2a5dd4780d270db3713a5dbc",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.4721931965663758,
+              0.8802940030298804,
+              0.046000579844769976,
+              409.41059263159775
+            ],
+            [
+              -0.8799835254565725,
+              -0.4737959548397223,
+              0.0338583535118812,
+              1109.398924882662
+            ],
+            [
+              0.05160019419970843,
+              -0.024492068249597706,
+              0.9983674466605006,
+              1.8370184645066996
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "6664d5bb717ce56f8ccf43f352558ee02327a74cb13289dcea634f2f54cc5244",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "0cd661df01aa40c3bb3a773ba86f753a",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402941.797653,
+          "delta_seconds": 0.5004348754882812,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402941797653.pcd.bin",
+          "raw_lidar_sha256": "52bd85f717e5a2ec45d66c49889c84334348544731db3f18fad7a27dbd648ff3",
+          "raw_points": 34752,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.44073677454199583,
+              0.8965630341681459,
+              0.04388418085742933,
+              410.62726769559146
+            ],
+            [
+              -0.8962469593928953,
+              -0.44224745352567785,
+              0.03403788520229228,
+              1108.7970528268118
+            ],
+            [
+              0.04992477686789257,
+              -0.0243293159226299,
+              0.998456609493587,
+              1.837345797389786
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "2070d001f6b938109e317c945659a3dfeefd93de3df2e39ad85b4a416324f631",
+          "roundtrip_max_abs_m": 2.2737367544323206e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "378a3a3e9af346308ab9dff8ced46d9c",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402942.197463,
+          "delta_seconds": 0.3998100757598877,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402942197463.pcd.bin",
+          "raw_lidar_sha256": "9c2b7406b4e8dd083273cdd869381411e87466b434258e552088e544ad8cb7e2",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.4265885304806295,
+              0.9033826238187189,
+              0.04384131207871041,
+              411.5625529623382
+            ],
+            [
+              -0.9030900480051485,
+              -0.4281014675402665,
+              0.034022032330937105,
+              1108.3586277013821
+            ],
+            [
+              0.049503442874554,
+              -0.025079243853752375,
+              0.9984590330460676,
+              1.836680007362471
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "cb9d14afecc5103266e7ed58b1207db9121a23cfd425fca4dcfd98aae9073270",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "eef55c3b48f34d949959b45130ee293a",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402942.69787,
+          "delta_seconds": 0.5004069805145264,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402942697870.pcd.bin",
+          "raw_lidar_sha256": "1c0918c44997f0ea6590765899c443c2bdfe41b25db6352a428949dab3bb68f1",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.42046356932196993,
+              0.9062369939217226,
+              0.04410099455511021,
+              412.6797657740453
+            ],
+            [
+              -0.9062067919819081,
+              -0.4218518058008546,
+              0.028814997977054772,
+              1107.8245330071882
+            ],
+            [
+              0.0447173013372735,
+              -0.02784896389956022,
+              0.9986114350290775,
+              1.834517087249041
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "78b86d206e12b293c0054249c9eb3ba19275faf924007c8248b95a6d2055ded2",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "5fda58ee3ae44ab9b4bbac7a2de66c27",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402943.197769,
+          "delta_seconds": 0.49989891052246094,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402943197769.pcd.bin",
+          "raw_lidar_sha256": "b270726e006dc2431c3e804c4470dc8290ddfa573805bbb74b8df8a9a8bbb524",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.4181300589161266,
+              0.9071095587637011,
+              0.04816121084774165,
+              413.75770898439083
+            ],
+            [
+              -0.9073751103966106,
+              -0.4195787843195788,
+              0.024981048449654458,
+              1107.3176487222493
+            ],
+            [
+              0.04286797013547503,
+              -0.033254956749763365,
+              0.998527137832536,
+              1.8295174541672998
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "79804bc513176604ed34f5656b2ad15fa77146aa93d98f58e60ef75cc69e56ab",
+          "roundtrip_max_abs_m": 2.2737367544323206e-13,
+          "raw_detection_count": 199
+        },
+        {
+          "sample_token": "919e3c4cec934168a3152077a9adcbea",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402943.697655,
+          "delta_seconds": 0.49988603591918945,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402943697655.pcd.bin",
+          "raw_lidar_sha256": "052621d45695da25bffda097d14f0c93f37d90e7a791743da87324022b4da1b7",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.41756450188967026,
+              0.907023893403962,
+              0.05429128434610924,
+              414.8225704466327
+            ],
+            [
+              -0.9077069772944258,
+              -0.41910467004227436,
+              0.020477278133888076,
+              1106.81770159175
+            ],
+            [
+              0.04132711135136238,
+              -0.0407299931632058,
+              0.9983151494013688,
+              1.8224174828185882
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "3be1178d9907bf4b12360b69af52f86160553591b409c699e92e8d45cccd1554",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 198
+        },
+        {
+          "sample_token": "b73152cab88f49d9ba195da81fde1809",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402944.198088,
+          "delta_seconds": 0.5004329681396484,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402944198088.pcd.bin",
+          "raw_lidar_sha256": "f38c42a1bcb387820f4adb8b5117dfa10ac297c533c9a805b379625f79ba25b0",
+          "raw_points": 34752,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.4161793473891268,
+              0.9076195122465228,
+              0.054968825675518175,
+              415.8858165599237
+            ],
+            [
+              -0.9082384666528877,
+              -0.41783735199229494,
+              0.022689975144962807,
+              1106.3271031713462
+            ],
+            [
+              0.04356189273634142,
+              -0.040481702897136373,
+              0.9982302305739774,
+              1.822462519053041
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "cf51dc861116492759aa1a4381a5c2bc779289ed2e9dfe81b7be98a37b2cb14b",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 199
+        },
+        {
+          "sample_token": "6aa6fa91e0d1492e812eb7e57c47df6e",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402944.697931,
+          "delta_seconds": 0.49984312057495117,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402944697931.pcd.bin",
+          "raw_lidar_sha256": "292d1b70cfa99a52b29816f758de3b146d862048b11406ce94bd8639c3bfe2be",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.4081646103972808,
+              0.9113110463215502,
+              0.05397988210025142,
+              416.9083181760116
+            ],
+            [
+              -0.9118633858743244,
+              -0.4098124052394829,
+              0.023642292901549143,
+              1105.8659760963144
+            ],
+            [
+              0.04366710799959905,
+              -0.039572330789972895,
+              0.9982620970039883,
+              1.8233383165845534
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "8fc1a433f0afbd904217e0a6c438d59398a0d9e358c080fe058d08fb9a6143cf",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 198
+        },
+        {
+          "sample_token": "aa581aac963a4fad848ac11fe66e8637",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402945.197276,
+          "delta_seconds": 0.499345064163208,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402945197276.pcd.bin",
+          "raw_lidar_sha256": "c3cdc23e17960b1d803cb5679f46c7bb1154a910a8a772823d80b9f679e370ca",
+          "raw_points": 34688,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.3827432312059162,
+              0.9222803672848499,
+              0.05391236488020288,
+              417.95449759949713
+            ],
+            [
+              -0.9228694832460062,
+              -0.38437787744406965,
+              0.023781594245140952,
+              1105.4294083767197
+            ],
+            [
+              0.042656017855670456,
+              -0.0406518320929497,
+              0.9982624367811215,
+              1.822377680879087
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "c4e89f9d299cce59595a83a74b71a2a5749b5946355a573d5c6e341062ae1c2b",
+          "roundtrip_max_abs_m": 2.2737367544323206e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "67e5f88901214f3aa03d68e028185e22",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402945.697148,
+          "delta_seconds": 0.49987196922302246,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402945697148.pcd.bin",
+          "raw_lidar_sha256": "305253a030a49df726a21053a444b8a6076b4c5710b4b8e73ad4771d6c38a396",
+          "raw_points": 34688,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.33647751128407405,
+              0.9404166274767097,
+              0.048984193015770255,
+              419.10423960441665
+            ],
+            [
+              -0.9407084749888067,
+              -0.3380473807959182,
+              0.028134203760762113,
+              1105.0286118127124
+            ],
+            [
+              0.043016851166821336,
+              -0.03661331864704235,
+              0.9984032328740431,
+              1.82626669559425
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "17675f73824943358a6568a9557543ff8665860ae019caf249912b049654f40e",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "29e056fc277543c9bc42310b122c640e",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402946.297085,
+          "delta_seconds": 0.5999369621276855,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402946297085.pcd.bin",
+          "raw_lidar_sha256": "4e3241a8f7324bff3f9dc65357d80711e4705f4d65b42f2d285b9d6eda872245",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.26731459959515613,
+              0.9625879976201612,
+              0.044353711015978126,
+              420.4772011469671
+            ],
+            [
+              -0.9625971756275229,
+              -0.2688599063300856,
+              0.03348175984162356,
+              1104.6605857898455
+            ],
+            [
+              0.04415407475189514,
+              -0.033744593726775136,
+              0.9984546660099386,
+              1.8289308695071194
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "666aa3ed3d3c33bc5ff9407c07a687ba5b0d67177e5f4b16f30327c5ce6f4d56",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "ed5fc18c31904f96a8f0dbb99ff069c0",
+          "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+          "timestamp_seconds": 1532402946.797517,
+          "delta_seconds": 0.500432014465332,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402946797517.pcd.bin",
+          "raw_lidar_sha256": "de7be1d14931c202db8a3dafb8d3b0ebd34b330b3358c3dd02730df3801211fc",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.2047067330926292,
+              0.9781763294444206,
+              0.03558401243794683,
+              421.4750752153009
+            ],
+            [
+              -0.9782331712131794,
+              -0.2057103069781983,
+              0.027260453795590424,
+              1104.4587563655741
+            ],
+            [
+              0.03398552875488591,
+              -0.029229062892544067,
+              0.9989948176630722,
+              1.8340865735508816
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "844a1495c13cbce87130d10f42f3b51718437aa36c7e3295aa07058c9ea467f5",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 199
+        }
+      ]
+    },
+    {
+      "split": "mini_val",
+      "frames": 81,
+      "detection_count": 16199,
+      "detection_path": "reports/deployment_4090_20261008/bevfusion_reference/mini_val/evaluation/official_predictions.json",
+      "detection_sha256": "a6fb424ccbe629f3af27172202960c4533cd48ddd887cd201f0d464ee22c56a7",
+      "packets_path": "reports/deployment_4090_20261008/inputs/mini_val_packets.json",
+      "packets_sha256": "85fba9112c777485268e116fb22d4dcee3a6533de60b70e2421d0abc547b6291",
+      "point_count": 2812480,
+      "samples": [
+        {
+          "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151603.54759,
+          "delta_seconds": null,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151603547590.pcd.bin",
+          "raw_lidar_sha256": "c54cec1236b18dd28579e7090d9e3b3a233d41187d9f402133a1c4b08d7f79e3",
+          "raw_points": 34752,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.481423769715193,
+              0.8749482831068117,
+              0.05192933507809576,
+              601.0080719783217
+            ],
+            [
+              -0.8764602424425716,
+              -0.48009165221461825,
+              -0.03646160845800151,
+              1646.9954004253855
+            ],
+            [
+              -0.0069711814435917,
+              -0.06306748260615987,
+              0.9979849173544659,
+              1.8232930889711492
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "0e95264d3b0c7cd5eac6f461e05fb1ed75100e96b24bdc9ac709324bf792956d",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "3950bd41f74548429c0f7700ff3d8269",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151604.048025,
+          "delta_seconds": 0.5004348754882812,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151604048025.pcd.bin",
+          "raw_lidar_sha256": "fd6e18edeb159ea862737d1f4e76ffadf29689d752c313a39a2f0b798103f55a",
+          "raw_points": 34688,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.49716797555957376,
+              0.866073295420795,
+              0.052355047865111026,
+              604.7066898776218
+            ],
+            [
+              -0.8676363603183448,
+              -0.49586363521424454,
+              -0.03641979579362127,
+              1644.8774512431169
+            ],
+            [
+              -0.005581248205324265,
+              -0.06353189931898545,
+              0.9979642014808906,
+              1.8228279481424963
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "bf3c47aa7e723e30570101106f760546324ee21ea85b13bc6af6291c0c19a78b",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "c5f58c19249d4137ae063b0e9ecd8b8e",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151604.547893,
+          "delta_seconds": 0.49986815452575684,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151604547893.pcd.bin",
+          "raw_lidar_sha256": "ba79a4f928d16821f54863b0278dcbe112a14ec041803d484149b81010620bae",
+          "raw_points": 34752,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.5208759104790341,
+              0.8524041915514801,
+              0.04577532204261049,
+              608.3103448440753
+            ],
+            [
+              -0.8535198917759516,
+              -0.5191872876836576,
+              -0.044140170485109945,
+              1642.6697716852811
+            ],
+            [
+              -0.013859301043155752,
+              -0.062061699405949675,
+              0.9979760845037523,
+              1.8242224352785825
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "dd1b3e65c7f79fb4bf18c7a3aedfd17de834a3adcf0e6942bf1b47dd625c76ae",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "700c1a25559b4433be532de3475e58a9",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151605.047769,
+          "delta_seconds": 0.4998760223388672,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151605047769.pcd.bin",
+          "raw_lidar_sha256": "5157dd4f27ed57ac5b7959f6bfb06646f74c15ff95415a0b331637b8c5cde77c",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.545728048718321,
+              0.8359446409703548,
+              0.05811586766999434,
+              611.8444844173929
+            ],
+            [
+              -0.8378734610408144,
+              -0.543346117837845,
+              -0.052374225665183544,
+              1640.3969293082512
+            ],
+            [
+              -0.012204922186512857,
+              -0.07727582716144182,
+              0.9969350462346753,
+              1.8085638425535546
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "09c6bb2d0e9537c695363a34a672b5758ed583149eb247892a291a969101483c",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "747aa46b9a4641fe90db05d97db2acea",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151605.548192,
+          "delta_seconds": 0.5004229545593262,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151605548192.pcd.bin",
+          "raw_lidar_sha256": "5102c9416ba5dd69d69a0470ee0a7be3efca0154028f9cba91bd31ec18ff2f22",
+          "raw_points": 34784,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.5681348114907137,
+              0.8199249248598108,
+              0.07032747376412765,
+              615.3220548987267
+            ],
+            [
+              -0.8228774171771497,
+              -0.5650011073862402,
+              -0.0603862977188081,
+              1638.0321567966587
+            ],
+            [
+              -0.009777130063247022,
+              -0.0921784478387163,
+              0.9956945020847362,
+              1.7928050585963053
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "95f3fa044d149621235a5165212262da8bccd9804a965ac59fbfdcb172a8c1bd",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "f4f86af4da3b49e79497deda5c5f223a",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151606.04863,
+          "delta_seconds": 0.5004379749298096,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151606048630.pcd.bin",
+          "raw_lidar_sha256": "578ae422e9815a02a66fc4a0b76aebebf7e436d65c350c64f26c3a95eb15ecb0",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.587326389644172,
+              0.8052107544085474,
+              0.08175177681471063,
+              618.8160409633376
+            ],
+            [
+              -0.8093499523010522,
+              -0.584246763930907,
+              -0.0600697390251468,
+              1635.5261379180554
+            ],
+            [
+              -0.0006055888279665588,
+              -0.10144633961401933,
+              0.9948408281936817,
+              1.782804170412854
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "4bb8c5707cc702c6f0b1cf9ac7f33af6f42736e6a5d5cf39a37692c9f0f0dc21",
+          "roundtrip_max_abs_m": 6.821210263296962e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "6832e717621341568c759151b5974512",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151606.549066,
+          "delta_seconds": 0.5004360675811768,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151606549066.pcd.bin",
+          "raw_lidar_sha256": "4af2dffcb6fd338b3a7f3c5a0390b520337b7d3e06aa66098629ecbb2beb9e57",
+          "raw_points": 34688,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.6120189256072215,
+              0.7887636023823835,
+              0.05731329911411784,
+              622.2342764709547
+            ],
+            [
+              -0.7906822239103161,
+              -0.6088236683404792,
+              -0.06446209475866999,
+              1632.8611388435863
+            ],
+            [
+              -0.015951661067610767,
+              -0.08476862877978009,
+              0.9962729666532044,
+              1.8005979774037097
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "0843a0ad0b45c853f9bdf7d0a6013d5c96397febda0820f333383b2fa84f57d3",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "c59e60042a8643e899008da2e446acca",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151607.048933,
+          "delta_seconds": 0.49986696243286133,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151607048933.pcd.bin",
+          "raw_lidar_sha256": "91a540c7b6f166105a0b1b8fee94144f9ef141d8695deb7929b72f1c9f9b8c1e",
+          "raw_points": 34688,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.6280618682642745,
+              0.7767950508875001,
+              0.0461274164578281,
+              625.6927543196933
+            ],
+            [
+              -0.7779957776656994,
+              -0.625592070426035,
+              -0.05794075728198057,
+              1630.06708739364
+            ],
+            [
+              -0.01615114753605976,
+              -0.07227731550598518,
+              0.997253794225179,
+              1.8136848395980631
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "d5829698cd9b38d11d3010b1ddcd87bcf3b080dd588462d36d2ad87f81fa259b",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "fa65a298c01f44e7a182bbf9e5fe3697",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151607.548824,
+          "delta_seconds": 0.4998910427093506,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151607548824.pcd.bin",
+          "raw_lidar_sha256": "8fdd32a77770e8f2123b992e81ca88eea3ccc2361c9fd255438bd47426e5025e",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.6379137215287484,
+              0.7692560631554372,
+              0.03621040159869893,
+              629.1071853675785
+            ],
+            [
+              -0.7700955807146754,
+              -0.6369327161185797,
+              -0.03563020771107249,
+              1627.2327780651478
+            ],
+            [
+              -0.00434516387122626,
+              -0.05061446864687426,
+              0.9987088139765892,
+              1.8358446251049942
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "1a6c13b18b8f07316afcd3e57c936f344042df959fd040cbe47e41a9414e437a",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "a98fba72bde9433fb882032d18aedb2e",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151608.048151,
+          "delta_seconds": 0.4993269443511963,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151608048151.pcd.bin",
+          "raw_lidar_sha256": "f64c419fe64a1c209b48ab3c126483a3c10d917dc9f397bfae20dba9f1b66ce3",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.6415961382723092,
+              0.7661223599594412,
+              0.03756228060484083,
+              632.5333986929481
+            ],
+            [
+              -0.767036809297754,
+              -0.6410122793811693,
+              -0.027528001469040254,
+              1624.3424151693773
+            ],
+            [
+              0.002988065658836023,
+              -0.04647351130197468,
+              0.9989150535510438,
+              1.8399148379068013
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "dc444a59d7f7a7df200d57ae675a472650f86c36cd765ce98565fc4ab2f69193",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "b6b0d9f2f2e14a3aaa2c8aedeb1edb69",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151608.54802,
+          "delta_seconds": 0.49986886978149414,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151608548020.pcd.bin",
+          "raw_lidar_sha256": "6e742302d4c0611ac3ca88a96911dd082707b3cb3fd0dc2a2799b4e4173e545c",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.6380605461241008,
+              0.7690597136544145,
+              0.03776104227379028,
+              635.8861397344791
+            ],
+            [
+              -0.7699595188784676,
+              -0.6368625126827447,
+              -0.0396040304496674,
+              1621.4779861073923
+            ],
+            [
+              -0.006409272053176499,
+              -0.05434424323890736,
+              0.9985016897624849,
+              1.8321112197013316
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "bdc67b10c2fd63f8e965f5e382d78e35a05685711b32fcb5d4bb8867123a24f3",
+          "roundtrip_max_abs_m": 6.821210263296962e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151609.04789,
+          "delta_seconds": 0.49987006187438965,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151609047890.pcd.bin",
+          "raw_lidar_sha256": "adab43d56834777a680cab63cd5c782c7b8ddc1dcb8535e3b601d5edd16279b4",
+          "raw_points": 34688,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.6372862555881416,
+              0.7694198924636368,
+              0.04311910852149272,
+              638.856336103298
+            ],
+            [
+              -0.7705068799267045,
+              -0.6351999866077522,
+              -0.05329282314837007,
+              1618.9450862437607
+            ],
+            [
+              -0.013615301100512142,
+              -0.06718635348606222,
+              0.997647541710591,
+              1.8189916006553057
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "ae1d1433a93e4a2c9a298cfae2387add1a6d8b5471af53bd14ce0f22b41c0fb4",
+          "roundtrip_max_abs_m": 6.821210263296962e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "0d0700a2284e477db876c3ee1d864668",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151609.547766,
+          "delta_seconds": 0.4998760223388672,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151609547766.pcd.bin",
+          "raw_lidar_sha256": "8c1f19031ae4d2a2a12a823644ea78e1a6a5a9bf18e1a8acc753f96b22e13aa0",
+          "raw_points": 34688,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.6389346498902111,
+              0.7682172186427751,
+              0.04006018160754826,
+              641.3494302602003
+            ],
+            [
+              -0.7691822544502962,
+              -0.637257167221206,
+              -0.04756009108445086,
+              1616.8435787379553
+            ],
+            [
+              -0.011007843041700644,
+              -0.06120137094837249,
+              0.9980647371716961,
+              1.8251464244707638
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "7cad8387208016ed4108426433a8b2e4b4b527c678feb0e740f694215a0ba5a4",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 199
+        },
+        {
+          "sample_token": "de7593d76648450e947ba0c203dee1b0",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151609.947025,
+          "delta_seconds": 0.399259090423584,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151609947025.pcd.bin",
+          "raw_lidar_sha256": "62e5a93552a5e2251acf57a4b2491865da37a0692cb815ff787a86c30641a5b2",
+          "raw_points": 34688,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.6403921488813576,
+              0.7670423101151105,
+              0.03929363999924036,
+              642.9423115853272
+            ],
+            [
+              -0.7679745766159815,
+              -0.638784381532125,
+              -0.04657857428177483,
+              1615.4865180385125
+            ],
+            [
+              -0.010627573693900117,
+              -0.060005069818253196,
+              0.998141496118404,
+              1.8263650226535766
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "6d88f43929e1785acf46a01bd559b2ebf312288ac1342aa8ed9a6988d77014ee",
+          "roundtrip_max_abs_m": 6.821210263296962e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "f753d3f87e5b40af87ff2cbf7c8e7082",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151610.446899,
+          "delta_seconds": 0.4998738765716553,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151610446899.pcd.bin",
+          "raw_lidar_sha256": "2caa30139212541dd205e3fdf1a0f8c8175835968d3b49311b442b2c90d5b29c",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.6400653401474472,
+              0.767460917501539,
+              0.036333186615361536,
+              644.4849258620189
+            ],
+            [
+              -0.7681689269543607,
+              -0.6382839328195995,
+              -0.05010110543819442,
+              1614.172444630866
+            ],
+            [
+              -0.015259751102716636,
+              -0.05997800606921589,
+              0.9980830520473947,
+              1.826306925654708
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "1d8df0b651b781a68133c28b4b1d8265d48ead1ce73e4615cd93d56371fd55bf",
+          "roundtrip_max_abs_m": 6.821210263296962e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "b22fa0b3c34f47b6a360b60f35d5d567",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151610.946785,
+          "delta_seconds": 0.49988603591918945,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151610946785.pcd.bin",
+          "raw_lidar_sha256": "4f253fc981c995ecc942be0554bf7f073635b9516a0f759313af3078f7be55ba",
+          "raw_points": 34688,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.6397142339594688,
+              0.7678938037307328,
+              0.03323860799726373,
+              645.5601416603746
+            ],
+            [
+              -0.7684788820522019,
+              -0.6381970407318476,
+              -0.04631139212881924,
+              1613.2625998124195
+            ],
+            [
+              -0.014349449795964891,
+              -0.0551692250539928,
+              0.9983739028527808,
+              1.8311756861887314
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "2e3857778ae94907f94873f052cc5a1b19984c1f423b2d57940aa7d80f50318f",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "0a0d6b8c2e884134a3b48df43d54c36a",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151611.446636,
+          "delta_seconds": 0.4998509883880615,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151611446636.pcd.bin",
+          "raw_lidar_sha256": "fb77eb786266a91850f7c378aebbcc512bc1c4eb30b1001fdd2e01b289f75ae0",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.6392579953352157,
+              0.7684842346868036,
+              0.027949891553219412,
+              646.2524938454522
+            ],
+            [
+              -0.7688360073035057,
+              -0.6379728980698576,
+              -0.04337943293714957,
+              1612.671302558765
+            ],
+            [
+              -0.015505137006907307,
+              -0.04921953236452391,
+              0.9986676265706287,
+              1.837088629831925
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "edddc193a6391ff08a4e055ad0344d8fd99e2ffa1d81476f4fff1b5bf5acff84",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "8e9c2cba0ee74056aa3746e8391d54a9",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151611.896734,
+          "delta_seconds": 0.45009803771972656,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151611896734.pcd.bin",
+          "raw_lidar_sha256": "40db4e606a8ead146fb0e0a8d33fc50fd36046fbfd20ba350aad68a7f7bdf119",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.6398854001631653,
+              0.7680294065028861,
+              0.02602893399371129,
+              646.8177487269694
+            ],
+            [
+              -0.7683204261727021,
+              -0.6387244535491579,
+              -0.04141008529483057,
+              1612.1869629874575
+            ],
+            [
+              -0.015178846590622276,
+              -0.0464962706585429,
+              0.9988031334707678,
+              1.839791972309543
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "a54dc4d36fae5f56db8028ec1daf9e0b921e7bba4785e72dd6ebc7170538d9ed",
+          "roundtrip_max_abs_m": 9.094947017729282e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "fdc39b23ab4242eda6ec5e1e6574fe33",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151612.397179,
+          "delta_seconds": 0.5004448890686035,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151612397179.pcd.bin",
+          "raw_lidar_sha256": "f21482889d45990642be88a7f62aa29e476d21d8e57e3318248aa23167888de2",
+          "raw_points": 34784,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.6412989813308211,
+              0.7668743319535796,
+              0.025285876192075795,
+              647.4536225617483
+            ],
+            [
+              -0.7671470396860032,
+              -0.6401917838208351,
+              -0.04049567173536089,
+              1611.6387173263463
+            ],
+            [
+              -0.01486728102418855,
+              -0.04536781809881202,
+              0.9988597123900332,
+              1.8409119247266053
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "6c9916562f785319d04a088a78c178c4ae48c85c37b1003f5ef8cb0a976385cd",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "9ee4020153674b9e9943d395ff8cfdf3",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151612.897588,
+          "delta_seconds": 0.5004091262817383,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151612897588.pcd.bin",
+          "raw_lidar_sha256": "f5203ac3862e914c82ce88e898563e054bbb81c09a68eb625a26ca080ffd7bb2",
+          "raw_points": 34784,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.6428490462415608,
+              0.765649108113734,
+              0.022946611753362912,
+              648.1483879008738
+            ],
+            [
+              -0.7658386100827546,
+              -0.6418299074748965,
+              -0.03931403282901318,
+              1611.0368439044905
+            ],
+            [
+              -0.015372932473364714,
+              -0.04284638975934457,
+              0.9989633926384691,
+              1.8433786962060574
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "b74c136d659fb404d25f75e11c0122126791ac70d74d651a5e15ea41572202e4",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "5b03af7a953245b5a3b23191ed4da62a",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151613.39802,
+          "delta_seconds": 0.500432014465332,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151613398020.pcd.bin",
+          "raw_lidar_sha256": "fc9baf6a909421901d1358dd59f913ee188109d22e3accc2a9c68184eb584fdb",
+          "raw_points": 34752,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.6410675770852483,
+              0.767192167439859,
+              0.02117875891027175,
+              648.9409229206968
+            ],
+            [
+              -0.7672861557483913,
+              -0.640030663834568,
+              -0.04040673889756768,
+              1610.354107552533
+            ],
+            [
+              -0.017444678469467914,
+              -0.042153618710764396,
+              0.998958835799896,
+              1.8440057410445982
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "d41e7cfb65b93bd4880d2d39764ddbda0a3f3b4c49bebbd550ee4d30cc698808",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "d0ecf474e0e64950aa265cd44b9c9d75",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151613.948222,
+          "delta_seconds": 0.5502018928527832,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151613948222.pcd.bin",
+          "raw_lidar_sha256": "4ba12f472ecc6dfde240d75ceb68dff0e120c4803fef005aa6b5970ff8ee45d5",
+          "raw_points": 34752,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.6401579211448891,
+              0.7680045864103164,
+              0.01915179490755425,
+              649.9837859783034
+            ],
+            [
+              -0.768001665644942,
+              -0.6391323872458706,
+              -0.04102722437598871,
+              1609.4676243994666
+            ],
+            [
+              -0.019268564089135933,
+              -0.04097251305596967,
+              0.9989744619417605,
+              1.8451086644665387
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "92f6925374cbd2b64f08f47e3cf1876f94db07be50b44194caf6d1469829529b",
+          "roundtrip_max_abs_m": 6.821210263296962e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "456ec36cb4a44ca78f36fbd90c0c34fa",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151614.450164,
+          "delta_seconds": 0.5019421577453613,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151614450164.pcd.bin",
+          "raw_lidar_sha256": "f05abe1015715bcc8ea3246cdc339d5bdcfaac3685525f278e29b995fc58ae02",
+          "raw_points": 34752,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.640047922686026,
+              0.7681762970027293,
+              0.015615165336123994,
+              651.0502004337254
+            ],
+            [
+              -0.7679892694233884,
+              -0.6390181833842933,
+              -0.04299120089930658,
+              1608.5538346949702
+            ],
+            [
+              -0.023046446924194417,
+              -0.039508708247794136,
+              0.9989534139572065,
+              1.846408500262749
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "fe9b99049f77cac30d6cf5aebaa8ac6001f5438e8f198444d7165b07e6eba8bb",
+          "roundtrip_max_abs_m": 6.821210263296962e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "6bfd42cf0aba4f1a94ec11fa43e2dd92",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151614.948536,
+          "delta_seconds": 0.49837183952331543,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151614948536.pcd.bin",
+          "raw_lidar_sha256": "5da14c63371d2ce3096347166e33bacb7f07ce15dd7df4a06a746d16f6c6faea",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.6392045892641895,
+              0.7689172639779885,
+              0.013554859652650918,
+              652.314299446911
+            ],
+            [
+              -0.7685647962280987,
+              -0.6380956963795873,
+              -0.04628213759875821,
+              1607.4759424939473
+            ],
+            [
+              -0.026937837004104095,
+              -0.04000154270092308,
+              0.9988364378210712,
+              1.845767984959983
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "bfaa7cbf4c41f976823326a788fd272465cf1c830ca9831632a5c4fefdcd2122",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "0af0feb5b1394b928dd13d648de898f5",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151615.448397,
+          "delta_seconds": 0.4998610019683838,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151615448397.pcd.bin",
+          "raw_lidar_sha256": "04184a4b7e338782b94f56bfc0eb78ec27a48d46400000124e1451b7eec9e79b",
+          "raw_points": 34688,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.639273850225365,
+              0.768897248359675,
+              0.011223452363569454,
+              653.7458596190374
+            ],
+            [
+              -0.7684448087402607,
+              -0.6382175759022891,
+              -0.046592936476996874,
+              1606.2504433520407
+            ],
+            [
+              -0.028662176089427914,
+              -0.038410249599884205,
+              0.998850905985219,
+              1.8472371641862113
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "5151fa87bda3cb78b724c58e97ccca69e028ea1313ca15734c22f3ab6d66a909",
+          "roundtrip_max_abs_m": 6.821210263296962e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "61d9340c5ad8418dafe7a4af1b96e6b9",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151615.947733,
+          "delta_seconds": 0.49933600425720215,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151615947733.pcd.bin",
+          "raw_lidar_sha256": "c7c7b971c34219e91f8025ab5763470aa99f61502d94e782f2b2c9af13ce5783",
+          "raw_points": 34688,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.6401837597900311,
+              0.7681561838204861,
+              0.010041462017341567,
+              655.3479677717319
+            ],
+            [
+              -0.7676464835158235,
+              -0.6391438929072022,
+              -0.04705274173962176,
+              1604.884042981946
+            ],
+            [
+              -0.029725915408755278,
+              -0.037830694122270386,
+              0.9988419337089013,
+              1.8477480180621848
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "ca23cdcb3a2ece694a5798f08538098b8d584f153fe1b0eee63c0e3cad0d4528",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "9e7683e8586542a1b6032980c45f15ce",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151616.447606,
+          "delta_seconds": 0.49987316131591797,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151616447606.pcd.bin",
+          "raw_lidar_sha256": "f660ece25f7e34e24f073adab12dce255c916345c03b5850cc9d3b59926c46c2",
+          "raw_points": 34688,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.6421817197917054,
+              0.7665094162477141,
+              0.008121180268578148,
+              657.1325792559318
+            ],
+            [
+              -0.7660235186543882,
+              -0.6413091043795409,
+              -0.04393861067739921,
+              1603.3629309574765
+            ],
+            [
+              -0.028471171976522214,
+              -0.034437587655033255,
+              0.9990012236843276,
+              1.8510932566593377
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "053f2b686d4133b34a6bae52e9795b5c9b5aedbfb16a7d05092613a47917b537",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "cc57c1ea80fe46a7abddfdb15654c872",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151616.94749,
+          "delta_seconds": 0.49988389015197754,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151616947490.pcd.bin",
+          "raw_lidar_sha256": "a041d602501399c0c4b80d53c5da9eb4d2cb765971a29dce0145ed16c66be00e",
+          "raw_points": 34752,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.6449003760680178,
+              0.7642513987296424,
+              0.004827472124496818,
+              659.1161290281019
+            ],
+            [
+              -0.7636727941362427,
+              -0.6441374643355634,
+              -0.043483221309983215,
+              1601.6594077577
+            ],
+            [
+              -0.030122557054001287,
+              -0.03172895490138636,
+              0.999042494079903,
+              1.8536177218104
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "a7e225fd89e1a11ff7e23830e42997a3c43ee8d26d02b46cf0a12ddd41b57764",
+          "roundtrip_max_abs_m": 6.821210263296962e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "4cf5d6c3f6ab42aab23f67b5a9782d1a",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151617.39705,
+          "delta_seconds": 0.44955992698669434,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151617397050.pcd.bin",
+          "raw_lidar_sha256": "f4e03c875f55cc0c8760c8400083bb9b49e4cd008a09fe7f1556606ab738c0a9",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.6472639688035242,
+              0.7622634032242004,
+              0.00196438126962465,
+              661.0339466306125
+            ],
+            [
+              -0.7617374710663517,
+              -0.6467171432599892,
+              -0.0388968094717212,
+              1600.0144759015686
+            ],
+            [
+              -0.02837921531951241,
+              -0.026672846092994747,
+              0.9992413018981703,
+              1.858530632515647
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "0ef0d4b05d1afb80cf2428eaf582af0dc4f1ca58e8d42faa388d1cff998b72a5",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "6d9984d09d52479e837da2fd09e192cc",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151617.947237,
+          "delta_seconds": 0.5501871109008789,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151617947237.pcd.bin",
+          "raw_lidar_sha256": "e3189999113a8c0f08cabf4e36c29042349a1183b3ed2238c49cc2ec086dd4b3",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.6507093115023151,
+              0.7593142184185538,
+              0.0043942725909916075,
+              663.5239149246429
+            ],
+            [
+              -0.7589804662942807,
+              -0.6502267137459773,
+              -0.03396869904520221,
+              1597.8675539816877
+            ],
+            [
+              -0.02293564274005829,
+              -0.02543891582846786,
+              0.9994132367812492,
+              1.8599321511325324
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "b8e479df8d031d0db42ffc65cbc89fdfcc23147c5a1d8f1a6bb62d0349ef6e6f",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "38a28a3aaf2647f2a8c0e90e31267bf8",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151618.447134,
+          "delta_seconds": 0.4998970031738281,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151618447134.pcd.bin",
+          "raw_lidar_sha256": "87d4266f64d22fc1189b0837318b9578115ab113e29f345c2640c7c475fec8ff",
+          "raw_points": 34688,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.6537329740298987,
+              0.7566449661484331,
+              0.01102696097126209,
+              665.9373828031228
+            ],
+            [
+              -0.7564157068167991,
+              -0.6529793278301255,
+              -0.038121856032476906,
+              1595.7469240935595
+            ],
+            [
+              -0.021644332904185166,
+              -0.03326248079676921,
+              0.9992122548409716,
+              1.852507245817052
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "7c5f648e65755a2c53108d0302cbdf10a1e1b6600f287b7e684fd736081d0fbe",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "6402fd1ffaf041d0b9162bd92a7ba0a2",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151618.946993,
+          "delta_seconds": 0.499859094619751,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151618946993.pcd.bin",
+          "raw_lidar_sha256": "ec4719647383dc7c0a886fd9ebda207013602646468beeca3c1b398630498812",
+          "raw_points": 34688,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.6553316018613281,
+              0.7552577362629785,
+              0.011235809574172567,
+              668.4888319935712
+            ],
+            [
+              -0.7551192203744134,
+              -0.6547057435296056,
+              -0.03399047529064739,
+              1593.4955642720709
+            ],
+            [
+              -0.018315420361101342,
+              -0.0307594083861724,
+              0.9993589966437132,
+              1.8550157322290055
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "7526f49e901d647639df49bd927480b1c52930599c9051e3a4b1a6fddabdf9e2",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "ce94ef7a0522468e81c0e2b3a2f1e12d",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151619.446866,
+          "delta_seconds": 0.49987292289733887,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151619446866.pcd.bin",
+          "raw_lidar_sha256": "576190e3189597eae2d1176f0406b3e96e3826a7195ef77eb0f7030f0c7521f7",
+          "raw_points": 34752,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.655670091759922,
+              0.7549633863504911,
+              0.011270139384029463,
+              671.165397375379
+            ],
+            [
+              -0.7547771017069471,
+              -0.6549628253097045,
+              -0.03654071976837676,
+              1591.1541939331116
+            ],
+            [
+              -0.020205383203419927,
+              -0.03246510022361625,
+              0.999268612414637,
+              1.8533221975907792
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "05dba96412e46945d04c66a41e46c6fc8f73afa7fec2db18ff6d3462f77ea969",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "9fcdc52b791045e99c623c5fc643331f",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151619.947313,
+          "delta_seconds": 0.5004470348358154,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151619947313.pcd.bin",
+          "raw_lidar_sha256": "90276fb9d5231480fa209bcc6a7bfe28ce04fbc6dddca95abf34c2173ecabc37",
+          "raw_points": 34784,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.6570928348232297,
+              0.7536763170172648,
+              0.01417799672951688,
+              673.9846445231996
+            ],
+            [
+              -0.7535446917105478,
+              -0.6562470138445204,
+              -0.038861991907315714,
+              1588.6554355752137
+            ],
+            [
+              -0.019985094916617634,
+              -0.036219690603872465,
+              0.9991439986276917,
+              1.8497082621056702
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "e4c6eb07cce9c372539e4a05b1e6f575b15c1d240da603eadb1617f05e8ba8b3",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "1c9a906c40f6417bbe1cea06d6e55501",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151620.447745,
+          "delta_seconds": 0.500432014465332,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151620447745.pcd.bin",
+          "raw_lidar_sha256": "26bbf4c9954cde4311681ad2d2cf9428640cc811b6b06b17120163a18e58d9de",
+          "raw_points": 34688,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.657167441159445,
+              0.7535806799774116,
+              0.01571982966606787,
+              676.8873750349351
+            ],
+            [
+              -0.7535116965303718,
+              -0.6563030266437946,
+              -0.03855464187509158,
+              1586.0615734532278
+            ],
+            [
+              -0.018737061452351843,
+              -0.037181930866719975,
+              0.9991328372869918,
+              1.8488140924528
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "520a430702b532e93aec413883bcd14901a75eb7d02e5fa735d2f9281ae73650",
+          "roundtrip_max_abs_m": 5.684341886080801e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "a771effa2a2648d78096c3e92b95b129",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151621.047706,
+          "delta_seconds": 0.5999608039855957,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151621047706.pcd.bin",
+          "raw_lidar_sha256": "4a94502408a271399fd9aec302924b261d34e66e0f2fcd3ca93803e1acf76661",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.6543999982880306,
+              0.7559790445230022,
+              0.016010199333926108,
+              680.4445252106152
+            ],
+            [
+              -0.7558547684360878,
+              -0.6534089243101109,
+              -0.04171746234288575,
+              1582.9080930267264
+            ],
+            [
+              -0.021076320197128,
+              -0.03940129279592579,
+              0.9990011645903903,
+              1.846583329959685
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "65cfbe800a322a0a898821b0fbceaa9485067d286ac63f27ac22036fe609d1be",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "b9ea04a6121d4a8bb00199b885aa5ef0",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151621.448049,
+          "delta_seconds": 0.4003431797027588,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151621448049.pcd.bin",
+          "raw_lidar_sha256": "a6d9e338f37a465a9ea7829642f17b25be70af2b9fdaaf6c2b05c0baaa47e39d",
+          "raw_points": 34752,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.6542031389373081,
+              0.7560941833736876,
+              0.018434719228902045,
+              682.8770864913866
+            ],
+            [
+              -0.7560950876365641,
+              -0.6532223470722447,
+              -0.04025895847240979,
+              1580.7525551359186
+            ],
+            [
+              -0.018397593767350645,
+              -0.040275937653929395,
+              0.9990192077180835,
+              1.8458144416131652
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "e2acfc3ad766e58b87cca52da087d4ce2fb44fc919a09424c807fb94d087091b",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "87e772078a494d42bd34cd16172808bc",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151621.947928,
+          "delta_seconds": 0.4998788833618164,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151621947928.pcd.bin",
+          "raw_lidar_sha256": "7fb88c7c4274a51de2c8a91b2a3fddf9d0882c7d57aaf44d86fe26085522498e",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.6527832294394279,
+              0.7572628990034437,
+              0.020662941599214037,
+              685.9559859693406
+            ],
+            [
+              -0.7574851853170055,
+              -0.6521469830673267,
+              -0.030339850056429928,
+              1578.0839314830812
+            ],
+            [
+              -0.009499967783838121,
+              -0.03545721744701942,
+              0.9993260410611853,
+              1.8506745730281413
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "ab5eb835c74c3f051b45e95aa792d6f7d72eb8bf9aa2f36687548ca41491ad99",
+          "roundtrip_max_abs_m": 6.821210263296962e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "f40544fd4f5d42abbcfa948eeaf86850",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151622.448916,
+          "delta_seconds": 0.5009880065917969,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151622448916.pcd.bin",
+          "raw_lidar_sha256": "5677cb9f414d067d3878158f6b7db675258a00e2eee498dfa3b366933cdd169f",
+          "raw_points": 34752,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.654857178289561,
+              0.755603589110811,
+              0.015009735690270427,
+              689.042101645317
+            ],
+            [
+              -0.7553100765919359,
+              -0.6536650004815873,
+              -0.04720969544582383,
+              1575.3121002982173
+            ],
+            [
+              -0.025860476432483716,
+              -0.04225261256140467,
+              0.9987722225264467,
+              1.8436153764874963
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "800dd055f9decb6480545aa52e4457b0f8a9d942218f980373fb11d4766e6961",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "281b92269fd648d4b52d06ac06ca6d65",
+          "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+          "timestamp_seconds": 1533151622.948227,
+          "delta_seconds": 0.4993109703063965,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151622948227.pcd.bin",
+          "raw_lidar_sha256": "6f7b64d176913bd91fe1359de089c9a4b843b25e76c0259a2fda891181de31f7",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.6516833292192558,
+              0.7583537955698286,
+              0.014434651451925257,
+              692.1650312582942
+            ],
+            [
+              -0.7583201667861149,
+              -0.6510143489690355,
+              -0.0336279955081845,
+              1572.5945249668766
+            ],
+            [
+              -0.01610475281346682,
+              -0.0328608913642673,
+              0.9993301750450448,
+              1.8530576110181287
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "4bd8c5ed4369f9443f2def555fb6f9970366e144b8fb8321f4ee7ead84d31ea2",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "b5989651183643369174912bc5641d3b",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984233.547259,
+          "delta_seconds": null,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984233547259.pcd.bin",
+          "raw_lidar_sha256": "0e4876e3deba785efeb87c819009d3eebcee66d089689600107e92bf6d372e25",
+          "raw_points": 34560,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.9615162574719044,
+              0.2745631982105428,
+              -0.010076547306552695,
+              715.9226285476125
+            ],
+            [
+              -0.2741648942499684,
+              -0.9612182153950788,
+              -0.029885668030082975,
+              1809.1301005614155
+            ],
+            [
+              -0.017891265414346814,
+              -0.025972920149627293,
+              0.9995025312828254,
+              1.838422648156689
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "a8e7ce43b4979f7e39dce1f5e54b41ac985a33d3b15d2464d233112b127b861e",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "0bb62a68055249e381b039bf54b0ccf8",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984234.047134,
+          "delta_seconds": 0.4998748302459717,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984234047134.pcd.bin",
+          "raw_lidar_sha256": "6dfbac6156f445533588b3a5cf2026b95b4966ae95e2e42a44cac412722912db",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.9951890681514205,
+              0.09703051146562051,
+              -0.013557229681137418,
+              716.1170678110497
+            ],
+            [
+              -0.09659737304753993,
+              -0.9948831367894763,
+              -0.029605601703846025,
+              1807.1003836218347
+            ],
+            [
+              -0.016360505866917008,
+              -0.028153578398712624,
+              0.9994697143341194,
+              1.8363877674701743
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "5bb8ac9b7fe9c644cc52f05042146cb5ce3afe94a3c8547f0ac0a4a269bc2fcf",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "07fad91090c746ccaa1b2bdb55329e20",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984234.547551,
+          "delta_seconds": 0.5004169940948486,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984234547551.pcd.bin",
+          "raw_lidar_sha256": "594272b7dcb7e511cf00d63fc7245f62c92cc320837070cf43392dd1098b7694",
+          "raw_points": 34752,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.9967935020279934,
+              -0.077302312148689,
+              -0.020665595835451266,
+              715.9579393022834
+            ],
+            [
+              0.07788782864398387,
+              -0.996534049306762,
+              -0.029212578136698846,
+              1805.0319701207122
+            ],
+            [
+              -0.01833577006544815,
+              -0.03072850645140391,
+              0.9993595741410457,
+              1.8338858181001718
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "5150d9b864ea5ee72f1027a16fc5192e7be453a48b086ebb5c7656e9503cf88a",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "ae5004bf4ebb4db0a84cb3c27bd398d1",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984234.947904,
+          "delta_seconds": 0.40035319328308105,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984234947904.pcd.bin",
+          "raw_lidar_sha256": "568c0b4e7822e32865da2361ce151c0485fca3dfa568d58121002586e2fe7dbe",
+          "raw_points": 34752,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.9761367601618477,
+              -0.21346014106584182,
+              -0.03989728859060312,
+              715.5512004589116
+            ],
+            [
+              0.21465052373110322,
+              -0.9762789982875629,
+              -0.0283631832592147,
+              1803.4493425188966
+            ],
+            [
+              -0.032896475840035536,
+              -0.03625031970595052,
+              0.9988011494779739,
+              1.8280126141582183
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "4711f3c1bb990c28e4b8c320ce978431bee9b22c09d8843e2b73badc07c41934",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "ac8b4d49731d43289579f014cb7c97ef",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984235.447825,
+          "delta_seconds": 0.4999208450317383,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984235447825.pcd.bin",
+          "raw_lidar_sha256": "f3bf248f320522672b8d1c3026c8d561db8838cc364cf4930410b0f7ed184844",
+          "raw_points": 34688,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.9332221449955477,
+              -0.3585199908388987,
+              -0.023661028269815976,
+              714.8497794845994
+            ],
+            [
+              0.35894781599560416,
+              -0.9331985550709319,
+              -0.017231430744751496,
+              1801.5677857776948
+            ],
+            [
+              -0.015902625000135312,
+              -0.024573827182619908,
+              0.9995715249724275,
+              1.8397909463611815
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "b8cbf8d00a4c32941609bacfbcd8c1a3dacf6668fa02e9cac847aa99d7c85266",
+          "roundtrip_max_abs_m": 6.821210263296962e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "c1eed31234b94e9f8e22fbf3428b0ac2",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984235.947081,
+          "delta_seconds": 0.4992561340332031,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984235947081.pcd.bin",
+          "raw_lidar_sha256": "926b61ec6933f827d9a2cdf17ed649fd2e268cf477a13a62ad2bd4fc41cd75bd",
+          "raw_points": 34688,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.8799928715670057,
+              -0.4746989516603343,
+              -0.016536362472922127,
+              713.859931767551
+            ],
+            [
+              0.4749845776791633,
+              -0.8795637743627878,
+              -0.02751759065825371,
+              1799.6817967085885
+            ],
+            [
+              -0.0014822139532232985,
+              -0.03206980076751256,
+              0.9994845326069483,
+              1.8327623052208455
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "d0e2bca748d88bc100be5247da48c863a9463919077e81f4258226f0357be8b6",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "edba7d0cf1c64d2a9c8a5ebddab507a9",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984236.44697,
+          "delta_seconds": 0.49988889694213867,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984236446970.pcd.bin",
+          "raw_lidar_sha256": "a70bb660f7ab46bb739bd81c2a3622d6cd64542dbb08396cc8ca72055b6578cc",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.8335957108316541,
+              -0.5521603593567366,
+              -0.015398975229160278,
+              712.6649567507208
+            ],
+            [
+              0.5523712152619956,
+              -0.8333697642027813,
+              -0.019516061656647453,
+              1797.8632434589626
+            ],
+            [
+              -0.002057044738127085,
+              -0.024774455950428053,
+              0.9996909496936064,
+              1.839709294446481
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "0bb9adc74f74cd9ac264a96968c9b7319b0c6e2c2a52e510268daf8667cec3f5",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "a5afebb0aa5e4d7c95665788ce51ec58",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984236.946289,
+          "delta_seconds": 0.49931907653808594,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984236946289.pcd.bin",
+          "raw_lidar_sha256": "63bce272a6ba43028e9f7ef80f4522d05acfb66ae56c18f2263c6729ca9e13bd",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.8065386188938456,
+              -0.5908555305318385,
+              -0.019626468677455308,
+              711.3109540654738
+            ],
+            [
+              0.5911737260711313,
+              -0.8062527914142136,
+              -0.021680911880339736,
+              1796.0206603271884
+            ],
+            [
+              -0.0030136084653297973,
+              -0.029089145341997996,
+              0.99957227842077,
+              1.8356185728751353
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "52b815c5037d904dabffd8fb70880661639754bcdb7d68cd99c6fb7cf839e04a",
+          "roundtrip_max_abs_m": 6.821210263296962e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "5b7cb170eee6468aa1fdbd3abcf63c5a",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984237.446737,
+          "delta_seconds": 0.5004479885101318,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984237446737.pcd.bin",
+          "raw_lidar_sha256": "e27754f414af11b3dbc0a7ac2061d92a2882b96f27556157720b74c445005d74",
+          "raw_points": 34752,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.7898500499892511,
+              -0.6126119902520446,
+              -0.029042175046091835,
+              709.8392410282877
+            ],
+            [
+              0.6132785695630651,
+              -0.7893323256381021,
+              -0.029049540743830038,
+              1794.1307079676824
+            ],
+            [
+              -0.005127830599734937,
+              -0.040755724777946256,
+              0.9991559819423423,
+              1.8243756431043774
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "7aedb216bb9fd1666247b6980832350df24a4545474dc1a331f45b780c40f279",
+          "roundtrip_max_abs_m": 6.821210263296962e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "d8251bbc2105497ab8ec80827d4429aa",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984237.947155,
+          "delta_seconds": 0.500417947769165,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984237947155.pcd.bin",
+          "raw_lidar_sha256": "28eb4b5d88c310d68d669b72fcef3f7ab22b02a6151a7dbb605ab7b1341e30e9",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.7736207226752163,
+              -0.632660519775671,
+              -0.03537858341784734,
+              708.3378353167334
+            ],
+            [
+              0.6336054347780711,
+              -0.7730151757673918,
+              -0.03149112657559008,
+              1792.3093576588108
+            ],
+            [
+              -0.007424989371514319,
+              -0.04677825082756214,
+              0.9988777026154635,
+              1.818464545681005
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "7b6b26f9d7210eac205e902e87cdb5e74728c71c4382451d4acc425ca0ff814e",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "048a45dd2cf54aa5808d8ccc85731d44",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984238.447571,
+          "delta_seconds": 0.5004160404205322,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984238447571.pcd.bin",
+          "raw_lidar_sha256": "4b3fa21e5da9c5990b9c48b7365a37373d93bf8a38fa02c6c81fb7ddb7f4daa3",
+          "raw_points": 34752,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.7532288009950155,
+              -0.6565314732131359,
+              -0.04015965677394036,
+              706.7899563283626
+            ],
+            [
+              0.6576442830344452,
+              -0.7528311532964541,
+              -0.027372460949671017,
+              1790.5669844664694
+            ],
+            [
+              -0.012262558612358733,
+              -0.047028494627410995,
+              0.9988182769399837,
+              1.8181721702644487
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "b2d02fac9ab10375c5ab1da4bb775cea546c4181d0ee17607ace89f2b2fa3acc",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "858a1ece22cf45d9bc71e42336604b78",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984238.948012,
+          "delta_seconds": 0.5004410743713379,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984238948012.pcd.bin",
+          "raw_lidar_sha256": "97ba1dca44215dec7ef83d0b12a55c5a9fab3d6aeeed836a7d1b0bc8bcbc4e0e",
+          "raw_points": 34784,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.7206274790252142,
+              -0.6913883525513913,
+              -0.05175115873135732,
+              705.1597170037463
+            ],
+            [
+              0.6931979100492311,
+              -0.7199028800252668,
+              -0.034878372019137974,
+              1788.8814779029792
+            ],
+            [
+              -0.013141308045362508,
+              -0.061008108375857864,
+              0.9980507585966043,
+              1.8041849730516797
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "680f9acad1c698a49976acb8c2615fc79ea626cd4a3ff9ccb89ec0d3991c3223",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "372725a4b00e49c78d6d0b1c4a38b6e0",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984239.448435,
+          "delta_seconds": 0.5004229545593262,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984239448435.pcd.bin",
+          "raw_lidar_sha256": "e007e0e15387b005d6effc7b8b0073d8be5f01aa40ac4c305977c284fc38be1f",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.6666872397821975,
+              -0.7427250061881724,
+              -0.06235133915462893,
+              703.4553656798283
+            ],
+            [
+              0.7451730159644512,
+              -0.6659615300296577,
+              -0.034819775975765535,
+              1787.3676420262123
+            ],
+            [
+              -0.015662074895743543,
+              -0.06967643578239477,
+              0.9974466871500568,
+              1.7952909067075964
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "5d883b109a0afad01c5b67a189ae29fc89336bff93e2ca0d9c8c033eb7653f1e",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "61a7bd24f88a46c2963280d8b13ac675",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984239.948316,
+          "delta_seconds": 0.4998810291290283,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984239948316.pcd.bin",
+          "raw_lidar_sha256": "fab091f551ebbdf0ec41203783380746c9462f90237057b5250bfd8101233c9a",
+          "raw_points": 34688,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.5887844070053502,
+              -0.8060580699602803,
+              -0.06002757632344094,
+              701.7220259476098
+            ],
+            [
+              0.8082054379906868,
+              -0.5881719843987501,
+              -0.029286289808022448,
+              1786.103418931854
+            ],
+            [
+              -0.011700088445853664,
+              -0.06575792439200928,
+              0.9977670085295538,
+              1.7993742434585085
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "13ffc95020c371818206a2494f446f0088f4500715216f5c9ae8b363bfc80735",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "609d5177362340458a3bfd4949cd1e64",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984240.448191,
+          "delta_seconds": 0.4998748302459717,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984240448191.pcd.bin",
+          "raw_lidar_sha256": "7feedef9cc6c9f9e48bd5074744368cc6dd31c4767eb9626a36f45e06b00f05d",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.4620779947335065,
+              -0.8842762130317859,
+              -0.06737585509085929,
+              699.8405299787138
+            ],
+            [
+              0.8868292669596705,
+              -0.4610985309335631,
+              -0.030364387605920827,
+              1785.1210692716522
+            ],
+            [
+              -0.004216402119594879,
+              -0.0737815955172626,
+              0.9972655103411991,
+              1.791161251513786
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "14c916d7781fa181fccf7ab9b2d93733af87769888702ce793056deb416e1069",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "b1303058fa624645b753d7283d70de45",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984240.947518,
+          "delta_seconds": 0.4993271827697754,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984240947518.pcd.bin",
+          "raw_lidar_sha256": "4bfdb3d4cf6c18d4fcffebd5695ec063d460221322b9fda21f94dc0d4be7b7a4",
+          "raw_points": 34688,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.2902103627121158,
+              -0.9545244260832381,
+              -0.06827199561289943,
+              697.9017499375093
+            ],
+            [
+              0.9569497500326507,
+              -0.28984056075371045,
+              -0.015479833798284142,
+              1784.5556961788534
+            ],
+            [
+              -0.005012114020046551,
+              -0.06982527731731764,
+              0.9975466452054311,
+              1.7952481082882221
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "b70be6c32cb9f28c854716f2813c10a9c8f14350439f957cf511619676b97cbf",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "a19a80c905674faab7203a3a4e0f5246",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984241.447959,
+          "delta_seconds": 0.5004408359527588,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984241447959.pcd.bin",
+          "raw_lidar_sha256": "52565e9bbbeb4cb2296d7c3b3e8544d2281c881924d34a6c21bb765311760b8f",
+          "raw_points": 34752,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.09831084085097655,
+              -0.9936472910744988,
+              -0.05477261643818226,
+              695.9844163738586
+            ],
+            [
+              0.9951468660919773,
+              -0.09839358554360468,
+              -0.0011904751944874386,
+              1784.3936156450645
+            ],
+            [
+              -0.0042063616688635015,
+              -0.05462383421349731,
+              0.9984981438427049,
+              1.8106768642487936
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "962881c1a8d16967a18f23fa06cdaa2101ce5e5ea73f9367cd098e454303a99d",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "b6c420c3a5bd4a219b1cb82ee5ea0aa7",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984241.947812,
+          "delta_seconds": 0.49985313415527344,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984241947812.pcd.bin",
+          "raw_lidar_sha256": "6fe5454321744249c49d35e95de7d0b1c28bbb5eb8cf8455e391a342a1866571",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              0.14193698963239013,
+              -0.9888226279097286,
+              -0.04564757942969543,
+              694.0567995163585
+            ],
+            [
+              0.9898643386970368,
+              0.14156347650139878,
+              0.011330185202051181,
+              1784.677178328806
+            ],
+            [
+              -0.004741513468254747,
+              -0.04679308340485261,
+              0.9988933503610353,
+              1.8184563733431653
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "0d3135b24fad8f9ede904c5812437a7e0b7fde4daea4bde2942d156fbe84b490",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "8092909473464f80b9f791a4d31ddcb8",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984242.44773,
+          "delta_seconds": 0.49991798400878906,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984242447730.pcd.bin",
+          "raw_lidar_sha256": "3263d3142792dbcfd44cffc86a74b0b3063cedb43980876ea4cddd2492a6576e",
+          "raw_points": 34688,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              0.3888963075516008,
+              -0.9209246782903259,
+              -0.02563979111835982,
+              692.1640355911179
+            ],
+            [
+              0.9212749163918622,
+              0.3886374062854793,
+              0.014611463405996818,
+              1785.4790523426705
+            ],
+            [
+              -0.003491475318577653,
+              -0.029303640585389222,
+              0.9995644582759756,
+              1.8354154804841978
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "0c33b839283a430b0bd6f6dbf6fe7ecc7872fc466e56960fd85e17c4300b00fa",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "e174cb43655f49dab7ffa27b973670e3",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984242.947023,
+          "delta_seconds": 0.49929285049438477,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984242947023.pcd.bin",
+          "raw_lidar_sha256": "ec262898d86100b2d23682518492f4f6090ce141b1141d29a668085e77424c3a",
+          "raw_points": 34688,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              0.5771711576131509,
+              -0.8165411696614417,
+              -0.011574673534084378,
+              690.3737395460978
+            ],
+            [
+              0.8166192172227914,
+              0.5770660811251181,
+              0.01130451579389636,
+              1786.7298363763873
+            ],
+            [
+              -0.002551251052187681,
+              -0.01597674130803265,
+              0.9998691088613777,
+              1.8479533309929301
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "aaeb732a82ebbc47c98299dda97e8012aa7924dcd305ff73a25f1c32abf34526",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "6ff9723a60bf4e14b328b3b19f04dc32",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984243.446332,
+          "delta_seconds": 0.49930906295776367,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984243446332.pcd.bin",
+          "raw_lidar_sha256": "e75fc7d95d0970878079476fb1b3a9742fddc2c97fd25d8996bdaf2ea7a891ff",
+          "raw_points": 34688,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              0.6638656918295136,
+              -0.7478462006772629,
+              -0.002898852239278127,
+              688.6566807139135
+            ],
+            [
+              0.7478486120589762,
+              0.6638465058721778,
+              0.005501825402954602,
+              1788.252815831426
+            ],
+            [
+              -0.002190126294304727,
+              -0.005820375751165851,
+              0.9999806630995078,
+              1.8572868867858585
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "c3dacc7681ca93ce7fde3326acf60196ee00fd8a8a6667638a3f49083a35392f",
+          "roundtrip_max_abs_m": 6.821210263296962e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "06be0e3b665c44fa8d17d9f4770bdf9c",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984243.946219,
+          "delta_seconds": 0.49988698959350586,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984243946219.pcd.bin",
+          "raw_lidar_sha256": "4d2dd04c72d8968f0271864811c3569da01f6ca3dd25b674998e8cba03a92041",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              0.6850322969301669,
+              -0.728509254749906,
+              0.002240068372852115,
+              686.8941432983673
+            ],
+            [
+              0.7284979171272297,
+              0.685034746731346,
+              0.0042638611618741225,
+              1789.945134137179
+            ],
+            [
+              -0.004640786987851637,
+              -0.0012889974616646094,
+              0.9999884007235664,
+              1.8613962139245717
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "42eb0b0debf599714ee706ca68818a55774f3a4607340756327394af6f5aeef3",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "9150678870764c1b87a649a25939c61b",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984244.44664,
+          "delta_seconds": 0.5004210472106934,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984244446640.pcd.bin",
+          "raw_lidar_sha256": "f035b1659835ef0845c928c84f9835ffb61f4b4f109428f5abc42149b5d5d481",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              0.6846801900414446,
+              -0.7288362322123124,
+              0.0032838969797873187,
+              685.0305156605472
+            ],
+            [
+              0.7288219331128011,
+              0.6846876237543664,
+              0.004631165222804313,
+              1791.7116735260497
+            ],
+            [
+              -0.005623804631486104,
+              -0.0007774909399111025,
+              0.9999838840347914,
+              1.8618563531898191
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "9f490fa9b843a6ef3325fb8468ee99e8d48755fe308b6568ddbcda13b267b53e",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "8573a885a7cb41d185c05029eeb9a54e",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984244.946513,
+          "delta_seconds": 0.49987292289733887,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984244946513.pcd.bin",
+          "raw_lidar_sha256": "423e5421daeaee8f93c54cedcfc3a9936466b07b285ef4f2811e4f431b2d45eb",
+          "raw_points": 34752,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              0.6848063372037214,
+              -0.7287191385385656,
+              0.002949178399697331,
+              683.1442512163042
+            ],
+            [
+              0.7287234916737091,
+              0.6848077311348357,
+              -0.000666378898133653,
+              1793.5068012310808
+            ],
+            [
+              -0.001534017112020362,
+              0.002605476073416879,
+              0.9999954291325188,
+              1.8648820690650154
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "0b17c1c057cf84eedf60527273c172daaa21a76b0db43d25c3b35630d17df761",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "55c258972acb4300a3a6077a531ab050",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984245.447134,
+          "delta_seconds": 0.5006210803985596,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984245447134.pcd.bin",
+          "raw_lidar_sha256": "878517eed47bc2b19d49e19b51ddf3e3f954ca4bd1d8586bf2473dfae79765a8",
+          "raw_points": 34752,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              0.6821987302655532,
+              -0.7311653427804264,
+              0.001460801440281146,
+              681.1684078624252
+            ],
+            [
+              0.7311587253104945,
+              0.6821992236261919,
+              0.00333731720893312,
+              1795.3769874158013
+            ],
+            [
+              -0.0034366882894684174,
+              -0.0012086358434198613,
+              0.9999933641644823,
+              1.8614669291369206
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "35f2890ef210ed76812f5f6eb3b88864df76d158ecc933cee9caa41125689154",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "44237858a539457da65822bfcf58c414",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984245.947391,
+          "delta_seconds": 0.5002570152282715,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984245947391.pcd.bin",
+          "raw_lidar_sha256": "a40c645b6bf9c143c7cd1fa8498271a82fbb99d5b667bfa41136bf3fab024b31",
+          "raw_points": 34752,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              0.6802849028446486,
+              -0.7329450994303087,
+              0.001982973207458976,
+              679.1267911280424
+            ],
+            [
+              0.7329424419993117,
+              0.6802877842554318,
+              0.001976691407504085,
+              1797.2970923420519
+            ],
+            [
+              -0.0027977987297562712,
+              0.00010869190298641584,
+              0.9999960802464868,
+              1.862650352550793
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "f339bef543105733c4b593f4655cf497a0a85a5d244194ee39d2b4327f56029f",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "8cd36e9531fb4eba8e6ac1d666c4641c",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984246.447815,
+          "delta_seconds": 0.5004239082336426,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984246447815.pcd.bin",
+          "raw_lidar_sha256": "5adb4bce60dbff00bdb647f7b9d43eba4c79a85a2a8b7d2253a3d2c7074f1f10",
+          "raw_points": 34784,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              0.6877272325029684,
+              -0.7259690273320533,
+              0.00047437154253657243,
+              677.054690480404
+            ],
+            [
+              0.7259690000958388,
+              0.6877273760330905,
+              0.00025914182948311507,
+              1799.2639067510775
+            ],
+            [
+              -0.0005143672381043539,
+              0.00016616014119302108,
+              0.9999998539085652,
+              1.8626886271772707
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "6d550f12216165a47610c9ef4654004b623bca342cae1eeef0a122c907c8e766",
+          "roundtrip_max_abs_m": 6.821210263296962e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "7bebe3c9be714f02837f8617c56df122",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984246.948247,
+          "delta_seconds": 0.500432014465332,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984246948247.pcd.bin",
+          "raw_lidar_sha256": "6d542d74d19034a8660315b5d77bcd69acc69c014d92033e112206df899938b8",
+          "raw_points": 34784,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              0.6956464835095705,
+              -0.718370734073348,
+              0.004411168517676839,
+              674.9953361815824
+            ],
+            [
+              0.718379165380721,
+              0.6956515835326482,
+              -0.0004990745637322332,
+              1801.2885022673102
+            ],
+            [
+              -0.002710115803845595,
+              0.0035160710233517987,
+              0.9999901462098972,
+              1.8657012260166073
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "8a0cb27229ca6332096b25a69cbd06736a558ddb75f81b3e46a76cf260f98620",
+          "roundtrip_max_abs_m": 6.821210263296962e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "4b894442c95141f9affd731d9da7b43c",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984247.449248,
+          "delta_seconds": 0.5010011196136475,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984247449248.pcd.bin",
+          "raw_lidar_sha256": "93a0ea0165037533b4c728e6aeb6b95f6ea3040d6ffa0f0c67ce4d18044a5466",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              0.6999343735230623,
+              -0.7142007685558064,
+              0.003022408836222115,
+              672.8129489524399
+            ],
+            [
+              0.7142045302360244,
+              0.6999370173679904,
+              -0.00024639062670157863,
+              1803.451168483889
+            ],
+            [
+              -0.0019395234511367506,
+              0.002331075351997551,
+              0.9999954021576727,
+              1.8646389991685735
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "0e86049528c79e4ef43f9673d33d746569fdd6cec818a79f20d6e41d6a3d3c05",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "e00dc15130dc44e796687baadd076ae4",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984247.949081,
+          "delta_seconds": 0.4998328685760498,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984247949081.pcd.bin",
+          "raw_lidar_sha256": "3655690234a0163b0f2c1bf474762db299c43b60eae2cfa6fcd190cb5bdea115",
+          "raw_points": 34688,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              0.7036183792946529,
+              -0.7105770701528452,
+              0.0011847749853285145,
+              670.666643964713
+            ],
+            [
+              0.7105750458442008,
+              0.7036192734334354,
+              0.0017384695905920643,
+              1805.6134838049054
+            ],
+            [
+              -0.002068947142591682,
+              -0.0003813476162705526,
+              0.9999977870134104,
+              1.862206546947554
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "4495cbc6dac287991d39787f15161e9dd96e22f170663c1a1243235947b0fe6e",
+          "roundtrip_max_abs_m": 6.821210263296962e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "e63b83b436a0479db7362338cdfab118",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984248.448966,
+          "delta_seconds": 0.49988508224487305,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984248448966.pcd.bin",
+          "raw_lidar_sha256": "e09f1158b7106f5d6426f99f2673601fa4f08709f96872e722140b4a9adbfe62",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              0.7063000457300691,
+              -0.7078978422944593,
+              0.004570588206148958,
+              668.5570972023505
+            ],
+            [
+              0.7078920741570671,
+              0.7063140111548198,
+              0.0030543398621192333,
+              1807.7455771408886
+            ],
+            [
+              -0.005390431087250145,
+              0.0010782027810786222,
+              0.9999848902515756,
+              1.8635241245462923
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "4adc50f36459f086c8f9ec3cffdcca5878f140344fc898f8ba9c4b80da2f7ee4",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "c567f9b8e9f34817acdc9c49d791c557",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984248.948287,
+          "delta_seconds": 0.49932098388671875,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984248948287.pcd.bin",
+          "raw_lidar_sha256": "dc2c4debf2750c5dcb45c9f97fb10455b4158ca647abffcac5907c28b18866b3",
+          "raw_points": 34688,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              0.707443748054367,
+              -0.7067384165841166,
+              0.006644837316678677,
+              666.4568685867845
+            ],
+            [
+              0.7067569355178611,
+              0.7074561532023222,
+              -0.0006522220286499514,
+              1809.868629477703
+            ],
+            [
+              -0.0042399806829233905,
+              0.005157695255462294,
+              0.999977710123311,
+              1.8671673047098274
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "bec7474d0c60c79a40efdf634d05c1e061f736e342493e015c7c3b84a6e5a53b",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "8e352d4a6c6f40c8ad4f10a3d2c3f158",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984249.448168,
+          "delta_seconds": 0.4998810291290283,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984249448168.pcd.bin",
+          "raw_lidar_sha256": "d633e21878c051b4198af5d7a41cef9a0c0d6f3bed25dab30b2e3e24b13f7358",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              0.7008159815614544,
+              -0.7133269269417561,
+              0.004653524243452504,
+              664.4233812185108
+            ],
+            [
+              0.7133380817288459,
+              0.700819027977523,
+              -0.0012129221114342177,
+              1811.9076717899911
+            ],
+            [
+              -0.0023960683345971494,
+              0.004169571257185454,
+              0.999988436699178,
+              1.866282631224574
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "caab83acdfb10c34c979ed90a112f76b82feab959b547e51e38792d3beda863c",
+          "roundtrip_max_abs_m": 6.821210263296962e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "841dd6709e9b4d7c9d6bf888f1fe6d7e",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984249.948039,
+          "delta_seconds": 0.49987101554870605,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984249948039.pcd.bin",
+          "raw_lidar_sha256": "bf9dcbc1444960da0e0d84a6662bf1ff7692b1dd1087defcd1740c206ec55b0e",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              0.6770438002209184,
+              -0.7359356166882522,
+              0.003234296229354349,
+              662.4698751702715
+            ],
+            [
+              0.735939105520088,
+              0.6770477141845566,
+              0.00016026153524923217,
+              1813.769346976034
+            ],
+            [
+              -0.002307715040855143,
+              0.0022717409951636507,
+              0.9999947568083251,
+              1.8645877555812551
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "bf87c3f3d00b67bd079989799724dd1bdf403d1b6ac7e0c2127dce9ed6b1537f",
+          "roundtrip_max_abs_m": 6.821210263296962e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "e54b784a608644a2804fcf800c7499f7",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984250.447364,
+          "delta_seconds": 0.4993250370025635,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984250447364.pcd.bin",
+          "raw_lidar_sha256": "d312368a12870c595fadf2b1d99dd305da4fec5f93d636bb7cc6cc21883fa4c5",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              0.6277508227949968,
+              -0.7784017202267023,
+              0.004434684692046624,
+              660.5978210358422
+            ],
+            [
+              0.7784124968210908,
+              0.6277515791529686,
+              -0.0013927181021760639,
+              1815.3277584622158
+            ],
+            [
+              -0.001699786151953049,
+              0.004326293918312796,
+              0.9999891968956328,
+              1.8664186933816425
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "0c6f6f1069abba193dc870c7dfea722a783bb4f636f3fcc7dffb6d61b483be73",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "a1289b27ca1d41deb6fc982be9a3d03c",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984250.947236,
+          "delta_seconds": 0.49987196922302246,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984250947236.pcd.bin",
+          "raw_lidar_sha256": "c1719c0bc62124720ce108af3cdf81fc94a8fee714c626ed80e7e67f047952c4",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              0.5423376917495314,
+              -0.8401022198259643,
+              0.009903956344721347,
+              658.7207152731968
+            ],
+            [
+              0.8401605407889798,
+              0.5423042699256633,
+              -0.006028641767658022,
+              1816.5873960478316
+            ],
+            [
+              -0.0003062824833547249,
+              0.011590472979188002,
+              0.9999327813044036,
+              1.8728305415873774
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "21235400210528d494255beb5a51201295177047cc30069af49fc5579cd98cd8",
+          "roundtrip_max_abs_m": 6.821210263296962e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "e6e877f31dd447199b56cae07f86daad",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984251.447166,
+          "delta_seconds": 0.49992990493774414,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984251447166.pcd.bin",
+          "raw_lidar_sha256": "cd3e7e82eb881908be233469dc4abc4da4d47f1a11897c24e54a77d3786840a6",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              0.4210940732630611,
+              -0.9064235086765057,
+              0.03280555412266489,
+              656.9352859923242
+            ],
+            [
+              0.907000104022493,
+              0.4210312870457402,
+              -0.009136007431734601,
+              1817.470458377302
+            ],
+            [
+              -0.005531072762946787,
+              0.03360175958456334,
+              0.9994199962913045,
+              1.8917069198245828
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "6ad602e1b023c4849512ff1979dba1a638fd5eaff8625138e61652782f4c2442",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "cb4e6195faad467094fbd4d0a9e960e9",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984251.94701,
+          "delta_seconds": 0.4998440742492676,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984251947010.pcd.bin",
+          "raw_lidar_sha256": "958a57939b85c65f73628e64c48fbfe7dea2fc95880166e00baaba31b6b793ed",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              0.248029355111392,
+              -0.967410354365816,
+              0.05097690917300099,
+              655.0714707567857
+            ],
+            [
+              0.9687352534381553,
+              0.24799545369235482,
+              -0.007089689276330056,
+              1818.0080310594822
+            ],
+            [
+              -0.005783402903034359,
+              0.05114158008634927,
+              0.9986746672651367,
+              1.9060865734425558
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "6973b025e6457ce4ea0a52ac088235af96de108c01b2d332d3a44c71367af335",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "7f594234e8034228b1a7d727f1981e09",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984252.44689,
+          "delta_seconds": 0.4998800754547119,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984252446890.pcd.bin",
+          "raw_lidar_sha256": "3b90517979d69acaaf0ba3bc36a1498516a8ea110fa822f90823293735c50101",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              0.038811793486946786,
+              -0.9976708796254469,
+              0.05609332075846596,
+              653.1933497014621
+            ],
+            [
+              0.9992276443480936,
+              0.039095066819324426,
+              0.003961126222519195,
+              1818.1430409544862
+            ],
+            [
+              -0.0061448724058981805,
+              0.05589625835221987,
+              0.9984176725425766,
+              1.9098848666955264
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "71200ba14a2255de7c0099df1de092494aac558a0d7f669b6f069eed29915b50",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "9cdbf5ff7f294549aea0a4307e5d104a",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984252.947312,
+          "delta_seconds": 0.5004220008850098,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984252947312.pcd.bin",
+          "raw_lidar_sha256": "e6c40dab155c01bcccf0d2e0c59fe11f7445b8dd4bb9bcb8a0047a76e5140055",
+          "raw_points": 34720,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.1713574825032283,
+              -0.9838283446371299,
+              0.05213829186616017,
+              651.392851681115
+            ],
+            [
+              0.9851929090074458,
+              -0.17081288428978403,
+              0.014761117913333295,
+              1817.8740426895076
+            ],
+            [
+              -0.005616514186066776,
+              0.05389570343886368,
+              0.9985307746480465,
+              1.9082926098830009
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "a9a5cf0b45cd880989a6df4b76617a3731e0e60c86b44fc9285acb290f77ec91",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        },
+        {
+          "sample_token": "b4ff30109dd14c89b24789dc5713cf8c",
+          "scene_token": "325cef682f064c55a255f2625c533b75",
+          "timestamp_seconds": 1538984253.447765,
+          "delta_seconds": 0.500452995300293,
+          "raw_lidar_path": "/home/minglei/Desktop/CAR/perception_lab/data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984253447765.pcd.bin",
+          "raw_lidar_sha256": "bed5ab2009e4196b3dea0fbcb07173329ba095ed46af225730224ced427dd579",
+          "raw_points": 34752,
+          "features": "x,y,z,intensity,ring; remission/intensity column3",
+          "sensor_to_global": [
+            [
+              -0.36574114836433225,
+              -0.9298334725385609,
+              0.04053548741560241,
+              649.7298322413154
+            ],
+            [
+              0.9307075221249048,
+              -0.36519804423572094,
+              0.020344452475392245,
+              1817.2443506734614
+            ],
+            [
+              -0.00411347216577002,
+              0.04516748646189414,
+              0.9989709592943408,
+              1.9012537111480505
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "transform_sha256": "d8df2d24ff1c6d6e006339bb5a58bf6256a50c0e828ab7cc8a0ebe59f31dc3a8",
+          "roundtrip_max_abs_m": 4.547473508864641e-13,
+          "raw_detection_count": 200
+        }
+      ]
+    }
+  ]
+}

@@ -2,9 +2,9 @@
 
 ## 当前派发任务：固定检测跟踪对照与GPU几何优化（2026-10-13）
 
-[20261013_03执行指令](instruction/20261013_03_frozen_bevfusion_tracking_gpu_optimization.md)已发布，状态为**待本地执行**。固定39/81帧BEVFusion官方格式预测和哈希，先完成OptiPMB与原生GRAE的官方跟踪对照，再按原SimpleTrack三维IoU、粗筛、同分排序及“先NMS后score过滤”语义开发TileLang GPU几何/NMS，用KernelBench任务适配验证，含搬运的完整GRAE计时与官方评价后再研究BEV pooling。
+[20261013_03执行指令](instruction/20261013_03_frozen_bevfusion_tracking_gpu_optimization.md)已发布，状态为**执行中**。固定39/81帧BEVFusion官方格式预测和哈希，先完成OptiPMB与原生GRAE的官方跟踪对照，再按原SimpleTrack三维IoU、粗筛、同分排序及“先NMS后score过滤”语义开发TileLang GPU几何/NMS，用KernelBench任务适配验证，含搬运的完整GRAE计时与官方评价后再研究BEV pooling。
 
-OptiPMB原生还需要对应帧真实LiDAR点数，不能用空点云替代；两跟踪器的辅助信息差异将在报告注明。本轮结果写入 `reports/tracking_gpu_20261013/`，当前尚无新实验指标。候选失败独立记录，原生对照与GPU优化可分别完成；已有保留方案和历史结果继续保留。
+OptiPMB原生还需要对应帧真实LiDAR点数，不能用空点云替代；两跟踪器的辅助信息差异将在报告注明。本轮结果写入 `reports/tracking_gpu_20261013/`，原生39/81帧跟踪对照已实测，见[报告](reports/tracking_gpu_20261013/report.md)；GPU优化尚未验收。候选失败独立记录，原生对照与GPU优化可分别完成；已有保留方案和历史结果继续保留。
 
 ## 保留方案与简历说明更新（2026-10-13）
 

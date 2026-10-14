@@ -1,0 +1,9 @@
+{
+  "input_family": "frozen_reference",
+  "checkpoint_sha256": "9da45f9cfce1b4949bcd92d61193b88e09fea59c37f7b0a963249aad83728395",
+  "input_manifest_sha256": "c2fd6803e52a8bbf8524832b48bad7a4767632bc94b4ed535fb4a618ec58d67a",
+  "tracking_sha256": {
+    "scene0061": "ceaf64c45d71bf7fddf7e56f55946262e31614104f9c238bf863c05bd6facb89",
+    "mini_val": "dffd9176551b2dc866807fcaf2f9ab1a0289c48fc19c49d75d69c320f17fce99"
+  }
+}

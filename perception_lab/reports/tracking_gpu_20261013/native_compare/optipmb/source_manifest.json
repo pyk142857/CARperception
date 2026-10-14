@@ -1,0 +1,551 @@
+{
+  "repository": "https://github.com/dinggh0817/OptiPMB",
+  "commit": "ed0e0467efb08fd8a96b03647b09169564a74acd",
+  "source_files": {
+    "Run_OptiPMB.py": "4b282ff6b9e6d20825c967f72f3f94d53015e5dde66ab9f88be369710417b0f7",
+    "preprocess_data.py": "171ccaf02672e18e10fb089f44a21bbdd42bf26f1b866aba4ad25dd204e34aa2",
+    "utils.py": "e900d9632442df47faa31d134ac978bf76baa1e83ccbabe968ddcc5bbd452d22",
+    "trackers/OptiPMB/OptiPMB_Tracker.py": "ba7b9bd314111c6636cff69cd7e1289167436e82f52cb7ee8910b8fe970ddd7a",
+    "trackers/OptiPMB/utils.py": "0730e5fd526d96f6d8b5367d6f6617305890f8d249e8879ea8a2af813ffbef4b",
+    "trackers/OptiPMB/nuscenes_centerpoint_config_optipmb.json": "296c1b2749bb88e16522613ce61d0f81cb0b916a37b9fea4cb3587475b518dc4",
+    "trackers/utils/mhtdaClink.py": "f84b316198f2f7c95929d1da5e4b6c76497fcc8e0172f9fa9ba79be7a81bae68",
+    "trackers/utils/murty_linux.so": "328026dcdb28865d5658f92a87928c35972f6e50915a24b2c46bdd780e9989fd"
+  },
+  "adapter_sha256": "a57ada29ba2ccadf781d510a90c8770cc8438cb3a16617b838ce996a8c493a02",
+  "python": "3.10.13 (main, Sep 11 2023, 13:44:35) [GCC 11.2.0]",
+  "executable": "/home/minglei/Desktop/CAR/perception_lab/envs/optipmb_20261013/bin/python",
+  "platform": "Linux-5.15.0-139-generic-x86_64-with-glibc2.31",
+  "packages": {
+    "numpy": "1.23.5",
+    "scipy": "1.10.1",
+    "scikit-learn": "1.7.2",
+    "powerboxes": "0.2.3",
+    "cholupdates": "0.0.1a7",
+    "opencv-python": "4.8.1.78"
+  },
+  "config_label": "Author CenterPoint default applied unchanged to frozen BEVFusion detections",
+  "config": {
+    "common": {
+      "x_range": [
+        -50,
+        50
+      ],
+      "y_range": [
+        -50,
+        50
+      ],
+      "polar_meas": false,
+      "MBM_exist_prob_thld": 1e-06
+    },
+    "bicycle": {
+      "keep_score_thld": 0.15,
+      "nms_iou_thld": 0.1,
+      "nms_delta_score": 0,
+      "nms_max_distance": 10,
+      "prob_survive": 0.99,
+      "prob_detect": 0.8,
+      "enable_P_d_scaling": true,
+      "P_d_scaling_pt": 10,
+      "min_P_d_scaling": 0.5,
+      "supress_static_object": false,
+      "enhance_static_object": false,
+      "supress_move_object": false,
+      "P_s_scaling": 4,
+      "enable_group_tracking": false,
+      "max_group_distance": 2,
+      "acceleration_deviation": 1,
+      "turn_rate_noise_deviation": 0.1,
+      "jerk_deviation": 0.1,
+      "model": [
+        "CTRA"
+      ],
+      "init_model_prob": [
+        1
+      ],
+      "transition_prob_matrix": [
+        [
+          1
+        ]
+      ],
+      "meas_deviation": [
+        0.25,
+        0.25,
+        1,
+        1,
+        0.5
+      ],
+      "MBM_gating_euclidean_distance": 3,
+      "PPP_gating_euclidean_distance": 2,
+      "used_meas_eucl_dist_thld": 1,
+      "used_meas_likelihood_thld": 0.5,
+      "PPP_max_survive_step": 3,
+      "likelihood_type": "xy",
+      "clutter_rate": 0.5,
+      "lambda_birth": 2,
+      "lambda_birth_undetected": 1,
+      "adaptive_birth_lambda_max": 100,
+      "enable_score_scaling": true,
+      "MBM_birth_std": [
+        1,
+        1,
+        5,
+        1,
+        0.5,
+        1
+      ],
+      "PPP_birth_std": [
+        1,
+        1,
+        5,
+        1,
+        0.5,
+        1
+      ],
+      "init_with_velocity": true,
+      "confidence_score_thld": 0.17,
+      "terminate_exist_prob_thld": 0.95,
+      "max_extract_unmatched_times": 3,
+      "extract_exist_prob_thld": 0.7
+    },
+    "bus": {
+      "keep_score_thld": 0,
+      "nms_iou_thld": 0.1,
+      "nms_delta_score": 0,
+      "nms_max_distance": 20,
+      "prob_survive": 0.99,
+      "prob_detect": 0.9,
+      "enable_P_d_scaling": true,
+      "P_d_scaling_pt": 10,
+      "min_P_d_scaling": 0.5,
+      "supress_static_object": false,
+      "enhance_static_object": false,
+      "supress_move_object": false,
+      "P_s_scaling": 4,
+      "enable_group_tracking": false,
+      "max_group_distance": 0,
+      "acceleration_deviation": 1,
+      "turn_rate_noise_deviation": 0.15,
+      "jerk_deviation": 0.5,
+      "model": [
+        "CTRA"
+      ],
+      "init_model_prob": [
+        1
+      ],
+      "transition_prob_matrix": [
+        [
+          1
+        ]
+      ],
+      "meas_deviation": [
+        0.5,
+        0.5,
+        1,
+        1,
+        0.5
+      ],
+      "MBM_gating_euclidean_distance": 10,
+      "PPP_gating_euclidean_distance": 3,
+      "used_meas_eucl_dist_thld": 1,
+      "used_meas_likelihood_thld": 0.8,
+      "PPP_max_survive_step": 3,
+      "likelihood_type": "xyv",
+      "clutter_rate": 0.2,
+      "lambda_birth": 2,
+      "lambda_birth_undetected": 5,
+      "adaptive_birth_lambda_max": 100,
+      "enable_score_scaling": true,
+      "MBM_birth_std": [
+        1,
+        1,
+        10,
+        0.5,
+        0.5,
+        1
+      ],
+      "PPP_birth_std": [
+        1,
+        1,
+        10,
+        0.5,
+        0.5,
+        1
+      ],
+      "init_with_velocity": true,
+      "confidence_score_thld": 0.3,
+      "terminate_exist_prob_thld": 0.7,
+      "max_extract_unmatched_times": 2,
+      "extract_exist_prob_thld": 0.7
+    },
+    "car": {
+      "keep_score_thld": 0.1,
+      "nms_iou_thld": 0.1,
+      "nms_delta_score": 0,
+      "nms_max_distance": 20,
+      "prob_survive": 0.99,
+      "prob_detect": 0.9,
+      "enable_P_d_scaling": true,
+      "P_d_scaling_pt": 10,
+      "min_P_d_scaling": 0.5,
+      "supress_static_object": false,
+      "enhance_static_object": true,
+      "supress_move_object": false,
+      "P_s_scaling": 4,
+      "enable_group_tracking": false,
+      "max_group_distance": 0,
+      "acceleration_deviation": 1,
+      "turn_rate_noise_deviation": 0.15,
+      "jerk_deviation": 0.5,
+      "model": [
+        "CTRA"
+      ],
+      "init_model_prob": [
+        1
+      ],
+      "transition_prob_matrix": [
+        [
+          1
+        ]
+      ],
+      "meas_deviation": [
+        0.5,
+        0.5,
+        1,
+        1,
+        0.5
+      ],
+      "MBM_gating_euclidean_distance": 10,
+      "PPP_gating_euclidean_distance": 3,
+      "used_meas_eucl_dist_thld": 1,
+      "used_meas_likelihood_thld": 0.5,
+      "PPP_max_survive_step": 3,
+      "likelihood_type": "xyv",
+      "clutter_rate": 1,
+      "lambda_birth": 2,
+      "lambda_birth_undetected": 2,
+      "adaptive_birth_lambda_max": 2,
+      "enable_score_scaling": true,
+      "MBM_birth_std": [
+        1,
+        1,
+        10,
+        0.5,
+        0.5,
+        1
+      ],
+      "PPP_birth_std": [
+        1,
+        1,
+        10,
+        0.5,
+        0.5,
+        1
+      ],
+      "init_with_velocity": true,
+      "confidence_score_thld": 0.25,
+      "terminate_exist_prob_thld": 0.8,
+      "max_extract_unmatched_times": 2,
+      "extract_exist_prob_thld": 0.7
+    },
+    "motorcycle": {
+      "keep_score_thld": 0.16,
+      "nms_iou_thld": 0.1,
+      "nms_delta_score": 0,
+      "nms_max_distance": 10,
+      "prob_survive": 0.99,
+      "prob_detect": 0.8,
+      "enable_P_d_scaling": true,
+      "P_d_scaling_pt": 10,
+      "min_P_d_scaling": 0.5,
+      "supress_static_object": false,
+      "enhance_static_object": false,
+      "supress_move_object": false,
+      "P_s_scaling": 4,
+      "enable_group_tracking": false,
+      "max_group_distance": 0,
+      "acceleration_deviation": 1,
+      "turn_rate_noise_deviation": 0.1,
+      "jerk_deviation": 0.2,
+      "model": [
+        "CTRA"
+      ],
+      "init_model_prob": [
+        1
+      ],
+      "transition_prob_matrix": [
+        [
+          1
+        ]
+      ],
+      "meas_deviation": [
+        0.5,
+        0.5,
+        1,
+        1,
+        0.5
+      ],
+      "MBM_gating_euclidean_distance": 4,
+      "PPP_gating_euclidean_distance": 2,
+      "used_meas_eucl_dist_thld": 1,
+      "used_meas_likelihood_thld": 0.9,
+      "PPP_max_survive_step": 2,
+      "likelihood_type": "xyv",
+      "clutter_rate": 0.5,
+      "lambda_birth": 2,
+      "lambda_birth_undetected": 1,
+      "adaptive_birth_lambda_max": 100,
+      "enable_score_scaling": true,
+      "MBM_birth_std": [
+        1,
+        1,
+        5,
+        0.5,
+        0.5,
+        1
+      ],
+      "PPP_birth_std": [
+        1,
+        1,
+        5,
+        0.5,
+        0.5,
+        1
+      ],
+      "init_with_velocity": true,
+      "confidence_score_thld": 0.18,
+      "terminate_exist_prob_thld": 0.95,
+      "max_extract_unmatched_times": 2,
+      "extract_exist_prob_thld": 0.7
+    },
+    "pedestrian": {
+      "keep_score_thld": 0.2,
+      "nms_iou_thld": 0.1,
+      "nms_delta_score": 0,
+      "nms_max_distance": 5,
+      "prob_survive": 0.99,
+      "prob_detect": 0.8,
+      "enable_P_d_scaling": true,
+      "P_d_scaling_pt": 10,
+      "min_P_d_scaling": 0.5,
+      "supress_static_object": false,
+      "enhance_static_object": false,
+      "supress_move_object": false,
+      "P_s_scaling": 4,
+      "enable_group_tracking": true,
+      "max_group_distance": 2,
+      "acceleration_deviation": 1,
+      "turn_rate_noise_deviation": 0.1,
+      "jerk_deviation": 0.1,
+      "model": [
+        "CTRA"
+      ],
+      "init_model_prob": [
+        1
+      ],
+      "transition_prob_matrix": [
+        [
+          1
+        ]
+      ],
+      "meas_deviation": [
+        0.2,
+        0.2,
+        1,
+        1,
+        0.5
+      ],
+      "MBM_gating_euclidean_distance": 3,
+      "PPP_gating_euclidean_distance": 2,
+      "used_meas_eucl_dist_thld": 0.5,
+      "used_meas_likelihood_thld": 0.9,
+      "PPP_max_survive_step": 2,
+      "likelihood_type": "xyv",
+      "clutter_rate": 0.5,
+      "lambda_birth": 2,
+      "lambda_birth_undetected": 1,
+      "adaptive_birth_lambda_max": 2,
+      "enable_score_scaling": false,
+      "MBM_birth_std": [
+        1,
+        1,
+        5,
+        1,
+        1,
+        0.5
+      ],
+      "PPP_birth_std": [
+        1,
+        1,
+        5,
+        1,
+        1,
+        0.5
+      ],
+      "init_with_velocity": true,
+      "confidence_score_thld": 0.2,
+      "terminate_exist_prob_thld": 0.8,
+      "max_extract_unmatched_times": 2,
+      "extract_exist_prob_thld": 0.7
+    },
+    "trailer": {
+      "keep_score_thld": 0.1,
+      "nms_iou_thld": 0.1,
+      "nms_delta_score": 0,
+      "nms_max_distance": 40,
+      "prob_survive": 0.99,
+      "prob_detect": 0.9,
+      "enable_P_d_scaling": true,
+      "P_d_scaling_pt": 10,
+      "min_P_d_scaling": 0.5,
+      "supress_static_object": false,
+      "enhance_static_object": true,
+      "supress_move_object": false,
+      "P_s_scaling": 4,
+      "enable_group_tracking": false,
+      "max_group_distance": 0,
+      "acceleration_deviation": 1,
+      "turn_rate_noise_deviation": 0.15,
+      "jerk_deviation": 0.2,
+      "model": [
+        "CTRA"
+      ],
+      "init_model_prob": [
+        1
+      ],
+      "transition_prob_matrix": [
+        [
+          1
+        ]
+      ],
+      "meas_deviation": [
+        1,
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "MBM_gating_euclidean_distance": 10,
+      "PPP_gating_euclidean_distance": 3,
+      "used_meas_eucl_dist_thld": 2,
+      "used_meas_likelihood_thld": 0.9,
+      "PPP_max_survive_step": 2,
+      "likelihood_type": "xyv",
+      "clutter_rate": 0.5,
+      "lambda_birth": 2,
+      "lambda_birth_undetected": 2,
+      "adaptive_birth_lambda_max": 100,
+      "enable_score_scaling": false,
+      "MBM_birth_std": [
+        1,
+        1,
+        10,
+        0.5,
+        0.5,
+        1
+      ],
+      "PPP_birth_std": [
+        1,
+        1,
+        10,
+        0.5,
+        0.5,
+        1
+      ],
+      "init_with_velocity": true,
+      "confidence_score_thld": 0.15,
+      "terminate_exist_prob_thld": 0.8,
+      "max_extract_unmatched_times": 2,
+      "extract_exist_prob_thld": 0.7
+    },
+    "truck": {
+      "keep_score_thld": 0,
+      "nms_iou_thld": 0.1,
+      "nms_delta_score": 0,
+      "nms_max_distance": 20,
+      "prob_survive": 0.99,
+      "prob_detect": 0.9,
+      "enable_P_d_scaling": true,
+      "P_d_scaling_pt": 10,
+      "min_P_d_scaling": 0.5,
+      "supress_static_object": false,
+      "enhance_static_object": true,
+      "supress_move_object": false,
+      "P_s_scaling": 4,
+      "enable_group_tracking": false,
+      "max_group_distance": 0,
+      "acceleration_deviation": 1,
+      "turn_rate_noise_deviation": 0.15,
+      "jerk_deviation": 0.5,
+      "model": [
+        "CTRA"
+      ],
+      "init_model_prob": [
+        1
+      ],
+      "transition_prob_matrix": [
+        [
+          1
+        ]
+      ],
+      "meas_deviation": [
+        0.5,
+        0.5,
+        1,
+        1,
+        0.5
+      ],
+      "MBM_gating_euclidean_distance": 10,
+      "PPP_gating_euclidean_distance": 2,
+      "used_meas_eucl_dist_thld": 2,
+      "used_meas_likelihood_thld": 0.9,
+      "PPP_max_survive_step": 2,
+      "likelihood_type": "xyv",
+      "clutter_rate": 1,
+      "lambda_birth": 2,
+      "lambda_birth_undetected": 2,
+      "adaptive_birth_lambda_max": 100,
+      "enable_score_scaling": false,
+      "MBM_birth_std": [
+        1,
+        1,
+        10,
+        0.5,
+        0.5,
+        1
+      ],
+      "PPP_birth_std": [
+        1,
+        1,
+        10,
+        0.5,
+        0.5,
+        1
+      ],
+      "init_with_velocity": true,
+      "confidence_score_thld": 0.15,
+      "terminate_exist_prob_thld": 0.9,
+      "max_extract_unmatched_times": 2,
+      "extract_exist_prob_thld": 0.5
+    }
+  },
+  "weights": "none",
+  "GT_reader": "no GT tables, annotation boxes or instance IDs loaded; packets projected to sensor/sample/scene fields",
+  "source_format_measurements_ast_sha256": "cd95ed10b9525bef252f000afb6dfd5e4fed62eeb03d61f67158e02840b715f0",
+  "git_head_verified": "ed0e0467efb08fd8a96b03647b09169564a74acd",
+  "git_tracked_modifications": "",
+  "fastmurty_origin": "Unmodified author-bundled Ubuntu binary pinned by OptiPMB commit and SHA256; upstream source https://github.com/motrom/fastmurty; upstream build commit not provided by author; no local rebuild needed",
+  "environment_reuse": {
+    "isolated_venv": "perception_lab/envs/optipmb_20261013",
+    "read_only_package_paths": [
+      "perception_lab/envs/maptr/lib/python3.10/site-packages",
+      "perception_lab/envs/bevfusion/lib/python3.10/site-packages"
+    ],
+    "local_additions": [
+      "powerboxes==0.2.3",
+      "cholupdates==0.0.1a7",
+      "numpyencoder==0.3.2"
+    ],
+    "cpu_threads": 4,
+    "cuda_visible_devices": ""
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "checkpoint_sha256": "9da45f9cfce1b4949bcd92d61193b88e09fea59c37f7b0a963249aad83728395",
+  "config": {
+    "in_channels": 128,
+    "layers": 3,
+    "device": "cuda:0"
+  },
+  "missing": [],
+  "unexpected": [],
+  "loaded_tensors": 162,
+  "parameters": 596906,
+  "strict": true
+}

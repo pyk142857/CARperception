@@ -1,0 +1,28 @@
+{
+  "input": [
+    [
+      -9.0,
+      -1.0
+    ],
+    [
+      -2.0,
+      -8.0
+    ]
+  ],
+  "output": [
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "cost": [
+    -17.0
+  ],
+  "error": 0,
+  "library_path": "/home/minglei/Desktop/CAR/perception_lab/third_party/OptiPMB/trackers/utils/murty_linux.so",
+  "library_sha256": "328026dcdb28865d5658f92a87928c35972f6e50915a24b2c46bdd780e9989fd"
+}

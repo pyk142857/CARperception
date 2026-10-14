@@ -1,0 +1,14 @@
+[
+  {
+    "split": "scene0061",
+    "new_sha256": "ceaf64c45d71bf7fddf7e56f55946262e31614104f9c238bf863c05bd6facb89",
+    "historical_sha256": "ceaf64c45d71bf7fddf7e56f55946262e31614104f9c238bf863c05bd6facb89",
+    "byte_equal": true
+  },
+  {
+    "split": "mini_val",
+    "new_sha256": "dffd9176551b2dc866807fcaf2f9ab1a0289c48fc19c49d75d69c320f17fce99",
+    "historical_sha256": "dffd9176551b2dc866807fcaf2f9ab1a0289c48fc19c49d75d69c320f17fce99",
+    "byte_equal": true
+  }
+]

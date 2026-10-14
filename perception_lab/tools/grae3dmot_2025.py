@@ -449,17 +449,24 @@ def profile(config,input_name):
 
 
 def main():
+    global OUT
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--phase',choices=['prepare','run','optimize','evaluate','audit','profile'],default='prepare')
     p.add_argument('--config',type=Path,default=ROOT/'configs/perception_2025.yaml')
     p.add_argument('--input',choices=['frozen_reference','mambafusion_native'],default='frozen_reference')
+    p.add_argument('--output-dir',type=Path,help='Independent experiment output, relative to perception_lab or absolute; old default unchanged')
     a=p.parse_args();cfg=json.loads(a.config.read_text())
+    if a.output_dir:
+        selected=(ROOT/a.output_dir).resolve()
+        if not selected.is_relative_to((ROOT/'reports').resolve()):
+            raise ValueError('Output directory must be inside perception_lab/reports')
+        OUT=selected
     method=cfg.get('models',{}).get('grae3dmot',{})
     for key,expected in [('source',SOURCE),('checkpoint',CHECKPOINT),('config',SOURCE/'config/val.json')]:
         base=SOURCE if key=='config' else ROOT
         if key in method and (base/method[key]).resolve()!=expected.resolve():
             raise ValueError('Unsupported GRAE config override: '+key)
-    if 'report' in cfg and (ROOT/cfg['report']).resolve()!=OUT.parent.resolve():
+    if not a.output_dir and 'report' in cfg and (ROOT/cfg['report']).resolve()!=OUT.parent.resolve():
         raise ValueError('Unsupported GRAE config override: report')
     OUT.mkdir(parents=True,exist_ok=True)
     sys.path.insert(0,str(SOURCE));sys.path.insert(0,str(DEPENDENCY))

@@ -1,0 +1,18 @@
+{
+  "status": "running",
+  "stages": {
+    "inputs_frozen": "passed",
+    "native_comparison_complete": "passed",
+    "cpu_semantics_profile_complete": "partial: contract and full120 cProfile measured, boundary fixtures pending",
+    "tilelang_kernel_executed": "pending",
+    "kernel_equivalence": "pending",
+    "kernelbench_validation": "pending",
+    "grae_full_evaluation": "pending",
+    "paired_performance": "pending",
+    "bev_pooling_research": "pending",
+    "visualization": "pending",
+    "publication": "pending"
+  },
+  "tracking_benefit": "not_adopted: OptiPMB mini_val AMOTA lower and FN higher",
+  "gpu_speedup_adopted": false
+}
