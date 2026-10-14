@@ -1,0 +1,237 @@
+{
+  "status": "passed",
+  "scope": "PyTorch analytical FP64 reference only axis-aligned boxes, original nonstandard height; NOT general rotated IoU or NMS reference. General reference remains original CPU Shapely.",
+  "max_abs": 0.0,
+  "reference_sha256": "2bf729df884c93810b1315916d0b22d785106e1a826508b15b21204ec055935b",
+  "output_sha256": "2bf729df884c93810b1315916d0b22d785106e1a826508b15b21204ec055935b",
+  "actual_calls": {
+    "overlap": 2,
+    "suppress": 1
+  },
+  "profiler_events": [
+    {
+      "name": "aten::lift_fresh",
+      "cpu_time_us": 3,
+      "cuda_time_us": 5
+    },
+    {
+      "name": "aten::to",
+      "cpu_time_us": 511,
+      "cuda_time_us": 512
+    },
+    {
+      "name": "aten::_to_copy",
+      "cpu_time_us": 296,
+      "cuda_time_us": 297
+    },
+    {
+      "name": "aten::empty_strided",
+      "cpu_time_us": 7,
+      "cuda_time_us": 9
+    },
+    {
+      "name": "aten::copy_",
+      "cpu_time_us": 92,
+      "cuda_time_us": 94
+    },
+    {
+      "name": "aten::lift_fresh",
+      "cpu_time_us": 0,
+      "cuda_time_us": 1
+    },
+    {
+      "name": "aten::to",
+      "cpu_time_us": 44,
+      "cuda_time_us": 44
+    },
+    {
+      "name": "aten::_to_copy",
+      "cpu_time_us": 41,
+      "cuda_time_us": 42
+    },
+    {
+      "name": "aten::empty_strided",
+      "cpu_time_us": 1,
+      "cuda_time_us": 3
+    },
+    {
+      "name": "aten::copy_",
+      "cpu_time_us": 33,
+      "cuda_time_us": 35
+    },
+    {
+      "name": "aten::lift_fresh",
+      "cpu_time_us": 0,
+      "cuda_time_us": 1
+    },
+    {
+      "name": "aten::to",
+      "cpu_time_us": 17,
+      "cuda_time_us": 19
+    },
+    {
+      "name": "aten::_to_copy",
+      "cpu_time_us": 14,
+      "cuda_time_us": 16
+    },
+    {
+      "name": "aten::empty_strided",
+      "cpu_time_us": 1,
+      "cuda_time_us": 2
+    },
+    {
+      "name": "aten::copy_",
+      "cpu_time_us": 7,
+      "cuda_time_us": 10
+    },
+    {
+      "name": "aten::empty",
+      "cpu_time_us": 2,
+      "cuda_time_us": 4
+    },
+    {
+      "name": "aten::to",
+      "cpu_time_us": 15,
+      "cuda_time_us": 16
+    },
+    {
+      "name": "aten::_to_copy",
+      "cpu_time_us": 11,
+      "cuda_time_us": 13
+    },
+    {
+      "name": "aten::empty_strided",
+      "cpu_time_us": 1,
+      "cuda_time_us": 2
+    },
+    {
+      "name": "aten::copy_",
+      "cpu_time_us": 5,
+      "cuda_time_us": 7
+    },
+    {
+      "name": "aten::lift_fresh",
+      "cpu_time_us": 0,
+      "cuda_time_us": 1
+    },
+    {
+      "name": "aten::detach_",
+      "cpu_time_us": 5,
+      "cuda_time_us": 6
+    },
+    {
+      "name": "detach_",
+      "cpu_time_us": 1,
+      "cuda_time_us": 2
+    },
+    {
+      "name": "aten::empty",
+      "cpu_time_us": 3,
+      "cuda_time_us": 5
+    },
+    {
+      "name": "aten::empty",
+      "cpu_time_us": 0,
+      "cuda_time_us": 1
+    },
+    {
+      "name": "aten::to",
+      "cpu_time_us": 78,
+      "cuda_time_us": 79
+    },
+    {
+      "name": "aten::_to_copy",
+      "cpu_time_us": 75,
+      "cuda_time_us": 76
+    },
+    {
+      "name": "aten::empty_strided",
+      "cpu_time_us": 2,
+      "cuda_time_us": 4
+    },
+    {
+      "name": "aten::copy_",
+      "cpu_time_us": 66,
+      "cuda_time_us": 68
+    },
+    {
+      "name": "aten::detach",
+      "cpu_time_us": 8,
+      "cuda_time_us": 9
+    },
+    {
+      "name": "detach",
+      "cpu_time_us": 4,
+      "cuda_time_us": 6
+    },
+    {
+      "name": "aten::to",
+      "cpu_time_us": 0,
+      "cuda_time_us": 1
+    },
+    {
+      "name": "aten::resolve_conj",
+      "cpu_time_us": 0,
+      "cuda_time_us": 1
+    },
+    {
+      "name": "aten::resolve_neg",
+      "cpu_time_us": 0,
+      "cuda_time_us": 1
+    },
+    {
+      "name": "aten::to",
+      "cpu_time_us": 30,
+      "cuda_time_us": 31
+    },
+    {
+      "name": "aten::_to_copy",
+      "cpu_time_us": 26,
+      "cuda_time_us": 28
+    },
+    {
+      "name": "aten::empty_strided",
+      "cpu_time_us": 2,
+      "cuda_time_us": 4
+    },
+    {
+      "name": "aten::copy_",
+      "cpu_time_us": 14,
+      "cuda_time_us": 15
+    },
+    {
+      "name": "aten::detach",
+      "cpu_time_us": 6,
+      "cuda_time_us": 7
+    },
+    {
+      "name": "detach",
+      "cpu_time_us": 3,
+      "cuda_time_us": 4
+    },
+    {
+      "name": "aten::to",
+      "cpu_time_us": 0,
+      "cuda_time_us": 1
+    },
+    {
+      "name": "aten::resolve_conj",
+      "cpu_time_us": 0,
+      "cuda_time_us": 1
+    },
+    {
+      "name": "aten::resolve_neg",
+      "cpu_time_us": 0,
+      "cuda_time_us": 1
+    }
+  ],
+  "trace": "kernelbench/cuda_trace.json",
+  "trace_note": "Diagnostic only; profiler overhead excluded from all paired acceptance measurements. No hardware occupancy or memory-throughput counters claimed.",
+  "source_sha256": "1d42137a8a3f714a36fdee3bf98c699ae1af77146ef097d55bb5ff828c70b4d3",
+  "profiler_limitations": {
+    "cupti_initialization": "failed with CUPTI_ERROR_NOT_INITIALIZED (15), see pytorch_axis_reference.log",
+    "cuda_activity_trace_complete": false,
+    "scope": "Analytical reference passed with max_abs=0; torch profiler event records are diagnostic only and do not establish a complete CUDA kernel activity trace.",
+    "foreign_gpu_workload_present": true
+  }
+}

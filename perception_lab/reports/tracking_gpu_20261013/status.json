@@ -15,7 +15,7 @@
   },
   "tracking_benefit": "not_adopted: OptiPMB mini_val AMOTA lower and FN higher",
   "gpu_speedup_adopted": false,
-  "last_verified_remote_commit": "70420b87b75f2ceb3733f9630f35458ccab2f3ab",
+  "last_verified_remote_commit": "77e0345034a79888f99f7e4faddc96da6893a94b",
   "publication_scope": "Native comparison, GPU correctness/full evaluation/full30-pair timing published; pending micro/pooling not claimed complete",
-  "blocking_condition": "Foreign waterwaydetection training PID 718139 occupies the single RTX 4090; clean micro remeasurement and BEV pooling GPU experiments remain pending."
+  "blocking_condition": "Foreign waterwaydetection training/evaluation processes occupy the single RTX 4090; clean micro remeasurement and BEV pooling GPU experiments remain pending."
 }

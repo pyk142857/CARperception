@@ -1,0 +1,7 @@
+WARNING:2026-10-14 09:41:38 826869:826869 init.cpp:111] function cbapi.getCuptiStatus() failed with error CUPTI_ERROR_NOT_INITIALIZED (15)
+WARNING:2026-10-14 09:41:38 826869:826869 init.cpp:112] CUPTI initialization failed - CUDA profiler activities will be missing
+INFO:2026-10-14 09:41:38 826869:826869 init.cpp:114] If you see CUPTI_ERROR_INSUFFICIENT_PRIVILEGES, refer to https://developer.nvidia.com/nvidia-development-tools-solutions-err-nvgpuctrperm-cupti
+STAGE:2026-10-14 09:41:38 826869:826869 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2026-10-14 09:41:38 826869:826869 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2026-10-14 09:41:38 826869:826869 output_json.cpp:417] Completed Stage: Post Processing
+Analytical PyTorch reference passed
