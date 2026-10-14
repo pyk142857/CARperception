@@ -11,13 +11,13 @@
 
 独立代码入口 `tools/run_tracking_gpu_20261013.py`，原生预测、旧模型入口与历史回放不覆盖。完整序列原始配对、实际GPU调用和官方指标均已保存；全部要求的实验已执行；pooling未采用的失败证据单独保存。
 
-## 保留方案与简历说明更新（2026-10-13）
+## 保留方案与简历说明更新（2026-10-14）
 
-已整理[保留方案](RETAINED_ALGORITHMS.md)及[简历项目经历](reports/resume_project_experience_20261008.md)，README新增入口。优先保留DEIMv2原生检测（COCO AP提高5.91个百分点）、S4_greedy_low两阶段关联（固定39帧连续ID切换46→38）及FastCandidateTracker CPU优化（配对2.910→0.772ms/帧，3.77倍，输出一致）。
+已更新[项目设计与保留方案](RETAINED_ALGORITHMS.md)及[简历项目经历](reports/resume_project_experience_20261008.md)，README同步入口与成果。主稿突出TileLang FP64旋转框3D IoU/GPU NMS：固定BEVFusion→GRAE39/81帧分别5.76/8.51倍，含搬运、排除检测前向，各30轮配对，轨迹和官方指标一致。保留DEIMv2原生AP提高5.91个百分点、S4_greedy_low固定39帧连续ID切换46→38，以及FastCandidateTracker CPU2.910→0.772ms/帧、3.77倍的独立成果。
 
-BEVFusion原生融合检测、其固定检测→GRAE原生跟踪及Cylinder3D分割作为已验证功能/基线保留。DEIM TensorRT FP16列为有一致性限制的可选后端；Mamba新输入、HARP GPU预处理、自主pooling和批量D2H不列为完整通过的优化。CPU策略收益仅对应CenterPoint输入，不拼接为新的统一管线。
+BEVFusion原生融合检测、其固定检测→GRAE的已验证GPU几何入口及Cylinder3D分割保留。DEIM TensorRT FP16列为有一致性限制的可选后端；OptiPMB81帧精度替换门槛、新pooling整网稳定收益未通过，相关实验已完成但不采用。Mamba新输入、HARP GPU预处理和批量D2H限制保留。CPU策略收益仅对应CenterPoint输入，与GRAE GPU成果分别记录。
 
-本次只更新文档与成果说明；未新增推理测量、切换默认engine或重写历史指标。权重恢复与回放验收结论按下节保留，整个优化项目仍为partial。
+本次只回顾设计并更新文档与简历；未新增推理测量、切换默认engine或重写历史指标。20261013_03本轮要求的实验实测与验收完成，优化方案是否采用分别记录；历史部署项目及未通过的候选仍保留原partial状态。
 
 ## 当前补充任务：权重恢复与完整评价（2026-10-13）
 
@@ -113,3 +113,4 @@ results/metrics.csv、results/status.json、results/mini_learning.json 与 repor
 ## 4090 部署恢复发布与一致性补查（2026-10-12）
 
 原部署 571 路径恢复并核验，保留原完成提交和最新主分支文档。四帧各后端 5 次生产/5 次捕获运行完成；40 组同输入模块回放及 8 组几何对照完成。发现稀疏深度/LiDAR BEV 变异、几何分配差异和候选交换；head 同源仍有残差，尚未定位具体敏感层。生产模型未改，复用已核验的 39/81 帧评估，原全候选失败保留。Pooling 无稳定提速、默认 upstream；Sparse4D 证据复核，GaussianWorld 推理完成但 GT 缺失。22 项测试通过。详见[补查报告](reports/deployment_4090_20261012_followup/report.md)和[远端回执](reports/deployment_4090_20261012_followup/publication_receipt.json)。
+

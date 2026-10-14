@@ -2,25 +2,26 @@
 
 本轮[冻结BEVFusion跟踪／GPU优化实测](perception_lab/reports/tracking_gpu_20261013/report.md)：TileLang替换原CPU三维IoU／NMS，39／81帧完整GRAE分别 **142.81→24.77、263.80→31.00 ms/帧**，各30轮AB／BA全部更快、P95不升，120帧轨迹及全部官方指标精确一致。计时包含检测JSON读取、预处理、搬运和原生GRAE，不包含BEVFusion前向。
 
-## 正在执行：固定BEVFusion跟踪对照与GPU优化
+## 已完成：固定BEVFusion跟踪对照与GPU优化
 
 [20261013_03指令](perception_lab/instruction/20261013_03_frozen_bevfusion_tracking_gpu_optimization.md)的原生对照、GPU几何／模型输入／轨迹等价和官方评价、完整序列30轮计时已完成。OptiPMB mini_val AMOTA79.75%低于GRAE82.30%、FN400→456，保留GRAE。
 
 空闲GPU重测的270组微基准已通过，跟踪优化验收完成；BEV pooling虽有局部收益，但39／81帧整网评价及270组配对未证明稳定提速，保留原实现。39／81帧浏览器回放与解码验收通过。原始记录及不采用原因见[报告](perception_lab/reports/tracking_gpu_20261013/report.md)。
 
-## 已验证的保留方案与简历成果（2026-10-13）
+## 已验证的保留方案与简历成果（2026-10-14）
 
-优先保留 **DEIMv2-S原生检测、置信度两阶段贪心跟踪与FastCandidateTracker CPU算子优化**；融合检测保留BEVFusion原生FP32，学习型跟踪保留其固定检测→GRAE原生链路，点云分割保留Cylinder3D。
+优先保留 **TileLang FP64三维IoU/GPU NMS、DEIMv2-S原生检测、置信度两阶段贪心跟踪与FastCandidateTracker CPU算子优化**。融合检测保留BEVFusion原生FP32；其固定检测→GRAE的GPU几何入口已验收，原网络/关联及历史入口保持原样；点云分割保留Cylinder3D。
 
 | 已验证成果 | 结果 | 范围 |
 |---|---|---|
+| TileLang GPU几何/NMS | 完整GRAE39帧142.81→24.77ms/帧、5.76倍；81帧263.80→31.00ms/帧、8.51倍；轨迹及官方指标一致 | RTX4090，两组各30轮AB/BA均更快、P95下降；含搬运，排除BEVFusion前向 |
 | DEIMv2-S模型部署方案 | COCO AP44.95%→50.86%，+5.91个百分点 | COCO val2017全5,000图，相对历史YOLOv8s；不同模型/权重对比 |
 | 两阶段贪心关联 | 连续ID切换46→38，减少17.4%；FP/FN不变 | 固定CenterPoint检测、mini scene-0061的39帧教学诊断 |
 | CPU关联算子优化 | 平均2.91→0.77ms/帧，3.77倍；完整输出一致 | 同一候选，30轮交替顺序配对；仅CPU跟踪函数 |
 
 [保留方案、实现与复现说明](perception_lab/RETAINED_ALGORITHMS.md) · [更新后的简历项目经历](perception_lab/reports/resume_project_experience_20261008.md)。
 
-DEIM TensorRT FP16保留为**可选已测加速后端**：三张暖缓存图30轮配对约2.21倍，COCO AP下降0.0541个百分点，置信度一致性仍有限制，默认保持native。Mamba新链路、HARP GPU预处理、自主BEV pooling及GRAE批量D2H不列为完整通过的优化；原始代码与对照结果保留。此次为文档与成果口径更新，运行入口和历史默认回放的切换状态见各实验报告。
+DEIM TensorRT FP16保留为**可选已测加速后端**：三张暖缓存图30轮配对约2.21倍，COCO AP下降0.0541个百分点，置信度一致性仍有限制，默认保持native。OptiPMB未通过81帧替换门槛；新BEV pooling局部有收益但整网稳定提速未通过；Mamba新链路、HARP GPU预处理及GRAE批量D2H仍保留限制和退化记录。此次为文档与成果口径更新，运行入口和历史默认回放的切换状态见各实验报告。
 
 ## 2026-10-13：2025 方法权重恢复与 mini 整网评价
 
@@ -98,7 +99,7 @@ flowchart LR
 
 ## 简历项目经历
 
-[简历成稿与成果依据（2026-10-13更新）](perception_lab/reports/resume_project_experience_20261008.md)：按招聘平台模板填写，加入DEIMv2精度收益、BEVFusion→GRAE原生链路与可选TensorRT部署表述；保留已验证的两阶段跟踪及CPU提速，并逐项绑定数据范围和报告。[方案取舍](perception_lab/RETAINED_ALGORITHMS.md)独立记录未采用候选。
+[简历成稿与成果依据（2026-10-14更新）](perception_lab/reports/resume_project_experience_20261008.md)：按招聘平台模板填写，突出TileLang批量旋转框3D IoU/GPU NMS与完整GRAE提速，分别列出39/81帧结果；保留DEIMv2精度、两阶段跟踪、CPU关联算子及同步排障闭环，附可选TensorRT表述。[项目设计与方案取舍](perception_lab/RETAINED_ALGORITHMS.md)记录设计演进、独立链路与未采用候选。
 
 ## 实车部署技术调研
 
@@ -358,3 +359,4 @@ mini 结果用于理解流程，不代表全量验证集精度。原始计划的
 ### 全感知流程耗时剖析
 
 已实测13个离线任务（模型推理前3时刻/六相机，跟踪与Rerun另测39帧），GPU计时边界同步，总进程耗时123.48秒。导入/元数据/权重加载占53.2%，离线绘图/视频占13.9%；这不是统一实时流水线的单帧占比。补测常驻模型：CenterPoint预热后约25.22ms/帧；六相机深度和SegFormer去除首次调用后约511/325ms每时刻，应先消除逐帧加载和离线输出开销，再细分模型热点。[完整报告、计时口径与复现](perception_lab/reports/pipeline_timing/report.md)。
+
