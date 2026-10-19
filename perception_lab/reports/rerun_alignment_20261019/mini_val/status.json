@@ -1,0 +1,4283 @@
+{
+  "display_correction": "frozen NVIDIA native center: undo h/2 along lidar up; source predictions unchanged",
+  "status": "passed",
+  "export": "passed",
+  "browser_validation": "passed",
+  "split": "mini_val",
+  "frames": 81,
+  "counts": [
+    {
+      "frame": 0,
+      "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151603547590,
+      "original_lidar_points": 34752,
+      "gt_boxes": 23,
+      "model_boxes": {
+        "bev_detection": 21,
+        "grae": 21,
+        "optipmb": 13
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 56,
+          "grae": 56,
+          "optipmb": 24,
+          "ground_truth": 55
+        },
+        "CAM_FRONT": {
+          "bev_detection": 168,
+          "grae": 168,
+          "optipmb": 84,
+          "ground_truth": 168
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 0,
+          "grae": 0,
+          "optipmb": 0,
+          "ground_truth": 12
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 0,
+          "grae": 0,
+          "optipmb": 0,
+          "ground_truth": 0
+        },
+        "CAM_BACK": {
+          "bev_detection": 36,
+          "grae": 36,
+          "optipmb": 36,
+          "ground_truth": 36
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 24,
+          "grae": 24,
+          "optipmb": 24,
+          "ground_truth": 24
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 1,
+      "sample_token": "3950bd41f74548429c0f7700ff3d8269",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151604048025,
+      "original_lidar_points": 34688,
+      "gt_boxes": 30,
+      "model_boxes": {
+        "bev_detection": 33,
+        "grae": 32,
+        "optipmb": 26
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 120,
+          "grae": 120,
+          "optipmb": 96,
+          "ground_truth": 72
+        },
+        "CAM_FRONT": {
+          "bev_detection": 207,
+          "grae": 195,
+          "optipmb": 171,
+          "ground_truth": 227
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 12,
+          "grae": 12,
+          "optipmb": 12,
+          "ground_truth": 36
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 23,
+          "grae": 23,
+          "optipmb": 23,
+          "ground_truth": 12
+        },
+        "CAM_BACK": {
+          "bev_detection": 84,
+          "grae": 84,
+          "optipmb": 60,
+          "ground_truth": 36
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 24,
+          "grae": 24,
+          "optipmb": 24,
+          "ground_truth": 24
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 2,
+      "sample_token": "c5f58c19249d4137ae063b0e9ecd8b8e",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151604547893,
+      "original_lidar_points": 34752,
+      "gt_boxes": 33,
+      "model_boxes": {
+        "bev_detection": 35,
+        "grae": 35,
+        "optipmb": 30
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 156,
+          "grae": 156,
+          "optipmb": 120,
+          "ground_truth": 72
+        },
+        "CAM_FRONT": {
+          "bev_detection": 180,
+          "grae": 180,
+          "optipmb": 156,
+          "ground_truth": 240
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 32,
+          "grae": 32,
+          "optipmb": 32,
+          "ground_truth": 44
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 36,
+          "grae": 36,
+          "optipmb": 12,
+          "ground_truth": 24
+        },
+        "CAM_BACK": {
+          "bev_detection": 89,
+          "grae": 89,
+          "optipmb": 77,
+          "ground_truth": 53
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 23,
+          "grae": 23,
+          "optipmb": 23,
+          "ground_truth": 31
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 3,
+      "sample_token": "700c1a25559b4433be532de3475e58a9",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151605047769,
+      "original_lidar_points": 34720,
+      "gt_boxes": 38,
+      "model_boxes": {
+        "bev_detection": 39,
+        "grae": 37,
+        "optipmb": 34
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 127,
+          "grae": 127,
+          "optipmb": 127,
+          "ground_truth": 79
+        },
+        "CAM_FRONT": {
+          "bev_detection": 180,
+          "grae": 180,
+          "optipmb": 168,
+          "ground_truth": 252
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 48,
+          "grae": 48,
+          "optipmb": 52,
+          "ground_truth": 48
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 48,
+          "grae": 48,
+          "optipmb": 48,
+          "ground_truth": 36
+        },
+        "CAM_BACK": {
+          "bev_detection": 96,
+          "grae": 96,
+          "optipmb": 84,
+          "ground_truth": 60
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 48,
+          "grae": 24,
+          "optipmb": 12,
+          "ground_truth": 48
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 4,
+      "sample_token": "747aa46b9a4641fe90db05d97db2acea",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151605548192,
+      "original_lidar_points": 34784,
+      "gt_boxes": 39,
+      "model_boxes": {
+        "bev_detection": 29,
+        "grae": 28,
+        "optipmb": 28
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 108,
+          "grae": 108,
+          "optipmb": 108,
+          "ground_truth": 96
+        },
+        "CAM_FRONT": {
+          "bev_detection": 159,
+          "grae": 159,
+          "optipmb": 161,
+          "ground_truth": 264
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 63,
+          "grae": 63,
+          "optipmb": 67,
+          "ground_truth": 63
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 24,
+          "grae": 24,
+          "optipmb": 24,
+          "ground_truth": 36
+        },
+        "CAM_BACK": {
+          "bev_detection": 36,
+          "grae": 36,
+          "optipmb": 36,
+          "ground_truth": 36
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 24,
+          "grae": 12,
+          "optipmb": 12,
+          "ground_truth": 36
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 5,
+      "sample_token": "f4f86af4da3b49e79497deda5c5f223a",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151606048630,
+      "original_lidar_points": 34720,
+      "gt_boxes": 44,
+      "model_boxes": {
+        "bev_detection": 31,
+        "grae": 30,
+        "optipmb": 28
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 131,
+          "grae": 119,
+          "optipmb": 107,
+          "ground_truth": 155
+        },
+        "CAM_FRONT": {
+          "bev_detection": 124,
+          "grae": 124,
+          "optipmb": 113,
+          "ground_truth": 232
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 92,
+          "grae": 92,
+          "optipmb": 92,
+          "ground_truth": 92
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 48,
+          "grae": 48,
+          "optipmb": 36,
+          "ground_truth": 70
+        },
+        "CAM_BACK": {
+          "bev_detection": 41,
+          "grae": 41,
+          "optipmb": 41,
+          "ground_truth": 53
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 12,
+          "grae": 12,
+          "optipmb": 12,
+          "ground_truth": 24
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 6,
+      "sample_token": "6832e717621341568c759151b5974512",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151606549066,
+      "original_lidar_points": 34688,
+      "gt_boxes": 45,
+      "model_boxes": {
+        "bev_detection": 34,
+        "grae": 34,
+        "optipmb": 34
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 100,
+          "grae": 100,
+          "optipmb": 100,
+          "ground_truth": 104
+        },
+        "CAM_FRONT": {
+          "bev_detection": 92,
+          "grae": 92,
+          "optipmb": 92,
+          "ground_truth": 188
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 92,
+          "grae": 92,
+          "optipmb": 92,
+          "ground_truth": 104
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 78,
+          "grae": 78,
+          "optipmb": 78,
+          "ground_truth": 79
+        },
+        "CAM_BACK": {
+          "bev_detection": 73,
+          "grae": 73,
+          "optipmb": 70,
+          "ground_truth": 85
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 11,
+          "grae": 11,
+          "optipmb": 11,
+          "ground_truth": 8
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 7,
+      "sample_token": "c59e60042a8643e899008da2e446acca",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151607048933,
+      "original_lidar_points": 34688,
+      "gt_boxes": 50,
+      "model_boxes": {
+        "bev_detection": 38,
+        "grae": 38,
+        "optipmb": 37
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 102,
+          "grae": 102,
+          "optipmb": 101,
+          "ground_truth": 111
+        },
+        "CAM_FRONT": {
+          "bev_detection": 108,
+          "grae": 108,
+          "optipmb": 96,
+          "ground_truth": 204
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 108,
+          "grae": 108,
+          "optipmb": 108,
+          "ground_truth": 120
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 144,
+          "grae": 144,
+          "optipmb": 143,
+          "ground_truth": 156
+        },
+        "CAM_BACK": {
+          "bev_detection": 84,
+          "grae": 84,
+          "optipmb": 84,
+          "ground_truth": 96
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 24,
+          "grae": 24,
+          "optipmb": 24,
+          "ground_truth": 36
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 8,
+      "sample_token": "fa65a298c01f44e7a182bbf9e5fe3697",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151607548824,
+      "original_lidar_points": 34720,
+      "gt_boxes": 49,
+      "model_boxes": {
+        "bev_detection": 39,
+        "grae": 39,
+        "optipmb": 38
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 51,
+          "grae": 51,
+          "optipmb": 50,
+          "ground_truth": 71
+        },
+        "CAM_FRONT": {
+          "bev_detection": 101,
+          "grae": 101,
+          "optipmb": 89,
+          "ground_truth": 197
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 76,
+          "grae": 76,
+          "optipmb": 76,
+          "ground_truth": 76
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 156,
+          "grae": 156,
+          "optipmb": 156,
+          "ground_truth": 168
+        },
+        "CAM_BACK": {
+          "bev_detection": 96,
+          "grae": 96,
+          "optipmb": 96,
+          "ground_truth": 96
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 73,
+          "grae": 73,
+          "optipmb": 73,
+          "ground_truth": 84
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 9,
+      "sample_token": "a98fba72bde9433fb882032d18aedb2e",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151608048151,
+      "original_lidar_points": 34720,
+      "gt_boxes": 49,
+      "model_boxes": {
+        "bev_detection": 45,
+        "grae": 44,
+        "optipmb": 42
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 35,
+          "grae": 35,
+          "optipmb": 35,
+          "ground_truth": 46
+        },
+        "CAM_FRONT": {
+          "bev_detection": 126,
+          "grae": 114,
+          "optipmb": 114,
+          "ground_truth": 192
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 0,
+          "grae": 0,
+          "optipmb": 0,
+          "ground_truth": 0
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 184,
+          "grae": 184,
+          "optipmb": 172,
+          "ground_truth": 160
+        },
+        "CAM_BACK": {
+          "bev_detection": 116,
+          "grae": 116,
+          "optipmb": 116,
+          "ground_truth": 114
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 120,
+          "grae": 120,
+          "optipmb": 108,
+          "ground_truth": 120
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 10,
+      "sample_token": "b6b0d9f2f2e14a3aaa2c8aedeb1edb69",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151608548020,
+      "original_lidar_points": 34720,
+      "gt_boxes": 48,
+      "model_boxes": {
+        "bev_detection": 38,
+        "grae": 37,
+        "optipmb": 36
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 36,
+          "grae": 36,
+          "optipmb": 36,
+          "ground_truth": 48
+        },
+        "CAM_FRONT": {
+          "bev_detection": 116,
+          "grae": 104,
+          "optipmb": 92,
+          "ground_truth": 169
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 8,
+          "grae": 8,
+          "optipmb": 8,
+          "ground_truth": 8
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 96,
+          "grae": 96,
+          "optipmb": 96,
+          "ground_truth": 132
+        },
+        "CAM_BACK": {
+          "bev_detection": 157,
+          "grae": 157,
+          "optipmb": 157,
+          "ground_truth": 177
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 89,
+          "grae": 89,
+          "optipmb": 89,
+          "ground_truth": 101
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 11,
+      "sample_token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151609047890,
+      "original_lidar_points": 34688,
+      "gt_boxes": 44,
+      "model_boxes": {
+        "bev_detection": 39,
+        "grae": 38,
+        "optipmb": 36
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 41,
+          "grae": 41,
+          "optipmb": 44,
+          "ground_truth": 68
+        },
+        "CAM_FRONT": {
+          "bev_detection": 124,
+          "grae": 112,
+          "optipmb": 88,
+          "ground_truth": 160
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 12,
+          "grae": 12,
+          "optipmb": 12,
+          "ground_truth": 12
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 89,
+          "grae": 89,
+          "optipmb": 91,
+          "ground_truth": 65
+        },
+        "CAM_BACK": {
+          "bev_detection": 221,
+          "grae": 221,
+          "optipmb": 221,
+          "ground_truth": 233
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 35,
+          "grae": 35,
+          "optipmb": 35,
+          "ground_truth": 35
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 12,
+      "sample_token": "0d0700a2284e477db876c3ee1d864668",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151609547766,
+      "original_lidar_points": 34688,
+      "gt_boxes": 45,
+      "model_boxes": {
+        "bev_detection": 41,
+        "grae": 39,
+        "optipmb": 37
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 52,
+          "grae": 52,
+          "optipmb": 40,
+          "ground_truth": 76
+        },
+        "CAM_FRONT": {
+          "bev_detection": 120,
+          "grae": 108,
+          "optipmb": 96,
+          "ground_truth": 168
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 17,
+          "grae": 12,
+          "optipmb": 12,
+          "ground_truth": 17
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 68,
+          "grae": 68,
+          "optipmb": 68,
+          "ground_truth": 68
+        },
+        "CAM_BACK": {
+          "bev_detection": 255,
+          "grae": 243,
+          "optipmb": 245,
+          "ground_truth": 228
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 5,
+          "grae": 5,
+          "optipmb": 5,
+          "ground_truth": 5
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 13,
+      "sample_token": "de7593d76648450e947ba0c203dee1b0",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151609947025,
+      "original_lidar_points": 34688,
+      "gt_boxes": 48,
+      "model_boxes": {
+        "bev_detection": 41,
+        "grae": 39,
+        "optipmb": 37
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 63,
+          "grae": 51,
+          "optipmb": 39,
+          "ground_truth": 88
+        },
+        "CAM_FRONT": {
+          "bev_detection": 132,
+          "grae": 120,
+          "optipmb": 108,
+          "ground_truth": 191
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 24,
+          "grae": 12,
+          "optipmb": 12,
+          "ground_truth": 24
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 72,
+          "grae": 72,
+          "optipmb": 72,
+          "ground_truth": 72
+        },
+        "CAM_BACK": {
+          "bev_detection": 240,
+          "grae": 240,
+          "optipmb": 240,
+          "ground_truth": 240
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 0,
+          "grae": 0,
+          "optipmb": 0,
+          "ground_truth": 0
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 14,
+      "sample_token": "f753d3f87e5b40af87ff2cbf7c8e7082",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151610446899,
+      "original_lidar_points": 34720,
+      "gt_boxes": 49,
+      "model_boxes": {
+        "bev_detection": 37,
+        "grae": 36,
+        "optipmb": 35
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 68,
+          "grae": 68,
+          "optipmb": 56,
+          "ground_truth": 116
+        },
+        "CAM_FRONT": {
+          "bev_detection": 95,
+          "grae": 95,
+          "optipmb": 95,
+          "ground_truth": 204
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 41,
+          "grae": 29,
+          "optipmb": 29,
+          "ground_truth": 45
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 60,
+          "grae": 60,
+          "optipmb": 60,
+          "ground_truth": 48
+        },
+        "CAM_BACK": {
+          "bev_detection": 221,
+          "grae": 221,
+          "optipmb": 221,
+          "ground_truth": 233
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 0,
+          "grae": 0,
+          "optipmb": 0,
+          "ground_truth": 0
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 15,
+      "sample_token": "b22fa0b3c34f47b6a360b60f35d5d567",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151610946785,
+      "original_lidar_points": 34688,
+      "gt_boxes": 50,
+      "model_boxes": {
+        "bev_detection": 41,
+        "grae": 39,
+        "optipmb": 38
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 92,
+          "grae": 80,
+          "optipmb": 80,
+          "ground_truth": 116
+        },
+        "CAM_FRONT": {
+          "bev_detection": 102,
+          "grae": 102,
+          "optipmb": 90,
+          "ground_truth": 209
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 46,
+          "grae": 34,
+          "optipmb": 29,
+          "ground_truth": 46
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 48,
+          "grae": 48,
+          "optipmb": 48,
+          "ground_truth": 48
+        },
+        "CAM_BACK": {
+          "bev_detection": 284,
+          "grae": 284,
+          "optipmb": 284,
+          "ground_truth": 257
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 0,
+          "grae": 0,
+          "optipmb": 0,
+          "ground_truth": 0
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 16,
+      "sample_token": "0a0d6b8c2e884134a3b48df43d54c36a",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151611446636,
+      "original_lidar_points": 34720,
+      "gt_boxes": 49,
+      "model_boxes": {
+        "bev_detection": 35,
+        "grae": 34,
+        "optipmb": 33
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 92,
+          "grae": 92,
+          "optipmb": 92,
+          "ground_truth": 118
+        },
+        "CAM_FRONT": {
+          "bev_detection": 82,
+          "grae": 82,
+          "optipmb": 70,
+          "ground_truth": 199
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 41,
+          "grae": 29,
+          "optipmb": 29,
+          "ground_truth": 46
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 47,
+          "grae": 47,
+          "optipmb": 48,
+          "ground_truth": 47
+        },
+        "CAM_BACK": {
+          "bev_detection": 216,
+          "grae": 216,
+          "optipmb": 216,
+          "ground_truth": 243
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 0,
+          "grae": 0,
+          "optipmb": 0,
+          "ground_truth": 0
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 17,
+      "sample_token": "8e9c2cba0ee74056aa3746e8391d54a9",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151611896734,
+      "original_lidar_points": 34720,
+      "gt_boxes": 54,
+      "model_boxes": {
+        "bev_detection": 34,
+        "grae": 32,
+        "optipmb": 32
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 94,
+          "grae": 82,
+          "optipmb": 80,
+          "ground_truth": 113
+        },
+        "CAM_FRONT": {
+          "bev_detection": 94,
+          "grae": 94,
+          "optipmb": 95,
+          "ground_truth": 248
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 55,
+          "grae": 43,
+          "optipmb": 43,
+          "ground_truth": 79
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 19,
+          "grae": 19,
+          "optipmb": 19,
+          "ground_truth": 30
+        },
+        "CAM_BACK": {
+          "bev_detection": 185,
+          "grae": 185,
+          "optipmb": 185,
+          "ground_truth": 233
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 0,
+          "grae": 0,
+          "optipmb": 0,
+          "ground_truth": 0
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 18,
+      "sample_token": "fdc39b23ab4242eda6ec5e1e6574fe33",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151612397179,
+      "original_lidar_points": 34784,
+      "gt_boxes": 55,
+      "model_boxes": {
+        "bev_detection": 36,
+        "grae": 34,
+        "optipmb": 33
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 97,
+          "grae": 85,
+          "optipmb": 85,
+          "ground_truth": 113
+        },
+        "CAM_FRONT": {
+          "bev_detection": 116,
+          "grae": 116,
+          "optipmb": 104,
+          "ground_truth": 258
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 58,
+          "grae": 46,
+          "optipmb": 46,
+          "ground_truth": 82
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 11,
+          "grae": 11,
+          "optipmb": 11,
+          "ground_truth": 16
+        },
+        "CAM_BACK": {
+          "bev_detection": 185,
+          "grae": 185,
+          "optipmb": 185,
+          "ground_truth": 233
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 0,
+          "grae": 0,
+          "optipmb": 0,
+          "ground_truth": 0
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 19,
+      "sample_token": "9ee4020153674b9e9943d395ff8cfdf3",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151612897588,
+      "original_lidar_points": 34784,
+      "gt_boxes": 57,
+      "model_boxes": {
+        "bev_detection": 35,
+        "grae": 34,
+        "optipmb": 33
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 89,
+          "grae": 89,
+          "optipmb": 89,
+          "ground_truth": 125
+        },
+        "CAM_FRONT": {
+          "bev_detection": 124,
+          "grae": 124,
+          "optipmb": 112,
+          "ground_truth": 268
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 58,
+          "grae": 46,
+          "optipmb": 46,
+          "ground_truth": 93
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 8,
+          "grae": 8,
+          "optipmb": 8,
+          "ground_truth": 20
+        },
+        "CAM_BACK": {
+          "bev_detection": 176,
+          "grae": 176,
+          "optipmb": 176,
+          "ground_truth": 236
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 0,
+          "grae": 0,
+          "optipmb": 0,
+          "ground_truth": 0
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 20,
+      "sample_token": "5b03af7a953245b5a3b23191ed4da62a",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151613398020,
+      "original_lidar_points": 34752,
+      "gt_boxes": 61,
+      "model_boxes": {
+        "bev_detection": 37,
+        "grae": 35,
+        "optipmb": 34
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 121,
+          "grae": 121,
+          "optipmb": 109,
+          "ground_truth": 145
+        },
+        "CAM_FRONT": {
+          "bev_detection": 100,
+          "grae": 100,
+          "optipmb": 100,
+          "ground_truth": 304
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 58,
+          "grae": 46,
+          "optipmb": 46,
+          "ground_truth": 93
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 25,
+          "grae": 25,
+          "optipmb": 13,
+          "ground_truth": 30
+        },
+        "CAM_BACK": {
+          "bev_detection": 200,
+          "grae": 188,
+          "optipmb": 188,
+          "ground_truth": 224
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 0,
+          "grae": 0,
+          "optipmb": 0,
+          "ground_truth": 0
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 21,
+      "sample_token": "d0ecf474e0e64950aa265cd44b9c9d75",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151613948222,
+      "original_lidar_points": 34752,
+      "gt_boxes": 62,
+      "model_boxes": {
+        "bev_detection": 36,
+        "grae": 35,
+        "optipmb": 34
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 138,
+          "grae": 138,
+          "optipmb": 137,
+          "ground_truth": 150
+        },
+        "CAM_FRONT": {
+          "bev_detection": 101,
+          "grae": 101,
+          "optipmb": 89,
+          "ground_truth": 328
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 47,
+          "grae": 35,
+          "optipmb": 36,
+          "ground_truth": 95
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 49,
+          "grae": 49,
+          "optipmb": 49,
+          "ground_truth": 54
+        },
+        "CAM_BACK": {
+          "bev_detection": 179,
+          "grae": 179,
+          "optipmb": 179,
+          "ground_truth": 215
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 0,
+          "grae": 0,
+          "optipmb": 0,
+          "ground_truth": 0
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 22,
+      "sample_token": "456ec36cb4a44ca78f36fbd90c0c34fa",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151614450164,
+      "original_lidar_points": 34752,
+      "gt_boxes": 63,
+      "model_boxes": {
+        "bev_detection": 36,
+        "grae": 33,
+        "optipmb": 31
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 111,
+          "grae": 99,
+          "optipmb": 97,
+          "ground_truth": 144
+        },
+        "CAM_FRONT": {
+          "bev_detection": 86,
+          "grae": 74,
+          "optipmb": 75,
+          "ground_truth": 318
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 87,
+          "grae": 84,
+          "optipmb": 60,
+          "ground_truth": 96
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 69,
+          "grae": 57,
+          "optipmb": 57,
+          "ground_truth": 92
+        },
+        "CAM_BACK": {
+          "bev_detection": 155,
+          "grae": 155,
+          "optipmb": 155,
+          "ground_truth": 203
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 20,
+          "grae": 8,
+          "optipmb": 10,
+          "ground_truth": 20
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 23,
+      "sample_token": "6bfd42cf0aba4f1a94ec11fa43e2dd92",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151614948536,
+      "original_lidar_points": 34720,
+      "gt_boxes": 63,
+      "model_boxes": {
+        "bev_detection": 31,
+        "grae": 29,
+        "optipmb": 29
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 85,
+          "grae": 77,
+          "optipmb": 77,
+          "ground_truth": 128
+        },
+        "CAM_FRONT": {
+          "bev_detection": 73,
+          "grae": 73,
+          "optipmb": 73,
+          "ground_truth": 311
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 48,
+          "grae": 48,
+          "optipmb": 48,
+          "ground_truth": 87
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 64,
+          "grae": 52,
+          "optipmb": 52,
+          "ground_truth": 100
+        },
+        "CAM_BACK": {
+          "bev_detection": 132,
+          "grae": 132,
+          "optipmb": 132,
+          "ground_truth": 204
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 31,
+          "grae": 19,
+          "optipmb": 19,
+          "ground_truth": 31
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 24,
+      "sample_token": "0af0feb5b1394b928dd13d648de898f5",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151615448397,
+      "original_lidar_points": 34688,
+      "gt_boxes": 64,
+      "model_boxes": {
+        "bev_detection": 41,
+        "grae": 40,
+        "optipmb": 38
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 88,
+          "grae": 88,
+          "optipmb": 88,
+          "ground_truth": 110
+        },
+        "CAM_FRONT": {
+          "bev_detection": 108,
+          "grae": 108,
+          "optipmb": 105,
+          "ground_truth": 300
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 96,
+          "grae": 96,
+          "optipmb": 72,
+          "ground_truth": 113
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 103,
+          "grae": 91,
+          "optipmb": 91,
+          "ground_truth": 127
+        },
+        "CAM_BACK": {
+          "bev_detection": 156,
+          "grae": 156,
+          "optipmb": 156,
+          "ground_truth": 192
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 19,
+          "grae": 19,
+          "optipmb": 19,
+          "ground_truth": 19
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 25,
+      "sample_token": "61d9340c5ad8418dafe7a4af1b96e6b9",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151615947733,
+      "original_lidar_points": 34688,
+      "gt_boxes": 65,
+      "model_boxes": {
+        "bev_detection": 43,
+        "grae": 43,
+        "optipmb": 42
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 72,
+          "grae": 72,
+          "optipmb": 72,
+          "ground_truth": 84
+        },
+        "CAM_FRONT": {
+          "bev_detection": 147,
+          "grae": 147,
+          "optipmb": 135,
+          "ground_truth": 303
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 92,
+          "grae": 92,
+          "optipmb": 92,
+          "ground_truth": 124
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 96,
+          "grae": 96,
+          "optipmb": 96,
+          "ground_truth": 132
+        },
+        "CAM_BACK": {
+          "bev_detection": 149,
+          "grae": 149,
+          "optipmb": 149,
+          "ground_truth": 185
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 21,
+          "grae": 21,
+          "optipmb": 21,
+          "ground_truth": 21
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 26,
+      "sample_token": "9e7683e8586542a1b6032980c45f15ce",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151616447606,
+      "original_lidar_points": 34688,
+      "gt_boxes": 65,
+      "model_boxes": {
+        "bev_detection": 42,
+        "grae": 41,
+        "optipmb": 39
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 50,
+          "grae": 50,
+          "optipmb": 50,
+          "ground_truth": 60
+        },
+        "CAM_FRONT": {
+          "bev_detection": 112,
+          "grae": 112,
+          "optipmb": 112,
+          "ground_truth": 290
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 119,
+          "grae": 119,
+          "optipmb": 95,
+          "ground_truth": 147
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 116,
+          "grae": 104,
+          "optipmb": 104,
+          "ground_truth": 150
+        },
+        "CAM_BACK": {
+          "bev_detection": 140,
+          "grae": 140,
+          "optipmb": 140,
+          "ground_truth": 188
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 19,
+          "grae": 19,
+          "optipmb": 19,
+          "ground_truth": 34
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 27,
+      "sample_token": "cc57c1ea80fe46a7abddfdb15654c872",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151616947490,
+      "original_lidar_points": 34752,
+      "gt_boxes": 63,
+      "model_boxes": {
+        "bev_detection": 51,
+        "grae": 51,
+        "optipmb": 48
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 43,
+          "grae": 43,
+          "optipmb": 42,
+          "ground_truth": 56
+        },
+        "CAM_FRONT": {
+          "bev_detection": 139,
+          "grae": 139,
+          "optipmb": 127,
+          "ground_truth": 271
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 157,
+          "grae": 157,
+          "optipmb": 145,
+          "ground_truth": 140
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 128,
+          "grae": 128,
+          "optipmb": 116,
+          "ground_truth": 140
+        },
+        "CAM_BACK": {
+          "bev_detection": 155,
+          "grae": 155,
+          "optipmb": 155,
+          "ground_truth": 179
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 29,
+          "grae": 29,
+          "optipmb": 29,
+          "ground_truth": 41
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 28,
+      "sample_token": "4cf5d6c3f6ab42aab23f67b5a9782d1a",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151617397050,
+      "original_lidar_points": 34720,
+      "gt_boxes": 64,
+      "model_boxes": {
+        "bev_detection": 50,
+        "grae": 50,
+        "optipmb": 47
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 36,
+          "grae": 36,
+          "optipmb": 36,
+          "ground_truth": 44
+        },
+        "CAM_FRONT": {
+          "bev_detection": 136,
+          "grae": 136,
+          "optipmb": 124,
+          "ground_truth": 264
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 180,
+          "grae": 180,
+          "optipmb": 151,
+          "ground_truth": 139
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 127,
+          "grae": 127,
+          "optipmb": 127,
+          "ground_truth": 151
+        },
+        "CAM_BACK": {
+          "bev_detection": 144,
+          "grae": 144,
+          "optipmb": 144,
+          "ground_truth": 180
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 49,
+          "grae": 49,
+          "optipmb": 44,
+          "ground_truth": 60
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 29,
+      "sample_token": "6d9984d09d52479e837da2fd09e192cc",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151617947237,
+      "original_lidar_points": 34720,
+      "gt_boxes": 63,
+      "model_boxes": {
+        "bev_detection": 51,
+        "grae": 50,
+        "optipmb": 45
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 44,
+          "grae": 32,
+          "optipmb": 32,
+          "ground_truth": 40
+        },
+        "CAM_FRONT": {
+          "bev_detection": 125,
+          "grae": 125,
+          "optipmb": 113,
+          "ground_truth": 248
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 185,
+          "grae": 185,
+          "optipmb": 137,
+          "ground_truth": 148
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 118,
+          "grae": 118,
+          "optipmb": 115,
+          "ground_truth": 128
+        },
+        "CAM_BACK": {
+          "bev_detection": 142,
+          "grae": 142,
+          "optipmb": 142,
+          "ground_truth": 209
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 92,
+          "grae": 92,
+          "optipmb": 92,
+          "ground_truth": 92
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 30,
+      "sample_token": "38a28a3aaf2647f2a8c0e90e31267bf8",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151618447134,
+      "original_lidar_points": 34688,
+      "gt_boxes": 64,
+      "model_boxes": {
+        "bev_detection": 44,
+        "grae": 44,
+        "optipmb": 43
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 12,
+          "grae": 12,
+          "optipmb": 12,
+          "ground_truth": 32
+        },
+        "CAM_FRONT": {
+          "bev_detection": 80,
+          "grae": 80,
+          "optipmb": 80,
+          "ground_truth": 218
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 163,
+          "grae": 163,
+          "optipmb": 151,
+          "ground_truth": 156
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 105,
+          "grae": 105,
+          "optipmb": 103,
+          "ground_truth": 105
+        },
+        "CAM_BACK": {
+          "bev_detection": 135,
+          "grae": 135,
+          "optipmb": 137,
+          "ground_truth": 226
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 97,
+          "grae": 97,
+          "optipmb": 97,
+          "ground_truth": 117
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 31,
+      "sample_token": "6402fd1ffaf041d0b9162bd92a7ba0a2",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151618946993,
+      "original_lidar_points": 34688,
+      "gt_boxes": 64,
+      "model_boxes": {
+        "bev_detection": 46,
+        "grae": 44,
+        "optipmb": 43
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 20,
+          "grae": 8,
+          "optipmb": 8,
+          "ground_truth": 31
+        },
+        "CAM_FRONT": {
+          "bev_detection": 123,
+          "grae": 111,
+          "optipmb": 111,
+          "ground_truth": 203
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 156,
+          "grae": 156,
+          "optipmb": 146,
+          "ground_truth": 176
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 69,
+          "grae": 69,
+          "optipmb": 69,
+          "ground_truth": 93
+        },
+        "CAM_BACK": {
+          "bev_detection": 160,
+          "grae": 160,
+          "optipmb": 160,
+          "ground_truth": 244
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 120,
+          "grae": 120,
+          "optipmb": 120,
+          "ground_truth": 144
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 32,
+      "sample_token": "ce94ef7a0522468e81c0e2b3a2f1e12d",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151619446866,
+      "original_lidar_points": 34752,
+      "gt_boxes": 56,
+      "model_boxes": {
+        "bev_detection": 43,
+        "grae": 41,
+        "optipmb": 39
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 24,
+          "grae": 0,
+          "optipmb": 0,
+          "ground_truth": 29
+        },
+        "CAM_FRONT": {
+          "bev_detection": 129,
+          "grae": 129,
+          "optipmb": 117,
+          "ground_truth": 184
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 136,
+          "grae": 136,
+          "optipmb": 124,
+          "ground_truth": 124
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 55,
+          "grae": 31,
+          "optipmb": 31,
+          "ground_truth": 63
+        },
+        "CAM_BACK": {
+          "bev_detection": 136,
+          "grae": 136,
+          "optipmb": 136,
+          "ground_truth": 220
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 84,
+          "grae": 84,
+          "optipmb": 84,
+          "ground_truth": 108
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 33,
+      "sample_token": "9fcdc52b791045e99c623c5fc643331f",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151619947313,
+      "original_lidar_points": 34784,
+      "gt_boxes": 57,
+      "model_boxes": {
+        "bev_detection": 43,
+        "grae": 39,
+        "optipmb": 36
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 24,
+          "grae": 24,
+          "optipmb": 12,
+          "ground_truth": 37
+        },
+        "CAM_FRONT": {
+          "bev_detection": 148,
+          "grae": 124,
+          "optipmb": 100,
+          "ground_truth": 184
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 119,
+          "grae": 119,
+          "optipmb": 107,
+          "ground_truth": 134
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 29,
+          "grae": 17,
+          "optipmb": 17,
+          "ground_truth": 25
+        },
+        "CAM_BACK": {
+          "bev_detection": 139,
+          "grae": 139,
+          "optipmb": 139,
+          "ground_truth": 235
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 96,
+          "grae": 84,
+          "optipmb": 84,
+          "ground_truth": 116
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 34,
+      "sample_token": "1c9a906c40f6417bbe1cea06d6e55501",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151620447745,
+      "original_lidar_points": 34688,
+      "gt_boxes": 57,
+      "model_boxes": {
+        "bev_detection": 38,
+        "grae": 35,
+        "optipmb": 35
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 36,
+          "grae": 24,
+          "optipmb": 24,
+          "ground_truth": 55
+        },
+        "CAM_FRONT": {
+          "bev_detection": 105,
+          "grae": 93,
+          "optipmb": 93,
+          "ground_truth": 183
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 97,
+          "grae": 97,
+          "optipmb": 96,
+          "ground_truth": 136
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 32,
+          "grae": 8,
+          "optipmb": 8,
+          "ground_truth": 16
+        },
+        "CAM_BACK": {
+          "bev_detection": 148,
+          "grae": 148,
+          "optipmb": 148,
+          "ground_truth": 244
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 103,
+          "grae": 103,
+          "optipmb": 100,
+          "ground_truth": 127
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 35,
+      "sample_token": "a771effa2a2648d78096c3e92b95b129",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151621047706,
+      "original_lidar_points": 34720,
+      "gt_boxes": 58,
+      "model_boxes": {
+        "bev_detection": 41,
+        "grae": 39,
+        "optipmb": 39
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 41,
+          "grae": 17,
+          "optipmb": 17,
+          "ground_truth": 78
+        },
+        "CAM_FRONT": {
+          "bev_detection": 100,
+          "grae": 88,
+          "optipmb": 88,
+          "ground_truth": 177
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 88,
+          "grae": 88,
+          "optipmb": 88,
+          "ground_truth": 125
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 12,
+          "grae": 12,
+          "optipmb": 12,
+          "ground_truth": 19
+        },
+        "CAM_BACK": {
+          "bev_detection": 186,
+          "grae": 186,
+          "optipmb": 188,
+          "ground_truth": 254
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 132,
+          "grae": 132,
+          "optipmb": 132,
+          "ground_truth": 160
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 36,
+      "sample_token": "b9ea04a6121d4a8bb00199b885aa5ef0",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151621448049,
+      "original_lidar_points": 34752,
+      "gt_boxes": 54,
+      "model_boxes": {
+        "bev_detection": 39,
+        "grae": 37,
+        "optipmb": 34
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 47,
+          "grae": 35,
+          "optipmb": 35,
+          "ground_truth": 91
+        },
+        "CAM_FRONT": {
+          "bev_detection": 96,
+          "grae": 96,
+          "optipmb": 84,
+          "ground_truth": 164
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 92,
+          "grae": 92,
+          "optipmb": 68,
+          "ground_truth": 99
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 0,
+          "grae": 0,
+          "optipmb": 0,
+          "ground_truth": 8
+        },
+        "CAM_BACK": {
+          "bev_detection": 186,
+          "grae": 174,
+          "optipmb": 174,
+          "ground_truth": 257
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 159,
+          "grae": 159,
+          "optipmb": 143,
+          "ground_truth": 180
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 37,
+      "sample_token": "87e772078a494d42bd34cd16172808bc",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151621947928,
+      "original_lidar_points": 34720,
+      "gt_boxes": 55,
+      "model_boxes": {
+        "bev_detection": 36,
+        "grae": 34,
+        "optipmb": 31
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 60,
+          "grae": 36,
+          "optipmb": 36,
+          "ground_truth": 84
+        },
+        "CAM_FRONT": {
+          "bev_detection": 84,
+          "grae": 84,
+          "optipmb": 72,
+          "ground_truth": 168
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 66,
+          "grae": 66,
+          "optipmb": 44,
+          "ground_truth": 71
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 24,
+          "grae": 16,
+          "optipmb": 16,
+          "ground_truth": 32
+        },
+        "CAM_BACK": {
+          "bev_detection": 148,
+          "grae": 148,
+          "optipmb": 148,
+          "ground_truth": 252
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 133,
+          "grae": 133,
+          "optipmb": 123,
+          "ground_truth": 189
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 38,
+      "sample_token": "f40544fd4f5d42abbcfa948eeaf86850",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151622448916,
+      "original_lidar_points": 34752,
+      "gt_boxes": 49,
+      "model_boxes": {
+        "bev_detection": 30,
+        "grae": 28,
+        "optipmb": 26
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 51,
+          "grae": 39,
+          "optipmb": 39,
+          "ground_truth": 70
+        },
+        "CAM_FRONT": {
+          "bev_detection": 109,
+          "grae": 109,
+          "optipmb": 97,
+          "ground_truth": 145
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 27,
+          "grae": 27,
+          "optipmb": 27,
+          "ground_truth": 39
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 12,
+          "grae": 0,
+          "optipmb": 0,
+          "ground_truth": 28
+        },
+        "CAM_BACK": {
+          "bev_detection": 140,
+          "grae": 140,
+          "optipmb": 140,
+          "ground_truth": 237
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 72,
+          "grae": 72,
+          "optipmb": 63,
+          "ground_truth": 157
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 39,
+      "sample_token": "281b92269fd648d4b52d06ac06ca6d65",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "timestamp_us": 1533151622948227,
+      "original_lidar_points": 34720,
+      "gt_boxes": 44,
+      "model_boxes": {
+        "bev_detection": 37,
+        "grae": 33,
+        "optipmb": 31
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 60,
+          "grae": 52,
+          "optipmb": 52,
+          "ground_truth": 68
+        },
+        "CAM_FRONT": {
+          "bev_detection": 100,
+          "grae": 100,
+          "optipmb": 86,
+          "ground_truth": 95
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 29,
+          "grae": 29,
+          "optipmb": 29,
+          "ground_truth": 29
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 62,
+          "grae": 14,
+          "optipmb": 14,
+          "ground_truth": 91
+        },
+        "CAM_BACK": {
+          "bev_detection": 149,
+          "grae": 149,
+          "optipmb": 149,
+          "ground_truth": 202
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 115,
+          "grae": 115,
+          "optipmb": 102,
+          "ground_truth": 136
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 40,
+      "sample_token": "b5989651183643369174912bc5641d3b",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984233547259,
+      "original_lidar_points": 34560,
+      "gt_boxes": 40,
+      "model_boxes": {
+        "bev_detection": 30,
+        "grae": 29,
+        "optipmb": 20
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 24,
+          "grae": 24,
+          "optipmb": 24,
+          "ground_truth": 44
+        },
+        "CAM_FRONT": {
+          "bev_detection": 101,
+          "grae": 89,
+          "optipmb": 60,
+          "ground_truth": 149
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 173,
+          "grae": 161,
+          "optipmb": 101,
+          "ground_truth": 209
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 24,
+          "grae": 24,
+          "optipmb": 12,
+          "ground_truth": 29
+        },
+        "CAM_BACK": {
+          "bev_detection": 12,
+          "grae": 12,
+          "optipmb": 12,
+          "ground_truth": 32
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 92,
+          "grae": 92,
+          "optipmb": 68,
+          "ground_truth": 128
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 41,
+      "sample_token": "0bb62a68055249e381b039bf54b0ccf8",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984234047134,
+      "original_lidar_points": 34720,
+      "gt_boxes": 44,
+      "model_boxes": {
+        "bev_detection": 32,
+        "grae": 32,
+        "optipmb": 32
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 32,
+          "grae": 32,
+          "optipmb": 32,
+          "ground_truth": 44
+        },
+        "CAM_FRONT": {
+          "bev_detection": 132,
+          "grae": 132,
+          "optipmb": 132,
+          "ground_truth": 220
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 113,
+          "grae": 113,
+          "optipmb": 113,
+          "ground_truth": 161
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 36,
+          "grae": 36,
+          "optipmb": 36,
+          "ground_truth": 48
+        },
+        "CAM_BACK": {
+          "bev_detection": 24,
+          "grae": 24,
+          "optipmb": 24,
+          "ground_truth": 36
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 92,
+          "grae": 92,
+          "optipmb": 94,
+          "ground_truth": 116
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 42,
+      "sample_token": "07fad91090c746ccaa1b2bdb55329e20",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984234547551,
+      "original_lidar_points": 34752,
+      "gt_boxes": 49,
+      "model_boxes": {
+        "bev_detection": 36,
+        "grae": 36,
+        "optipmb": 32
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 24,
+          "grae": 24,
+          "optipmb": 24,
+          "ground_truth": 24
+        },
+        "CAM_FRONT": {
+          "bev_detection": 132,
+          "grae": 132,
+          "optipmb": 120,
+          "ground_truth": 228
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 149,
+          "grae": 149,
+          "optipmb": 125,
+          "ground_truth": 137
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 32,
+          "grae": 32,
+          "optipmb": 32,
+          "ground_truth": 44
+        },
+        "CAM_BACK": {
+          "bev_detection": 32,
+          "grae": 32,
+          "optipmb": 32,
+          "ground_truth": 44
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 117,
+          "grae": 117,
+          "optipmb": 90,
+          "ground_truth": 161
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 43,
+      "sample_token": "ae5004bf4ebb4db0a84cb3c27bd398d1",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984234947904,
+      "original_lidar_points": 34752,
+      "gt_boxes": 52,
+      "model_boxes": {
+        "bev_detection": 39,
+        "grae": 39,
+        "optipmb": 36
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 24,
+          "grae": 24,
+          "optipmb": 24,
+          "ground_truth": 24
+        },
+        "CAM_FRONT": {
+          "bev_detection": 156,
+          "grae": 156,
+          "optipmb": 144,
+          "ground_truth": 264
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 136,
+          "grae": 136,
+          "optipmb": 136,
+          "ground_truth": 144
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 48,
+          "grae": 48,
+          "optipmb": 36,
+          "ground_truth": 44
+        },
+        "CAM_BACK": {
+          "bev_detection": 35,
+          "grae": 35,
+          "optipmb": 35,
+          "ground_truth": 55
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 125,
+          "grae": 125,
+          "optipmb": 113,
+          "ground_truth": 158
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 44,
+      "sample_token": "ac8b4d49731d43289579f014cb7c97ef",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984235447825,
+      "original_lidar_points": 34688,
+      "gt_boxes": 58,
+      "model_boxes": {
+        "bev_detection": 35,
+        "grae": 35,
+        "optipmb": 31
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 22,
+          "grae": 22,
+          "optipmb": 22,
+          "ground_truth": 25
+        },
+        "CAM_FRONT": {
+          "bev_detection": 203,
+          "grae": 203,
+          "optipmb": 179,
+          "ground_truth": 275
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 148,
+          "grae": 148,
+          "optipmb": 136,
+          "ground_truth": 208
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 36,
+          "grae": 36,
+          "optipmb": 24,
+          "ground_truth": 36
+        },
+        "CAM_BACK": {
+          "bev_detection": 23,
+          "grae": 23,
+          "optipmb": 23,
+          "ground_truth": 59
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 51,
+          "grae": 51,
+          "optipmb": 51,
+          "ground_truth": 171
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 45,
+      "sample_token": "c1eed31234b94e9f8e22fbf3428b0ac2",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984235947081,
+      "original_lidar_points": 34688,
+      "gt_boxes": 61,
+      "model_boxes": {
+        "bev_detection": 44,
+        "grae": 43,
+        "optipmb": 38
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 48,
+          "grae": 48,
+          "optipmb": 48,
+          "ground_truth": 53
+        },
+        "CAM_FRONT": {
+          "bev_detection": 257,
+          "grae": 245,
+          "optipmb": 197,
+          "ground_truth": 293
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 184,
+          "grae": 184,
+          "optipmb": 184,
+          "ground_truth": 220
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 36,
+          "grae": 36,
+          "optipmb": 24,
+          "ground_truth": 36
+        },
+        "CAM_BACK": {
+          "bev_detection": 23,
+          "grae": 23,
+          "optipmb": 23,
+          "ground_truth": 59
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 61,
+          "grae": 61,
+          "optipmb": 61,
+          "ground_truth": 164
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 46,
+      "sample_token": "edba7d0cf1c64d2a9c8a5ebddab507a9",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984236446970,
+      "original_lidar_points": 34720,
+      "gt_boxes": 66,
+      "model_boxes": {
+        "bev_detection": 44,
+        "grae": 44,
+        "optipmb": 42
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 115,
+          "grae": 115,
+          "optipmb": 103,
+          "ground_truth": 122
+        },
+        "CAM_FRONT": {
+          "bev_detection": 224,
+          "grae": 224,
+          "optipmb": 207,
+          "ground_truth": 284
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 195,
+          "grae": 195,
+          "optipmb": 195,
+          "ground_truth": 229
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 36,
+          "grae": 36,
+          "optipmb": 36,
+          "ground_truth": 49
+        },
+        "CAM_BACK": {
+          "bev_detection": 35,
+          "grae": 35,
+          "optipmb": 35,
+          "ground_truth": 82
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 68,
+          "grae": 68,
+          "optipmb": 68,
+          "ground_truth": 192
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 47,
+      "sample_token": "a5afebb0aa5e4d7c95665788ce51ec58",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984236946289,
+      "original_lidar_points": 34720,
+      "gt_boxes": 70,
+      "model_boxes": {
+        "bev_detection": 47,
+        "grae": 47,
+        "optipmb": 45
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 131,
+          "grae": 131,
+          "optipmb": 131,
+          "ground_truth": 166
+        },
+        "CAM_FRONT": {
+          "bev_detection": 170,
+          "grae": 170,
+          "optipmb": 170,
+          "ground_truth": 230
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 176,
+          "grae": 176,
+          "optipmb": 176,
+          "ground_truth": 249
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 36,
+          "grae": 36,
+          "optipmb": 24,
+          "ground_truth": 36
+        },
+        "CAM_BACK": {
+          "bev_detection": 36,
+          "grae": 36,
+          "optipmb": 36,
+          "ground_truth": 84
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 138,
+          "grae": 138,
+          "optipmb": 126,
+          "ground_truth": 226
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 48,
+      "sample_token": "5b7cb170eee6468aa1fdbd3abcf63c5a",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984237446737,
+      "original_lidar_points": 34752,
+      "gt_boxes": 72,
+      "model_boxes": {
+        "bev_detection": 54,
+        "grae": 53,
+        "optipmb": 52
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 172,
+          "grae": 160,
+          "optipmb": 160,
+          "ground_truth": 184
+        },
+        "CAM_FRONT": {
+          "bev_detection": 138,
+          "grae": 138,
+          "optipmb": 138,
+          "ground_truth": 183
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 220,
+          "grae": 220,
+          "optipmb": 207,
+          "ground_truth": 246
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 36,
+          "grae": 36,
+          "optipmb": 36,
+          "ground_truth": 36
+        },
+        "CAM_BACK": {
+          "bev_detection": 29,
+          "grae": 29,
+          "optipmb": 29,
+          "ground_truth": 94
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 180,
+          "grae": 180,
+          "optipmb": 172,
+          "ground_truth": 261
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 49,
+      "sample_token": "d8251bbc2105497ab8ec80827d4429aa",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984237947155,
+      "original_lidar_points": 34720,
+      "gt_boxes": 71,
+      "model_boxes": {
+        "bev_detection": 56,
+        "grae": 54,
+        "optipmb": 54
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 194,
+          "grae": 170,
+          "optipmb": 170,
+          "ground_truth": 197
+        },
+        "CAM_FRONT": {
+          "bev_detection": 144,
+          "grae": 144,
+          "optipmb": 146,
+          "ground_truth": 156
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 205,
+          "grae": 205,
+          "optipmb": 205,
+          "ground_truth": 241
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 36,
+          "grae": 36,
+          "optipmb": 36,
+          "ground_truth": 48
+        },
+        "CAM_BACK": {
+          "bev_detection": 32,
+          "grae": 32,
+          "optipmb": 32,
+          "ground_truth": 80
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 175,
+          "grae": 175,
+          "optipmb": 175,
+          "ground_truth": 267
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 50,
+      "sample_token": "048a45dd2cf54aa5808d8ccc85731d44",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984238447571,
+      "original_lidar_points": 34752,
+      "gt_boxes": 71,
+      "model_boxes": {
+        "bev_detection": 58,
+        "grae": 58,
+        "optipmb": 57
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 133,
+          "grae": 133,
+          "optipmb": 133,
+          "ground_truth": 176
+        },
+        "CAM_FRONT": {
+          "bev_detection": 124,
+          "grae": 124,
+          "optipmb": 124,
+          "ground_truth": 144
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 221,
+          "grae": 221,
+          "optipmb": 221,
+          "ground_truth": 233
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 77,
+          "grae": 77,
+          "optipmb": 77,
+          "ground_truth": 112
+        },
+        "CAM_BACK": {
+          "bev_detection": 44,
+          "grae": 44,
+          "optipmb": 44,
+          "ground_truth": 80
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 250,
+          "grae": 250,
+          "optipmb": 239,
+          "ground_truth": 290
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 51,
+      "sample_token": "858a1ece22cf45d9bc71e42336604b78",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984238948012,
+      "original_lidar_points": 34784,
+      "gt_boxes": 72,
+      "model_boxes": {
+        "bev_detection": 56,
+        "grae": 55,
+        "optipmb": 53
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 110,
+          "grae": 110,
+          "optipmb": 98,
+          "ground_truth": 118
+        },
+        "CAM_FRONT": {
+          "bev_detection": 117,
+          "grae": 117,
+          "optipmb": 117,
+          "ground_truth": 117
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 196,
+          "grae": 196,
+          "optipmb": 184,
+          "ground_truth": 212
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 127,
+          "grae": 115,
+          "optipmb": 116,
+          "ground_truth": 152
+        },
+        "CAM_BACK": {
+          "bev_detection": 32,
+          "grae": 32,
+          "optipmb": 32,
+          "ground_truth": 97
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 208,
+          "grae": 208,
+          "optipmb": 208,
+          "ground_truth": 308
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 52,
+      "sample_token": "372725a4b00e49c78d6d0b1c4a38b6e0",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984239448435,
+      "original_lidar_points": 34720,
+      "gt_boxes": 72,
+      "model_boxes": {
+        "bev_detection": 53,
+        "grae": 53,
+        "optipmb": 52
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 93,
+          "grae": 93,
+          "optipmb": 93,
+          "ground_truth": 116
+        },
+        "CAM_FRONT": {
+          "bev_detection": 76,
+          "grae": 76,
+          "optipmb": 76,
+          "ground_truth": 87
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 136,
+          "grae": 136,
+          "optipmb": 124,
+          "ground_truth": 204
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 160,
+          "grae": 160,
+          "optipmb": 160,
+          "ground_truth": 184
+        },
+        "CAM_BACK": {
+          "bev_detection": 55,
+          "grae": 55,
+          "optipmb": 55,
+          "ground_truth": 96
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 215,
+          "grae": 215,
+          "optipmb": 217,
+          "ground_truth": 344
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 53,
+      "sample_token": "61a7bd24f88a46c2963280d8b13ac675",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984239948316,
+      "original_lidar_points": 34688,
+      "gt_boxes": 74,
+      "model_boxes": {
+        "bev_detection": 56,
+        "grae": 55,
+        "optipmb": 54
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 72,
+          "grae": 72,
+          "optipmb": 60,
+          "ground_truth": 96
+        },
+        "CAM_FRONT": {
+          "bev_detection": 55,
+          "grae": 55,
+          "optipmb": 55,
+          "ground_truth": 56
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 132,
+          "grae": 132,
+          "optipmb": 133,
+          "ground_truth": 240
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 202,
+          "grae": 190,
+          "optipmb": 182,
+          "ground_truth": 176
+        },
+        "CAM_BACK": {
+          "bev_detection": 68,
+          "grae": 68,
+          "optipmb": 68,
+          "ground_truth": 109
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 231,
+          "grae": 231,
+          "optipmb": 234,
+          "ground_truth": 377
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 54,
+      "sample_token": "609d5177362340458a3bfd4949cd1e64",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984240448191,
+      "original_lidar_points": 34720,
+      "gt_boxes": 74,
+      "model_boxes": {
+        "bev_detection": 49,
+        "grae": 49,
+        "optipmb": 49
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 36,
+          "grae": 36,
+          "optipmb": 36,
+          "ground_truth": 48
+        },
+        "CAM_FRONT": {
+          "bev_detection": 59,
+          "grae": 59,
+          "optipmb": 59,
+          "ground_truth": 59
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 142,
+          "grae": 142,
+          "optipmb": 141,
+          "ground_truth": 275
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 85,
+          "grae": 85,
+          "optipmb": 80,
+          "ground_truth": 106
+        },
+        "CAM_BACK": {
+          "bev_detection": 133,
+          "grae": 133,
+          "optipmb": 141,
+          "ground_truth": 197
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 192,
+          "grae": 192,
+          "optipmb": 187,
+          "ground_truth": 317
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 55,
+      "sample_token": "b1303058fa624645b753d7283d70de45",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984240947518,
+      "original_lidar_points": 34688,
+      "gt_boxes": 73,
+      "model_boxes": {
+        "bev_detection": 49,
+        "grae": 48,
+        "optipmb": 48
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 52,
+          "grae": 52,
+          "optipmb": 52,
+          "ground_truth": 52
+        },
+        "CAM_FRONT": {
+          "bev_detection": 56,
+          "grae": 56,
+          "optipmb": 56,
+          "ground_truth": 56
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 171,
+          "grae": 171,
+          "optipmb": 172,
+          "ground_truth": 350
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 52,
+          "grae": 52,
+          "optipmb": 52,
+          "ground_truth": 88
+        },
+        "CAM_BACK": {
+          "bev_detection": 204,
+          "grae": 192,
+          "optipmb": 192,
+          "ground_truth": 228
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 141,
+          "grae": 141,
+          "optipmb": 140,
+          "ground_truth": 247
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 56,
+      "sample_token": "a19a80c905674faab7203a3a4e0f5246",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984241447959,
+      "original_lidar_points": 34752,
+      "gt_boxes": 72,
+      "model_boxes": {
+        "bev_detection": 49,
+        "grae": 48,
+        "optipmb": 47
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 20,
+          "grae": 20,
+          "optipmb": 22,
+          "ground_truth": 23
+        },
+        "CAM_FRONT": {
+          "bev_detection": 72,
+          "grae": 72,
+          "optipmb": 72,
+          "ground_truth": 67
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 195,
+          "grae": 195,
+          "optipmb": 195,
+          "ground_truth": 378
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 64,
+          "grae": 64,
+          "optipmb": 52,
+          "ground_truth": 72
+        },
+        "CAM_BACK": {
+          "bev_detection": 208,
+          "grae": 196,
+          "optipmb": 196,
+          "ground_truth": 252
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 106,
+          "grae": 106,
+          "optipmb": 106,
+          "ground_truth": 188
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 57,
+      "sample_token": "b6c420c3a5bd4a219b1cb82ee5ea0aa7",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984241947812,
+      "original_lidar_points": 34720,
+      "gt_boxes": 73,
+      "model_boxes": {
+        "bev_detection": 46,
+        "grae": 46,
+        "optipmb": 46
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 40,
+          "grae": 40,
+          "optipmb": 40,
+          "ground_truth": 40
+        },
+        "CAM_FRONT": {
+          "bev_detection": 77,
+          "grae": 77,
+          "optipmb": 77,
+          "ground_truth": 89
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 191,
+          "grae": 191,
+          "optipmb": 190,
+          "ground_truth": 417
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 60,
+          "grae": 60,
+          "optipmb": 60,
+          "ground_truth": 60
+        },
+        "CAM_BACK": {
+          "bev_detection": 180,
+          "grae": 180,
+          "optipmb": 180,
+          "ground_truth": 236
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 80,
+          "grae": 80,
+          "optipmb": 80,
+          "ground_truth": 161
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 58,
+      "sample_token": "8092909473464f80b9f791a4d31ddcb8",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984242447730,
+      "original_lidar_points": 34688,
+      "gt_boxes": 72,
+      "model_boxes": {
+        "bev_detection": 45,
+        "grae": 45,
+        "optipmb": 44
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 42,
+          "grae": 42,
+          "optipmb": 42,
+          "ground_truth": 42
+        },
+        "CAM_FRONT": {
+          "bev_detection": 91,
+          "grae": 91,
+          "optipmb": 80,
+          "ground_truth": 161
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 193,
+          "grae": 193,
+          "optipmb": 181,
+          "ground_truth": 415
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 30,
+          "grae": 30,
+          "optipmb": 31,
+          "ground_truth": 30
+        },
+        "CAM_BACK": {
+          "bev_detection": 196,
+          "grae": 196,
+          "optipmb": 196,
+          "ground_truth": 256
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 62,
+          "grae": 62,
+          "optipmb": 62,
+          "ground_truth": 107
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 59,
+      "sample_token": "e174cb43655f49dab7ffa27b973670e3",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984242947023,
+      "original_lidar_points": 34688,
+      "gt_boxes": 69,
+      "model_boxes": {
+        "bev_detection": 40,
+        "grae": 40,
+        "optipmb": 39
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 36,
+          "grae": 36,
+          "optipmb": 34,
+          "ground_truth": 34
+        },
+        "CAM_FRONT": {
+          "bev_detection": 120,
+          "grae": 120,
+          "optipmb": 113,
+          "ground_truth": 230
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 130,
+          "grae": 130,
+          "optipmb": 130,
+          "ground_truth": 338
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 43,
+          "grae": 43,
+          "optipmb": 43,
+          "ground_truth": 43
+        },
+        "CAM_BACK": {
+          "bev_detection": 152,
+          "grae": 152,
+          "optipmb": 152,
+          "ground_truth": 224
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 59,
+          "grae": 59,
+          "optipmb": 59,
+          "ground_truth": 76
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 60,
+      "sample_token": "6ff9723a60bf4e14b328b3b19f04dc32",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984243446332,
+      "original_lidar_points": 34688,
+      "gt_boxes": 67,
+      "model_boxes": {
+        "bev_detection": 40,
+        "grae": 40,
+        "optipmb": 39
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 24,
+          "grae": 24,
+          "optipmb": 24,
+          "ground_truth": 24
+        },
+        "CAM_FRONT": {
+          "bev_detection": 128,
+          "grae": 128,
+          "optipmb": 119,
+          "ground_truth": 261
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 143,
+          "grae": 143,
+          "optipmb": 138,
+          "ground_truth": 302
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 47,
+          "grae": 47,
+          "optipmb": 47,
+          "ground_truth": 47
+        },
+        "CAM_BACK": {
+          "bev_detection": 147,
+          "grae": 147,
+          "optipmb": 147,
+          "ground_truth": 204
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 64,
+          "grae": 64,
+          "optipmb": 64,
+          "ground_truth": 80
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 61,
+      "sample_token": "06be0e3b665c44fa8d17d9f4770bdf9c",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984243946219,
+      "original_lidar_points": 34720,
+      "gt_boxes": 66,
+      "model_boxes": {
+        "bev_detection": 38,
+        "grae": 38,
+        "optipmb": 36
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 25,
+          "grae": 25,
+          "optipmb": 25,
+          "ground_truth": 28
+        },
+        "CAM_FRONT": {
+          "bev_detection": 127,
+          "grae": 127,
+          "optipmb": 103,
+          "ground_truth": 267
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 126,
+          "grae": 126,
+          "optipmb": 126,
+          "ground_truth": 294
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 42,
+          "grae": 42,
+          "optipmb": 42,
+          "ground_truth": 42
+        },
+        "CAM_BACK": {
+          "bev_detection": 125,
+          "grae": 125,
+          "optipmb": 125,
+          "ground_truth": 196
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 83,
+          "grae": 83,
+          "optipmb": 83,
+          "ground_truth": 102
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 62,
+      "sample_token": "9150678870764c1b87a649a25939c61b",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984244446640,
+      "original_lidar_points": 34720,
+      "gt_boxes": 64,
+      "model_boxes": {
+        "bev_detection": 36,
+        "grae": 36,
+        "optipmb": 35
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 28,
+          "grae": 28,
+          "optipmb": 28,
+          "ground_truth": 28
+        },
+        "CAM_FRONT": {
+          "bev_detection": 121,
+          "grae": 121,
+          "optipmb": 109,
+          "ground_truth": 244
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 117,
+          "grae": 117,
+          "optipmb": 117,
+          "ground_truth": 272
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 36,
+          "grae": 36,
+          "optipmb": 36,
+          "ground_truth": 36
+        },
+        "CAM_BACK": {
+          "bev_detection": 94,
+          "grae": 94,
+          "optipmb": 94,
+          "ground_truth": 190
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 125,
+          "grae": 125,
+          "optipmb": 124,
+          "ground_truth": 137
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 63,
+      "sample_token": "8573a885a7cb41d185c05029eeb9a54e",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984244946513,
+      "original_lidar_points": 34752,
+      "gt_boxes": 66,
+      "model_boxes": {
+        "bev_detection": 36,
+        "grae": 36,
+        "optipmb": 33
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 31,
+          "grae": 31,
+          "optipmb": 31,
+          "ground_truth": 30
+        },
+        "CAM_FRONT": {
+          "bev_detection": 112,
+          "grae": 112,
+          "optipmb": 76,
+          "ground_truth": 247
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 110,
+          "grae": 110,
+          "optipmb": 102,
+          "ground_truth": 272
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 26,
+          "grae": 26,
+          "optipmb": 26,
+          "ground_truth": 26
+        },
+        "CAM_BACK": {
+          "bev_detection": 116,
+          "grae": 116,
+          "optipmb": 116,
+          "ground_truth": 200
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 125,
+          "grae": 125,
+          "optipmb": 125,
+          "ground_truth": 143
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 64,
+      "sample_token": "55c258972acb4300a3a6077a531ab050",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984245447134,
+      "original_lidar_points": 34752,
+      "gt_boxes": 63,
+      "model_boxes": {
+        "bev_detection": 38,
+        "grae": 38,
+        "optipmb": 35
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 35,
+          "grae": 35,
+          "optipmb": 28,
+          "ground_truth": 33
+        },
+        "CAM_FRONT": {
+          "bev_detection": 76,
+          "grae": 76,
+          "optipmb": 64,
+          "ground_truth": 213
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 125,
+          "grae": 125,
+          "optipmb": 101,
+          "ground_truth": 269
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 24,
+          "grae": 24,
+          "optipmb": 24,
+          "ground_truth": 24
+        },
+        "CAM_BACK": {
+          "bev_detection": 137,
+          "grae": 137,
+          "optipmb": 139,
+          "ground_truth": 182
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 137,
+          "grae": 137,
+          "optipmb": 134,
+          "ground_truth": 168
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 65,
+      "sample_token": "44237858a539457da65822bfcf58c414",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984245947391,
+      "original_lidar_points": 34752,
+      "gt_boxes": 59,
+      "model_boxes": {
+        "bev_detection": 45,
+        "grae": 45,
+        "optipmb": 41
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 32,
+          "grae": 32,
+          "optipmb": 32,
+          "ground_truth": 31
+        },
+        "CAM_FRONT": {
+          "bev_detection": 99,
+          "grae": 99,
+          "optipmb": 75,
+          "ground_truth": 187
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 134,
+          "grae": 134,
+          "optipmb": 110,
+          "ground_truth": 242
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 17,
+          "grae": 17,
+          "optipmb": 17,
+          "ground_truth": 22
+        },
+        "CAM_BACK": {
+          "bev_detection": 175,
+          "grae": 175,
+          "optipmb": 175,
+          "ground_truth": 179
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 159,
+          "grae": 159,
+          "optipmb": 159,
+          "ground_truth": 164
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 66,
+      "sample_token": "8cd36e9531fb4eba8e6ac1d666c4641c",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984246447815,
+      "original_lidar_points": 34784,
+      "gt_boxes": 59,
+      "model_boxes": {
+        "bev_detection": 41,
+        "grae": 41,
+        "optipmb": 39
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 23,
+          "grae": 23,
+          "optipmb": 22,
+          "ground_truth": 22
+        },
+        "CAM_FRONT": {
+          "bev_detection": 75,
+          "grae": 75,
+          "optipmb": 71,
+          "ground_truth": 187
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 111,
+          "grae": 111,
+          "optipmb": 98,
+          "ground_truth": 217
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 24,
+          "grae": 24,
+          "optipmb": 24,
+          "ground_truth": 24
+        },
+        "CAM_BACK": {
+          "bev_detection": 178,
+          "grae": 178,
+          "optipmb": 178,
+          "ground_truth": 202
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 158,
+          "grae": 158,
+          "optipmb": 151,
+          "ground_truth": 176
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 67,
+      "sample_token": "7bebe3c9be714f02837f8617c56df122",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984246948247,
+      "original_lidar_points": 34784,
+      "gt_boxes": 56,
+      "model_boxes": {
+        "bev_detection": 36,
+        "grae": 36,
+        "optipmb": 30
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 8,
+          "grae": 8,
+          "optipmb": 8,
+          "ground_truth": 8
+        },
+        "CAM_FRONT": {
+          "bev_detection": 108,
+          "grae": 108,
+          "optipmb": 72,
+          "ground_truth": 185
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 100,
+          "grae": 100,
+          "optipmb": 76,
+          "ground_truth": 187
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 31,
+          "grae": 31,
+          "optipmb": 31,
+          "ground_truth": 31
+        },
+        "CAM_BACK": {
+          "bev_detection": 153,
+          "grae": 153,
+          "optipmb": 141,
+          "ground_truth": 201
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 91,
+          "grae": 91,
+          "optipmb": 77,
+          "ground_truth": 145
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 68,
+      "sample_token": "4b894442c95141f9affd731d9da7b43c",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984247449248,
+      "original_lidar_points": 34720,
+      "gt_boxes": 56,
+      "model_boxes": {
+        "bev_detection": 43,
+        "grae": 43,
+        "optipmb": 37
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 11,
+          "grae": 11,
+          "optipmb": 11,
+          "ground_truth": 11
+        },
+        "CAM_FRONT": {
+          "bev_detection": 140,
+          "grae": 140,
+          "optipmb": 92,
+          "ground_truth": 172
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 117,
+          "grae": 117,
+          "optipmb": 95,
+          "ground_truth": 165
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 18,
+          "grae": 18,
+          "optipmb": 19,
+          "ground_truth": 18
+        },
+        "CAM_BACK": {
+          "bev_detection": 179,
+          "grae": 179,
+          "optipmb": 180,
+          "ground_truth": 225
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 115,
+          "grae": 115,
+          "optipmb": 103,
+          "ground_truth": 148
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 69,
+      "sample_token": "e00dc15130dc44e796687baadd076ae4",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984247949081,
+      "original_lidar_points": 34688,
+      "gt_boxes": 56,
+      "model_boxes": {
+        "bev_detection": 42,
+        "grae": 42,
+        "optipmb": 41
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 12,
+          "grae": 12,
+          "optipmb": 12,
+          "ground_truth": 12
+        },
+        "CAM_FRONT": {
+          "bev_detection": 104,
+          "grae": 104,
+          "optipmb": 104,
+          "ground_truth": 148
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 88,
+          "grae": 88,
+          "optipmb": 88,
+          "ground_truth": 160
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 13,
+          "grae": 13,
+          "optipmb": 13,
+          "ground_truth": 13
+        },
+        "CAM_BACK": {
+          "bev_detection": 211,
+          "grae": 211,
+          "optipmb": 216,
+          "ground_truth": 254
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 132,
+          "grae": 132,
+          "optipmb": 119,
+          "ground_truth": 143
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 70,
+      "sample_token": "e63b83b436a0479db7362338cdfab118",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984248448966,
+      "original_lidar_points": 34720,
+      "gt_boxes": 54,
+      "model_boxes": {
+        "bev_detection": 43,
+        "grae": 43,
+        "optipmb": 41
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 16,
+          "grae": 16,
+          "optipmb": 11,
+          "ground_truth": 16
+        },
+        "CAM_FRONT": {
+          "bev_detection": 129,
+          "grae": 129,
+          "optipmb": 117,
+          "ground_truth": 144
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 106,
+          "grae": 106,
+          "optipmb": 94,
+          "ground_truth": 156
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 12,
+          "grae": 12,
+          "optipmb": 12,
+          "ground_truth": 12
+        },
+        "CAM_BACK": {
+          "bev_detection": 199,
+          "grae": 199,
+          "optipmb": 199,
+          "ground_truth": 261
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 122,
+          "grae": 122,
+          "optipmb": 122,
+          "ground_truth": 140
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 71,
+      "sample_token": "c567f9b8e9f34817acdc9c49d791c557",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984248948287,
+      "original_lidar_points": 34688,
+      "gt_boxes": 51,
+      "model_boxes": {
+        "bev_detection": 39,
+        "grae": 39,
+        "optipmb": 38
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 8,
+          "grae": 8,
+          "optipmb": 8,
+          "ground_truth": 8
+        },
+        "CAM_FRONT": {
+          "bev_detection": 92,
+          "grae": 92,
+          "optipmb": 92,
+          "ground_truth": 140
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 97,
+          "grae": 97,
+          "optipmb": 85,
+          "ground_truth": 145
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 11,
+          "grae": 11,
+          "optipmb": 11,
+          "ground_truth": 11
+        },
+        "CAM_BACK": {
+          "bev_detection": 191,
+          "grae": 191,
+          "optipmb": 191,
+          "ground_truth": 238
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 121,
+          "grae": 121,
+          "optipmb": 121,
+          "ground_truth": 138
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 72,
+      "sample_token": "8e352d4a6c6f40c8ad4f10a3d2c3f158",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984249448168,
+      "original_lidar_points": 34720,
+      "gt_boxes": 51,
+      "model_boxes": {
+        "bev_detection": 33,
+        "grae": 33,
+        "optipmb": 33
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 12,
+          "grae": 12,
+          "optipmb": 12,
+          "ground_truth": 12
+        },
+        "CAM_FRONT": {
+          "bev_detection": 101,
+          "grae": 101,
+          "optipmb": 101,
+          "ground_truth": 137
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 64,
+          "grae": 64,
+          "optipmb": 64,
+          "ground_truth": 134
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 11,
+          "grae": 11,
+          "optipmb": 11,
+          "ground_truth": 10
+        },
+        "CAM_BACK": {
+          "bev_detection": 145,
+          "grae": 145,
+          "optipmb": 145,
+          "ground_truth": 253
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 129,
+          "grae": 129,
+          "optipmb": 127,
+          "ground_truth": 145
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 73,
+      "sample_token": "841dd6709e9b4d7c9d6bf888f1fe6d7e",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984249948039,
+      "original_lidar_points": 34720,
+      "gt_boxes": 49,
+      "model_boxes": {
+        "bev_detection": 37,
+        "grae": 37,
+        "optipmb": 37
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 12,
+          "grae": 12,
+          "optipmb": 12,
+          "ground_truth": 12
+        },
+        "CAM_FRONT": {
+          "bev_detection": 107,
+          "grae": 107,
+          "optipmb": 107,
+          "ground_truth": 131
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 79,
+          "grae": 79,
+          "optipmb": 79,
+          "ground_truth": 108
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 8,
+          "grae": 8,
+          "optipmb": 8,
+          "ground_truth": 8
+        },
+        "CAM_BACK": {
+          "bev_detection": 168,
+          "grae": 168,
+          "optipmb": 168,
+          "ground_truth": 252
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 123,
+          "grae": 123,
+          "optipmb": 123,
+          "ground_truth": 152
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 74,
+      "sample_token": "e54b784a608644a2804fcf800c7499f7",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984250447364,
+      "original_lidar_points": 34720,
+      "gt_boxes": 49,
+      "model_boxes": {
+        "bev_detection": 39,
+        "grae": 39,
+        "optipmb": 38
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 11,
+          "grae": 11,
+          "optipmb": 11,
+          "ground_truth": 11
+        },
+        "CAM_FRONT": {
+          "bev_detection": 112,
+          "grae": 112,
+          "optipmb": 101,
+          "ground_truth": 124
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 96,
+          "grae": 96,
+          "optipmb": 84,
+          "ground_truth": 98
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 8,
+          "grae": 8,
+          "optipmb": 8,
+          "ground_truth": 8
+        },
+        "CAM_BACK": {
+          "bev_detection": 184,
+          "grae": 184,
+          "optipmb": 184,
+          "ground_truth": 267
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 126,
+          "grae": 126,
+          "optipmb": 124,
+          "ground_truth": 159
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 75,
+      "sample_token": "a1289b27ca1d41deb6fc982be9a3d03c",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984250947236,
+      "original_lidar_points": 34720,
+      "gt_boxes": 48,
+      "model_boxes": {
+        "bev_detection": 37,
+        "grae": 37,
+        "optipmb": 36
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 5,
+          "grae": 5,
+          "optipmb": 5,
+          "ground_truth": 5
+        },
+        "CAM_FRONT": {
+          "bev_detection": 91,
+          "grae": 91,
+          "optipmb": 91,
+          "ground_truth": 103
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 84,
+          "grae": 84,
+          "optipmb": 74,
+          "ground_truth": 96
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 8,
+          "grae": 8,
+          "optipmb": 8,
+          "ground_truth": 8
+        },
+        "CAM_BACK": {
+          "bev_detection": 196,
+          "grae": 196,
+          "optipmb": 196,
+          "ground_truth": 279
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 107,
+          "grae": 107,
+          "optipmb": 107,
+          "ground_truth": 151
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 76,
+      "sample_token": "e6e877f31dd447199b56cae07f86daad",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984251447166,
+      "original_lidar_points": 34720,
+      "gt_boxes": 46,
+      "model_boxes": {
+        "bev_detection": 34,
+        "grae": 34,
+        "optipmb": 34
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 0,
+          "grae": 0,
+          "optipmb": 0,
+          "ground_truth": 0
+        },
+        "CAM_FRONT": {
+          "bev_detection": 68,
+          "grae": 68,
+          "optipmb": 68,
+          "ground_truth": 80
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 96,
+          "grae": 96,
+          "optipmb": 96,
+          "ground_truth": 96
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 8,
+          "grae": 8,
+          "optipmb": 8,
+          "ground_truth": 8
+        },
+        "CAM_BACK": {
+          "bev_detection": 185,
+          "grae": 185,
+          "optipmb": 185,
+          "ground_truth": 292
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 90,
+          "grae": 90,
+          "optipmb": 90,
+          "ground_truth": 130
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 77,
+      "sample_token": "cb4e6195faad467094fbd4d0a9e960e9",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984251947010,
+      "original_lidar_points": 34720,
+      "gt_boxes": 43,
+      "model_boxes": {
+        "bev_detection": 34,
+        "grae": 34,
+        "optipmb": 34
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 0,
+          "grae": 0,
+          "optipmb": 0,
+          "ground_truth": 0
+        },
+        "CAM_FRONT": {
+          "bev_detection": 53,
+          "grae": 53,
+          "optipmb": 53,
+          "ground_truth": 64
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 96,
+          "grae": 96,
+          "optipmb": 96,
+          "ground_truth": 101
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 24,
+          "grae": 24,
+          "optipmb": 24,
+          "ground_truth": 32
+        },
+        "CAM_BACK": {
+          "bev_detection": 207,
+          "grae": 207,
+          "optipmb": 206,
+          "ground_truth": 303
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 77,
+          "grae": 77,
+          "optipmb": 78,
+          "ground_truth": 101
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 78,
+      "sample_token": "7f594234e8034228b1a7d727f1981e09",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984252446890,
+      "original_lidar_points": 34720,
+      "gt_boxes": 40,
+      "model_boxes": {
+        "bev_detection": 30,
+        "grae": 30,
+        "optipmb": 29
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 0,
+          "grae": 0,
+          "optipmb": 0,
+          "ground_truth": 0
+        },
+        "CAM_FRONT": {
+          "bev_detection": 35,
+          "grae": 35,
+          "optipmb": 35,
+          "ground_truth": 35
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 78,
+          "grae": 78,
+          "optipmb": 78,
+          "ground_truth": 90
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 12,
+          "grae": 12,
+          "optipmb": 12,
+          "ground_truth": 48
+        },
+        "CAM_BACK": {
+          "bev_detection": 192,
+          "grae": 192,
+          "optipmb": 180,
+          "ground_truth": 275
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 97,
+          "grae": 97,
+          "optipmb": 88,
+          "ground_truth": 95
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 79,
+      "sample_token": "9cdbf5ff7f294549aea0a4307e5d104a",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984252947312,
+      "original_lidar_points": 34720,
+      "gt_boxes": 39,
+      "model_boxes": {
+        "bev_detection": 30,
+        "grae": 30,
+        "optipmb": 29
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 0,
+          "grae": 0,
+          "optipmb": 0,
+          "ground_truth": 0
+        },
+        "CAM_FRONT": {
+          "bev_detection": 12,
+          "grae": 12,
+          "optipmb": 12,
+          "ground_truth": 12
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 64,
+          "grae": 64,
+          "optipmb": 64,
+          "ground_truth": 76
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 25,
+          "grae": 25,
+          "optipmb": 25,
+          "ground_truth": 65
+        },
+        "CAM_BACK": {
+          "bev_detection": 187,
+          "grae": 187,
+          "optipmb": 187,
+          "ground_truth": 258
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 108,
+          "grae": 108,
+          "optipmb": 96,
+          "ground_truth": 108
+        }
+      },
+      "missing_models": []
+    },
+    {
+      "frame": 80,
+      "sample_token": "b4ff30109dd14c89b24789dc5713cf8c",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "timestamp_us": 1538984253447765,
+      "original_lidar_points": 34752,
+      "gt_boxes": 37,
+      "model_boxes": {
+        "bev_detection": 33,
+        "grae": 33,
+        "optipmb": 32
+      },
+      "camera_segments": {
+        "CAM_FRONT_LEFT": {
+          "bev_detection": 0,
+          "grae": 0,
+          "optipmb": 0,
+          "ground_truth": 0
+        },
+        "CAM_FRONT": {
+          "bev_detection": 0,
+          "grae": 0,
+          "optipmb": 0,
+          "ground_truth": 0
+        },
+        "CAM_FRONT_RIGHT": {
+          "bev_detection": 60,
+          "grae": 60,
+          "optipmb": 60,
+          "ground_truth": 71
+        },
+        "CAM_BACK_LEFT": {
+          "bev_detection": 91,
+          "grae": 91,
+          "optipmb": 80,
+          "ground_truth": 92
+        },
+        "CAM_BACK": {
+          "bev_detection": 194,
+          "grae": 194,
+          "optipmb": 182,
+          "ground_truth": 218
+        },
+        "CAM_BACK_RIGHT": {
+          "bev_detection": 101,
+          "grae": 101,
+          "optipmb": 101,
+          "ground_truth": 117
+        }
+      },
+      "missing_models": []
+    }
+  ],
+  "artifact_sha256": {
+    "input_manifest": "b59c379605e5cab0efd139dbf57a3e55720a61e4feaaf935bfbfa7d698eb9fce",
+    "packets": "85fba9112c777485268e116fb22d4dcee3a6533de60b70e2421d0abc547b6291",
+    "bev_detection": "a6fb424ccbe629f3af27172202960c4533cd48ddd887cd201f0d464ee22c56a7",
+    "grae": "dffd9176551b2dc866807fcaf2f9ab1a0289c48fc19c49d75d69c320f17fce99",
+    "grae_protocol": "4adaa761e97d143a468633b05ed508a1723ce37c184fa4fcb118c5efe3c31557",
+    "optipmb": "30362b2a9db5694e9fee4fa20ad3105b1b33c5ee0e34ff3985063adb50bfd6cb",
+    "optipmb_protocol": "5467dbfdb2bb87f6bd8dbb11c291866f60dd9af67f9ea7f5f50e14bec7a6b254"
+  },
+  "rrd": "/home/minglei/Desktop/CAR/perception_lab/outputs/rerun/deployment_4090/tracking_gpu_center_aligned_20261019/mini_val/tracking_gpu.rrd",
+  "rrd_sha256": "716fb7623c5c2bc411be9a55b2a6422fb5fab01b37ebda322a15e1f61914bf66",
+  "url": "http://127.0.0.1:9094/tracking_gpu_center_aligned_20261019/mini_val/",
+  "rerun_url": "http://127.0.0.1:9095/?url=http%3A%2F%2F127.0.0.1%3A9094%2Ftracking_gpu_center_aligned_20261019%2Fmini_val%2Ftracking_gpu.rrd&renderer=webgl&persist=0",
+  "decoded_rrd_audit": {
+    "status": "passed",
+    "decoded_frames": 81,
+    "decoded_points": 2812480,
+    "decoded_box_counts": {
+      "bev_detection": 3238,
+      "grae": 3174,
+      "optipmb": 3022
+    },
+    "decoded_camera_segments": {
+      "CAM_FRONT_LEFT/bev_detection": 4586,
+      "CAM_FRONT_LEFT/grae": 4330,
+      "CAM_FRONT_LEFT/optipmb": 4112,
+      "CAM_FRONT_LEFT/ground_truth": 5297,
+      "CAM_FRONT/bev_detection": 9145,
+      "CAM_FRONT/grae": 8977,
+      "CAM_FRONT/optipmb": 8159,
+      "CAM_FRONT/ground_truth": 15325,
+      "CAM_FRONT_RIGHT/bev_detection": 8422,
+      "CAM_FRONT_RIGHT/grae": 8294,
+      "CAM_FRONT_RIGHT/optipmb": 7733,
+      "CAM_FRONT_RIGHT/ground_truth": 11975,
+      "CAM_BACK_LEFT/bev_detection": 4306,
+      "CAM_BACK_LEFT/grae": 4106,
+      "CAM_BACK_LEFT/optipmb": 3938,
+      "CAM_BACK_LEFT/ground_truth": 4885,
+      "CAM_BACK/bev_detection": 11086,
+      "CAM_BACK/grae": 11026,
+      "CAM_BACK/optipmb": 10960,
+      "CAM_BACK/ground_truth": 14657,
+      "CAM_BACK_RIGHT/bev_detection": 6936,
+      "CAM_BACK_RIGHT/grae": 6864,
+      "CAM_BACK_RIGHT/optipmb": 6619,
+      "CAM_BACK_RIGHT/ground_truth": 9429
+    },
+    "float32_point_max_abs_m": 3.814497333110012e-06,
+    "float32_box_center_max_abs_m": 1.902706372902685e-06,
+    "token_order_exact": true,
+    "recursive_clear_frames": 81,
+    "representative_frames": [
+      0,
+      40,
+      80
+    ]
+  },
+  "missing_models": [],
+  "trajectory_gap_resets": 409,
+  "generated_at": "2026-10-19T08:32:10.379846+00:00"
+}

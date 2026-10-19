@@ -1,5 +1,7 @@
 # CARperception
 
+**2026-10-19 回放修正**：已定位冻结 BEVFusion→GRAE 六相机框整体偏高的中心高度约定问题，新增[对齐版回放与验证说明](perception_lab/reports/rerun_alignment_20261019/report.md)。修正仅用于显示，原始预测与历史评测保留。
+
 [算法代码与运行入口](perception_lab/ALGORITHM_INDEX.md) · [保留方案](perception_lab/RETAINED_ALGORITHMS.md) · [任务状态](perception_lab/TASK_STATE.md)
 
 本轮[冻结BEVFusion跟踪／GPU优化实测](perception_lab/reports/tracking_gpu_20261013/report.md)：TileLang替换原CPU三维IoU／NMS，39／81帧完整GRAE分别 **142.81→24.77、263.80→31.00 ms/帧**，各30轮AB／BA全部更快、P95不升，120帧轨迹及全部官方指标精确一致。计时包含检测JSON读取、预处理、搬运和原生GRAE，不包含BEVFusion前向。

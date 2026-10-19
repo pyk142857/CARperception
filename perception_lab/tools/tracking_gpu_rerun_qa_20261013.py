@@ -27,10 +27,12 @@ def main():
     global OUT, URL
     parser=argparse.ArgumentParser()
     parser.add_argument('--split', choices=['scene0061','mini_val'], default='scene0061')
+    parser.add_argument('--status-path',type=Path,help='Validate an independently exported recording and save QA beside its status')
     parser.add_argument('--headless',action='store_true',help='Avoid desktop compositor/occlusion stalls on unattended X11 sessions')
     parser.add_argument('--software-rendering',action='store_true',help='Explicit independent SwiftShader fallback; not GPU performance evidence')
     args=parser.parse_args()
     if args.split=='mini_val': OUT=OUT/'mini_val'
+    if args.status_path: OUT=args.status_path.parent
     export=json.loads((OUT/'status.json').read_text())
     URL=export['rerun_url']
     last=export['frames']-1

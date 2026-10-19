@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "scope": "display-only native-center correction",
+  "frames": 120,
+  "tests": 8,
+  "predictions_modified": false,
+  "official_metrics_rerun": false,
+  "browser_validation": {
+    "scene0061": "passed",
+    "mini_val": "passed"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "decoded_frames": 39,
+  "decoded_points": 1354112,
+  "decoded_box_counts": {
+    "bev_detection": 2634,
+    "grae": 1189,
+    "optipmb": 1136
+  },
+  "decoded_camera_segments": {
+    "CAM_FRONT_LEFT/bev_detection": 1370,
+    "CAM_FRONT_LEFT/grae": 1288,
+    "CAM_FRONT_LEFT/optipmb": 1108,
+    "CAM_FRONT_LEFT/ground_truth": 3757,
+    "CAM_FRONT/bev_detection": 7165,
+    "CAM_FRONT/grae": 3322,
+    "CAM_FRONT/optipmb": 3012,
+    "CAM_FRONT/ground_truth": 15551,
+    "CAM_FRONT_RIGHT/bev_detection": 7741,
+    "CAM_FRONT_RIGHT/grae": 3386,
+    "CAM_FRONT_RIGHT/optipmb": 3181,
+    "CAM_FRONT_RIGHT/ground_truth": 11696,
+    "CAM_BACK_LEFT/bev_detection": 908,
+    "CAM_BACK_LEFT/grae": 468,
+    "CAM_BACK_LEFT/optipmb": 454,
+    "CAM_BACK_LEFT/ground_truth": 1804,
+    "CAM_BACK/bev_detection": 11694,
+    "CAM_BACK/grae": 4565,
+    "CAM_BACK/optipmb": 4531,
+    "CAM_BACK/ground_truth": 19987,
+    "CAM_BACK_RIGHT/bev_detection": 6074,
+    "CAM_BACK_RIGHT/grae": 2970,
+    "CAM_BACK_RIGHT/optipmb": 2939,
+    "CAM_BACK_RIGHT/ground_truth": 9721
+  },
+  "float32_point_max_abs_m": 3.8144487888303047e-06,
+  "float32_box_center_max_abs_m": 1.9011403509239244e-06,
+  "token_order_exact": true,
+  "recursive_clear_frames": 39,
+  "representative_frames": [
+    0,
+    19,
+    38
+  ]
+}

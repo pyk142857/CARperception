@@ -1,5 +1,9 @@
 # TASK_STATE — mini 教学闭环已验证
 
+## 2026-10-19 Rerun框与六相机对齐修正
+
+冻结BEVFusion记录的原导出增加了半高，GRAE继承了高度偏移。对齐版回放按作者native中心语义修正显示，原始预测和评价文件不变。120帧native中心独立核验及完整RRD解码通过；浏览器验收见[修复报告](reports/rerun_alignment_20261019/report.md)。
+
 ## 当前派发任务：固定检测跟踪对照与GPU几何优化（2026-10-14）
 
 执行[20261013_03](instruction/20261013_03_frozen_bevfusion_tracking_gpu_optimization.md)，状态**实测与验收完成**。本轮结果：[报告](reports/tracking_gpu_20261013/report.md)。

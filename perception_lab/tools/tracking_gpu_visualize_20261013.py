@@ -11,8 +11,29 @@ from perception_2025_visualize import (ROOT, sha, read_json, ego_boxes, transfor
 from deployment_visualize import render
 
 REPORT=ROOT/'reports/tracking_gpu_20261013'
-OUTPUT=ROOT/'outputs/rerun/deployment_4090/tracking_gpu_20261013'
+VISUAL_REPORT=ROOT/'reports/rerun_alignment_20261019'
+OUTPUT=ROOT/'outputs/rerun/deployment_4090/tracking_gpu_center_aligned_20261019'
 FAMILIES=('bev_detection','grae','optipmb')
+
+
+def frozen_display_boxes(rows, packet, family):
+    """Display-only correction for the sealed NVIDIA BEVFusion/GRAE experiment.
+
+    Pinned upstream tools/visualize.py treats native tensor z as the box center
+    (subtracts h/2 before constructing bottom-centered LiDAR boxes). The old
+    export used gravity_center and added h/2. Undo that along the LiDAR z axis
+    in reference ego coordinates, never global z or the box's yaw axis.
+    Scores, IDs, source JSON and evaluation inputs remain untouched.
+    Do not apply to GT or unrelated/newly corrected detector exports.
+    """
+    if family not in FAMILIES:
+        raise ValueError('Display correction requires a frozen BEVFusion family')
+    lidar=packet['sensors']['LIDAR_TOP']
+    boxes=ego_boxes(rows,np.asarray(lidar['T_ego_to_global']),family)
+    sensor_up=np.asarray(lidar['T_sensor_to_ego'])[:3,2]
+    for box in boxes:
+        box['center_xyz']=(np.asarray(box['center_xyz'])-sensor_up*box['size_wlh'][2]/2).tolist()
+    return boxes
 
 
 def load_inputs(split, report=REPORT):
@@ -83,7 +104,7 @@ def decoded_audit(path,packets,counts,artifacts):
         actual=values('models/'+family+'/boxes','PoseTranslation3D')
         for i,p in enumerate(packets):
             pose=np.asarray(p['sensors']['LIDAR_TOP']['T_ego_to_global'])
-            boxes=ego_boxes(artifacts[family][p['sample_token']],pose,family)
+            boxes=frozen_display_boxes(artifacts[family][p['sample_token']],p,family)
             assert len(actual.get(i) or [])==counts[i]['model_boxes'][family]==len(boxes)
             if boxes:box_error=max(box_error,float(np.max(np.abs(np.asarray(actual[i])-np.asarray([b['center_xyz'] for b in boxes])))))
         totals[family]=sum(c['model_boxes'][family] for c in counts)
@@ -105,7 +126,7 @@ def decoded_audit(path,packets,counts,artifacts):
 
 def export(split):
     suffix='' if split=='scene0061' else '/mini_val'
-    report=REPORT/('visualization'+suffix);report.mkdir(parents=True,exist_ok=True)
+    report=VISUAL_REPORT/split;report.mkdir(parents=True,exist_ok=True)
     out=Path(str(OUTPUT)+suffix);out.mkdir(parents=True,exist_ok=True)
     status_path=report/'status.json'
     status_path.write_text(json.dumps(dict(status='running',export='running',browser_validation='pending',split=split)))
@@ -122,7 +143,7 @@ def export(split):
         tabs.append(rrb.Horizontal(rrb.Vertical(rrb.Spatial3DView(name=family,origin='/',contents=['+ /'+layer+'/**','+ /sensors/lidar']),
             rrb.Spatial2DView(name='BEV '+family,origin='bev',contents=['+ /bev/'+layer+'/**','+ /bev/lidar'])),
             rrb.Grid(*[rrb.Spatial2DView(name=cam,origin='cameras/'+cam+'/image',contents=['+ /cameras/'+cam+'/image','+ /cameras/'+cam+'/image/'+family+'/**']) for cam in CAMERAS],grid_columns=3),name=family))
-    rr.send_blueprint(rrb.Blueprint(rrb.Vertical(rrb.Tabs(*tabs,active_tab=0),rrb.TextDocumentView(origin='guide'),row_shares=[9,1]),collapse_panels=True))
+    rr.send_blueprint(rrb.Blueprint(rrb.Vertical(rrb.Tabs(*tabs,active_tab=1),rrb.TextDocumentView(origin='guide'),row_shares=[9,1]),collapse_panels=True))
     counts=[];history={};last_scene=None;gaps=0
     for i,p in enumerate(packets):
         if p['scene_token']!=last_scene:history={};last_scene=p['scene_token']
@@ -133,7 +154,7 @@ def export(split):
         assert np.isfinite(cloud).all()
         rr.log('sensors/lidar',rr.Points3D(cloud,colors=[110,130,145],radii=.03));rr.log('bev/lidar',rr.Points2D(-cloud[:,[1,0]],colors=[70,90,110],radii=.04))
         for entity in ['models','bev/models','ground_truth','bev/ground_truth']:rr.log(entity,rr.Clear(recursive=True))
-        boxes={family:ego_boxes(data[token],pose,family) for family,data in artifacts.items()}
+        boxes={family:frozen_display_boxes(data[token],p,family) for family,data in artifacts.items()}
         for family,items in boxes.items():
             if not items:continue
             centers,sizes,rots=box_components(items);colors=[track_color(b['track_id']) for b in items]
@@ -169,7 +190,7 @@ def export(split):
                 if segs:rr.log(path+'/image/'+family+'/boxes',rr.LineStrips2D(segs,colors=colors))
         row=dict(frame=i,sample_token=token,scene_token=p['scene_token'],timestamp_us=p['timestamp_us'],original_lidar_points=len(cloud),gt_boxes=len(gtboxes),model_boxes={k:len(v) for k,v in boxes.items()},camera_segments=camera_segments,missing_models=[])
         counts.append(row)
-        rr.log('guide',rr.TextDocument('Frozen BEVFusion detections / current native GRAE / OptiPMB / independent GT. Display >= .25, evaluation unfiltered. Full raw cloud; asynchronous camera poses; no model input uses GT.\n'+json.dumps(row)))
+        rr.log('guide',rr.TextDocument('GRAE / BEVFusion / OptiPMB: display-only native-center correction (subtract half-height along LiDAR up); archived predictions and metrics unchanged. GT unmodified. Display >= .25. Full raw cloud; capture-time camera poses.\n'+json.dumps(row)))
         im=render(p,'OptiPMB / frozen BEVFusion native detections',boxes['optipmb'],cloud,None,[],i,{})
         from PIL import ImageDraw
         draw=ImageDraw.Draw(im);draw.rectangle((1340,15,1919,55),fill=(8,14,22));draw.text((1340,22),f'frame {i:02d}/{len(packets)-1} | measured',fill=(180,205,220))
@@ -177,11 +198,11 @@ def export(split):
         if i in [0,len(packets)//2,len(packets)-1]:im.save(report/f'frame_{i:02d}.jpg',quality=90)
     rr.get_global_data_recording().flush();rr.disconnect();(out/'tracking_gpu.building.rrd').replace(out/'tracking_gpu.rrd')
     audit=decoded_audit(out/'tracking_gpu.rrd',packets,counts,artifacts)
-    url='http://127.0.0.1:9094/tracking_gpu_20261013'+suffix+'/'
+    url='http://127.0.0.1:9094/'+OUTPUT.name+suffix+'/'
     rerun_url='http://127.0.0.1:9095/?url='+quote(url+'tracking_gpu.rrd',safe='')+'&renderer=webgl&persist=0'
     (out/'data.json').write_text(json.dumps(counts))
     (out/'index.html').write_text('<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>body{font-family:sans-serif}pre{white-space:pre-wrap;overflow-wrap:anywhere}img{max-width:100%}</style><title>Tracking comparison</title><h1>Frozen BEVFusion / GRAE / OptiPMB</h1><p>Below: OptiPMB snapshot. Choose detector, tracker, or independent GT tabs in Rerun.</p><a href="'+rerun_url+'">Open Rerun comparison</a><input id="frame" type="range" min="0" max="'+str(len(packets)-1)+'" value="0"><pre id="info"></pre><img id="image"><script>fetch("data.json").then(r=>r.json()).then(d=>{function update(){image.src="frame_"+String(frame.value).padStart(2,"0")+".jpg";info.textContent=JSON.stringify(d[+frame.value],null,2)}frame.oninput=update;update()})</script>')
-    summary=dict(status='partial',export='passed',browser_validation='pending',split=split,frames=len(packets),counts=counts,artifact_sha256=hashes,rrd=str(out/'tracking_gpu.rrd'),rrd_sha256=sha(out/'tracking_gpu.rrd'),url=url,rerun_url=rerun_url,decoded_rrd_audit=audit,missing_models=[],trajectory_gap_resets=gaps,generated_at=datetime.now(timezone.utc).isoformat())
+    summary=dict(display_correction='frozen NVIDIA native center: undo h/2 along lidar up; source predictions unchanged',status='partial',export='passed',browser_validation='pending',split=split,frames=len(packets),counts=counts,artifact_sha256=hashes,rrd=str(out/'tracking_gpu.rrd'),rrd_sha256=sha(out/'tracking_gpu.rrd'),url=url,rerun_url=rerun_url,decoded_rrd_audit=audit,missing_models=[],trajectory_gap_resets=gaps,generated_at=datetime.now(timezone.utc).isoformat())
     status_path.write_text(json.dumps(summary,indent=2)+'\n');(report/'decoded_audit.json').write_text(json.dumps(audit,indent=2)+'\n')
     print(json.dumps(audit))
 

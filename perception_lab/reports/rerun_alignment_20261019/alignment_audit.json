@@ -1,0 +1,48 @@
+{
+  "scope": "Display compatibility only; all historical detections/tracks/evaluation unchanged",
+  "splits": [
+    {
+      "split": "scene0061",
+      "frames": 39,
+      "native_centers_checked": 2634,
+      "max_abs_ego_center_error_m": 1.1917222397794802e-07,
+      "source_hashes": {
+        "input_manifest": "b59c379605e5cab0efd139dbf57a3e55720a61e4feaaf935bfbfa7d698eb9fce",
+        "packets": "9680b0d03e49cc78be200a9abe3b99602312123adbf8e12667b9fbbbe7d5c549",
+        "bev_detection": "dd6df55652026f2b04c7b18f9adde44123b664e8cb3706e53d6d30faca344d2f",
+        "grae": "ceaf64c45d71bf7fddf7e56f55946262e31614104f9c238bf863c05bd6facb89",
+        "grae_protocol": "1bc31120c6d4f12cf022a448288cc59586c197ccd1d82240e4fe25a05ffee8cb",
+        "optipmb": "1abeef4a4794a48959d692f00ac9ac0da522174800c30330b2787a66e5a77dc0",
+        "optipmb_protocol": "a42f2886898a9104ad9688115ce8e30629e95e7214d53ca8fbb14eb9aad969a1"
+      },
+      "native_sha256": "265758a12b9ff5b416e0ede60a5aa7d8b061fda043d81b6127dc23668424e5f5",
+      "camera_time_offset_us_min": -47757,
+      "camera_time_offset_us_max": 1072
+    },
+    {
+      "split": "mini_val",
+      "frames": 81,
+      "native_centers_checked": 3238,
+      "max_abs_ego_center_error_m": 1.1908131281046508e-07,
+      "source_hashes": {
+        "input_manifest": "b59c379605e5cab0efd139dbf57a3e55720a61e4feaaf935bfbfa7d698eb9fce",
+        "packets": "85fba9112c777485268e116fb22d4dcee3a6533de60b70e2421d0abc547b6291",
+        "bev_detection": "a6fb424ccbe629f3af27172202960c4533cd48ddd887cd201f0d464ee22c56a7",
+        "grae": "dffd9176551b2dc866807fcaf2f9ab1a0289c48fc19c49d75d69c320f17fce99",
+        "grae_protocol": "4adaa761e97d143a468633b05ed508a1723ce37c184fa4fcb118c5efe3c31557",
+        "optipmb": "30362b2a9db5694e9fee4fa20ad3105b1b33c5ee0e34ff3985063adb50bfd6cb",
+        "optipmb_protocol": "5467dbfdb2bb87f6bd8dbb11c291866f60dd9af67f9ea7f5f50e14bec7a6b254"
+      },
+      "native_sha256": "761c27c63b9115ad09ced017339e2553ca67fe08c8d77cc3be844b3e150720ee",
+      "camera_time_offset_us_min": -45365,
+      "camera_time_offset_us_max": 1204
+    }
+  ],
+  "gt_diagnostic_frame19": {
+    "matching": "XY nearest assignment <0.6m, score>0.4; diagnostic not official metric or calibration fitting",
+    "pairs": 57,
+    "median_z_error_before_m": 0.6926403128270522,
+    "median_z_error_after_m": -0.0016875994156118068
+  },
+  "status": "passed"
+}
