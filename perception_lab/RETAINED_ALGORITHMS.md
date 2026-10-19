@@ -1,5 +1,7 @@
 # 已验证的保留方案与优化成果
 
+**2026-10-19 中心约定复核**：三组几何重算及十次官方 DetectionEval 完成，FP16/两组 pooling 不采用结论不变。TileLang GRAE 的历史等价和加速仅绑定原冻结输入；修正高度后的跟踪指标、NMS等价和30轮性能验收尚未重跑。[报告](reports/center_reassessment_20261019/analysis-report.md)。
+
 算法源文件、运行入口及候选采用状态集中见[算法实现索引](ALGORITHM_INDEX.md)。
 
 更新日期：2026-10-14。证据快照：[73efc89](https://github.com/pyk142857/CARperception/blob/73efc89338062ed24ff8cb3211e143c4d4354560/README.md)。

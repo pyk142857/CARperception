@@ -1,0 +1,122 @@
+[
+  {
+    "model": "fp32",
+    "split": "scene0061",
+    "frames": 39,
+    "boxes": 7789,
+    "source": "reports/deployment_4090_20261008/bevfusion_reference/scene0061/predictions.json",
+    "source_sha256": "7813146f2aae13e6adc54c42667c07540c7f58798ea82ae9c99bab9ddfca1697",
+    "source_manifest_sha256": "cd149f731eef025f21297234d19db11cb3a5b3cfd3e3e8e794b5fc2dcc70ec7c",
+    "corrected_sha256": "3c956c2215b82d08630c2382c61aedc9d507b45c133a30c4dcd56399e1cab79b",
+    "packets_sha256": "9680b0d03e49cc78be200a9abe3b99602312123adbf8e12667b9fbbbe7d5c549",
+    "change": "Only standardized ego center_xyz minus lidar-up times h/2; all candidates preserved"
+  },
+  {
+    "model": "trt",
+    "split": "scene0061",
+    "frames": 39,
+    "boxes": 7791,
+    "source": "outputs/bevfusion_tensorrt/scene0061/predictions.json",
+    "source_sha256": "228feda27554463714f602df49df9e87110b440a1195b58d549ee83f3db09988",
+    "source_manifest_sha256": "637e9b2e191f2c4f17a5a047fdd99345b8879579fe55bf671f80a950df654772",
+    "corrected_sha256": "b9a896b1de689d21d6d15e2e0e9f4c7211c4989da9480fc0505397ebffa3c9c6",
+    "packets_sha256": "9680b0d03e49cc78be200a9abe3b99602312123adbf8e12667b9fbbbe7d5c549",
+    "change": "Only standardized ego center_xyz minus lidar-up times h/2; all candidates preserved"
+  },
+  {
+    "model": "tile4",
+    "split": "scene0061",
+    "frames": 39,
+    "boxes": 7791,
+    "source": "outputs/bevfusion_tensorrt_candidate/scene0061/predictions.json",
+    "source_sha256": "be31256b95d20f361ce20203ac39b77fbb0271ea141d0a815873bc7e256a061d",
+    "source_manifest_sha256": "7cd1ca7475fd1fe310527f1db7e5ceadbb1bc2779e59ce467c87c703c716757e",
+    "corrected_sha256": "b3d26312c7770468d86ecf464fe544e5638618faabe2928915fcde20980c378c",
+    "packets_sha256": "9680b0d03e49cc78be200a9abe3b99602312123adbf8e12667b9fbbbe7d5c549",
+    "change": "Only standardized ego center_xyz minus lidar-up times h/2; all candidates preserved"
+  },
+  {
+    "model": "rebuilt_upstream",
+    "split": "scene0061",
+    "frames": 39,
+    "boxes": 7790,
+    "source": "reports/tracking_gpu_20261013/bev_pooling/full_model/upstream/scene0061/predictions.json",
+    "source_sha256": "6043e4820f25d86e5a1ba51548feb5d2e8975a6ef788f72821f9a8fcaac4d4eb",
+    "source_manifest_sha256": "0648f06d16f6c885547951a68288551a2f3e3d30b1356ffd0d20732218f78948",
+    "corrected_sha256": "9e6f7f2b60206163b2fd9232d4ce4dc266958ffea7499a8dd3bf284a11903fbf",
+    "packets_sha256": "9680b0d03e49cc78be200a9abe3b99602312123adbf8e12667b9fbbbe7d5c549",
+    "change": "Only standardized ego center_xyz minus lidar-up times h/2; all candidates preserved"
+  },
+  {
+    "model": "preindex",
+    "split": "scene0061",
+    "frames": 39,
+    "boxes": 7790,
+    "source": "reports/tracking_gpu_20261013/bev_pooling/full_model/preindex/scene0061/predictions.json",
+    "source_sha256": "d8617a2fe0705ccf9bc3b13e6d92a0d0805118b5ea5748dd3e6e2edb7e1cf1b0",
+    "source_manifest_sha256": "80920ca7882869fac53eb98f7c2eebf0de847cbe6382c313aa029213b82d8922",
+    "corrected_sha256": "51690ee35f4753c9bd24497d88eb2bd081d879dabaaf6d3b02efa6faae3a5373",
+    "packets_sha256": "9680b0d03e49cc78be200a9abe3b99602312123adbf8e12667b9fbbbe7d5c549",
+    "change": "Only standardized ego center_xyz minus lidar-up times h/2; all candidates preserved"
+  },
+  {
+    "model": "fp32",
+    "split": "mini_val",
+    "frames": 81,
+    "boxes": 16199,
+    "source": "reports/deployment_4090_20261008/bevfusion_reference/mini_val/predictions.json",
+    "source_sha256": "e5af5c69d743c2e4c5d3fd27148b338d44aee430c52082589d3f0d08547348c8",
+    "source_manifest_sha256": "13933b154162285726efec038fd5dd9118fc3ba100904369b5d2e8217ac6f21d",
+    "corrected_sha256": "42aa2079ff81d42b2e07856ef5a665372de4110c4d6f8a083a176876c0fbdb6d",
+    "packets_sha256": "85fba9112c777485268e116fb22d4dcee3a6533de60b70e2421d0abc547b6291",
+    "change": "Only standardized ego center_xyz minus lidar-up times h/2; all candidates preserved"
+  },
+  {
+    "model": "trt",
+    "split": "mini_val",
+    "frames": 81,
+    "boxes": 16199,
+    "source": "outputs/bevfusion_tensorrt/mini_val/predictions.json",
+    "source_sha256": "126f5fa0a8796b06e8803eb898fd1508949350bec72f9a44b95e15e04e2e4bf2",
+    "source_manifest_sha256": "e6a8ad70779c2bb2070f7dc00078ccbf5fd57807af74f84c338db518a3f0cee8",
+    "corrected_sha256": "9c620294c78c15019636891848848c0307b5da63f36234c1a95598dd57a570fd",
+    "packets_sha256": "85fba9112c777485268e116fb22d4dcee3a6533de60b70e2421d0abc547b6291",
+    "change": "Only standardized ego center_xyz minus lidar-up times h/2; all candidates preserved"
+  },
+  {
+    "model": "tile4",
+    "split": "mini_val",
+    "frames": 81,
+    "boxes": 16199,
+    "source": "outputs/bevfusion_tensorrt_candidate/mini_val/predictions.json",
+    "source_sha256": "7de0c0b6c9e92293b3f7babf748621ce317e0725eac44ce4b91b915806314135",
+    "source_manifest_sha256": "fbc2b922f861366f17e858ad902c2a82721f8840609774854d1fb375c12bf17c",
+    "corrected_sha256": "0bd8cf7cd52a48fd5bdbdd54c8a2f034824576f78afb24302a0159c4812f8ad6",
+    "packets_sha256": "85fba9112c777485268e116fb22d4dcee3a6533de60b70e2421d0abc547b6291",
+    "change": "Only standardized ego center_xyz minus lidar-up times h/2; all candidates preserved"
+  },
+  {
+    "model": "rebuilt_upstream",
+    "split": "mini_val",
+    "frames": 81,
+    "boxes": 16199,
+    "source": "reports/tracking_gpu_20261013/bev_pooling/full_model/upstream/mini_val/predictions.json",
+    "source_sha256": "d340ba08f032d7fe99313f814c5eaabb00a7c17cfa08a0a2708c469e4cc54de6",
+    "source_manifest_sha256": "abcf9311b03baaf5a2402c7288518ad012190de6d30d78dd42e90619642af415",
+    "corrected_sha256": "d77dbec7208f9a19c86a9ad53017134a2b28410c0266e77c08ecb0455a82e4e7",
+    "packets_sha256": "85fba9112c777485268e116fb22d4dcee3a6533de60b70e2421d0abc547b6291",
+    "change": "Only standardized ego center_xyz minus lidar-up times h/2; all candidates preserved"
+  },
+  {
+    "model": "preindex",
+    "split": "mini_val",
+    "frames": 81,
+    "boxes": 16199,
+    "source": "reports/tracking_gpu_20261013/bev_pooling/full_model/preindex/mini_val/predictions.json",
+    "source_sha256": "e07d6a7d4882299420b5c9cc4d007e272c7ad9623204ea63c0aad33642f127e0",
+    "source_manifest_sha256": "9706fcaf0b92155ee83a8843867634258f38b683b00c6919e6088d9358bd037b",
+    "corrected_sha256": "c4e14887177879c175e1c8599edefc5e57e27cbda797a43bd3ced868a2b3f9fa",
+    "packets_sha256": "85fba9112c777485268e116fb22d4dcee3a6533de60b70e2421d0abc547b6291",
+    "change": "Only standardized ego center_xyz minus lidar-up times h/2; all candidates preserved"
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "model": "fp32",
+    "split": "scene0061",
+    "old_map": 0.7117608071294532,
+    "new_map": 0.7125076634262693,
+    "old_nds": 0.6223478195911297,
+    "new_nds": 0.623276232998917,
+    "old_metrics_path": "reports/deployment_4090_20261008/bevfusion_reference/scene0061/evaluation/metrics/metrics_summary.json",
+    "old_metrics_sha256": "9fee0690030c2456d18bbcf3a4d124222628d5274f13fae0395a4ea9205bea71",
+    "new_metrics_sha256": "1c117f7e105dc105d73837763cc9099f405ff285611ae419a32a2823924498ad"
+  },
+  {
+    "model": "trt",
+    "split": "scene0061",
+    "old_map": 0.7097061456558997,
+    "new_map": 0.7104837889486403,
+    "old_nds": 0.6213294508369912,
+    "new_nds": 0.6221755253838555,
+    "old_metrics_path": "reports/deployment_4090_20261008/bevfusion_tensorrt/scene0061/official/metrics/metrics_summary.json",
+    "old_metrics_sha256": "cd1db775aed3b69681ee2931271d3762d44373272e9b853176fcabaa44b84b10",
+    "new_metrics_sha256": "d1b0d1921c39456f78c412f53e34c9ddb5c218f469f2a3d4611c746d1291d596"
+  },
+  {
+    "model": "tile4",
+    "split": "scene0061",
+    "old_map": 0.7102283153713621,
+    "new_map": 0.7113322910763433,
+    "old_nds": 0.6215918885233611,
+    "new_nds": 0.6225903597128425,
+    "old_metrics_path": "reports/deployment_4090_20261008/bev_pooling/full_model/scene0061/official/metrics/metrics_summary.json",
+    "old_metrics_sha256": "524a2111e932b0b5fa4868dc352b1ca4a0d3576124f74c4eb27da3afaa3b6958",
+    "new_metrics_sha256": "8ca1811af494d4e3ef4f969867e8c6706f7d5b7c6c4e903a4ad66c6195ec840a"
+  },
+  {
+    "model": "rebuilt_upstream",
+    "split": "scene0061",
+    "old_map": 0.7106270347320602,
+    "new_map": 0.7111312406442409,
+    "old_nds": 0.6217580327651218,
+    "new_nds": 0.6225002219603801,
+    "old_metrics_path": "reports/tracking_gpu_20261013/bev_pooling/full_model/upstream/scene0061/official/metrics/metrics_summary.json",
+    "old_metrics_sha256": "da84d02fbdb432c1e13aa6740201dd97d869f9e58c2d98bade34f0a750db0f36",
+    "new_metrics_sha256": "34fe78567cf2338af7ac47eae072921808f1110615ad8db3234cf918dcfddae3"
+  },
+  {
+    "model": "preindex",
+    "split": "scene0061",
+    "old_map": 0.7101330686387943,
+    "new_map": 0.7109409912580495,
+    "old_nds": 0.6215362363904627,
+    "new_nds": 0.6224404827059647,
+    "old_metrics_path": "reports/tracking_gpu_20261013/bev_pooling/full_model/preindex/scene0061/official/metrics/metrics_summary.json",
+    "old_metrics_sha256": "8e4ca818bb351fe8ac4e1334689368e4b3930b0f0237710ecda246d2ee7a6403",
+    "new_metrics_sha256": "836c24a5aa4d49a03388b059a77b768b80d885bcc9c4883ea6cd476ee688c9c3"
+  },
+  {
+    "model": "fp32",
+    "split": "mini_val",
+    "old_map": 0.5790331434331157,
+    "new_map": 0.5808593533225141,
+    "old_nds": 0.5144708835989739,
+    "new_nds": 0.5158678188703364,
+    "old_metrics_path": "reports/deployment_4090_20261008/bevfusion_reference/mini_val/evaluation/metrics/metrics_summary.json",
+    "old_metrics_sha256": "13c360dd0c999abfbb574b80468d3da73a287629891ec8bb4d29005abcbf292c",
+    "new_metrics_sha256": "ef21aedcb164827f26974d61b245aea0c7f63e635af01d3153e6f71dece7b250"
+  },
+  {
+    "model": "trt",
+    "split": "mini_val",
+    "old_map": 0.576407660895464,
+    "new_map": 0.5787066601068209,
+    "old_nds": 0.5132377729242095,
+    "new_nds": 0.5148638539985191,
+    "old_metrics_path": "reports/deployment_4090_20261008/bevfusion_tensorrt/mini_val/official/metrics/metrics_summary.json",
+    "old_metrics_sha256": "79066519abc99e8951374dd2f4e442c6bf5d9b880e7597aba6624bb3a7c6ef69",
+    "new_metrics_sha256": "27f298c9092ddf305ef40079b7a63da82dc2586270d5066065ed5fe38671b231"
+  },
+  {
+    "model": "tile4",
+    "split": "mini_val",
+    "old_map": 0.576024849518427,
+    "new_map": 0.578318669338742,
+    "old_nds": 0.5129405288139905,
+    "new_nds": 0.5145616428838968,
+    "old_metrics_path": "reports/deployment_4090_20261008/bev_pooling/full_model/mini_val/official/metrics/metrics_summary.json",
+    "old_metrics_sha256": "9df2908e091606a567ab33c33789826b0a7613f7d67820e68c29a2e5e9e64c8e",
+    "new_metrics_sha256": "0848cccaf96da2942dac143faaced5c0959ba0dec7861456052756889106f461"
+  },
+  {
+    "model": "rebuilt_upstream",
+    "split": "mini_val",
+    "old_map": 0.5768244575985821,
+    "new_map": 0.579225081005005,
+    "old_nds": 0.5134596821301374,
+    "new_nds": 0.5151453410788036,
+    "old_metrics_path": "reports/tracking_gpu_20261013/bev_pooling/full_model/upstream/mini_val/official/metrics/metrics_summary.json",
+    "old_metrics_sha256": "b1707822b1dfb8bf0b52f518a662512115a27169f0bb0e1aff8ac8b1f4dc5677",
+    "new_metrics_sha256": "fbd5beeea557aac827c2514dcb3e679b789ca7aa9927113cffb962c4adf0de93"
+  },
+  {
+    "model": "preindex",
+    "split": "mini_val",
+    "old_map": 0.5766301776345844,
+    "new_map": 0.5789925130180921,
+    "old_nds": 0.5132399909003665,
+    "new_nds": 0.5149088592672806,
+    "old_metrics_path": "reports/tracking_gpu_20261013/bev_pooling/full_model/preindex/mini_val/official/metrics/metrics_summary.json",
+    "old_metrics_sha256": "d31490ea803eccddc9f6e407e00d2f69f0b6247075d40b1b76aa4c2fc5820f3f",
+    "new_metrics_sha256": "d1654339580bcf79e8c0011f214eba79164b1eae454857890f42b33bfddc95fa"
+  }
+]

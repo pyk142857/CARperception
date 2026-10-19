@@ -1,0 +1,50 @@
+[
+  {
+    "comparison": "fp16",
+    "split": "scene0061",
+    "map_drop": 0.002023874477628973,
+    "nds_drop": 0.0011007076150615358,
+    "official_budget_pass": true,
+    "geometry_pass": false
+  },
+  {
+    "comparison": "tile4",
+    "split": "scene0061",
+    "map_drop": -0.0008485021277030436,
+    "nds_drop": -0.00041483432898703487,
+    "official_budget_pass": true,
+    "geometry_pass": true
+  },
+  {
+    "comparison": "preindex",
+    "split": "scene0061",
+    "map_drop": 0.00019024938619138787,
+    "nds_drop": 5.973925441538075e-05,
+    "official_budget_pass": true,
+    "geometry_pass": true
+  },
+  {
+    "comparison": "fp16",
+    "split": "mini_val",
+    "map_drop": 0.0021526932156932244,
+    "nds_drop": 0.0010039648718173089,
+    "official_budget_pass": true,
+    "geometry_pass": false
+  },
+  {
+    "comparison": "tile4",
+    "split": "mini_val",
+    "map_drop": 0.0003879907680789385,
+    "nds_drop": 0.0003022111146222528,
+    "official_budget_pass": true,
+    "geometry_pass": true
+  },
+  {
+    "comparison": "preindex",
+    "split": "mini_val",
+    "map_drop": 0.0002325679869129571,
+    "nds_drop": 0.00023648181152302605,
+    "official_budget_pass": true,
+    "geometry_pass": true
+  }
+]

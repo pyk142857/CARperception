@@ -1,5 +1,7 @@
 # TASK_STATE — mini 教学闭环已验证
 
+**2026-10-19 中心约定复核**：三组几何重算及十次官方 DetectionEval 完成，FP16/两组 pooling 不采用结论不变。TileLang GRAE 的历史等价和加速仅绑定原冻结输入；修正高度后的跟踪指标、NMS等价和30轮性能验收尚未重跑。[报告](reports/center_reassessment_20261019/analysis-report.md)。
+
 ## 2026-10-19 Rerun框与六相机对齐修正
 
 冻结BEVFusion记录的原导出增加了半高，GRAE继承了高度偏移。对齐版回放按作者native中心语义修正显示，原始预测和评价文件不变。120帧native中心独立核验及完整RRD解码通过；浏览器验收见[修复报告](reports/rerun_alignment_20261019/report.md)。

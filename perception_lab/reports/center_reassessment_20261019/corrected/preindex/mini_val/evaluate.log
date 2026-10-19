@@ -1,0 +1,40 @@
+Initializing nuScenes detection evaluation
+Loaded results from /home/minglei/Desktop/CAR/perception_lab/reports/center_reassessment_20261019/corrected/preindex/mini_val/official/official_predictions.json. Found detections for 81 samples.
+Loading annotations for mini_val split from nuScenes version: v1.0-mini
+  0%|          | 0/81 [00:00<?, ?it/s] 83%|████████▎ | 67/81 [00:00<00:00, 664.63it/s]100%|██████████| 81/81 [00:00<00:00, 679.95it/s]
+Loaded ground truth annotations for 81 samples.
+Filtering predictions
+=> Original number of boxes: 16199
+=> After distance based filtering: 12433
+=> After LIDAR and RADAR points based filtering: 12433
+=> After bike rack filtering: 12420
+Filtering ground truth annotations
+=> Original number of boxes: 4441
+=> After distance based filtering: 3785
+=> After LIDAR and RADAR points based filtering: 3393
+=> After bike rack filtering: 3393
+Accumulating metric data...
+Calculating metrics...
+Saving metrics to: /home/minglei/Desktop/CAR/perception_lab/reports/center_reassessment_20261019/corrected/preindex/mini_val/official/metrics
+mAP: 0.5790
+mATE: 0.4025
+mASE: 0.4421
+mAOE: 0.4738
+mAVE: 0.4275
+mAAE: 1.0000
+NDS: 0.5149
+Eval time: 1.3s
+
+Per-class results:
+Object Class        	AP    	ATE   	ASE   	AOE   	AVE   	AAE   
+car                 	0.925 	0.166 	0.156 	0.099 	0.124 	1.000 
+truck               	0.797 	0.148 	0.130 	0.102 	0.074 	1.000 
+bus                 	0.993 	0.156 	0.077 	0.021 	0.551 	1.000 
+trailer             	0.000 	1.000 	1.000 	1.000 	1.000 	1.000 
+construction_vehicle	0.000 	1.000 	1.000 	1.000 	1.000 	1.000 
+pedestrian          	0.934 	0.116 	0.250 	0.342 	0.210 	1.000 
+motorcycle          	0.738 	0.186 	0.253 	0.399 	0.053 	1.000 
+bicycle             	0.630 	0.185 	0.234 	0.301 	0.408 	1.000 
+traffic_cone        	0.773 	0.069 	0.320 	nan   	nan   	nan   
+barrier             	0.000 	1.000 	1.000 	1.000 	nan   	nan   
+{"frames": 81, "mAP": 0.5789925130180921, "NDS": 0.5149088592672806}

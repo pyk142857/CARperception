@@ -1,5 +1,7 @@
 # CARperception
 
+**2026-10-19 优化复核**：[中心修正后的重新评价](perception_lab/reports/center_reassessment_20261019/analysis-report.md)已完成三组几何对比及十次官方检测评价。FP16 中心 P95 仍超过0.2米，两组 pooling 不采用结论不变；下述 GRAE 加速结果对应原冻结输入，修正输入的跟踪等价及性能验收待补。
+
 **2026-10-19 回放修正**：已定位冻结 BEVFusion→GRAE 六相机框整体偏高的中心高度约定问题，新增[对齐版回放与验证说明](perception_lab/reports/rerun_alignment_20261019/report.md)。修正仅用于显示，原始预测与历史评测保留。
 
 [算法代码与运行入口](perception_lab/ALGORITHM_INDEX.md) · [保留方案](perception_lab/RETAINED_ALGORITHMS.md) · [任务状态](perception_lab/TASK_STATE.md)
